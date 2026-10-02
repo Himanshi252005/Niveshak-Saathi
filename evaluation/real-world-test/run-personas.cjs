@@ -23,6 +23,8 @@ async function openMenuIfPhone(page) { if (await page.locator('#menuButton').isV
 async function openTool(page, tab) {
   const card = page.locator(`#home .task-card[data-go="${tab}"]`);
   if (await card.count() && await card.isVisible()) { await card.click(); return 'home card'; }
+  // Release 3.5: rights, practice and family sit under Home's "More help" fold; a user opens it, then taps the choice.
+  if (await card.count() && await page.locator('#homeMore > summary').isVisible()) { await page.locator('#homeMore > summary').click(); if (await card.isVisible()) { await card.click(); return 'home card (More help)'; } }
   await openMenuIfPhone(page); await page.locator(`#sideNav [data-tab="${tab}"]`).evaluate(b => { const d = b.closest('details'); if (d && !d.open) d.open = true; }); await page.locator(`#sideNav [data-tab="${tab}"]`).click(); return 'menu';
 }
 async function largeText(page) {

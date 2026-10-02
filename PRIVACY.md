@@ -8,7 +8,7 @@
 - It keeps your entries only in page memory. Closing or reloading the page, or "Clear this session", removes them.
 - It fetches one thing, and only when you tap "Save offline copy" or "Share this app": a fresh copy of its own page, from the address you opened it from.
 - It opens an official website, or your phone's dialer for a helpline, only when you tap. Official sites are not told which page sent you (no referrer).
-- Read-aloud uses your device's own voice. If you dictate with your keyboard's microphone, your keyboard app handles the audio under its own terms; the app receives only the text.
+- Read-aloud uses your device's own voice. If you dictate with your keyboard's microphone, your keyboard app handles the audio under its own terms; the app receives only the text. The same holds if you copy the words of a message from a picture with your phone's gallery or camera: that feature works under its own terms, and the app receives only the text you paste.
 
 ## What the app does not do
 

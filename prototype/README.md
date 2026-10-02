@@ -41,14 +41,14 @@ The hosting identity for the public link is kept outside this repository.
 
 ## Scale design
 
-The public app is a static, cacheable file. Analysis happens on the device, so more users do not need inference servers, message databases or per-check API costs. The Release 3.5 build is 665,738 bytes raw and 192,213 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; reaching India's 16 crore demat accounts is a design target, not a completed load test. See [`../docs/SCALE-AND-RELIABILITY.md`](../docs/SCALE-AND-RELIABILITY.md).
+The public app is a static, cacheable file. Analysis happens on the device, so more users do not need inference servers, message databases or per-check API costs. The Release 3.5 build is 760,824 bytes raw and 222,032 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; reaching India's 16 crore demat accounts is a design target, not a completed load test. See [`../docs/SCALE-AND-RELIABILITY.md`](../docs/SCALE-AND-RELIABILITY.md).
 
 ## Evidence and limits
 
-- **Release record:** [`../evidence/Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json): 1,347 automated checks, that is 23 release suites plus the developer cases.
-- **Developer cases:** 449/449 expectations pass. They were written during development, so they are not an accuracy benchmark.
+- **Release record:** [`../evidence/Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json): 1,705 automated checks, that is 23 release suites plus the developer cases.
+- **Developer cases:** 796/796 expectations pass. They were written during development, so they are not an accuracy benchmark.
 - **Sealed sets,** each written by a separate AI agent and scored once:
-  - blind-v9: not yet scored: the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) will be scored once, when the upgraded checker is frozen;
+  - blind-v9 (Release 3.5, checker 3.5): fraud or suspicious messages warned 80% [71.6–86.4], fraud warned 87.5% [78.5–93.1], ordinary messages warned 12.2% [7–20.6] ([record](../evidence/Blind-Evaluation-v9.json));
   - blind-v8 (Release 3.4, checker 3.3): fraud or suspicious messages warned 60.9% [51.6–69.5], ordinary messages warned 13.3% [7.8–21.9] ([record](../evidence/Blind-Evaluation-v8.json));
   - blind-v5 (model 3.2): 72.4% [65.7–78.2] and 8.6% [4.9–14.7] ([record](../evidence/Blind-Evaluation.json)).
 

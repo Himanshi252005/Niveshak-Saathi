@@ -6,7 +6,7 @@
 > check the message → check before paying → stop immediate harm → find the right office → follow the official steps → protect the family → build the habit
 
 **Status (2 October 2026)**
-- **Release 3.5** is the build in this repository: 665,738 bytes, SHA-256 `1B279AD5001812454D75C390AC99C899142ABC0804A5E01D30DE10CA948A5C23`. 1,347 automated checks passed: 23 release suites plus the developer cases ([release record](../evidence/Release-3.5-Verification.json)).
+- **Release 3.5** is the build in this repository: 760,824 bytes, SHA-256 `244FAD4E8B28C47CA2BCC4BFE5E350E1C877BB64E8BBFD8BFFB544383C73B32C`. 1,705 automated checks passed: 23 release suites plus the developer cases ([release record](../evidence/Release-3.5-Verification.json)).
 - **The live link serves Release 3.5:** [himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/). Its served file matches the verified repository build ([delivery status](Delivery-Status.md)).
 - **Release 3.4** was verified but never deployed. Its results are kept below as history.
 - **No real-user study or pilot** has been run. Every accuracy figure comes from synthetic test sets.
@@ -25,9 +25,9 @@ A working prototype: one self-contained HTML file that runs in a phone or deskto
 | Demo video | being recorded; the link will be added here when it is published |
 
 - **Language:** the app opens in Hindi. To switch to English, use the language menu at the top right.
-- **Home** asks one question, "What do you need help with?", with large choices in everyday words and three persona plans.
+- **Home** asks one question, "What do you need help with?", with four large choices in everyday words. "More help" opens rights, practice and family safety, and one fold holds the three persona plans.
 - **The menu** shows six everyday pages (Home, Check a message, Before you pay, Get help now, Where to complain, Rights and help); the complaint packet, safety plans, practice and family safety sit under "More pages". A "Get urgent help" button stays in the top bar.
-- **No typing needed:** a Paste button puts a copied message in the box, and a tip shows how to speak it with the phone keyboard's microphone.
+- **No typing needed:** a Paste button puts a copied message in the box, a tip shows how to speak it with the phone keyboard's microphone, and another how to copy the words of a message that arrived as a picture.
 - **Offline and sharing:** "Save offline copy" (More tools) downloads the app so it works without internet. "Share this app" hands the link, or the file, to WhatsApp.
 
 ## S.02 Problem definition
@@ -159,14 +159,14 @@ Nothing is sent. Downloads stay on the device.
 
 ### The message checker: an explainable, on-device model
 
-- **Warning signs:** English, Hindi and Roman-Hindi rules for categories such as certain returns, pressure, personal accounts, credential and remote-access requests, chat groups, borrowing, release fees, app installs, money multiplication, impersonation, threats and "digital arrest", unsolicited tips, suspicious links, fake IPO access and fee-charging recovery offers. Caution handling means "never share your OTP" is not read as an OTP request.
-- **Risk score:** an L2-regularised logistic regression over the category flags, fitted on labelled development messages, with weights rounded for readability. The fitting script is not yet published. The weights and thresholds are in `engine.js` and shown to the user under "How the risk level was decided". In model 3.2 and checker 3.3, every sign weighs at least 1.5 and the High threshold (0.65) works out to a rule anyone can check: High means a safety floor, any two different signs, or one strong sign; one moderate sign gives Caution.
-- **Safety floors:** once recognised, a release fee, a credential request, a fee-charging recovery offer and a threat with a payment demand always give High.
+- **Warning signs:** English, Hindi and Roman-Hindi rules for categories such as certain returns, pressure, personal accounts, credential and remote-access requests, chat groups, borrowing, release fees, app installs, money multiplication, impersonation, threats and "digital arrest", unsolicited tips, suspicious links, fake IPO access, fee-charging recovery offers, and requests for documents or a signed blank cheque. Caution handling means "never share your OTP" is not read as an OTP request.
+- **Risk score:** an L2-regularised logistic regression over the category flags, fitted on labelled development messages, with weights rounded for readability. The fitting script and its feature table are published ([`evaluation/fit-weights.cjs`](../evaluation/fit-weights.cjs)) and reproduce the shipped weights exactly. The weights and thresholds are in `engine.js` and shown to the user under "How the risk level was decided". In model 3.2, and in checkers 3.3 and 3.5, which keep its weights, every sign weighs at least 1.5 and the High threshold (0.65) works out to a rule anyone can check: High means a safety floor, any two different signs, or one strong sign; one moderate sign gives Caution.
+- **Safety floors:** once recognised, a release fee, a credential request, a fee-charging recovery offer, and a threat that comes with a payment demand, a link to click or an order to talk to an "officer" (as in "digital arrest") always give High.
 - **Five reliability states:** strong warning agreement, several signs agree, one sign, outside language coverage, and insufficient evidence. The last two abstain; no state calls a message safe.
 - **Insights:** compounded return maths, link analysis (shorteners, app files, bare IP addresses, lookalike addresses) and masked payee details.
-- **Speed:** about 1 ms per ordinary message, fully on the device (Release 3.4 tests).
+- **Speed:** fully on the device. Checker 3.5 takes about 0.4 ms for an ordinary message on the test computer (internal benchmark, about 1.8 times checker 3.3); an unusual long input can take about 0.1 s the first time.
 
-**Checker in Release 3.5:** checker 3.3, unchanged from Release 3.4. An upgraded checker for Hindi and Hinglish scams aimed at the three personas is in development; it will be measured once on the fresh sealed set blind-v9 (200 messages, sealed 2 October 2026) before it can ship.
+**Checker in Release 3.5:** checker 3.5. It adds Hindi, Hinglish and Devanagari patterns for the three personas' scams: advance fees on money said to be "approved" or "unclaimed", paid agents for old shares and IEPF claims, freeze and "digital arrest" threats, requests for documents or a signed blank cheque, IPO quotas, wrong-number openers and paid VIP tips. It also stops flagging many warnings that only quote scam lines. Weights and thresholds are unchanged. It was frozen before the fresh sealed set blind-v9 was scored once (below).
 
 **The own-words parser** in "Get help now" is keyword-based, not a language model. It reads English, Hindi and Roman Hindi and pre-fills answers that the user confirms. Unusual phrasing can be missed.
 
@@ -179,14 +179,21 @@ Nothing is sent. Downloads stay on the device.
 
 - **Sealed sets:** each set is written by a separate AI agent that never saw the code, the tests or earlier sets. It is scored once for the checker it was written to test, and becomes development data after that.
 - **Intervals:** results are shown with 95% intervals. Sets differ in mix and difficulty, so compare checkers on the same set, not across sets.
-- **What is published:** the messages and scores of blind-v5, v6 and v8, and the scores of the first two 320-message sets, blind-v3 and v4. One more set, blind-v7, guided the Release 3.4 candidate checker and is not published.
+- **What is published:** the messages and scores of blind-v5, v6, v8 and v9, and the scores of the first two 320-message sets, blind-v3 and v4. One more set, blind-v7, guided the Release 3.4 candidate checker and is not published.
 
 | Sealed set (messages) | Release and checker | Fraud or suspicious warned | Fraud warned | Ordinary warned |
 |---|---|---:|---:|---:|
-| blind-v9 (200 messages) | upgraded checker, when frozen | not yet scored | not yet scored | not yet scored |
+| blind-v9 (200) | 3.5, checker 3.5 | 80% [71.6–86.4] | 87.5% [78.5–93.1] | 12.2% [7–20.6] |
+| blind-v9 (200), same messages | checker 3.3, for comparison | 74.5% [65.7–81.8] | 82.5% [72.7–89.3] | 11.1% [6.1–19.3] |
 | blind-v8 (200) | 3.4, checker 3.3 | 60.9% [51.6–69.5] | 67.5% [56.6–76.8] | 13.3% [7.8–21.9] |
 | blind-v6 (120) | 3.3, checker 3.3 | 87.1% [77.3–93.1] | 94.0% [83.8–97.9] | 24.0% [14.3–37.4] |
 | blind-v5 (320) | 3.2, model 3.2 | 72.4% [65.7–78.2] | 79.7% [71.9–85.7] | 8.6% [4.9–14.7] |
+
+**Release 3.5 on blind-v9, told straight:**
+- Checker 3.5 met two of the three targets: fraud warned 87.5% (target ≥85%) and subtle fraud warned 18 of 25, 72% (target ≥70%). It missed the third: 12.2% of ordinary messages were warned (target ≤8%; checker 3.3: 11.1%).
+- Babulal-type messages, caught least often before, improved: fraud or suspicious warned 75% [56.6–87.3] (3.3: 67.9%), fraud at High 75% (3.3: 45%).
+- The rule written before scoring also required no more ordinary messages warned than checker 3.3. Checker 3.5 warned one more (11 of 90 against 10, the extra one at Caution; 9 at High for both). The owner shipped it because fraud at High improved significantly (paired test, p = 0.0117). The record states this deviation ([`Blind-Evaluation-v9.json`](../evidence/Blind-Evaluation-v9.json)).
+- Still wrong: 10 of 80 frauds got no warning (for example wrong-number openers, a fake helpline asking for remote access, an advance fee to transfer old shares), and 9 ordinary messages were rated High, most of them awareness warnings or genuine notices (an IEPF refund, a broker withdrawal, a branch KYC call, an LPG booking).
 
 **Release 3.4 history, told straight:**
 - On blind-v8 the shipped checker 3.3 caught only 5 of 25 subtle frauds. Babulal-type messages (pensions, life certificates, dormant folios) were caught least often: 39.3% [23.6–57.6] of his fraud or suspicious messages. None of the 40 everyday ordinary messages was flagged.
@@ -197,7 +204,7 @@ Full tables, by language and persona: [Validation](Validation-v3.md).
 
 ### Technical evidence
 
-**Release 3.5:** 1,347 automated checks (23 release suites plus 449/449 developer-case expectations); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 92 fully right, 8 partly right, 0 wrong (14/14 checks); official links every official link re-opened by the integrated suite (C-12: 13/13 checks passed); 665,738 bytes (192,213 with gzip); Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s.
+**Release 3.5:** 1,705 automated checks (23 release suites plus 796/796 developer-case expectations); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 92 fully right, 8 partly right, 0 wrong (14/14 checks); official links every official link re-opened by the integrated suite (C-12: 13/13 checks passed); 760,824 bytes (222,032 with gzip); Home usable in 7.5 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.7 s.
 
 **Release 3.4 (history).** Rows marked "internal" come from test runs whose scripts and logs are not yet in this repository.
 
@@ -272,7 +279,7 @@ These are the mechanisms. None has yet been measured with real users.
 
 ### How it scales in Tier-2 and Tier-3 India
 
-- **Small and phone-first:** one 665,738-byte file, 192,213 bytes when served with gzip; Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s. Once saved, it works with no network at all.
+- **Small and phone-first:** one 760,824-byte file, 222,032 bytes when served with gzip; Home usable in 7.5 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.7 s. Once saved, it works with no network at all.
 - **Spreads without accounts:** the link or the file can be forwarded on WhatsApp, and "Warn my family" spreads warnings without tracking anyone.
 - **Language reach without unreviewed translation:** Hindi first, English one tap away. Users of other languages are pointed to official helplines that speak their language: SEBI in seven languages, RBI 14448 in English, Hindi and ten regional languages, and IRDAI in Hindi, English and other major languages.
 - **No cost per user:** no servers, accounts, message database or inference. At Release 3.4's size, 16 crore one-time downloads would be about 26.4 TB before caching. That is a planning figure, not a load test ([scale plan](SCALE-AND-RELIABILITY.md)).
@@ -292,10 +299,10 @@ These are the mechanisms. None has yet been measured with real users.
 
 | Criterion (weight) | What the product does | Evidence | Not yet proven |
 |---|---|---|---|
-| **Resilience & Safety Impact (30%)** | STOP before paying; message check; bank and 1930 first; the right office with time limits; sourced guides; Family asset map | blind-v9: not yet scored (it waits for the upgraded checker). Release 3.5 ships checker 3.3: blind-v8 60.9% [51.6–69.5] fraud or suspicious warned; complaint-route test 39/40 main authority (Release 3.4, internal) | No real-user outcome study; money saved not measured; subtle scams often missed |
-| **Tier-2/3 Usability (25%)** | Hindi first, English one tap away; large choices in everyday words; a six-page menu; Paste button and keyboard-microphone tips instead of typing; persona plans; read-aloud; large text; offline copy; official helplines in regional languages | Every page fits 320–390-pixel phones in both languages (Release 3.4); 192,213 bytes to download with gzip; Home usable in 6.4 s on an emulated slow connection (gzip) | Native Hindi review; physical low-end phones; only two languages in the app; voice input only through the phone keyboard's microphone |
+| **Resilience & Safety Impact (30%)** | STOP before paying; message check; bank and 1930 first; the right office with time limits; sourced guides; Family asset map | Sealed set blind-v9, scored once: checker 3.5 warned 87.5% of fraud (3.3: 82.5%) and 72% of subtle fraud; complaint-route test 39/40 main authority (Release 3.4, internal) | No real-user outcome study; money saved not measured; 10 of 80 frauds missed and 12.2% of ordinary messages warned on blind-v9 |
+| **Tier-2/3 Usability (25%)** | Hindi first, English one tap away; large choices in everyday words; a six-page menu; Paste button and keyboard-microphone tips instead of typing; persona plans; read-aloud; large text; offline copy; official helplines in regional languages | Every page fits 320–390-pixel phones in both languages (Release 3.4); 222,032 bytes to download with gzip; Home usable in 7.5 s on an emulated slow connection (gzip) | Native Hindi review; physical low-end phones; only two languages in the app; voice input only through the phone keyboard's microphone |
 | **Guardrails & Trust (15%)** | No commerce or tips; nothing saved or sent; every step sourced and dated, with "review pending" where the reviewer has not confirmed; in-page security policy; uncertainty shown | Privacy and security checks; no network requests in tested journeys | Independent security audit; confirmation of pending sources |
-| **Technical Execution (15%)** | Explainable on-device model with safety floors and abstention; keyword-based parser; validated, reproducible single-file build | Sealed sets with intervals; 1,347 automated checks | A consented, representative real-message corpus; colloquial Hindi coverage |
+| **Technical Execution (15%)** | Explainable on-device model with safety floors and abstention; keyword-based parser; validated, reproducible single-file build | Sealed sets with intervals; 1,705 automated checks | A consented, representative real-message corpus; colloquial Hindi coverage |
 | **Feasibility & Scalability (15%)** | Static file with no inference cost; Owner Studio; pilot kit; open licences | Transfer arithmetic; validated content pipeline | No load test, partner or pilot yet |
 
 No judging score is guaranteed. The evidence above comes from automated checks, not from users.
@@ -317,7 +324,7 @@ No judging score is guaranteed. The evidence above comes from automated checks, 
 ## Judge Q&A
 
 **How accurate is it?** We report each release's sealed-set result with intervals, including where a new checker was worse or no better and was not shipped. What is and is not published is listed in [S.04](#evaluation).
-- **Release 3.5, fresh set blind-v9:** not yet scored: the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) will be scored once, when the upgraded checker is frozen.
+- **Release 3.5, fresh set blind-v9 (scored once, checker 3.5):** fraud warned 87.5% [78.5–93.1]; fraud or suspicious 80% [71.6–86.4]; ordinary messages warned 12.2% [7–20.6].
 - **Release 3.4, blind-v8:** 60.9% [51.6–69.5] of fraud or suspicious messages warned, the same measure as the earlier sets (67.5% [56.6–76.8] for fraud alone); 13.3% [7.8–21.9] of ordinary messages warned, all of them tricky look-alikes; none of the 40 everyday messages. Release 3.4 missed all three of its checker targets.
 - The sets are synthetic and written by AI, so they are not a measure of real-world accuracy. No checker is perfect, so "No known signs" never means safe.
 

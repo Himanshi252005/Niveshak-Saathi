@@ -36,11 +36,12 @@
 | Know Rights | Rights and help; rights cards; guides |
 
 **Evidence (synthetic tests; no real users yet)**
-- Release 3.5 ships checker 3.3, the same checker as Release 3.4, so the blind-v8 results below still describe it. An upgraded checker for Hindi and Hinglish scams is not yet scored: the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) will be scored once, when the upgraded checker is frozen.
+- **Checker 3.5 on the fresh sealed set blind-v9** (200 messages written by a separate AI agent; the checker was frozen first, then scored once): fraud warned 87.5% [78.5–93.1] (checker 3.3 on the same messages: 82.5%); fraud rated High 78.8% [68.6–86.3] (3.3: 67.5%); subtle fraud warned 18 of 25 (3.3: 15); ordinary messages warned 12.2% [7–20.6] (3.3: 11.1%). Targets: fraud warned ≥85% and subtle fraud ≥70% met; ordinary messages ≤8% missed.
+- The rule written before scoring also required no more ordinary messages warned than checker 3.3. Checker 3.5 warned one more (11 of 90 against 10, the extra one at Caution; 9 at High for both). The owner shipped it because fraud at High improved significantly (paired test, p = 0.0117) ([record](evidence/Blind-Evaluation-v9.json)).
 - History, Release 3.4 on blind-v8: fraud or suspicious warned 60.9% [51.6–69.5] (fraud alone 67.5% [56.6–76.8]); ordinary 13.3% [7.8–21.9]; subtle fraud 5 of 25. It missed all three targets (fraud ≥85%, ordinary ≤8%, subtle fraud ≥70% warned).
 - 100 AI-written personas: 92 fully right, 8 partly right, 0 wrong (14/14 checks). A regression test, not accuracy.
-- 1,347 automated checks (23 release suites plus developer cases).
+- 1,705 automated checks (23 release suites plus developer cases).
 
-**Known limits.** Hindi and English only (other languages: official helplines). Many subtle scams are still missed. No pilot, partner or native Hindi review yet. Sources not yet confirmed by the named reviewer show "review pending". The live link (GitHub Pages) sets no cookies ([Privacy](PRIVACY.md)).
+**Known limits.** Hindi and English only (other languages: official helplines). Some scams are still missed (on blind-v9, 10 of 80 frauds got no warning), and 12.2% of ordinary messages got one. No pilot, partner or native Hindi review yet. Sources not yet confirmed by the named reviewer show "review pending". The live link (GitHub Pages) sets no cookies ([Privacy](PRIVACY.md)).
 
 **How this was built.** The team built Niveshak Saathi with AI coding assistants, which helped write the code, tests, synthetic test messages and documents. Every change to advice was checked against an official page, and each step in the app shows its source. All accuracy numbers come from synthetic test sets, not from real users.

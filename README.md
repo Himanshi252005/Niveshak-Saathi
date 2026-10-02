@@ -24,7 +24,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | S.05 Demonstration | Video being recorded; the link will be added here when it is published; [script](docs/Submission-v3.md#s05-demonstration) |
 | S.06 Impact | [Submission, S.06](docs/Submission-v3.md#s06-impact) |
 
-**Version legend.** Release 3.5 is the newest build; it is on the live link (GitHub Pages) and in this repository. Release 3.4 was verified on 2 October 2026 but never deployed; its results are kept as history. The "checker" is the message checker inside the app: Release 3.4 kept checker 3.3, and Release 3.5 ships checker 3.3. The "-v3" in some document names is the documentation series, not the release.
+**Version legend.** Release 3.5 is the newest build; it is on the live link (GitHub Pages) and in this repository. Release 3.4 was verified on 2 October 2026 but never deployed; its results are kept as history. The "checker" is the message checker inside the app: Release 3.4 kept checker 3.3; Release 3.5 ships checker 3.5, which adds Hindi and Hinglish patterns for the three personas' scams. The "-v3" in some document names is the documentation series, not the release.
 
 ## Built for three people
 
@@ -34,7 +34,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | **Kavita, 39**, Tier-2 homemaker, not fluent in English | Ponzi and fake-IPO offers; intimidated by broking apps | Checks a Hindi message; Before you pay explains ASBA and "@valid" UPI IDs; warns her family |
 | **Babulal, 63**, retired, with old or dormant folios | Unaware of the nominee process; cannot navigate IEPF or SCORES | Follows the IEPF-5 and SCORES guides; lists the family's holdings and nominees in the Family asset map |
 
-Each person has a fixed safety plan on Home. The app asks for no name, account number, holdings or income, and stores no profile.
+Each person has a fixed safety plan, one tap from Home. The app asks for no name, account number, holdings or income, and stores no profile.
 
 ## What it does
 
@@ -56,7 +56,7 @@ Each person has a fixed safety plan on Home. The app asks for no name, account n
 **Learn and protect**
 - **Family safety**, with the new **Family asset map** (Track B "Nominee & Family Wealth Tracker"). One row per investment: type, institution name, nominee status, where the papers are, and who in the family knows. The institution name is the only typed field, and it refuses numbers, e-mail addresses and PAN. Download or print the list, and reopen the downloaded list later on the phone; the app itself saves nothing. Shares or mutual funds without a nominee link to the nominee guide. The tick-only family checklist and printable family card remain.
 - **My safety plan** for Praveen, Kavita and Babulal, and **Practise** with made-up messages, before-and-after scores and a habit card.
-- **Everyday use:** a short menu (six pages, the rest under "More pages"); a Paste button and a tip to speak the message with the phone keyboard's microphone instead of typing; read-aloud with the phone's own voice, large text, phone layouts, a working phone Back button, "Save offline copy" and "Share this app".
+- **Everyday use:** a short menu (six pages, the rest under "More pages"); a Paste button, a tip to speak the message with the phone keyboard's microphone instead of typing, and one to copy the words of a message that arrived as a picture; read-aloud with the phone's own voice, large text, phone layouts, a working phone Back button, "Save offline copy" and "Share this app".
 - **Owner Studio:** a local editor, never part of the public app, where the content owner edits and validates all bilingual content, sources, guides and plans before a rebuild.
 
 ## Track B fit
@@ -79,10 +79,11 @@ Each person has a fixed safety plan on Home. The app asks for no name, account n
 All accuracy figures come from synthetic messages and AI-written personas, not from real users. No pilot has been run yet.
 
 **Release 3.5** ([release record](evidence/Release-3.5-Verification.json))
-- 1,347 automated checks: 23 release suites plus 449/449 developer-case expectations.
-- Fresh sealed set blind-v9, written by a separate AI agent: not yet scored: the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) will be scored once, when the upgraded checker is frozen.
+- 1,705 automated checks: 23 release suites plus 796/796 developer-case expectations.
+- **Fresh sealed set blind-v9** (200 messages written by a separate AI agent, scored once after checker 3.5 was frozen): fraud warned 87.5% [78.5–93.1] (checker 3.3 on the same messages: 82.5%); fraud rated High 78.8% [68.6–86.3] (3.3: 67.5%); subtle fraud warned 18 of 25 (3.3: 15); ordinary messages warned 12.2% [7–20.6] (3.3: 11.1%). Two of the three targets were met (fraud warned ≥85%, subtle fraud ≥70%); ordinary messages ≤8% was missed.
+- The rule written before scoring also required no more ordinary messages warned than checker 3.3. Checker 3.5 warned one more (11 of 90 against 10, the extra one at Caution; 9 at High for both). The owner shipped it because fraud at High improved significantly (paired test, p = 0.0117) ([record](evidence/Blind-Evaluation-v9.json)).
 - 100-persona simulated test (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
-- Size: 665,738 bytes, 192,213 bytes with gzip; Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s.
+- Size: 760,824 bytes, 222,032 bytes with gzip; Home usable in 7.5 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.7 s.
 
 **Release 3.4 (history; verified 2 October 2026, never deployed)**
 - **Sealed set blind-v8** (200 messages written by a separate AI agent, scored once), with the shipped checker 3.3:

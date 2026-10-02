@@ -1,0 +1,896 @@
+{
+ "set": "blind-v9",
+ "sealed": {
+  "sha256": "D5A59F9B9620903EE6399B9B90164407BD0CF927FFB8D74D8EA7BAB9D2567B22",
+  "items": 200,
+  "labels": {
+   "fraud": 80,
+   "benign": 90,
+   "suspicious": 30
+  },
+  "languages": {
+   "hi": 70,
+   "en": 60,
+   "hinglish": 60,
+   "mixed": 10
+  },
+  "personas": {
+   "kavita": 50,
+   "babulal": 50,
+   "praveen": 50,
+   "any": 50
+  },
+  "sealedAt": "2026-10-02T14:07:33.029Z"
+ },
+ "writtenBy": "A separate AI agent, before checker 3.5 was frozen; fictional messages only; validated by counts only until scoring.",
+ "scoredOnce": {
+  "date": "2026-10-02",
+  "by": "the team's sealed-set scorer; the published evaluation/score-blind.cjs reproduces these headline numbers",
+  "reproduce": "node evaluation/score-blind.cjs prototype/engine.js evaluation/blind-v9.json",
+  "note": "Each checker was scored exactly once. After this the set is development data and is published as evaluation/blind-v9.json."
+ },
+ "checkers": {
+  "3.3": {
+   "role": "shipped in Releases 3.3 and 3.4, and in Release 3.5 until this score",
+   "engineSha256": "C967AF66599AB273E4DFA547A06618E533A191E517EDAA3BBCC5C7C0C834E0D6",
+   "headline": {
+    "riskyWarned": {
+     "k": 82,
+     "n": 110,
+     "pct": 74.5,
+     "ci95": [
+      65.7,
+      81.8
+     ]
+    },
+    "fraudWarned": {
+     "k": 66,
+     "n": 80,
+     "pct": 82.5,
+     "ci95": [
+      72.7,
+      89.3
+     ]
+    },
+    "fraudHigh": {
+     "k": 54,
+     "n": 80,
+     "pct": 67.5,
+     "ci95": [
+      56.6,
+      76.8
+     ]
+    },
+    "suspiciousWarned": {
+     "k": 16,
+     "n": 30,
+     "pct": 53.3,
+     "ci95": [
+      36.1,
+      69.8
+     ]
+    },
+    "benignWarned": {
+     "k": 10,
+     "n": 90,
+     "pct": 11.1,
+     "ci95": [
+      6.1,
+      19.3
+     ]
+    },
+    "benignHigh": {
+     "k": 9,
+     "n": 90,
+     "pct": 10,
+     "ci95": [
+      5.4,
+      17.9
+     ]
+    },
+    "benignHardWarned": {
+     "k": 9,
+     "n": 50,
+     "pct": 18,
+     "ci95": [
+      9.8,
+      30.8
+     ]
+    },
+    "benignEasyWarned": {
+     "k": 1,
+     "n": 40,
+     "pct": 2.5,
+     "ci95": [
+      0.4,
+      12.9
+     ]
+    },
+    "fraudHardWarned": {
+     "k": 15,
+     "n": 25,
+     "pct": 60,
+     "ci95": [
+      40.7,
+      76.6
+     ]
+    }
+   },
+   "byPersona": {
+    "kavita": {
+     "riskyWarned": {
+      "k": 23,
+      "n": 28,
+      "pct": 82.1,
+      "ci95": [
+       64.4,
+       92.1
+      ]
+     },
+     "fraudHigh": {
+      "k": 16,
+      "n": 20,
+      "pct": 80,
+      "ci95": [
+       58.4,
+       91.9
+      ]
+     },
+     "benignWarned": {
+      "k": 0,
+      "n": 22,
+      "pct": 0,
+      "ci95": [
+       0,
+       14.9
+      ]
+     },
+     "benignHigh": {
+      "k": 0,
+      "n": 22,
+      "pct": 0,
+      "ci95": [
+       0,
+       14.9
+      ]
+     }
+    },
+    "babulal": {
+     "riskyWarned": {
+      "k": 19,
+      "n": 28,
+      "pct": 67.9,
+      "ci95": [
+       49.3,
+       82.1
+      ]
+     },
+     "fraudHigh": {
+      "k": 9,
+      "n": 20,
+      "pct": 45,
+      "ci95": [
+       25.8,
+       65.8
+      ]
+     },
+     "benignWarned": {
+      "k": 2,
+      "n": 22,
+      "pct": 9.1,
+      "ci95": [
+       2.5,
+       27.8
+      ]
+     },
+     "benignHigh": {
+      "k": 2,
+      "n": 22,
+      "pct": 9.1,
+      "ci95": [
+       2.5,
+       27.8
+      ]
+     }
+    },
+    "praveen": {
+     "riskyWarned": {
+      "k": 20,
+      "n": 27,
+      "pct": 74.1,
+      "ci95": [
+       55.3,
+       86.8
+      ]
+     },
+     "fraudHigh": {
+      "k": 16,
+      "n": 20,
+      "pct": 80,
+      "ci95": [
+       58.4,
+       91.9
+      ]
+     },
+     "benignWarned": {
+      "k": 4,
+      "n": 23,
+      "pct": 17.4,
+      "ci95": [
+       7,
+       37.1
+      ]
+     },
+     "benignHigh": {
+      "k": 3,
+      "n": 23,
+      "pct": 13,
+      "ci95": [
+       4.5,
+       32.1
+      ]
+     }
+    },
+    "any": {
+     "riskyWarned": {
+      "k": 20,
+      "n": 27,
+      "pct": 74.1,
+      "ci95": [
+       55.3,
+       86.8
+      ]
+     },
+     "fraudHigh": {
+      "k": 13,
+      "n": 20,
+      "pct": 65,
+      "ci95": [
+       43.3,
+       81.9
+      ]
+     },
+     "benignWarned": {
+      "k": 4,
+      "n": 23,
+      "pct": 17.4,
+      "ci95": [
+       7,
+       37.1
+      ]
+     },
+     "benignHigh": {
+      "k": 4,
+      "n": 23,
+      "pct": 17.4,
+      "ci95": [
+       7,
+       37.1
+      ]
+     }
+    }
+   },
+   "byLanguage": {
+    "hi": {
+     "riskyWarned": {
+      "k": 29,
+      "n": 40,
+      "pct": 72.5,
+      "ci95": [
+       57.2,
+       83.9
+      ]
+     },
+     "fraudHigh": {
+      "k": 18,
+      "n": 30,
+      "pct": 60,
+      "ci95": [
+       42.3,
+       75.4
+      ]
+     },
+     "benignWarned": {
+      "k": 0,
+      "n": 30,
+      "pct": 0,
+      "ci95": [
+       0,
+       11.4
+      ]
+     },
+     "benignHigh": {
+      "k": 0,
+      "n": 30,
+      "pct": 0,
+      "ci95": [
+       0,
+       11.4
+      ]
+     }
+    },
+    "en": {
+     "riskyWarned": {
+      "k": 28,
+      "n": 35,
+      "pct": 80,
+      "ci95": [
+       64.1,
+       90
+      ]
+     },
+     "fraudHigh": {
+      "k": 17,
+      "n": 25,
+      "pct": 68,
+      "ci95": [
+       48.4,
+       82.8
+      ]
+     },
+     "benignWarned": {
+      "k": 4,
+      "n": 25,
+      "pct": 16,
+      "ci95": [
+       6.4,
+       34.7
+      ]
+     },
+     "benignHigh": {
+      "k": 3,
+      "n": 25,
+      "pct": 12,
+      "ci95": [
+       4.2,
+       30
+      ]
+     }
+    },
+    "hinglish": {
+     "riskyWarned": {
+      "k": 20,
+      "n": 29,
+      "pct": 69,
+      "ci95": [
+       50.8,
+       82.7
+      ]
+     },
+     "fraudHigh": {
+      "k": 16,
+      "n": 20,
+      "pct": 80,
+      "ci95": [
+       58.4,
+       91.9
+      ]
+     },
+     "benignWarned": {
+      "k": 6,
+      "n": 31,
+      "pct": 19.4,
+      "ci95": [
+       9.2,
+       36.3
+      ]
+     },
+     "benignHigh": {
+      "k": 6,
+      "n": 31,
+      "pct": 19.4,
+      "ci95": [
+       9.2,
+       36.3
+      ]
+     }
+    },
+    "mixed": {
+     "riskyWarned": {
+      "k": 5,
+      "n": 6,
+      "pct": 83.3,
+      "ci95": [
+       43.6,
+       97
+      ]
+     },
+     "fraudHigh": {
+      "k": 3,
+      "n": 5,
+      "pct": 60,
+      "ci95": [
+       23.1,
+       88.2
+      ]
+     },
+     "benignWarned": {
+      "k": 0,
+      "n": 4,
+      "pct": 0,
+      "ci95": [
+       0,
+       49
+      ]
+     },
+     "benignHigh": {
+      "k": 0,
+      "n": 4,
+      "pct": 0,
+      "ci95": [
+       0,
+       49
+      ]
+     }
+    }
+   }
+  },
+  "3.5": {
+   "role": "frozen 2026-10-02 22:36:30 IST before blind-v9 was opened; ships in Release 3.5",
+   "engineSha256": "BD2A5667FA5C5EF2723D30902BA1ACCB8198140AAAB85E14AE8360178B9A47A9",
+   "headline": {
+    "riskyWarned": {
+     "k": 88,
+     "n": 110,
+     "pct": 80,
+     "ci95": [
+      71.6,
+      86.4
+     ]
+    },
+    "fraudWarned": {
+     "k": 70,
+     "n": 80,
+     "pct": 87.5,
+     "ci95": [
+      78.5,
+      93.1
+     ]
+    },
+    "fraudHigh": {
+     "k": 63,
+     "n": 80,
+     "pct": 78.8,
+     "ci95": [
+      68.6,
+      86.3
+     ]
+    },
+    "suspiciousWarned": {
+     "k": 18,
+     "n": 30,
+     "pct": 60,
+     "ci95": [
+      42.3,
+      75.4
+     ]
+    },
+    "benignWarned": {
+     "k": 11,
+     "n": 90,
+     "pct": 12.2,
+     "ci95": [
+      7,
+      20.6
+     ]
+    },
+    "benignHigh": {
+     "k": 9,
+     "n": 90,
+     "pct": 10,
+     "ci95": [
+      5.4,
+      17.9
+     ]
+    },
+    "benignHardWarned": {
+     "k": 10,
+     "n": 50,
+     "pct": 20,
+     "ci95": [
+      11.2,
+      33
+     ]
+    },
+    "benignEasyWarned": {
+     "k": 1,
+     "n": 40,
+     "pct": 2.5,
+     "ci95": [
+      0.4,
+      12.9
+     ]
+    },
+    "fraudHardWarned": {
+     "k": 18,
+     "n": 25,
+     "pct": 72,
+     "ci95": [
+      52.4,
+      85.7
+     ]
+    }
+   },
+   "byPersona": {
+    "kavita": {
+     "riskyWarned": {
+      "k": 24,
+      "n": 28,
+      "pct": 85.7,
+      "ci95": [
+       68.5,
+       94.3
+      ]
+     },
+     "fraudHigh": {
+      "k": 17,
+      "n": 20,
+      "pct": 85,
+      "ci95": [
+       64,
+       94.8
+      ]
+     },
+     "benignWarned": {
+      "k": 2,
+      "n": 22,
+      "pct": 9.1,
+      "ci95": [
+       2.5,
+       27.8
+      ]
+     },
+     "benignHigh": {
+      "k": 2,
+      "n": 22,
+      "pct": 9.1,
+      "ci95": [
+       2.5,
+       27.8
+      ]
+     }
+    },
+    "babulal": {
+     "riskyWarned": {
+      "k": 21,
+      "n": 28,
+      "pct": 75,
+      "ci95": [
+       56.6,
+       87.3
+      ]
+     },
+     "fraudHigh": {
+      "k": 15,
+      "n": 20,
+      "pct": 75,
+      "ci95": [
+       53.1,
+       88.8
+      ]
+     },
+     "benignWarned": {
+      "k": 3,
+      "n": 22,
+      "pct": 13.6,
+      "ci95": [
+       4.7,
+       33.3
+      ]
+     },
+     "benignHigh": {
+      "k": 2,
+      "n": 22,
+      "pct": 9.1,
+      "ci95": [
+       2.5,
+       27.8
+      ]
+     }
+    },
+    "praveen": {
+     "riskyWarned": {
+      "k": 21,
+      "n": 27,
+      "pct": 77.8,
+      "ci95": [
+       59.2,
+       89.4
+      ]
+     },
+     "fraudHigh": {
+      "k": 17,
+      "n": 20,
+      "pct": 85,
+      "ci95": [
+       64,
+       94.8
+      ]
+     },
+     "benignWarned": {
+      "k": 3,
+      "n": 23,
+      "pct": 13,
+      "ci95": [
+       4.5,
+       32.1
+      ]
+     },
+     "benignHigh": {
+      "k": 2,
+      "n": 23,
+      "pct": 8.7,
+      "ci95": [
+       2.4,
+       26.8
+      ]
+     }
+    },
+    "any": {
+     "riskyWarned": {
+      "k": 22,
+      "n": 27,
+      "pct": 81.5,
+      "ci95": [
+       63.3,
+       91.8
+      ]
+     },
+     "fraudHigh": {
+      "k": 14,
+      "n": 20,
+      "pct": 70,
+      "ci95": [
+       48.1,
+       85.5
+      ]
+     },
+     "benignWarned": {
+      "k": 3,
+      "n": 23,
+      "pct": 13,
+      "ci95": [
+       4.5,
+       32.1
+      ]
+     },
+     "benignHigh": {
+      "k": 3,
+      "n": 23,
+      "pct": 13,
+      "ci95": [
+       4.5,
+       32.1
+      ]
+     }
+    }
+   },
+   "byLanguage": {
+    "hi": {
+     "riskyWarned": {
+      "k": 31,
+      "n": 40,
+      "pct": 77.5,
+      "ci95": [
+       62.5,
+       87.7
+      ]
+     },
+     "fraudHigh": {
+      "k": 23,
+      "n": 30,
+      "pct": 76.7,
+      "ci95": [
+       59.1,
+       88.2
+      ]
+     },
+     "benignWarned": {
+      "k": 2,
+      "n": 30,
+      "pct": 6.7,
+      "ci95": [
+       1.8,
+       21.3
+      ]
+     },
+     "benignHigh": {
+      "k": 2,
+      "n": 30,
+      "pct": 6.7,
+      "ci95": [
+       1.8,
+       21.3
+      ]
+     }
+    },
+    "en": {
+     "riskyWarned": {
+      "k": 29,
+      "n": 35,
+      "pct": 82.9,
+      "ci95": [
+       67.3,
+       91.9
+      ]
+     },
+     "fraudHigh": {
+      "k": 20,
+      "n": 25,
+      "pct": 80,
+      "ci95": [
+       60.9,
+       91.1
+      ]
+     },
+     "benignWarned": {
+      "k": 5,
+      "n": 25,
+      "pct": 20,
+      "ci95": [
+       8.9,
+       39.1
+      ]
+     },
+     "benignHigh": {
+      "k": 3,
+      "n": 25,
+      "pct": 12,
+      "ci95": [
+       4.2,
+       30
+      ]
+     }
+    },
+    "hinglish": {
+     "riskyWarned": {
+      "k": 22,
+      "n": 29,
+      "pct": 75.9,
+      "ci95": [
+       57.9,
+       87.8
+      ]
+     },
+     "fraudHigh": {
+      "k": 15,
+      "n": 20,
+      "pct": 75,
+      "ci95": [
+       53.1,
+       88.8
+      ]
+     },
+     "benignWarned": {
+      "k": 4,
+      "n": 31,
+      "pct": 12.9,
+      "ci95": [
+       5.1,
+       28.9
+      ]
+     },
+     "benignHigh": {
+      "k": 4,
+      "n": 31,
+      "pct": 12.9,
+      "ci95": [
+       5.1,
+       28.9
+      ]
+     }
+    },
+    "mixed": {
+     "riskyWarned": {
+      "k": 6,
+      "n": 6,
+      "pct": 100,
+      "ci95": [
+       61,
+       100
+      ]
+     },
+     "fraudHigh": {
+      "k": 5,
+      "n": 5,
+      "pct": 100,
+      "ci95": [
+       56.6,
+       100
+      ]
+     },
+     "benignWarned": {
+      "k": 0,
+      "n": 4,
+      "pct": 0,
+      "ci95": [
+       0,
+       49
+      ]
+     },
+     "benignHigh": {
+      "k": 0,
+      "n": 4,
+      "pct": 0,
+      "ci95": [
+       0,
+       49
+      ]
+     }
+    }
+   }
+  }
+ },
+ "paired": {
+  "fraudWarned": {
+   "n": 80,
+   "both": 66,
+   "only33": 0,
+   "only35": 4,
+   "neither": 10,
+   "pTwoSided": 0.125
+  },
+  "fraudHigh": {
+   "n": 80,
+   "both": 53,
+   "only33": 1,
+   "only35": 10,
+   "neither": 16,
+   "pTwoSided": 0.0117
+  },
+  "riskyWarned": {
+   "n": 110,
+   "both": 81,
+   "only33": 1,
+   "only35": 7,
+   "neither": 21,
+   "pTwoSided": 0.0703
+  },
+  "benignWarned": {
+   "n": 90,
+   "both": 8,
+   "only33": 2,
+   "only35": 3,
+   "neither": 77,
+   "pTwoSided": 1
+  },
+  "benignHigh": {
+   "n": 90,
+   "both": 7,
+   "only33": 2,
+   "only35": 2,
+   "neither": 79,
+   "pTwoSided": 1
+  }
+ },
+ "shipRuleWrittenBeforeScoring": "Checker 3.5 replaces 3.3 only if, on blind-v9: (1) fraud warned 3.5 >= 3.3 and fraud-or-suspicious warned 3.5 > 3.3; and (2) ordinary messages warned 3.5 <= 3.3 and ordinary messages at High 3.5 <= 3.3.",
+ "shipRuleResult": {
+  "fraudWarnedNotLower": true,
+  "riskyWarnedHigher": true,
+  "ordinaryWarnedNotHigher": false,
+  "ordinaryHighNotHigher": true,
+  "allHeld": false
+ },
+ "decision": "The rule did not fully hold: checker 3.5 warned on 11 of 90 ordinary messages against 10 for 3.3 (one more, at Caution; paired McNemar p = 1), with the same number at High (9 each). The owner decided on 2 October 2026 to ship checker 3.5 anyway, because fraud at High rose from 67.5% to 78.8% (paired McNemar p = 0.0117) and fraud warned from 82.5% to 87.5%, with no rise in ordinary messages at High. This is a recorded deviation from the rule written before scoring.",
+ "targets": [
+  {
+   "target": "fraud warned >= 85%",
+   "checker35": "87.5% (70/80) [78.5–93.1]",
+   "met": true,
+   "goal": 85
+  },
+  {
+   "target": "subtle fraud (marked hard by the writer) warned >= 70%",
+   "checker35": "72% (18/25) [52.4–85.7]",
+   "met": true,
+   "goal": 70
+  },
+  {
+   "target": "ordinary messages warned <= 8%",
+   "checker35": "12.2% (11/90) [7–20.6]",
+   "met": false,
+   "goal": 8
+  }
+ ],
+ "limits": "Synthetic messages written by an AI agent, not real user messages. 200 messages give wide intervals (see ci95). The subtle-fraud measure has 25 messages."
+}

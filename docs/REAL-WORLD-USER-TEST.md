@@ -105,7 +105,7 @@ Every ordinary message that was flagged was a tricky look-alike. The biggest rem
 ## Release 3.5
 
 - **Result:** 92 fully right, 8 partly right, 0 wrong (14/14 checks). The per-persona results are in [`Real-World-User-Test.json`](../evidence/Real-World-User-Test.json).
-- **Checker:** Release 3.5 ships checker 3.3, unchanged from Release 3.4 (its blind-v8 results are in the [validation](Validation-v3.md)).
+- **Checker:** Release 3.5 ships checker 3.5; its one-time result on the fresh sealed set blind-v9 is in the [validation](Validation-v3.md). The 100 personas were run again with it: 92 fully right, 8 partly right, 0 wrong (14/14 checks).
 
 ## Still open
 

@@ -1,6 +1,6 @@
 # Niveshak Saathi: validation
 
-**Build checked:** Release 3.5, on 2 October 2026: 665,738 bytes (192,213 with gzip), SHA-256 `1B279AD5001812454D75C390AC99C899142ABC0804A5E01D30DE10CA948A5C23`. The live link (https://himanshi252005.github.io/Niveshak-Saathi/) serves this build; a second copy on the earlier host still serves the first Release 3.5 build ([delivery status](Delivery-Status.md)).
+**Build checked:** Release 3.5, on 2 October 2026: 760,824 bytes (222,032 with gzip), SHA-256 `244FAD4E8B28C47CA2BCC4BFE5E350E1C877BB64E8BBFD8BFFB544383C73B32C`. The live link (https://himanshi252005.github.io/Niveshak-Saathi/) serves this build; a second copy on the earlier host still serves the first Release 3.5 build ([delivery status](Delivery-Status.md)).
 
 **How to read this page**
 - Every accuracy figure comes from synthetic messages or AI-written personas. None comes from real users.
@@ -8,7 +8,7 @@
 - Results marked "internal" come from test runs whose scripts or logs are not yet in this repository. The published records are in [`evidence/`](../evidence/), and the published test kits are in [`evaluation/`](../evaluation/).
 - Release 3.4 and earlier results are history, kept so that each release can be compared with the one before.
 
-**Evidence records:** [`Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json) for this release; the earlier [`Release-3.4-Verification.json`](../evidence/Release-3.4-Verification.json) and [`Release-3.3-Verification.json`](../evidence/Release-3.3-Verification.json); `Browser-Validation.json`, `Rule-Evaluation.json` and `Real-World-User-Test.json` (the 100-persona simulated test); and the sealed-set records: the blind-v9 record for Release 3.5, `Blind-Evaluation-v8.json`, `Blind-Evaluation-v6.json` and `Blind-Evaluation.json` (blind-v3, v4 and v5).
+**Evidence records:** [`Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json) for this release; the earlier [`Release-3.4-Verification.json`](../evidence/Release-3.4-Verification.json) and [`Release-3.3-Verification.json`](../evidence/Release-3.3-Verification.json); `Browser-Validation.json`, `Rule-Evaluation.json` and `Real-World-User-Test.json` (the 100-persona simulated test); and the sealed-set records: `Blind-Evaluation-v9.json` for Release 3.5, `Blind-Evaluation-v8.json`, `Blind-Evaluation-v6.json` and `Blind-Evaluation.json` (blind-v3, v4 and v5).
 
 ## What changed in Release 3.5
 
@@ -23,24 +23,44 @@
 - **Privacy notes.** The app's privacy note now names the host it was opened from: on the live link it says GitHub Pages sets no cookies; on any other host it says the host may set its own; in the offline copy it says there is no host. The documents name the three cookies the earlier host sets (`__Host-appgarden-visitor`, 90 days; `cf_clearance`, 365 days; `__cf_bm`, about 30 minutes) instead of "one short-lived security cookie". The app itself still sets and reads none ([privacy](../PRIVACY.md)).
 - **Public-good files:** an MIT licence for the code, CC BY 4.0 for original text, reuse terms, a security policy and a privacy page.
 - **Simpler menu:** six everyday pages stay in the menu (Home, Check a message, Before you pay, Get help now, Where to complain, Rights and help); the other four sit under "More pages", which opens by itself when one of them is in use.
-- **Input without typing:** a "Paste the message" button fills the check box in one tap from a message copied in WhatsApp or SMS, and the message box, the "Get help now" box and the complaint box say that the phone keyboard's microphone can be used; text boxes tell the keyboard which language to expect. The app adds no speech service of its own.
+- **Input without typing:** a "Paste the message" button fills the check box in one tap from a message copied in WhatsApp or SMS, and the message box, the "Get help now" box and the complaint box say that the phone keyboard's microphone can be used; text boxes tell the keyboard which language to expect. For a message that arrived as a picture, a tip explains how to copy its words with the phone's gallery and paste them. The app adds no speech or image reading of its own.
 - **Open fitting:** the script that fitted the checker's weights is published with its input table (categories found and label per message, no message text); it reproduces the shipped weights and thresholds exactly (`evaluation/fit-weights.cjs`).
-- **Checker:** Release 3.5 ships checker 3.3 (unchanged from Release 3.4). Work on Hindi and Hinglish scams aimed at the three personas continues; the upgraded checker will be scored once on the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) when it is frozen.
+- **Checker 3.5:** Hindi, Hinglish and Devanagari patterns for the three personas' scams (advance fees on "approved" money, paid recovery agents, freeze and "digital arrest" threats, document and blank-cheque requests, IPO quotas, wrong-number openers, paid VIP tips), and fewer false alarms on warnings that quote scam lines. Weights and thresholds are unchanged. The developer cases grew from 449 to 796 (347 new cases, mostly fraud and ordinary pairs that differ in one detail; the 449 earlier cases are unchanged). Frozen before blind-v9 was scored once (below).
+- **Calmer Home:** four large choices first (a suspicious message, a request to pay, money already sent or an OTP shared, a complaint); rights, practice and family safety under "More help"; the three persona plans under one fold that names them; language help and the promises in one short line each.
 - **Unchanged decisions:** Hindi and English only, with users of other languages pointed to the official helplines that speak their language; the app saves nothing.
 
 ## Release 3.5 checks
 
-- **1,347 automated checks:** 23 release suites plus 449/449 developer-case expectations.
+- **1,705 automated checks:** 23 release suites plus 796/796 developer-case expectations.
 - **Browser journeys:** 130/130 in each of 3 runs.
 - **100-persona simulated test** (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
 - **Official links:** every official link re-opened by the integrated suite (C-12: 13/13 checks passed).
-- **Size and speed:** 665,738 bytes (192,213 with gzip); Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s. Timings vary with the load on the test computer: the first Release 3.5 build measured 4.9 s on a quieter run, and when the two builds were timed side by side in one session the refined build was not slower (Slow 3G: Hindi screen 2.4 s against 2.8 s, Home usable 8.0 s against 9.0 s).
+- **Size and speed:** 760,824 bytes (222,032 with gzip); Home usable in 7.5 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.7 s. Timings vary with the load on the test computer (the first Release 3.5 build measured 4.9 s on a quieter run). Checker 3.5 adds 29,819 bytes to the gzip download, about 0.6 s on "Slow 3G"; running its code at start-up takes about 47 ms on a 6x slower CPU, against 23 ms for checker 3.3 (internal measurement).
 
-### Fresh sealed set (blind-v9)
+### Fresh sealed set (blind-v9), scored once
 
-Written by a separate AI agent on 2 October 2026 for the upgraded checker and sealed: 200 messages (80 fraud, 30 suspicious, 90 ordinary), SHA-256 `D5A59F9B9620903EE6399B9B90164407BD0CF927FFB8D74D8EA7BAB9D2567B22`. Only its counts have been checked. It will be scored once, when the upgraded checker is frozen. Release 3.5 itself ships checker 3.3, whose blind-v8 results are below.
+- **Who wrote it:** a separate AI agent, on 2 October 2026, before checker 3.5 was frozen. 200 messages: 80 fraud (25 subtle), 30 suspicious and 90 ordinary (50 tricky look-alikes, 40 everyday). Hindi 70, Hinglish 60, English 60, mixed 10. Sealed with SHA-256 `D5A59F9B9620903EE6399B9B90164407BD0CF927FFB8D74D8EA7BAB9D2567B22`; only its counts were checked before scoring.
+- **How it was scored:** checker 3.5 was frozen at 22:36 IST; the ship rule was written down; then each checker was scored exactly once. `evaluation/score-blind.cjs` reproduces every number below.
 
-Once inspected, this set becomes development data. The next checker change needs another fresh set.
+| Measure | Checker 3.3 | Checker 3.5 (shipped) | Paired test |
+|---|---:|---:|---|
+| Fraud warned (target ≥85%) | 82.5% [72.7–89.3] | 87.5% [78.5–93.1] | 3.5 caught 4 more, 3.3 0 more; p = 0.125 |
+| Fraud at High | 67.5% [56.6–76.8] | 78.8% [68.6–86.3] | 10 against 1; p = 0.0117 |
+| Subtle fraud warned (target ≥70%) | 15/25 | 18/25 = 72% [52.4–85.7] | |
+| Suspicious warned | 53.3% [36.1–69.8] | 60% [42.3–75.4] | |
+| Fraud or suspicious warned | 74.5% [65.7–81.8] | 80% [71.6–86.4] | 7 against 1; p = 0.0703 |
+| Ordinary messages warned (target ≤8%) | 11.1% [6.1–19.3] | 12.2% [7–20.6] | 3 against 2; p = 1 |
+| Ordinary messages at High | 10% [5.4–17.9] | 10% [5.4–17.9] | 2 against 2; p = 1 |
+| Everyday ordinary messages warned | 1/40 | 1/40 | |
+
+**By persona** (checker 3.5, fraud or suspicious warned; 3.3 in brackets): Praveen 77.8% (74.1%), Kavita 85.7% (82.1%), Babulal 75% (67.9%). **By language:** Hindi 77.5% (72.5%), Hinglish 75.9% (69%), English 82.9% (80%).
+
+**Reading the results**
+- **Targets:** fraud warned ≥85% and subtle fraud warned ≥70% were met; ordinary messages warned ≤8% was missed (12.2%). Checker 3.3 missed all three on this set too.
+- **The ship rule and the deviation:** the rule written before scoring said checker 3.5 ships only if fraud warned does not fall, fraud or suspicious warned rises, and ordinary messages warned and at High do not rise. All held except one: ordinary messages warned rose by one message (at Caution). The owner shipped checker 3.5 because fraud at High improved significantly with no rise at High in ordinary messages. The record states the deviation ([`Blind-Evaluation-v9.json`](../evidence/Blind-Evaluation-v9.json)).
+- **Where it still fails:** wrong-number and "classroom" openers, a fake helpline asking for remote access, an advance fee to transfer old shares, a romance-crypto platform, a reward-points link and a fake debit alert got no warning. Ordinary messages at High were mostly awareness warnings that quote scam lines, and genuine notices (an IEPF refund, a broker withdrawal, a branch KYC call, an LPG booking, a small-savings deposit).
+- **Before blind-v9 (internal):** on a fresh set of 150 messages never used for tuning, checker 3.5 raised fraud at High from 48.0% to 66.7% and cut ordinary messages flagged from 34.0% to 26.0%. On its development sets it is near 100%, which is in-sample and not a fair estimate.
+- This set has now been inspected, so it is development data. The next checker change needs another fresh set.
 
 ## Release 3.4 results (history)
 
@@ -150,12 +170,12 @@ These are synthetic-message results, not evidence of nationwide accuracy or avoi
 
 ## Known limits
 
-- **Checker:** many subtle scams are still missed (blind-v8: 5 of 25 subtle frauds), especially those aimed at older investors. Detection depends on word lists, so new colloquial Hindi and Hinglish phrasings can be missed. Release 3.5's result is the blind-v9 table above.
+- **Checker:** on blind-v9, 10 of 80 frauds and 7 of 25 subtle frauds got no warning, and 12.2% of ordinary messages got one. Detection depends on word lists, so new colloquial Hindi and Hinglish phrasings can be missed.
 - **Languages:** Hindi and English only. Messages in other languages get an "outside coverage" note, never a safe verdict, and users are pointed to official helplines that speak their language. Some English words still appear on Hindi screens; native review is pending.
-- **No voice or image input inside the app:** voice works through the phone keyboard's microphone; read-aloud needs a voice installed on the phone.
+- **No voice or image reading inside the app:** voice works through the phone keyboard's microphone, and the words of a message in a picture can be copied with the phone's gallery and pasted; read-aloud needs a voice installed on the phone.
 - **Nothing is saved, by design:** a user who wants to keep the Family asset map, a guide or a packet must download it.
 - **Offline use** needs one "Save offline copy"; there is no installable app or service worker.
-- **Sources:** sources not yet confirmed by the named reviewer show "review pending" (29 in Release 3.5).
+- **Sources:** sources not yet confirmed by the named reviewer show "review pending" (29 in Release 3.5). An automated pre-check on 2 October 2026 (an AI assistant reading each official page; internal, not a review) found the supporting words on 20 of them and part of them on 2; 7 pages refused automated reading; no app text was contradicted by a page it read.
 - **Hosting:** the live link is GitHub Pages (HTTPS with HSTS, gzip, a ten-minute browser cache, no cookies). The second copy's host sends no security headers or cache validators, so every visit there downloads the whole page again ([scale plan](SCALE-AND-RELIABILITY.md)). RBI's website may show a language chooser first, so an RBI link can need a second tap.
 - **Missing content:** MF Central and DigiLocker are not covered, because their official text could not be verified.
 - **Unpublished scripts:** most release suites run from the team's working folder; their results are in the release records, but their scripts are not yet in this repository. The published kits are the sealed-set scorer, the developer cases, the 100-persona test and the weight-fitting script with its feature table, which reproduces the shipped weights exactly.
