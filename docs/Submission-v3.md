@@ -22,7 +22,7 @@ A working prototype: one self-contained HTML file that runs in a phone or deskto
 |---|---|
 | Download [`prototype/dist/index.html`](../prototype/dist/index.html) and open it in Chrome or Edge | **Release 3.5**, with every feature on this page |
 | [Live link](https://himanshi252005.github.io/Niveshak-Saathi/) | **Release 3.5**, including Rights and help, Family asset map, rights cards and step-by-step guides |
-| Demo video | being recorded; the link will be added here when it is published |
+| [Demo video](https://himanshi252005.github.io/Niveshak-Saathi/demo/) | 4:37, recorded from Release 3.5 with fictional data; English and Hindi captions |
 
 - **Language:** the app opens in Hindi. To switch to English, use the language menu at the top right.
 - **Home** asks one question, "What do you need help with?", with four large choices in everyday words. "More help" opens rights, practice and family safety, and one fold holds the three persona plans.
@@ -78,7 +78,7 @@ One private journey, from a suspicious message to the right official action. Eve
    - SCORES: within one year, reviews within 15 days, SMART ODR at any point;
    - Insurance Ombudsman: within one year; PFRDA's levels for pensions.
 
-   Each button carries a one-line hint, and routes show sourced "Also check" tips: police or the State Economic Offences Wing and RBI Sachet for chit, deposit and Ponzi schemes; RBI UDGAM, SEBI MITRA and IRDAI Bima Bharosa for unclaimed money; frozen accounts after a cyber complaint; loan-app harassment; unexplained monthly debits. A bank, insurance or pension complaint is never sent to SEBI, and "Not sure" never guesses. **New in Release 3.5:** each route links to its step-by-step guide.
+   Each button carries a one-line hint, and routes show sourced "Also check" tips: police or the State Economic Offences Wing and RBI Sachet for chit, deposit and Ponzi schemes; RBI UDGAM, SEBI MITRA and IRDAI Bima Bharosa for unclaimed money; frozen accounts after a cyber complaint; loan-app harassment; unexplained monthly debits. A bank, insurance or pension complaint is never sent to SEBI, and "Not sure" never guesses. **New in Release 3.5:** seven of the ten routes link to the matching step-by-step guide.
 5. **Prepare a complaint (private Action Packet).**
    - The complaint essentials are checked.
    - OTPs, PINs, passwords, CVVs and card numbers are found, including Hindi digits, invisible characters and SMS phrasing. They block saving until masked, and masking can be undone.
@@ -86,7 +86,7 @@ One private journey, from a suspicious message to the right official action. Eve
 
 ### Know your rights (new in Release 3.5)
 
-6. **Rights and help.** Home card "अपने अधिकार जानें / Know your rights"; in the menu, "अधिकार और मदद / Rights and help".
+6. **Rights and help.** Home card "अपने अधिकार जानें / Know your rights" (under "More help"); in the menu, "अधिकार और मदद / Rights and help".
    - **Free official helplines that speak regional languages:**
      - SEBI 1800-266-7575 or 1800-22-7575: English, Hindi, Marathi, Gujarati, Tamil, Bengali and Telugu; 9 am–6 pm, except Sundays and Maharashtra public holidays;
      - RBI Contact Centre 14448: English, Hindi and ten regional languages; it explains how to complain but cannot take a complaint;
@@ -164,7 +164,7 @@ Nothing is sent. Downloads stay on the device.
 - **Safety floors:** once recognised, a release fee, a credential request, a fee-charging recovery offer, and a threat that comes with a payment demand, a link to click or an order to talk to an "officer" (as in "digital arrest") always give High.
 - **Five reliability states:** strong warning agreement, several signs agree, one sign, outside language coverage, and insufficient evidence. The last two abstain; no state calls a message safe.
 - **Insights:** compounded return maths, link analysis (shorteners, app files, bare IP addresses, lookalike addresses) and masked payee details.
-- **Speed:** fully on the device. Checker 3.5 takes about 0.4 ms for an ordinary message on the test computer (internal benchmark, about 1.8 times checker 3.3); an unusual long input can take about 0.1 s the first time.
+- **Speed:** fully on the device. Checker 3.5 takes about 0.4 ms for an ordinary message on the test computer (internal benchmark, about 1.8 times checker 3.3); an unusual long input can take about 0.1–0.2 s the first time.
 
 **Checker in Release 3.5:** checker 3.5. It adds Hindi, Hinglish and Devanagari patterns for the three personas' scams: advance fees on money said to be "approved" or "unclaimed", paid agents for old shares and IEPF claims, freeze and "digital arrest" threats, requests for documents or a signed blank cheque, IPO quotas, wrong-number openers and paid VIP tips. It also stops flagging many warnings that only quote scam lines. Weights and thresholds are unchanged. It was frozen before the fresh sealed set blind-v9 was scored once (below).
 
@@ -204,7 +204,7 @@ Full tables, by language and persona: [Validation](Validation-v3.md).
 
 ### Technical evidence
 
-**Release 3.5:** 1,705 automated checks (23 release suites plus 796/796 developer-case expectations); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 92 fully right, 8 partly right, 0 wrong (14/14 checks); official links every official link re-opened by the integrated suite (C-12: 13/13 checks passed); 760,824 bytes (222,032 with gzip); Home usable in 7.5 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.7 s.
+**Release 3.5:** 1,705 automated checks (23 release suites plus 796/796 developer-case expectations; two suites' counts come from the test logs, see the [validation](Validation-v3.md)); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 92 fully right, 8 partly right, 0 wrong (14/14 checks); official links re-requested with none missing or failing (C-12: 13/13 checks passed; a page that refuses automated clients is confirmed in a browser); 760,824 bytes (222,032 with gzip); Home usable in 7.0 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 12 s.
 
 **Release 3.4 (history).** Rows marked "internal" come from test runs whose scripts and logs are not yet in this repository.
 
@@ -228,23 +228,23 @@ All 22 Release 3.4 suites (848 checks) plus the 449 developer-case expectations 
 
 ## S.05 Demonstration
 
-**Video:** being recorded; the link will be added here when it is published. The brief asks for 3–5 minutes; the script below runs about 4 minutes 30 seconds. It is recorded on Release 3.5 on a phone-sized screen, with Hindi screens and English subtitles, using fictional data only. No helpline is called and no complaint is filed.
+**Video:** [watch it here](https://himanshi252005.github.io/Niveshak-Saathi/demo/) (4 min 37 s; the brief asks for 3–5 minutes). It was recorded automatically from the Release 3.5 build, the same file as the live link, on a phone-sized screen, with English and Hindi captions, using fictional data only. No helpline is called and no complaint is filed.
 
 | Time | Who and where | What it shows |
 |---|---|---|
-| 0:00–0:20 | Kavita, Home | A WhatsApp "VIP group" promises a guaranteed IPO allotment and asks her to pay a UPI ID today. Home in Hindi; the language menu at the top right |
-| 0:20–0:55 | Check a message | The Hindi example: High risk, the reasons (guaranteed return, fake IPO allotment, chat group, pressure), "10% a month" in plain numbers; "Warn my family" |
-| 0:55–1:25 | Before you pay | IPO, a group and the UPI ID `profitking.demo@ybl`: STOP, because everyone applies for an IPO through ASBA and nobody can sell an allotment, and SEBI warns about "VIP" groups. Then a broker's own app and `abc.brk@validhdfc`: VERIFY, with the "@valid" rule and SEBI Check |
-| 1:25–1:55 | Get help now | "maine UPI se 5000 bhej diye aur OTP bhi bata diya", dictated with the keyboard's microphone; the answers fill in; the plan puts the bank and 1930 first. 1930 is not dialled |
-| 1:55–2:20 | Where to complain | Bank → the RBI 30-day and 90-day rule → the linked step-by-step guide for the RBI Ombudsman |
-| 2:20–3:00 | Babulal, Rights and help | The free helplines and their languages; the IEPF-5 guide: each step's official source, "no agent is needed", the tick-only paper list, "Download this guide" |
-| 3:00–3:35 | Babulal, Family asset map | Two rows (a bank account; demat shares with "No nominee"). Typing a number in the name field blocks saving. The next-step button "How to add a nominee for shares and mutual funds" opens the nominee guide. Download the list; "nothing is saved" |
-| 3:35–3:55 | Praveen, Check a message | A Telegram F&O tip: High risk and SEBI's F&O loss study card |
-| 3:55–4:15 | Offline | Network off: the saved copy checks a message again; "How the risk level was decided" |
-| 4:15–4:30 | Close | Synthetic tests only, misses published, no real users yet; next step: a consented pilot |
+| 0:00–0:08 | Title | A Hindi-first investor-safety and grievance companion: one offline file; nothing leaves the phone |
+| 0:08–0:47 | Kavita, Check a message | A WhatsApp "pakka IPO allotment" offer: High risk with six warning signs explained in Hindi, and the promised 20% a month in plain numbers |
+| 0:47–1:15 | Kavita, Before you pay | IPO, asked in a WhatsApp group, to a UPI ID: STOP, because IPOs are applied for only through ASBA; SEBI's "@valid" UPI IDs |
+| 1:15–1:43 | Kavita, Get urgent help | What if she had already paid: she types what happened in Roman Hindi, the answers fill in, and the plan puts the bank and 1930 first (no call is made) |
+| 1:43–2:14 | Kavita, Where to complain | The bank first, then the RBI Ombudsman after 30 days; the step-by-step guide with official sources; the free helplines |
+| 2:14–2:47 | Babulal, old shares | The company or its registrar first, then the IEPF-5 guide with its tick-only paper list; no agent is needed |
+| 2:47–3:18 | Babulal, Family asset map | A mutual fund by name only, nominee "not sure", and the link to the nominee guide |
+| 3:18–3:52 | Praveen, Check a message (English) | A Telegram F&O tip that pushes borrowing: High risk and SEBI's study card |
+| 3:52–4:23 | Offline and trust | Network off: an ordinary message gets no warning but "not proof of safety"; sources, privacy and the version line |
+| 4:23–4:37 | What the tests show | blind-v9 fraud warned 87.5%; 1,705 engineering checks; synthetic tests only; next step: a pilot with real, consenting users |
 
-**Operator script** (fictional inputs only)
-1. Clear the session (More tools). On Home, choose "Got a suspicious message?", press "See example" in Hindi, then Check. Show the verdict, the reasons, "How the risk level was decided" and "Warn my family".
+**Operator script for a live demonstration** (fictional inputs only)
+1. Clear the session (More tools). On Home, choose "Got a suspicious message?", press "Try a suspicious example" ("संदिग्ध उदाहरण देखें" in Hindi), then Check. Show the verdict, the reasons, "How the risk level was decided" and "Warn my family".
 2. Open "Before you pay". Choose IPO, a group and a UPI ID, and enter `profitking.demo@ybl`: STOP. Then choose a trading app, "my own broker's app" and `abc.brk@validhdfc`: VERIFY, with SEBI Check and the green-triangle sign.
 3. Press "Get urgent help" in the top bar, type the Roman-Hindi sentence above, press "Fill in the answers for me" and show the plan. Do not call 1930.
 4. In "Where to complain", choose Bank, then "complained" and "waiting". Show the RBI rule, then open the step-by-step guide.
@@ -279,10 +279,10 @@ These are the mechanisms. None has yet been measured with real users.
 
 ### How it scales in Tier-2 and Tier-3 India
 
-- **Small and phone-first:** one 760,824-byte file, 222,032 bytes when served with gzip; Home usable in 7.5 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.7 s. Once saved, it works with no network at all.
+- **Small and phone-first:** one 760,824-byte file, 222,032 bytes with gzip (GitHub Pages sent 230,832 on 2 October 2026); Home usable in 7.0 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 12 s. Once saved, it works with no network at all.
 - **Spreads without accounts:** the link or the file can be forwarded on WhatsApp, and "Warn my family" spreads warnings without tracking anyone.
 - **Language reach without unreviewed translation:** Hindi first, English one tap away. Users of other languages are pointed to official helplines that speak their language: SEBI in seven languages, RBI 14448 in English, Hindi and ten regional languages, and IRDAI in Hindi, English and other major languages.
-- **No cost per user:** no servers, accounts, message database or inference. At Release 3.4's size, 16 crore one-time downloads would be about 26.4 TB before caching. That is a planning figure, not a load test ([scale plan](SCALE-AND-RELIABILITY.md)).
+- **No cost per user:** no servers, accounts, message database or inference. At Release 3.5's size (222,032 bytes with gzip), 16 crore one-time downloads would be about 35.5 TB before caching. That is a planning figure, not a load test ([scale plan](SCALE-AND-RELIABILITY.md)).
 - **Maintained by content owners, not programmers:** the Owner Studio edits and validates every bilingual text and source; each source carries a review date.
 - **Distribution:** investor-awareness programmes, community volunteers and families could share the file. No partner has been signed.
 - **Remaining real costs:** source review, native-language review, device and accessibility testing, and support.
@@ -290,7 +290,7 @@ These are the mechanisms. None has yet been measured with real users.
 ### Measuring it
 
 - **Built in:** a facilitator Pilot session (More tools, on a link ending in `?pilot=1`) that reads the consent script, times six fictional scenarios, records the scores and downloads anonymous rows in the exact `Pilot-Results.csv` columns.
-- **Ready to run:** 24 consenting adults across the three personas, with matched tasks: official pages first versus the app first ([Operations and pilot kit](Operations-and-Pilot-Kit.md)).
+- **Ready to run:** a protocol for 24 consenting adults, 8 per persona (none recruited yet), with matched tasks: official pages first versus the app first ([Operations and pilot kit](Operations-and-Pilot-Kit.md)).
 - **Targets, not results:** at least 80% correct routes, at least 90% understanding that "no known signs" is not proof of safety, at least 80% completion without help, and at least 30% lower median time to the next action. `Pilot-Results.csv` is blank; no participant data has been invented.
 
 **Not yet proven:** avoided fraud or loss, real-user understanding, native-speaker quality of the Hindi, and performance at national traffic.
@@ -300,8 +300,8 @@ These are the mechanisms. None has yet been measured with real users.
 | Criterion (weight) | What the product does | Evidence | Not yet proven |
 |---|---|---|---|
 | **Resilience & Safety Impact (30%)** | STOP before paying; message check; bank and 1930 first; the right office with time limits; sourced guides; Family asset map | Sealed set blind-v9, scored once: checker 3.5 warned 87.5% of fraud (3.3: 82.5%) and 72% of subtle fraud; complaint-route test 39/40 main authority (Release 3.4, internal) | No real-user outcome study; money saved not measured; 10 of 80 frauds missed and 12.2% of ordinary messages warned on blind-v9 |
-| **Tier-2/3 Usability (25%)** | Hindi first, English one tap away; large choices in everyday words; a six-page menu; Paste button and keyboard-microphone tips instead of typing; persona plans; read-aloud; large text; offline copy; official helplines in regional languages | Every page fits 320–390-pixel phones in both languages (Release 3.4); 222,032 bytes to download with gzip; Home usable in 7.5 s on an emulated slow connection (gzip) | Native Hindi review; physical low-end phones; only two languages in the app; voice input only through the phone keyboard's microphone |
-| **Guardrails & Trust (15%)** | No commerce or tips; nothing saved or sent; every step sourced and dated, with "review pending" where the reviewer has not confirmed; in-page security policy; uncertainty shown | Privacy and security checks; no network requests in tested journeys | Independent security audit; confirmation of pending sources |
+| **Tier-2/3 Usability (25%)** | Hindi first, English one tap away; large choices in everyday words; a six-page menu; Paste button and keyboard-microphone tips instead of typing; persona plans; read-aloud; large text; offline copy; official helplines in regional languages | Every page fits 320–390-pixel phones in both languages (app layout suite C-18, 36/36 in Release 3.5); about 231 KB to download (gzip, live link); Home usable in 7.0 s on an emulated slow connection (gzip) | Native Hindi review; physical low-end phones; only two languages in the app; voice input only through the phone keyboard's microphone |
+| **Guardrails & Trust (15%)** | No commerce or tips; nothing saved or sent; every step sourced and dated, with "review pending" where the reviewer has not confirmed; in-page security policy; uncertainty shown | Privacy and security checks; no network request in tested journeys except the app's own page for "Save offline copy" and "Share this app" | Independent security audit; confirmation of pending sources |
 | **Technical Execution (15%)** | Explainable on-device model with safety floors and abstention; keyword-based parser; validated, reproducible single-file build | Sealed sets with intervals; 1,705 automated checks | A consented, representative real-message corpus; colloquial Hindi coverage |
 | **Feasibility & Scalability (15%)** | Static file with no inference cost; Owner Studio; pilot kit; open licences | Transfer arithmetic; validated content pipeline | No load test, partner or pilot yet |
 
@@ -310,13 +310,13 @@ No judging score is guaranteed. The evidence above comes from automated checks, 
 ## Guardrails, privacy and governance
 
 - **No commerce:** no stock tips, broker or product promotion, commissions, ads, referrals or upsells. Unsolicited tips and "operator" calls are flagged as warning signs.
-- **No data access:** no SMS, inbox, contacts, documents or accounts are read. Voice input goes only through the phone's own keyboard; there is no in-app recording.
+- **No data access:** no SMS, inbox, contacts or accounts are read; the only file the app opens is a family list the user chooses to reopen. Voice input goes only through the phone's own keyboard; there is no in-app recording.
 - **Nothing saved:**
   - the app itself saves nothing and never sends what you type;
-  - the live link (GitHub Pages) sets no cookies, measured on 2 October 2026; a second copy on the earlier host sets three cookies of its own and adds a bot-check script. The app neither sets nor reads cookies, and the offline copy has none;
+  - the live link (GitHub Pages) sets no cookies, measured on 2 October 2026; a second copy on the earlier host (the first Release 3.5 build, with checker 3.3) sets three cookies of its own and adds a bot-check script. The app neither sets nor reads cookies, and the offline copy has none;
   - downloaded files stay on the device and must be deleted separately ([privacy](../PRIVACY.md)).
 - **Transparent about uncertainty:** "No known signs" never means safe; "Not sure" never guesses a regulator; Before you pay says it cannot confirm who owns an ID; the checker shows how it decided.
-- **Official sources:** 55 official sources are shown in the app, from SEBI, RBI, NPCI, IRDAI, IEPF, PFRDA, MHA/I4C, DoT (Sanchar Saathi), PIB and others. Each says exactly what it supports and when it was reviewed; the guidance snapshot is 2 October 2026 and the next review is due on 1 November 2026. 29 sources were checked against the official page during development but are not yet confirmed by the named reviewer, Himanshi Rathore, so the app shows them as "review pending". (In Release 3.4 and on the live link, every source showed her name, including 15 she had not yet confirmed.)
+- **Official sources:** 55 official sources are shown in the app, from SEBI, RBI, NPCI, IRDAI, IEPF, PFRDA, MHA/I4C, DoT (Sanchar Saathi), PIB and others. Each says exactly what it supports and when it was reviewed; the guidance snapshot is 2 October 2026 and the next review is due on 1 November 2026. 29 sources were checked against the official page during development but are not yet confirmed by the named reviewer, Himanshi Rathore, so the app shows them as "review pending". (In Release 3.4 every source showed her name, including 15 she had not yet confirmed.)
 - **Reviews:** before Release 3.0, three reviews by separate AI agents covered content accuracy and Hindi, complaint-packet privacy, and security and accessibility. Every advice-changing finding was checked against the official text before editing. The corrections included the RBI Ombudsman's 90-day filing window; the SCORES one-year limit and 15-day reviews; SMART ODR arbitration fees; UPI fraud going to the bank first; SEBI's 29 May 2026 nomination circular replacing the 2024 one; paper shares converted through a DP; an unverifiable claim about pension systems removed; and plainer Hindi.
 - **Locks in code:** links must be on official domains, and helpline numbers must be on an approved list (1930, 14448, 1800 266 7575, 1800 22 7575, 155255, 1800 425 4732, 14453). The build refuses anything else.
 - **Open and correctable:** code under MIT, original text under CC BY 4.0, with reuse terms that forbid ads, referrals, upsells, trading or account-opening funnels for any copy using the project's name ([CONTRIBUTING](../CONTRIBUTING.md)). Corrections go through GitHub Issues; security reports through [SECURITY](../SECURITY.md).

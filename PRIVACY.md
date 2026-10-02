@@ -14,13 +14,13 @@
 
 - No cookies, local storage or other browser storage. No accounts or sign-in.
 - No analytics, trackers, ads, third-party scripts or cloud AI of its own.
-- It never reads your SMS, OTPs, contacts, files, bank account or demat account.
+- It never reads your SMS, OTPs, contacts, bank account or demat account, and opens a file only when you choose a saved family list to reopen.
 - It never uploads what you type, the files you open or the files you download.
 - It does not file complaints or contact anyone for you.
 
 ## Cookies set by the host
 
-The live link (https://himanshi252005.github.io/Niveshak-Saathi/) is served by GitHub Pages, which sets no cookies (checked on 2 October 2026); like any web host, it may keep standard access logs. A second copy on the earlier host (Cloudflare) sets cookies of its own. On 2 October 2026 we measured three cookies there. That host sets them, not the app, and the app neither sets nor reads them:
+The live link (https://himanshi252005.github.io/Niveshak-Saathi/) is served by GitHub Pages, which sets no cookies (checked on 2 October 2026); like any web host, it may keep standard access logs. A second copy on the earlier host (Cloudflare), which serves the first Release 3.5 build with checker 3.3, sets cookies of its own. On 2 October 2026 we measured three cookies there. That host sets them, not the app, and the app neither sets nor reads them:
 
 | Cookie | Set by | Lifetime |
 |---|---|---|

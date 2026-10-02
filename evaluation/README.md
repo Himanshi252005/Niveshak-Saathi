@@ -46,11 +46,11 @@ The scorer prints aggregate metrics and never prints message text. The published
 
 The checker scores a message by adding one weight per warning category it finds, then turning the sum into a 0–1 score (logistic). The weights were fitted, not set by hand:
 - **Method:** L2-regularised logistic regression (λ = 1) with one 0/1 feature per category. Labels: fraud = 1, suspicious = 0.5, ordinary = 0. Messages the checker cannot read are left out.
-- **Data:** 1,083 readable messages: the developer cases plus the first two sealed sets (blind-v3 and blind-v4), after they had been scored once.
+- **Data:** 1,083 readable messages: the 449 developer cases of that time plus the first two sealed sets (blind-v3 and blind-v4), after they had been scored once.
 - **Rounding and thresholds:** weights are rounded to 0.5 so the score can be explained as a sum. The Caution threshold sits halfway between "no sign" and the weakest single sign. The High threshold, 0.65, was chosen by hand so that High means a safety floor, any two different signs or one strong sign.
 - **Versions:** the weights were fitted for model 3.2 (Release 3.2). Checkers 3.3 and 3.5 kept the same bias and weights and changed the rules that find the categories and trigger the safety floors. (Checker 3.3's `engine.js` labels the weights "3.2"; checker 3.5's labels them "3.5", with the same values.) The feature table records the categories checker 3.3 found in the training messages. A refit on checker 3.5's categories was tried and not adopted: its own threshold made any single moderate sign High, and at the shipped threshold it caught slightly fewer development frauds at High.
 
-[`fit-weights.cjs`](fit-weights.cjs) is the script, and [`fit-features.json`](fit-features.json) is its input: the categories found in each training message and its label, with no message text. This command reproduces the shipped weights and thresholds exactly (the release script refuses to publish if it does not):
+[`fit-weights.cjs`](fit-weights.cjs) is the script, and [`fit-features.json`](fit-features.json) is its input: the categories found in each training message and its label, with no message text. Given the hand-chosen High threshold of 0.65, this command reproduces the shipped weights and the Caution threshold exactly (the release script refuses to publish if it does not):
 
 ```text
 node fit-weights.cjs --features fit-features.json --lambda 1 --high 0.65 --out fit-report.json

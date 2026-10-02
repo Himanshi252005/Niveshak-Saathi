@@ -25,14 +25,14 @@
  "writtenBy": "A separate AI agent, before checker 3.5 was frozen; fictional messages only; validated by counts only until scoring.",
  "scoredOnce": {
   "date": "2026-10-02",
-  "by": "the team's sealed-set scorer; the published evaluation/score-blind.cjs reproduces these headline numbers",
+  "by": "the team's sealed-set scorer; the published evaluation/score-blind.cjs reproduces the headline rates (fraud warned with --out), but not the subtle-fraud, persona or paired-test figures",
   "reproduce": "node evaluation/score-blind.cjs prototype/engine.js evaluation/blind-v9.json",
   "note": "Each checker was scored exactly once. After this the set is development data and is published as evaluation/blind-v9.json."
  },
  "checkers": {
   "3.3": {
-   "role": "shipped in Releases 3.3 and 3.4, and in Release 3.5 until this score",
-   "engineSha256": "C967AF66599AB273E4DFA547A06618E533A191E517EDAA3BBCC5C7C0C834E0D6",
+   "role": "checker 3.3 as shipped in the first Release 3.5 build (the same detection as in Releases 3.3 and 3.4; only Hindi wording of the return maths differs)",
+   "engineSha256": "BD2A5667FA5C5EF2723D30902BA1ACCB8198140AAAB85E14AE8360178B9A47A9",
    "headline": {
     "riskyWarned": {
      "k": 82,

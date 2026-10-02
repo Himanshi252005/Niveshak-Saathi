@@ -11,7 +11,7 @@
   ],
   "checks": [
     "Hindi-first UI",
-    "Opens on the Home page with seven task choices (C-18, Release 3.5)",
+    "Opens on the Home page with four task choices and three more under \"More help\" (C-18, Release 3.5)",
     "Empty validation",
     "Hindi suspicious example: five or more signs and a High risk verdict",
     "Result translation",
@@ -146,23 +146,23 @@
   "htmlBytes": 760824,
   "htmlSha256": "244FAD4E8B28C47CA2BCC4BFE5E350E1C877BB64E8BBFD8BFFB544383C73B32C",
   "gzipBytes": 222032,
-  "simulatedLoadMs": 17895,
+  "simulatedLoadMs": 17566,
   "simulatedLoadRunsMs": [
-    17251,
-    17895,
-    18683
+    16981,
+    17566,
+    17639
   ],
-  "simulatedLoadMedianMs": 17895,
+  "simulatedLoadMedianMs": 17566,
   "simulatedLoadRangeMs": [
-    17251,
-    18683
+    16981,
+    17639
   ],
   "gzipServedLoadRunsMs": [
-    6760,
-    7522,
-    8129
+    7495,
+    7004,
+    7035
   ],
-  "gzipServedLoadMedianMs": 7522,
+  "gzipServedLoadMedianMs": 7035,
   "simulation": "3 runs at 400 ms latency; 50,000 bytes/sec throughput (~400 kbps); 4x CPU slowdown; uncompressed file unless stated. Desktop simulation, not a physical low-end phone.",
   "unvalidated": [
     "Real user impact",

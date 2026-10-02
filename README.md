@@ -13,7 +13,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | **Start here** | [`JUDGES.md`](JUDGES.md): one page with the S.01–S.06 map, Track B fit, evidence and limits |
 | **Live link** | **[Open Niveshak Saathi](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified **Release 3.5** build, in any phone or computer browser. No installation, account or server. To keep it offline, use "Save offline copy" in the app or download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") |
 | **Switch to English** | The app opens in Hindi. Use the language menu at the top right and choose "English" |
-| **Demo video (S.05)** | being recorded; the link will be added here when it is published |
+| **Demo video (S.05)** | **[Watch the demo](https://himanshi252005.github.io/Niveshak-Saathi/demo/)** (4:37; English and Hindi captions; recorded from this build with fictional data) |
 
 | Required item | Where to find it |
 |---|---|
@@ -21,7 +21,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | S.02 Problem definition | [Submission, S.02](docs/Submission-v3.md#s02-problem-definition) |
 | S.03 Solution | [Submission, S.03](docs/Submission-v3.md#s03-solution) |
 | S.04 Technology | [Submission, S.04](docs/Submission-v3.md#s04-technology); [Validation](docs/Validation-v3.md); [Scale and reliability](docs/SCALE-AND-RELIABILITY.md) |
-| S.05 Demonstration | Video being recorded; the link will be added here when it is published; [script](docs/Submission-v3.md#s05-demonstration) |
+| S.05 Demonstration | [Demo video](https://himanshi252005.github.io/Niveshak-Saathi/demo/); [timeline](docs/Submission-v3.md#s05-demonstration) |
 | S.06 Impact | [Submission, S.06](docs/Submission-v3.md#s06-impact) |
 
 **Version legend.** Release 3.5 is the newest build; it is on the live link (GitHub Pages) and in this repository. Release 3.4 was verified on 2 October 2026 but never deployed; its results are kept as history. The "checker" is the message checker inside the app: Release 3.4 kept checker 3.3; Release 3.5 ships checker 3.5, which adds Hindi and Hinglish patterns for the three personas' scams. The "-v3" in some document names is the documentation series, not the release.
@@ -34,7 +34,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | **Kavita, 39**, Tier-2 homemaker, not fluent in English | Ponzi and fake-IPO offers; intimidated by broking apps | Checks a Hindi message; Before you pay explains ASBA and "@valid" UPI IDs; warns her family |
 | **Babulal, 63**, retired, with old or dormant folios | Unaware of the nominee process; cannot navigate IEPF or SCORES | Follows the IEPF-5 and SCORES guides; lists the family's holdings and nominees in the Family asset map |
 
-Each person has a fixed safety plan, one tap from Home. The app asks for no name, account number, holdings or income, and stores no profile.
+Each person has a fixed safety plan on Home, under "Plans for people like you". The app asks for no name, account number, holdings or income, and stores no profile.
 
 ## What it does
 
@@ -43,12 +43,12 @@ Each person has a fixed safety plan, one tap from Home. The app asks for no name
 - **Before you pay.** Three quick questions (what for, who asked, where to pay), with an optional UPI ID and promised return, give STOP or VERIFY and the official way to check: SEBI's "@valid" UPI IDs, SEBI Check, IPO applications only through ASBA, and RBI Sachet for deposit schemes.
 
 **If something went wrong**
-- **Get help now.** Type or dictate what happened in your own words; an on-device keyword-based parser fills in the answers for you to check. The plan puts the bank and 1930 first. Recovery is never promised.
+- **Get help now.** Type or dictate what happened in your own words; an on-device keyword-based parser fills in the answers for you to check. The plan starts with stopping contact if it is still happening, then the bank and 1930. Recovery is never promised.
 - **Where to complain.** Ten routes, with official time limits where they apply, for example the RBI Ombudsman's 30-day wait and 90-day window, or SCORES within one year. A bank, insurance or pension complaint is never sent to SEBI, and "Not sure" never guesses. Routes link to the matching step-by-step guide.
 - **Prepare a complaint.** A private packet that will not save while an OTP, PIN, password, CVV or card number is in it (Hindi digits included). It says plainly that it has not been submitted.
 
 **Know your rights (new in Release 3.5)**
-- **Rights and help** (Home: "अपने अधिकार जानें / Know your rights"; menu: "अधिकार और मदद / Rights and help"):
+- **Rights and help** (Home, under "More help": "अपने अधिकार जानें / Know your rights"; menu: "अधिकार और मदद / Rights and help"):
   - free official helplines that speak regional languages: SEBI 1800-266-7575 or 1800-22-7575 (seven languages), RBI Contact Centre 14448 (English, Hindi and ten regional languages; it explains how to complain but cannot take complaints), IRDAI 155255 or 1800 425 4732, the IEPF helpdesk 14453 and cybercrime 1930;
   - five step-by-step guides, every step sourced to an official page: SEBI SCORES, an IEPF-5 claim (with a tick-only list of the papers needed), the RBI Ombudsman, insurance complaints (insurer, IRDAI, Ombudsman) and adding a nominee;
   - eight rights cards, from the SEBI Investor Charter, RBI's Charter of Customer Rights, IRDAI's free-look and two-week grievance rules and others, grouped by institution, each with "Where to complain about this".
@@ -70,7 +70,7 @@ Each person has a fixed safety plan, one tap from Home. The app asks for no name
 ## Privacy and trust
 
 - The app itself saves nothing: no cookies, browser storage or accounts. It runs no analytics or cloud AI and never sends what you type. Its only network request is a fresh copy of its own page when you tap "Save offline copy" or "Share this app".
-- The live link is served by GitHub Pages, which sets no cookies (checked on 2 October 2026); like any web host, it may keep standard access logs. A second copy on the earlier host sets three cookies of its own and adds a bot-check script. The app neither sets nor reads cookies, and the saved offline copy has none. See [`PRIVACY.md`](PRIVACY.md).
+- The live link is served by GitHub Pages, which sets no cookies (checked on 2 October 2026); like any web host, it may keep standard access logs. A second copy on the earlier host (it serves the first Release 3.5 build, with checker 3.3) sets three cookies of its own and adds a bot-check script. The app neither sets nor reads cookies, and the saved offline copy has none. See [`PRIVACY.md`](PRIVACY.md).
 - Every step shows its official source and review date, or is labelled a general safety step. Sources checked against the official page but not yet confirmed by the named content reviewer, Himanshi Rathore, show "review pending".
 - No stock tips, predictions, broker promotion, ads, referrals or upsells. The page sends no referrer to the official sites it links to.
 
@@ -80,10 +80,10 @@ All accuracy figures come from synthetic messages and AI-written personas, not f
 
 **Release 3.5** ([release record](evidence/Release-3.5-Verification.json))
 - 1,705 automated checks: 23 release suites plus 796/796 developer-case expectations.
-- **Fresh sealed set blind-v9** (200 messages written by a separate AI agent, scored once after checker 3.5 was frozen): fraud warned 87.5% [78.5–93.1] (checker 3.3 on the same messages: 82.5%); fraud rated High 78.8% [68.6–86.3] (3.3: 67.5%); subtle fraud warned 18 of 25 (3.3: 15); ordinary messages warned 12.2% [7–20.6] (3.3: 11.1%). Two of the three targets were met (fraud warned ≥85%, subtle fraud ≥70%); ordinary messages ≤8% was missed.
+- **Fresh sealed set blind-v9** (200 messages written and sealed by a separate AI agent before checker 3.5 was frozen; scored once after the freeze): fraud warned 87.5% [78.5–93.1] (checker 3.3 on the same messages: 82.5%); fraud rated High 78.8% [68.6–86.3] (3.3: 67.5%); subtle fraud warned 18 of 25 (3.3: 15); ordinary messages warned 12.2% [7–20.6] (3.3: 11.1%). Two of the three targets were met (fraud warned ≥85%, subtle fraud ≥70%); ordinary messages ≤8% was missed.
 - The rule written before scoring also required no more ordinary messages warned than checker 3.3. Checker 3.5 warned one more (11 of 90 against 10, the extra one at Caution; 9 at High for both). The owner shipped it because fraud at High improved significantly (paired test, p = 0.0117) ([record](evidence/Blind-Evaluation-v9.json)).
 - 100-persona simulated test (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
-- Size: 760,824 bytes, 222,032 bytes with gzip; Home usable in 7.5 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.7 s.
+- Size: 760,824 bytes, 222,032 bytes with gzip; Home usable in 7.0 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 12 s.
 
 **Release 3.4 (history; verified 2 October 2026, never deployed)**
 - **Sealed set blind-v8** (200 messages written by a separate AI agent, scored once), with the shipped checker 3.3:
@@ -98,7 +98,7 @@ These are engineering results, not proof of real-world accuracy, national capaci
 
 ## How this was built
 
-The team built Niveshak Saathi with AI coding assistants, which helped write the code, tests, synthetic test messages and documents. Every change to advice was checked against an official page, and each step in the app shows its source. All accuracy numbers come from synthetic test sets, not from real users.
+The team built Niveshak Saathi with AI coding assistants, which helped write the code, tests, synthetic test messages and documents. Every change to advice was checked against an official page during development, and each step in the app shows its source; 29 sources still await the named reviewer and show "review pending". All accuracy numbers come from synthetic test sets, not from real users.
 
 ## Repository map
 

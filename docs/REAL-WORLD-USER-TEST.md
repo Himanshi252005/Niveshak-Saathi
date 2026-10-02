@@ -111,7 +111,7 @@ Every ordinary message that was flagged was a tricky look-alike. The biggest rem
 
 - **Urgent-help details:** some still need a tap, for example whether the caller still has access, and how and when the money was paid.
 - **Family safety:** Release 3.5 adds the Family asset map, the nominee guide and the IEPF-5 guide. Earlier releases added sourced help for heirs and unclaimed money: transmission first, then the IEPF-5 claim; SEBI MITRA; RBI UDGAM; the SEBI Consolidated Account Statement. MF Central and DigiLocker are not covered yet, because their official text could not be verified.
-- **Languages:** other languages get the "outside coverage" or "may miss signs" note instead of a check, and the Rights and help page points to official helplines that speak them.
+- **Languages:** a message in another language is still checked but gets an "outside coverage" or "may miss signs" note, never a safe verdict, and the Rights and help page points to official helplines that speak them.
 - **Sharing a message into the app:** a WhatsApp "Share to Niveshak Saathi" option would remove copy-paste. It needs an installable app, which is the owner's decision.
 - **Real people:** a consented pilot and a native Hindi review are still the next evidence milestone.
 

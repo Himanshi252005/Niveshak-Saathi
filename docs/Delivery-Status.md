@@ -32,7 +32,7 @@ Which release is where, as of 2 October 2026.
 
 ## Second copy: first Release 3.5 build
 
-- **What it serves:** the first Release 3.5 build, 661,710 bytes, product version 3.5 and checker version 3.3. After removing the host's per-request Cloudflare block, its SHA-256 is `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`, exactly matching that verified build. It does not have the refinements above.
+- **What it serves:** the first Release 3.5 build, 661,710 bytes, product version 3.5 and checker version 3.3. After removing the host's per-request Cloudflare block, its SHA-256 is `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`, exactly matching that verified build (its verification record is internal). It does not have the refinements above.
 - **Deployed:** 20:49 IST on 2 October 2026. The exact-build check passed and the live smoke test passed 10/10.
 - **Sites record:** source commit `88e3f65f72e7584258fea67fe5be55aa973d5079`; version `4` (`appgprj_6abdcbd1b6148191a68dc1b38c53c585~appgver_47711223d59c81918c769928d4225383`); deployment `appgdep_6abfcb5aa8d48191aadd2f6344e0f3d3`.
 
@@ -52,7 +52,7 @@ Which release is where, as of 2 October 2026.
 
 ## Release 3.3: previous live release
 
-- **File:** 509,588 bytes (151,758 with gzip); SHA-256 `055455709CAA0AA479C309CAB84A9EA668D9B553532696A511D4AEC05CE7BBAB`. It is the rollback target and remains in the repository history.
+- **File:** 509,588 bytes (151,758 with gzip); SHA-256 `055455709CAA0AA479C309CAB84A9EA668D9B553532696A511D4AEC05CE7BBAB`. It is the rollback target for Release 3.5 as a whole (see the rollback rule) and remains in the repository history.
 - **Verification:** all 20 release suites passed ([`Release-3.3-Verification.json`](../evidence/Release-3.3-Verification.json)): 1,229 automated checks, including the 100-persona simulated test, 26 persona and reliability checks, 130/130 browser checks in each of three runs and 449/449 developer cases.
 - **New in Release 3.3:**
   - the fixes from the 100-persona simulated test ([details](REAL-WORLD-USER-TEST.md)): urgent help recognises money taken, not only sent, and remote-access apps described in everyday words;
@@ -70,4 +70,4 @@ The rollback target is always the build that was live just before the latest red
 
 ## Live link (GitHub Pages)
 
-Live at **https://himanshi252005.github.io/Niveshak-Saathi/** from 2 October 2026, published from the `gh-pages` branch, which holds only the verified app (`index.html`) and an empty `.nojekyll`. Each publish is checked before it is announced: the served file's SHA-256 must equal the verified build; HTTPS with HSTS; gzip; `Cache-Control: max-age=600`; no cookies. In a phone-sized browser it opens in Hindi as version 3.5, hides the update link, shows the six-page menu and the Paste button, makes no request outside the site and rates a scam message High risk, with no page error.
+Live at **https://himanshi252005.github.io/Niveshak-Saathi/** from 2 October 2026, published from the `gh-pages` branch, which holds the verified app (`index.html`), the demo-video page and video (`demo/`) and an empty `.nojekyll`. Each publish is checked before it is announced: the served file's SHA-256 must equal the verified build; HTTPS with HSTS; gzip; `Cache-Control: max-age=600`; no cookies. In a phone-sized browser it opens in Hindi as version 3.5, hides the update link, shows the six-page menu and the Paste button, makes no request outside the site and rates a scam message High risk, with no page error.

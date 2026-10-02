@@ -12,7 +12,7 @@
 
 ## What changed in Release 3.5
 
-- **Rights and help page.** Home has a new card, "अपने अधिकार जानें / Know your rights", and the menu a new page, "अधिकार और मदद / Rights and help". The page holds:
+- **Rights and help page.** Home has a new card under "More help", "अपने अधिकार जानें / Know your rights", and the menu a new page, "अधिकार और मदद / Rights and help". The page holds:
   - **free official helplines that speak regional languages:** SEBI 1800-266-7575 or 1800-22-7575 (English, Hindi, Marathi, Gujarati, Tamil, Bengali and Telugu; 9 am–6 pm except Sundays and Maharashtra public holidays); RBI Contact Centre 14448 (English, Hindi and ten regional languages; it explains how to complain and cannot take complaints); IRDAI grievance call centre 155255 or 1800 425 4732 (8 am–8 pm, Monday to Saturday; Hindi, English and other major languages); the IEPF helpdesk 14453; cybercrime 1930;
   - **five step-by-step guides,** every step sourced to an official page: SEBI SCORES; an IEPF-5 claim, with a tick-only checklist of the papers needed; the RBI Ombudsman; insurance complaints (insurer, IRDAI, Insurance Ombudsman); adding a nominee. Each guide can be downloaded as a text file;
   - **all 8 rights cards,** grouped by institution, each with "Where to complain about this".
@@ -24,23 +24,23 @@
 - **Public-good files:** an MIT licence for the code, CC BY 4.0 for original text, reuse terms, a security policy and a privacy page.
 - **Simpler menu:** six everyday pages stay in the menu (Home, Check a message, Before you pay, Get help now, Where to complain, Rights and help); the other four sit under "More pages", which opens by itself when one of them is in use.
 - **Input without typing:** a "Paste the message" button fills the check box in one tap from a message copied in WhatsApp or SMS, and the message box, the "Get help now" box and the complaint box say that the phone keyboard's microphone can be used; text boxes tell the keyboard which language to expect. For a message that arrived as a picture, a tip explains how to copy its words with the phone's gallery and paste them. The app adds no speech or image reading of its own.
-- **Open fitting:** the script that fitted the checker's weights is published with its input table (categories found and label per message, no message text); it reproduces the shipped weights and thresholds exactly (`evaluation/fit-weights.cjs`).
+- **Open fitting:** the script that fitted the checker's weights is published with its input table (categories found and label per message, no message text); given the hand-chosen High threshold of 0.65, it reproduces the shipped weights and the Caution threshold exactly (`evaluation/fit-weights.cjs`).
 - **Checker 3.5:** Hindi, Hinglish and Devanagari patterns for the three personas' scams (advance fees on "approved" money, paid recovery agents, freeze and "digital arrest" threats, document and blank-cheque requests, IPO quotas, wrong-number openers, paid VIP tips), and fewer false alarms on warnings that quote scam lines. Weights and thresholds are unchanged. The developer cases grew from 449 to 796 (347 new cases, mostly fraud and ordinary pairs that differ in one detail; the 449 earlier cases are unchanged). Frozen before blind-v9 was scored once (below).
 - **Calmer Home:** four large choices first (a suspicious message, a request to pay, money already sent or an OTP shared, a complaint); rights, practice and family safety under "More help"; the three persona plans under one fold that names them; language help and the promises in one short line each.
 - **Unchanged decisions:** Hindi and English only, with users of other languages pointed to the official helplines that speak their language; the app saves nothing.
 
 ## Release 3.5 checks
 
-- **1,705 automated checks:** 23 release suites plus 796/796 developer-case expectations.
+- **1,705 automated checks:** 23 release suites (909 checks) plus 796/796 developer-case expectations. Two suites, the general Owner Studio end-to-end suite and the boundary set, are recorded without a count; their 30 and 38 checks come from the test logs.
 - **Browser journeys:** 130/130 in each of 3 runs.
 - **100-persona simulated test** (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
-- **Official links:** every official link re-opened by the integrated suite (C-12: 13/13 checks passed).
-- **Size and speed:** 760,824 bytes (222,032 with gzip); Home usable in 7.5 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.7 s. Timings vary with the load on the test computer (the first Release 3.5 build measured 4.9 s on a quieter run). Checker 3.5 adds 29,819 bytes to the gzip download, about 0.6 s on "Slow 3G"; running its code at start-up takes about 47 ms on a 6x slower CPU, against 23 ms for checker 3.3 (internal measurement).
+- **Official links:** the integrated suite (C-12, 13/13 passed) re-requested every enabled official link and found none missing or failing; a page that refuses automated clients passes this check and is confirmed in a browser.
+- **Size and speed:** 760,824 bytes (222,032 with gzip); Home usable in 7.0 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 12 s. Timings vary with the load on the test computer (the first Release 3.5 build measured 4.9 s on a quieter run). Checker 3.5 adds 29,819 bytes to the gzip download, about 0.6 s on "Slow 3G"; running its code at start-up takes about 47 ms on a 6x slower CPU, against 23 ms for checker 3.3 (internal measurement).
 
 ### Fresh sealed set (blind-v9), scored once
 
 - **Who wrote it:** a separate AI agent, on 2 October 2026, before checker 3.5 was frozen. 200 messages: 80 fraud (25 subtle), 30 suspicious and 90 ordinary (50 tricky look-alikes, 40 everyday). Hindi 70, Hinglish 60, English 60, mixed 10. Sealed with SHA-256 `D5A59F9B9620903EE6399B9B90164407BD0CF927FFB8D74D8EA7BAB9D2567B22`; only its counts were checked before scoring.
-- **How it was scored:** checker 3.5 was frozen at 22:36 IST; the ship rule was written down; then each checker was scored exactly once. `evaluation/score-blind.cjs` reproduces every number below.
+- **How it was scored:** checker 3.5 was frozen at 22:36 IST; the ship rule was written down; then each checker was scored exactly once. `evaluation/score-blind.cjs` reproduces the headline rates (fraud warned with `--out`); the subtle-fraud, persona and paired-test figures come from the team's sealed-set scorer, and the checker 3.3 column needs checker 3.3's `engine.js` from the repository history.
 
 | Measure | Checker 3.3 | Checker 3.5 (shipped) | Paired test |
 |---|---:|---:|---|
@@ -81,7 +81,7 @@ Release 3.4 was verified on 2 October 2026 and published in this repository, but
   Find-help buttons gained one-line hints, and routes gained sourced "Also check" tips.
 - **Rights:** 8 rights cards with their sources (SEBI's Investor Charter; RBI's Charter of Customer Rights; IRDAI's 30-day free look and two-week deadline for complaints). In Release 3.4 they appeared only inside a chosen complaint route; Release 3.5 gives them their own page.
 - **F&O fact:** when tips, borrowing or F&O appear, a card shows SEBI's study: 93% of individual F&O traders lost money in FY22–FY24.
-- **Privacy and security:** an in-page Content-Security-Policy and no-referrer policy; Home shows the version, the date the guidance was checked and a "Check for a newer version" link that opens only when tapped. Until the live link is redeployed, that link opens the older live release.
+- **Privacy and security:** an in-page Content-Security-Policy and no-referrer policy; Home shows the version, the date the guidance was checked and a "Check for a newer version" link that opens only when tapped. In Release 3.4 that link pointed to the older live release; Release 3.5 points it at the GitHub Pages live link and hides it there.
 - **Checker:** kept checker 3.3; a candidate checker was measured on a fresh sealed set and was not shipped (below).
 
 ### Checks that passed (Release 3.4)
@@ -166,7 +166,7 @@ These are synthetic-message results, not evidence of nationwide accuracy or avoi
   | Weak 3G, low-end phone | 4.2 s | 4.7 s |
   | 2G, low-end phone | 7.6 s | 8.4 s |
 
-- **Message analysis:** local, about 1 ms for ordinary inputs. Checker 3.3's volume test (internal): 1,000,000 checks with 0 errors, 1,034 per second on one core, p99 9.6 ms.
+- **Message analysis:** local. Checker 3.3's volume test (internal; a different benchmark from the Release 3.5 per-message timing): 1,000,000 checks with 0 errors, 1,034 per second on one core, p99 9.6 ms.
 
 ## Known limits
 

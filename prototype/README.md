@@ -37,7 +37,7 @@ Run `node build.cjs` (Node.js 18 or later) in this folder. It validates the cont
 | `studio/`, `owner-studio.html` | Local Owner Studio, never part of the public app; see [`OWNER-GUIDE.md`](OWNER-GUIDE.md) |
 | `evaluation-cases.json` | Developer cases for the checker |
 
-The hosting identity for the public link is kept outside this repository.
+The live link is published from this repository's `gh-pages` branch; the earlier host's deployment settings are kept outside this repository.
 
 ## Scale design
 

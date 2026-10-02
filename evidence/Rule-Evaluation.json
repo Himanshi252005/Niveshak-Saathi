@@ -1,5 +1,5 @@
 {
-  "dataset": "Developer-authored synthetic regression cases, also used in development (the original 189 plus cases added for model v3). Not independent validation or real-world fraud accuracy; see Blind-Evaluation.json for sealed blind tests.",
+  "dataset": "Developer-authored synthetic regression cases, also used in development (the original 189 plus cases added for model v3 and checkers 3.3 and 3.5). Not independent validation or real-world fraud accuracy; see the Blind-Evaluation records (blind-v3 to v5, v6, v8 and v9) for sealed tests.",
   "version": "3.5",
   "cases": 796,
   "expectationsPassed": 796,

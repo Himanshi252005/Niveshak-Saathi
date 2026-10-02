@@ -60,7 +60,7 @@
       "exitCode": 0,
       "summary": "all C-7 end-to-end checks passed",
       "failures": [],
-      "seconds": 6
+      "seconds": 7
     },
     {
       "suite": "Studio Emergency tab (C-8)",
@@ -69,7 +69,7 @@
       "exitCode": 0,
       "summary": "all 31 C-8 Studio checks passed",
       "failures": [],
-      "seconds": 8
+      "seconds": 9
     },
     {
       "suite": "Studio Help routes tab (C-9)",
@@ -114,7 +114,7 @@
       "exitCode": 0,
       "summary": "13/13 integrated checks passed",
       "failures": [],
-      "seconds": 30
+      "seconds": 83
     },
     {
       "suite": "On-device assistant (C-15)",
@@ -132,7 +132,7 @@
       "exitCode": 0,
       "summary": "22/22 checks passed",
       "failures": [],
-      "seconds": 11
+      "seconds": 12
     },
     {
       "suite": "New-feature journeys (C-14, C-15)",
@@ -141,7 +141,7 @@
       "exitCode": 0,
       "summary": "23/23 checks passed",
       "failures": [],
-      "seconds": 4
+      "seconds": 5
     },
     {
       "suite": "Home choices, sharing and pilot session (C-17)",
@@ -171,13 +171,13 @@
       "seconds": 4
     },
     {
-      "suite": "Real-world users and stress inputs (C-20)",
+      "suite": "100 simulated personas and stress inputs (C-20)",
       "file": "c20-realworld.cjs",
       "ok": true,
       "exitCode": 0,
       "summary": "14/14 checks passed (100 users: 92 right, 8 partly, 0 wrong)",
       "failures": [],
-      "seconds": 65
+      "seconds": 68
     },
     {
       "suite": "Source-backed grievance, rights, family and persona content (P1, H-3)",
@@ -211,7 +211,7 @@
       "file": "verify-v3.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "130/130 checks passed; throttled load 17263 ms; 760824 bytes",
+      "summary": "130/130 checks passed; throttled load 16841 ms; 760824 bytes",
       "failures": [],
       "seconds": 33
     }
