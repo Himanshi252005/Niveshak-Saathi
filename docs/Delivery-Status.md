@@ -13,7 +13,36 @@
 - **Deployment result:** succeeded at 13:01 IST on 2 October 2026.
 - **Post-deployment checks:** `check-live-build.cjs` reported `matchesExpected: true`; the public URL passed 10/10 deployment smoke checks. Home, Hindi/English, all three safety plans, long-forward splitting, browser Back and the grey neutral “No known signs” state were visually checked against the identical local file.
 
-## Newest verified repository build: Release 3.3
+**What the host does (measured on 2 October 2026; known limits until the owner decides on hosting, O-4):**
+- It adds Cloudflare's bot-check script in a hidden frame.
+- It sets a 30-minute `__cf_bm` security cookie (HttpOnly, Secure) for the whole `chatgpt.site` domain. The app itself sets and reads no cookies and stores nothing.
+- It sends no security headers: no HSTS, `nosniff`, framing protection, Content-Security-Policy or Referrer-Policy.
+- It sends `Cache-Control: public, max-age=0, must-revalidate` with no ETag or Last-Modified date, so every visit downloads the whole page again.
+- The Release 3.4 work in progress adds a policy inside the page itself (Content-Security-Policy and no-referrer). Only the host can add the rest.
+
+## Newest verified repository build: Release 3.4 (not yet deployed)
+
+- **File:** `prototype/dist/index.html`, 561,637 bytes (164,699 with gzip).
+- **SHA-256:** `911E8BA0637980325249E72B5442A6B0CE3306153D3432C663CE773EF02DBB04`.
+- **Versions:** product 3.4, content 2026.10.02. The checker is still 3.3: a candidate checker was measured on the fresh blind-v8 set, showed no significant gain, and was kept back by the owner.
+- **Verification:** all 22 release suites passed (`Release-3.4-Verification.json`), 1,297 automated checks in total. They include:
+  - 130/130 browser checks in each of three runs;
+  - 449/449 developer message cases;
+  - the 100-user test 14/14 (92 right, 8 partly, 0 wrong);
+  - 39 complaint-route and rights checks;
+  - 27 privacy and security checks.
+- **New in Release 3.4:**
+  - sourced complaint steps and tips (RBI Ombudsman, police/EOW and Sachet, UDGAM/MITRA/Bima Bharosa, IEPF-5, frozen accounts, loan apps, unexplained debits);
+  - eight rights cards (SEBI, RBI, IRDAI);
+  - button hints;
+  - SEBI's F&O study card;
+  - truthful hosting and privacy notes;
+  - an in-page security policy;
+  - a version line with a tap-only update link.
+- **To deploy:** follow `CODEX-DEPLOY-HANDOFF.md` with this hash. After the redeploy, `node tools/check-live-build.cjs <URL> 911E8BA0637980325249E72B5442A6B0CE3306153D3432C663CE773EF02DBB04` must report `matchesExpected: true`, and the smoke test must pass 10/10. Release 3.3 below stays the rollback target.
+- **GitHub Pages mirror (owner decision D-9):** it appears once the owner enables Pages for the repository, at `https://himanshi252005.github.io/Niveshak-Saathi/prototype/dist/`. Its headers and served hash are checked before it is announced.
+
+## Previous verified build: Release 3.3 (live)
 
 - File: `prototype/dist/index.html`
 - Bytes: 509,588

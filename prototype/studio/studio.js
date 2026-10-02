@@ -116,7 +116,8 @@
       h('p', { class: 'lede', text: 'Edit the reviewed content of the public app: official sources, warning explanations, help routes, emergency steps, rights cards, practice and app texts. Edits stay on this computer until you save them and rebuild. Detection rules, safety caveats and the build are code, so they cannot be changed here.' }),
       h('div', { class: 'card' }, h('h2', { text: 'Release details' }),
         h('div', { class: 'grid2' }, field(m, 'productVersion', 'Product version', 'meta.productVersion'), field(m, 'contentVersion', 'Content version', 'meta.contentVersion', 'text', { help: 'Change it whenever you publish new content, for example 2026.11.01.' })),
-        h('div', { class: 'grid2' }, field(m, 'snapshotDate', 'Guidance snapshot date', 'meta.snapshotDate', 'date'), field(m, 'reviewDue', 'Next content review', 'meta.reviewDue', 'date'))),
+        h('div', { class: 'grid2' }, field(m, 'snapshotDate', 'Guidance snapshot date', 'meta.snapshotDate', 'date'), field(m, 'reviewDue', 'Next content review', 'meta.reviewDue', 'date')),
+        field(m, 'updateUrl', 'Public app address', 'meta.updateUrl', 'url', { help: 'Home shows "Check for a newer version" with this https address in offline copies. It opens only when the user taps it. Leave empty to hide the link.' })),
       h('div', { class: 'card' }, h('h2', { text: 'Official source review status' }),
         h('table', null, h('thead', null, h('tr', null, ['Source', 'Last reviewed', 'Review due', 'Status'].map(x => h('th', { text: x })))), h('tbody', null, rows))),
       h('div', { class: 'card' }, h('h2', { text: 'Validation' }), h('div', { id: 'validation' })),
@@ -208,6 +209,14 @@
             box.addEventListener('change', () => { issue.sourceIds = box.checked ? [...new Set([...issue.sourceIds, s.id])] : issue.sourceIds.filter(x => x !== s.id); changed(); });
             return h('label', { class: 'check', for: id }, box, (s.name && s.name.en) || s.id); }))];
     };
+    // Optional "Also check" tips on escalation and "not sure" routes: up to four short pointers, each with one official source.
+    // The list is created only when the owner adds a tip, so opening the Studio never changes a route.
+    const tipsBody = (issue, p) => { const tips = issue.tips || [];
+      return [h('h3', { text: 'Also check: optional tips shown on the route' }),
+        tips.map((tp, j) => h('div', { class: 'sub', 'data-path': p + '.tips[' + j + ']' }, h('div', { class: 'card-head' }, h('strong', { text: 'Tip ' + (j + 1) }), controls(tips, j)),
+          pair(tp, 'text', 'Tip ' + (j + 1), p + '.tips[' + j + '].text', { rows: 2 }), field(tp, 'sourceId', 'Official source for this tip', p + '.tips[' + j + '].sourceId', 'select', { options: sourceOptions() }))),
+        tips.length < 4 ? h('button', { type: 'button', class: 'small', text: '+ Add tip', onclick: () => { (issue.tips || (issue.tips = [])).push({ text: blank(), sourceId: enabledSource() }); changed(); render(); } }) : null];
+    };
     return h('section', null, h('h1', { text: 'Help routes' }),
       h('p', { class: 'lede', text: 'The "Find help" navigator. A question route asks one question and shows an outcome card. An escalation route starts with the institution itself, then lists official levels of the same scope (for example SCORES for the securities market). The "not sure" route never guesses. The urgent route (issue "fraud", answer "yes", with a helpline) powers "Get urgent help": you can edit it but not remove it.' }),
       h('div', { class: 'card' }, h('h2', { text: 'Where each route leads' }), h('div', { id: 'routeSummary' })),
@@ -218,7 +227,7 @@
             h('div', { class: 'card-head' }, h('h2', { text: issue.label.en || issue.id }), controls(R.issues, i)), h('p', { class: 'small', text: KIND_LABEL[issue.kind] }),
             h('div', { class: 'grid2' }, field(issue, 'id', 'ID', p + '.id'), field(issue, 'enabled', 'Shown in the app', p + '.enabled', 'checkbox')),
             pair(issue, 'label', 'Title', p + '.label', { rows: 1 }), pair(issue, 'shortLabel', 'Button label', p + '.shortLabel', { rows: 1 }),
-            issue.kind === 'ladder' ? ladderBody(issue, p) : abstainBody(issue, p));
+            issue.kind === 'ladder' ? ladderBody(issue, p) : abstainBody(issue, p), tipsBody(issue, p));
         const body = issue.question
           ? [pair(issue, 'question', 'Follow-up question', p + '.question', { rows: 1 }), h('h3', { text: 'Answers' }),
              issue.answers.map((a, j) => { const ap = p + '.answers[' + j + ']';
@@ -261,7 +270,11 @@
           o.steps.map((s, j) => h('div', { class: 'sub' }, h('div', { class: 'card-head' }, h('strong', { text: 'Step ' + (j + 1) }), controls(o.steps, j)), pair(o.steps, j, 'Step ' + (j + 1), p + '.steps[' + j + ']'))),
           o.steps.length < 8 ? h('button', { type: 'button', class: 'small', text: '+ Add step', onclick: () => { o.steps.push(blank()); changed(); render(); } }) : null,
           h('div', { class: 'grid2' }, field(o, 'helplineId', 'Helpline button', p + '.helplineId', 'select', { options: helplines, allowNone: true }), field(o.link, 'sourceId', 'Official link', p + '.link.sourceId', 'select', { options: sourceOptions() })),
-          pair(o.link, 'label', 'Official link label', p + '.link.label', { rows: 1 })); }),
+          pair(o.link, 'label', 'Official link label', p + '.link.label', { rows: 1 }),
+          h('fieldset', { 'data-path': p + '.sourceIds' }, h('legend', { text: 'More official sources for these steps (optional; shown under the card)' }),
+            content.sources.sources.map(s => { const id = 'f' + (++seq), box = h('input', { type: 'checkbox', id }); box.checked = (o.sourceIds || []).includes(s.id);
+              box.addEventListener('change', () => { const cur = o.sourceIds || []; o.sourceIds = box.checked ? [...new Set([...cur, s.id])] : cur.filter(x => x !== s.id); changed(); });
+              return h('label', { class: 'check', for: id }, box, (s.name && s.name.en) || s.id); }))); }),
       addButton('+ Add outcome card', () => R.outcomes.push({ id: 'new-outcome-' + (R.outcomes.length + 1), title: blank(), steps: [blank()], link: { sourceId: content.sources.sources[0].id, label: blank() } })));
   }
 

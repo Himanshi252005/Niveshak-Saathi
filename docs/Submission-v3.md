@@ -1,4 +1,4 @@
-# Niveshak Saathi: Release 3.3
+# Niveshak Saathi: Release 3.4
 ## A Hindi-first investor-safety companion that works on the phone, offline and in private
 
 **Promise:** help an Indian investor stop a fraud before money leaves, and act correctly in the first hours if it already has. Everything is in Hindi or English.
@@ -7,7 +7,8 @@
 
 **Status:**
 - Tested browser prototype and downloadable offline HTML.
-- Release 3.3 is verified and publicly deployed. The normalized live file matches the verified SHA-256 and passes 10/10 deployment smoke checks (see `Delivery-Status.md`).
+- Release 3.4 is verified: all 22 release suites pass (`Release-3.4-Verification.json`).
+- The public link serves the verified Release 3.3 until the Site is redeployed with 3.4 (see `Delivery-Status.md`).
 - No real-user impact study has been conducted.
 - This is an independent educational product, not affiliated with SEBI, RBI, IRDAI, PFRDA, NPCI or any institution.
 
@@ -19,11 +20,11 @@
 
 | Criterion (weight) | What the product does | Evidence | What is not yet proven |
 |---|---|---|---|
-| **Resilience and safety impact (30%)** | **Before you pay:** a STOP or VERIFY answer, with SEBI's "@valid" UPI rule, SEBI Check, IPO-by-ASBA and RBI Sachet.<br>**Message check:** a High / Caution / No-known-signs verdict with reasons.<br>**Emergency mode:** fills in from your own words; bank and 1930 first.<br>**Complaint routes:** with official time limits.<br>**Private Action Packet** and **family readiness**.<br>**Practice:** before and after scores.<br>**"Warn my family"** | **Independent blind test:** warned on 72.4% [65.7–78.2] of fraud or suspicious messages; v2 managed 35.4% on the same set.<br>**Coverage checks:** all 60 Emergency answer combinations, 272 navigator states and 60 family combinations | No real-user outcome study yet; money saved is not measured |
-| **Tier-2/3 usability (25%)** | Hindi-first everywhere, with English and Roman-Hindi understanding.<br>The Home page offers six large task choices plus fixed, privacy-safe plans for Praveen, Kavita and Babulal.<br>A labelled phone menu, urgent-help button, simple line icons, read-aloud, large text and an offline copy reduce cognitive and connectivity burden.<br>No identity, account, holding or income input is required.<br>One offline file of 151,758 bytes with gzip | **Layout:** no sideways scrolling on any page at 320, 360 or 390 px, in both languages, with normal, large or 200% text.<br>**Persona plans:** 26 reliability/persona checks, including a 320-pixel Hindi view.<br>**Offline:** every tool runs offline.<br>**Slow network:** median 4,427 ms gzip-served in the simulation | Native-speaker review and physical low-end phones are pending.<br>Hindi and English only: no unreviewed machine translation |
-| **Guardrails and trust (15%)** | No commerce, no tips: tips and "operator" calls are flagged as warning signs.<br>Every step cites one of 31 official pages and shows its review date and its named reviewer (Himanshi Rathore).<br>Nothing is uploaded, stored or tracked.<br>Private details are masked before saving.<br>The checker shows how it reached its verdict and its measured miss rate | Three independent reviews; every finding was checked against the official text and fixed.<br>22 checks replay each reviewer example.<br>No network requests during journeys | Independent security audit and native Hindi review |
-| **Technical execution (15%)** | An explainable on-device hybrid:<br>- multilingual signals in 15 categories;<br>- weights fitted by logistic regression;<br>- thresholds and "always High" safety floors;<br>- five reliability states, including outside-coverage and insufficient-evidence abstention;<br>- return maths, lookalike-link and payee-shape insights.<br>An on-device assistant reads the user's own words | **Three sealed blind sets** written separately (results below).<br>About 1.0 ms per message.<br>130-check browser suite in 3 runs.<br>1,229 automated checks in all | Evaluation text is synthetic and not a representative corpus of real victim messages |
-| **Feasibility and scale (15%)** | A static, cacheable file with no message server or inference cost.<br>The local Owner Studio edits and validates reviewed content, persona plans and release manifests.<br>A facilitator pilot exports anonymous results.<br>The engine is embeddable and the public app stores no user profile | 509,588-byte raw / 151,758-byte gzip build.<br>Validated build that refuses unsafe content.<br>National-scale transfer arithmetic and rollout gates in `SCALE-AND-RELIABILITY.md` | No 16-crore load test, named distribution partner or completed field pilot yet |
+| **Resilience and safety impact (30%)** | **Before you pay:** a STOP or VERIFY answer, with SEBI's "@valid" UPI rule, SEBI Check, IPO-by-ASBA and RBI Sachet.<br>**Message check:** a High / Caution / No-known-signs verdict with reasons.<br>**Emergency mode:** fills in from your own words; bank and 1930 first.<br>**Complaint routes:** with official time limits.<br>**Private Action Packet** and **family readiness**.<br>**Practice:** before and after scores.<br>**"Warn my family"** | **Fresh blind set (blind-v8, 200 messages, scored once):** warned on 67.5% [56.6–76.8] of fraud messages; flagged none of the 40 everyday messages.<br>**Complaint routes:** on 40 stories written blind, the main authority is named in 39/40 (Release 3.3: 35/40).<br>**Coverage checks:** all 60 Emergency answer combinations, 272 navigator states and 60 family combinations | No real-user outcome study yet; money saved is not measured. Subtle scams are often missed (5 of 25 caught on blind-v8) |
+| **Tier-2/3 usability (25%)** | Hindi-first everywhere, with English and Roman-Hindi understanding.<br>The Home page offers six large task choices plus fixed, privacy-safe plans for Praveen, Kavita and Babulal.<br>A labelled phone menu, urgent-help button, simple line icons, read-aloud, large text and an offline copy reduce cognitive and connectivity burden.<br>No identity, account, holding or income input is required.<br>One offline file of 164,699 bytes with gzip | **Layout:** no sideways scrolling on any page at 320, 360 or 390 px, in both languages, with normal, large or 200% text.<br>**Persona plans:** 26 reliability/persona checks, including a 320-pixel Hindi view.<br>**Offline:** every tool runs offline.<br>**Slow network:** median 4,260 ms gzip-served in the simulation; Home usable in 1.7 s on slow 4G | Native-speaker review and physical low-end phones are pending.<br>Hindi and English only: no unreviewed machine translation |
+| **Guardrails and trust (15%)** | No commerce, no tips: tips and "operator" calls are flagged as warning signs.<br>Every step cites one of 46 official pages and shows its review date and its named reviewer (Himanshi Rathore).<br>Rights cards from the SEBI Investor Charter, the RBI Charter of Customer Rights and IRDAI's policyholder rules.<br>An in-page Content-Security-Policy, and no referrer sent to linked sites.<br>The app itself uploads, stores and tracks nothing; the public link's host sets its own short-lived security cookie, which the app neither sets nor reads.<br>Private details are masked before saving.<br>The checker shows how it reached its verdict and its measured miss rate | Three independent reviews; every finding was checked against the official text and fixed.<br>22 checks replay each reviewer example.<br>No network requests during journeys | Independent security audit and native Hindi review |
+| **Technical execution (15%)** | An explainable on-device hybrid:<br>- multilingual signals in 15 categories;<br>- weights fitted by logistic regression;<br>- thresholds and "always High" safety floors;<br>- five reliability states, including outside-coverage and insufficient-evidence abstention;<br>- return maths, lookalike-link and payee-shape insights.<br>An on-device assistant reads the user's own words | **Sealed blind sets** written separately and scored once (results below).<br>About 1.0 ms per message.<br>130-check browser suite in 3 runs.<br>1,297 automated checks in all | Evaluation text is synthetic and not a representative corpus of real victim messages |
+| **Feasibility and scale (15%)** | A static, cacheable file with no message server or inference cost.<br>The local Owner Studio edits and validates reviewed content, persona plans and release manifests.<br>A facilitator pilot exports anonymous results.<br>The engine is embeddable and the public app stores no user profile | 561,637-byte raw / 164,699-byte gzip build.<br>Validated build that refuses unsafe content.<br>National-scale transfer arithmetic and rollout gates in `SCALE-AND-RELIABILITY.md` | No 16-crore load test, named distribution partner or completed field pilot yet |
 
 No judging score is guaranteed. The evidence above comes from automated checks, not from users.
 
@@ -74,6 +75,18 @@ The app opens on **Home**: one question, six large task choices and three person
    - PFRDA's levels.
 
    A bank, insurance or pension complaint is never sent to SEBI, and "Not sure" never guesses.
+
+   **New in Release 3.4:**
+   - each button carries a one-line hint;
+   - routes show sourced "Also check" tips:
+     - the RBI Ombudsman after a bank refusal;
+     - police or the State Economic Offences Wing, plus RBI Sachet, for chit, deposit and Ponzi schemes;
+     - RBI UDGAM, SEBI MITRA and IRDAI Bima Bharosa for unclaimed money;
+     - IEPF-5 claims without agents;
+     - frozen accounts after a cyber complaint;
+     - loan-app harassment and RBI's Digital Lending Apps directory;
+     - unexplained monthly debits (RBI e-mandate rules);
+   - eight rights cards cite the SEBI Investor Charter, the RBI Charter of Customer Rights and IRDAI's policyholder rules (a 30-day free look; complaints resolved within two weeks).
 5. **Prepare a private Action Packet.**
    - The essentials are checked.
    - OTPs, PINs, passwords, CVVs and card numbers are found, including Hindi digits, invisible characters and SMS phrasing, and they block saving until masked. Masking can be undone.
@@ -135,6 +148,21 @@ It no longer flags:
 
 All earlier developer cases still pass, and the first two sealed sets are unchanged. The third set has now been seen, so the table above stays the last untouched measurement.
 
+**Release 3.4: a fresh sealed set, and a candidate checker that was not shipped.**
+- **Why a candidate:** it was built to remove false alarms, for example genuine OTP SMS, awareness messages and everyday words such as "पक्का".
+- **The fresh set (blind-v8):** a separate agent wrote 200 messages after the candidate was frozen. The set was scored once.
+
+| On blind-v8 (200 messages) | Checker 3.3 (shipped) | Candidate (not shipped) |
+|---|---:|---:|
+| Fraud warned | 67.5% [56.6–76.8] | 63.8% [52.8–73.4] |
+| Fraud at High | 56.3% | 52.5% |
+| Ordinary messages warned | 13.3% [7.8–21.9] | 11.1% [6.1–19.3] |
+| Ordinary messages at High | 10.0% | 8.9% |
+| Everyday ordinary messages flagged | 0/40 | 0/40 |
+
+- **Result:** the differences are within the intervals. The large gains the candidate showed on the set that guided it did not carry over, so the owner kept checker 3.3 for Release 3.4.
+- **Weak spots:** this harder set shows that subtle approaches are still often missed (5 of 25 caught), especially pension, life-certificate and folio scams aimed at older investors. That is the next checker round, to be measured on another fresh set.
+
 **Why no large language model?**
 - An on-device model whose every warning can be explained and checked against a source is more trustworthy for this audience than a cloud model.
 - It costs nothing to run, works offline and never uploads a message.
@@ -144,25 +172,29 @@ All earlier developer cases still pass, and the first two sealed sets are unchan
 
 | Check | Result | Limit |
 |---|---|---|
-| Browser journeys (Release 3.3 suite) | 130/130 in each of 3 runs, no runtime errors | Local headless Edge, not every device or browser |
+| Browser journeys (Release 3.4 build) | 130/130 in each of 3 runs, no runtime errors | Local headless Edge, not every device or browser |
+| Complaint routes, rights and sources (Release 3.4) | 39 checks: every new step, tip, rights card and source in both languages, button hints on a 360 px phone, the action card's links | Content checked by Claude against official pages; awaiting the named reviewer's confirmation |
+| Privacy notes, security policy and version line (Release 3.4) | 27 checks: no policy violation in any journey, the offline copy, a phone, or next to the host's injected script; no referrer; the update link opens only when tapped; three broken builds caught | The host's own headers cannot be set from the page |
+| Complaint-route test (40 stories written blind) | Main authority 39/40; all expected authorities 34/40 with a first-time user's buttons, 37/40 with the correct buttons (Release 3.3: 35, 25 and 26) | The stories guided the changes, so this is a regression test |
 | New-feature journeys | 23 checks: verdicts, insights, own words, Before you pay, sharing, no network | Scripted journeys |
 | Review-fix replays | 22 checks, including 41 reviewer privacy examples | Reviewers' examples, not every format |
 | On-device assistant | 176 checks: 106 own-words cases in three languages, return maths, every Before-you-pay combination | Keyword rules can miss unusual phrasing |
-| Home choices, sharing and pilot session | 18 checks: the shared file contains no user text, the pilot needs consent, blocks private details, uses the exact CSV columns and shows a live summary | Scripted journeys; the pilot has not yet been run with people |
-| App layout | 30 checks: opens on Home with six choices; the menu's order and headings; the phone menu opens, closes (choice, close button, shaded area, Escape) and blocks the page behind it; no emoji anywhere in the app file; every page fits 320–390 px phones in both languages at normal, large and 200% text | Headless browser, not physical phones |
+| Home choices, sharing and pilot session | 19 checks: the version line and its tap-only update link; the shared file contains no user text, the pilot needs consent, blocks private details, uses the exact CSV columns and shows a live summary | Scripted journeys; the pilot has not yet been run with people |
+| App layout | 31 checks: opens on Home with six choices and ends with the version line; the menu's order and headings; the phone menu opens, closes (choice, close button, shaded area, Escape) and blocks the page behind it; no emoji anywhere in the app file; every page fits 320–390 px phones in both languages at normal, large and 200% text | Headless browser, not physical phones |
 | Content safety rules | 166 validator tests | Known risks only |
 | Owner Studio end to end | 124 checks | Local editor, single user |
 | Rule regression (developer cases) | 449/449 expectations | Used during development |
 | Independent boundary set | 38/38 | Small |
-| Official links re-opened | 31/31 on 2026-10-01. All opened. | Pages change; review dates are shown in the app |
-| Size and speed | 509,588-byte file, 151,758 bytes with gzip. Simulated slow network (400 ms latency, 50,000 bytes/s, 4× CPU): median 11,569 ms uncompressed, 4,406 ms gzip-served | Desktop simulation, not a physical phone |
+| Official links re-opened | 45 of 46 opened automatically on 2026-10-02; the IEPF claimants' FAQ refuses automated clients and was checked in a browser | Pages change; review dates are shown in the app. RBI's site may show a language chooser first |
+| Size and speed | 561,637-byte file, 164,699 bytes with gzip. Simulated slow network (400 ms latency, 50,000 bytes/s, 4× CPU): median 12,242 ms uncompressed, 4,260 ms gzip-served. Home usable in 1.7 s (slow 4G), 4.7 s (weak 3G) and 8.4 s (2G), 10–15% slower than Release 3.3 | Desktop simulation, not a physical phone |
 
 ## Guardrails and privacy
 
 - **No commerce:** no stock tips, broker or product promotion, commissions, ads or upsells. Unsolicited tips and "operator" calls are flagged as warning signs.
 - **No data access:** no SMS, inbox, contacts, documents or accounts are read. Voice input goes only through the phone's own keyboard. There is no in-app recording.
 - **Page memory only:**
-  - nothing is stored or uploaded;
+  - the app itself stores nothing and never sends what you type;
+  - the public link's host (Cloudflare) adds its own bot-check script and a short-lived `__cf_bm` security cookie. The app neither sets nor reads it, and the offline file has neither;
   - Reset or Back clears the page;
   - autofill and cloud spellcheck are off for private fields;
   - downloaded files must be deleted separately.
@@ -174,7 +206,10 @@ All earlier developer cases still pass, and the first two sealed sets are unchan
 
 ## Official sources and governance
 
-- **Sources:** 31 official sources from SEBI, RBI, NPCI, IRDAI, PFRDA, MHA/I4C, DoT (Sanchar Saathi), PIB and others. Each states exactly what it supports and when it was reviewed. Snapshot 2026-10-01; next review due 2026-11-01.
+- **Sources:** 46 official sources shown in the app (48 recorded), from SEBI, RBI, NPCI, IRDAI, IEPF, PFRDA, MHA/I4C, DoT (Sanchar Saathi), PIB and others.
+  - Each states exactly what it supports and when it was reviewed.
+  - Snapshot 2026-10-02; next review due 2026-11-01.
+  - The 15 sources added on 2 October were checked against the official pages and await the named reviewer's confirmation.
 - **Independent review:** three independent reviews preceded this release. Every advice-changing finding was re-checked against the official text before editing. The corrections were:
   - the RBI Ombudsman 90-day filing window;
   - the SCORES one-year limit and 15-day reviews;
@@ -208,7 +243,11 @@ The pilot measures:
 
 ## Feasibility and scale
 
-- **Cost:** a static file of 151,758 bytes with gzip, with no accounts, message database or inference server. Even 16 crore cold downloads are about 24.3 TB before CDN caching; a 1% daily-active cold-transfer upper bound is about 243 GB/day. These are planning figures, not a completed load test.
+- **Cost:** a static file of 164,699 bytes with gzip, with no accounts, message database or inference server.
+  - Even 16 crore cold downloads are about 26.4 TB before CDN caching.
+  - A 1% daily-active cold-transfer upper bound is about 264 GB/day.
+  - These are planning figures, not a completed load test.
+  - The current host sends no cache validators, so repeat visits download the page again (`SCALE-AND-RELIABILITY.md`).
 - **Reliability:** the checker combines multilingual rules, fitted weights and non-negotiable safety floors, then exposes its agreement or abstention state to the user.
 - **Rollout:** start with measured district pilots, native-language review, security review, CDN load tests and monitored partner distribution before national traffic. The full plan is in `SCALE-AND-RELIABILITY.md`.
 - **Maintenance:** content owners update reviewed content locally, with validation and release manifests. Sources carry review dates.
@@ -235,13 +274,14 @@ The pilot measures:
 **1:20–1:50 — Already paid?** She says "maine UPI se 5000 bhej diye aur OTP bhi bata diya" using the keyboard's microphone. The answers fill in themselves. The plan puts the bank first, then 1930, then removing remote-access apps and keeping evidence.
 
 **1:50–2:20 — The right authority, and a private packet.**
-- **Find help:** shows RBI's 90-day window, or SCORES and SMART ODR for brokers.
+- **Find help:** shows RBI's 90-day window, or SCORES and SMART ODR for brokers. For a deposit or Ponzi scheme, it names the police or the State Economic Offences Wing and RBI Sachet, each with its official source.
 - **Action Packet:** catches an OTP written in Hindi digits and blocks saving until it is masked.
 
 **2:20–2:40 — Proof.** Disconnect the network and repeat the check offline. Open "How the risk level was decided".
 
 **2:40–3:00 — Evidence and next step.**
-- On a blind test written by a separate agent, the new model warned on 72.4% [65.7–78.2] of fraud or suspicious messages; v2 managed 35.4%.
+- On a fresh blind set of 200 messages, written by a separate agent and scored once, the checker warned on 67.5% [56.6–76.8] of fraud and flagged none of the 40 everyday messages.
+- We publish the misses too: subtle scams aimed at pensioners are the next thing to fix.
 - These are engineering checks, not user outcomes.
 - Next is a 24-person pilot.
 
@@ -259,9 +299,14 @@ The pilot measures:
 
 ## Judge Q&A
 
-**How accurate is it?** We report every blind result with intervals, including where the new model was worse than v2 (more ordinary messages at High).
+**How accurate is it?** We report every blind result with intervals, including where a new model was worse, or where it was no better and was not shipped.
 - Each fix was measured on a fresh, untouched set written by a different agent.
-- On the final set, v3.2 warned on 72.4% [65.7–78.2] of fraud or suspicious messages and put 7% [3.7–12.8] of ordinary messages at High. All of those were tricky look-alikes; none of the everyday ones was flagged.
+- **Newest set (blind-v8, 200 messages, harder than before), with the shipped checker 3.3:**
+  - 67.5% [56.6–76.8] of fraud warned;
+  - 13.3% [7.8–21.9] of ordinary messages warned, all of them tricky look-alikes;
+  - none of the 40 everyday messages flagged.
+- **A candidate checker** that removed false alarms on its development sets showed no significant difference on this set, so it was not shipped.
+- **Earlier set (model 3.2):** 72.4% [65.7–78.2] of fraud or suspicious messages warned, and 7% [3.7–12.8] of ordinary messages at High.
 - No checker is perfect, so "No known signs" never means safe.
 
 **Is this AI?** Yes, used carefully. It is an on-device statistical model over explainable signals, with fitted weights and safety floors, plus on-device language understanding of the user's own words. It runs without a cloud model, so it is private, free to run and checkable.

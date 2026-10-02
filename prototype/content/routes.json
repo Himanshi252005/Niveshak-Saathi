@@ -378,6 +378,15 @@
           "en": "Emails, messages or screenshots about the problem, with account numbers covered except the last four digits",
           "hi": "समस्या से जुड़े ईमेल, संदेश या स्क्रीनशॉट, खाता नंबर के अंतिम चार अंक छोड़कर बाकी छिपाकर"
         }
+      ],
+      "tips": [
+        {
+          "text": {
+            "en": "Shares moved out of your demat without your consent? Complain to your DP in writing at once. If forgery or hacking is involved, also report it to the police through cybercrime.gov.in or 1930.",
+            "hi": "आपकी मंज़ूरी के बिना डीमैट से शेयर निकल गए? तुरंत अपने DP को लिखित शिकायत करें। जालसाज़ी या हैकिंग हो तो cybercrime.gov.in या 1930 के ज़रिए पुलिस को भी रिपोर्ट करें।"
+          },
+          "sourceId": "cyber"
+        }
       ]
     },
     {
@@ -416,6 +425,15 @@
         {
           "en": "Your complaint to the company or RTA and its reply, with dates",
           "hi": "कंपनी या RTA को की गई शिकायत और उसका जवाब, तारीखों सहित"
+        }
+      ],
+      "tips": [
+        {
+          "text": {
+            "en": "Lost the paper share certificates? Ask the company or its RTA for its duplicate-certificate process. As per SEBI guidelines it may need a police report (FIR), a newspaper advertisement and an indemnity bond.",
+            "hi": "कागज़ी शेयर प्रमाणपत्र खो गए? कंपनी या उसके RTA से डुप्लिकेट प्रमाणपत्र की प्रक्रिया पूछें। SEBI दिशानिर्देशों के अनुसार इसमें पुलिस रिपोर्ट (FIR), अख़बार में विज्ञापन और क्षतिपूर्ति बॉन्ड लग सकता है।"
+          },
+          "sourceId": "iepf-claimant-faq"
         }
       ]
     },
@@ -460,6 +478,22 @@
           "en": "Your complaint to the fund and its reply, with dates",
           "hi": "फ़ंड को की गई शिकायत और उसका जवाब, तारीखों सहित"
         }
+      ],
+      "tips": [
+        {
+          "text": {
+            "en": "Can't find an old mutual fund investment? SEBI's MITRA platform helps trace unclaimed mutual fund money.",
+            "hi": "पुराना म्यूचुअल फ़ंड निवेश नहीं मिल रहा? SEBI का मित्र (MITRA) प्लेटफ़ॉर्म बिना दावे वाला म्यूचुअल फ़ंड पैसा खोजने में मदद करता है।"
+          },
+          "sourceId": "pib-unclaimed-2026"
+        },
+        {
+          "text": {
+            "en": "A Consolidated Account Statement (CAS) lists your transactions across all mutual funds and your demat accounts in one statement. Update your PAN with your DP or broker to receive it.",
+            "hi": "समेकित खाता विवरण (CAS) में आपके सभी म्यूचुअल फ़ंड और डीमैट खातों के लेन-देन एक ही विवरण में होते हैं। इसे पाने के लिए अपने DP या ब्रोकर के पास PAN अपडेट करें।"
+          },
+          "sourceId": "sebi-cas"
+        }
       ]
     },
     {
@@ -503,6 +537,22 @@
           "en": "Every request and acknowledgement, with dates",
           "hi": "हर अनुरोध और पावती, तारीखों सहित"
         }
+      ],
+      "tips": [
+        {
+          "text": {
+            "en": "Company says the shares went to the IEPF? The legal heir first registers the transmission with the company, then claims from the IEPF with online form IEPF-5.",
+            "hi": "कंपनी कहती है कि शेयर IEPF में चले गए? कानूनी वारिस पहले कंपनी में ट्रांसमिशन दर्ज कराए, फिर ऑनलाइन फ़ॉर्म IEPF-5 से IEPF से दावा करे।"
+          },
+          "sourceId": "iepf-claimant-faq"
+        },
+        {
+          "text": {
+            "en": "Not sure which mutual funds the person held? SEBI's MITRA platform helps trace unclaimed mutual fund money.",
+            "hi": "पता नहीं कि उनके कौन-से म्यूचुअल फ़ंड थे? SEBI का मित्र (MITRA) प्लेटफ़ॉर्म बिना दावे वाला म्यूचुअल फ़ंड पैसा खोजने में मदद करता है।"
+          },
+          "sourceId": "pib-unclaimed-2026"
+        }
       ]
     },
     {
@@ -511,8 +561,8 @@
       "kind": "ladder",
       "scope": "unclaimed",
       "label": {
-        "en": "Old shares or unclaimed dividends (IEPF)",
-        "hi": "पुराने शेयर या बिना दावे वाला लाभांश (IEPF)"
+        "en": "Shares or dividends that may have moved to the IEPF after seven unclaimed years",
+        "hi": "शेयर या लाभांश जो सात साल बिना दावे के रहने पर IEPF में जा सकते हैं"
       },
       "shortLabel": {
         "en": "Old shares or unclaimed dividends",
@@ -544,6 +594,29 @@
         {
           "en": "Every claim reference and acknowledgement, with dates",
           "hi": "हर दावा संदर्भ और पावती, तारीखों सहित"
+        }
+      ],
+      "tips": [
+        {
+          "text": {
+            "en": "File online form IEPF-5 yourself: no agent is needed, and none is appointed. Send the print-out and papers to the company's Nodal Officer, who verifies within 15 days. Shares return to your demat account, so keep one ready with its client master list from your DP.",
+            "hi": "ऑनलाइन फ़ॉर्म IEPF-5 खुद भरें: किसी एजेंट की ज़रूरत नहीं, न कोई नियुक्त है। प्रिंट और कागज़ कंपनी के नोडल अधिकारी को भेजें, जो 15 दिन में जाँच करते हैं। शेयर आपके डीमैट खाते में लौटते हैं, इसलिए अपने DP से क्लाइंट मास्टर लिस्ट के साथ एक खाता तैयार रखें।"
+          },
+          "sourceId": "iepf-claimant-faq"
+        },
+        {
+          "text": {
+            "en": "Dividends stopped or a certificate was lost, but nothing has gone to the IEPF? Choose \"Company or registrar (RTA)\" instead.",
+            "hi": "लाभांश आना बंद हुआ या प्रमाणपत्र खो गया, पर कुछ IEPF में नहीं गया? इसके बजाय \"कंपनी या रजिस्ट्रार (RTA)\" चुनें।"
+          },
+          "sourceId": "sebi-rta-faq"
+        },
+        {
+          "text": {
+            "en": "Looking for other old money? RBI's UDGAM portal searches unclaimed bank deposits, SEBI's MITRA platform traces unclaimed mutual fund money and IRDAI's Bima Bharosa traces unclaimed insurance money.",
+            "hi": "दूसरा पुराना पैसा खोज रहे हैं? RBI का उद्गम (UDGAM) पोर्टल बिना दावे वाली बैंक जमा, SEBI का मित्र (MITRA) प्लेटफ़ॉर्म बिना दावे वाला म्यूचुअल फ़ंड पैसा और IRDAI का बीमा भरोसा बिना दावे वाला बीमा पैसा खोजता है।"
+          },
+          "sourceId": "pib-unclaimed-2026"
         }
       ]
     },
@@ -586,6 +659,36 @@
         {
           "en": "Receipts, transaction references and screenshots",
           "hi": "रसीदें, लेन-देन संदर्भ और स्क्रीनशॉट"
+        }
+      ],
+      "tips": [
+        {
+          "text": {
+            "en": "An old deposit you never claimed? Search for it on RBI's UDGAM portal (udgam.rbi.org.in). The money is claimed only from the bank itself.",
+            "hi": "कोई पुरानी जमा जिसका दावा नहीं किया? RBI के उद्गम (UDGAM) पोर्टल (udgam.rbi.org.in) पर खोजें। पैसे का दावा सिर्फ़ उसी बैंक से होता है।"
+          },
+          "sourceId": "rbi-udgam"
+        },
+        {
+          "text": {
+            "en": "Account frozen or money on hold after a cyber complaint? Ask the bank in writing which complaint and which police station or cyber cell asked for it. The State police handle cybercrime complaints, so contact that police station with your documents.",
+            "hi": "साइबर शिकायत के बाद खाता फ़्रीज़ हुआ या पैसा रोका गया? बैंक से लिखित में पूछें कि किस शिकायत पर और किस थाने या साइबर सेल के कहने पर ऐसा हुआ। साइबर अपराध की शिकायतें राज्य पुलिस देखती है, इसलिए अपने दस्तावेज़ लेकर उसी थाने से संपर्क करें।"
+          },
+          "sourceId": "pib-ncrp-2026"
+        },
+        {
+          "text": {
+            "en": "A loan app or its agents harassing you? Report the app, and any bank account linked to it, to the police or on RBI Sachet.",
+            "hi": "लोन ऐप या उसके एजेंट परेशान कर रहे हैं? ऐप और उससे जुड़े बैंक खाते की शिकायत पुलिस में या RBI सचेत पर करें।"
+          },
+          "sourceId": "rbi-dla-caution-2020"
+        },
+        {
+          "text": {
+            "en": "Before borrowing through an app, check RBI's \"Digital Lending Apps\" directory to see whether it is linked to an RBI-regulated lender. Fake loan apps can be reported on cybercrime.gov.in or 1930.",
+            "hi": "किसी ऐप से उधार लेने से पहले RBI की \"डिजिटल लेंडिंग ऐप्स\" सूची में देखें कि वह किसी RBI-नियंत्रित संस्था से जुड़ा है या नहीं। नकली लोन ऐप की शिकायत cybercrime.gov.in या 1930 पर करें।"
+          },
+          "sourceId": "pib-dla-2026"
         }
       ]
     },
@@ -689,6 +792,10 @@
       },
       "steps": [
         {
+          "en": "Quick guide: money taken or a scam → Possible fraud; a broker or demat app → Broker; dividends or paper shares → Company or registrar; a holder has died → After a death; a bank, card or loan app → Bank; a policy → Insurance; NPS or APY → Pension.",
+          "hi": "आसान पहचान: पैसा गया या धोखा → संभावित धोखाधड़ी; ब्रोकर या डीमैट ऐप → ब्रोकर; लाभांश या कागज़ी शेयर → कंपनी या रजिस्ट्रार; धारक की मृत्यु → मृत्यु के बाद; बैंक, कार्ड या लोन ऐप → बैंक; पॉलिसी → बीमा; NPS या APY → पेंशन।"
+        },
+        {
           "en": "Find the institution's own complaint option on its official website or app. Do not use numbers or links from a message.",
           "hi": "संस्था की आधिकारिक वेबसाइट या ऐप पर उसका अपना शिकायत विकल्प खोजें। संदेश में दिए नंबर या लिंक का उपयोग न करें।"
         },
@@ -711,6 +818,36 @@
         "bima-bharosa-faq",
         "pfrda-grievance",
         "cyber"
+      ],
+      "tips": [
+        {
+          "text": {
+            "en": "Account frozen or money on hold after a cyber complaint? Ask the bank in writing which complaint and which police station or cyber cell asked for it. The State police handle cybercrime complaints, so contact that police station with your documents.",
+            "hi": "साइबर शिकायत के बाद खाता फ़्रीज़ हुआ या पैसा रोका गया? बैंक से लिखित में पूछें कि किस शिकायत पर और किस थाने या साइबर सेल के कहने पर ऐसा हुआ। साइबर अपराध की शिकायतें राज्य पुलिस देखती है, इसलिए अपने दस्तावेज़ लेकर उसी थाने से संपर्क करें।"
+          },
+          "sourceId": "pib-ncrp-2026"
+        },
+        {
+          "text": {
+            "en": "File online form IEPF-5 yourself: no agent is needed, and none is appointed. Send the print-out and papers to the company's Nodal Officer, who verifies within 15 days. Shares return to your demat account, so keep one ready with its client master list from your DP.",
+            "hi": "ऑनलाइन फ़ॉर्म IEPF-5 खुद भरें: किसी एजेंट की ज़रूरत नहीं, न कोई नियुक्त है। प्रिंट और कागज़ कंपनी के नोडल अधिकारी को भेजें, जो 15 दिन में जाँच करते हैं। शेयर आपके डीमैट खाते में लौटते हैं, इसलिए अपने DP से क्लाइंट मास्टर लिस्ट के साथ एक खाता तैयार रखें।"
+          },
+          "sourceId": "iepf-claimant-faq"
+        },
+        {
+          "text": {
+            "en": "Looking for other old money? RBI's UDGAM portal searches unclaimed bank deposits, SEBI's MITRA platform traces unclaimed mutual fund money and IRDAI's Bima Bharosa traces unclaimed insurance money.",
+            "hi": "दूसरा पुराना पैसा खोज रहे हैं? RBI का उद्गम (UDGAM) पोर्टल बिना दावे वाली बैंक जमा, SEBI का मित्र (MITRA) प्लेटफ़ॉर्म बिना दावे वाला म्यूचुअल फ़ंड पैसा और IRDAI का बीमा भरोसा बिना दावे वाला बीमा पैसा खोजता है।"
+          },
+          "sourceId": "pib-unclaimed-2026"
+        },
+        {
+          "text": {
+            "en": "Money deducted every month for something you don't recognise? Ask your bank in writing which mandate or policy it is for and who set it up, then choose the matching route here, such as Insurance. Card and UPI auto-pay mandates can be withdrawn at any time.",
+            "hi": "किसी अनजान चीज़ के लिए हर महीने पैसा कट रहा है? बैंक से लिखित में पूछें कि यह किस मैंडेट या पॉलिसी के लिए है और इसे किसने शुरू किया, फिर यहाँ उससे मिलता रास्ता चुनें, जैसे बीमा। कार्ड और UPI के ऑटो-पे मैंडेट कभी भी वापस लिए जा सकते हैं।"
+          },
+          "sourceId": "rbi-emandate"
+        }
       ]
     }
   ],
@@ -723,12 +860,28 @@
       },
       "steps": [
         {
-          "en": "Contact your bank or payment provider immediately using its official number.",
-          "hi": "आधिकारिक नंबर पर तुरंत अपने बैंक या भुगतान सेवा से संपर्क करें।"
+          "en": "Contact your bank or payment provider immediately using its official number. Under RBI rules, how much of the loss you may have to bear depends on how quickly you report it.",
+          "hi": "अपने बैंक या भुगतान सेवा से तुरंत उसके आधिकारिक नंबर पर संपर्क करें। RBI के नियमों के अनुसार, नुकसान का कितना हिस्सा आपको उठाना पड़ सकता है, यह इस पर निर्भर करता है कि आपने कितनी जल्दी सूचना दी।"
         },
         {
           "en": "Call 1930 and report at the National Cyber Crime Reporting Portal. Follow their instructions.",
           "hi": "1930 पर कॉल करें और राष्ट्रीय साइबर अपराध पोर्टल पर रिपोर्ट करें। उनके निर्देश मानें।"
+        },
+        {
+          "en": "If the bank rejects your complaint about money taken without your consent, or does not reply within 30 days, complain to the RBI Ombudsman at cms.rbi.org.in.",
+          "hi": "आपकी मंज़ूरी के बिना कटे पैसे की शिकायत बैंक ठुकरा दे या 30 दिन में जवाब न दे, तो cms.rbi.org.in पर RBI लोकपाल के पास शिकायत करें।"
+        },
+        {
+          "en": "Money collected for a chit, committee, deposit or Ponzi scheme: give the information to the police or the Economic Offences Wing (EOW) of your state, and report the scheme on RBI Sachet.",
+          "hi": "चिट, कमेटी, जमा या पोंज़ी योजना के नाम पर पैसा लिया गया: इसकी जानकारी अपने राज्य की पुलिस या आर्थिक अपराध शाखा (EOW) को दें, और RBI सचेत पर योजना की शिकायत करें।"
+        },
+        {
+          "en": "A loan app threatening you or your contacts: report it on cybercrime.gov.in or 1930. Before borrowing again, check RBI's \"Digital Lending Apps\" directory to see whether an app is linked to an RBI-regulated lender.",
+          "hi": "लोन ऐप आपको या आपके संपर्कों को धमका रहा है: cybercrime.gov.in या 1930 पर शिकायत करें। दोबारा उधार लेने से पहले RBI की \"डिजिटल लेंडिंग ऐप्स\" सूची में देखें कि ऐप किसी RBI-नियंत्रित संस्था से जुड़ा है या नहीं।"
+        },
+        {
+          "en": "Shares moved out of your demat without your consent? Complain to your DP or broker in writing at once. If it is not resolved, the next steps are SEBI SCORES and then SMART ODR (see Find help: \"Broker or demat account\").",
+          "hi": "आपकी मंज़ूरी के बिना डीमैट से शेयर निकल गए? तुरंत अपने DP या ब्रोकर को लिखित शिकायत करें। हल न हो तो अगला कदम SEBI SCORES और फिर स्मार्ट ODR है (मदद खोजें में \"ब्रोकर या डीमैट खाता\" देखें)।"
         },
         {
           "en": "Keep transaction references and messages. Do not pay a “recovery fee”. Recovery is not guaranteed.",
@@ -742,7 +895,15 @@
           "en": "Open official cybercrime portal",
           "hi": "आधिकारिक साइबर अपराध पोर्टल खोलें"
         }
-      }
+      },
+      "sourceIds": [
+        "rbi-liability",
+        "rbi-ios-faq",
+        "rbi-nbfc-faq",
+        "pib-dla-2026",
+        "scores",
+        "sebi-odr"
+      ]
     },
     {
       "id": "fraud-pause",
@@ -762,6 +923,18 @@
         {
           "en": "If you suspect a cybercrime, use the official portal for reporting guidance.",
           "hi": "साइबर अपराध का संदेह हो तो रिपोर्टिंग के लिए आधिकारिक पोर्टल देखें।"
+        },
+        {
+          "en": "Asked to put money into a chit, committee, deposit or Ponzi scheme? Report it on RBI Sachet; the police or the Economic Offences Wing of your state also take such complaints.",
+          "hi": "चिट, कमेटी, जमा या पोंज़ी योजना में पैसा लगाने को कहा जा रहा है? RBI सचेत पर शिकायत करें; अपने राज्य की पुलिस या आर्थिक अपराध शाखा भी ऐसी शिकायतें लेती है।"
+        },
+        {
+          "en": "Offered a loan through an app? Check RBI's \"Digital Lending Apps\" directory to see whether the app is linked to an RBI-regulated lender.",
+          "hi": "किसी ऐप से लोन की पेशकश? RBI की \"डिजिटल लेंडिंग ऐप्स\" सूची में देखें कि ऐप किसी RBI-नियंत्रित संस्था से जुड़ा है या नहीं।"
+        },
+        {
+          "en": "Someone offering to recover old shares, deposits, mutual fund or insurance money for a fee? You can trace them yourself: the IEPF for old shares and dividends (form IEPF-5, no agent needed), RBI's UDGAM portal for deposits, SEBI's MITRA for mutual funds and IRDAI's Bima Bharosa for insurance.",
+          "hi": "कोई फ़ीस लेकर पुराने शेयर, जमा, म्यूचुअल फ़ंड या बीमा का पैसा दिलाने की बात कर रहा है? आप खुद खोज सकते हैं: पुराने शेयर और लाभांश के लिए IEPF (फ़ॉर्म IEPF-5, किसी एजेंट की ज़रूरत नहीं), जमा के लिए RBI का उद्गम (UDGAM) पोर्टल, म्यूचुअल फ़ंड के लिए SEBI का मित्र (MITRA) और बीमा के लिए IRDAI का बीमा भरोसा।"
         }
       ],
       "link": {
@@ -770,7 +943,13 @@
           "en": "Open official cybercrime portal",
           "hi": "आधिकारिक साइबर अपराध पोर्टल खोलें"
         }
-      }
+      },
+      "sourceIds": [
+        "rbi-nbfc-faq",
+        "pib-dla-2026",
+        "pib-unclaimed-2026",
+        "iepf-claimant-faq"
+      ]
     }
   ]
 }

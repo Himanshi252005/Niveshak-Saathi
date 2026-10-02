@@ -92,3 +92,7 @@ label.check{display:flex;gap:12px;align-items:flex-start;font-weight:500;line-he
 label.check>input[type=checkbox],label.check>input[type=radio]{width:22px;height:22px;flex-shrink:0;margin:2px 0 0;padding:0;accent-color:#0d4944}
 /* C-20 real-world test: a no-match result is "insufficient evidence", never a green "safe"; it uses the same neutral style. */
 .verdict-none{background:#f5f7fa;color:#24364a;border-color:#5e6c80}
+/* P1-6: route buttons show the plain description under the short name; P1 tips are an "Also check" list with sources. */
+.route-choice .issue-name{display:block;font-weight:650}.route-choice .issue-hint{display:block;font-size:13px;font-weight:400;color:#5f7572;margin-top:3px;line-height:1.35}ul.tips{padding-left:20px}ul.tips li{margin:10px 0}ul.tips li p{margin:0;line-height:1.6}
+/* P2-4: version, review date and the user-tapped update link on Home. */
+.version-line{margin:16px 0 0;color:var(--muted);font-size:.85rem;line-height:1.5;overflow-wrap:anywhere}.version-line a{color:var(--brand)}

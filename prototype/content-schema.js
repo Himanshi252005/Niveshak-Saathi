@@ -106,6 +106,14 @@
     if (snap != null && snap > today + DAY) err('meta.snapshotDate', 'is in the future');
     if (snap != null && due != null && due < snap) err('meta.reviewDue', 'is before the snapshot date');
     if (due != null && due < today) warn('meta.reviewDue', 'content review is overdue (' + meta.reviewDue + ')');
+    // Optional public address behind "Check for a newer version" on Home (P2-4). It is the app's own site, not an official
+    // source, so the source allowlist does not apply; it must still be a plain https address without a user name or password.
+    if (meta.updateUrl != null && meta.updateUrl !== '' && str('meta.updateUrl', meta.updateUrl, 300)) {
+      let u = null; try { u = new URL(meta.updateUrl); } catch (e) { err('meta.updateUrl', 'not a valid web address'); }
+      if (u && u.protocol !== 'https:') err('meta.updateUrl', 'must start with https://');
+      if (u && (u.username || u.password)) err('meta.updateUrl', 'must not contain a user name or password');
+      if (u && (u.search || u.hash)) err('meta.updateUrl', 'must not contain "?" or "#" parts');
+    }
 
     // sources and helplines
     const sourceIds = new Set(), enabledSources = new Set();
@@ -175,6 +183,8 @@
       list(w + '.steps', o.steps, 1, 8).forEach((s, j) => text(w + '.steps[' + j + ']', s, 400));
       if (o.helplineId != null && !helplineIds.has(o.helplineId)) err(w + '.helplineId', 'unknown helpline "' + o.helplineId + '"');
       if (!isObj(o.link)) err(w + '.link', 'needs an official link'); else { sourceRef(w + '.link.sourceId', o.link.sourceId); text(w + '.link.label', o.link.label, 80); }
+      // Optional further official sources for the card's steps, shown under it with their review dates.
+      if (o.sourceIds != null) list(w + '.sourceIds', o.sourceIds, 0, 8).forEach((s, j) => sourceRef(w + '.sourceIds[' + j + ']', s));
     });
     const outcomeRef = (where, v) => { if (!outcomeIds.has(v)) err(where, 'unknown outcome "' + v + '"'); else usedOutcomes.add(v); };
     const enabledIssues = list('routes.issues', routes.issues, 1, 16).filter((issue, i) => {
@@ -211,6 +221,11 @@
       } else {
         list(w + '.steps', issue.steps, 1, 6).forEach((s, j) => text(w + '.steps[' + j + ']', s, 400));
         list(w + '.sourceIds', issue.sourceIds, 0, 8).forEach((s, j) => sourceRef(w + '.sourceIds[' + j + ']', s));
+      }
+      // Optional "Also check" tips on escalation and "not sure" routes: short, bilingual, each tied to one official source.
+      if (issue.tips != null) {
+        if (issue.kind === 'outcomes') err(w + '.tips', 'a question route shows extra advice as outcome steps, not tips');
+        else list(w + '.tips', issue.tips, 0, 4).forEach((tp, j) => { const tw = w + '.tips[' + j + ']'; if (!isObj(tp)) return err(tw, 'must be an object'); text(tw + '.text', tp.text, 300); sourceRef(tw + '.sourceId', tp.sourceId); });
       }
       return issue.enabled === true;
     });
@@ -378,9 +393,11 @@
       }
     }
 
+    // Characters of content. The soft budget was 120,000 until Release 3.4 added the source-backed grievance routes (P1) in
+    // two languages; the whole app is then about 165 KB with gzip (2 October 2026), so the warning now starts at 140,000.
     const size = canonical(content).length;
     if (size > 300000) err('content', 'larger than 300 KB; keep the offline app small');
-    else if (size > 120000) warn('content', 'larger than 120 KB; the app is meant for low-bandwidth use');
+    else if (size > 140000) warn('content', 'larger than 140 KB of text; the app is meant for low-bandwidth use');
     return { errors, warnings };
   }
 

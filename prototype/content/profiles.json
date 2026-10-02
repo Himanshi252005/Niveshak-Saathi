@@ -28,7 +28,8 @@
       "steps": [
         { "text": { "en": "Check the message before acting and read every reason shown.", "hi": "कुछ करने से पहले संदेश जाँचें और दिखाया गया हर कारण पढ़ें।" }, "sourceId": "sebi-social-caution" },
         { "text": { "en": "Verify the person or firm independently on SEBI's official intermediary register.", "hi": "व्यक्ति या संस्था को SEBI की आधिकारिक इंटरमीडियरी सूची में अलग से जाँचें।" }, "sourceId": "sebi-intermediaries" },
-        { "text": { "en": "Use only the broker's official app and payment route; never pay a personal UPI ID from a group.", "hi": "केवल ब्रोकर का आधिकारिक ऐप और भुगतान तरीका इस्तेमाल करें; ग्रुप से मिली निजी UPI आईडी पर पैसा न भेजें।" }, "sourceId": "apps" }
+        { "text": { "en": "Use only the broker's official app and payment route; never pay a personal UPI ID from a group.", "hi": "केवल ब्रोकर का आधिकारिक ऐप और भुगतान तरीका इस्तेमाल करें; ग्रुप से मिली निजी UPI आईडी पर पैसा न भेजें।" }, "sourceId": "apps" },
+        { "text": { "en": "Before any F&O trade, know the odds: SEBI found that 93% of individual traders lost money in equity F&O between FY22 and FY24.", "hi": "किसी भी F&O सौदे से पहले जोखिम समझें: SEBI के अध्ययन में वित्त वर्ष 2022 से 2024 के बीच इक्विटी F&O में 93% व्यक्तिगत ट्रेडरों को घाटा हुआ।" }, "sourceId": "sebi-fo-study" }
       ],
       "actions": [
         { "target": "check", "label": { "en": "Check the tip message", "hi": "टिप वाला संदेश जाँचें" } },
@@ -50,7 +51,8 @@
       "steps": [
         { "text": { "en": "Use Before you pay to get a STOP or VERIFY answer before any transfer.", "hi": "कोई भी भुगतान करने से पहले ‘भुगतान से पहले’ में रुकें या जाँचें वाला जवाब पाएँ।" }, "sourceId": "sebi-check" },
         { "text": { "en": "For an IPO, apply only through your own bank or broker's official ASBA route.", "hi": "IPO के लिए केवल अपने बैंक या ब्रोकर के आधिकारिक ASBA तरीके से आवेदन करें।" }, "sourceId": "sebi-icdr-faq" },
-        { "text": { "en": "For a deposit scheme, use RBI Sachet and official records instead of the sender's link.", "hi": "जमा योजना के लिए भेजने वाले के लिंक की जगह RBI Sachet और आधिकारिक रिकॉर्ड देखें।" }, "sourceId": "rbi-sachet" }
+        { "text": { "en": "For a deposit scheme, use RBI Sachet and official records instead of the sender's link.", "hi": "जमा योजना के लिए भेजने वाले के लिंक की जगह RBI Sachet और आधिकारिक रिकॉर्ड देखें।" }, "sourceId": "rbi-sachet" },
+        { "text": { "en": "If money has already gone into a chit, committee or Ponzi scheme, give the information to the police or the Economic Offences Wing (EOW) of your state.", "hi": "अगर पैसा चिट, कमेटी या पोंज़ी योजना में जा चुका है, तो इसकी जानकारी अपने राज्य की पुलिस या आर्थिक अपराध शाखा (EOW) को दें।" }, "sourceId": "rbi-nbfc-faq" }
       ],
       "actions": [
         { "target": "paycheck", "label": { "en": "Check before paying", "hi": "भुगतान से पहले जाँचें" } },
@@ -72,7 +74,9 @@
       "steps": [
         { "text": { "en": "Use Find help and choose old shares or unclaimed dividends; the app will not guess the authority.", "hi": "‘कहाँ शिकायत करें’ में पुराने शेयर या बिना दावे का लाभांश चुनें; ऐप अधिकारी का अंदाज़ा नहीं लगाएगा।" }, "sourceId": "sebi-rta-faq" },
         { "text": { "en": "Use Family readiness to check nominees, contact details, paper certificates and official contacts.", "hi": "नॉमिनी, संपर्क जानकारी, कागज़ी सर्टिफिकेट और आधिकारिक संपर्क जाँचने के लिए परिवार तैयारी सूची इस्तेमाल करें।" }, "sourceId": "sebi-nomination-2026" },
-        { "text": { "en": "Contact the company, registrar, fund or DP through an official website; do not pay an unsolicited recovery agent.", "hi": "कंपनी, रजिस्ट्रार, फ़ंड या DP से आधिकारिक वेबसाइट के जरिए संपर्क करें; अचानक आए रिकवरी एजेंट को पैसे न दें।" }, "sourceId": "sebi-rta-faq" }
+        { "text": { "en": "Contact the company, registrar, fund or DP through an official website; do not pay an unsolicited recovery agent.", "hi": "कंपनी, रजिस्ट्रार, फ़ंड या DP से आधिकारिक वेबसाइट के जरिए संपर्क करें; अचानक आए रिकवरी एजेंट को पैसे न दें।" }, "sourceId": "sebi-rta-faq" },
+        { "text": { "en": "For shares or dividends already with the IEPF, file online form IEPF-5 yourself; no agent is needed and none is appointed.", "hi": "IEPF में जा चुके शेयर या लाभांश के लिए ऑनलाइन फ़ॉर्म IEPF-5 खुद भरें; किसी एजेंट की ज़रूरत नहीं, न कोई नियुक्त है।" }, "sourceId": "iepf-claimant-faq" },
+        { "text": { "en": "Trace other old money yourself: RBI's UDGAM portal for bank deposits, SEBI's MITRA platform for mutual funds and IRDAI's Bima Bharosa for insurance.", "hi": "दूसरा पुराना पैसा खुद खोजें: बैंक जमा के लिए RBI का उद्गम (UDGAM) पोर्टल, म्यूचुअल फ़ंड के लिए SEBI का मित्र (MITRA) प्लेटफ़ॉर्म और बीमा के लिए IRDAI का बीमा भरोसा।" }, "sourceId": "pib-unclaimed-2026" }
       ],
       "actions": [
         { "target": "route", "label": { "en": "Find the official route", "hi": "आधिकारिक रास्ता खोजें" } },

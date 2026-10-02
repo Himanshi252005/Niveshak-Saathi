@@ -84,6 +84,18 @@
       "sourceId": "sebi-rta-faq"
     },
     {
+      "id": "trace-unclaimed",
+      "when": ["any"],
+      "text": { "en": "Old money the family may have forgotten can be traced: RBI's UDGAM portal for bank deposits, SEBI's MITRA platform for mutual funds and IRDAI's Bima Bharosa for insurance.", "hi": "परिवार का भूला हुआ पुराना पैसा खोजा जा सकता है: बैंक जमा के लिए RBI का उद्गम (UDGAM) पोर्टल, म्यूचुअल फ़ंड के लिए SEBI का मित्र (MITRA) प्लेटफ़ॉर्म और बीमा के लिए IRDAI का बीमा भरोसा।" },
+      "sourceId": "pib-unclaimed-2026"
+    },
+    {
+      "id": "cas-statement",
+      "when": ["demat", "mf", "unknown"],
+      "text": { "en": "A Consolidated Account Statement (CAS) shows mutual fund and demat transactions in one statement, matched by PAN, which helps the family know what is held. Keep the PAN updated with your DP or broker to receive it.", "hi": "समेकित खाता विवरण (CAS) PAN के आधार पर म्यूचुअल फ़ंड और डीमैट के लेन-देन एक ही विवरण में दिखाता है, जिससे परिवार जान पाता है कि क्या-क्या है। इसे पाने के लिए अपने DP या ब्रोकर के पास PAN अपडेट रखें।" },
+      "sourceId": "sebi-cas"
+    },
+    {
       "id": "entity-contact",
       "when": ["any"],
       "text": { "en": "Note the official contact of each depository participant, fund house and company registrar, taken from their official websites, not from messages.", "hi": "हर DP, फ़ंड हाउस और कंपनी रजिस्ट्रार का आधिकारिक संपर्क उनकी आधिकारिक वेबसाइट से लिखकर रखें, संदेशों से नहीं।" },

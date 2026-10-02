@@ -1,0 +1,229 @@
+{
+  "checkedAt": "2026-10-02",
+  "product": "Niveshak Saathi",
+  "release": "3.4",
+  "app": {
+    "file": "outputs/prototype/dist/index.html",
+    "bytes": 561637,
+    "sha256": "911E8BA0637980325249E72B5442A6B0CE3306153D3432C663CE773EF02DBB04"
+  },
+  "suites": [
+    {
+      "suite": "Content validator (C-7)",
+      "file": "c7-content-tests.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 28 content tests passed",
+      "failures": [],
+      "seconds": 0
+    },
+    {
+      "suite": "Emergency rules (C-8)",
+      "file": "c8-emergency-tests.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 47 emergency tests passed",
+      "failures": [],
+      "seconds": 0
+    },
+    {
+      "suite": "Routes and channel (C-9)",
+      "file": "c9-routes-tests.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 42 route tests passed",
+      "failures": [],
+      "seconds": 0
+    },
+    {
+      "suite": "Action Packet content (C-10)",
+      "file": "c10-packet-tests.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 22 packet tests passed",
+      "failures": [],
+      "seconds": 0
+    },
+    {
+      "suite": "Family content (C-11)",
+      "file": "c11-family-tests.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 27 family tests passed",
+      "failures": [],
+      "seconds": 0
+    },
+    {
+      "suite": "Studio end to end (C-7)",
+      "file": "c7-studio-e2e.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all C-7 end-to-end checks passed",
+      "failures": [],
+      "seconds": 8
+    },
+    {
+      "suite": "Studio Emergency tab (C-8)",
+      "file": "c8-studio-e2e.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 31 C-8 Studio checks passed",
+      "failures": [],
+      "seconds": 10
+    },
+    {
+      "suite": "Studio Help routes tab (C-9)",
+      "file": "c9-studio-e2e.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 25 C-9 Studio checks passed",
+      "failures": [],
+      "seconds": 9
+    },
+    {
+      "suite": "Studio Action Packet tab (C-10)",
+      "file": "c10-studio-e2e.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 19 C-10 Studio checks passed",
+      "failures": [],
+      "seconds": 6
+    },
+    {
+      "suite": "Studio Family tab (C-11)",
+      "file": "c11-studio-e2e.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "all 19 C-11 Studio checks passed",
+      "failures": [],
+      "seconds": 5
+    },
+    {
+      "suite": "Independent boundary set (GPT, read-only)",
+      "file": "review-engine.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "\"failed\": 0,",
+      "failures": [],
+      "seconds": 0
+    },
+    {
+      "suite": "Integrated static, parity and live-link checks (C-12)",
+      "file": "c12-integrated.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "13/13 integrated checks passed",
+      "failures": [],
+      "seconds": 31
+    },
+    {
+      "suite": "On-device assistant (C-15)",
+      "file": "assist-tests.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "176 passed, 0 failed",
+      "failures": [],
+      "seconds": 0
+    },
+    {
+      "suite": "Review-fix replays (C-13)",
+      "file": "c13-review-fixes.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "22/22 checks passed",
+      "failures": [],
+      "seconds": 9
+    },
+    {
+      "suite": "New-feature journeys (C-14, C-15)",
+      "file": "c14-features.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "23/23 checks passed",
+      "failures": [],
+      "seconds": 3
+    },
+    {
+      "suite": "Home choices, sharing and pilot session (C-17)",
+      "file": "c17-features.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "19/19 checks passed",
+      "failures": [],
+      "seconds": 5
+    },
+    {
+      "suite": "Professional app shell: Home, sidebar menu, phone menu, no emoji (C-18)",
+      "file": "c18-shell.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "31/31 checks passed",
+      "failures": [],
+      "seconds": 14
+    },
+    {
+      "suite": "Persona safety plans and reliability abstention (C-19)",
+      "file": "c19-scale-personas.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "26/26 checks passed",
+      "failures": [],
+      "seconds": 3
+    },
+    {
+      "suite": "Real-world users and stress inputs (C-20)",
+      "file": "c20-realworld.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "14/14 checks passed (100 users: 92 right, 8 partly, 0 wrong)",
+      "failures": [],
+      "seconds": 47
+    },
+    {
+      "suite": "Source-backed grievance, rights, family and persona content (P1, H-3)",
+      "file": "c24-p1-content.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "39/39 checks passed",
+      "failures": [],
+      "seconds": 9
+    },
+    {
+      "suite": "Privacy notes, security policy and version line (P2, H-5)",
+      "file": "c25-p2-privacy.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "27/27 checks passed",
+      "failures": [],
+      "seconds": 6
+    },
+    {
+      "suite": "Release 3.0 browser suite (single run; see Browser-Validation.json)",
+      "file": "verify-v3.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "130/130 checks passed; throttled load 12175 ms; 561637 bytes",
+      "failures": [],
+      "seconds": 24
+    }
+  ],
+  "allPassed": true,
+  "ruleRegression": {
+    "version": "3.3",
+    "cases": 449,
+    "expectationsPassed": 449,
+    "truePositive": 235,
+    "trueNegative": 208,
+    "falseNegative": 0,
+    "falsePositive": 0,
+    "unsupported": 6,
+    "riskLevels": {
+      "fraudHigh": "168/177 (94.9%)",
+      "fraudWarned": "173/177 (97.7%)",
+      "suspiciousWarned": "56/61 (91.8%)",
+      "benignHigh": "2/211 (0.9%)",
+      "benignWarned": "7/211 (3.3%)"
+    }
+  },
+  "note": "Sequential local runs in headless Edge on Windows. Live-link results depend on the network at the time of the run."
+}

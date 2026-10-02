@@ -1,4 +1,4 @@
-# Real-world user test and Release 3.3 fixes
+# Real-world user test, Release 3.3 fixes and Release 3.4 results
 
 **Date:** 2 October 2026.
 
@@ -96,16 +96,28 @@ To measure the checker honestly after these changes, a further independent agent
 
 Every ordinary message that was flagged was a tricky look-alike. The biggest remaining source of false alarms is genuine messages that mention an OTP or a code (a Hindi OTP SMS, a delivery or LPG code). That is the next improvement; it will need yet another fresh set to measure. Full numbers are in `evidence/Blind-Evaluation-v6.json`.
 
+## Release 3.4
+
+- **Result:** the same 100 users and 15 stress inputs pass 14/14 checks: 92 fully right, 8 partly right, 0 wrong. The checker is unchanged from 3.3.
+- **Timing:** on this machine, up to 3 users can move from "fully right" to "partly right" between runs of the same build. The judge marks any result that takes more than 1.5 seconds as partly right. In those runs the verdicts were identical and no user was ever wrong.
+- **Fresh sealed test:** a further fresh set (blind-v8, 200 messages) was written blind and scored once for Release 3.4; see `evidence/Blind-Evaluation-v8.json`. A candidate checker aimed at the false alarms above showed no significant difference on it, so Release 3.4 keeps checker 3.3.
+
 ## Still open
 
 - **Urgent-help details:** some still need a tap, for example whether the caller still has access, and how and when money was paid.
-- **Family safety:** there is no "after a death" path yet (transmission, the IEPF claim, RBI UDGAM). It needs official sources before it is added.
+- **Family safety:** Release 3.4 adds sourced help for heirs and unclaimed money, each from an official page:
+  - transmission first, then the IEPF-5 claim;
+  - SEBI MITRA;
+  - RBI UDGAM;
+  - the SEBI Consolidated Account Statement.
+
+  MF Central and DigiLocker are not covered yet, because their official text could not be verified.
 - **Languages:** other languages get the "outside coverage" or "may miss signs" note instead of a check.
 - **Sharing a message into the app:** a WhatsApp "Share to Niveshak Saathi" option would remove copy-paste. It needs an installable app, which is the owner's decision.
 - **Real people:** a consented pilot and a native Hindi review are still the next evidence milestone.
 
 ## Test kit
 
-The 100 users, the stress inputs, the runner and the scorer are in `evaluation/real-world-test/`, so anyone can run the test again. The per-user results for Release 3.3 are in `evidence/Real-World-User-Test.json`.
+The 100 users, the stress inputs, the runner and the scorer are in `evaluation/real-world-test/`, so anyone can run the test again. The per-user results for Release 3.4 are in `evidence/Real-World-User-Test.json`.
 
 Before publishing, three details in scam messages that could have belonged to real people were replaced with made-up ones: a research-analyst registration number and two UPI IDs. All 100 results stayed the same.

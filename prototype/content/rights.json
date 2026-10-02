@@ -52,6 +52,57 @@
         "hi": "नॉमिनी को होल्डिंग कानूनी वारिसों की ओर से, ट्रस्टी (देखरेख करने वाले) के रूप में मिलती है। सिर्फ़ नॉमिनी बना देने से यह तय नहीं होता कि आखिर में मालिक कौन होगा।"
       },
       "sourceId": "sebi-rta-faq"
+    },
+    {
+      "id": "investor-charter",
+      "enabled": true,
+      "issueIds": [
+        "broker",
+        "company",
+        "mutual-fund",
+        "transmission"
+      ],
+      "text": {
+        "en": "SEBI's Investor Charter gives you the right to fair and equitable treatment, to time-bound redressal of grievances filed on SCORES, and to quality services from SEBI-registered intermediaries, including online dispute resolution (SMART ODR).",
+        "hi": "SEBI का निवेशक चार्टर आपको निष्पक्ष और समान व्यवहार, SCORES पर दर्ज शिकायतों के तय समय में समाधान, और SEBI-पंजीकृत मध्यस्थों से अच्छी सेवा का अधिकार देता है, जिसमें ऑनलाइन विवाद समाधान (स्मार्ट ODR) भी शामिल है।"
+      },
+      "sourceId": "sebi-investor-charter"
+    },
+    {
+      "id": "bank-customer-rights",
+      "enabled": true,
+      "issueIds": [
+        "bank"
+      ],
+      "text": {
+        "en": "RBI's Charter of Customer Rights names five basic rights of bank customers: fair treatment; transparency, fair and honest dealing; products suited to your needs; privacy; and grievance redress and compensation.",
+        "hi": "RBI के ग्राहक अधिकार चार्टर में बैंक ग्राहकों के पाँच बुनियादी अधिकार हैं: उचित व्यवहार; पारदर्शिता, निष्पक्ष और ईमानदार लेन-देन; आपकी ज़रूरत के हिसाब से उपयुक्त उत्पाद; निजता; और शिकायत का निवारण व मुआवज़ा।"
+      },
+      "sourceId": "rbi-customer-charter"
+    },
+    {
+      "id": "insurance-free-look",
+      "enabled": true,
+      "issueIds": [
+        "insurance"
+      ],
+      "text": {
+        "en": "For a life or health policy of one year or more, IRDAI gives you 30 days from receiving the policy to review it. You can cancel in that time for any reason; only the risk premium for the days covered, medical-test costs and stamp duty may be deducted. For life policies the refund is due within 7 days.",
+        "hi": "एक साल या उससे ज़्यादा अवधि की जीवन या स्वास्थ्य बीमा पॉलिसी मिलने के बाद IRDAI आपको उसे जाँचने के लिए 30 दिन देता है। इस दौरान आप किसी भी कारण से पॉलिसी रद्द कर सकते हैं; रिफ़ंड में से सिर्फ़ कवर वाले दिनों का जोखिम प्रीमियम, मेडिकल जाँच का खर्च और स्टांप शुल्क काटा जा सकता है। जीवन बीमा में रिफ़ंड 7 दिन में देना होता है।"
+      },
+      "sourceId": "irdai-policyholder-mc"
+    },
+    {
+      "id": "insurance-grievance-time",
+      "enabled": true,
+      "issueIds": [
+        "insurance"
+      ],
+      "text": {
+        "en": "Complain to the insurer first, in writing, to its Grievance Redressal Officer, with your documents. IRDAI requires an insurance company to resolve a grievance within two weeks of receiving it.",
+        "hi": "पहले बीमा कंपनी के शिकायत निवारण अधिकारी को लिखित शिकायत दें, साथ में ज़रूरी कागज़ लगाएँ। IRDAI के अनुसार बीमा कंपनी को शिकायत मिलने के दो हफ़्ते के अंदर उसका समाधान करना होता है।"
+      },
+      "sourceId": "irdai-consumer-affairs"
     }
   ]
 }
