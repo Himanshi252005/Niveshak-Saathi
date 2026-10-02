@@ -7,7 +7,7 @@
 
 **Status:**
 - Tested browser prototype and downloadable offline HTML.
-- Release 3.3 has been prepared and verified locally. The public link still serves the earlier Release 3.2 build until it is redeployed (see `Delivery-Status.md`).
+- Release 3.3 is verified and publicly deployed. The normalized live file matches the verified SHA-256 and passes 10/10 deployment smoke checks (see `Delivery-Status.md`).
 - No real-user impact study has been conducted.
 - This is an independent educational product, not affiliated with SEBI, RBI, IRDAI, PFRDA, NPCI or any institution.
 

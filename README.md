@@ -8,7 +8,7 @@ Niveshak Saathi helps people pause before paying, recognise scam patterns, act a
 
 **[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)**
 
-The public link still shows the earlier Release 3.2 build. This repository contains the newer verified **Release 3.3**. See [`docs/Delivery-Status.md`](docs/Delivery-Status.md).
+The public link serves the verified **Release 3.3** build from this repository. The normalized served hash and deployment record are in [`docs/Delivery-Status.md`](docs/Delivery-Status.md).
 
 ## Try the newest prototype
 
