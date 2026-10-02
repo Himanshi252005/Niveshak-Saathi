@@ -1,66 +1,49 @@
-# Release 3.2 validation
+# Niveshak Saathi validation
 
-**Build checked:** 2026-10-01, in installed Microsoft Edge (headless). The release build is 473,298 bytes, with SHA-256 `E377FB4EF8024F00C647C4D2D2C1CE82146DDADC48C26C43E6D5BD274001DAC6`.
+**Build checked:** 2026-10-02 in installed Microsoft Edge (headless). The verified public file is 495,106 bytes, with SHA-256 `DFFF70E703656669048C58D0D319C2FB3E842B60297AB18AE29D7F5145FF2B4F`.
 
-**Records:** every figure below comes from these files:
-- `Browser-Validation.json`
-- `Rule-Evaluation.json`
-- `Blind-Evaluation.json`
-- `Release-3.2-Verification.json`
+The evidence records are `Browser-Validation.json`, `Rule-Evaluation.json`, `Blind-Evaluation.json` and `Release-3.2-Verification.json`.
 
 ## Checks that passed
 
-- **Browser journeys:** 130 checks passed in each of 3 runs, with no runtime errors. The suite includes all 42 version 2 checks, plus:
-  - Emergency mode (all 60 answer combinations);
-  - the grievance navigator (all 272 route states);
-  - the Action Packet and family readiness (all 60 combinations);
-  - the Owner Studio's effect on the app;
-  - opening on the Home page, and keyboard use across every menu item;
-  - the phone menu, 200% text on every page, the Hindi-mode language scan (pages and menu), offline use, and no browser storage.
-- **New features:** 23 checks covering:
-  - model v3 verdicts, insights and the "how it was decided" panel;
-  - "Warn my family", which never shares the scam's link;
-  - own-words understanding in Roman Hindi and Hindi, including negation;
-  - Before you pay STOP/VERIFY answers with sources;
-  - Hindi switching, reset, and no network requests.
-- **Review fixes:** 22 checks replay every example from the three independent reviews, including 41 private-detail examples. The other replays cover:
-  - stale-packet and print guards;
-  - phone scrolling;
-  - accessibility names;
-  - the Owner Studio refusing to run from a website.
-- **App layout:** 30 checks.
-  - The app opens on Home with one question and six choices; the urgent choice is marked.
-  - The sidebar lists every page in a fixed order under three plain headings; each item opens only its own page and names it in the top bar.
-  - On a phone, a labelled Menu button opens the menu over the page and blocks the page behind it; choosing a page, the close button, the shaded area and Escape all close it.
-  - The app file contains no emoji; every page fits 320, 360 and 390 px phones in Hindi and English at normal, large and 200% text; printing hides the menus.
-- **Home choices, sharing and pilot session:** 18 checks.
-  - Sharing on a website sends the link; elsewhere it sends the clean app file, which contains none of the user's text.
-  - The pilot needs consent, refuses private details in notes, records the counterbalanced plan in the exact `Pilot-Results.csv` columns and shows a live summary.
-  - The sources register names the reviewer, and read-aloud explains how to install a voice.
-- **On-device assistant:** 176 checks, including 106 own-words cases in English, Hindi and Roman Hindi, return maths, and every Before-you-pay combination with its sources.
-- **Content rules:** 166 validator tests, and 124 Owner Studio end-to-end checks. The build refuses content that breaks a safety rule.
-- **Message checker, developer cases:** 435/435 expectations. These cases were used in development.
-- **Independent boundary set:** 38/38.
-- **Blind evaluation:** see `Blind-Evaluation.json` and the model section of `Submission-v3.md`. Results are given with 95% intervals.
-- **Separation and privacy:**
-  - The public file contains no Owner Studio code, file-writing code or credentials.
-  - It uses no storage, cookies or beacons, and makes no requests during the tested journeys.
-  - Every web address is https on an allowed official domain.
-- **Official links,** re-opened 2026-10-01: 31 of 31 opened. All opened.
-- **Offline:** the downloaded copy opened with networking disabled, and every tool worked.
-- **Speed and size:**
-  - 462 KB uncompressed, 138 KB gzip, 110 KB brotli.
-  - On the simulated slow network (400 ms latency, 50,000 bytes per second, 4× CPU slowdown), the median was 11,386 ms uncompressed and 4,587 ms gzip-served.
-  - The message check takes about 1.0 ms per message.
+- **1,201 automated checks** across the canonical suites, including 435/435 developer message expectations.
+- **Browser journeys:** 130/130 checks in each of three independent runs, with no runtime errors.
+- **Public-scale reliability and personas:** 26/26 checks. They cover the three fixed plans, official-source steps, absence of profile/financial inputs, English and Hindi rendering, action routing, all five reliability states, no storage, no user-data requests, and a 320-pixel Hindi phone view.
+- **App shell:** 30/30 checks across 320, 360 and 390-pixel phones, Hindi and English, normal/large/200% text, keyboard navigation and print layout.
+- **On-device assistant:** 176 checks for English, Hindi and Roman Hindi own-words input, return maths and before-payment decisions.
+- **Content and Owner Studio:** all validator and editor suites passed. Unsafe content prevents a build.
+- **Emergency, grievance, packet and family coverage:** all 60 emergency combinations, 272 grievance route states and 60 family combinations are covered.
+- **Privacy:** the public file contains no Studio or file-writing code; the tested journeys use no browser storage, cookies, analytics, cloud inference or third-party request.
+- **Offline:** the downloaded file works with networking disabled. Official links naturally require internet.
+
+## Model evidence
+
+The checker combines multilingual warning-sign rules, a fitted logistic model and hard safety floors. The interface now explains the agreement around each result and abstains when the language is outside coverage or there is insufficient evidence.
+
+Three sealed synthetic sets of 320 messages each were written separately and scored once for their intended model version. On the final untouched set:
+
+| Measure | Result | 95% interval |
+|---|---:|---:|
+| Fraud or suspicious messages warned | 72.4% | 65.7–78.2% |
+| Fraud messages at High | 71.9% | 63.5–78.9% |
+| Ordinary messages warned | 8.6% | 4.9–14.7% |
+| Ordinary messages at High | 7.0% | 3.7–12.8% |
+
+These are synthetic-message results, not evidence of nationwide accuracy or avoided financial loss.
+
+## Size and speed
+
+- 495,106 bytes uncompressed and 146,742 bytes with gzip.
+- Simulated slow network (400 ms latency, 50,000 bytes/second, 4× CPU slowdown): median 11,515 ms uncompressed and 4,427 ms gzip-served across the latest three-run record.
+- Message analysis remains local and takes about 1 ms for ordinary inputs.
 
 ## Still unproven
 
-- avoided fraud or loss;
-- real-user comprehension;
-- native-speaker review of the Hindi;
-- performance on physical low-end devices;
-- local voice quality;
-- screen-reader conformance;
-- accuracy on real (non-synthetic) messages.
+- avoided fraud or loss in real use;
+- real-user comprehension and completion;
+- native-speaker review of Hindi;
+- physical low-end device and screen-reader conformance;
+- accuracy on a representative, consented real-message corpus;
+- CDN and operations performance at national traffic volumes.
 
-No complaint was filed and no helpline was called. The exact verified build is publicly deployed at [niveshak-saathi-safety.himanshirathore25102.chatgpt.site](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site).
+No complaint was filed and no helpline was called during verification.

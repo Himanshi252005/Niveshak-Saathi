@@ -254,6 +254,15 @@
  function riskOf(ids){let z=MODEL.bias;for(const id of ids)z+=MODEL.weights[id]||0;const score=+(1/(1+Math.exp(-z))).toFixed(3),f=MODEL.floors.find(f=>ids.includes(f.id)&&FLOOR_TEST[f.id](ids)),floor=f?f.id:'';
   const level=floor||score>=MODEL.thresholds.high?'high':ids.length||score>=MODEL.thresholds.caution?'caution':'none',reasons=ids.filter(id=>(MODEL.weights[id]||0)>0).sort((a,b)=>MODEL.weights[b]-MODEL.weights[a]);
   return floor?{level,score,reasons,floor}:{level,score,reasons}}
+ // Reliability is an abstention/explanation layer around the fitted score. It never upgrades "no signs" to safe.
+ // The deterministic safety floors and independent signal count act as a second opinion on the statistical score.
+ function reliabilityOf(ids,risk,supported){
+  if(!supported)return{band:'outside-coverage',basis:'language-coverage',independentCheck:true};
+  if(risk.floor)return{band:'strong-warning',basis:'safety-floor',signals:ids.length,independentCheck:true};
+  if(ids.length>=2)return{band:'multiple-signals',basis:'model-and-rules',signals:ids.length,independentCheck:true};
+  if(ids.length===1)return{band:'single-signal',basis:'limited-evidence',signals:1,independentCheck:true};
+  return{band:'insufficient-evidence',basis:'no-known-signal',signals:0,independentCheck:true};
+ }
 
  function analyse(text){if(typeof text!=='string'||!text.trim()||text.length>6000)throw new Error('Message must contain 1–6000 characters.');const normal=normalize(text);CTX=normal;MEMO={};const news=NEWS.test(normal)||docAware(normal);
  let ss=sentences(normal).flatMap(s=>s.split(/\bbut\b|लेकिन/)).filter(s=>/[\p{L}\p{N}][^\p{L}\p{N}]*[\p{L}\p{N}]/u.test(s));
@@ -273,6 +282,7 @@
  for(const sg of segments){for(const x of sg.returns)if(x.kind!=='flat'&&returns.length<8&&!seenR.has(x.phrase)){seenR.add(x.phrase);const i=lower.indexOf(x.phrase);returns.push(describeReturn(x,sg.aware||sg.cues.some(c=>protects(sg.seg,x,c)),i>=0?light.substr(i,x.phrase.length):x.phrase))}
   for(const l of sg.links){if(links.length>=20)break;const i=lower.indexOf(l.text.toLowerCase()),shown=i>=0?light.substr(i,l.text.length):l.text;if(links.some(y=>y.text===shown))continue;
    const o={text:shown,host:l.host,verdict:l.verdict},c=l.impersonates||(l.claimed!=='*'&&l.claimed),tx=LINK_TEXT[l.claimed==='*'?'generic':l.claimed?'claimed':l.verdict];if(c)o.impersonates=c;o.en=tx[0].replace('{o}',c);o.hi=tx[1].replace('{o}',c);links.push(o)}}
- return {version:'3.2',matches,cautionContexts:cautions,coverage:supported?'partial':'unsupported',insights:{returns,links,payees:payeesIn(light)},risk:riskOf(matches.map(x=>x.id)),limitations:'Limited rules and a small published scoring model; not verification. No matches, or a low risk level, never means safe.'};}
+ const ids=matches.map(x=>x.id),risk=riskOf(ids);
+ return {version:'3.2',matches,cautionContexts:cautions,coverage:supported?'partial':'unsupported',insights:{returns,links,payees:payeesIn(light)},risk,reliability:reliabilityOf(ids,risk,supported),limitations:'Limited rules and a small published scoring model; not verification. No matches, or a low risk level, never means safe.'};}
  const api={analyse,normalize,definitions,model:MODEL};root.SafetyEngine=api;if(typeof module!=='undefined'&&module.exports)module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

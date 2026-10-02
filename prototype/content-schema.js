@@ -2,11 +2,14 @@
    The build refuses content that fails these checks, so the public app only ever ships validated content. */
 (function (root) {
   'use strict';
-  const SECTIONS = ['meta', 'sources', 'warnings', 'routes', 'rights', 'practice', 'emergency', 'packet', 'family', 'translations'];
+  const SECTIONS = ['meta', 'sources', 'warnings', 'routes', 'rights', 'practice', 'emergency', 'packet', 'family', 'profiles', 'translations'];
   // Family readiness: the answers drive which items show, and the six items from the product spec must always exist.
   const FAMILY_HOLDINGS = ['demat', 'mf', 'physical', 'unknown'], FAMILY_NOMINEE = ['checked', 'not-checked', 'unknown'];
   const FAMILY_REQUIRED_ITEMS = ['nominee', 'contact-kyc', 'records', 'old-holdings', 'entity-contact', 'no-paid-agents'];
   const FAMILY_TEXT_KEYS = ['tabLabel', 'eyebrow', 'title', 'intro', 'holdingsQuestion', 'nomineeQuestion', 'showList', 'chooseFirst', 'listTitle', 'firstTag', 'doneLabel', 'generalLabel', 'cardTitle', 'cardWarning', 'cardBlank', 'download', 'print'];
+  // Persona safety plans: fixed example identities make the three intended audiences explicit without creating user profiles.
+  const PROFILE_IDS = ['praveen', 'kavita', 'babulal'], PROFILE_TARGETS = ['check', 'paycheck', 'emergency', 'route', 'family', 'practice'];
+  const PROFILE_TEXT_KEYS = ['eyebrow', 'title', 'intro', 'homeTitle', 'homeHint', 'planTitle', 'watchTitle', 'stepsTitle', 'whyTitle', 'privacy'];
   // Action Packet: the app reads these field and essential IDs, so their labels are editable but the IDs are fixed.
   const PACKET_FIELDS = ['entity', 'when', 'complainedOn', 'amount', 'ref'], PACKET_ESSENTIALS = ['entity', 'when', 'summary', 'resolution', 'evidence', 'number'];
   const PACKET_TEXT_KEYS = ['intro', 'routeLabel', 'routeChange', 'actionsTitle', 'evidenceTitle', 'packetHeader', 'contactLine', 'ackLine', 'generate', 'checksTitle', 'essentialsReady', 'privacyFound', 'privacyNone', 'secretsBlock', 'maskButton', 'reviewLabel', 'reviewConfirm', 'download', 'print', 'saveNote'];
@@ -94,7 +97,7 @@
       if (!schemaVersions(s).includes(content[s].schemaVersion)) err(s + '.schemaVersion', 'unsupported schema version ' + JSON.stringify(content[s].schemaVersion) + ' (supported: ' + schemaVersions(s).join(', ') + ')');
     }
     if (errors.length) return { errors, warnings };
-    const { meta, sources, warnings: warn_, routes, rights, practice, translations } = content;
+    const { meta, sources, warnings: warn_, routes, rights, practice, profiles, translations } = content;
 
     // meta
     str('meta.productVersion', meta.productVersion, 40);
@@ -338,6 +341,32 @@
     const nom = (Array.isArray(FA.items) ? FA.items : []).find(x => x && x.id === 'nominee');
     if (nom && Array.isArray(nom.when) && !(nom.when.includes('demat') && nom.when.includes('mf'))) err('family.items', 'the "nominee" item must apply to both demat accounts and mutual funds');
 
+    // Persona safety plans. These are examples only: there are no free-text identity, account, holding or income fields.
+    for (const k of PROFILE_TEXT_KEYS) text('profiles.texts.' + k, profiles.texts && profiles.texts[k], 400);
+    const profileIds = new Set();
+    const profileRows = list('profiles.profiles', profiles.profiles, PROFILE_IDS.length, PROFILE_IDS.length);
+    profileRows.forEach((p, i) => {
+      const w = 'profiles.profiles[' + i + ']';
+      if (!isObj(p)) return err(w, 'must be an object');
+      id(w + '.id', p.id, profileIds);
+      text(w + '.name', p.name, 80); text(w + '.label', p.label, 120); text(w + '.situation', p.situation, 500);
+      text(w + '.firstAction', p.firstAction, 500); text(w + '.why', p.why, 600);
+      list(w + '.watchFor', p.watchFor, 2, 5).forEach((x, j) => text(w + '.watchFor[' + j + ']', x, 240));
+      list(w + '.steps', p.steps, 2, 5).forEach((s, j) => {
+        const sw = w + '.steps[' + j + ']';
+        if (!isObj(s)) return err(sw, 'must be an object');
+        text(sw + '.text', s.text, 500); sourceRef(sw + '.sourceId', s.sourceId);
+      });
+      list(w + '.actions', p.actions, 1, 3).forEach((a, j) => {
+        const aw = w + '.actions[' + j + ']';
+        if (!isObj(a)) return err(aw, 'must be an object');
+        if (!PROFILE_TARGETS.includes(a.target)) err(aw + '.target', 'must be one of ' + PROFILE_TARGETS.join(', '));
+        text(aw + '.label', a.label, 100);
+      });
+    });
+    const missingProfiles = PROFILE_IDS.filter(x => !profileIds.has(x)), extraProfiles = [...profileIds].filter(x => !PROFILE_IDS.includes(x));
+    if (missingProfiles.length || extraProfiles.length) err('profiles.profiles', 'must contain exactly these ids: ' + PROFILE_IDS.join(', '));
+
     // translations
     if (!isObj(translations.texts)) err('translations.texts', 'must be an object');
     else {
@@ -366,7 +395,7 @@
     return { content, errors };
   }
 
-  const api = { SECTIONS, SUPPORTED_SCHEMA_VERSIONS, SECTION_SCHEMA_VERSIONS, ROUTE_KINDS, ROUTE_TEXT_KEYS, OFFICIAL_DOMAINS, HELPLINE_NUMBERS, REQUIRED_TEXT_KEYS, EMERGENCY_SITUATIONS, EMERGENCY_ONGOING, EMERGENCY_CHANNELS, EMERGENCY_WHEN, EMERGENCY_CHANNEL_TOKENS, CHECK_CHANNELS, CHECK_ADVICE, PACKET_FIELDS, PACKET_ESSENTIALS, PACKET_TEXT_KEYS, FAMILY_HOLDINGS, FAMILY_NOMINEE, FAMILY_REQUIRED_ITEMS, FAMILY_TEXT_KEYS, canonical, validateContent, loadDir };
+  const api = { SECTIONS, SUPPORTED_SCHEMA_VERSIONS, SECTION_SCHEMA_VERSIONS, ROUTE_KINDS, ROUTE_TEXT_KEYS, OFFICIAL_DOMAINS, HELPLINE_NUMBERS, REQUIRED_TEXT_KEYS, EMERGENCY_SITUATIONS, EMERGENCY_ONGOING, EMERGENCY_CHANNELS, EMERGENCY_WHEN, EMERGENCY_CHANNEL_TOKENS, CHECK_CHANNELS, CHECK_ADVICE, PACKET_FIELDS, PACKET_ESSENTIALS, PACKET_TEXT_KEYS, FAMILY_HOLDINGS, FAMILY_NOMINEE, FAMILY_REQUIRED_ITEMS, FAMILY_TEXT_KEYS, PROFILE_IDS, PROFILE_TARGETS, PROFILE_TEXT_KEYS, canonical, validateContent, loadDir };
   root.NiveshakContentSchema = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

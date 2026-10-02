@@ -1,50 +1,47 @@
 # Niveshak Saathi
 
-**[Open the public live demo](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)**, or open `dist/index.html` in a modern browser. No installation or build is required.
+Open `dist/index.html` in a modern browser. No installation is required. The app works offline and keeps the user's entries in the current page session.
 
 ## What it does
 
-Hindi-first, with English. It opens on a **Home** page that asks one question, "What do you need help with?", with six large choices in everyday words. A sidebar menu groups the seven tools under three plain headings: check before you act, if something went wrong, and learn and protect. On phones the menu opens from a labelled **Menu** button, and "Get urgent help" stays in the top bar on every page. The seven tools are:
-1. **Check a message:** a model v3 risk verdict with reasons, return maths, link checks and "Warn my family".
-2. **Before you pay:** STOP or VERIFY, with SEBI's "@valid" UPI rule, SEBI Check, IPO-by-ASBA and RBI Sachet.
-3. **Get urgent help:** your own words fill in the answers.
-4. **Find help:** official routes with time limits.
-5. **Prepare a complaint:** a private Action Packet with a privacy gate.
-6. **Family readiness.**
-7. **Practise safety:** before and after scores.
+Niveshak Saathi is a Hindi-first, English-supported investor-protection companion. It helps a person check a suspicious message, verify before paying, take urgent action after fraud, find the right complaint route, prepare a privacy-safe Action Packet, protect family holdings, and practise safer habits.
 
-Other features:
-- simple line icons, no emoji, and the less-used tools (stop audio, offline copy, pilot session, clear session) under **More tools**;
-- "Share this app", which sends the link or the offline file;
-- a facilitator **Pilot session** that exports anonymous results in the `Pilot-Results.csv` columns;
-- read-aloud with installed voices, with help to install a Hindi voice;
-- large text, keyboard navigation and an offline HTML download;
-- a source and privacy register with review dates and the named reviewer.
+The Home page also offers three fixed safety plans:
+
+- **Praveen, 22:** pauses Telegram tips, borrowing and F&O pressure;
+- **Kavita, 39:** checks Ponzi, fake IPO and payment requests in simple Hindi;
+- **Babulal, 63:** organises dormant folios, nominee, RTA/DP and IEPF next steps.
+
+Choosing a plan creates no account or financial profile. It asks for no identity, holdings, income or account number, and the choice stays only in page memory.
+
+The message checker combines multilingual warning-sign rules, a fitted logistic model and hard safety floors. Beside the risk result it shows one of five reliability states: strong warning agreement, multiple signals, one known signal, outside language coverage, or insufficient evidence. “No known signs” is always described as insufficient evidence, never as proof that a message is safe.
+
+Other features include read-aloud, large text, a labelled phone menu, official-source citations, a clean offline copy, safe app sharing and an anonymous facilitator pilot mode. There are no tips, ads, analytics, accounts, cloud inference or third-party data calls.
 
 ## Build and files
 
-Run `node build.cjs` to validate the content and rebuild the self-contained `dist/index.html`, `release-manifest.json` and the local `owner-studio.html`. No dependencies are required.
+Run `node build.cjs` to validate the content and rebuild the self-contained `dist/index.html`, `release-manifest.json` and local `owner-studio.html`. No package installation is required.
 
 | File or folder | Role |
 |---|---|
-| `base.html` | The original page |
-| `engine.js` | The current explainable message-check model |
-| `assist.js` | Understanding own words, "Before you pay" and return maths |
-| `upgrade.js`, `upgrade.css` | The interface |
-| `content/*.json` | Owner-editable, validated content |
-| `content-schema.js` | The content validator |
-| `studio/` | The local Owner Studio (see `OWNER-GUIDE.md`) |
+| `base.html` | Original app structure |
+| `engine.js` | Explainable message-risk and reliability model |
+| `assist.js` | Own-words, before-payment and return-maths logic |
+| `upgrade.js`, `upgrade.css` | Public interface and accessibility |
+| `content/*.json` | Owner-editable reviewed content, including persona plans |
+| `content-schema.js` | Safety and content validator |
+| `studio/` | Local Owner Studio; see `OWNER-GUIDE.md` |
 
-Keep the same Site identity in `.openai/hosting.json`.
+Keep the Site identity in `.openai/hosting.json` when redeploying the same public link.
 
-## Evidence
+## Scale design
 
-- `evaluation-cases.json` holds developer-written regression cases (435/435 pass). They were used in development, so they are not an accuracy benchmark.
-- The independent results are in `../evidence/Blind-Evaluation.json`, from three sealed blind sets written by separate agents. On the third set, never used in development, the current model warned on 72% of fraud or suspicious messages and on 9% of ordinary ones (7% at High). The original model warned on 35% and 24%.
-- The full evidence is in `../docs/Validation-v3.md`.
+The public app is a static, cacheable file. Analysis happens on the device, so adding users does not add inference servers, message databases or per-check API cost. The verified build is 495,106 bytes raw and 146,742 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; “16 crore accounts” is a capacity target, not a completed load test. See `../SCALE-AND-RELIABILITY.md`.
 
-## Privacy and limits
+## Evidence and limits
 
-No message upload, analytics, account connection, persistent storage or cloud inference is used. The checker is a limited on-device model, not a fraud-verification service: "No known signs" never means safe. External official links need internet. There is no background caching or automatic content update.
+- 435/435 developer regression expectations pass. These are not an accuracy benchmark.
+- Three sealed synthetic blind sets are recorded in `../Blind-Evaluation.json`. On the final untouched set, the checker warned on 72.4% of fraud or suspicious messages and 8.6% of ordinary messages; 95% intervals and limitations are in `../Validation-v3.md`.
+- The full release record is `../Release-3.2-Verification.json`.
 
-Use fictional examples in demonstrations. Do not submit a test complaint to an authority.
+The checker does not verify an entity, certify safety, file a complaint or recover money. Real-user comprehension, outcomes, native Hindi review, physical low-end devices and real-message accuracy remain to be tested.

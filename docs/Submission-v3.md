@@ -7,7 +7,7 @@
 
 **Status:**
 - Tested browser prototype and downloadable offline HTML.
-- The verified prototype is publicly available at [niveshak-saathi-safety.himanshirathore25102.chatgpt.site](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site); see `Delivery-Status.md`.
+- Release 3.2 has been prepared and verified locally. It has not been published; the hosted site still runs version 2 (see `Delivery-Status.md`).
 - No real-user impact study has been conducted.
 - This is an independent educational product, not affiliated with SEBI, RBI, IRDAI, PFRDA, NPCI or any institution.
 
@@ -15,15 +15,15 @@
 - **Scale:** the Ministry of Home Affairs reports more than 65.89 lakh financial-fraud complaints on the National Cyber Crime Reporting Portal for 2021–2025, with more than ₹55,050 crore reported (PIB, 21 July 2026, PRID 2287039).
 - **Approach:** Niveshak Saathi works at the two moments that decide the loss: just before paying, and the first hours after.
 
-## How Release 3.2 meets the judging criteria
+## How the verified prototype meets the judging criteria
 
 | Criterion (weight) | What the product does | Evidence | What is not yet proven |
 |---|---|---|---|
 | **Resilience and safety impact (30%)** | **Before you pay:** a STOP or VERIFY answer, with SEBI's "@valid" UPI rule, SEBI Check, IPO-by-ASBA and RBI Sachet.<br>**Message check:** a High / Caution / No-known-signs verdict with reasons.<br>**Emergency mode:** fills in from your own words; bank and 1930 first.<br>**Complaint routes:** with official time limits.<br>**Private Action Packet** and **family readiness**.<br>**Practice:** before and after scores.<br>**"Warn my family"** | **Independent blind test:** warned on 72.4% [65.7–78.2] of fraud or suspicious messages; v2 managed 35.4% on the same set.<br>**Coverage checks:** all 60 Emergency answer combinations, 272 navigator states and 60 family combinations | No real-user outcome study yet; money saved is not measured |
-| **Tier-2/3 usability (25%)** | Hindi-first everywhere, with English.<br>Roman-Hindi understanding.<br>A calm, simple layout: the app opens on a **Home** page that asks one question, "What do you need help with?", with six large choices in everyday words. A sidebar menu groups every tool under three plain headings (on phones, a labelled Menu button opens it). "Get urgent help" stays in the top bar on every page, and less-used tools sit under More tools. Simple line icons, no emoji.<br>Speak or type in your own words; voice uses the phone keyboard's microphone, and the app explains how to install a Hindi voice.<br>Read-aloud with installed voices.<br>Traffic-light verdicts, tick and button answers, large text.<br>"Share this app" sends the link, or the offline app file itself, over WhatsApp.<br>One offline file of 138 KB compressed | **Layout:** no sideways scrolling on any page at 320, 360 or 390 px, in both languages, with normal, large or 200% text; 30 checks of the Home page, the menus and the phone menu.<br>**Language:** the Hindi parity scan found no English-only text.<br>**Offline:** every tool runs offline.<br>**Slow network:** median 4,587 ms on the simulation when compressed | Native-speaker review and physical low-end phones are pending.<br>Hindi and English only, by owner decision: no unreviewed machine translation |
+| **Tier-2/3 usability (25%)** | Hindi-first everywhere, with English and Roman-Hindi understanding.<br>The Home page offers six large task choices plus fixed, privacy-safe plans for Praveen, Kavita and Babulal.<br>A labelled phone menu, urgent-help button, simple line icons, read-aloud, large text and an offline copy reduce cognitive and connectivity burden.<br>No identity, account, holding or income input is required.<br>One offline file of 146,742 bytes with gzip | **Layout:** no sideways scrolling on any page at 320, 360 or 390 px, in both languages, with normal, large or 200% text.<br>**Persona plans:** 26 reliability/persona checks, including a 320-pixel Hindi view.<br>**Offline:** every tool runs offline.<br>**Slow network:** median 4,427 ms gzip-served in the simulation | Native-speaker review and physical low-end phones are pending.<br>Hindi and English only: no unreviewed machine translation |
 | **Guardrails and trust (15%)** | No commerce, no tips: tips and "operator" calls are flagged as warning signs.<br>Every step cites one of 31 official pages and shows its review date and its named reviewer (Himanshi Rathore).<br>Nothing is uploaded, stored or tracked.<br>Private details are masked before saving.<br>The checker shows how it reached its verdict and its measured miss rate | Three independent reviews; every finding was checked against the official text and fixed.<br>22 checks replay each reviewer example.<br>No network requests during journeys | Independent security audit and native Hindi review |
-| **Technical execution (15%)** | An explainable on-device risk model:<br>- signals in 15 categories;<br>- weights fitted by logistic regression;<br>- thresholds and "always High" safety floors;<br>- insights: return maths, lookalike links, payee shapes.<br>An on-device assistant reads the user's own words | **Two sealed blind sets** written by separate agents (results below).<br>About 1.0 ms per message.<br>130-check browser suite in 3 runs.<br>1,175 automated checks in all | Evaluation text is synthetic, written by AI agents and not by real victims |
-| **Feasibility and scale (15%)** | A static single file with no server or inference cost.<br>The local Owner Studio edits and validates all reviewed content and produces release manifests.<br>Every source has a named reviewer and a review date.<br>A built-in facilitator **Pilot session** runs the consented protocol and exports anonymous results with a live summary.<br>"Share this app" spreads it person to person.<br>The engine is a plain JavaScript module that a partner app could embed | Validated build that refuses unsafe content.<br>124 Owner Studio checks.<br>18 checks for the Home choices, sharing and the pilot session | No named partners yet; the pilot is ready to run but has not been run |
+| **Technical execution (15%)** | An explainable on-device hybrid:<br>- multilingual signals in 15 categories;<br>- weights fitted by logistic regression;<br>- thresholds and "always High" safety floors;<br>- five reliability states, including outside-coverage and insufficient-evidence abstention;<br>- return maths, lookalike-link and payee-shape insights.<br>An on-device assistant reads the user's own words | **Three sealed blind sets** written separately (results below).<br>About 1.0 ms per message.<br>130-check browser suite in 3 runs.<br>1,201 automated checks in all | Evaluation text is synthetic and not a representative corpus of real victim messages |
+| **Feasibility and scale (15%)** | A static, cacheable file with no message server or inference cost.<br>The local Owner Studio edits and validates reviewed content, persona plans and release manifests.<br>A facilitator pilot exports anonymous results.<br>The engine is embeddable and the public app stores no user profile | 495,106-byte raw / 146,742-byte gzip build.<br>Validated build that refuses unsafe content.<br>National-scale transfer arithmetic and rollout gates in `SCALE-AND-RELIABILITY.md` | No 16-crore load test, named distribution partner or completed field pilot yet |
 
 No judging score is guaranteed. The evidence above comes from automated checks, not from users.
 
@@ -33,15 +33,18 @@ No judging score is guaranteed. The evidence above comes from automated checks, 
 - A WhatsApp "VIP group" promises guaranteed IPO allotment and asks her to pay a UPI ID today.
 - She needs to know, in her language, whether to pay, how to check, and what to do if she already has.
 
-**Secondary users:**
-- a Tier-3 graduate or gig worker pulled into tips groups and borrowing;
-- a pensioner checking old holdings and making sure the family can reach them.
+**Three explicit paths:**
+- **Praveen, 22:** a Tier-3 graduate or gig worker pulled into Telegram tips, F&O and borrowing;
+- **Kavita, 39:** a Tier-2 homemaker who needs simple Hindi checks for Ponzi, fake IPO and payment requests;
+- **Babulal, 63:** a pensioner organising old folios, nominees, RTA/DP steps and possible IEPF claims.
+
+Their plans are fixed examples, not stored user profiles. The owner can update every bilingual instruction and official source in the local Studio.
 
 **Scope:** the product does not choose investments, certify that an offer is safe, recover money or decide legal rights.
 
 ## Seven tools, one private journey
 
-The app opens on **Home**: one question and six large choices. The menu groups the seven tools under "Check before you act", "If something went wrong" and "Learn and protect".
+The app opens on **Home**: one question, six large task choices and three persona shortcuts. The menu groups the tools under "Check before you act", "If something went wrong" and "Learn and protect".
 
 1. **Check a message.** Paste a message and get a traffic-light verdict:
    - **High risk:** stop.
@@ -53,7 +56,7 @@ The app opens on **Home**: one question and six large choices. The menu groups t
    - suspicious links (shortened, app files, lookalikes of sebi.gov.in);
    - payment IDs.
 
-   "Warn my family" prepares a WhatsApp-ready warning with the signs and 1930, never the scam's link. "How the risk level was decided" shows the weights and thresholds.
+   "Warn my family" prepares a WhatsApp-ready warning with the signs and 1930, never the scam's link. "How the risk level was decided" shows the weights and thresholds. A separate reliability card says whether rules and the fitted model strongly agree, several signs agree, only one sign was found, the language is outside coverage, or evidence is insufficient. It never calls a no-match message safe.
 2. **Before you pay (new).** Three taps: what the payment is for, who asked, and where to pay. A UPI ID and a promised return are optional. The answer is STOP or VERIFY, with official ways to check:
    - SEBI-registered brokers, mutual funds, advisers and research analysts must give investors "@valid" UPI IDs (from 1 October 2025), shown with a thumbs-up in a green triangle;
    - SEBI Check confirms a UPI ID or bank account;
@@ -86,7 +89,9 @@ The app opens on **Home**: one question and six large choices. The menu groups t
    A printable family card is included.
 7. **Practise safety.** Three fictional questions, a short lesson and three parallel questions produce before-and-after scores. An optional anonymous export and a seven-day habit card are included.
 
-**Owner Control Studio** (local only, never published). The owner edits all reviewed content, sources and review dates in Hindi and English, side by side. The build validates every change and records a release manifest.
+**My safety plan.** Praveen, Kavita and Babulal each receive an ordered first action, warning signs, sourced steps and buttons into the relevant tools. Selection stays in page memory and no personal financial data is requested.
+
+**Owner Control Studio** (local only, never published). The owner edits all reviewed content, persona plans, sources and review dates in Hindi and English, side by side. The build validates every change and records a release manifest.
 
 ## The model (v3): explainable, private, measured
 
@@ -132,7 +137,7 @@ On the third sealed set (320 messages; 90 of the 128 ordinary ones are deliberat
 | Rule regression (developer cases) | 435/435 expectations | Used during development |
 | Independent boundary set | 38/38 | Small |
 | Official links re-opened | 31/31 on 2026-10-01. All opened. | Pages change; review dates are shown in the app |
-| Size and speed | 462 KB file, 138 KB gzip, 110 KB brotli. Simulated slow network (400 ms latency, 50,000 bytes/s, 4× CPU): median 11,386 ms uncompressed, 4,587 ms compressed | Desktop simulation, not a physical phone |
+| Size and speed | 495,106-byte file, 146,742 bytes with gzip. Simulated slow network (400 ms latency, 50,000 bytes/s, 4× CPU): median 11,515 ms uncompressed, 4,427 ms gzip-served | Desktop simulation, not a physical phone |
 
 ## Guardrails and privacy
 
@@ -185,7 +190,9 @@ The pilot measures:
 
 ## Feasibility and scale
 
-- **Cost:** a static file of about 138 KB compressed, with no servers, accounts or inference cost. 10,000 first visits need about 1.41 GB of compressed transfer.
+- **Cost:** a static file of 146,742 bytes with gzip, with no accounts, message database or inference server. Even 16 crore cold downloads are about 23.5 TB before CDN caching; a 1% daily-active cold-transfer upper bound is about 235 GB/day. These are planning figures, not a completed load test.
+- **Reliability:** the checker combines multilingual rules, fitted weights and non-negotiable safety floors, then exposes its agreement or abstention state to the user.
+- **Rollout:** start with measured district pilots, native-language review, security review, CDN load tests and monitored partner distribution before national traffic. The full plan is in `SCALE-AND-RELIABILITY.md`.
 - **Maintenance:** content owners update reviewed content locally, with validation and release manifests. Sources carry review dates.
 - **Distribution:**
   - Partners such as investor-awareness programmes, banks or brokers could embed the engine module or link the offline file.

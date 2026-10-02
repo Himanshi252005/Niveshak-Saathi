@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-01",
+  "checkedAt": "2026-10-02",
   "product": "Niveshak Saathi",
   "release": "3.2",
   "app": {
     "file": "outputs/prototype/dist/index.html",
-    "bytes": 473298,
-    "sha256": "E377FB4EF8024F00C647C4D2D2C1CE82146DDADC48C26C43E6D5BD274001DAC6"
+    "bytes": 495106,
+    "sha256": "DFFF70E703656669048C58D0D319C2FB3E842B60297AB18AE29D7F5145FF2B4F"
   },
   "suites": [
     {
@@ -60,7 +60,7 @@
       "exitCode": 0,
       "summary": "all C-7 end-to-end checks passed",
       "failures": [],
-      "seconds": 6
+      "seconds": 8
     },
     {
       "suite": "Studio Emergency tab (C-8)",
@@ -69,7 +69,7 @@
       "exitCode": 0,
       "summary": "all 31 C-8 Studio checks passed",
       "failures": [],
-      "seconds": 9
+      "seconds": 11
     },
     {
       "suite": "Studio Help routes tab (C-9)",
@@ -87,7 +87,7 @@
       "exitCode": 0,
       "summary": "all 19 C-10 Studio checks passed",
       "failures": [],
-      "seconds": 5
+      "seconds": 6
     },
     {
       "suite": "Studio Family tab (C-11)",
@@ -114,7 +114,7 @@
       "exitCode": 0,
       "summary": "13/13 integrated checks passed",
       "failures": [],
-      "seconds": 21
+      "seconds": 48
     },
     {
       "suite": "On-device assistant (C-15)",
@@ -132,7 +132,7 @@
       "exitCode": 0,
       "summary": "22/22 checks passed",
       "failures": [],
-      "seconds": 9
+      "seconds": 11
     },
     {
       "suite": "New-feature journeys (C-14, C-15)",
@@ -141,7 +141,7 @@
       "exitCode": 0,
       "summary": "23/23 checks passed",
       "failures": [],
-      "seconds": 3
+      "seconds": 4
     },
     {
       "suite": "Home choices, sharing and pilot session (C-17)",
@@ -150,7 +150,7 @@
       "exitCode": 0,
       "summary": "18/18 checks passed",
       "failures": [],
-      "seconds": 6
+      "seconds": 7
     },
     {
       "suite": "Professional app shell: Home, sidebar menu, phone menu, no emoji (C-18)",
@@ -159,16 +159,25 @@
       "exitCode": 0,
       "summary": "30/30 checks passed",
       "failures": [],
-      "seconds": 17
+      "seconds": 21
+    },
+    {
+      "suite": "Persona safety plans and reliability abstention (C-19)",
+      "file": "c19-scale-personas.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "26/26 checks passed",
+      "failures": [],
+      "seconds": 4
     },
     {
       "suite": "Release 3.0 browser suite (single run; see Browser-Validation.json)",
       "file": "verify-v3.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "130/130 checks passed; throttled load 11320 ms; 473298 bytes",
+      "summary": "130/130 checks passed; throttled load 11836 ms; 495106 bytes",
       "failures": [],
-      "seconds": 27
+      "seconds": 28
     }
   ],
   "allPassed": true,

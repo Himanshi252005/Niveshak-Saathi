@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-01",
+  "checkedAt": "2026-10-02",
   "about": "Synthetic messages written by AI agents that never saw the checker; labels by one annotator per set. Rates are shown with 95% Wilson intervals. \"Warned\" means Caution or High; \"High\" is the stop verdict. This is not real-world fraud accuracy.",
   "levels": "v3.x use the model's own risk level; v2.0 has none, so the app's v2 fallback is used (two or more signs High, one Caution).",
   "sets": [
@@ -191,8 +191,8 @@
           }
         }
       },
-      "totalMs": 42.2,
-      "meanMsPerMessage": 0.132,
+      "totalMs": 56,
+      "meanMsPerMessage": 0.175,
       "engineFile": "engine-v3/v2.0/engine.js",
       "set": "blind-v3",
       "blind": true
@@ -353,8 +353,8 @@
           }
         }
       },
-      "totalMs": 187.4,
-      "meanMsPerMessage": 0.586,
+      "totalMs": 207.4,
+      "meanMsPerMessage": 0.648,
       "engineFile": "engine-v3/v3.0/engine.js",
       "set": "blind-v3",
       "blind": true
@@ -515,8 +515,8 @@
           }
         }
       },
-      "totalMs": 233.7,
-      "meanMsPerMessage": 0.73,
+      "totalMs": 314.1,
+      "meanMsPerMessage": 0.982,
       "engineFile": "engine-v3/v3.1/engine.js",
       "set": "blind-v3",
       "blind": false
@@ -677,8 +677,8 @@
           }
         }
       },
-      "totalMs": 260.4,
-      "meanMsPerMessage": 0.814,
+      "totalMs": 307.2,
+      "meanMsPerMessage": 0.96,
       "engineFile": "engine-v3/v3.2/engine.js",
       "set": "blind-v3",
       "blind": false
@@ -839,8 +839,8 @@
           }
         }
       },
-      "totalMs": 38.3,
-      "meanMsPerMessage": 0.12,
+      "totalMs": 43.2,
+      "meanMsPerMessage": 0.135,
       "engineFile": "engine-v3/v2.0/engine.js",
       "set": "blind-v4",
       "blind": true
@@ -1001,8 +1001,8 @@
           }
         }
       },
-      "totalMs": 152.4,
-      "meanMsPerMessage": 0.476,
+      "totalMs": 177.2,
+      "meanMsPerMessage": 0.554,
       "engineFile": "engine-v3/v3.0/engine.js",
       "set": "blind-v4",
       "blind": true
@@ -1163,8 +1163,8 @@
           }
         }
       },
-      "totalMs": 196.9,
-      "meanMsPerMessage": 0.615,
+      "totalMs": 244.1,
+      "meanMsPerMessage": 0.763,
       "engineFile": "engine-v3/v3.1/engine.js",
       "set": "blind-v4",
       "blind": true
@@ -1325,8 +1325,8 @@
           }
         }
       },
-      "totalMs": 226.4,
-      "meanMsPerMessage": 0.708,
+      "totalMs": 258.9,
+      "meanMsPerMessage": 0.809,
       "engineFile": "engine-v3/v3.2/engine.js",
       "set": "blind-v4",
       "blind": false
@@ -1487,8 +1487,8 @@
           }
         }
       },
-      "totalMs": 33.2,
-      "meanMsPerMessage": 0.104,
+      "totalMs": 65.6,
+      "meanMsPerMessage": 0.205,
       "engineFile": "engine-v3/v2.0/engine.js",
       "set": "blind-v5",
       "blind": true
@@ -1649,8 +1649,8 @@
           }
         }
       },
-      "totalMs": 142.6,
-      "meanMsPerMessage": 0.446,
+      "totalMs": 179.1,
+      "meanMsPerMessage": 0.56,
       "engineFile": "engine-v3/v3.0/engine.js",
       "set": "blind-v5",
       "blind": true
@@ -1811,8 +1811,8 @@
           }
         }
       },
-      "totalMs": 178.8,
-      "meanMsPerMessage": 0.559,
+      "totalMs": 210.6,
+      "meanMsPerMessage": 0.658,
       "engineFile": "engine-v3/v3.1/engine.js",
       "set": "blind-v5",
       "blind": true
@@ -1973,8 +1973,8 @@
           }
         }
       },
-      "totalMs": 205.6,
-      "meanMsPerMessage": 0.642,
+      "totalMs": 227.5,
+      "meanMsPerMessage": 0.711,
       "engineFile": "engine-v3/v3.2/engine.js",
       "set": "blind-v5",
       "blind": true
@@ -2136,8 +2136,8 @@
         }
       }
     },
-    "totalMs": 205.6,
-    "meanMsPerMessage": 0.642,
+    "totalMs": 227.5,
+    "meanMsPerMessage": 0.711,
     "engineFile": "engine-v3/v3.2/engine.js",
     "set": "blind-v5",
     "blind": true

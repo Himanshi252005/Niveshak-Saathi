@@ -49,7 +49,7 @@ To change any of these, ask a developer for a reviewed code change.
 
 ## Open the Studio
 
-From the `prototype` folder, run the build once. It creates `owner-studio.html` next to it, never inside `dist/`:
+From the `outputs/prototype` folder, run the build once. It creates `owner-studio.html` next to it, never inside `dist/`:
 
 ```powershell
 $node = "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
@@ -58,7 +58,7 @@ $node = "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependenci
 
 Then double-click `owner-studio.html`. Microsoft Edge or Google Chrome is recommended. Each build refreshes the Studio with the current content and app code.
 
-Use the generated `prototype/owner-studio.html` for local review before the next build.
+For review before the next canonical build, Claude's work-in-progress copy is `work/claude-preview/C-8/owner-studio.html`.
 
 ## Everyday tasks
 
@@ -86,6 +86,8 @@ The table at the top shows which steps each answer gives and the longest possibl
 
 To change where complaints go next, edit or reorder the levels of that route. Users see each level's source and review date, so update the review date (**Sources & review dates**) whenever you recheck an official page.
 
+**Change a persona safety plan.** Open **Persona plans**. The three identities are fixed examples—Praveen, Kavita and Babulal—so the public app never becomes a store of personal profiles. You can edit their English and Hindi labels, situations, first actions, warning signs, reasons, ordered steps, official sources and buttons. Every step must cite an enabled official source. The editor does not add identity, account, holding or income fields.
+
 **See the result.** Open **Preview**. It assembles the app from your edits exactly as the build would, and the copy for unchanged content is byte-identical to the build. You can also download the preview as one HTML file to show someone.
 
 ## Validation
@@ -112,8 +114,8 @@ Overdue review dates are warnings, not errors. The app itself shows users an ove
 
 You can save in either of two ways:
 
-1. **Save into the content folder…** (Edge or Chrome). Choose `prototype/content`. Only valid content can be saved, and only the sections you changed are rewritten.
-2. **Export content pack** (any browser). This downloads one JSON file. Apply it in `prototype` with:
+1. **Save into the content folder…** (Edge or Chrome). Choose `outputs/prototype/content`. Only valid content can be saved, and only the sections you changed are rewritten.
+2. **Export content pack** (any browser). This downloads one JSON file. Apply it in `outputs/prototype` with:
 
    ```powershell
    & $node validate-content.cjs --apply niveshak-content-pack-<version>.json
@@ -125,7 +127,7 @@ You can save in either of two ways:
 
 ## Rebuild and release
 
-Run `& $node build.cjs` in `prototype`. The build:
+Run `& $node build.cjs` in `outputs/prototype`. The build:
 
 - validates the content again and stops with **Build refused** if there is any error;
 - writes `dist/index.html`, the public single-file app;

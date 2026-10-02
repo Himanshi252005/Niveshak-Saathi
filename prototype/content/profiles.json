@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "texts": {
+    "eyebrow": { "en": "A plan that starts with your situation", "hi": "आपकी स्थिति से शुरू होने वाली योजना" },
+    "title": { "en": "Choose a safety plan", "hi": "अपनी सुरक्षा योजना चुनें" },
+    "intro": { "en": "Choose the example closest to you. We do not ask for your name, account number, holdings or income.", "hi": "जो उदाहरण आपसे सबसे ज़्यादा मिलता है उसे चुनें। हम आपका नाम, खाता नंबर, निवेश या आय नहीं पूछते।" },
+    "homeTitle": { "en": "Which situation feels closest to yours?", "hi": "कौन-सी स्थिति आपसे सबसे ज़्यादा मिलती है?" },
+    "homeHint": { "en": "Get a short plan without entering personal financial details.", "hi": "निजी वित्तीय जानकारी डाले बिना छोटी योजना पाएँ।" },
+    "planTitle": { "en": "Your first safety plan", "hi": "आपकी पहली सुरक्षा योजना" },
+    "watchTitle": { "en": "Watch for these warning signs", "hi": "इन खतरे के संकेतों पर ध्यान दें" },
+    "stepsTitle": { "en": "Do these in order", "hi": "ये काम इसी क्रम में करें" },
+    "whyTitle": { "en": "Why this plan", "hi": "यह योजना क्यों" },
+    "privacy": { "en": "This choice stays only on this page. It is not an account profile and is not uploaded or saved.", "hi": "यह चुनाव केवल इसी पेज पर रहता है। यह कोई खाता प्रोफ़ाइल नहीं है और न अपलोड या सेव होता है।" }
+  },
+  "profiles": [
+    {
+      "id": "praveen",
+      "name": { "en": "Praveen, 22", "hi": "प्रवीण, 22" },
+      "label": { "en": "New trader or gig worker", "hi": "नया ट्रेडर या गिग वर्कर" },
+      "situation": { "en": "Telegram or WhatsApp F&O tips feel convincing, and borrowed money may be involved.", "hi": "Telegram या WhatsApp की F&O टिप्स भरोसेमंद लगती हैं और उधार का पैसा भी लग सकता है।" },
+      "firstAction": { "en": "Pause the trade and do not borrow or add more money today.", "hi": "ट्रेड रोकें और आज उधार लेकर या और पैसा न लगाएँ।" },
+      "why": { "en": "Urgency, sure-shot tips, private groups and pressure to borrow are warning signs. A registered intermediary still cannot guarantee profit.", "hi": "जल्दी करने का दबाव, पक्की टिप, निजी ग्रुप और उधार लेने का दबाव खतरे के संकेत हैं। रजिस्टर्ड संस्था भी लाभ की गारंटी नहीं दे सकती।" },
+      "watchFor": [
+        { "en": "sure-shot calls, operator tips or guaranteed targets", "hi": "पक्की कॉल, ऑपरेटर टिप या गारंटी वाला टारगेट" },
+        { "en": "requests to join a VIP group or install an unknown trading app", "hi": "VIP ग्रुप में जुड़ने या अनजान ट्रेडिंग ऐप लगाने की माँग" },
+        { "en": "pressure to use a loan, credit card, margin or borrowed money", "hi": "लोन, क्रेडिट कार्ड, मार्जिन या उधार का पैसा लगाने का दबाव" }
+      ],
+      "steps": [
+        { "text": { "en": "Check the message before acting and read every reason shown.", "hi": "कुछ करने से पहले संदेश जाँचें और दिखाया गया हर कारण पढ़ें।" }, "sourceId": "sebi-social-caution" },
+        { "text": { "en": "Verify the person or firm independently on SEBI's official intermediary register.", "hi": "व्यक्ति या संस्था को SEBI की आधिकारिक इंटरमीडियरी सूची में अलग से जाँचें।" }, "sourceId": "sebi-intermediaries" },
+        { "text": { "en": "Use only the broker's official app and payment route; never pay a personal UPI ID from a group.", "hi": "केवल ब्रोकर का आधिकारिक ऐप और भुगतान तरीका इस्तेमाल करें; ग्रुप से मिली निजी UPI आईडी पर पैसा न भेजें।" }, "sourceId": "apps" }
+      ],
+      "actions": [
+        { "target": "check", "label": { "en": "Check the tip message", "hi": "टिप वाला संदेश जाँचें" } },
+        { "target": "paycheck", "label": { "en": "Check before paying", "hi": "भुगतान से पहले जाँचें" } }
+      ]
+    },
+    {
+      "id": "kavita",
+      "name": { "en": "Kavita, 39", "hi": "कविता, 39" },
+      "label": { "en": "Family-savings decision maker", "hi": "परिवार की बचत संभालने वाली" },
+      "situation": { "en": "A fake IPO, guaranteed-return plan or deposit offer arrives in English or through a social message.", "hi": "अंग्रेज़ी या सोशल संदेश में नकली IPO, पक्के रिटर्न या जमा योजना का प्रस्ताव आता है।" },
+      "firstAction": { "en": "Do not transfer money from the message. Switch to Hindi or read the steps aloud, then verify independently.", "hi": "संदेश से पैसा न भेजें। हिन्दी चुनें या कदम सुनें, फिर अलग से जाँच करें।" },
+      "why": { "en": "Guaranteed allotment, personal payment IDs and unusually high fixed returns are common fraud patterns. Public issues use the official ASBA process.", "hi": "गारंटी वाला अलॉटमेंट, निजी भुगतान आईडी और असामान्य पक्का रिटर्न आम धोखाधड़ी के तरीके हैं। सार्वजनिक इश्यू में आधिकारिक ASBA प्रक्रिया होती है।" },
+      "watchFor": [
+        { "en": "guaranteed IPO allotment, pre-IPO quota or a limited slot", "hi": "गारंटी वाला IPO अलॉटमेंट, प्री-IPO कोटा या सीमित सीट" },
+        { "en": "payment to a personal UPI ID, QR code or unofficial bank account", "hi": "निजी UPI आईडी, QR कोड या गैर-आधिकारिक बैंक खाते में भुगतान" },
+        { "en": "fixed daily or monthly returns and pressure to act today", "hi": "रोज़ या हर महीने पक्का रिटर्न और आज ही करने का दबाव" }
+      ],
+      "steps": [
+        { "text": { "en": "Use Before you pay to get a STOP or VERIFY answer before any transfer.", "hi": "कोई भी भुगतान करने से पहले ‘भुगतान से पहले’ में रुकें या जाँचें वाला जवाब पाएँ।" }, "sourceId": "sebi-check" },
+        { "text": { "en": "For an IPO, apply only through your own bank or broker's official ASBA route.", "hi": "IPO के लिए केवल अपने बैंक या ब्रोकर के आधिकारिक ASBA तरीके से आवेदन करें।" }, "sourceId": "sebi-icdr-faq" },
+        { "text": { "en": "For a deposit scheme, use RBI Sachet and official records instead of the sender's link.", "hi": "जमा योजना के लिए भेजने वाले के लिंक की जगह RBI Sachet और आधिकारिक रिकॉर्ड देखें।" }, "sourceId": "rbi-sachet" }
+      ],
+      "actions": [
+        { "target": "paycheck", "label": { "en": "Check before paying", "hi": "भुगतान से पहले जाँचें" } },
+        { "target": "check", "label": { "en": "Check the message", "hi": "संदेश जाँचें" } }
+      ]
+    },
+    {
+      "id": "babulal",
+      "name": { "en": "Babulal, 63", "hi": "बाबूलाल, 63" },
+      "label": { "en": "Retired investor with older holdings", "hi": "पुराने निवेश वाले सेवानिवृत्त निवेशक" },
+      "situation": { "en": "Old shares, dormant folios, nominees or unclaimed dividends are difficult to trace and official portals feel confusing.", "hi": "पुराने शेयर, निष्क्रिय फोलियो, नॉमिनी या बिना दावे का लाभांश ढूँढना कठिन है और आधिकारिक पोर्टल उलझे हुए लगते हैं।" },
+      "firstAction": { "en": "Collect only statements and certificate details, then identify the company, registrar, fund or depository participant before starting a claim.", "hi": "केवल स्टेटमेंट और सर्टिफिकेट की जानकारी जुटाएँ, फिर दावा शुरू करने से पहले कंपनी, रजिस्ट्रार, फ़ंड या DP पहचानें।" },
+      "why": { "en": "Old holdings follow different official paths. Unsolicited recovery agents may charge fees for steps that investors can start themselves.", "hi": "पुराने निवेश के लिए अलग-अलग आधिकारिक रास्ते हैं। अचानक संपर्क करने वाले रिकवरी एजेंट ऐसे काम की फ़ीस माँग सकते हैं जिसे निवेशक स्वयं शुरू कर सकता है।" },
+      "watchFor": [
+        { "en": "a fee to recover shares, dividends or an IEPF claim", "hi": "शेयर, लाभांश या IEPF दावा वापस दिलाने की फ़ीस" },
+        { "en": "requests for OTPs, passwords or original documents through messages", "hi": "संदेश में OTP, पासवर्ड या मूल दस्तावेज़ माँगना" },
+        { "en": "threats that a folio will be frozen unless money is paid", "hi": "पैसा न देने पर फोलियो फ्रीज़ होने की धमकी" }
+      ],
+      "steps": [
+        { "text": { "en": "Use Find help and choose old shares or unclaimed dividends; the app will not guess the authority.", "hi": "‘कहाँ शिकायत करें’ में पुराने शेयर या बिना दावे का लाभांश चुनें; ऐप अधिकारी का अंदाज़ा नहीं लगाएगा।" }, "sourceId": "sebi-rta-faq" },
+        { "text": { "en": "Use Family readiness to check nominees, contact details, paper certificates and official contacts.", "hi": "नॉमिनी, संपर्क जानकारी, कागज़ी सर्टिफिकेट और आधिकारिक संपर्क जाँचने के लिए परिवार तैयारी सूची इस्तेमाल करें।" }, "sourceId": "sebi-nomination-2026" },
+        { "text": { "en": "Contact the company, registrar, fund or DP through an official website; do not pay an unsolicited recovery agent.", "hi": "कंपनी, रजिस्ट्रार, फ़ंड या DP से आधिकारिक वेबसाइट के जरिए संपर्क करें; अचानक आए रिकवरी एजेंट को पैसे न दें।" }, "sourceId": "sebi-rta-faq" }
+      ],
+      "actions": [
+        { "target": "route", "label": { "en": "Find the official route", "hi": "आधिकारिक रास्ता खोजें" } },
+        { "target": "family", "label": { "en": "Open family readiness", "hi": "परिवार तैयारी खोलें" } }
+      ]
+    }
+  ]
+}

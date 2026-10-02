@@ -414,6 +414,33 @@
       h('div', { class: 'card' }, h('h2', { text: 'Family texts' }), SCHEMA.FAMILY_TEXT_KEYS.filter(k => k !== 'holdingsQuestion' && k !== 'nomineeQuestion').map(k => pair(FA, k, FAMILY_TEXT_LABELS[k] || k, 'family.' + k, { rows: k === 'intro' || k === 'cardWarning' || k === 'generalLabel' ? 2 : 1 }))));
   }
 
+  // Persona plans are fixed examples, not user profiles. Owners can change every bilingual explanation and source,
+  // but cannot add a free-text identity or financial-data field through this editor.
+  function profiles() {
+    const P = content.profiles;
+    const textCards = SCHEMA.PROFILE_TEXT_KEYS.map(k => pair(P.texts, k, k, 'profiles.texts.' + k, { rows: 2 }));
+    const cards = P.profiles.map((p, i) => {
+      const at = 'profiles.profiles[' + i + ']';
+      return h('div', { class: 'card', 'data-path': at },
+        h('h2', { text: p.name.en + ' (' + p.id + ')' }),
+        h('p', { class: 'small', text: 'The ID is fixed so the app and tests keep the same three audience paths.' }),
+        pair(p, 'name', 'Example name and age', at + '.name', { rows: 1 }),
+        pair(p, 'label', 'Short audience label', at + '.label', { rows: 1 }),
+        pair(p, 'situation', 'Situation', at + '.situation', { rows: 2 }),
+        pair(p, 'firstAction', 'First protective action', at + '.firstAction', { rows: 2 }),
+        pair(p, 'why', 'Why this plan', at + '.why', { rows: 3 }),
+        h('h3', { text: 'Warning signs' }),
+        p.watchFor.map((x, j) => pair(p.watchFor, j, 'Warning sign ' + (j + 1), at + '.watchFor[' + j + ']', { rows: 1 })),
+        h('h3', { text: 'Ordered steps and official sources' }),
+        p.steps.map((s, j) => h('div', { class: 'sub', 'data-path': at + '.steps[' + j + ']' }, pair(s, 'text', 'Step ' + (j + 1), at + '.steps[' + j + '].text', { rows: 2 }), field(s, 'sourceId', 'Official source', at + '.steps[' + j + '].sourceId', 'select', { options: sourceOptions() }))),
+        h('h3', { text: 'Buttons' }),
+        p.actions.map((a, j) => h('div', { class: 'sub', 'data-path': at + '.actions[' + j + ']' }, pair(a, 'label', 'Button ' + (j + 1), at + '.actions[' + j + '].label', { rows: 1 }), field(a, 'target', 'Opens tool', at + '.actions[' + j + '].target', 'select', { options: SCHEMA.PROFILE_TARGETS.map(x => [x, x]) }))));
+    });
+    return h('section', null, h('h1', { text: 'Persona safety plans' }),
+      h('p', { class: 'lede', text: 'Three privacy-safe example paths for the intended users. The public app never asks which real person is using it, and it never requests an account number, holdings or income.' }),
+      h('div', { class: 'card' }, h('h2', { text: 'Shared text' }), textCards), cards);
+  }
+
   function rights() {
     const cards = content.rights.cards, issues = content.routes.issues;
     return h('section', null, h('h1', { text: 'Rights cards' }),
@@ -529,7 +556,7 @@
         h('button', { type: 'button', class: 'danger', text: 'Discard all changes', disabled: !changes.length, onclick: () => { if (confirm('Discard all unsaved changes?')) { content = clone(original); render(); toast('Changes discarded.'); } } })),
       h('div', { class: 'card' }, h('h2', { text: '1. Save your edits' }),
         typeof window.showDirectoryPicker === 'function'
-          ? h('p', null, h('button', { type: 'button', class: 'primary', id: 'saveFolder', text: 'Save into the content folder…', onclick: saveToFolder }), ' Choose prototype/content. Only valid content can be saved.')
+          ? h('p', null, h('button', { type: 'button', class: 'primary', id: 'saveFolder', text: 'Save into the content folder…', onclick: saveToFolder }), ' Choose outputs/prototype/content. Only valid content can be saved.')
           : h('p', { class: 'small', text: 'This browser cannot write to folders. Use the content pack instead; it works everywhere.' }),
         h('p', null, h('button', { type: 'button', id: 'exportPack', text: 'Export content pack', onclick: exportPack }), ' One JSON file with every section. Apply it in the prototype folder with: node validate-content.cjs --apply <pack file>'),
         h('p', null, h('label', { for: 'importPack', text: 'Import a content pack: ' }), file)),
@@ -540,8 +567,8 @@
   }
 
   // ---------- shell ----------
-  const VIEWS = { overview, sources, warnings, routes, emergency, packet, family, rights, practice, texts, preview, publish };
-  const TABS = [['overview', 'Overview'], ['sources', 'Sources & review dates'], ['warnings', 'Warning texts'], ['routes', 'Help routes'], ['emergency', 'Emergency mode'], ['packet', 'Action Packet'], ['family', 'Family readiness'], ['rights', 'Rights cards'], ['practice', 'Practice'], ['texts', 'App texts'], ['preview', 'Preview'], ['publish', 'Save & publish']];
+  const VIEWS = { overview, sources, warnings, routes, emergency, packet, family, profiles, rights, practice, texts, preview, publish };
+  const TABS = [['overview', 'Overview'], ['sources', 'Sources & review dates'], ['warnings', 'Warning texts'], ['routes', 'Help routes'], ['emergency', 'Emergency mode'], ['packet', 'Action Packet'], ['family', 'Family readiness'], ['profiles', 'Persona plans'], ['rights', 'Rights cards'], ['practice', 'Practice'], ['texts', 'App texts'], ['preview', 'Preview'], ['publish', 'Save & publish']];
   function render() {
     const focused = document.activeElement && document.activeElement.id;
     seq = 0;

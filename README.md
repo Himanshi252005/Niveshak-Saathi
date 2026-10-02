@@ -1,79 +1,60 @@
 # Niveshak Saathi
 
-**A Hindi-first, English-capable investor safety and grievance prototype for first-time investors in India.**
+**A Hindi-first, English-supported investor-safety and grievance companion for first-time investors in India.**
 
-Niveshak Saathi helps a person pause before paying, recognise common scam patterns, take the right first steps after financial fraud, find the correct grievance route, prepare a private complaint packet, and organise family investment information. It is designed for Tier-2 and Tier-3 users, works as a single offline HTML file, and does not upload the user's message.
+Niveshak Saathi helps people pause before paying, recognise scam patterns, act after financial fraud, find the right grievance route, prepare a private complaint packet, and organise family investments. It is designed for Tier-2 and Tier-3 users, works as one offline HTML file, and keeps analysis on the user's device.
 
 ## Live demo
 
 **[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)**
 
-The demo is public and can be opened by anyone with the link. The same verified prototype also works offline. Real-user impact, native-speaker review, physical low-end phone testing, and screen-reader conformance still need to be measured.
+The public link currently shows the last deployed build. This repository contains the newer verified persona and reliability upgrade; see [`docs/Delivery-Status.md`](docs/Delivery-Status.md).
 
-## Try the prototype
+## Try the newest prototype
 
-1. Download or clone this repository.
-2. Open [`prototype/dist/index.html`](prototype/dist/index.html) in a modern browser.
-3. The app starts in Hindi. Use the language control for English.
+Open [`prototype/dist/index.html`](prototype/dist/index.html) in a modern browser. It starts in Hindi and supports English. No installation, account, server, API key or network connection is required for the core tools. A portable copy is in [`release/Niveshak-Saathi.zip`](release/Niveshak-Saathi.zip).
 
-No installation, account, server, API key, or network connection is required for the core tools. Official reporting links need internet access.
+## Built for three real situations
 
-For a portable submission copy, download [`release/Niveshak-Saathi.zip`](release/Niveshak-Saathi.zip).
+- **Praveen, 22:** a Tier-3 graduate or gig worker drawn to Telegram F&O tips and borrowed-capital pressure.
+- **Kavita, 39:** a Tier-2 homemaker who needs simple Hindi help against Ponzi, fake IPO and payment scams.
+- **Babulal, 63:** a pensioner who needs ordered steps for dormant folios, nominees, RTA/DP processes and possible IEPF claims.
 
-## What it includes
+Each fixed persona opens an owner-editable safety plan. The app asks for no name, account, holdings or income, and stores no profile.
 
-- **Check a message:** an explainable on-device rule model gives High risk, Caution, or No known signs, with reasons and uncertainty.
-- **Before you pay:** a short STOP or VERIFY flow covering UPI IDs, IPO claims, deposit schemes, suspicious returns, and unofficial payment routes.
-- **Get urgent help:** puts the bank and the 1930 cyber-fraud helpline first when money or credentials may be at risk.
-- **Find help:** routes bank, broker, listed-company, insurance, pension, and unclaimed-investment problems to the appropriate official process.
-- **Prepare a complaint:** creates a private Action Packet and blocks saving when it detects OTPs, PINs, passwords, CVVs, or card details.
-- **Family readiness:** covers nominees, old paper shares, IEPF, official contacts, and recovery-scam warnings.
-- **Practise safety:** uses fictional scenarios and before/after scores to build safer habits.
-- **Owner Control Studio:** lets the owner update reviewed Hindi and English content locally and validates changes before rebuilding.
+## Main capabilities
 
-## Trust boundaries
+- Explainable message-risk checks using multilingual rules, fitted logistic weights and safety floors.
+- Five reliability states: strong warning agreement, multiple signals, one signal, outside coverage and insufficient evidence.
+- STOP/VERIFY checks before payment, urgent bank/1930 steps, official complaint routes and a privacy-safe Action Packet.
+- Family readiness, fictional safety practice, read-aloud, large text, phone layouts and offline use.
+- Local Owner Studio for bilingual reviewed content and persona plans, with validation before rebuilding.
 
-The product gives no stock tips, buy/sell/hold signals, price predictions, broker promotions, commissions, advertising, or subscription upsells. It does not read SMS, contacts, documents, accounts, or OTPs. It has no analytics, cookies, cloud inference, or persistent user profile.
+## Scale and trust
 
-The checker is a limited warning system. **“No known signs” never means an offer is safe.** The app does not verify an entity, file a complaint, recover money, or replace an official authority or professional adviser.
+The public app is static and cacheable, and analysis happens on the device. The verified build is 495,106 bytes raw and 146,742 bytes with gzip. Serving 16 crore investors is an architecture target, not a completed load test. The required CDN tests, native-language review, security review, pilots and rollout gates are in [`docs/SCALE-AND-RELIABILITY.md`](docs/SCALE-AND-RELIABILITY.md).
+
+The product gives no stock tips, predictions, broker promotions, ads or upsells. It does not read accounts, SMS or OTPs and has no analytics, cookies, cloud inference or persistent profile. **“No known signs” is insufficient evidence, never proof that an offer is safe.**
 
 ## Evidence
 
-Current prototype evidence:
+- 1,201 automated checks;
+- 130/130 browser checks in each of three runs;
+- 435/435 developer regression expectations;
+- final sealed synthetic set: 72.4% of fraud or suspicious messages warned and 8.6% of ordinary messages warned.
 
-- 1,175 automated checks across content rules, routes, privacy guards, owner controls, browser journeys, accessibility-related layout checks, and feature flows;
-- 130 browser checks passing in each of three runs;
-- 435/435 developer regression expectations passing;
-- a sealed synthetic evaluation of 320 messages where the current model warned on 72.4% of fraud or suspicious messages and 8.6% of ordinary messages; 7% of ordinary messages received the High verdict.
-
-These are engineering results on synthetic data, not proof of real-world fraud accuracy or prevented loss. See [`docs/Validation-v3.md`](docs/Validation-v3.md) and the machine-readable files in [`evidence/`](evidence/).
+These are engineering results on synthetic data, not proof of nationwide capacity, real-world accuracy or prevented loss. See [`docs/Validation-v3.md`](docs/Validation-v3.md) and [`evidence/`](evidence/).
 
 ## Repository map
 
 | Path | Purpose |
 |---|---|
-| [`prototype/`](prototype/) | App source, editable content, local Owner Studio, build script, and self-contained browser build |
-| [`docs/Submission-v3.md`](docs/Submission-v3.md) | Problem, solution, judging-criteria evidence, technical design, and three-minute pitch |
-| [`docs/Validation-v3.md`](docs/Validation-v3.md) | Verification results and stated limits |
-| [`docs/Operations-and-Pilot-Kit.md`](docs/Operations-and-Pilot-Kit.md) | Consented pilot protocol and operating guidance |
-| [`docs/REAL-WORLD-ROADMAP.md`](docs/REAL-WORLD-ROADMAP.md) | Practical path from prototype to public-good deployment |
-| [`evidence/`](evidence/) | Current release, browser, blind-evaluation, and rule-regression records |
-| [`evaluation/`](evaluation/) | Held-out synthetic corpus and a scorer for reproducible aggregate results |
+| [`prototype/`](prototype/) | Source, editable content, Owner Studio and self-contained build |
+| [`docs/Submission-v3.md`](docs/Submission-v3.md) | Product, judging evidence, technology and pitch |
+| [`docs/Validation-v3.md`](docs/Validation-v3.md) | Verification and limitations |
+| [`docs/SCALE-AND-RELIABILITY.md`](docs/SCALE-AND-RELIABILITY.md) | National-scale and AI/ML reliability plan |
+| [`docs/CLAUDE-HANDOFF.md`](docs/CLAUDE-HANDOFF.md) | Concise continuation brief |
+| [`evidence/`](evidence/) | Machine-readable verification records |
 | [`release/`](release/) | Portable release archive |
 
-## Build and verify
-
-Node.js is required only for rebuilding and evaluation. The app itself runs directly in a browser.
-
-```text
-node prototype/build.cjs
-node Evaluate-Rules.cjs
-node evaluation/score-blind.cjs prototype/engine.js evaluation/blind-v5.json
-```
-
-`prototype/build.cjs` validates owner-editable content before generating the public app and release manifest. Read [`prototype/OWNER-GUIDE.md`](prototype/OWNER-GUIDE.md) before changing reviewed content.
-
-## Public-good use
-
-Use fictional information in demonstrations. Do not call a helpline or submit a complaint merely to test the prototype. Any real deployment should add native-language review, consented user testing, accessibility testing on physical devices, routine official-source review, and a clearly named accountable content owner.
-
+Use fictional information in demonstrations. Do not call a helpline or submit a complaint merely to test the prototype.

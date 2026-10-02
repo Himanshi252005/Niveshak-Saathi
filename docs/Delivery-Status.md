@@ -1,22 +1,19 @@
 # Delivery status — Niveshak Saathi
 
-**The current verified prototype was published for public access on 2 October 2026.**
+## Public demo
 
-## Public live demo
+[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)
 
-**[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)**
+- Audience: public
+- The live link remains on the previously deployed build because the owner asked to stop the deployment step on 2026-10-02.
 
-Anyone with the link can open and use the prototype without joining an allowlist.
+## Newest verified repository build
 
-## Deployed build
+- File: `prototype/dist/index.html`
+- Bytes: 495,106
+- Gzip bytes: 146,742
+- SHA-256: `DFFF70E703656669048C58D0D319C2FB3E842B60297AB18AE29D7F5145FF2B4F`
+- Verification: all canonical suites passed; 1,201 automated checks, including 26 persona/reliability checks and 130/130 browser checks in each of three runs.
+- New work: fixed plans for Praveen, Kavita and Babulal; five-state reliability/abstention explanation; owner editing for persona content; national-scale architecture and rollout documentation.
 
-- Public app: `prototype/dist/index.html`
-- Size: 473,298 bytes
-- SHA-256: `E377FB4EF8024F00C647C4D2D2C1CE82146DDADC48C26C43E6D5BD274001DAC6`
-- Deployment date: 2 October 2026
-- Deployment status: succeeded
-- Offline fallback: `release/Niveshak-Saathi.zip`
-
-The deployed file is byte-identical to the locally verified browser app. The validation records are in `Validation-v3.md`, `../evidence/Release-3.2-Verification.json`, `../evidence/Browser-Validation.json`, `../evidence/Blind-Evaluation.json`, and `../evidence/Rule-Evaluation.json`.
-
-External official reporting sites still need internet access. Core guidance, message checking, complaint preparation, family readiness, and practice tools work within the self-contained app.
+The Sites source repository received the updated source at commit `b10c33c0ce136bbd12fd91065a6cfe8fedca9a89`, but no new public deployment was completed. The GitHub repository is the handoff for the current verified build.
