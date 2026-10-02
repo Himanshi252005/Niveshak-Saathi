@@ -22,7 +22,7 @@ User's browser: language coverage + rules + fitted risk score + safety floors
                                   result stays on-device
 ```
 
-The current public app is one 495,106-byte HTML file, 146,742 bytes with gzip. A one-time cold download by 16 crore users would be about 23.5 TB of transfer before ordinary CDN caching. The central system serves the same immutable file; the user's device performs the analysis. Repeat use can run from the downloaded offline copy.
+The current public app is one 509,588-byte HTML file, 151,758 bytes with gzip. A one-time cold download by 16 crore users would be about 24.3 TB of transfer before ordinary CDN caching. The central system serves the same immutable file; the user's device performs the analysis. Repeat use can run from the downloaded offline copy.
 
 At 1% daily active use, 16 lakh cold downloads would be about 235 GB before caching. Actual national capacity depends on peak traffic, geography, cache-hit rate, hosting limits and partner distribution, so these arithmetic estimates are planning inputs rather than a load-test result.
 
@@ -86,10 +86,10 @@ Selecting a plan stores no profile, and the plan asks for no name, account numbe
 
 ## Evidence for the current build
 
-- 435/435 developer regression expectations passed.
+- 449/449 developer regression expectations passed.
 - The sealed 320-message synthetic set remains unchanged: 72.4% of fraud or suspicious messages warned; 8.6% of ordinary messages warned; 7% of ordinary messages received High.
 - 26/26 new persona, privacy, mobile and reliability checks passed.
 - 130/130 browser checks passed in each of three runs.
-- All 19 release suites passed against the same 495,106-byte build.
+- All 20 release suites passed against the same 509,588-byte build.
 
 These are engineering checks. They do not demonstrate prevented loss, national concurrency, real-world model accuracy or successful navigation by actual users.

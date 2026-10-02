@@ -36,12 +36,12 @@ Keep the Site identity in `.openai/hosting.json` when redeploying the same publi
 
 ## Scale design
 
-The public app is a static, cacheable file. Analysis happens on the device, so adding users does not add inference servers, message databases or per-check API cost. The verified build is 495,106 bytes raw and 146,742 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; “16 crore accounts” is a capacity target, not a completed load test. See `../SCALE-AND-RELIABILITY.md`.
+The public app is a static, cacheable file. Analysis happens on the device, so adding users does not add inference servers, message databases or per-check API cost. The verified build is 509,588 bytes raw and 151,758 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; “16 crore accounts” is a capacity target, not a completed load test. See `../SCALE-AND-RELIABILITY.md`.
 
 ## Evidence and limits
 
-- 435/435 developer regression expectations pass. These are not an accuracy benchmark.
+- 449/449 developer regression expectations pass. These are not an accuracy benchmark.
 - Three sealed synthetic blind sets are recorded in `../Blind-Evaluation.json`. On the final untouched set, the checker warned on 72.4% of fraud or suspicious messages and 8.6% of ordinary messages; 95% intervals and limitations are in `../Validation-v3.md`.
-- The full release record is `../Release-3.2-Verification.json`.
+- The full release record is `../Release-3.3-Verification.json`.
 
 The checker does not verify an entity, certify safety, file a complaint or recover money. Real-user comprehension, outcomes, native Hindi review, physical low-end devices and real-message accuracy remain to be tested.

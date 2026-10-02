@@ -433,5 +433,19 @@
  {"id":"V3P017","language":"en","channel":"whatsapp","text":"Our trading app is not on the Play Store yet, so we send the download link directly on WhatsApp.","expected":["app"],"label":"suspicious"},
  {"id":"V3P018","language":"en","channel":"sms","text":"SEBI REFUND: you are eligible for ₹12,400 compensation. Pay a ₹499 processing fee to claim it.","expected":["impersonation","withdrawal"],"label":"fraud"},
  {"id":"V3P019","language":"roman-hi","channel":"whatsapp","text":"Recharge ₹5,000 karo, VIP task me 40% commission ke saath ₹7,000 wapas milenge. Commission tabhi withdraw hoga jab recharge karoge.","expected":["doubling","withdrawal"],"label":"fraud"},
- {"id":"V3P020","language":"en","channel":"email","text":"IPO desk reminder: applications close today at 5 pm. Apply in the app using your UPI mandate; allotment is by lottery and not guaranteed.","expected":[],"label":"benign"}
+ {"id":"V3P020","language":"en","channel":"email","text":"IPO desk reminder: applications close today at 5 pm. Apply in the app using your UPI mandate; allotment is by lottery and not guaranteed.","expected":[],"label":"benign"},
+ {"id":"V33P001","language":"hi","channel":"sms","text":"प्रिय उपभोक्ता आज रात ९:३० बजे आपकी बिजली काट दी जाएगी क्योंकि पिछला बिल अपडेट नहीं है। तुरंत बिजली अधिकारी से संपर्क करें 90000 12846","expected":["urgency","threat"],"label":"fraud"},
+ {"id":"V33P002","language":"en","channel":"sms","text":"Dear consumer, your electricity will be disconnected tonight at 9:30 pm as your last bill was not updated. Call the electricity officer on 90000 12846.","expected":["urgency","threat"],"label":"fraud"},
+ {"id":"V33P003","language":"roman-hi","channel":"telegram","text":"Pehle 3 task free hai. Uske baad VIP prepaid task join karo, 1,000 se start, 30% profit ke saath wapas milega.","expected":["certainty"],"label":"fraud"},
+ {"id":"V33P004","language":"roman-hi","channel":"sms","text":"Aaj shaam 6 baje tak recovery.demo@ybl pe 3,600 bhejo warna tumhari photo FRAUD likh ke sab contacts aur family group me bhej denge.","expected":["personal","threat"],"label":"fraud"},
+ {"id":"V33P005","language":"hi","channel":"sms","text":"लोन की किस्त आज ही भेजो, वरना तुम्हारी फोटो पर चोर लिखकर सभी रिश्तेदारों को भेज देंगे।","expected":["urgency","threat"],"label":"fraud"},
+ {"id":"V33P006","language":"hi","channel":"whatsapp","text":"फर्जी ग्रुप वालों से सावधान रहें! हमारे VIP ग्रुप में गारंटीड रिटर्न, आज ही जुड़ें","expected":["certainty","urgency"],"label":"fraud"},
+ {"id":"V33P007","language":"hi","channel":"whatsapp","text":"गारंटीड रिटर्न देने वाले हम हैं, नकली लोगों से सावधान रहें। आज ही 10000 भेजें","expected":["certainty","urgency"],"label":"fraud"},
+ {"id":"V33P008","language":"en","channel":"whatsapp","text":"Better than FD! Guaranteed 12% returns every month, DICGC insured, pay to profitking@ybl","expected":["certainty","personal","doubling"],"label":"fraud"},
+ {"id":"V33B001","language":"hi","channel":"sms","text":"प्रिय ग्राहक, 444 दिनों की विशेष सावधि जमा (FD) पर पाएं 6.60% वार्षिक ब्याज। गारंटीड रिटर्न, बाजार का कोई जोखिम नहीं। जमा राशि DICGC द्वारा ₹5 लाख तक बीमित।","expected":[],"label":"benign"},
+ {"id":"V33B002","language":"en","channel":"sms","text":"Our bank FD offers guaranteed 7.25% p.a. interest, DICGC insured.","expected":[],"label":"benign"},
+ {"id":"V33B003","language":"hi","channel":"sms","text":"निवेशक जागरूकता: शेयर बाजार में गारंटीड/निश्चित रिटर्न का वादा करने वाले WhatsApp, Telegram या सोशल मीडिया ग्रुप से सावधान रहें। ठगी होने पर 1930 पर कॉल करें।","expected":[],"label":"benign"},
+ {"id":"V33B004","language":"en","channel":"sms","text":"Beware of WhatsApp, Telegram or social media groups promising guaranteed returns. Report fraud on 1930.","expected":[],"label":"benign"},
+ {"id":"V33B005","language":"hi","channel":"sms","text":"आज रात 10 बजे से 2 बजे तक रखरखाव के कारण बिजली बंद रहेगी। असुविधा के लिए खेद है।","expected":[],"label":"benign"},
+ {"id":"V33B006","language":"roman-hi","channel":"whatsapp","text":"Shaadi ki photos family group me bhej denge, sab dekh lena","expected":[],"label":"benign"}
 ]

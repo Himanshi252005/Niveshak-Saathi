@@ -1,7 +1,7 @@
 # Publishing checklist
 
-1. Publish `prototype/dist/index.html` exactly as verified. Its SHA-256 is in `Release-3.2-Verification.json`.
-2. Serve it with gzip or brotli. The current file is 495,106 bytes raw and 146,742 bytes with gzip.
+1. Publish `prototype/dist/index.html` exactly as verified. Its SHA-256 is in `Release-3.3-Verification.json`.
+2. Serve it with gzip or brotli. The current file is 509,588 bytes raw and 151,758 bytes with gzip.
 3. Keep the public app free of the Owner Studio, analytics, trackers, third-party scripts and credentials.
 4. After publishing, confirm Hindi and English, the three persona plans, all five message reliability states, phone navigation, offline download and app sharing.
 5. Open the public link without signing in and record the deployment id, source commit and served hash in `Delivery-Status.md`.

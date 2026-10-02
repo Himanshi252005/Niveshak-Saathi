@@ -1,11 +1,11 @@
 {
   "checkedAt": "2026-10-02",
   "product": "Niveshak Saathi",
-  "release": "3.2",
+  "release": "3.3",
   "app": {
     "file": "outputs/prototype/dist/index.html",
-    "bytes": 495106,
-    "sha256": "DFFF70E703656669048C58D0D319C2FB3E842B60297AB18AE29D7F5145FF2B4F"
+    "bytes": 509588,
+    "sha256": "055455709CAA0AA479C309CAB84A9EA668D9B553532696A511D4AEC05CE7BBAB"
   },
   "suites": [
     {
@@ -60,7 +60,7 @@
       "exitCode": 0,
       "summary": "all C-7 end-to-end checks passed",
       "failures": [],
-      "seconds": 8
+      "seconds": 6
     },
     {
       "suite": "Studio Emergency tab (C-8)",
@@ -69,7 +69,7 @@
       "exitCode": 0,
       "summary": "all 31 C-8 Studio checks passed",
       "failures": [],
-      "seconds": 11
+      "seconds": 9
     },
     {
       "suite": "Studio Help routes tab (C-9)",
@@ -96,7 +96,7 @@
       "exitCode": 0,
       "summary": "all 19 C-11 Studio checks passed",
       "failures": [],
-      "seconds": 5
+      "seconds": 6
     },
     {
       "suite": "Independent boundary set (GPT, read-only)",
@@ -132,7 +132,7 @@
       "exitCode": 0,
       "summary": "22/22 checks passed",
       "failures": [],
-      "seconds": 11
+      "seconds": 5
     },
     {
       "suite": "New-feature journeys (C-14, C-15)",
@@ -150,7 +150,7 @@
       "exitCode": 0,
       "summary": "18/18 checks passed",
       "failures": [],
-      "seconds": 7
+      "seconds": 9
     },
     {
       "suite": "Professional app shell: Home, sidebar menu, phone menu, no emoji (C-18)",
@@ -159,7 +159,7 @@
       "exitCode": 0,
       "summary": "30/30 checks passed",
       "failures": [],
-      "seconds": 21
+      "seconds": 20
     },
     {
       "suite": "Persona safety plans and reliability abstention (C-19)",
@@ -171,31 +171,40 @@
       "seconds": 4
     },
     {
+      "suite": "Real-world users and stress inputs (C-20)",
+      "file": "c20-realworld.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "14/14 checks passed (100 users: 92 right, 8 partly, 0 wrong)",
+      "failures": [],
+      "seconds": 73
+    },
+    {
       "suite": "Release 3.0 browser suite (single run; see Browser-Validation.json)",
       "file": "verify-v3.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "130/130 checks passed; throttled load 11836 ms; 495106 bytes",
+      "summary": "130/130 checks passed; throttled load 11346 ms; 509588 bytes",
       "failures": [],
-      "seconds": 28
+      "seconds": 30
     }
   ],
   "allPassed": true,
   "ruleRegression": {
-    "version": "3.2",
-    "cases": 435,
-    "expectationsPassed": 435,
-    "truePositive": 227,
-    "trueNegative": 202,
+    "version": "3.3",
+    "cases": 449,
+    "expectationsPassed": 449,
+    "truePositive": 235,
+    "trueNegative": 208,
     "falseNegative": 0,
     "falsePositive": 0,
     "unsupported": 6,
     "riskLevels": {
-      "fraudHigh": "160/169 (94.7%)",
-      "fraudWarned": "165/169 (97.6%)",
+      "fraudHigh": "168/177 (94.9%)",
+      "fraudWarned": "173/177 (97.7%)",
       "suspiciousWarned": "56/61 (91.8%)",
-      "benignHigh": "2/205 (1%)",
-      "benignWarned": "7/205 (3.4%)"
+      "benignHigh": "2/211 (0.9%)",
+      "benignWarned": "7/211 (3.3%)"
     }
   },
   "note": "Sequential local runs in headless Edge on Windows. Live-link results depend on the network at the time of the run."

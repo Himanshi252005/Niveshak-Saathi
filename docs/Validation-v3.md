@@ -1,13 +1,19 @@
 # Niveshak Saathi validation
 
-**Build checked:** 2026-10-02 in installed Microsoft Edge (headless). The verified public file is 495,106 bytes, with SHA-256 `DFFF70E703656669048C58D0D319C2FB3E842B60297AB18AE29D7F5145FF2B4F`.
+**Build checked:** 2026-10-02 in installed Microsoft Edge (headless). The verified public file is 509,588 bytes, with SHA-256 `055455709CAA0AA479C309CAB84A9EA668D9B553532696A511D4AEC05CE7BBAB`.
 
-The evidence records are `Browser-Validation.json`, `Rule-Evaluation.json`, `Blind-Evaluation.json` and `Release-3.2-Verification.json`.
+The evidence records are `Browser-Validation.json`, `Rule-Evaluation.json`, `Blind-Evaluation.json` and `Release-3.3-Verification.json`.
 
 ## Checks that passed
 
-- **1,201 automated checks** across the canonical suites, including 435/435 developer message expectations.
+- **1,229 automated checks** across the canonical suites, including 449/449 developer message expectations.
 - **Browser journeys:** 130/130 checks in each of three independent runs, with no runtime errors.
+- **Real-world users and stress inputs (Release 3.3):** 14/14 checks.
+  - **Who:** 100 realistic users written by four separate agents that never saw the code. They cover ages 18–80, Hindi and English screens, phones 320–412 px wide and large text.
+  - **What they did:** each used one tool in their own words, from Home.
+  - **Result:** 92 fully right, 8 partly right, 0 wrong. Release 3.2 scored 83, 9 and 8.
+  - **Stress inputs:** 15 of them, including a 9,659-character forward, pasted HTML and script, and the phone Back button.
+  - **Details:** see `REAL-WORLD-USER-TEST.md`. These users were used to fix problems, so they are now a regression test, not an accuracy result.
 - **Public-scale reliability and personas:** 26/26 checks. They cover the three fixed plans, official-source steps, absence of profile/financial inputs, English and Hindi rendering, action routing, all five reliability states, no storage, no user-data requests, and a 320-pixel Hindi phone view.
 - **App shell:** 30/30 checks across 320, 360 and 390-pixel phones, Hindi and English, normal/large/200% text, keyboard navigation and print layout.
 - **On-device assistant:** 176 checks for English, Hindi and Roman Hindi own-words input, return maths and before-payment decisions.
@@ -31,10 +37,26 @@ Three sealed synthetic sets of 320 messages each were written separately and sco
 
 These are synthetic-message results, not evidence of nationwide accuracy or avoided financial loss.
 
+**Checker 3.3 (Release 3.3)** adds patterns from the real-world user test:
+- Hindi, Hinglish and English electricity, gas or SIM disconnection threats;
+- task scams that promise money back "with profit";
+- loan-app shaming threats;
+- a narrow "beware of those who promise…" awareness pattern.
+
+It also fixes a bug where a decimal deposit rate such as "7.25%" was read as "25%", which gave genuine bank FD offers a false "High risk".
+
+Regression checks:
+- all earlier developer cases still pass, and 14 new cases were added (449/449);
+- the independent boundary set passes 38/38;
+- the first two sealed sets give identical results;
+- on the third sealed set, the only changes are two scams now caught and one false alarm removed.
+
+The table above remains the last untouched measurement (model 3.2). The third set has now been seen, so the improvement is not claimed as a new accuracy figure.
+
 ## Size and speed
 
-- 495,106 bytes uncompressed and 146,742 bytes with gzip.
-- Simulated slow network (400 ms latency, 50,000 bytes/second, 4× CPU slowdown): median 11,515 ms uncompressed and 4,427 ms gzip-served across the latest three-run record.
+- 509,588 bytes uncompressed and 151,758 bytes with gzip.
+- Simulated slow network (400 ms latency, 50,000 bytes/second, 4× CPU slowdown): median 11,569 ms uncompressed and 4,406 ms gzip-served across the latest three-run record.
 - Message analysis remains local and takes about 1 ms for ordinary inputs.
 
 ## Still unproven

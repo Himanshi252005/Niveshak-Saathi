@@ -90,3 +90,5 @@ label.check{display:flex;gap:12px;align-items:flex-start;font-weight:500;line-he
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .packet-essentials .mark{display:inline-block;width:18px;height:18px;vertical-align:-4px;margin-right:6px;stroke-width:2.6}
 label.check>input[type=checkbox],label.check>input[type=radio]{width:22px;height:22px;flex-shrink:0;margin:2px 0 0;padding:0;accent-color:#0d4944}
+/* C-20 real-world test: a no-match result is "insufficient evidence", never a green "safe"; it uses the same neutral style. */
+.verdict-none{background:#f5f7fa;color:#24364a;border-color:#5e6c80}
