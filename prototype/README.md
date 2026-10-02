@@ -41,11 +41,11 @@ The hosting identity for the public link is kept outside this repository.
 
 ## Scale design
 
-The public app is a static, cacheable file. Analysis happens on the device, so more users do not need inference servers, message databases or per-check API costs. The Release 3.5 build is 661,710 bytes raw and 191,146 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; reaching India's 16 crore demat accounts is a design target, not a completed load test. See [`../docs/SCALE-AND-RELIABILITY.md`](../docs/SCALE-AND-RELIABILITY.md).
+The public app is a static, cacheable file. Analysis happens on the device, so more users do not need inference servers, message databases or per-check API costs. The Release 3.5 build is 665,738 bytes raw and 192,213 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; reaching India's 16 crore demat accounts is a design target, not a completed load test. See [`../docs/SCALE-AND-RELIABILITY.md`](../docs/SCALE-AND-RELIABILITY.md).
 
 ## Evidence and limits
 
-- **Release record:** [`../evidence/Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json): 1,346 automated checks, that is 23 release suites plus the developer cases.
+- **Release record:** [`../evidence/Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json): 1,347 automated checks, that is 23 release suites plus the developer cases.
 - **Developer cases:** 449/449 expectations pass. They were written during development, so they are not an accuracy benchmark.
 - **Sealed sets,** each written by a separate AI agent and scored once:
   - blind-v9: not yet scored: the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) will be scored once, when the upgraded checker is frozen;

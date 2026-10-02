@@ -105,7 +105,7 @@ label.check>input[type=checkbox],label.check>input[type=radio]{width:22px;height
 a.helpline-number{display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid var(--brand);border-radius:10px;color:var(--brand);font-weight:700;font-size:1.1rem;text-decoration:none;letter-spacing:.02em}
 a.helpline-number:hover,a.helpline-number:focus-visible{background:var(--accent)}
 details.guide{background:#fff;border:1px solid var(--line);border-radius:14px;margin:12px 0;padding:0 16px}
-details.guide>summary{cursor:pointer;padding:14px 0;min-height:44px;line-height:1.45}details.guide>summary strong{display:block}
+details.guide>summary{cursor:pointer;padding:14px 0;min-height:44px;line-height:1.45}details.guide>summary strong{display:inline}
 details.guide .guide-when{display:block;color:var(--muted);font-size:.94rem;margin-top:4px}
 details.guide[open]>summary{border-bottom:1px solid var(--line);margin-bottom:8px}
 ol.guide-steps{padding-left:22px}ol.guide-steps li{margin:12px 0}ol.guide-steps li p{margin:0;line-height:1.65}
@@ -144,7 +144,7 @@ html{scroll-padding-top:calc(var(--topbar-h,56px) + 16px)}
 .result-actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 16px}.result-actions button{min-height:44px}
 details.more-signs{margin:10px 0}
 /* Sources dialog: Close stays at the top while the list scrolls (F5, judge D27). */
-.dialog-close{position:sticky;top:0;float:right;z-index:2;min-height:44px;margin:0 0 8px 12px}
+.dialog-bar{position:sticky;top:0;z-index:2;display:flex;justify-content:flex-end;background:#fff;padding:10px 24px 8px;margin:0 -24px 8px;border-bottom:1px solid var(--line)}.dialog-close{min-height:44px}#trustDialog{padding-top:0}
 /* Persona buttons say whose situation they are for (judge D16). */
 .profile-quick-buttons button.profile-quick-button{display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:10px 14px;gap:2px}.profile-quick-hint{font-size:.9rem;font-weight:400;color:var(--muted)}
 /* Other languages are pointed to the official helplines (owner decision D-10). */
@@ -176,3 +176,6 @@ fieldset.situations legend,fieldset.ongoing legend,fieldset.paid-detail legend,f
 @media(max-width:760px){#check h1{font-size:1.6875rem}}
 /* Larger text follows the reader's own browser text size (row 13). */
 .large-text{font-size:125%}.packet-essentials .mark-text{font-weight:650;margin-right:4px}.packet-essentials li.ok .mark-text{color:#1d6b3a}.packet-essentials li.missing .mark-text{color:#983d22}.packet-essentials li.ok .icon.mark{color:#1d6b3a}.packet-essentials li.missing .icon.mark{color:#983d22}
+/* Shorter menu (judge review, 2 Oct 2026): six everyday pages, the other four under "More pages". */
+.sidebar nav .nav-more{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.14)}.sidebar nav .nav-more-summary{display:flex;align-items:center;gap:12px;min-height:48px;padding:10px 12px;border-radius:10px;color:#d8ebe7;font-size:.98rem;font-weight:600;cursor:pointer;list-style:none}.sidebar nav .nav-more-summary::-webkit-details-marker{display:none}.sidebar nav .nav-more-summary::after{content:'';margin-left:auto;border-style:solid;border-width:5px 0 5px 7px;border-color:transparent transparent transparent currentColor;transition:transform .15s}.sidebar nav .nav-more[open]>.nav-more-summary::after{transform:rotate(90deg)}.sidebar nav .nav-more-summary:hover{background:rgba(255,255,255,.09);color:#fff}.sidebar nav .nav-more>button{padding-left:22px}
+.input-help{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:8px 0 4px}.input-help p{margin:0;flex:1 1 220px}

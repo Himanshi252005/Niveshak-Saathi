@@ -38,6 +38,22 @@ The scorer prints aggregate metrics and never prints message text. The published
 - The writers were AI agents. They may share blind spots with the AI assistants that helped build the app.
 - Once a result has been inspected and used to change the checker, the set is development data rather than blind evidence. All three sets here are now development data.
 
+## How the checker's weights were fitted
+
+The checker scores a message by adding one weight per warning category it finds, then turning the sum into a 0–1 score (logistic). The weights were fitted, not set by hand:
+- **Method:** L2-regularised logistic regression (λ = 1) with one 0/1 feature per category. Labels: fraud = 1, suspicious = 0.5, ordinary = 0. Messages the checker cannot read are left out.
+- **Data:** 1,083 readable messages: the developer cases plus the first two sealed sets (blind-v3 and blind-v4), after they had been scored once.
+- **Rounding and thresholds:** weights are rounded to 0.5 so the score can be explained as a sum. The Caution threshold sits halfway between "no sign" and the weakest single sign. The High threshold, 0.65, was chosen by hand so that High means a safety floor, any two different signs or one strong sign.
+- **Versions:** the weights were fitted for model 3.2 (Release 3.2). Checker 3.3 kept the same bias and weights and changed the rules that find the categories and trigger the safety floors, so `engine.js` and the script still label the weights as version 3.2.
+
+[`fit-weights.cjs`](fit-weights.cjs) is the script, and [`fit-features.json`](fit-features.json) is its input: the categories found in each training message and its label, with no message text. This command reproduces the shipped weights and thresholds exactly (the release script refuses to publish if it does not):
+
+```text
+node fit-weights.cjs --features fit-features.json --lambda 1 --high 0.65 --out fit-report.json
+```
+
+`fit-report.json` then lists the raw and rounded weights, the trade-off table behind the threshold, and the training messages that stay below High.
+
 ## 100-persona simulated test
 
 [`real-world-test/`](real-world-test/) holds the 100 fictional personas (written by AI; no real users), the stress inputs and the scripts that run them in the real app and score the results. The folder keeps its earlier name. See [`real-world-test/README.md`](real-world-test/README.md).

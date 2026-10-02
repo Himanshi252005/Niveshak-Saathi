@@ -4,13 +4,32 @@ Which release is where, as of 2 October 2026.
 
 | Where | Release | Status |
 |---|---|---|
-| [Live link](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) | **3.5** | Public; opens without signing in. Exact verified build deployed 2 October 2026 |
+| [Live link](https://himanshi252005.github.io/Niveshak-Saathi/) (GitHub Pages) | **3.5** | The link to share. Exact verified build `1B279AD5…5C23`, refined in place on 2 October 2026; HTTPS with HSTS, gzip, no cookies |
 | This repository: [`prototype/dist/index.html`](../prototype/dist/index.html) | **3.5** | Byte-identical to the app served by the live link |
+| [Second copy](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) | 3.5 (first build) | The first Release 3.5 build (`175BD9D4…6E1C`), without the refinements below; not the link to share |
 | Release 3.4 | 3.4 | Verified and published in this repository on 2 October 2026; never deployed; replaced by 3.5 |
 
-## Live link: Release 3.5
+## Release 3.5: the build on the live link
 
-- **What it serves:** Release 3.5, app size 661,710 bytes, product version 3.5 and checker version 3.3. After removing the host's per-request Cloudflare block, its SHA-256 is `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`, exactly matching the verified repository build.
+- **File:** `prototype/dist/index.html`, 665,738 bytes (192,213 with gzip).
+- **SHA-256:** `1B279AD5001812454D75C390AC99C899142ABC0804A5E01D30DE10CA948A5C23`.
+- **Versions:** product 3.5, with checker 3.3.
+- **Verification:** 1,347 automated checks, that is 23 release suites plus 449/449 developer-case expectations ([`Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json)); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 92 fully right, 8 partly right, 0 wrong.
+- **New in Release 3.5:**
+  - the Rights and help page: free official helplines, five step-by-step guides (SCORES, IEPF-5, RBI Ombudsman, insurance, nominee) and all eight rights cards grouped by institution;
+  - the Family asset map in Family safety;
+  - "review pending" on sources not yet confirmed by the named reviewer;
+  - licence, reuse, security and privacy files.
+- **Refined in place on 2 October 2026** (same release number, at the owner's request, after a judge-style review):
+  - a shorter menu: six everyday pages, with the complaint packet, safety plans, practice and family safety under "More pages", which opens by itself when one of them is in use;
+  - input without typing: a "Paste the message" button, and tips to speak a message or a complaint with the phone keyboard's microphone; text boxes tell the keyboard which language to expect;
+  - the privacy note names the host the app was opened from (the GitHub Pages live link sets no cookies; the offline copy has no host), and the privacy window keeps its Close button in view;
+  - the version line's update link points to the live link.
+- **Live check after publishing** (2 October 2026, 21:39 IST): the live link served this exact file (SHA-256 match) over HTTPS with HSTS, gzip-compressed (199,901 bytes transferred), with `Cache-Control: max-age=600` and no cookies. GitHub Pages commit `56c011d`.
+
+## Second copy: first Release 3.5 build
+
+- **What it serves:** the first Release 3.5 build, 661,710 bytes, product version 3.5 and checker version 3.3. After removing the host's per-request Cloudflare block, its SHA-256 is `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`, exactly matching that verified build. It does not have the refinements above.
 - **Deployed:** 20:49 IST on 2 October 2026. The exact-build check passed and the live smoke test passed 10/10.
 - **Sites record:** source commit `88e3f65f72e7584258fea67fe5be55aa973d5079`; version `4` (`appgprj_6abdcbd1b6148191a68dc1b38c53c585~appgver_47711223d59c81918c769928d4225383`); deployment `appgdep_6abfcb5aa8d48191aadd2f6344e0f3d3`.
 
@@ -20,19 +39,6 @@ Which release is where, as of 2 October 2026.
 - It sends no security headers: no HSTS, `nosniff`, framing protection, Content-Security-Policy or Referrer-Policy.
 - It sends `Cache-Control: public, max-age=0, must-revalidate` with no ETag or Last-Modified date, so every visit downloads the whole page again.
 - Since Release 3.4 the page carries its own Content-Security-Policy and no-referrer policy; only the host can add the rest.
-
-## Release 3.5: deployed build
-
-- **File:** `prototype/dist/index.html`, 661,710 bytes (191,146 with gzip).
-- **SHA-256:** `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`.
-- **Versions:** product 3.5, with checker 3.3.
-- **Verification:** 1,346 automated checks, that is 23 release suites plus 449/449 developer-case expectations ([`Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json)).
-- **New in Release 3.5:**
-  - the Rights and help page: free official helplines, five step-by-step guides (SCORES, IEPF-5, RBI Ombudsman, insurance, nominee) and all eight rights cards grouped by institution;
-  - the Family asset map in Family safety;
-  - "review pending" on sources not yet confirmed by the named reviewer;
-  - the host's three cookies named in the documents; licence, reuse, security and privacy files.
-- **Deployment verification:** the Sites live link and GitHub Pages copy both serve this exact file. The Sites exact-build check matched the recorded SHA-256 and its smoke test passed 10/10.
 
 ## Release 3.4: verified, never deployed
 
@@ -57,8 +63,8 @@ Which release is where, as of 2 October 2026.
 
 ## Rollback rule
 
-The rollback target is always the release that was live just before the latest redeploy. Release 3.3 is the rollback target for the Release 3.5 deployment. Release 3.2, SHA-256 `E377FB4EF8024F00C647C4D2D2C1CE82146DDADC48C26C43E6D5BD274001DAC6`, is earlier history.
+The rollback target is always the build that was live just before the latest redeploy. For the refined Release 3.5 on the live link, that is the first Release 3.5 build (`175BD9D4…6E1C`): it is the previous commit of the `gh-pages` branch, and the second copy still serves it. For Release 3.5 as a whole, the rollback target is Release 3.3 (`05545570…BBAB`). Release 3.2, SHA-256 `E377FB4EF8024F00C647C4D2D2C1CE82146DDADC48C26C43E6D5BD274001DAC6`, is earlier history.
 
-## GitHub Pages copy
+## Live link (GitHub Pages)
 
-Live at **https://himanshi252005.github.io/Niveshak-Saathi/** from 2 October 2026, published from the `gh-pages` branch, which holds only the verified app (`index.html`) and an empty `.nojekyll`. Checked before it was announced: the served file's SHA-256 equals the verified build (`175BD9D4…6E1C`); HTTPS with HSTS; gzip (198,783 bytes transferred); `Cache-Control: max-age=600`; no cookies. In a phone-sized browser it opens in Hindi as version 3.5, hides the update link, makes no request outside the site and rates a scam message High risk, with no page error.
+Live at **https://himanshi252005.github.io/Niveshak-Saathi/** from 2 October 2026, published from the `gh-pages` branch, which holds only the verified app (`index.html`) and an empty `.nojekyll`. Each publish is checked before it is announced: the served file's SHA-256 must equal the verified build; HTTPS with HSTS; gzip; `Cache-Control: max-age=600`; no cookies. In a phone-sized browser it opens in Hindi as version 3.5, hides the update link, makes no request outside the site and rates a scam message High risk, with no page error.

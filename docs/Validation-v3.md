@@ -1,6 +1,6 @@
 # Niveshak Saathi: validation
 
-**Build checked:** Release 3.5, on 2 October 2026: 661,710 bytes (191,146 with gzip), SHA-256 `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`. The live link serves Release 3.3 until it is redeployed ([delivery status](Delivery-Status.md)).
+**Build checked:** Release 3.5, on 2 October 2026: 665,738 bytes (192,213 with gzip), SHA-256 `1B279AD5001812454D75C390AC99C899142ABC0804A5E01D30DE10CA948A5C23`. The live link (https://himanshi252005.github.io/Niveshak-Saathi/) serves this build; a second copy on the earlier host still serves the first Release 3.5 build ([delivery status](Delivery-Status.md)).
 
 **How to read this page**
 - Every accuracy figure comes from synthetic messages or AI-written personas. None comes from real users.
@@ -12,7 +12,7 @@
 
 ## What changed in Release 3.5
 
-- **Rights and help page.** Home has a new card, "अपने अधिकार जानें / Know your rights", and the menu a new group, "Know your rights". The page holds:
+- **Rights and help page.** Home has a new card, "अपने अधिकार जानें / Know your rights", and the menu a new page, "अधिकार और मदद / Rights and help". The page holds:
   - **free official helplines that speak regional languages:** SEBI 1800-266-7575 or 1800-22-7575 (English, Hindi, Marathi, Gujarati, Tamil, Bengali and Telugu; 9 am–6 pm except Sundays and Maharashtra public holidays); RBI Contact Centre 14448 (English, Hindi and ten regional languages; it explains how to complain and cannot take complaints); IRDAI grievance call centre 155255 or 1800 425 4732 (8 am–8 pm, Monday to Saturday; Hindi, English and other major languages); the IEPF helpdesk 14453; cybercrime 1930;
   - **five step-by-step guides,** every step sourced to an official page: SEBI SCORES; an IEPF-5 claim, with a tick-only checklist of the papers needed; the RBI Ombudsman; insurance complaints (insurer, IRDAI, Insurance Ombudsman); adding a nominee. Each guide can be downloaded as a text file;
   - **all 8 rights cards,** grouped by institution, each with "Where to complain about this".
@@ -20,18 +20,21 @@
   Complaint routes now link to the matching guide. Nothing on the page asks the user to type, and ticks are not saved.
 - **Family asset map** in Family safety (Track B "Nominee & Family Wealth Tracker"). Each row records the type of investment, the institution's name, nominee status, where the papers are kept and who in the family knows. The institution's name is the only typed field, and numbers, e-mail addresses and PAN are blocked. The list can be downloaded, printed and reopened from the downloaded file on the phone; nothing is saved by the app. Shares or mutual funds without a nominee link to the nominee guide.
 - **"Review pending" labels.** Sources checked against the official page during development but not yet confirmed by the named reviewer (Himanshi Rathore) now show "review pending". In Release 3.4 every source showed her name, including 15 she had not yet confirmed.
-- **Privacy notes.** The app's privacy notes and the documents now name the three cookies that the public link's host sets (`__Host-appgarden-visitor`, 90 days; `cf_clearance`, 365 days; `__cf_bm`, about 30 minutes) instead of "one short-lived security cookie". The app itself still sets and reads none ([privacy](../PRIVACY.md)).
+- **Privacy notes.** The app's privacy note now names the host it was opened from: on the live link it says GitHub Pages sets no cookies; on any other host it says the host may set its own; in the offline copy it says there is no host. The documents name the three cookies the earlier host sets (`__Host-appgarden-visitor`, 90 days; `cf_clearance`, 365 days; `__cf_bm`, about 30 minutes) instead of "one short-lived security cookie". The app itself still sets and reads none ([privacy](../PRIVACY.md)).
 - **Public-good files:** an MIT licence for the code, CC BY 4.0 for original text, reuse terms, a security policy and a privacy page.
-- **Checker:** Release 3.5 ships checker 3.3 (unchanged from Release 3.4). Work on Hindi and Hinglish scams aimed at the three personas continues; it will be the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) scored once, when the upgraded checker is frozen.
+- **Simpler menu:** six everyday pages stay in the menu (Home, Check a message, Before you pay, Get help now, Where to complain, Rights and help); the other four sit under "More pages", which opens by itself when one of them is in use.
+- **Input without typing:** a "Paste the message" button fills the check box in one tap from a message copied in WhatsApp or SMS, and the message box, the "Get help now" box and the complaint box say that the phone keyboard's microphone can be used; text boxes tell the keyboard which language to expect. The app adds no speech service of its own.
+- **Open fitting:** the script that fitted the checker's weights is published with its input table (categories found and label per message, no message text); it reproduces the shipped weights and thresholds exactly (`evaluation/fit-weights.cjs`).
+- **Checker:** Release 3.5 ships checker 3.3 (unchanged from Release 3.4). Work on Hindi and Hinglish scams aimed at the three personas continues; the upgraded checker will be scored once on the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) when it is frozen.
 - **Unchanged decisions:** Hindi and English only, with users of other languages pointed to the official helplines that speak their language; the app saves nothing.
 
 ## Release 3.5 checks
 
-- **1,346 automated checks:** 23 release suites plus 449/449 developer-case expectations.
+- **1,347 automated checks:** 23 release suites plus 449/449 developer-case expectations.
 - **Browser journeys:** 130/130 in each of 3 runs.
 - **100-persona simulated test** (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
 - **Official links:** every official link re-opened by the integrated suite (C-12: 13/13 checks passed).
-- **Size and speed:** 661,710 bytes (191,146 with gzip); Home usable in 4.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.5 s.
+- **Size and speed:** 665,738 bytes (192,213 with gzip); Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s. Timings vary with the load on the test computer: the first Release 3.5 build measured 4.9 s on a quieter run, and when the two builds were timed side by side in one session the refined build was not slower (Slow 3G: Hindi screen 2.4 s against 2.8 s, Home usable 8.0 s against 9.0 s).
 
 ### Fresh sealed set (blind-v9)
 
@@ -153,9 +156,9 @@ These are synthetic-message results, not evidence of nationwide accuracy or avoi
 - **Nothing is saved, by design:** a user who wants to keep the Family asset map, a guide or a packet must download it.
 - **Offline use** needs one "Save offline copy"; there is no installable app or service worker.
 - **Sources:** sources not yet confirmed by the named reviewer show "review pending" (29 in Release 3.5).
-- **Hosting:** the live link serves Release 3.3. Its host sends no security headers or cache validators, so every visit downloads the whole page again ([scale plan](SCALE-AND-RELIABILITY.md)). RBI's website may show a language chooser first, so an RBI link can need a second tap.
+- **Hosting:** the live link is GitHub Pages (HTTPS with HSTS, gzip, a ten-minute browser cache, no cookies). The second copy's host sends no security headers or cache validators, so every visit there downloads the whole page again ([scale plan](SCALE-AND-RELIABILITY.md)). RBI's website may show a language chooser first, so an RBI link can need a second tap.
 - **Missing content:** MF Central and DigiLocker are not covered, because their official text could not be verified.
-- **Unpublished scripts:** most release suites run from the team's working folder; their results are in the release records, but their scripts are not yet in this repository. The published kits are the sealed-set scorer, the developer cases and the 100-persona test.
+- **Unpublished scripts:** most release suites run from the team's working folder; their results are in the release records, but their scripts are not yet in this repository. The published kits are the sealed-set scorer, the developer cases, the 100-persona test and the weight-fitting script with its feature table, which reproduces the shipped weights exactly.
 
 ## Still unproven
 

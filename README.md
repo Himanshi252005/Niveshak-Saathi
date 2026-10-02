@@ -11,8 +11,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | | |
 |---|---|
 | **Start here** | [`JUDGES.md`](JUDGES.md): one page with the S.01–S.06 map, Track B fit, evidence and limits |
-| **Open Release 3.5** | **[himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified build on GitHub Pages, in any phone or computer browser. To keep it offline, download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") or use "Save offline copy" in the app. No installation, account or server |
-| **Live link** | **[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)** serves the verified **Release 3.5** build (deployed and checked 2 October 2026) |
+| **Live link** | **[Open Niveshak Saathi](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified **Release 3.5** build, in any phone or computer browser. No installation, account or server. To keep it offline, use "Save offline copy" in the app or download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") |
 | **Switch to English** | The app opens in Hindi. Use the language menu at the top right and choose "English" |
 | **Demo video (S.05)** | being recorded; the link will be added here when it is published |
 
@@ -25,7 +24,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | S.05 Demonstration | Video being recorded; the link will be added here when it is published; [script](docs/Submission-v3.md#s05-demonstration) |
 | S.06 Impact | [Submission, S.06](docs/Submission-v3.md#s06-impact) |
 
-**Version legend.** Release 3.5 is the newest build; it is on the live link, in this repository and on GitHub Pages (https://himanshi252005.github.io/Niveshak-Saathi/). Release 3.4 was verified on 2 October 2026 but never deployed; its results are kept as history. The "checker" is the message checker inside the app: Release 3.4 kept checker 3.3, and Release 3.5 ships checker 3.3. The "-v3" in some document names is the documentation series, not the release.
+**Version legend.** Release 3.5 is the newest build; it is on the live link (GitHub Pages) and in this repository. Release 3.4 was verified on 2 October 2026 but never deployed; its results are kept as history. The "checker" is the message checker inside the app: Release 3.4 kept checker 3.3, and Release 3.5 ships checker 3.3. The "-v3" in some document names is the documentation series, not the release.
 
 ## Built for three people
 
@@ -49,7 +48,7 @@ Each person has a fixed safety plan on Home. The app asks for no name, account n
 - **Prepare a complaint.** A private packet that will not save while an OTP, PIN, password, CVV or card number is in it (Hindi digits included). It says plainly that it has not been submitted.
 
 **Know your rights (new in Release 3.5)**
-- **Rights and help** (Home: "अपने अधिकार जानें / Know your rights"; menu: "Know your rights"):
+- **Rights and help** (Home: "अपने अधिकार जानें / Know your rights"; menu: "अधिकार और मदद / Rights and help"):
   - free official helplines that speak regional languages: SEBI 1800-266-7575 or 1800-22-7575 (seven languages), RBI Contact Centre 14448 (English, Hindi and ten regional languages; it explains how to complain but cannot take complaints), IRDAI 155255 or 1800 425 4732, the IEPF helpdesk 14453 and cybercrime 1930;
   - five step-by-step guides, every step sourced to an official page: SEBI SCORES, an IEPF-5 claim (with a tick-only list of the papers needed), the RBI Ombudsman, insurance complaints (insurer, IRDAI, Ombudsman) and adding a nominee;
   - eight rights cards, from the SEBI Investor Charter, RBI's Charter of Customer Rights, IRDAI's free-look and two-week grievance rules and others, grouped by institution, each with "Where to complain about this".
@@ -57,7 +56,7 @@ Each person has a fixed safety plan on Home. The app asks for no name, account n
 **Learn and protect**
 - **Family safety**, with the new **Family asset map** (Track B "Nominee & Family Wealth Tracker"). One row per investment: type, institution name, nominee status, where the papers are, and who in the family knows. The institution name is the only typed field, and it refuses numbers, e-mail addresses and PAN. Download or print the list, and reopen the downloaded list later on the phone; the app itself saves nothing. Shares or mutual funds without a nominee link to the nominee guide. The tick-only family checklist and printable family card remain.
 - **My safety plan** for Praveen, Kavita and Babulal, and **Practise** with made-up messages, before-and-after scores and a habit card.
-- **Everyday use:** read-aloud with the phone's own voice, large text, phone layouts, a working phone Back button, "Save offline copy" and "Share this app".
+- **Everyday use:** a short menu (six pages, the rest under "More pages"); a Paste button and a tip to speak the message with the phone keyboard's microphone instead of typing; read-aloud with the phone's own voice, large text, phone layouts, a working phone Back button, "Save offline copy" and "Share this app".
 - **Owner Studio:** a local editor, never part of the public app, where the content owner edits and validates all bilingual content, sources, guides and plans before a rebuild.
 
 ## Track B fit
@@ -71,7 +70,7 @@ Each person has a fixed safety plan on Home. The app asks for no name, account n
 ## Privacy and trust
 
 - The app itself saves nothing: no cookies, browser storage or accounts. It runs no analytics or cloud AI and never sends what you type. Its only network request is a fresh copy of its own page when you tap "Save offline copy" or "Share this app".
-- The public link's host (Cloudflare) sets three cookies of its own, measured on 2 October 2026: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes). It also adds Cloudflare's bot-check script. The app neither sets nor reads them, and the saved offline copy has none. See [`PRIVACY.md`](PRIVACY.md).
+- The live link is served by GitHub Pages, which sets no cookies (checked on 2 October 2026); like any web host, it may keep standard access logs. A second copy on the earlier host sets three cookies of its own and adds a bot-check script. The app neither sets nor reads cookies, and the saved offline copy has none. See [`PRIVACY.md`](PRIVACY.md).
 - Every step shows its official source and review date, or is labelled a general safety step. Sources checked against the official page but not yet confirmed by the named content reviewer, Himanshi Rathore, show "review pending".
 - No stock tips, predictions, broker promotion, ads, referrals or upsells. The page sends no referrer to the official sites it links to.
 
@@ -80,10 +79,10 @@ Each person has a fixed safety plan on Home. The app asks for no name, account n
 All accuracy figures come from synthetic messages and AI-written personas, not from real users. No pilot has been run yet.
 
 **Release 3.5** ([release record](evidence/Release-3.5-Verification.json))
-- 1,346 automated checks: 23 release suites plus 449/449 developer-case expectations.
+- 1,347 automated checks: 23 release suites plus 449/449 developer-case expectations.
 - Fresh sealed set blind-v9, written by a separate AI agent: not yet scored: the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) will be scored once, when the upgraded checker is frozen.
 - 100-persona simulated test (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
-- Size: 661,710 bytes, 191,146 bytes with gzip; Home usable in 4.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.5 s.
+- Size: 665,738 bytes, 192,213 bytes with gzip; Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s.
 
 **Release 3.4 (history; verified 2 October 2026, never deployed)**
 - **Sealed set blind-v8** (200 messages written by a separate AI agent, scored once), with the shipped checker 3.3:

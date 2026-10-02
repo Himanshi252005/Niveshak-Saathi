@@ -18,9 +18,9 @@
 - It never uploads what you type, the files you open or the files you download.
 - It does not file complaints or contact anyone for you.
 
-## Cookies set by the public link's host
+## Cookies set by the host
 
-The GitHub Pages copy (https://himanshi252005.github.io/Niveshak-Saathi/) sets no cookies (checked on 2 October 2026). The public link's host (Cloudflare) sets cookies of its own. On 2 October 2026 we measured three cookies there. The host sets them, not the app, and the app neither sets nor reads them:
+The live link (https://himanshi252005.github.io/Niveshak-Saathi/) is served by GitHub Pages, which sets no cookies (checked on 2 October 2026); like any web host, it may keep standard access logs. A second copy on the earlier host (Cloudflare) sets cookies of its own. On 2 October 2026 we measured three cookies there. That host sets them, not the app, and the app neither sets nor reads them:
 
 | Cookie | Set by | Lifetime |
 |---|---|---|
@@ -28,7 +28,7 @@ The GitHub Pages copy (https://himanshi252005.github.io/Niveshak-Saathi/) sets n
 | `cf_clearance` | Cloudflare | 365 days |
 | `__cf_bm` | Cloudflare | about 30 minutes |
 
-The host also adds Cloudflare's bot-check script and, like any web host, may keep standard access logs. Hosts can change their cookies; this table records what we measured. To avoid all of this, use an offline copy, or the app file downloaded from this repository (`prototype/dist/index.html`).
+That host also adds Cloudflare's bot-check script and may keep standard access logs. Hosts can change their cookies; this table records what we measured. To avoid these cookies, use the live link; to avoid any host at all, use an offline copy, or the app file downloaded from this repository (`prototype/dist/index.html`). The app's own privacy note names the host it was opened from.
 
 ## Offline copy
 

@@ -23,7 +23,7 @@ async function openMenuIfPhone(page) { if (await page.locator('#menuButton').isV
 async function openTool(page, tab) {
   const card = page.locator(`#home .task-card[data-go="${tab}"]`);
   if (await card.count() && await card.isVisible()) { await card.click(); return 'home card'; }
-  await openMenuIfPhone(page); await page.locator(`#sideNav [data-tab="${tab}"]`).click(); return 'menu';
+  await openMenuIfPhone(page); await page.locator(`#sideNav [data-tab="${tab}"]`).evaluate(b => { const d = b.closest('details'); if (d && !d.open) d.open = true; }); await page.locator(`#sideNav [data-tab="${tab}"]`).click(); return 'menu';
 }
 async function largeText(page) {
   const phone = await openMenuIfPhone(page);

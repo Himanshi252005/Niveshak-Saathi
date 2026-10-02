@@ -45,7 +45,7 @@ Report numerators/denominators, median times and ranges, language/persona breakd
 
 ## Running the pilot with the app's facilitator mode
 
-The app includes a **Pilot session** for facilitators: open **More tools → Pilot session (facilitators)**. It follows this protocol exactly.
+The app includes a **Pilot session** for facilitators. Open the app link with `?pilot=1` at the end (https://himanshi252005.github.io/Niveshak-Saathi/?pilot=1), then **More tools → Pilot session (facilitators)**. Everyday users never see it. It follows this protocol exactly.
 
 1. **Consent.** Read the consent script shown on screen. Tick "The participant agreed" only after they say yes; the session cannot start without it.
 2. **Set up.** Choose the persona, preferred language and condition order. The app gives an anonymous code (P01, P02 …) and never asks for a name.

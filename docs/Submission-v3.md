@@ -6,8 +6,8 @@
 > check the message → check before paying → stop immediate harm → find the right office → follow the official steps → protect the family → build the habit
 
 **Status (2 October 2026)**
-- **Release 3.5** is the build in this repository: 661,710 bytes, SHA-256 `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`. 1,346 automated checks passed: 23 release suites plus the developer cases ([release record](../evidence/Release-3.5-Verification.json)).
-- **The live link serves Release 3.5.** Its served file matches the verified repository build and passed the 10/10 deployment smoke test on 2 October 2026 ([delivery status](Delivery-Status.md)).
+- **Release 3.5** is the build in this repository: 665,738 bytes, SHA-256 `1B279AD5001812454D75C390AC99C899142ABC0804A5E01D30DE10CA948A5C23`. 1,347 automated checks passed: 23 release suites plus the developer cases ([release record](../evidence/Release-3.5-Verification.json)).
+- **The live link serves Release 3.5:** [himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/). Its served file matches the verified repository build ([delivery status](Delivery-Status.md)).
 - **Release 3.4** was verified but never deployed. Its results are kept below as history.
 - **No real-user study or pilot** has been run. Every accuracy figure comes from synthetic test sets.
 - **An independent educational product,** not affiliated with SEBI, RBI, IRDAI, the IEPF Authority, PFRDA, NPCI or any institution.
@@ -21,12 +21,13 @@ A working prototype: one self-contained HTML file that runs in a phone or deskto
 | How to try it | What you get |
 |---|---|
 | Download [`prototype/dist/index.html`](../prototype/dist/index.html) and open it in Chrome or Edge | **Release 3.5**, with every feature on this page |
-| [Live link](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) | **Release 3.5**, including Rights and help, Family asset map, rights cards and step-by-step guides |
+| [Live link](https://himanshi252005.github.io/Niveshak-Saathi/) | **Release 3.5**, including Rights and help, Family asset map, rights cards and step-by-step guides |
 | Demo video | being recorded; the link will be added here when it is published |
 
 - **Language:** the app opens in Hindi. To switch to English, use the language menu at the top right.
 - **Home** asks one question, "What do you need help with?", with large choices in everyday words and three persona plans.
-- **The menu** groups the tools under "Check before you act", "If something went wrong", "Know your rights" and "Learn and protect". A "Get urgent help" button stays in the top bar.
+- **The menu** shows six everyday pages (Home, Check a message, Before you pay, Get help now, Where to complain, Rights and help); the complaint packet, safety plans, practice and family safety sit under "More pages". A "Get urgent help" button stays in the top bar.
+- **No typing needed:** a Paste button puts a copied message in the box, and a tip shows how to speak it with the phone keyboard's microphone.
 - **Offline and sharing:** "Save offline copy" (More tools) downloads the app so it works without internet. "Share this app" hands the link, or the file, to WhatsApp.
 
 ## S.02 Problem definition
@@ -85,7 +86,7 @@ One private journey, from a suspicious message to the right official action. Eve
 
 ### Know your rights (new in Release 3.5)
 
-6. **Rights and help.** Home card "अपने अधिकार जानें / Know your rights"; in the menu, "Know your rights", then "Rights and help".
+6. **Rights and help.** Home card "अपने अधिकार जानें / Know your rights"; in the menu, "अधिकार और मदद / Rights and help".
    - **Free official helplines that speak regional languages:**
      - SEBI 1800-266-7575 or 1800-22-7575: English, Hindi, Marathi, Gujarati, Tamil, Bengali and Telugu; 9 am–6 pm, except Sundays and Maharashtra public holidays;
      - RBI Contact Centre 14448: English, Hindi and ten regional languages; it explains how to complain but cannot take a complaint;
@@ -109,7 +110,7 @@ One private journey, from a suspicious message to the right official action. Eve
 8. **My safety plan.** Praveen, Kavita and Babulal each get an ordered first action, warning signs, sourced steps and buttons into the right tools. The plans are fixed examples, not user profiles.
 9. **Practise.** Three made-up questions, a short lesson and three parallel questions give before-and-after scores, with an optional anonymous export and a seven-day habit card. Practice scores are not evidence of impact.
 
-**Also:** read-aloud with the phone's own voice, large text, phone layouts and a working phone Back button. A **Pilot session** for facilitators sits under More tools. The **Owner Studio** is a local editor, never part of the public app (its file is in the repository), where the content owner edits all bilingual content, sources, guides and plans; the build validates every change.
+**Also:** read-aloud with the phone's own voice, large text, phone layouts and a working phone Back button. A **Pilot session** for facilitators appears under More tools only on a link ending in `?pilot=1`, so everyday users never see it. The **Owner Studio** is a local editor, never part of the public app (its file is in the repository), where the content owner edits all bilingual content, sources, guides and plans; the build validates every change.
 
 ### Track B fit
 
@@ -196,7 +197,7 @@ Full tables, by language and persona: [Validation](Validation-v3.md).
 
 ### Technical evidence
 
-**Release 3.5:** 1,346 automated checks (23 release suites plus 449/449 developer-case expectations); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 92 fully right, 8 partly right, 0 wrong (14/14 checks); official links every official link re-opened by the integrated suite (C-12: 13/13 checks passed); 661,710 bytes (191,146 with gzip); Home usable in 4.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.5 s.
+**Release 3.5:** 1,347 automated checks (23 release suites plus 449/449 developer-case expectations); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 92 fully right, 8 partly right, 0 wrong (14/14 checks); official links every official link re-opened by the integrated suite (C-12: 13/13 checks passed); 665,738 bytes (192,213 with gzip); Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s.
 
 **Release 3.4 (history).** Rows marked "internal" come from test runs whose scripts and logs are not yet in this repository.
 
@@ -271,7 +272,7 @@ These are the mechanisms. None has yet been measured with real users.
 
 ### How it scales in Tier-2 and Tier-3 India
 
-- **Small and phone-first:** one 661,710-byte file, 191,146 bytes when served with gzip; Home usable in 4.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.5 s. Once saved, it works with no network at all.
+- **Small and phone-first:** one 665,738-byte file, 192,213 bytes when served with gzip; Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s. Once saved, it works with no network at all.
 - **Spreads without accounts:** the link or the file can be forwarded on WhatsApp, and "Warn my family" spreads warnings without tracking anyone.
 - **Language reach without unreviewed translation:** Hindi first, English one tap away. Users of other languages are pointed to official helplines that speak their language: SEBI in seven languages, RBI 14448 in English, Hindi and ten regional languages, and IRDAI in Hindi, English and other major languages.
 - **No cost per user:** no servers, accounts, message database or inference. At Release 3.4's size, 16 crore one-time downloads would be about 26.4 TB before caching. That is a planning figure, not a load test ([scale plan](SCALE-AND-RELIABILITY.md)).
@@ -281,7 +282,7 @@ These are the mechanisms. None has yet been measured with real users.
 
 ### Measuring it
 
-- **Built in:** a facilitator Pilot session (More tools) that reads the consent script, times six fictional scenarios, records the scores and downloads anonymous rows in the exact `Pilot-Results.csv` columns.
+- **Built in:** a facilitator Pilot session (More tools, on a link ending in `?pilot=1`) that reads the consent script, times six fictional scenarios, records the scores and downloads anonymous rows in the exact `Pilot-Results.csv` columns.
 - **Ready to run:** 24 consenting adults across the three personas, with matched tasks: official pages first versus the app first ([Operations and pilot kit](Operations-and-Pilot-Kit.md)).
 - **Targets, not results:** at least 80% correct routes, at least 90% understanding that "no known signs" is not proof of safety, at least 80% completion without help, and at least 30% lower median time to the next action. `Pilot-Results.csv` is blank; no participant data has been invented.
 
@@ -292,9 +293,9 @@ These are the mechanisms. None has yet been measured with real users.
 | Criterion (weight) | What the product does | Evidence | Not yet proven |
 |---|---|---|---|
 | **Resilience & Safety Impact (30%)** | STOP before paying; message check; bank and 1930 first; the right office with time limits; sourced guides; Family asset map | blind-v9: not yet scored (it waits for the upgraded checker). Release 3.5 ships checker 3.3: blind-v8 60.9% [51.6–69.5] fraud or suspicious warned; complaint-route test 39/40 main authority (Release 3.4, internal) | No real-user outcome study; money saved not measured; subtle scams often missed |
-| **Tier-2/3 Usability (25%)** | Hindi first, English one tap away; large choices in everyday words; persona plans; read-aloud; large text; offline copy; official helplines in regional languages | Every page fits 320–390-pixel phones in both languages (Release 3.4); 191,146 bytes to download with gzip; Home usable in 4.9 s on an emulated slow connection (gzip) | Native Hindi review; physical low-end phones; only two languages in the app; no in-app voice input |
+| **Tier-2/3 Usability (25%)** | Hindi first, English one tap away; large choices in everyday words; a six-page menu; Paste button and keyboard-microphone tips instead of typing; persona plans; read-aloud; large text; offline copy; official helplines in regional languages | Every page fits 320–390-pixel phones in both languages (Release 3.4); 192,213 bytes to download with gzip; Home usable in 6.4 s on an emulated slow connection (gzip) | Native Hindi review; physical low-end phones; only two languages in the app; voice input only through the phone keyboard's microphone |
 | **Guardrails & Trust (15%)** | No commerce or tips; nothing saved or sent; every step sourced and dated, with "review pending" where the reviewer has not confirmed; in-page security policy; uncertainty shown | Privacy and security checks; no network requests in tested journeys | Independent security audit; confirmation of pending sources |
-| **Technical Execution (15%)** | Explainable on-device model with safety floors and abstention; keyword-based parser; validated, reproducible single-file build | Sealed sets with intervals; 1,346 automated checks | A consented, representative real-message corpus; colloquial Hindi coverage |
+| **Technical Execution (15%)** | Explainable on-device model with safety floors and abstention; keyword-based parser; validated, reproducible single-file build | Sealed sets with intervals; 1,347 automated checks | A consented, representative real-message corpus; colloquial Hindi coverage |
 | **Feasibility & Scalability (15%)** | Static file with no inference cost; Owner Studio; pilot kit; open licences | Transfer arithmetic; validated content pipeline | No load test, partner or pilot yet |
 
 No judging score is guaranteed. The evidence above comes from automated checks, not from users.
@@ -305,7 +306,7 @@ No judging score is guaranteed. The evidence above comes from automated checks, 
 - **No data access:** no SMS, inbox, contacts, documents or accounts are read. Voice input goes only through the phone's own keyboard; there is no in-app recording.
 - **Nothing saved:**
   - the app itself saves nothing and never sends what you type;
-  - the public link's host (Cloudflare) sets three cookies of its own, measured on 2 October 2026: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes), and adds a bot-check script. The app neither sets nor reads them, and the offline copy has none;
+  - the live link (GitHub Pages) sets no cookies, measured on 2 October 2026; a second copy on the earlier host sets three cookies of its own and adds a bot-check script. The app neither sets nor reads cookies, and the offline copy has none;
   - downloaded files stay on the device and must be deleted separately ([privacy](../PRIVACY.md)).
 - **Transparent about uncertainty:** "No known signs" never means safe; "Not sure" never guesses a regulator; Before you pay says it cannot confirm who owns an ID; the checker shows how it decided.
 - **Official sources:** 55 official sources are shown in the app, from SEBI, RBI, NPCI, IRDAI, IEPF, PFRDA, MHA/I4C, DoT (Sanchar Saathi), PIB and others. Each says exactly what it supports and when it was reviewed; the guidance snapshot is 2 October 2026 and the next review is due on 1 November 2026. 29 sources were checked against the official page during development but are not yet confirmed by the named reviewer, Himanshi Rathore, so the app shows them as "review pending". (In Release 3.4 and on the live link, every source showed her name, including 15 she had not yet confirmed.)
@@ -326,7 +327,7 @@ No judging score is guaranteed. The evidence above comes from automated checks, 
 
 **How do you keep the advice current?** Every source shows its review date, and unconfirmed sources show "review pending". The owner updates content in the local Studio, the build validates it, and sources are reviewed monthly.
 
-**What happens to my data?** Nothing is saved or sent by the app. The host's three cookies and everything else are in [PRIVACY](../PRIVACY.md).
+**What happens to my data?** Nothing is saved or sent by the app, and the live link sets no cookies. The details, including the second copy's host cookies, are in [PRIVACY](../PRIVACY.md).
 
 **Have you proved impact?** No. Measurement is built in and a pilot is prepared. Practice scores and sealed-set results are not evidence of money saved.
 

@@ -24,10 +24,11 @@ User's browser: language coverage + rules + fitted risk score + safety floors
                                   result stays on the device
 ```
 
-Release 3.5 is one HTML file of 661,710 bytes, 191,146 bytes with gzip. The planning arithmetic below uses Release 3.4's size (164,699 bytes with gzip); scale it in proportion for Release 3.5.
-- **Cold downloads:** one download by each of 16 crore users would be about 26.4 TB of transfer before ordinary CDN caching (Release 3.3: 24.3 TB).
+Release 3.5 is one HTML file of 665,738 bytes, 192,213 bytes with gzip.
+- **Cold downloads:** one download by each of 16 crore users would be about 30.8 TB of transfer before ordinary CDN caching (Release 3.4: 26.4 TB; Release 3.3: 24.3 TB).
 - **How the load is shared:** the central system serves the same unchanging file, and the user's device does the analysis. Repeat use can run from the downloaded offline copy.
-- **Daily use:** at 1% daily active use, 16 lakh cold downloads would be about 264 GB before caching (Release 3.3: 243 GB; an earlier version of this page said 235 GB in error).
+- **Daily use:** at 1% daily active use, 16 lakh cold downloads would be about 308 GB before caching (Release 3.4: 264 GB; Release 3.3: 243 GB; an earlier version of this page said 235 GB in error).
+- **Today's host:** GitHub Pages, which serves the live link, has a soft bandwidth limit of 100 GB a month ([GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)): about 5 lakh first-time downloads of this file. Repeat visits within ten minutes and the saved offline copy cost nothing. That is enough for pilots, not for a national rollout, which needs a CDN or partner hosting.
 - **Caveat:** real national capacity depends on peak traffic, geography, cache-hit rate, hosting limits and partner distribution. These estimates are planning inputs, not a load-test result.
 
 ## Hosting and browser security
@@ -48,18 +49,15 @@ The app's only network request is a fresh copy of its own page, for "Save offlin
 - protection against being framed by another site (`frame-ancestors` or `X-Frame-Options`; browsers ignore `frame-ancestors` in a page's own policy);
 - cache validators.
 
-**Measured on the public host on 2 October 2026:**
-- none of those headers is sent;
-- there is no Content-Security-Policy, Referrer-Policy or Permissions-Policy header;
-- `Cache-Control` is `public, max-age=0, must-revalidate`, with no ETag or Last-Modified date. A conditional request still returns the full page, so every visit downloads it again: about 152 KB compressed for the live Release 3.3.
+**Measured on the live link (GitHub Pages) on 2 October 2026:**
+- HTTPS with HSTS (`max-age` one year); no `nosniff` or framing-protection header, which only the host could add;
+- gzip, `Cache-Control: max-age=600` with ETag and Last-Modified validators, so repeat visits within ten minutes come from the browser cache and later ones can be answered with "not modified";
+- served by GitHub's content-delivery network; from India the response came from a Mumbai edge cache;
+- no cookies and no script added by the host.
 
-**What the host adds:**
-- Cloudflare's bot-check script, in a hidden frame;
-- three cookies of its own: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes).
+**The second copy on the earlier host** (measured the same day) sends none of the security headers, sends `Cache-Control: public, max-age=0, must-revalidate` with no validators (every visit downloads the whole page again), adds Cloudflare's bot-check script in a hidden frame and sets three cookies of its own: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes). The app neither sets nor reads any of them, and the saved offline copy has none ([privacy](../PRIVACY.md)).
 
-The app neither sets nor reads any of them, and the saved offline copy has none ([privacy](../PRIVACY.md)). The page's own policy still lets the host's script run.
-
-**Hosting decision:** the owner keeps the live link and adds a GitHub Pages copy. The Pages copy is live at https://himanshi252005.github.io/Niveshak-Saathi/ (2 October 2026) and was checked before it was announced: the served file equals the verified build; HTTPS with HSTS; gzip; `Cache-Control: max-age=600`, so repeat visits within ten minutes come from the browser cache; no cookies.
+**Hosting decision:** since 2 October 2026 the live link is GitHub Pages (https://himanshi252005.github.io/Niveshak-Saathi/). It was checked before it was announced: the served file equals the verified build; HTTPS with HSTS; gzip; no cookies. The earlier host is kept only as a second copy.
 
 ## Hybrid AI/ML reliability design
 
@@ -122,9 +120,9 @@ Selecting a plan stores no profile, and no plan asks for a name, account number,
 ## Evidence for the current build
 
 **Release 3.5** ([release record](../evidence/Release-3.5-Verification.json))
-- **Checks:** 1,346 automated checks: 23 release suites plus 449/449 developer-case expectations; browser journeys 130/130 in each of 3 runs.
+- **Checks:** 1,347 automated checks: 23 release suites plus 449/449 developer-case expectations; browser journeys 130/130 in each of 3 runs.
 - **Fresh sealed set (blind-v9):** not yet scored: the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) will be scored once, when the upgraded checker is frozen.
-- **Load:** Home usable in 4.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.5 s.
+- **Load:** Home usable in 6.4 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.4 s.
 
 **Release 3.4 (history; never deployed)**
 - **Release suites:** all 22 passed against the same 561,637-byte build: 1,297 automated checks in total, that is the suites plus 449 developer-case expectations ([`Release-3.4-Verification.json`](../evidence/Release-3.4-Verification.json)).

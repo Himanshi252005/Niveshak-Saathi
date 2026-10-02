@@ -3,8 +3,8 @@
  "date": "2026-10-02",
  "app": {
   "file": "index.html",
-  "bytes": 661710,
-  "sha256": "175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C"
+  "bytes": 665738,
+  "sha256": "1B279AD5001812454D75C390AC99C899142ABC0804A5E01D30DE10CA948A5C23"
  },
  "note": "AI-written fictional users, used to find and fix problems in Release 3.3: a regression test, not a real-world accuracy result. Grades: pass = fully right, weak = partly right, fail = wrong.",
  "checksPassed": 14,
@@ -1396,7 +1396,7 @@
   {
    "name": "huge paste (10,000 chars, scam at the end)",
    "chars": 9659,
-   "ms": 133,
+   "ms": 172,
    "level": "high",
    "coverage": false,
    "typed": 9659,
@@ -1410,7 +1410,7 @@
   {
    "name": "one 6,000-char word",
    "chars": 6000,
-   "ms": 67,
+   "ms": 49,
    "level": "none",
    "coverage": false,
    "typed": 6000,
@@ -1424,7 +1424,7 @@
   {
    "name": "emoji only",
    "chars": 10,
-   "ms": 41,
+   "ms": 63,
    "level": "none",
    "coverage": true,
    "typed": 10,
@@ -1438,7 +1438,7 @@
   {
    "name": "scam words split by invisible characters",
    "chars": 66,
-   "ms": 46,
+   "ms": 50,
    "level": "high",
    "coverage": false,
    "typed": 66,
@@ -1452,7 +1452,7 @@
   {
    "name": "pasted HTML image with script handler",
    "chars": 69,
-   "ms": 38,
+   "ms": 67,
    "level": "high",
    "coverage": false,
    "typed": 69,
@@ -1466,7 +1466,7 @@
   {
    "name": "pasted script tag",
    "chars": 59,
-   "ms": 37,
+   "ms": 60,
    "level": "high",
    "coverage": false,
    "typed": 59,
@@ -1480,7 +1480,7 @@
   {
    "name": "link with javascript: scheme",
    "chars": 63,
-   "ms": 41,
+   "ms": 57,
    "level": "none",
    "coverage": false,
    "typed": 63,
@@ -1494,7 +1494,7 @@
   {
    "name": "Urdu right-to-left text",
    "chars": 53,
-   "ms": 50,
+   "ms": 57,
    "level": "none",
    "coverage": true,
    "typed": 53,
@@ -1508,7 +1508,7 @@
   {
    "name": "whitespace only",
    "chars": 11,
-   "ms": 33,
+   "ms": 58,
    "level": null,
    "coverage": false,
    "typed": 11,
@@ -1522,7 +1522,7 @@
   {
    "name": "only numbers",
    "chars": 34,
-   "ms": 70,
+   "ms": 75,
    "level": "none",
    "coverage": true,
    "typed": 34,
@@ -1536,7 +1536,7 @@
   {
    "name": "Devanagari digits scam",
    "chars": 53,
-   "ms": 41,
+   "ms": 75,
    "level": "high",
    "coverage": false,
    "typed": 53,
@@ -1550,7 +1550,7 @@
   {
    "name": "lookalike official domain",
    "chars": 104,
-   "ms": 45,
+   "ms": 110,
    "level": "high",
    "coverage": false,
    "typed": 104,
@@ -1564,7 +1564,7 @@
   {
    "name": "all caps shouting",
    "chars": 88,
-   "ms": 34,
+   "ms": 47,
    "level": "high",
    "coverage": false,
    "typed": 88,
@@ -1578,7 +1578,7 @@
   {
    "name": "markdown and forwarded header",
    "chars": 108,
-   "ms": 39,
+   "ms": 47,
    "level": "caution",
    "coverage": false,
    "typed": 108,
@@ -1592,7 +1592,7 @@
   {
    "name": "legit long bank SMS",
    "chars": 165,
-   "ms": 70,
+   "ms": 58,
    "level": "none",
    "coverage": false,
    "typed": 165,
@@ -1609,7 +1609,7 @@
   },
   {
    "name": "browser Back after a check",
-   "url": "http://127.0.0.1:57464/",
+   "url": "http://127.0.0.1:63683/",
    "home": true,
    "visible": [
     "home"
