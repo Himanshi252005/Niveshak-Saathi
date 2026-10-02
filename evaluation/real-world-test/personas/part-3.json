@@ -1,0 +1,444 @@
+[
+  {
+    "id": "P051",
+    "persona": "Ramesh Yadav, 34, runs a small medical store in Gorakhpur (UP), trades a little on his phone and is a member of several WhatsApp 'stock market academy' groups.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "ipo",
+      "askedBy": "group",
+      "payTo": "upi",
+      "upiId": "ipo.qibquota@ybl",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "ग्रुप वाले सर ने कहा कि नए SME IPO में institutional quota से पक्का allotment मिलेगा, बस आज रात तक ₹50,000 इस UPI ID पर भेज दो।"
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "Fake 'institutional/QIB quota' IPO offers in WhatsApp groups are a widely reported fraud: nobody can sell an allotment, and genuine IPO money is only blocked in the investor's own bank account through ASBA or a UPI mandate, never sent to someone's UPI ID."
+  },
+  {
+    "id": "P052",
+    "persona": "Harish Nair, 38, a cooperative-bank clerk in Kochi who has traded through the same SEBI-registered discount broker for five years and is comfortable with apps.",
+    "device": { "width": 412, "height": 846, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "trading-app",
+      "askedBy": "own-app",
+      "payTo": "upi",
+      "upiId": "tarangdemo.brk@validhdfc",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "I tapped 'Add funds' inside my broker's official app to add ₹20,000, and the UPI screen shows tarangdemo.brk@validhdfc in the broker's name with the green-triangle thumbs-up icon."
+    },
+    "truth": { "label": "legit", "expected": "VERIFY" },
+    "why": "Adding funds from inside one's own broker's official app to a '.brk@valid<bank>' handle is the SEBI-mandated UPI collection route since October 2025, but it is still worth confirming the handle and payee name on SEBI Check before paying."
+  },
+  {
+    "id": "P053",
+    "persona": "Sunita Kushwaha, 41, a government primary-school teacher in Satna (MP) whose son opened her demat account; she uses WhatsApp and UPI but has never applied for an IPO herself.",
+    "device": { "width": 384, "height": 854, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "ipo",
+      "askedBy": "known-person",
+      "payTo": "person-account",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "मेरी पुरानी सहेली ने कहा कि उसके जीजाजी एक broker के यहाँ काम करते हैं और बड़े IPO में गारंटी से allotment दिलवा देंगे, बस ₹30,000 उनके खाते में डाल दो।"
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "No one, however well connected, can guarantee an IPO allotment because oversubscribed retail portions are allotted by lottery through the registrar and the application money stays blocked in the applicant's own account, so a request to transfer it to a person's account is a red flag even from a trusted friend."
+  },
+  {
+    "id": "P054",
+    "persona": "Imran Qureshi, 27, owns a mobile-repair shop in Moradabad, is very comfortable with phones but new to investing, and installed a 'broker' app from a link under a YouTube video that he now treats as his own trading app.",
+    "device": { "width": 412, "height": 800, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "trading-app",
+      "askedBy": "own-app",
+      "payTo": "upi",
+      "upiId": "sebi.valid@ybl",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "App mein likha hai ki 'Add funds' ke liye SEBI verified @valid UPI ID sebi.valid@ybl par ₹15,000 bhejo, tabhi trading account active hoga."
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "Genuine SEBI-registered brokers collect through handles that end in '@valid' plus the bank name and carry a category tag such as '.brk' (checkable on SEBI Check), whereas 'sebi.valid@ybl' is an ordinary @ybl handle dressed up to look official inside an app sideloaded from a link, and SEBI itself never collects investor money."
+  },
+  {
+    "id": "P055",
+    "persona": "Sushila Gupta, 55, a homemaker in Kanpur who applies for IPOs through her bank's official app using ASBA, as her late husband taught her, on her daughter's old tablet with large text.",
+    "device": { "width": 768, "height": 1024, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "ipo",
+      "askedBy": "own-app",
+      "payTo": "other",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "बैंक के अपने ऐप में IPO (ASBA) वाले विकल्प से आवेदन कर रही हूँ, उसमें लिखा है कि ₹14,950 मेरे ही खाते में block रहेंगे और allotment न हुआ तो अपने-आप unblock हो जाएँगे।"
+    },
+    "truth": { "label": "legit", "expected": "VERIFY" },
+    "why": "ASBA through one's own bank keeps the application money blocked in the investor's own account until allotment, which is the official safe route, though she should still confirm the issue and its dates on the NSE/BSE website and check allotment only on the registrar's site."
+  },
+  {
+    "id": "P056",
+    "persona": "Kamla Devi, 52, a homemaker in a village near Sikar (Rajasthan) who uses a basic Android phone mostly for WhatsApp and the UPI app her son set up, and needs bigger text.",
+    "device": { "width": 360, "height": 640, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "trading-app",
+      "askedBy": "known-person",
+      "payTo": "upi",
+      "upiId": "airobotprofit@axl",
+      "returnRate": 2,
+      "returnPeriod": "day",
+      "story": "पड़ोस वाली भाभी बोलीं कि 'AI रोबोट ट्रेडिंग' ऐप में पैसा लगाओ तो रोज़ 2% मुनाफ़ा आता है, उन्हें तीन हफ़्ते से रोज़ मिल रहा है, ₹10,000 से शुरू कर दो।"
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "2% a day sounds small but is over 700% a year even without compounding; 'AI bot' apps that pay early joiners small daily amounts out of newcomers' money are Ponzi schemes that later block withdrawals, and neighbours who were paid at first often recruit others innocently."
+  },
+  {
+    "id": "P057",
+    "persona": "Vikas Sharma, 45, an accounts clerk at a hosiery factory in Ludhiana who joined a 'stock mentorship' WhatsApp group and installed the trading app from a link the group shared.",
+    "device": { "width": 412, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "withdraw-fee",
+      "askedBy": "own-app",
+      "payTo": "person-account",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "मेरे ट्रेडिंग ऐप में ₹6.8 लाख का profit दिख रहा है, पर ऐप की customer service कह रही है कि निकालने से पहले 20% income tax यानी ₹1.36 लाख इस खाते में जमा करो।"
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "This is the endgame of fake trading-app (pig-butchering) frauds: a real broker deducts any charges from the balance and pays out only to the client's own bank account, tax on gains is paid to the Income Tax Department through one's own return rather than to an app, and an app installed from a group link is not one's own broker's app even if it feels like it."
+  },
+  {
+    "id": "P058",
+    "persona": "Bhagwati Prasad Tiwari, 74, a retired postmaster in Rewa (MP) with weak eyesight who renews his fixed deposits every year with his grandson's help.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "scheme",
+      "askedBy": "own-app",
+      "payTo": "company-account",
+      "returnRate": 7.5,
+      "returnPeriod": "year",
+      "story": "पोते ने हमारे बैंक के अपने ऐप में senior citizen FD खोली है, एक साल पर 7.5% ब्याज लिखा है और ₹2 लाख मेरे ही बचत खाते से कटेंगे।"
+    },
+    "truth": { "label": "legit", "expected": "VERIFY" },
+    "why": "A 7.5% yearly senior-citizen FD opened inside one's own bank's official app is a normal deposit covered by DICGC insurance up to its limit, but the rate and the bank should still be confirmed on the bank's official website or at the branch, never through a forwarded link or a caller."
+  },
+  {
+    "id": "P059",
+    "persona": "Gurpreet Kaur, 63, a retired state-government clerk in Patiala who lost ₹2 lakh to a fake trading app last year, filed a cybercrime complaint and now uses her phone with large text.",
+    "device": { "width": 360, "height": 800, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "other",
+      "askedBy": "caller",
+      "payTo": "upi",
+      "upiId": "",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "फ़ोन करने वाले ने कहा कि वह SEBI के refund विभाग से बोल रहा है और मेरे डूबे हुए ₹2 लाख वापस मिल जाएँगे, बस WhatsApp पर भेजे QR पर ₹8,500 processing fee भर दो।"
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "Recovery scams target people who have already lost money: SEBI, RBI and the police never phone to collect a refund or processing fee, complaints go through SCORES, cybercrime.gov.in or the 1930 helpline, and no genuine refund needs an upfront payment."
+  },
+  {
+    "id": "P060",
+    "persona": "Aditya Verma, 19, a first-year B.Com student in Bhopal who watches trading reels on Instagram and wants to earn pocket money from options.",
+    "device": { "width": 412, "height": 860, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "tips",
+      "askedBy": "group",
+      "payTo": "upi",
+      "upiId": "niftysniper.vip@ibl",
+      "returnRate": 100,
+      "returnPeriod": "month",
+      "story": "A Telegram channel called 'Nifty Sniper Calls' says premium members get sure-shot option calls that double capital every month, and I only have to pay ₹4,999 to their UPI for three months of VIP access."
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "Paid tip groups run by unregistered finfluencers break SEBI rules, since only SEBI-registered research analysts (INH number) may charge for stock recommendations and none may promise returns, so 'sure-shot' calls that double capital every month are bait."
+  },
+  {
+    "id": "P061",
+    "persona": "Arvind Chauhan, 46, a school principal in Dehradun planning for his children's education who found a fee-only SEBI-registered investment adviser through a colleague and handles payments on his office desktop.",
+    "device": { "width": 1280, "height": 800, "mobile": false, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "adviser-fee",
+      "askedBy": "other",
+      "payTo": "company-account",
+      "returnRate": null,
+      "returnPeriod": "year",
+      "story": "सलाहकार फ़र्म ने invoice भेजा है जिस पर SEBI का INA वाला registration नंबर लिखा है और साल भर की financial planning fee ₹18,000 कंपनी के current account में भरने को कहा है, return की कोई गारंटी नहीं दी।"
+    },
+    "truth": { "label": "legit", "expected": "VERIFY" },
+    "why": "Paying a fixed annual fee against an invoice into the adviser firm's own account is how genuine SEBI-registered investment advisers work, but he should match the INA number, name and bank details on SEBI's registered-intermediary list or SEBI Check and confirm the fee is within SEBI's limits."
+  },
+  {
+    "id": "P062",
+    "persona": "Shankar Patil, 58, a sugarcane farmer near Kolhapur who opened a demat account after a good harvest and now gets frequent calls from 'research firms'.",
+    "device": { "width": 360, "height": 720, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "tips",
+      "askedBy": "caller",
+      "payTo": "other",
+      "returnRate": 10,
+      "returnPeriod": "week",
+      "story": "फ़ोन पर 'Profit Pukka Research' वाले बोले कि वे SEBI registered हैं और हर हफ़्ते 10% पक्के profit वाली HNI calls देंगे, बस SMS में भेजे payment link से ₹18,000 भर दो।"
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "Cold calls selling 'HNI calls' with guaranteed weekly profit are a common pattern SEBI warns about: registered research analysts cannot guarantee returns, and their INH number, name and payment account should be checked on SEBI's website instead of paying through a link sent by the caller."
+  },
+  {
+    "id": "P063",
+    "persona": "Neha Joshi, 29, a software tester in Pune who follows Instagram trading influencers and wants someone to 'manage' the ₹3 lakh she has saved, browsing on her laptop.",
+    "device": { "width": 1280, "height": 800, "mobile": false, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "adviser-fee",
+      "askedBy": "group",
+      "payTo": "upi",
+      "upiId": "rockytrades.mentor.demo@okhdfcbank",
+      "returnRate": 25,
+      "returnPeriod": "month",
+      "story": "An Instagram trader with 2 lakh followers says he will trade in my demat account if I share my login, for a ₹25,000 advisory fee plus 30% of profits, and he guarantees 25% a month."
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "Unregistered 'account handling' is illegal and sharing broker login or OTP hands over full control, while SEBI-registered advisers can neither guarantee returns nor take a share of profits, so this is a classic social-media portfolio-management pitch."
+  },
+  {
+    "id": "P064",
+    "persona": "Lakshmi Reddy, 44, runs a tailoring shop in Warangal (Telangana), saves in a bank and a post-office RD, and her brother-in-law collects instalments for a local chit company.",
+    "device": { "width": 384, "height": 800, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "scheme",
+      "askedBy": "known-person",
+      "payTo": "company-account",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "मेरे जेठ जी कहते हैं कि शहर की registered chit company में ₹5,000 महीने वाली 25 महीने की chit में जुड़ जाओ, पैसा company के खाते में जाएगा और पासबुक व रसीद मिलेगी।"
+    },
+    "truth": { "label": "legit", "expected": "VERIFY" },
+    "why": "Chit funds registered under the Chit Funds Act, 1982 with the state Registrar of Chits are legal, but she should verify the company's registration and that this particular chit group is sanctioned, pay only into the company's account against a receipt, and not treat a relative's word as proof."
+  },
+  {
+    "id": "P065",
+    "persona": "Ram Prasad Sahu, 67, a retired railway trackman in a village near Jhansi who keeps his savings in the post office, uses an old small-screen phone and needs large text.",
+    "device": { "width": 320, "height": 640, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "scheme",
+      "askedBy": "other",
+      "payTo": "cash",
+      "returnRate": 4,
+      "returnPeriod": "month",
+      "story": "गाँव में आए एजेंट बोले कि उनकी 'सहकारी समिति' में ₹2 लाख जमा करो तो हर महीने 4% ब्याज मिलेगा और दो साल में पैसा दुगना हो जाएगा, बस नकद दे दो, रसीद मिल जाएगी।"
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "4% a month is about 48% a year, far above any bank or post-office rate, and door-to-door cash collection by a so-called society is the typical unregulated deposit (Ponzi) pattern banned under the BUDS Act, 2019, which can be reported on RBI's Sachet portal."
+  },
+  {
+    "id": "P066",
+    "persona": "Rohit Das, 24, a food-delivery rider in Guwahati who is used to UPI but has never bought crypto, and saw a Telegram ad for a 'USDT arbitrage plan'.",
+    "device": { "width": 360, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "scheme",
+      "askedBy": "group",
+      "payTo": "crypto-or-gift",
+      "returnRate": 15,
+      "returnPeriod": "month",
+      "story": "The Telegram group says I should buy ₹20,000 worth of USDT from a P2P seller and send it to their wallet address for the arbitrage plan, which pays a fixed 15% every month."
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "A fixed 15% a month (about 180% a year) on crypto sent to an anonymous wallet is a hallmark of Ponzi 'arbitrage' frauds; crypto transfers are practically irreversible and no SEBI- or RBI-regulated entity takes investments this way."
+  },
+  {
+    "id": "P067",
+    "persona": "Mohd. Salim Ansari, 36, a powerloom workshop supervisor in Bhiwandi starting his first ₹3,000 monthly SIP through a mutual-fund distributor who visits the market area.",
+    "device": { "width": 360, "height": 640, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "scheme",
+      "askedBy": "other",
+      "payTo": "company-account",
+      "returnRate": 12,
+      "returnPeriod": "year",
+      "story": "एजेंट भाई ने ARN नंबर वाला कार्ड दिखाया और कहा कि equity fund की SIP में लंबे समय में लगभग 12% सालाना मिल सकता है पर कोई गारंटी नहीं है, और पैसा सीधे mutual fund के खाते में जाएगा।"
+    },
+    "truth": { "label": "legit", "expected": "VERIFY" },
+    "why": "A distributor quoting about 12% a year as a non-guaranteed long-term expectation, with money going straight to the mutual fund scheme rather than to his own account, is normal practice, but the ARN should be checked on the AMFI website and the SIP confirmed through the fund house's SMS or email and the CAS."
+  },
+  {
+    "id": "P068",
+    "persona": "Anil Kumar Mishra, 49, a cloth-shop owner in Varanasi who was added to a WhatsApp 'block trade' group run by a self-styled professor and has already made two small deposits.",
+    "device": { "width": 384, "height": 820, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "paycheck",
+    "input": {
+      "purpose": "trading-app",
+      "askedBy": "group",
+      "payTo": "company-account",
+      "returnRate": null,
+      "returnPeriod": "month",
+      "story": "ग्रुप के 'प्रोफ़ेसर' ने कहा कि OTC block trade में शेयर 30% सस्ते मिलेंगे, ऐप में पैसा डालने के लिए 'Zyroxa Traders' नाम के current account में ₹2 लाख RTGS कर दो।"
+    },
+    "truth": { "label": "scam", "expected": "STOP" },
+    "why": "Fake trading-app gangs route deposits through mule 'traders/enterprises' current accounts whose names match no SEBI-registered broker; a real broker takes money only from the client's own linked bank account into its own client account or an @valid UPI handle, and 'discounted OTC/block shares' are bait."
+  },
+  {
+    "id": "P069",
+    "persona": "Saroj Bala, 61, a widow in Ambala (Haryana) who found her late father-in-law's paper share certificates from the 1990s in a steel trunk; she uses her phone mainly for calls and WhatsApp and needs large text.",
+    "device": { "width": 360, "height": 700, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "family",
+    "input": { "holdings": ["physical"], "nominee": "unknown" },
+    "truth": {
+      "mustMention": [
+        "convert paper shares to demat through a DP",
+        "transmission to legal heirs with death certificate and succession papers",
+        "contact the company's RTA to verify certificates and folio",
+        "check IEPF for unclaimed dividends or shares",
+        "open a demat account in her own name",
+        "add or check nominee after demat",
+        "beware of agents charging a cut to recover shares"
+      ]
+    },
+    "why": "Since April 2019 physical shares cannot be transferred except by transmission or transposition, so heirs must approach the company's RTA with the death certificate and succession papers, get the shares in demat form (RTAs now issue a Letter of Confirmation that must be dematerialised), and check IEPF in case dividends went unclaimed for seven years."
+  },
+  {
+    "id": "P070",
+    "persona": "Karthik Subramanian, 33, an engineer working in Dubai who looks after his retired parents' demat account and mutual funds in Coimbatore from his laptop.",
+    "device": { "width": 1280, "height": 800, "mobile": false, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "family",
+    "input": { "holdings": ["demat", "mf"], "nominee": "not-checked" },
+    "truth": {
+      "mustMention": [
+        "add or check nominee in the demat account and every MF folio",
+        "parents keep their own login, PIN and OTP",
+        "parents' own mobile and email registered for alerts",
+        "consolidated account statement (CAS) to see all holdings",
+        "keep a list of holdings, DP and folio numbers for the family"
+      ]
+    },
+    "why": "NRI children often run their parents' accounts, but alerts should go to the parents' own mobile and email, credentials should stay with the holders, and nominees must be added for the demat account and each MF folio (SEBI now allows up to 10) so that transmission stays simple."
+  },
+  {
+    "id": "P071",
+    "persona": "Jagdish Choudhary, 50, a wheat and mustard farmer near Bharatpur (Rajasthan) who has two mutual fund SIPs started by a bank staffer, never added a nominee, and reads Hindi slowly.",
+    "device": { "width": 320, "height": 680, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "family",
+    "input": { "holdings": ["mf"], "nominee": "not-checked" },
+    "truth": {
+      "mustMention": [
+        "add nominee in each mutual fund folio",
+        "get a CAS to see all folios in one place",
+        "keep KYC, bank and mobile details updated",
+        "tell the family about the investments and where papers are",
+        "never share OTP with anyone offering to help"
+      ]
+    },
+    "why": "Without a nominee the family must go through a longer transmission process with legal-heir or succession papers, so for an MF-only family the key steps are adding a nominee in every folio (online via MF Central or the fund house, or on a signed form), keeping a CAS, and making sure the family knows the investments exist."
+  },
+  {
+    "id": "P072",
+    "persona": "Rekha Saini, 39, a mid-day-meal cook in a village near Karnal whose husband died last year; she does not know whether he had shares, mutual funds, deposits or insurance.",
+    "device": { "width": 360, "height": 720, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "family",
+    "input": { "holdings": ["unknown"], "nominee": "unknown" },
+    "truth": {
+      "mustMention": [
+        "find out what is held: passbooks, papers, SMS and emails",
+        "approach the bank, DP or fund house with death certificate and PAN",
+        "search unclaimed deposits (RBI UDGAM) and shares or dividends (IEPF)",
+        "claim through transmission as nominee or legal heir",
+        "beware of paid recovery agents and never share OTP"
+      ]
+    },
+    "why": "When a family does not know what a deceased member held, the checklist should help trace assets through bank records, depository and RTA messages (NSDL, CDSL, CAMS, KFintech) and official unclaimed-money portals before claiming them by transmission, while warning against agents who charge to 'recover' money."
+  },
+  {
+    "id": "P073",
+    "persona": "Col. (retd.) Harbhajan Singh Gill, 80, in Chandigarh with low vision, who holds demat shares, mutual funds and a few old paper certificates and updated his nominations last year on a tablet with his daughter's help.",
+    "device": { "width": 768, "height": 1024, "mobile": true, "largeText": true },
+    "uiLanguage": "en",
+    "journey": "family",
+    "input": { "holdings": ["demat", "mf", "physical"], "nominee": "checked" },
+    "truth": {
+      "mustMention": [
+        "convert remaining paper certificates to demat through a DP",
+        "add nominee for physical folios with the company or RTA",
+        "update PAN, KYC and bank details for physical folios with the RTA",
+        "confirm nominee details in demat and each MF folio are current",
+        "keep a will and a list of all holdings"
+      ]
+    },
+    "why": "Even when demat and MF nominees are checked, paper certificates remain a weak spot because physical folios need their own KYC and nomination with the RTA and cannot be transferred except by transmission, so dematerialising them and keeping a will and a holdings list makes things easier for heirs."
+  },
+  {
+    "id": "P074",
+    "persona": "Priya Kumari, 26, a newly married bank probationary officer in Patna who opened her demat account at 22 with her father as nominee and buys shares every month.",
+    "device": { "width": 412, "height": 846, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "family",
+    "input": { "holdings": ["demat"], "nominee": "checked" },
+    "truth": {
+      "mustMention": [
+        "review nominee after marriage or other life events",
+        "check nominee details and percentage shares",
+        "family should know the broker or DP name",
+        "keep mobile and email in her own name",
+        "never share login or OTP"
+      ]
+    },
+    "why": "A 'checked' nominee can still be outdated after life events like marriage, and SEBI allows several nominees with set percentages, so the checklist should prompt a review and make sure the family knows the account exists."
+  },
+  {
+    "id": "P075",
+    "persona": "Mahesh Uikey, 28, a para-teacher in a village in Mandla district (MP) whose father, a retired forest guard, has a demat account opened years ago through a local agent and possibly other investments nobody remembers.",
+    "device": { "width": 384, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "family",
+    "input": { "holdings": ["demat", "unknown"], "nominee": "not-checked" },
+    "truth": {
+      "mustMention": [
+        "check with the DP or broker whether a nominee is registered and add one",
+        "get the father's CAS from NSDL or CDSL to find all holdings",
+        "father keeps his own login and OTP, not the agent",
+        "watch statements for trades he did not approve",
+        "update father's mobile and email for alerts",
+        "check for unclaimed dividends or deposits"
+      ]
+    },
+    "why": "In rural families an agent often opened the account and relatives know little, so the checklist must cover finding all holdings, adding a nominee, keeping contact details and OTPs with the holder, and watching for unauthorised trades by the agent."
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "id": "P026",
+    "persona": "67-year-old retired railway clerk in Jhansi (UP) who paid his chemist by UPI and got scared by the word 'debited'; reads English SMS slowly, low digital skill, speaks Hindi.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Dear UPI user A/C X4821 debited by 2000.0 on date 14Sep26 trf to SHARMA MEDICAL STO Refno 625711384920 If not u? call-1800111109 for other services-18001234-SBI",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "en" },
+    "why": "Mirrors SBI's standard UPI debit alert for a payment he made himself: it only reports a completed debit with a UPI reference and SBI's official helplines, and asks for nothing, so it is legitimate."
+  },
+  {
+    "id": "P027",
+    "persona": "52-year-old kirana shop owner in Sitapur (UP) whose son installed YONO for him; basic smartphone use, low digital literacy, reads only Hindi.",
+    "device": { "width": 360, "height": 800, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "प्रिय ग्राहक आपका SBI YONO खाता आज बंद कर दिया जाएगा कृपया तुरंत अपना पैन कार्ड नंबर अपडेट करें यहाँ क्लिक करें http://sbi-yono-pan.kycupdate-in.xyz/hi",
+      "channel": "sms"
+    },
+    "truth": { "label": "fraud", "language": "hi" },
+    "why": "Classic SBI YONO 'update PAN or your account closes today' smishing: urgency, a closure threat and a look-alike non-bank link to a phishing page that steals login, OTP and card details; banks never send KYC links like this."
+  },
+  {
+    "id": "P028",
+    "persona": "34-year-old ASHA worker in a village near Sagar (MP) who had just paid her son's school fee online with her SBI debit card and panicked when an OTP arrived; low-to-medium digital skill, reads Hindi only.",
+    "device": { "width": 360, "height": 740, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "आपके एसबीआई डेबिट कार्ड XX7305 से SCHOOLPAY पर ₹1,850.00 के लेनदेन हेतु ओटीपी 482913 है। यह 5 मिनट तक मान्य है। ओटीपी किसी के साथ साझा न करें, बैंक कभी ओटीपी नहीं मांगता। -एसबीआई",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "hi" },
+    "why": "Mirrors a genuine card-transaction OTP SMS for a payment she started herself; it carries the bank's own 'do not share' warning and has no link or call-back request, so the message itself is legitimate (the only danger would be sharing the OTP)."
+  },
+  {
+    "id": "P029",
+    "persona": "71-year-old retired government school principal living alone in Dehradun with her children abroad; comfortable with WhatsApp video calls, medium digital skill, reads English well.",
+    "device": { "width": 412, "height": 915, "mobile": true, "largeText": true },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "*CENTRAL BUREAU OF INVESTIGATION*\n*NOTICE OF DIGITAL ARREST*\nCase No: CBI/MUM/ML/2026/0817\nTo: Smt. Kamla Rawat\n\nYour Aadhaar card (XXXX XXXX 6612) is linked to a bank account used for money laundering of ₹6.8 Crore. An arrest warrant has been issued by the Hon'ble Supreme Court. You are under DIGITAL ARREST from this moment.\n1. Do not disconnect the Skype video call with the investigating officer.\n2. Do not inform any family member, friend or bank staff. This is a confidential matter under the Official Secrets Act.\n3. For fund verification, transfer all FD and savings to the RBI Secure Supervision Account shared by the officer. Full amount will be refunded within 24 hours after verification.\nNon cooperation will lead to immidiate physical arrest by local police.\n\nInsp. Vikram Singh\nCBI Cyber Cell, Mumbai\n📞 +91 90000 13579",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "en" },
+    "why": "Textbook 'digital arrest' fraud flagged by I4C/MHA since 2024: fake CBI notice, a 'Supreme Court warrant', forced secrecy, staying on a video call and moving savings to an 'RBI secure account'; no Indian agency arrests people online or asks for transfers."
+  },
+  {
+    "id": "P030",
+    "persona": "41-year-old vegetable vendor in Varanasi who takes payments on a UPI QR stand and fears the 'sent by mistake, please return' trick after a neighbour was cheated; cannot read English well, low digital skill, Hindi speaker.",
+    "device": { "width": 320, "height": 658, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Rs.500.00 Credited to A/c ...6021 thru UPI/625817402233 by meena.demo@oksbi. Total Bal:Rs.3245.50CR. Avlbl Amt:Rs.3245.50(15-09-2026 17:42:51) - Bank of Baroda",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "en" },
+    "why": "Matches a Bank of Baroda UPI credit alert for an ordinary customer payment: it only reports money received and the balance, with no link, phone number or request, so it is legitimate."
+  },
+  {
+    "id": "P031",
+    "persona": "58-year-old tailor in Madurai (Tamil Nadu) who reads only Tamil and has low digital skill; his nephew installed the app and left the interface in English.",
+    "device": { "width": 360, "height": 740, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "அன்புள்ள மின் நுகர்வோரே, உங்கள் கடந்த மாத மின் கட்டணம் புதுப்பிக்கப்படாததால் இன்று இரவு 9.30 மணிக்கு உங்கள் வீட்டு மின் இணைப்பு துண்டிக்கப்படும். உடனடியாக எங்கள் மின்வாரிய அதிகாரியை 9000012468 என்ற எண்ணில் தொடர்பு கொள்ளவும். நன்றி.",
+      "channel": "sms"
+    },
+    "truth": {
+      "label": "edge",
+      "language": "ta",
+      "content": "fraud",
+      "expected": "Detect Tamil and clearly say it cannot check Tamil messages instead of giving a verdict (never 'No known signs'); ideally add generic advice not to call numbers given in an SMS and to verify with the official electricity board office or app."
+    },
+    "why": "Tamil version of the nationwide 'your power will be cut tonight at 9.30, call our officer' SMS scam; the content is fraud but Tamil is outside the app's languages, so the correct behaviour is an honest 'cannot check' rather than any verdict."
+  },
+  {
+    "id": "P032",
+    "persona": "29-year-old government school teacher in Bhopal who started her first SIP through the fund house's app last month; medium digital skill, prefers Hindi.",
+    "device": { "width": 412, "height": 892, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Dear Investor, your SIP instalment of Rs.1,000.00 in SBI Nifty Index Fund - Direct Plan - Growth under Folio No. 12345678/90 has been processed at NAV Rs.235.4120 for 10-Sep-2026. Units allotted: 4.248. For details visit www.sbimf.com -SBI Mutual Fund",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "en" },
+    "why": "Mirrors a fund house's SIP-processed / units-allotted SMS: it confirms an instalment she set up, quotes folio, NAV and units, points only to the AMC's official website and asks for nothing, so it is legitimate."
+  },
+  {
+    "id": "P033",
+    "persona": "23-year-old B.Com graduate in Indore preparing for bank exams who was shaken by an IVR call; high digital skill, types in Roman Hindi.",
+    "device": { "width": 412, "height": 915, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "abhi ek call aaya tha ye bol rahe the:\n\"This call is from FedEx. Your parcel has been cancelled, press 1 to know more.\" 1 dabaya to ek aadmi bola - main FedEx Mumbai se Rahul bol raha hu, aapke Aadhaar card se ek parcel Mumbai se Taiwan book hua hai jisme 5 passport, 3 credit card, 1 laptop aur 140 gram MDMA drugs mila hai. Customs ne parcel seize kar liya hai. Aapki call Mumbai Police Narcotics Cyber Cell ko transfer kar raha hu, call cut mat karna warna aapke naam pe FIR aur arrest warrant nikal jayega. Skype pe video call pe aao aur Aadhaar se linked bank account verify karwao.",
+      "channel": "call"
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "Mirrors the FedEx/courier 'parcel with drugs seized by customs' IVR scam that hands victims to fake narcotics police on Skype and ends in 'verification' transfers; courier companies and police never do this, so it is fraud."
+  },
+  {
+    "id": "P034",
+    "persona": "45-year-old woman government office clerk in Ranchi who sold 10 ITC shares on her broker's app and was alarmed by the word 'Debit'; medium digital skill, Hindi speaker.",
+    "device": { "width": 360, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "CDSL: Debit in a/c *45678901 for 10-ITC LIMITED-EQ RE.1/- on 15SEP26. Not initiated by you? Contact your DP immediately or visit www.cdslindia.com",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "en" },
+    "why": "Mirrors the depository (CDSL) alert sent when shares leave a demat account on settlement of a sale the investor placed; it asks for nothing and points only to the DP and the official website, so it is legitimate."
+  },
+  {
+    "id": "P035",
+    "persona": "38-year-old textile-mill worker in Panipat (Haryana) who, on his supervisor's advice, SMSed 'EPFOHO UAN HIN' to get his PF balance in Hindi; low digital skill, Hindi speaker.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "प्रिय सदस्य, UAN 1001XXXX4567 के पीएफ खाते HRKNL00123450000012345 में शेष राशि रु. 1,52,340/- है। देय माह 08/2026 का अंशदान रु. 3,600/- प्राप्त हो गया है। KYC: आधार, पैन, बैंक सत्यापित। -EPFO",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "hi" },
+    "why": "Mirrors EPFO's SMS balance reply in Hindi (EPFOHO service with a language code): masked UAN, member ID, balance and latest contribution, with no link or request, so it is legitimate."
+  },
+  {
+    "id": "P036",
+    "persona": "18-year-old first-year BA student in Gaya (Bihar) looking for pocket money; very active on Instagram and Telegram but with little financial awareness, medium digital skill, Hindi speaker.",
+    "device": { "width": 360, "height": 800, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Hello 👋 Main Priya, Digital Growth Media ki HR team se.\nHum part time work from home de rahe hai 😊\nKaam: YouTube videos ko LIKE karo aur screenshot bhejo\n✅ 1 like = ₹50\n✅ Daily ₹1,500 - ₹6,000 kamao\n✅ Sirf 15-20 min roz, mobile se\nPehle 3 task FREE hai, ₹150 turant aapke UPI me aayega.\nUske baad VIP prepaid task join karo (₹1,000 se start), 30% profit ke saath wapas milega 💰\nInterested ho to receptionist ko message karo 👉 t.me/DGM_Receptionist_786\nSeats limited hai ⏳",
+      "channel": "telegram"
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "Mirrors the I4C-flagged 'like YouTube videos, earn daily' task scam: small free payouts build trust, then 'VIP prepaid tasks' demand deposits that are never returned; genuine jobs never ask you to pay."
+  },
+  {
+    "id": "P037",
+    "persona": "63-year-old widowed retired primary-school teacher in Bardhaman (West Bengal) who reads Bengali comfortably but little Hindi, low digital skill; her son set the app to English with large text.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": true },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "[16/09/26, 9:12 PM] Bapi: মা, তোমার পোস্ট অফিসের MIS-এর এই মাসের সুদ ৫,৫৫০ টাকা SB অ্যাকাউন্টে ঢুকে গেছে। কাল পোস্ট অফিসে গিয়ে পাসবুক আপডেট করিয়ে নিও।\n[16/09/26, 9:13 PM] Bapi: আর কেউ ফোন করে OTP বা ATM পিন চাইলে একদম দেবে না। ব্যাঙ্ক বা পোস্ট অফিস কখনো এসব চায় না 🙏\n[16/09/26, 9:20 PM] Maa: আচ্ছা বাবা, ঠিক আছে। তুই সাবধানে থাকিস।",
+      "channel": "whatsapp"
+    },
+    "truth": {
+      "label": "edge",
+      "language": "bn",
+      "content": "benign",
+      "expected": "Detect Bengali and say it cannot check Bengali messages rather than giving a verdict; it must not show 'High risk' just because 'OTP' or 'ATM পিন' appear, since the content is a harmless family note."
+    },
+    "why": "A typical Bengali family WhatsApp note that Post Office MIS interest has been credited, plus a reminder never to share OTP/PIN; the content is benign, but Bengali is outside the app's supported languages."
+  },
+  {
+    "id": "P038",
+    "persona": "48-year-old pharmacist in Kota (Rajasthan) who files his own ITR on the e-filing portal and has read about fake 'income tax refund' SMS; medium digital skill, comfortable in English.",
+    "device": { "width": 384, "height": 854, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "Dear Taxpayer (PAN ABXXXXX34F), your ITR for AY 2026-27 (Ack No. 512345678901234) has been processed at CPC Bengaluru. Refund of Rs.6,540 has been determined u/s 143(1) and will be credited to your pre-validated bank account XXXXXXXX1234. Intimation has been sent to your registered e-mail. -ITDEPT",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "en" },
+    "why": "Mirrors the Income Tax Department's 'ITR processed, refund determined' SMS: no link, no request to update anything, refund only to the pre-validated account, so it is legitimate, unlike 'click to claim your refund' fakes."
+  },
+  {
+    "id": "P039",
+    "persona": "27-year-old food-delivery rider in Lucknow who borrowed ₹3,000 from an instant loan app found through an Instagram ad (received only ₹1,800 after 'fees'); medium digital skill, Hindi speaker.",
+    "device": { "width": 360, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Rohit tumhara RupeeTurant loan ₹3,000 aaj DUE hai + ₹600 late fine.\nShaam 6 baje tak recovery.demo@ybl pe ₹3,600 bhejo aur screenshot isi number pe dalo.\nWarna tumhari photo 'FRAUD / CHOR' likh ke tumhare sabhi 268 contacts, family aur office group me bhej denge. Tumhari izzat tumhare haath me hai ⚠️\nLAST WARNING\n- Legal Recovery Team",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "Mirrors illegal instant-loan-app recovery harassment warned about by RBI and I4C: a tiny loan with hidden fees, a stolen contact list, shaming threats and payment to a personal UPI ID, which is extortion, not a regulated lender."
+  },
+  {
+    "id": "P040",
+    "persona": "49-year-old self-help-group member and dairy farmer in a village near Bhilwara (Rajasthan) who has an LIC endowment policy and usually pays through her agent; low digital skill, reads Hindi only.",
+    "device": { "width": 320, "height": 640, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "प्रिय ग्राहक, आपकी पॉलिसी सं. 123456789 का प्रीमियम रु. 4,566.00 दिनांक 28/09/2026 को देय है। पॉलिसी व्यपगत होने से बचाने हेतु कृपया समय पर भुगतान करें। ऑनलाइन भुगतान www.licindia.in अथवा LIC डिजिटल ऐप से करें। यदि भुगतान कर दिया है तो कृपया ध्यान न दें। -भारतीय जीवन बीमा निगम",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "hi" },
+    "why": "Mirrors LIC's routine premium-due reminder in Hindi: it names only the official website and app, asks for no OTP or payment to any person and says to ignore it if already paid, so it is legitimate."
+  },
+  {
+    "id": "P041",
+    "persona": "57-year-old auto-parts shopkeeper in Meerut with weak eyesight who typed his question into the box instead of pasting the SMS; low digital skill, Hindi speaker.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "ye msg sahi hai kya? bank wale ne bheja",
+      "channel": ""
+    },
+    "truth": {
+      "label": "edge",
+      "language": "hinglish",
+      "content": "suspicious",
+      "expected": "Recognise that this is the user's own question with no message in it; ask them to paste the exact SMS (sender, text, any link) and give only generic tips (banks never ask for OTP/PIN or send KYC links; call the number on the card, or 1930 if money is lost). Must not return 'No known signs' as if something was checked, and should not invent a High-risk verdict from these words."
+    },
+    "why": "Very common real behaviour of low-literacy users who type a question instead of pasting the SMS; the actual bank message is unknown, so it should be handled as unverified (suspicious) and the user asked for the real text."
+  },
+  {
+    "id": "P042",
+    "persona": "50-year-old homemaker in Jabalpur whose daughter, an engineer in Bengaluru, has just started a SIP in her name; low-to-medium digital skill, reads Roman Hindi on WhatsApp.",
+    "device": { "width": 412, "height": 892, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "[14/09/26, 8:41 PM] Neha: Mummy maine aapke naam se ₹2,000 ka SIP start kar diya hai, Nifty 50 index fund me. Har mahine 5 tareekh ko aapke SBI account se auto debit hoga\n[14/09/26, 8:42 PM] Neha: Direct plan hai, fund house ki official app se kiya hai. Koi agent nahi, koi commission nahi 🙂\n[14/09/26, 8:44 PM] Mummy: Beta paisa doob to nahi jayega? Sharma aunty bol rahi thi share market mein sab Dube jata hai\n[14/09/26, 8:46 PM] Neha: Mummy market upar neeche hota hai, guarantee koi nahi deta. 7-10 saal rakhoge to FD se accha return mil sakta hai. Jab chaho tab nikaal sakte ho, lock-in nahi hai\n[14/09/26, 8:47 PM] Neha: Aur haan koi bhi call kare ki SIP ke liye OTP batao ya KYC update karo to bilkul mat batana, pehle mujhe phone karna\n[14/09/26, 8:49 PM] Papa: 👍 Badhiya. Mere liye bhi 1000 wala kar do\n[14/09/26, 8:50 PM] Mummy: Theek hai beta 🙏",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "benign", "language": "hinglish" },
+    "why": "A normal family chat about a direct-plan index-fund SIP with no guaranteed-return promise, no link and an explicit warning against sharing OTP; it should not be flagged just for words like SIP, return, OTP or KYC."
+  },
+  {
+    "id": "P043",
+    "persona": "61-year-old retired Army havaldar in Rewari (Haryana) who pays his electricity bill at the CSC every month; low-to-medium digital skill, reads Hindi, uses large text.",
+    "device": { "width": 384, "height": 832, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "प्रिय उपभोक्ता आज रात ९:३० बजे बिजली कार्यालय से आपकी बिजली काट दी जाएगी। क्योंकि आपका पिछले महीने का बिल अपडेट नहीं था। कृपया तुरंत हमारे बिजली अधिकारी से संपर्क करें 9000012846 धन्यवाद",
+      "channel": "sms"
+    },
+    "truth": { "label": "fraud", "language": "hi" },
+    "why": "Follows the widespread fake 'bijli aaj raat 9:30 baje kat jayegi' SMS: urgency plus a personal mobile number instead of the DISCOM helpline, leading to remote-access apps or 'small payment' links; electricity companies do not disconnect through such SMS."
+  },
+  {
+    "id": "P044",
+    "persona": "80-year-old retired post-office clerk in Prayagraj with cataract-weakened eyesight who reads on a tablet with very large text; low digital skill, Hindi only.",
+    "device": { "width": 800, "height": 1280, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "आरबीआई कहता है - जानकार बनिए, सतर्क रहिए! बैंक या आरबीआई कभी भी कॉल, SMS या ईमेल से आपका OTP, PIN, CVV या पासवर्ड नहीं मांगते। KYC अपडेट या इनाम के नाम पर आए किसी भी लिंक पर क्लिक न करें। साइबर धोखाधड़ी होने पर तुरंत 1930 पर कॉल करें या www.cybercrime.gov.in पर शिकायत दर्ज करें। -पंजाब नेशनल बैंक",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "hi" },
+    "why": "Mirrors the genuine 'RBI Kehta Hai' awareness SMS that banks send: it only gives advice and the official 1930 / cybercrime.gov.in channels and asks for nothing, so it is legitimate despite being full of words like OTP, PIN and fraud."
+  },
+  {
+    "id": "P045",
+    "persona": "42-year-old dairy cooperative secretary in Sangli (Maharashtra) who reads Marathi in Devanagari and some Hindi and copied this from a Facebook post; medium digital skill.",
+    "device": { "width": 360, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "📈 शेअर मार्केटमध्ये रोज कमवा! 📈\nआमचे SEBI तज्ञ दररोज 2-3 मोफत टिप्स देतात. मागील आठवड्यात आमच्या सदस्यांनी 40% नफा कमावला.\nकमी गुंतवणुकीत जास्त परतावा 💰\nजागा मर्यादित आहेत, आत्ताच आमच्या व्हॉट्सॲप ग्रुपमध्ये सामील व्हा 👇\nhttps://chat.whatsapp.com/Kx7demoInviteMH24\nफक्त मराठी गुंतवणूकदारांसाठी 🙏",
+      "channel": "social"
+    },
+    "truth": {
+      "label": "edge",
+      "language": "mr",
+      "content": "suspicious",
+      "expected": "Recognise the text as Marathi (not Hindi, despite the Devanagari script) and say it cannot check Marathi instead of giving a Hindi-based verdict; if any signal is shown it must not be 'No known signs', because it advertises a tips group with past-profit and fake 'SEBI expert' claims."
+    },
+    "why": "Mirrors Marathi social-media ads that pull people into WhatsApp 'share tips' groups, the first step of SEBI-warned investment frauds; the content is suspicious, and Devanagari Marathi tests whether the app wrongly treats it as Hindi."
+  },
+  {
+    "id": "P046",
+    "persona": "32-year-old beauty-parlour owner in Bhilai (Chhattisgarh) whose UPI payment failed, who searched online for a 'customer care number' and was then messaged on WhatsApp; medium digital skill, Hindi speaker.",
+    "device": { "width": 412, "height": 915, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Hello mam, main PhonePe customer support se Amit bol raha hu. Aapka ₹2,340 ka failed transaction refund pending hai.\nRefund turant ke liye Play Store se 'AnyDesk' app download karo aur jo 9 digit code aayega wo isi number pe WhatsApp karo.\nPhir apna PhonePe kholke ₹1 ka verification payment karna hai, refund 10 min me account me aa jayega.\nKisi aur ko call mat karna warna refund cancel ho jayega 🙏\nCustomer Care: 90000 15790",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "Mirrors fake customer-care scams reached through search results: a personal number posing as PhonePe asks her to install a screen-sharing app and make a '₹1 verification' payment so the fraudster can control the phone and drain the account."
+  },
+  {
+    "id": "P047",
+    "persona": "31-year-old accounts executive in Pune who trades a little through a broker and reads the exchange's trade e-mails on his office desktop; high digital skill, English.",
+    "device": { "width": 1920, "height": 1080, "mobile": false, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "Trades executed at NSE on 15-Sep-2026\n\nDear Investor,\nThe following trades were executed under your Unique Client Code AB1234 through Trading Member SAHYADRI SHARES AND STOCK PVT LTD (Member Code 90123) in the Capital Market segment on 15-Sep-2026:\n\nSymbol | Buy/Sell | Qty | Price (Rs)\nITC | Buy | 10 | 412.35\nSBIN | Buy | 5 | 812.10\n\nThis information is sent to you for verification. If these trades were not done by you, please contact your Trading Member immediately. You can also verify your trades on www.nseindia.com under Investors > Trade Verification.\n\nThis is a system generated e-mail. Please do not reply.\nNational Stock Exchange of India Ltd.",
+      "channel": "email"
+    },
+    "truth": { "label": "benign", "language": "en" },
+    "why": "Mirrors the exchange's daily 'trades executed' e-mail sent to every client after trading: it lists his own orders and refers him to his broker or the official NSE site, with no request or link to click, so it is legitimate."
+  },
+  {
+    "id": "P048",
+    "persona": "24-year-old daily-wage farm labourer in a village near Siwan (Bihar) with a cheap phone, who reads Hindi slowly and gets many forwards; very low digital skill.",
+    "device": { "width": 320, "height": 658, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "*KBC JIO LUCKY DRAW 2026* 🎉🎉\nबधाई हो!! आपका WhatsApp नंबर KBC और Jio की ओर से ₹२५,००,००० (पच्चीस लाख) की लॉटरी में चुना गया है।\nLottery No: KBC-8890\nइनाम राशि पाने के लिए हमारे मैनेजर विजय कुमार से सिर्फ WhatsApp कॉल पर बात करें 📞 90000 18642\nनोट: पैसा आपके खाते में भेजने से पहले ₹12,500 GST/प्रोसेसिंग फीस जमा करनी होगी।\nयह बात किसी को न बताएं वरना इनाम रद्द हो जाएगा।\n*Kaun Banega Crorepati Head Office, Mumbai*",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "mixed" },
+    "why": "Mirrors the long-running KBC/Jio lottery WhatsApp scam: a prize for a contest never entered, a 'manager' reachable only on WhatsApp, an advance GST/processing fee and secrecy; real prizes never need upfront fees."
+  },
+  {
+    "id": "P049",
+    "persona": "28-year-old Jan Seva Kendra (CSC) operator in a village in Barabanki (UP) who pays electricity bills for villagers and is checking a receipt SMS a farmer brought in; high digital skill, Hindi.",
+    "device": { "width": 1366, "height": 768, "mobile": false, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "प्रिय उपभोक्ता, आपके खाता संख्या 1234567890 हेतु दिनांक 14-09-2026 को रु. 1,240.00 का भुगतान प्राप्त हुआ है। रसीद संख्या: BD2609141234567। धन्यवाद। -यूपीपीसीएल",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "hi" },
+    "why": "Mirrors a DISCOM bill-payment acknowledgement SMS: amount, account and receipt number only, with no link, phone number or request, so it is legitimate and a useful contrast to fake disconnection messages."
+  },
+  {
+    "id": "P050",
+    "persona": "69-year-old retired bank cashier in Gorakhpur who is in a dozen WhatsApp groups and forwards 'useful news'; low-to-medium digital skill, reads Hindi, uses large text.",
+    "device": { "width": 384, "height": 854, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Forwarded many times\n*🔴 UPI के नए नियम लागू – सभी लोग ज़रूर पढ़ें 🔴*\n\nUPI New Rules: NPCI limits balance check to 50 times a day per app\n\nNPCI ने UPI सिस्टम पर बढ़ते लोड को कम करने के लिए नए नियम लागू किए हैं। अब किसी एक UPI ऐप से दिन में सिर्फ 50 बार ही बैलेंस चेक किया जा सकेगा और मोबाइल नंबर से जुड़े बैंक खातों की लिस्ट दिन में 25 बार तक ही देखी जा सकेगी। SIP, बिजली बिल, OTT सब्सक्रिप्शन जैसे ऑटो-पे मैंडेट अब तय समय पर ही प्रोसेस होंगे, ज़्यादातर भीड़ वाले घंटों के बाहर। अटके हुए पेमेंट का स्टेटस भी अब सीमित बार ही चेक हो सकेगा। इसके साथ ही P2P 'कलेक्ट रिक्वेस्ट' यानी किसी से पैसे मांगने वाली रिक्वेस्ट की सुविधा बंद कर दी गई है, क्योंकि ठग इसी के ज़रिये लोगों से PIN डलवाकर उनका पैसा निकाल लेते थे। साथ ही अब हर UPI पेमेंट से पहले पैसे पाने वाले का वही नाम दिखेगा जो उसके बैंक खाते में दर्ज है, ताकि गलत व्यक्ति को पैसा न जाए।\n\nयाद रखें: पैसे *लेने* के लिए कभी UPI PIN नहीं डालना पड़ता, PIN सिर्फ पैसे भेजते समय डाला जाता है। 'डिजिटल अरेस्ट' जैसी कोई चीज़ कानून में नहीं है – रुको, सोचो, एक्शन लो। साइबर ठगी होने पर तुरंत 1930 पर कॉल करें या cybercrime.gov.in पर शिकायत करें।\n\n*— जनहित में जारी —*\n\n------------------\nPls share in all family groups 🙏🙏\n\n*GOOD NEWS* 👇👇\nभारत सरकार और NPCI की ओर से 'डिजिटल इंडिया UPI कैशबैक योजना 2026' शुरू हो गई है। जिन लोगों ने इस साल 10 से ज़्यादा UPI पेमेंट किए हैं उन्हें ₹5,000 का सीधा कैशबैक मिलेगा। सिर्फ 3 दिन बाकी हैं, सीमित लोगों को ही मिलेगा। नीचे दिए लिंक पर क्लिक करें, अपना UPI ऐप चुनें और कैशबैक रिसीव करने के लिए अपना UPI PIN डालकर कन्फर्म करें। ₹5,000 तुरंत आपके खाते में आ जाएंगे ✅\nयोजना नोटिफिकेशन नं: NPCI/UPI/CB/2026/447, अंतिम तिथि 30 सितंबर 2026। यह ऑफर SBI, PNB, BOB, HDFC, ICICI सभी बैंक खाताधारकों के लिए है।\n\n👉 http://npci-upi-cashback2026.in-gov.top/claim\n\nमैंने खुद चेक किया, मेरे जीजाजी के खाते में आ गया 💯\nये मैसेज कम से कम 10 ग्रुप में भेजें, तभी आपका लिंक एक्टिव होगा 🙏",
+      "channel": "whatsapp"
+    },
+    "truth": {
+      "label": "edge",
+      "language": "mixed",
+      "content": "fraud",
+      "expected": "Read the whole forward (no silent truncation, no error on length) and give 'High risk': the ending is a fake government 'UPI cashback' that asks to click an unofficial link and enter the UPI PIN to receive money, with 'send to 10 groups' pressure; the reasons should point to that part, not to the genuine news."
+    },
+    "why": "Mirrors WhatsApp chains that wrap a real NPCI UPI-rules news item and genuine safety tips around a scam ending; tests whether long benign text dilutes or hides the fraud signal."
+  }
+]

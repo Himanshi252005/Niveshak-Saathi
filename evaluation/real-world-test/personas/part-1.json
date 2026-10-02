@@ -1,0 +1,327 @@
+[
+  {
+    "id": "P001",
+    "persona": "34-year-old kirana shop owner in Bareilly, Uttar Pradesh, who uses WhatsApp and UPI all day but has never invested in shares; medium digital skill; reads Hindi and Hinglish.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Namaste sir/madam 🙏\nMain Ritika hu, Prof. Alok Varma sir ki assistant. Sir 22 saal se stock market me h aur abhi apne 'A1 Wealth Club' WhatsApp group me roz FREE stock tips de rahe hai 📈\nPichle hafte sir ke 3 stock me members ko 38% tak profit hua ✅✅\nIs mahine sir sirf 50 naye members ko VIP group me le rahe hai, uske baad group band ho jayega. Sir ka target h har member ko 1 mahine me 20-30% return dena, loss ka koi chance nahi 💯\nAbhi join kare 👇👇\nhttps://chat.whatsapp.com/KxT7vIPw3a1thA1c1ub9Q\nJoin karne ke baad mujhe 'VIP' likh ke bhejna, aapko sir ki secret stock list free milegi 🎁",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "Mirrors the 2024-26 WhatsApp 'stock market class / VIP group' scams run by a fake professor and his assistant, with an unsolicited invite, promised 20-30% monthly returns with no loss and fake scarcity, so it is fraud."
+  },
+  {
+    "id": "P002",
+    "persona": "67-year-old retired Hindi teacher in Sagar, Madhya Pradesh, with a small demat account her son opened; low-to-medium digital skill and weak eyesight; Hindi only.",
+    "device": { "width": 360, "height": 800, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "निवेशक जागरूकता: शेयर बाजार में गारंटीड/निश्चित रिटर्न का वादा करने वाले WhatsApp, Telegram या सोशल मीडिया ग्रुप से सावधान रहें। किसी अनजान लिंक या ऐप से ट्रेडिंग न करें और अपना OTP, पासवर्ड या UPI PIN किसी को न बताएं। निवेश सलाहकार/रिसर्च एनालिस्ट का पंजीकरण sebi.gov.in पर जांचें। सेबी-पंजीकृत संस्थाओं को भुगतान केवल @valid वाले UPI हैंडल पर करें। ठगी होने पर तुरंत 1930 पर कॉल करें या cybercrime.gov.in पर शिकायत करें। निवेशकों के हित में जारी - SEBI",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "hi" },
+    "why": "An investor-awareness SMS in SEBI's usual style that only warns against guaranteed-return groups and points to sebi.gov.in, @valid UPI handles, 1930 and cybercrime.gov.in; it asks for no money, data or clicks on unknown links, so it is benign despite containing scam keywords."
+  },
+  {
+    "id": "P003",
+    "persona": "58-year-old government clerk in a tehsil office in Gorakhpur, Uttar Pradesh, who holds a few PSU shares; medium digital skill; Hindi.",
+    "device": { "width": 384, "height": 854, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "⚠️ भारतीय प्रतिभूति और विनिमय बोर्ड (SEBI) ⚠️\nअंतिम चेतावनी नोटिस\nनोटिस सं: SEBI/ENF/२०२६/४८२९१३\n\nआपके डीमैट खाते से अवैध ट्रेडिंग एवं मनी लॉन्ड्रिंग की गतिविधि पाई गई है। आपका PAN ABCDE1234F जांच के अधीन है।\nखाता फ्रीज होने तथा कानूनी कार्यवाही से बचने के लिए ₹ २४,५००/- का जुर्माना आज शाम ६ बजे तक जमा करें।\nभुगतान UPI: sebi.penalty@ybl\nभुगतान के बाद रसीद इसी व्हाट्सएप नंबर पर भेजें।\nयह मामला गोपनीय है, परिवार या किसी अन्य को बताने पर आपके विरुद्ध गिरफ्तारी वारंट जारी किया जाएगा।\nजांच अधिकारी\nआर. के. शर्मा, SEBI मुंबई",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "hi" },
+    "why": "Copies the fake 'SEBI enforcement notice' and digital-arrest pattern: threats of account freeze and arrest, an immediate penalty to a personal UPI ID and an order to keep it secret; SEBI never collects fines over WhatsApp or UPI, so it is fraud."
+  },
+  {
+    "id": "P004",
+    "persona": "29-year-old QA engineer at an IT services company in Pune who joined a 'stock market study group' on WhatsApp and reads it on WhatsApp Web; high digital skill; English.",
+    "device": { "width": 1280, "height": 800, "mobile": false, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "Dear Investor,\nGOOD NEWS!! Our firm has secured QIB (Qualified Institutional Buyer) quota in the upcoming mainboard IPO of a leading green energy company 🌱\nRetail allotment ratio will be only 1:40 but through our INSTITUTIONAL ACCOUNT you get 100% GUARANTEED allotment 🎯 Expected listing gain 60-90%.\n\nHow to apply:\n1) Download 'GSX Institutional Pro' app from below link (not available on Play Store as it is for institutional clients only)\nhttps://gsx-insti-pro.app/download/GSXPro_v3.2.apk\n2) Register with invitation code QIB7781\n3) Deposit subscription amount via IMPS/NEFT to the custodian account shared by your assistant. Do not use UPI for big amount.\n\nSubscription closes tonight 11:59 PM. Only 200 seats for our study group members.\nDont miss this wealth opportunity!\n\nNeha Kapoor\nSenior Assistant to Mr. Raymond Chu, Chief Investment Strategist",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "en" },
+    "why": "Matches the fake 'institutional account / QIB quota' IPO scams that SEBI, NSE and police warned about in 2024-26: guaranteed allotment, a side-loaded APK outside the Play Store and deposits to 'custodian' accounts shared by an assistant, so it is fraud."
+  },
+  {
+    "id": "P005",
+    "persona": "45-year-old tailor in Ludhiana, Punjab, who got a share tip from his cousin and wants to know whether to buy; low-to-medium digital skill; Punjabi, Hindi and Hinglish.",
+    "device": { "width": 360, "height": 740, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Bhaji ek kaam ki baat, Kaveri Solartech ka share abhi 18 rs ka h, mere office wale Sharma ji ka beta company me h, bol rha tha bada order aane wala h 6 mahine me 60-70 pakka jayega. 10-20 hazar laga do, kisi ko batana mat abhi 🤫",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "suspicious", "language": "hinglish" },
+    "why": "A cousin's 'inside news' small-cap tip with an unrealistic 3-4x target and a request for secrecy; no money is asked for and it may be innocent gossip, but it carries pump and insider-tip red flags, so it is suspicious."
+  },
+  {
+    "id": "P006",
+    "persona": "31-year-old bike-taxi and delivery gig driver in Indore who put Rs 1.2 lakh into a trading app found through an Instagram ad and now cannot withdraw; medium digital skill; Hinglish.",
+    "device": { "width": 360, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Dear Member,\nAapka withdrawal request ₹6,48,250 APPROVED ho gaya hai ✅\nLekin SEBI ke naye niyam anusar 15% capital gain tax ₹97,237 pehle alag se jama karna hoga, tabhi amount aapke bank me release hoga. Tax amount trading balance se deduct nahi ho sakta.\nTax jama karne ka account:\nName: Shree Ganesh Traders\nA/c No: 000012345678\nIFSC: ABCD0001234\n24 ghante me tax jama nahi hua to account FREEZE ho jayega aur poora profit SEBI ke paas chala jayega ❌\nJama karne ke baad receipt yahi customer service chat me bheje.\n- AlphaWin Pro Customer Service",
+      "channel": ""
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "The standard fake-trading-app endgame where large 'profits' are shown but a 'SEBI capital gains tax' must be paid separately into a third-party account before withdrawal; no real broker asks for tax upfront to release your own money, so it is fraud."
+  },
+  {
+    "id": "P007",
+    "persona": "52-year-old homemaker in a village near Jodhpur, Rajasthan, who gets forwards in her self-help-group WhatsApp; low digital skill; reads Hindi slowly.",
+    "device": { "width": 320, "height": 640, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Forwarded many times\n🌟 स्वर्ण लक्ष्मी गोल्ड बचत योजना 🌟\nसिर्फ ₹50,000 जमा करो और हर महीने ₹5,000 पाओ 💰💰\n12 महीने बाद पूरी रकम वापस + 10 ग्राम सोने का सिक्का बिल्कुल फ्री 🎁\nकोई रिस्क नहीं, 100% गारंटी, कंपनी RBI से रजिस्टर्ड है ✅\nएक नया सदस्य जोड़ने पर ₹2,000 बोनस अलग से 👍\nअभी तक 5000+ परिवार जुड़ चुके हैं\nफॉर्म भरें: bit.ly/swarnlaxmi-yojna\nसंपर्क करें - कविता जी (मैनेजर) 90000 14567\nजल्दी करें केवल 30 सीट बाकी हैं 🙏🙏",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "hi" },
+    "why": "An unregulated gold-savings deposit scheme promising 10% a month plus a free coin and referral bonuses while falsely claiming RBI registration, the classic Ponzi pattern banned under the BUDS Act 2019, so it is fraud."
+  },
+  {
+    "id": "P008",
+    "persona": "23-year-old engineering student in Bhubaneswar, Odisha, who applied for his first IPO through a UPI mandate; high digital skill; English.",
+    "device": { "width": 412, "height": 860, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "Dear Investor, basis of allotment for SURYODAYA PRECISION LTD IPO is finalised. Appl No 26104870xx: ALLOTTED 1 lot (23 shares). Shares will be credited to your demat a/c by 05-Oct-2026 and the balance blocked amount will be released in your bank a/c. Listing date: 06-Oct-2026. -KFin Technologies",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "en" },
+    "why": "A normal registrar SMS after the IPO basis of allotment, giving the lot allotted, demat credit date, release of the blocked UPI amount and listing date, with no link, payment or OTP request, so it is benign."
+  },
+  {
+    "id": "P009",
+    "persona": "19-year-old first-year BCA student in Guwahati, Assam, who watches a lot of finance reels on Instagram; high digital skill; English.",
+    "device": { "width": 384, "height": 832, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "Hi 👋 this is the official team of Kabir Talks Money (2.4M followers) ✅\nKabir sir is personally managing portfolios for 100 selected followers this Diwali under his 'Wealth Builder 2026' program. His last 5 picks gave 312% returns 🚀\nCongratulations, your profile was selected from our comments section 🎉\nJust pay the one-time refundable security deposit of ₹2,999 to activate your account and sir will trade on your behalf. Guaranteed 3X in 30 days or full refund.\nActivate here: https://kabir-talks-money.vip/activate\nHurry, only 7 slots left!",
+      "channel": "social"
+    },
+    "truth": { "label": "fraud", "language": "en" },
+    "why": "Impersonates a popular finance influencer (the fake-account and deepfake pattern SEBI and NSE have warned about) and asks for a 'refundable deposit' in return for guaranteed 3X managed returns, so it is fraud."
+  },
+  {
+    "id": "P010",
+    "persona": "26-year-old food-delivery rider in Patna, Bihar, who has already lost about Rs 8,000 in options and follows tip channels on Telegram; medium digital skill; Hinglish.",
+    "device": { "width": 360, "height": 720, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "🔥🔥 JACKPOT CALL ALERT 🔥🔥\nKAL EXPIRY HAI 💣💣\nNIFTY 26200 CE @ 18 ➡️ TARGET 180+ 🎯\n₹10,000 lagao ₹1,00,000 banao sirf 1 din me 💸💸\nPichle 7 expiry me 6 JACKPOT HIT ✅✅✅\nYe call sirf PAID members ko milegi, free channel me sirf hint 😉\nPAID GROUP lifetime sirf ₹2,999 👇\nUPI: jackpotking@ybl\nPayment ka screenshot @Jackpot_Admin_Real ko bhejo, 2 min me add kar denge\n100% SURE SHOT, loss hua to agle mahine free 🙏",
+      "channel": "telegram"
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "A Telegram 'jackpot call' options-tip channel selling a paid group via a personal UPI ID with 10x-in-a-day promises on cheap expiry-day options, the unregistered tip-provider pattern SEBI and NSE repeatedly flag, so it is fraud."
+  },
+  {
+    "id": "P011",
+    "persona": "63-year-old ex-army JCO pensioner in Rewari, Haryana, looking for something better than an FD for his savings; low-to-medium digital skill; Hindi.",
+    "device": { "width": 360, "height": 800, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "प्रिय ग्राहक, अब अपने पैसे को बढ़ाएं! धनवृद्धि P2P (RBI पंजीकृत NBFC-P2P) पर निवेश करें और पाएं 12% तक सालाना रिटर्न - बैंक FD से लगभग दोगुना! कभी भी निकासी की सुविधा, न्यूनतम निवेश ₹10,000. ऐप डाउनलोड करें: dhanvridhi.in/app T&C लागू",
+      "channel": "sms"
+    },
+    "truth": { "label": "suspicious", "language": "hi" },
+    "why": "P2P lending through an RBI-registered NBFC-P2P is legal, but advertising nearly double FD returns with anytime withdrawal goes against RBI's 2024 P2P directions that bar assured returns and liquidity promises, so it is suspicious rather than clearly fraud."
+  },
+  {
+    "id": "P012",
+    "persona": "22-year-old B.Com final-year student in Jaipur who holds a little crypto on an Indian exchange app; high digital skill; mixes Hindi and English.",
+    "device": { "width": 412, "height": 846, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "💎 AI Crypto Arbitrage Bot 💎\nअपना पैसा सिर्फ 7 दिन में DOUBLE करें 🚀🚀\nDeposit 100 USDT ➡️ Get 200 USDT\nDeposit 500 USDT ➡️ Get 1000 USDT\n100% safe, कोई loss नहीं, AI bot खुद trade करता है 🤖\nINR में payment भी ले लेते हैं UPI से: cryptodouble@ybl (rate ₹92/USDT)\nWithdraw कभी भी, 24x7 support\nOffer आज रात 12 बजे तक ही ⏰\nJoin करो: t.me/AIArbiBot_Official\nRef code: DBL2026",
+      "channel": "telegram"
+    },
+    "truth": { "label": "fraud", "language": "mixed" },
+    "why": "A crypto 'AI arbitrage bot' doubling scheme taking rupees through a personal UPI handle with zero-loss claims and a midnight deadline, the Telegram crypto Ponzi pattern flagged by I4C, so it is fraud."
+  },
+  {
+    "id": "P013",
+    "persona": "71-year-old retired postmaster in Varanasi whose son bought shares in his name; low digital skill, types with Hindi voice input; Hindi.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "आज सुबह एक आदमी का फोन आया बोला मैं सीडीएसएल ऑफिस मुंबई से बोल रहा हूं आपका डी मेट खाता का केवाईसी पूरा नहीं है आज रात तक खाता बंद हो जाएगा और शेर जप्त हो जाएंगे उसने बोला प्ले स्टोर से एनी डेस्क ऐप डाउनलोड करो और जो 9 अंक का नंबर आएगा वह बताओ हम आपका केवाईसी खुद ऑनलाइन कर देंगे फिर फोन पर ओटीपी आएगा वह भी बताना पड़ेगा उसका नंबर 90000 13579 था मेरे बेटे ने मेरे नाम से शेयर लिए थे क्या ये सच है मैं क्या करूं",
+      "channel": "call"
+    },
+    "truth": { "label": "fraud", "language": "hi" },
+    "why": "A reported call from a fake CDSL official threatening demat closure over KYC and asking to install AnyDesk and share the access code and OTP, the remote-access takeover pattern in RBI, NPCI and I4C advisories, so it is fraud."
+  },
+  {
+    "id": "P014",
+    "persona": "41-year-old staff nurse in Kochi, Kerala, who trades index futures and options after night shifts; medium-to-high digital skill; English.",
+    "device": { "width": 412, "height": 800, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "Dear Client XY1234, your a/c has a margin shortfall of Rs.18,450.25 against open F&O positions as on 01-Oct-26. Pls add funds before 3:00 PM today, else positions may be squared off by RMS and short-margin penalty may be levied as per exchange rules. Add funds only through our app/website. We never ask for OTP/PIN or payment to a personal account. -Vardhaman Shares",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "en" },
+    "why": "A normal broker RMS margin-shortfall SMS: it warns of square-off and an exchange penalty but asks the client to add funds only through the broker's own app or website and warns against OTP or personal-account payments, so it is benign."
+  },
+  {
+    "id": "P015",
+    "persona": "36-year-old onion farmer near Lasalgaon, Nashik, Maharashtra, who opened a demat account after a good season; medium digital skill; Marathi, Hindi and Hinglish.",
+    "device": { "width": 320, "height": 680, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Good Morning Sir 🙏\nHum SEBI Registered Research Analyst hai ✅ Reg No. INH000099999\nAapke liye special 3 Month PREMIUM ADVISORY plan:\n✔️ Daily 2 intraday + 1 positional call\n✔️ 95% accuracy\n✔️ Monthly 25-40% profit GUARANTEED, loss hua to fees wapas\nFees ₹18,000 ➡️ aaj ke liye sirf ₹9,999 🔥\nCompany ka current account abhi KYC update me hai isliye aaj payment mere UPI pe kar dijiye: rahul.advisor.demo@okaxis\nPayment ke baad screenshot bheje, onboarding form aur GST bill aapko mail ho jayega.\nRahul Sharma\nSenior Research Analyst",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "A fake 'SEBI-registered research analyst' quoting an INH-style number, promising guaranteed monthly profits and collecting fees on a personal UPI ID; real RAs cannot guarantee returns and must collect fees in the registered entity's name, so it is fraud."
+  },
+  {
+    "id": "P016",
+    "persona": "49-year-old government school principal in Bilaspur, Chhattisgarh, who keeps most savings in FDs and reads email on a tablet; medium digital skill; Hindi and English.",
+    "device": { "width": 768, "height": 1024, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Subject: अब FD से ज़्यादा कमाएं – Fixed 11.8% returns 💰\n\nNamaste Investor,\nInvest in high-yield corporate bonds starting ₹10,000 on BondKaro (SEBI registered OBPP).\nFixed monthly interest – हर महीने सीधे आपके बैंक खाते में।\n• Yield: 11.8% p.a.\n• Issuer: Unnati Microcredit (NBFC-MFI), Rating: BBB-\n• Tenure: 18 months\n• Only 7 lots left – offer closes today 🔔\nपैसा पूरी तरह सुरक्षित, कोई market risk नहीं*\nInvest now: https://bondkaro-invest.in/deal/UMC118\n\n*Investments in debt securities are subject to risks including delay and/or default in payment. Read all the offer related documents carefully.\nUnsubscribe",
+      "channel": "email"
+    },
+    "truth": { "label": "suspicious", "language": "mixed" },
+    "why": "SEBI-registered online bond platforms do sell BBB-rated NBFC bonds at around 11-12%, but this promo calls it fully safe with no market risk and adds same-day urgency while its own disclaimer warns of default, so it is suspicious, not clearly fraud."
+  },
+  {
+    "id": "P017",
+    "persona": "47-year-old auto-parts shop owner in Kanpur, Uttar Pradesh, who buys cheap SME and penny stocks on tips; medium digital skill; Hindi.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "शेयर बाजार ब्रेकिंग 📢 लक्ष्मी रेल इंफ्रा (BSE SME) को ₹८०० करोड़ का ऑर्डर, खबर कल आएगी!! CMP ₹२२ टारगेट ₹८५ सिर्फ १५ दिन में, ऑपरेटर खरीद रहे हैं जितना हो सके भर लो 🚀 -मार्केट मास्टर्स",
+      "channel": "sms"
+    },
+    "truth": { "label": "fraud", "language": "hi" },
+    "why": "A bulk-SMS 'operators are buying' pump call on an SME stock built on an unverifiable order rumour with a near 4x target in 15 days, the pump-and-dump pattern SEBI has acted against, so it is fraud."
+  },
+  {
+    "id": "P018",
+    "persona": "61-year-old retired railway section engineer in Nagpur who lost Rs 4.85 lakh to a fake trading app earlier this year and filed a cybercrime complaint; medium digital skill, uses a desktop with large text; English.",
+    "device": { "width": 1280, "height": 800, "mobile": false, "largeText": true },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "Subject: RE: Your Complaint – Online Trading Fraud | Refund APPROVED\n\nDear Victim,\nThis is to inform you that the International Cyber Fund Recovery Cell (ICFRC), working in coordination with SEBI, RBI and Interpol, has successfully traced your lost amount of Rs 4,85,000 from the fake trading app. Your refund has been APPROVED by the competent authority.\n\nTo release the funds to your bank account you are kindly required to pay a refundable Processing & Legal Clearance Fee of Rs 12,500 within 48 hours to our authorised officer:\nUPI: icfrc.refund@ybl\n\nPlease note: failure to pay within the time limit will result in your funds being permanently transferred to the Government treasury. Do not discuss this case with local police or bank as it may delay the process.\n\nFor any query WhatsApp Adv. R. Mehra: +91 90000 17788\n\nRegards,\nRefund Desk, ICFRC (Govt. Approved)",
+      "channel": "email"
+    },
+    "truth": { "label": "fraud", "language": "en" },
+    "why": "Targets an earlier victim with a fake 'fund recovery cell' claiming SEBI, RBI and Interpol links, demanding an upfront clearance fee to a personal UPI ID and discouraging police contact; no agency charges a fee to return stolen money, so it is fraud."
+  },
+  {
+    "id": "P019",
+    "persona": "27-year-old beauty-parlour owner in Ranchi, Jharkhand, who recently started a Rs 500 monthly SIP on an investing app; medium digital skill; Hinglish.",
+    "device": { "width": 360, "height": 800, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Hi Sunita, aapki ₹500 ki SIP Sahyog Flexi Cap Fund - Direct Growth me 01-Oct-2026 ko successfully process ho gayi hai ✅ NAV ₹48.21 par 10.371 units allot hue. Folio: 1234567/89. Agli SIP 01-Nov-2026 ko auto-debit hogi, bank account me balance rakhein warna mandate bounce hone par bank charges lag sakte hain. Mutual Fund investments are subject to market risks, read all scheme related documents carefully. -Sahyog MF",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "hinglish" },
+    "why": "A routine mutual fund SIP confirmation with NAV, units and folio, a reminder to keep balance for the next auto-debit and the standard risk disclaimer; it asks for no payment details, link clicks or OTP, so it is benign."
+  },
+  {
+    "id": "P020",
+    "persona": "33-year-old private-school teacher in Lucknow who watched a forex reel on Instagram and then got this message; medium digital skill; Hinglish.",
+    "device": { "width": 384, "height": 800, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Forex trading se ghar baithe kamao 💵💵\nHamare expert account manager aapke liye XAUUSD (Gold) aur EUR/USD me trade karenge\n✅ Weekly 10% FIXED profit\n✅ Minimum deposit sirf $100 (₹9,000)\n✅ Har Saturday profit seedha aapke bank account me\nHum Dubai licensed international broker hai, India ke rules hum pe apply nahi hote 😎\nDeposit ke liye account details WhatsApp pe milegi 👉 wa.me/919000016161\nRegister now: https://fx-goldprofit.co/in/signup",
+      "channel": "social"
+    },
+    "truth": { "label": "fraud", "language": "hinglish" },
+    "why": "Unauthorised online forex trading promising a fixed 10% weekly profit through an 'account manager', with deposit accounts shared on WhatsApp and a claim that Indian rules do not apply, matching RBI's Alert List warnings, so it is fraud."
+  },
+  {
+    "id": "P021",
+    "persona": "42-year-old software architect in Bengaluru with an existing stock and mutual fund portfolio; high digital skill; English.",
+    "device": { "width": 1280, "height": 800, "mobile": false, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "check",
+    "input": {
+      "message": "Subject: Pre-IPO opportunity – limited unlisted shares\n\nHi,\nWe have a limited block of unlisted shares of a well-known Indian fintech company that is expected to file its DRHP next year. Current unlisted price: Rs 640/share, minimum ticket Rs 1,00,000.\nShares are transferred to your demat through CDSL/NSDL off-market transfer within 2 working days of payment.\nPlease note that unlisted share prices are volatile, there is no guarantee of an IPO or listing price, and shares may be subject to a 6-month lock-in after listing.\nReply to this mail or call our desk on 98765 43210 for today's quote.\n\nRegards,\nUnlisted Equities Desk\nPrimeway Capital Advisors",
+      "channel": "email"
+    },
+    "truth": { "label": "suspicious", "language": "en" },
+    "why": "Dealing in unlisted pre-IPO shares is legal but unregulated and risky (an unsolicited mail, pay-first off-market transfer and no investor protection), yet it promises nothing and states the risks, so it is suspicious."
+  },
+  {
+    "id": "P022",
+    "persona": "44-year-old anganwadi worker in Sikar, Rajasthan, who opened a demat account at a bank camp; low-to-medium digital skill; Hindi.",
+    "device": { "width": 360, "height": 640, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "NSE अलर्ट: प्रिय निवेशक, आपका डीमैट/ट्रेडिंग खाता अधूरे KYC के कारण आज रात ११:५९ बजे निलंबित कर दिया जाएगा। तुरंत PAN व आधार अपडेट करें: http://nse-kyc-update.in-verify.co/ekyc अन्यथा आपके शेयर फ्रीज़ कर दिए जाएंगे। -NSE India",
+      "channel": "sms"
+    },
+    "truth": { "label": "fraud", "language": "hi" },
+    "why": "A fake NSE 'KYC suspension' SMS with a lookalike link built to harvest PAN, Aadhaar and login details; exchanges do not suspend accounts through SMS links and KYC is updated through your broker or KRA, so it is fraud."
+  },
+  {
+    "id": "P023",
+    "persona": "78-year-old widow living on family pension in Prayagraj, Uttar Pradesh, who keeps all her savings in bank FDs and uses a tablet her grandson set up; very low digital skill and poor eyesight; Hindi.",
+    "device": { "width": 768, "height": 1024, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "प्रिय ग्राहक, 444 दिनों की विशेष सावधि जमा (FD) पर पाएं 6.60% वार्षिक ब्याज, वरिष्ठ नागरिकों को 0.50% अतिरिक्त। गारंटीड रिटर्न, बाजार का कोई जोखिम नहीं। जमा राशि DICGC द्वारा ₹5 लाख तक बीमित। FD नजदीकी शाखा या नेट बैंकिंग/मोबाइल ऐप से खोलें। बैंक कभी OTP/PIN नहीं मांगता। नियम व शर्तें लागू। -PNB",
+      "channel": "sms"
+    },
+    "truth": { "label": "benign", "language": "hi" },
+    "why": "A bank FD promotion where 'guaranteed returns' is accurate because FD interest is fixed by contract and DICGC cover up to Rs 5 lakh is stated correctly, with no link, a branch or net-banking route and an OTP warning, so it is benign."
+  },
+  {
+    "id": "P024",
+    "persona": "21-year-old polytechnic student in Hisar, Haryana, who follows trading influencers and wants to learn options; high digital skill; Hinglish.",
+    "device": { "width": 360, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "Bhai log 🙌 meri 'Option Buying Mastery' course ab LIVE hai!!\nIsme mai apni 90% accuracy wali strategy sikhata hu jisse maine 6 mahine me ₹50k ko ₹8 lakh banaya 📈 (P&L proof story me hai)\nCourse fees ₹4,999 ➡️ Launch offer sirf ₹1,499 (48 ghante ke liye) ⏳\nBonus: lifetime Telegram community + daily market analysis\nLink in bio 🔗 ya DM karo 'COURSE'\n*Educational purpose only. I am not SEBI registered. Trading involves risk.",
+      "channel": "social"
+    },
+    "truth": { "label": "suspicious", "language": "hinglish" },
+    "why": "A finfluencer trading-course ad with '90% accuracy', P&L-screenshot claims and countdown pricing; selling a course is legal and it carries disclaimers, but return claims by an unregistered person clash with SEBI's finfluencer and educator rules, so it is suspicious."
+  },
+  {
+    "id": "P025",
+    "persona": "50-year-old saree wholesaler in Surat, Gujarat, who saw this in a traders' WhatsApp group; medium digital skill; Gujarati, Hindi and some English.",
+    "device": { "width": 412, "height": 860, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "check",
+    "input": {
+      "message": "🚨 PRE-IPO ALERT 🚨\nदेश की सबसे बड़ी quick-commerce company के unlisted shares अब available 🔥🔥\nPre-IPO price सिर्फ ₹95/share, listing पर ₹330+ GUARANTEED (3.5X) ✅\nMinimum 1000 shares = ₹95,000\nShares 6 महीने के lock-in के बाद आपके demat में transfer होंगे\nPayment: Mahalaxmi Enterprises\nA/c 000012345678, IFSC ABCD0001234\nया UPI: preipo.shares@ybl\nसिर्फ 3 दिन, limited allotment, पहले आओ पहले पाओ 🙏\nCall/WhatsApp: 90000 12121 (Vikas ji)",
+      "channel": "whatsapp"
+    },
+    "truth": { "label": "fraud", "language": "mixed" },
+    "why": "A pre-IPO unlisted share scam promising a guaranteed 3.5X listing price, with payment to a proprietorship account or personal UPI ID and a 6-month 'lock-in' before transfer so the victim cannot check anything, so it is fraud."
+  }
+]

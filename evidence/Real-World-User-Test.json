@@ -1,0 +1,1640 @@
+{
+ "test": "100-user real-world test and stress inputs",
+ "date": "2026-10-02",
+ "app": {
+  "file": "index.html",
+  "bytes": 509588,
+  "sha256": "055455709CAA0AA479C309CAB84A9EA668D9B553532696A511D4AEC05CE7BBAB"
+ },
+ "note": "AI-written fictional users, used to find and fix problems in Release 3.3: a regression test, not a real-world accuracy result. Grades: pass = fully right, weak = partly right, fail = wrong.",
+ "checksPassed": 14,
+ "checksTotal": 14,
+ "checks": [
+  {
+   "check": "All 100 users finish their journey",
+   "passed": true
+  },
+  {
+   "check": "No runtime errors for any user",
+   "passed": true
+  },
+  {
+   "check": "Nothing leaves the page for any user",
+   "passed": true
+  },
+  {
+   "check": "No page scrolls sideways for any user, on any phone size",
+   "passed": true
+  },
+  {
+   "check": "No wrong result for any of the 100 users",
+   "passed": true
+  },
+  {
+   "check": "Before you pay: every scam gets STOP and every genuine payment VERIFY",
+   "passed": true
+  },
+  {
+   "check": "Complaint drafts: every OTP, PIN, CVV, password or card number blocks saving and is masked",
+   "passed": true
+  },
+  {
+   "check": "Urgent help: everyone who lost money is told to call 1930",
+   "passed": true
+  },
+  {
+   "check": "Where to complain: every route names the right office",
+   "passed": true
+  },
+  {
+   "check": "A 9,659-character forward is kept whole and its scam at the end is caught",
+   "passed": true
+  },
+  {
+   "check": "The phone Back button returns to Home inside the app",
+   "passed": true
+  },
+  {
+   "check": "A 1,700-character urgent-help story is kept and the payment at its end is understood",
+   "passed": true
+  },
+  {
+   "check": "Pasted HTML or script never runs",
+   "passed": true
+  },
+  {
+   "check": "No runtime errors from any stress input",
+   "passed": true
+  }
+ ],
+ "users": {
+  "total": 100,
+  "grades": {
+   "pass": 92,
+   "weak": 8,
+   "fail": 0
+  },
+  "byJourney": {
+   "check": {
+    "pass": 50,
+    "weak": 0,
+    "fail": 0
+   },
+   "paycheck": {
+    "pass": 18,
+    "weak": 0,
+    "fail": 0
+   },
+   "family": {
+    "pass": 5,
+    "weak": 2,
+    "fail": 0
+   },
+   "emergency": {
+    "pass": 7,
+    "weak": 6,
+    "fail": 0
+   },
+   "draft": {
+    "pass": 7,
+    "weak": 0,
+    "fail": 0
+   },
+   "route": {
+    "pass": 5,
+    "weak": 0,
+    "fail": 0
+   }
+  },
+  "byLabel": {
+   "fraud": {
+    "pass": 23,
+    "weak": 0,
+    "fail": 0
+   },
+   "benign": {
+    "pass": 17,
+    "weak": 0,
+    "fail": 0
+   },
+   "suspicious": {
+    "pass": 5,
+    "weak": 0,
+    "fail": 0
+   },
+   "edge": {
+    "pass": 5,
+    "weak": 0,
+    "fail": 0
+   },
+   "scam": {
+    "pass": 12,
+    "weak": 0,
+    "fail": 0
+   },
+   "legit": {
+    "pass": 6,
+    "weak": 0,
+    "fail": 0
+   },
+   "-": {
+    "pass": 24,
+    "weak": 8,
+    "fail": 0
+   }
+  },
+  "byLanguage": {
+   "hinglish": {
+    "pass": 14,
+    "weak": 0,
+    "fail": 0
+   },
+   "hi": {
+    "pass": 15,
+    "weak": 0,
+    "fail": 0
+   },
+   "en": {
+    "pass": 13,
+    "weak": 0,
+    "fail": 0
+   },
+   "mixed": {
+    "pass": 5,
+    "weak": 0,
+    "fail": 0
+   },
+   "ta": {
+    "pass": 1,
+    "weak": 0,
+    "fail": 0
+   },
+   "bn": {
+    "pass": 1,
+    "weak": 0,
+    "fail": 0
+   },
+   "mr": {
+    "pass": 1,
+    "weak": 0,
+    "fail": 0
+   },
+   "-": {
+    "pass": 42,
+    "weak": 8,
+    "fail": 0
+   }
+  },
+  "rows": [
+   {
+    "id": "P001",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x760",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P002",
+    "journey": "check",
+    "label": "benign",
+    "language": "hi",
+    "ui": "hi",
+    "device": "360x800 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P003",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hi",
+    "ui": "hi",
+    "device": "384x854",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P004",
+    "journey": "check",
+    "label": "fraud",
+    "language": "en",
+    "ui": "en",
+    "device": "1280x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P005",
+    "journey": "check",
+    "label": "suspicious",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x740",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "high",
+    "issues": []
+   },
+   {
+    "id": "P006",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P007",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hi",
+    "ui": "hi",
+    "device": "320x640",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P008",
+    "journey": "check",
+    "label": "benign",
+    "language": "en",
+    "ui": "en",
+    "device": "412x860",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P009",
+    "journey": "check",
+    "label": "fraud",
+    "language": "en",
+    "ui": "en",
+    "device": "384x832",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P010",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x720",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P011",
+    "journey": "check",
+    "label": "suspicious",
+    "language": "hi",
+    "ui": "hi",
+    "device": "360x800 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "high",
+    "issues": []
+   },
+   {
+    "id": "P012",
+    "journey": "check",
+    "label": "fraud",
+    "language": "mixed",
+    "ui": "en",
+    "device": "412x846",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P013",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hi",
+    "ui": "hi",
+    "device": "360x760 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P014",
+    "journey": "check",
+    "label": "benign",
+    "language": "en",
+    "ui": "en",
+    "device": "412x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P015",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "320x680",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P016",
+    "journey": "check",
+    "label": "suspicious",
+    "language": "mixed",
+    "ui": "hi",
+    "device": "768x1024",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "caution",
+    "issues": []
+   },
+   {
+    "id": "P017",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hi",
+    "ui": "hi",
+    "device": "360x760",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P018",
+    "journey": "check",
+    "label": "fraud",
+    "language": "en",
+    "ui": "en",
+    "device": "1280x800 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P019",
+    "journey": "check",
+    "label": "benign",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P020",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "384x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P021",
+    "journey": "check",
+    "label": "suspicious",
+    "language": "en",
+    "ui": "en",
+    "device": "1280x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "high",
+    "issues": []
+   },
+   {
+    "id": "P022",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hi",
+    "ui": "hi",
+    "device": "360x640",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P023",
+    "journey": "check",
+    "label": "benign",
+    "language": "hi",
+    "ui": "hi",
+    "device": "768x1024 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P024",
+    "journey": "check",
+    "label": "suspicious",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "high",
+    "issues": []
+   },
+   {
+    "id": "P025",
+    "journey": "check",
+    "label": "fraud",
+    "language": "mixed",
+    "ui": "hi",
+    "device": "412x860",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P026",
+    "journey": "check",
+    "label": "benign",
+    "language": "en",
+    "ui": "hi",
+    "device": "360x760 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P027",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hi",
+    "ui": "hi",
+    "device": "360x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P028",
+    "journey": "check",
+    "label": "benign",
+    "language": "hi",
+    "ui": "hi",
+    "device": "360x740",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P029",
+    "journey": "check",
+    "label": "fraud",
+    "language": "en",
+    "ui": "en",
+    "device": "412x915 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P030",
+    "journey": "check",
+    "label": "benign",
+    "language": "en",
+    "ui": "hi",
+    "device": "320x658",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P031",
+    "journey": "check",
+    "label": "edge",
+    "language": "ta",
+    "ui": "en",
+    "device": "360x740",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "ta: coverage note shown (verdict none)",
+    "issues": []
+   },
+   {
+    "id": "P032",
+    "journey": "check",
+    "label": "benign",
+    "language": "en",
+    "ui": "hi",
+    "device": "412x892",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P033",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "en",
+    "device": "412x915",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P034",
+    "journey": "check",
+    "label": "benign",
+    "language": "en",
+    "ui": "hi",
+    "device": "360x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P035",
+    "journey": "check",
+    "label": "benign",
+    "language": "hi",
+    "ui": "hi",
+    "device": "360x760",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P036",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P037",
+    "journey": "check",
+    "label": "edge",
+    "language": "bn",
+    "ui": "en",
+    "device": "360x760 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "bn: coverage note shown (verdict high)",
+    "issues": []
+   },
+   {
+    "id": "P038",
+    "journey": "check",
+    "label": "benign",
+    "language": "en",
+    "ui": "en",
+    "device": "384x854",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P039",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P040",
+    "journey": "check",
+    "label": "benign",
+    "language": "hi",
+    "ui": "hi",
+    "device": "320x640",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P041",
+    "journey": "check",
+    "label": "edge",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "360x760 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "asked the user to paste the actual message (verdict none)",
+    "issues": []
+   },
+   {
+    "id": "P042",
+    "journey": "check",
+    "label": "benign",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "412x892",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P043",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hi",
+    "ui": "hi",
+    "device": "384x832 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P044",
+    "journey": "check",
+    "label": "benign",
+    "language": "hi",
+    "ui": "hi",
+    "device": "800x1280 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P045",
+    "journey": "check",
+    "label": "edge",
+    "language": "mr",
+    "ui": "hi",
+    "device": "360x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "mr: coverage note shown (verdict caution)",
+    "issues": []
+   },
+   {
+    "id": "P046",
+    "journey": "check",
+    "label": "fraud",
+    "language": "hinglish",
+    "ui": "hi",
+    "device": "412x915",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P047",
+    "journey": "check",
+    "label": "benign",
+    "language": "en",
+    "ui": "en",
+    "device": "1920x1080",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P048",
+    "journey": "check",
+    "label": "fraud",
+    "language": "mixed",
+    "ui": "hi",
+    "device": "320x658",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P049",
+    "journey": "check",
+    "label": "benign",
+    "language": "hi",
+    "ui": "hi",
+    "device": "1366x768",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no signs",
+    "issues": []
+   },
+   {
+    "id": "P050",
+    "journey": "check",
+    "label": "edge",
+    "language": "mixed",
+    "ui": "hi",
+    "device": "384x854 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "High",
+    "issues": []
+   },
+   {
+    "id": "P051",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "360x760",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P052",
+    "journey": "paycheck",
+    "label": "legit",
+    "language": "",
+    "ui": "en",
+    "device": "412x846",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "VERIFY",
+    "issues": []
+   },
+   {
+    "id": "P053",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "384x854",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P054",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "412x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P055",
+    "journey": "paycheck",
+    "label": "legit",
+    "language": "",
+    "ui": "hi",
+    "device": "768x1024 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "VERIFY",
+    "issues": []
+   },
+   {
+    "id": "P056",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "360x640 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P057",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "412x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P058",
+    "journey": "paycheck",
+    "label": "legit",
+    "language": "",
+    "ui": "hi",
+    "device": "360x760 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "VERIFY",
+    "issues": []
+   },
+   {
+    "id": "P059",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "360x800 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P060",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "en",
+    "device": "412x860",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P061",
+    "journey": "paycheck",
+    "label": "legit",
+    "language": "",
+    "ui": "hi",
+    "device": "1280x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "VERIFY",
+    "issues": []
+   },
+   {
+    "id": "P062",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "360x720",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P063",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "en",
+    "device": "1280x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P064",
+    "journey": "paycheck",
+    "label": "legit",
+    "language": "",
+    "ui": "hi",
+    "device": "384x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "VERIFY",
+    "issues": []
+   },
+   {
+    "id": "P065",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "320x640 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P066",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "en",
+    "device": "360x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P067",
+    "journey": "paycheck",
+    "label": "legit",
+    "language": "",
+    "ui": "hi",
+    "device": "360x640",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "VERIFY",
+    "issues": []
+   },
+   {
+    "id": "P068",
+    "journey": "paycheck",
+    "label": "scam",
+    "language": "",
+    "ui": "hi",
+    "device": "384x820",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "STOP",
+    "issues": []
+   },
+   {
+    "id": "P069",
+    "journey": "family",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x700 large",
+    "grade": "weak",
+    "kind": "input",
+    "why": "8 checklist items (mentions checked by hand)",
+    "issues": [
+     "weak/input: nominee question not shown for these holdings"
+    ]
+   },
+   {
+    "id": "P070",
+    "journey": "family",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "1280x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "7 checklist items (mentions checked by hand)",
+    "issues": []
+   },
+   {
+    "id": "P071",
+    "journey": "family",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "320x680",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "5 checklist items (mentions checked by hand)",
+    "issues": []
+   },
+   {
+    "id": "P072",
+    "journey": "family",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x720",
+    "grade": "weak",
+    "kind": "input",
+    "why": "5 checklist items (mentions checked by hand)",
+    "issues": [
+     "weak/input: nominee question not shown for these holdings"
+    ]
+   },
+   {
+    "id": "P073",
+    "journey": "family",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "768x1024 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "11 checklist items (mentions checked by hand)",
+    "issues": []
+   },
+   {
+    "id": "P074",
+    "journey": "family",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "412x846",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "7 checklist items (mentions checked by hand)",
+    "issues": []
+   },
+   {
+    "id": "P075",
+    "journey": "family",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "384x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "8 checklist items (mentions checked by hand)",
+    "issues": []
+   },
+   {
+    "id": "P076",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "all answers right",
+    "issues": []
+   },
+   {
+    "id": "P077",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "384x854",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "all answers right",
+    "issues": []
+   },
+   {
+    "id": "P078",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x740",
+    "grade": "weak",
+    "kind": "detail not filled",
+    "why": "channel: expected bank, got not filled",
+    "issues": []
+   },
+   {
+    "id": "P079",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "412x860",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "all answers right",
+    "issues": []
+   },
+   {
+    "id": "P080",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x800 large",
+    "grade": "weak",
+    "kind": "detail not filled",
+    "why": "ongoing: expected no, got not filled",
+    "issues": []
+   },
+   {
+    "id": "P081",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x760",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "all answers right",
+    "issues": []
+   },
+   {
+    "id": "P082",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "412x846",
+    "grade": "weak",
+    "kind": "detail not filled",
+    "why": "ongoing: expected yes, got not filled",
+    "issues": []
+   },
+   {
+    "id": "P083",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "320x640 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "all answers right",
+    "issues": []
+   },
+   {
+    "id": "P084",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "384x832",
+    "grade": "weak",
+    "kind": "detail not filled",
+    "why": "ongoing: expected unsure, got not filled",
+    "issues": []
+   },
+   {
+    "id": "P085",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x720",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "all answers right",
+    "issues": []
+   },
+   {
+    "id": "P086",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "768x1024 large",
+    "grade": "weak",
+    "kind": "detail not filled",
+    "why": "channel: expected unsure, got not filled; when: expected unsure, got today",
+    "issues": []
+   },
+   {
+    "id": "P087",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "412x780",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "all answers right",
+    "issues": []
+   },
+   {
+    "id": "P088",
+    "journey": "emergency",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x640",
+    "grade": "weak",
+    "kind": "detail not filled",
+    "why": "when: expected earlier, got not filled",
+    "issues": []
+   },
+   {
+    "id": "P089",
+    "journey": "draft",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x760",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "secret blocked, masked, then allowed",
+    "issues": []
+   },
+   {
+    "id": "P090",
+    "journey": "draft",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "1280x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "secret blocked, masked, then allowed",
+    "issues": []
+   },
+   {
+    "id": "P091",
+    "journey": "draft",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "320x660 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "secret blocked, masked, then allowed",
+    "issues": []
+   },
+   {
+    "id": "P092",
+    "journey": "draft",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "412x820",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "secret blocked, masked, then allowed",
+    "issues": []
+   },
+   {
+    "id": "P093",
+    "journey": "draft",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "384x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "secret blocked, masked, then allowed",
+    "issues": []
+   },
+   {
+    "id": "P094",
+    "journey": "draft",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "1280x800",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no secret; allowed",
+    "issues": []
+   },
+   {
+    "id": "P095",
+    "journey": "draft",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x740",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "no secret; allowed",
+    "issues": []
+   },
+   {
+    "id": "P096",
+    "journey": "route",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x700 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "route includes PFRDA / NPS",
+    "issues": []
+   },
+   {
+    "id": "P097",
+    "journey": "route",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "768x1024 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "route includes IEPF",
+    "issues": []
+   },
+   {
+    "id": "P098",
+    "journey": "route",
+    "label": "",
+    "language": "",
+    "ui": "hi",
+    "device": "360x780 large",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "route includes the company's RTA first, SEBI SCORES",
+    "issues": []
+   },
+   {
+    "id": "P099",
+    "journey": "route",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "412x860",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "route includes Bima Bharosa / Insurance Ombudsman",
+    "issues": []
+   },
+   {
+    "id": "P100",
+    "journey": "route",
+    "label": "",
+    "language": "",
+    "ui": "en",
+    "device": "384x840",
+    "grade": "pass",
+    "kind": "ok",
+    "why": "route includes SEBI SCORES, SMART ODR",
+    "issues": []
+   }
+  ]
+ },
+ "stress": [
+  {
+   "name": "huge paste (10,000 chars, scam at the end)",
+   "chars": 9659,
+   "ms": 195,
+   "level": "high",
+   "coverage": false,
+   "typed": 9659,
+   "xss": 0,
+   "injected": false,
+   "heading": "4 warning signs to consider",
+   "resultStart": "4 warning signs to consider High risk: stop. Do not pay, share any code or install anything because of this message. This is a long message, so it was checked i",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "one 6,000-char word",
+   "chars": 6000,
+   "ms": 87,
+   "level": "none",
+   "coverage": false,
+   "typed": 6000,
+   "xss": 0,
+   "injected": false,
+   "heading": "No listed warning signs found",
+   "resultStart": "No listed warning signs found No known warning signs found. This does not mean it is safe. Insufficient evidence — not a safety result The model found no known ",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "emoji only",
+   "chars": 10,
+   "ms": 51,
+   "level": "none",
+   "coverage": true,
+   "typed": 10,
+   "xss": 0,
+   "injected": false,
+   "heading": "No listed warning signs found",
+   "resultStart": "No listed warning signs found No known warning signs found. This does not mean it is safe. Needs human help: language coverage is limited The wording is outside",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "scam words split by invisible characters",
+   "chars": 66,
+   "ms": 92,
+   "level": "high",
+   "coverage": false,
+   "typed": 66,
+   "xss": 0,
+   "injected": false,
+   "heading": "3 warning signs to consider",
+   "resultStart": "3 warning signs to consider High risk: stop. Do not pay, share any code or install anything because of this message. Several warning signs agree Several differe",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "pasted HTML image with script handler",
+   "chars": 69,
+   "ms": 57,
+   "level": "high",
+   "coverage": false,
+   "typed": 69,
+   "xss": 0,
+   "injected": false,
+   "heading": "2 warning signs to consider",
+   "resultStart": "2 warning signs to consider High risk: stop. Do not pay, share any code or install anything because of this message. Several warning signs agree Several differe",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "pasted script tag",
+   "chars": 59,
+   "ms": 70,
+   "level": "high",
+   "coverage": false,
+   "typed": 59,
+   "xss": 0,
+   "injected": false,
+   "heading": "1 warning sign to consider",
+   "resultStart": "1 warning sign to consider High risk: stop. Do not pay, share any code or install anything because of this message. Limited evidence: one warning sign One known",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "link with javascript: scheme",
+   "chars": 63,
+   "ms": 66,
+   "level": "none",
+   "coverage": false,
+   "typed": 63,
+   "xss": 0,
+   "injected": false,
+   "heading": "No listed warning signs found",
+   "resultStart": "No listed warning signs found No known warning signs found. This does not mean it is safe. Insufficient evidence — not a safety result The model found no known ",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "Urdu right-to-left text",
+   "chars": 53,
+   "ms": 54,
+   "level": "none",
+   "coverage": true,
+   "typed": 53,
+   "xss": 0,
+   "injected": false,
+   "heading": "No listed warning signs found",
+   "resultStart": "No listed warning signs found No known warning signs found. This does not mean it is safe. Needs human help: language coverage is limited The wording is outside",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "whitespace only",
+   "chars": 11,
+   "ms": 51,
+   "level": null,
+   "coverage": false,
+   "typed": 11,
+   "xss": 0,
+   "injected": false,
+   "heading": "",
+   "resultStart": "Please paste a message first.",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "only numbers",
+   "chars": 34,
+   "ms": 63,
+   "level": "none",
+   "coverage": true,
+   "typed": 34,
+   "xss": 0,
+   "injected": false,
+   "heading": "No listed warning signs found",
+   "resultStart": "No listed warning signs found No known warning signs found. This does not mean it is safe. Needs human help: language coverage is limited The wording is outside",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "Devanagari digits scam",
+   "chars": 53,
+   "ms": 59,
+   "level": "high",
+   "coverage": false,
+   "typed": 53,
+   "xss": 0,
+   "injected": false,
+   "heading": "3 warning signs to consider",
+   "resultStart": "3 warning signs to consider High risk: stop. Do not pay, share any code or install anything because of this message. Several warning signs agree Several differe",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "lookalike official domain",
+   "chars": 104,
+   "ms": 77,
+   "level": "high",
+   "coverage": false,
+   "typed": 104,
+   "xss": 0,
+   "injected": false,
+   "heading": "4 warning signs to consider",
+   "resultStart": "4 warning signs to consider High risk: stop. Do not pay, share any code or install anything because of this message. Several warning signs agree Several differe",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "all caps shouting",
+   "chars": 88,
+   "ms": 68,
+   "level": "high",
+   "coverage": false,
+   "typed": 88,
+   "xss": 0,
+   "injected": false,
+   "heading": "3 warning signs to consider",
+   "resultStart": "3 warning signs to consider High risk: stop. Do not pay, share any code or install anything because of this message. Several warning signs agree Several differe",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "markdown and forwarded header",
+   "chars": 108,
+   "ms": 57,
+   "level": "caution",
+   "coverage": false,
+   "typed": 108,
+   "xss": 0,
+   "injected": false,
+   "heading": "1 warning sign to consider",
+   "resultStart": "1 warning sign to consider Caution: check independently before you act on this message. Limited evidence: one warning sign One known sign was found. It may be e",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "legit long bank SMS",
+   "chars": 165,
+   "ms": 74,
+   "level": "none",
+   "coverage": false,
+   "typed": 165,
+   "xss": 0,
+   "injected": false,
+   "heading": "No listed warning signs found",
+   "resultStart": "No listed warning signs found No known warning signs found. This does not mean it is safe. Insufficient evidence — not a safety result The model found no known ",
+   "sideways": false,
+   "newErrors": []
+  },
+  {
+   "name": "double tap Check",
+   "verdictElements": 1
+  },
+  {
+   "name": "browser Back after a check",
+   "url": "http://127.0.0.1:53064/",
+   "home": true,
+   "visible": [
+    "home"
+   ]
+  },
+  {
+   "name": "emergency: fill with empty story",
+   "status": "पहले कुछ शब्द लिखें।"
+  },
+  {
+   "name": "emergency: 1,700-char story where the payment is at the end",
+   "typed": 1701,
+   "of": 1701,
+   "situations": [
+    "paid"
+   ],
+   "status": "हमने भरा: मैंने पैसे भेजे या भुगतान किया। नीचे जवाब जाँचें और जो गलत हो उसे बदलें।"
+  },
+  {
+   "name": "dialogs opened by pasted text",
+   "dialogs": []
+  },
+  {
+   "name": "all page errors",
+   "errors": []
+  }
+ ]
+}

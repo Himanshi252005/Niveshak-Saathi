@@ -20,3 +20,7 @@ The scorer prints aggregate metrics and never prints message text. The published
 **Limits:**
 - The sets are synthetic, each has one annotator, and they use a designed class mix. They do not estimate real-world prevalence or prove real-world accuracy.
 - Once a result has been inspected and used to change the model, the set is development data rather than blind evidence. Both sets are now development data.
+
+## 100-user real-world test
+
+`real-world-test/` holds the 100 fictional users, the stress inputs and the scripts that run them in the real app and score the results. See `real-world-test/README.md`.

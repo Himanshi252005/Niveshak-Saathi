@@ -49,7 +49,7 @@ The product gives no stock tips, predictions, broker promotions, ads or upsells.
 - 1,229 automated checks across 20 release suites plus the developer-case regression;
 - 130/130 browser checks in each of three runs;
 - 449/449 developer regression expectations;
-- **100-user real-world test:** realistic users written blind by separate agents, plus 15 stress inputs. 92 users fully right, 8 partly right, 0 wrong (Release 3.2: 83, 9 and 8). See [`docs/REAL-WORLD-USER-TEST.md`](docs/REAL-WORLD-USER-TEST.md);
+- **100-user real-world test:** realistic users written blind by separate agents, plus 15 stress inputs. 92 users fully right, 8 partly right, 0 wrong (Release 3.2: 83, 9 and 8). See [`docs/REAL-WORLD-USER-TEST.md`](docs/REAL-WORLD-USER-TEST.md). The test kit is in [`evaluation/real-world-test/`](evaluation/real-world-test/), so anyone can run it again;
 - **fresh sealed set for Release 3.3** (120 messages written blind, including everyday scams and 38 tricky look-alikes; scored once):
   - checker 3.3 warned on 87.1% of fraud or suspicious messages (checker 3.2: 84.3%);
   - it warned on 24% of ordinary messages (3.2: 30%), and put 18% at High (3.2: 24%);
@@ -68,6 +68,7 @@ These are engineering results on synthetic data, not proof of nationwide capacit
 | [`docs/REAL-WORLD-USER-TEST.md`](docs/REAL-WORLD-USER-TEST.md) | 100-user test, what it found and the Release 3.3 fixes |
 | [`docs/SCALE-AND-RELIABILITY.md`](docs/SCALE-AND-RELIABILITY.md) | National-scale and AI/ML reliability plan |
 | [`evidence/`](evidence/) | Machine-readable verification records |
+| [`evaluation/`](evaluation/) | Sealed message sets with their scorer, and the 100-user real-world test kit |
 | [`release/`](release/) | Portable release archive |
 
 Use fictional information in demonstrations. Do not call a helpline or submit a complaint merely to test the prototype.

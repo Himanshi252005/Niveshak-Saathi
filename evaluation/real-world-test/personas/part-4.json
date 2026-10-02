@@ -1,0 +1,287 @@
+[
+  {
+    "id": "P076",
+    "persona": "34-year-old medical store owner in Bareilly, UP, who uses PhonePe daily but has never invested before and sent money to a WhatsApp stock-tips group this morning.",
+    "device": { "width": 360, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "bhai jaldi batao kya karu whatsapp pe kisi ne mujhe ek stock tips group me add kiya tha roj profit ke screenshot dalte the bole IPO me pakka allotment milega institutional account se. aaj subah maine phonepe se unki di hui upi id pe 50000 bheja fir 25000 aur bheja ab bol rahe profit 2.4 lakh ho gaya par nikalne se pehle 20% tax bharo. admin baar baar call kar rha h bol rha aaj nahi bhara to sab paisa dub jayega" },
+    "truth": { "situations": ["paid"], "ongoing": "yes", "channel": "upi", "when": "today" },
+    "why": "Classic WhatsApp trading-group fraud paid by UPI this morning with the admin still pushing a fake tax, so the plan should lead with 1930 and say clearly not to pay anything more."
+  },
+  {
+    "id": "P077",
+    "persona": "52-year-old government school clerk in Satna, MP, Hindi-only and nervous with phones, who read out an OTP to a fake bank credit-card caller ten minutes ago.",
+    "device": { "width": 384, "height": 854, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "abhi 10 min pehle call aaya bola bank ke credit card dept se bol raha hu aapke 4800 reward point aaj raat expire ho jayenge redeem karne ke liye otp aayega wo batao maine otp 482913 bata diya. abhi tak koi paisa nahi kata koi debit ka msg nhi aaya par wo dobara call kar raha h ek aur otp mang raha. card block karu kya pehle kya karna h" },
+    "truth": { "situations": ["shared"], "ongoing": "yes", "channel": null, "when": "today" },
+    "why": "OTP already shared with a fake bank caller who is still calling but no money has moved, so 'paid' must stay unticked and the plan should put blocking the card and refusing more OTPs first."
+  },
+  {
+    "id": "P078",
+    "persona": "47-year-old tailoring shop owner in Nagpur who reads Hindi better than English and installed AnyDesk on a fake electricity-office caller's instructions, losing money from her account this afternoon.",
+    "device": { "width": 360, "height": 740, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "light bill ka msg aya tha ki aaj raat 9.30 baje bijli kat jayegi is no pe call karo. maine call kiya to usne bola bill update nhi hua play store se anydesk app dalo maine dala aur usko code bata diya fir bola net banking kholo 10 rs bharo. aaj dopahar 2 baar me 49000 aur 49000 nikal gaye mere khate se. anydesk abhi bhi phone me hai aur wo aadmi abhi bhi call kar rha hai uthau kya" },
+    "truth": { "situations": ["clicked", "shared", "paid"], "ongoing": "yes", "channel": "bank", "when": "today" },
+    "why": "Remote-access app installed and its code shared, then net-banking debits today with the app still on the phone, so removing access and calling the bank and 1930 must come first."
+  },
+  {
+    "id": "P079",
+    "persona": "23-year-old B.Com final-year student in Indore, comfortable in English, who typed her debit card details and the OTP into a fake India Post redelivery page this evening.",
+    "device": { "width": 412, "height": 860, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "emergency",
+    "input": { "story": "got sms from india post that my parcel is on hold due to incomplete address and pay rs 25 redelivery fee. i opened the link and entered my debit card number, expiry, cvv and then the otp also on that page. today evening 2 debits came 9999 and 4999 from my card and no parcel nothing. what do i do first plz help" },
+    "truth": { "situations": ["clicked", "shared", "paid"], "ongoing": null, "channel": "card", "when": "today" },
+    "why": "Card details and the OTP were typed into a fake delivery-fee page and the card was debited today, testing card-channel detection and that entering an OTP on a page counts as sharing it."
+  },
+  {
+    "id": "P080",
+    "persona": "68-year-old retired Hindi teacher in Ajmer with weak eyesight who voice-types and tapped a fake KYC link yesterday evening but closed it without entering anything.",
+    "device": { "width": 360, "height": 800, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "मेरे फोन पर मैसेज आया था कि आपका केवाईसी अपडेट नहीं है आज खाता बंद हो जाएगा नीचे लिंक पर क्लिक करें मैंने गलती से लिंक दबा दिया एक पेज खुला उसमें बैंक का नाम लिखा था लेकिन मैंने कुछ नहीं भरा ना ओटीपी दिया ना पैसे भेजे तुरंत बंद कर दिया यह कल शाम की बात है उसके बाद कोई फोन या मैसेज नहीं आया फिर भी डर लग रहा है क्या करूं" },
+    "truth": { "situations": ["clicked"], "ongoing": "no", "channel": null, "when": "earlier" },
+    "why": "Only a KYC link was clicked, with voice-typed Devanagari negations for OTP and money and 'आज' appearing only inside the scam message, so the app must not tick shared or paid and should mark the incident as earlier."
+  },
+  {
+    "id": "P081",
+    "persona": "41-year-old government primary school teacher in Gorakhpur who got a WhatsApp video call today from a fake police officer threatening digital arrest and has paid nothing.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "aaj dopahar whatsapp pe video call aya ek admi police ki vardi me tha piche thana jaisa dikh rha tha bola aapke aadhar se mumbai me ek parcel pakda gaya hai drugs aur fake passport wala aap digital arrest me ho kisi ko batana mat. maine koi paisa nahi bheja na koi otp ya detail di bas phone kaat diya. ab wo alag alag number se baar baar call kar rahe h bol rahe 2 ghante me arrest warrant ghar aa jayega bahut dar lag rha h" },
+    "truth": { "situations": ["received"], "ongoing": "yes", "channel": null, "when": "today" },
+    "why": "A digital-arrest threat where she only received calls and explicitly paid and shared nothing while the callers keep trying, so only 'received' should be ticked with ongoing 'yes' and the plan should calm her without assuming money loss."
+  },
+  {
+    "id": "P082",
+    "persona": "38-year-old diploma engineer at a chemical plant in Vapi, Gujarat, who prefers English and paid a withdrawal fee by IMPS last week to a trading app a Facebook contact pushed.",
+    "device": { "width": 412, "height": 846, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "emergency",
+    "input": { "story": "I installed a trading app from link sent by a fb friend, it shows my profit 8.6 lakh. When i tried withdraw they said first pay 10% withdrawl fee, i paid 86000 by IMPS from my bank acount last week thursday. still no money came and now there customer support on telegram asking 18% GST also before release. they msg me everyday. is it fraud?? i didnt pay the gst yet" },
+    "truth": { "situations": ["clicked", "paid"], "ongoing": "yes", "channel": "bank", "when": "earlier" },
+    "why": "A withdrawal-fee trap paid by IMPS last week with the scammers still demanding GST, testing 'earlier' timing, the bank-transfer channel, and that 'didnt pay the gst yet' does not erase the earlier payment."
+  },
+  {
+    "id": "P083",
+    "persona": "74-year-old retired farmer from a village near Sikar, Rajasthan, using large text and voice typing, whose son paid a fake insurance-bonus file charge from his account two days ago.",
+    "device": { "width": 320, "height": 640, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "मेरी बीमा पॉलिसी का बोनस निकलवाने के लिए फोन आया था बोले फाइल चार्ज पहले जमा करो तो मेरे बेटे ने मेरे खाते से गूगल पे से ₹१२५०० भेज दिए परसों मैंने खुद कुछ नहीं भेजा मुझे तो बाद में पता चला अब वो लोग फिर से फोन करके ₹२८००० और मांग रहे हैं कह रहे हैं तभी बोनस के ४ लाख आएंगे" },
+    "truth": { "situations": ["paid"], "ongoing": "yes", "channel": "upi", "when": "earlier" },
+    "why": "The son paid by Google Pay from the father's account two days ago, written with Devanagari digits and 'मैंने खुद कुछ नहीं भेजा', so the app must still treat it as a UPI payment and flag the ongoing demand for more."
+  },
+  {
+    "id": "P084",
+    "persona": "19-year-old BCA student in Ranchi who answered an Instagram work-from-home ad today, paid a fee from his MobiKwik wallet and then gave away the wallet OTP.",
+    "device": { "width": 384, "height": 832, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "insta pe ad aya tha ghar baithe 800 rs roj kamao maine link khola aur form bhara fir unhone bola 499 registration fee do maine mobikwik wallet se de diya. fir bole wallet verify karna h otp batao maine bata diya aur wallet se 3000 aur kat gaye aaj hi. ab telegram group se bhi nikal diya. pata nahi abhi bhi mera wallet unke paas khula h ya nahi" },
+    "truth": { "situations": ["clicked", "shared", "paid"], "ongoing": "unsure", "channel": "wallet", "when": "today" },
+    "why": "Mixed case of a clicked link, a wallet payment and a shared OTP with explicit doubt about continuing access, testing wallet-channel detection and the 'unsure' option."
+  },
+  {
+    "id": "P085",
+    "persona": "55-year-old auto-rickshaw driver in Kanpur with very basic phone skills who only got a fake TRAI SIM-block call and wants to know if his savings are safe.",
+    "device": { "width": 360, "height": 720, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "maine kuch nahi kiya bas call aaya tha ki TRAI se bol rahe aapka sim 2 ghante me band ho jayega 9 dabao. maine kuch nahi dabaya kaat diya. mere khate me bachat ke paise hai unko koi khatra to nahi" },
+    "truth": { "situations": ["received"], "ongoing": null, "channel": null, "when": null },
+    "why": "The exact phrasing 'maine kuch nahi kiya bas call aaya tha' with no time or follow-up given, so only 'received' should be pre-filled, everything else left blank, and the plan kept short and calm."
+  },
+  {
+    "id": "P086",
+    "persona": "80-year-old widow in Varanasi on a family pension, using her grandson's old tablet with large text, who told OTPs to a fake pension-office caller and has only now found money missing.",
+    "device": { "width": 768, "height": 1024, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "पेंशन ऑफिस से फोन आया था बोले जीवन प्रमाण पत्र ऑनलाइन करना है वरना पेंशन रुक जाएगी फिर बोले मोबाइल पर नंबर आएगा वो बताओ मैंने दो बार ओटीपी बता दिया आज पोते ने पासबुक चढ़वाई तो ₹४९९९९ कम है पता नहीं कैसे कटे और कब की बात है वो भी ठीक से याद नहीं" },
+    "truth": { "situations": ["shared", "paid"], "ongoing": null, "channel": "unsure", "when": "unsure" },
+    "why": "She told OTPs to a caller and money has left her account but she does not know how or when, testing 'unsure' for both channel and timing even though 'आज' appears for the passbook update."
+  },
+  {
+    "id": "P087",
+    "persona": "31-year-old homemaker in Ludhiana who uses English menus and today installed a remote-access app for a fake refund agent, reading out its code but refusing the OTP.",
+    "device": { "width": 412, "height": 780, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "emergency",
+    "input": { "story": "returned a kurta online and refund not came so today i called the number from google, the agent said download Rust Desk app to process refund fast. i downloaded and told him the 9 digit code on screen and he could see my phone. then he asked otp i said no OTP nahi diya and no money gone till now. but the app is still on phone and he is calling again and again saying refund will fail. help" },
+    "truth": { "situations": ["clicked", "shared"], "ongoing": "yes", "channel": null, "when": "today" },
+    "why": "Screen access was shared through a remote-access app even though 'OTP nahi diya' and no money left, so the app must tick clicked and shared but not paid and urge removing the app now."
+  },
+  {
+    "id": "P088",
+    "persona": "58-year-old kirana shop owner in Bhagalpur, Bihar, who handed cash to a local double-money scheme agent last year and found the office locked today.",
+    "device": { "width": 360, "height": 640, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "emergency",
+    "input": { "story": "pichle saal march me ek agent aya tha bola company sebi se registered hai 3 saal me paisa double. maine २ lakh nagad diya usne raseed bhi di thi. aaj office gaya to tala laga h board bhi utar gaya. agent ka phone band h ab koi call nahi aata na koi paise mangta. mera paisa kaise milega" },
+    "truth": { "situations": ["paid"], "ongoing": "no", "channel": "cash", "when": "earlier" },
+    "why": "Cash was handed to a local ponzi agent last year and nobody is in touch now, testing the cash channel, 'earlier' timing despite 'aaj', and a plan that points to the police rather than only an online report."
+  },
+  {
+    "id": "P089",
+    "persona": "44-year-old insurance agent in Bilaspur, Chhattisgarh, drafting a complaint to his bank after a fake caller used his OTP, who pastes everything including the OTP in Devanagari digits.",
+    "device": { "width": 360, "height": 760, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "draft",
+    "input": {
+      "summary": "20 sitambar ko call aya ki aapka debit card band ho raha hai maine galti se otp ४८२९१३ bata diya uske baad mere khata no 000012345678 se 40000 rs kat gaye statement me refund.help@ybl likha aa raha. maine usi din 1930 pe complain ki aur branch me bhi likh ke diya par bank bol raha hai aapki galti hai. mera mobile 98765 43210 hai",
+      "outcome": "mere 40000 rs wapas chahiye aur bank ye fraud transaction reverse kare",
+      "entity": "XYZ Bank Bilaspur main branch",
+      "when": "2026-09"
+    },
+    "truth": { "secrets": ["४८२९१३"], "otherPrivate": ["account", "upi", "phone"] },
+    "why": "An OTP written in Devanagari digits sits next to an account number, a UPI ID and a phone number, so saving must stay blocked until the OTP is removed and masking should be offered for the rest."
+  },
+  {
+    "id": "P090",
+    "persona": "36-year-old private-school accounts teacher in Kolhapur on her husband's desktop, complaining that her broker's dealer took an OTP over the phone and traded without her consent.",
+    "device": { "width": 1280, "height": 800, "mobile": false, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "draft",
+    "input": {
+      "summary": "On 12 aug dealer from ABC Share Broking called and said my account will be blocked due to KYC, he asked otp and i told him otp 4 8 2 9 1 3 on phone. next day all my shares were sold and ledger shows 1.8 lakh loss in F&O trades i never did. my PAN ABCDE1234F and email sunita.k.test@example.com are registered with them. i mailed the broker 3 times no proper reply",
+      "outcome": "Reverse the unauthorised trades, give back my shares or the full loss and take action on the dealer",
+      "entity": "ABC Share Broking Pvt Ltd",
+      "when": "2026-08"
+    },
+    "truth": { "secrets": ["4 8 2 9 1 3"], "otherPrivate": ["pan", "email"] },
+    "why": "An OTP typed with spaces between the digits next to a PAN and an email tests that spaced-out OTPs are still caught and saving is blocked."
+  },
+  {
+    "id": "P091",
+    "persona": "63-year-old retired district-court peon in Rewari, Haryana, who types slowly with large text, complaining that his ATM card was swapped and cash withdrawn.",
+    "device": { "width": 320, "height": 660, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "draft",
+    "input": {
+      "summary": "atm me paise nikal raha tha ek ladka bola uncle mai madad karta hu usne card dala aur mera pin 1234 tha wo usne dekh liya fir card wapas diya par wo mera card nahi tha. ghar aake msg dekha 3 baar me 30000 nikal gaye. mera khata 000011112222 hai aadhar 1234 5678 9012. bank wale bolte hai pin aapki galti se gaya hum kuch nahi kar sakte",
+      "outcome": "mera 30000 wapas mile aur atm ka cctv dekh ke us ladke ko pakda jaye",
+      "entity": "ABC Gramin Bank ATM bus stand Rewari",
+      "when": "2026-07"
+    },
+    "truth": { "secrets": ["1234"], "otherPrivate": ["account", "aadhaar"] },
+    "why": "An ATM PIN given as 'mera pin 1234 tha' plus an account number and an Aadhaar that also begins with 1234 tests that the PIN blocks saving and both IDs are offered for masking."
+  },
+  {
+    "id": "P092",
+    "persona": "27-year-old pharma sales executive in Lucknow disputing foreign card charges who carelessly pastes his full card number and CVV into the complaint.",
+    "device": { "width": 412, "height": 820, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "draft",
+    "input": {
+      "summary": "My credit card 4111 1111 1111 1111 exp 09/29 cvv 123 got 4 international transactions in USD on 3 sept night total around 62000 rs which i never did. card was with me only in my wallet. I called customer care and blocked it, they gave complaint no but no reversal yet. contact me on 90000 12345 or rahul.test@example.com",
+      "outcome": "Reverse all 4 fraud transactions and waive the interest and late fee",
+      "entity": "XYZ Bank Credit Card division",
+      "when": "2026-09"
+    },
+    "truth": { "secrets": ["4111 1111 1111 1111", "123"], "otherPrivate": ["phone", "email"] },
+    "why": "A full card number and CVV pasted into a card dispute must block saving, while the phone and email should only be offered for masking."
+  },
+  {
+    "id": "P093",
+    "persona": "60-year-old retired bank cashier in Jabalpur who let a mutual fund distributor use his online login and now complains about an unauthorised switch, writing out the password he shared.",
+    "device": { "width": 384, "height": 800, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "draft",
+    "input": {
+      "summary": "maine apne MF account ka login password Pinku@1990 distributor ko diya tha taki wo SIP dekh le. june me usne bina puche mere 3.5 lakh ke units switch karke ek high risk scheme me daal diye ab usme 70000 ka ghata hai. mera PAN ABCDE1234F aur mobile 90000 10001 hai. AMC ko mail kiya to bole apne distributor se baat karo wo phone nahi uthata",
+      "outcome": "switch wala transaction cancel ho mera nuksan bharpai ho aur distributor pe action ho",
+      "entity": "ABC Investments (mera MF distributor) aur AMC",
+      "when": "2026-06"
+    },
+    "truth": { "secrets": ["Pinku@1990"], "otherPrivate": ["pan", "phone"] },
+    "why": "A login password written in plain words next to a PAN and a phone number tests keyword-based password detection and that saving is blocked until it is removed."
+  },
+  {
+    "id": "P094",
+    "persona": "33-year-old software tester in Hubballi, Karnataka, typing on a desktop for his 66-year-old father who was sold a ULIP as a fixed deposit.",
+    "device": { "width": 1280, "height": 800, "mobile": false, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "draft",
+    "input": {
+      "summary": "My father went to bank to renew his FD of 5 lakh and the RM made him sign papers saying its a better FD with 8% guaranteed. it was actually a ULIP insurance policy with 5 lakh premium every year for 10 years. he is 66 and has no income now. his account no 000012345678 aadhar 1234 5678 9012 and mobile 98765 43210 are on the form. we came to know only in august 2026 when 2nd year premium was asked",
+      "outcome": "Cancel the policy and refund the full 5 lakh premium with interest",
+      "entity": "PQR Life Insurance, policy sold by XYZ Bank branch RM",
+      "when": "2025-08"
+    },
+    "truth": { "secrets": [], "otherPrivate": ["account", "aadhaar", "phone"] },
+    "why": "No secrets at all, only account, Aadhaar and phone details, so saving must be allowed with a masking offer, checking that the app does not over-block an honest complaint."
+  },
+  {
+    "id": "P095",
+    "persona": "49-year-old ASHA worker from a village near Sitapur, UP, who types in Devanagari and wants her matured recurring deposit back from a local Nidhi company.",
+    "device": { "width": 360, "height": 740, "mobile": true, "largeText": false },
+    "uiLanguage": "hi",
+    "journey": "draft",
+    "input": {
+      "summary": "मैंने ABC निधि लिमिटेड में 5 साल तक हर महीने 1000 की आरडी जमा की थी मई 2026 में मैच्योरिटी थी 72000 मिलने थे ब्रांच वाले 4 महीने से आज कल कर रहे हैं अब मैनेजर फोन भी नहीं उठाता पासबुक में मेरा मोबाइल ९८७६५ ४३२१० आधार 1234 5678 9012 और पैन ABCDE1234F लिखा है गांव की और 20 औरतों का भी पैसा फंसा है",
+      "outcome": "मेरी मैच्योरिटी का पूरा पैसा ब्याज के साथ मिले",
+      "entity": "ABC निधि लिमिटेड सीतापुर शाखा",
+      "when": "2026-05"
+    },
+    "truth": { "secrets": [], "otherPrivate": ["phone", "aadhaar", "pan"] },
+    "why": "A Devanagari complaint with a phone number in Devanagari digits plus Aadhaar and PAN but no secrets tests that masking still detects non-ASCII digits without blocking the save."
+  },
+  {
+    "id": "P096",
+    "persona": "61-year-old retired central government clerk in Dehradun with weak eyesight whose NPS exit lump sum has not arrived three months after retirement.",
+    "device": { "width": 360, "height": 700, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "route",
+    "input": { "issue": "pension", "problem": "june me retire hua NPS ka 60% wala paisa abhi tak khate me nahi aaya office wale bolte hai CRA me pending h kaha shikayat karu" },
+    "truth": { "mustInclude": ["PFRDA / NPS"] },
+    "why": "An NPS exit-payment delay should route to the NPS grievance system and PFRDA, not to SEBI or the RBI Ombudsman."
+  },
+  {
+    "id": "P097",
+    "persona": "66-year-old retired textile mill supervisor in Surat, on his daughter's tablet with large text, whose 1990s physical shares were moved to a government fund over unclaimed dividends.",
+    "device": { "width": 768, "height": 1024, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "route",
+    "input": { "issue": "unclaimed", "problem": "1994 ke share certificate mere naam ke hai company wale bole 7 saal se dividend nahi uthaya isliye share aur dividend sarkar ke kisi fund me chale gaye ab wapas kaise milenge" },
+    "truth": { "mustInclude": ["IEPF"] },
+    "why": "Shares already moved to the government fund for unclaimed dividends can only be recovered through an IEPF claim, so the answer must name IEPF even though the user does not."
+  },
+  {
+    "id": "P098",
+    "persona": "65-year-old widow in Prayagraj with little phone experience whose late husband held physical share certificates of two listed companies without a nominee.",
+    "device": { "width": 360, "height": 780, "mobile": true, "largeText": true },
+    "uiLanguage": "hi",
+    "journey": "route",
+    "input": { "issue": "transmission", "problem": "pati ka dehant ho gaya unke naam pe 2 company ke kagaz wale share hai nominee nahi tha ab mere naam kaise honge kaha jau" },
+    "truth": { "mustInclude": ["the company's RTA first", "SEBI SCORES"] },
+    "why": "Transmission of physical shares after a death starts with the company's RTA, with SEBI SCORES as the escalation if the RTA does not act."
+  },
+  {
+    "id": "P099",
+    "persona": "29-year-old gym trainer in Jalandhar, using English, whose mother's health insurance claim was rejected for non-disclosure and whose insurer has not replied for a month.",
+    "device": { "width": 412, "height": 860, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "route",
+    "input": { "issue": "insurance", "problem": "moms hospital claim of 1.2 lakh rejected saying pre existing disease not disclosed but we told the agent everything, insurer grievance mail no reply since 1 month" },
+    "truth": { "mustInclude": ["Bima Bharosa / Insurance Ombudsman"] },
+    "why": "A rejected health claim with no reply from the insurer's grievance cell should route to IRDAI Bima Bharosa and then the Insurance Ombudsman, not to SEBI or 1930."
+  },
+  {
+    "id": "P100",
+    "persona": "24-year-old engineering graduate preparing for exams in Kota whose broker has not refunded his ledger balance after he closed his account.",
+    "device": { "width": 384, "height": 840, "mobile": true, "largeText": false },
+    "uiLanguage": "en",
+    "journey": "route",
+    "input": { "issue": "broker", "problem": "closed my trading and demat account in july but broker still not returned 23,400 ledger balance, support tickets getting closed without answer" },
+    "truth": { "mustInclude": ["SEBI SCORES", "SMART ODR"] },
+    "why": "An unresolved broker refund after complaining to the broker must point to SEBI SCORES, with SMART ODR as the next escalation."
+  }
+]

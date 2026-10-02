@@ -104,4 +104,8 @@ Every ordinary message that was flagged was a tricky look-alike. The biggest rem
 - **Sharing a message into the app:** a WhatsApp "Share to Niveshak Saathi" option would remove copy-paste. It needs an installable app, which is the owner's decision.
 - **Real people:** a consented pilot and a native Hindi review are still the next evidence milestone.
 
-The test kit (the 100 users, the runner and the scorer) is kept in the local project folder and is not published.
+## Test kit
+
+The 100 users, the stress inputs, the runner and the scorer are in `evaluation/real-world-test/`, so anyone can run the test again. The per-user results for Release 3.3 are in `evidence/Real-World-User-Test.json`.
+
+Before publishing, three details in scam messages that could have belonged to real people were replaced with made-up ones: a research-analyst registration number and two UPI IDs. All 100 results stayed the same.
