@@ -4,7 +4,11 @@
 
 Niveshak Saathi helps a person pause before paying, recognise common scam patterns, take the right first steps after financial fraud, find the correct grievance route, prepare a private complaint packet, and organise family investment information. It is designed for Tier-2 and Tier-3 users, works as a single offline HTML file, and does not upload the user's message.
 
-> **Release 3.2 status:** the prototype has been built and verified locally. Real-user impact, native-speaker review, physical low-end phone testing, and screen-reader conformance still need to be measured.
+## Live demo
+
+**[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)**
+
+The demo is public and can be opened by anyone with the link. The same verified prototype also works offline. Real-user impact, native-speaker review, physical low-end phone testing, and screen-reader conformance still need to be measured.
 
 ## Try the prototype
 
@@ -14,7 +18,7 @@ Niveshak Saathi helps a person pause before paying, recognise common scam patter
 
 No installation, account, server, API key, or network connection is required for the core tools. Official reporting links need internet access.
 
-For a portable submission copy, download [`release/Niveshak-Saathi-v3.2.zip`](release/Niveshak-Saathi-v3.2.zip).
+For a portable submission copy, download [`release/Niveshak-Saathi.zip`](release/Niveshak-Saathi.zip).
 
 ## What it includes
 
@@ -35,12 +39,12 @@ The checker is a limited warning system. **“No known signs” never means an o
 
 ## Evidence
 
-Release 3.2 has:
+Current prototype evidence:
 
 - 1,175 automated checks across content rules, routes, privacy guards, owner controls, browser journeys, accessibility-related layout checks, and feature flows;
 - 130 browser checks passing in each of three runs;
 - 435/435 developer regression expectations passing;
-- a sealed synthetic evaluation of 320 messages where v3.2 warned on 72.4% of fraud or suspicious messages and 8.6% of ordinary messages; 7% of ordinary messages received the High verdict.
+- a sealed synthetic evaluation of 320 messages where the current model warned on 72.4% of fraud or suspicious messages and 8.6% of ordinary messages; 7% of ordinary messages received the High verdict.
 
 These are engineering results on synthetic data, not proof of real-world fraud accuracy or prevented loss. See [`docs/Validation-v3.md`](docs/Validation-v3.md) and the machine-readable files in [`evidence/`](evidence/).
 

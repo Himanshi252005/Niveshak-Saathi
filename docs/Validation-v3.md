@@ -63,4 +63,4 @@
 - screen-reader conformance;
 - accuracy on real (non-synthetic) messages.
 
-No complaint was filed and no helpline was called. Release 3.2 has been prepared but not published.
+No complaint was filed and no helpline was called. The exact verified build is publicly deployed at [niveshak-saathi-safety.himanshirathore25102.chatgpt.site](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site).

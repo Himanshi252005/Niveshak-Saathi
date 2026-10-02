@@ -7,7 +7,7 @@
 
 **Status:**
 - Tested browser prototype and downloadable offline HTML.
-- Release 3.2 has been prepared and verified locally. It has not been published; the hosted site still runs version 2 (see `Delivery-Status.md`).
+- The verified prototype is publicly available at [niveshak-saathi-safety.himanshirathore25102.chatgpt.site](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site); see `Delivery-Status.md`.
 - No real-user impact study has been conducted.
 - This is an independent educational product, not affiliated with SEBI, RBI, IRDAI, PFRDA, NPCI or any institution.
 

@@ -1,6 +1,6 @@
-# Niveshak Saathi: Release 3.2
+# Niveshak Saathi
 
-Open `dist/index.html` in a modern browser. No installation or build is required. The hosted version is private to its owner, and it still serves version 2 until a redeployment is recorded in `../docs/Delivery-Status.md`.
+**[Open the public live demo](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)**, or open `dist/index.html` in a modern browser. No installation or build is required.
 
 ## What it does
 
@@ -28,7 +28,7 @@ Run `node build.cjs` to validate the content and rebuild the self-contained `dis
 | File or folder | Role |
 |---|---|
 | `base.html` | The original page |
-| `engine.js` | The explainable message-check model (v3.2) |
+| `engine.js` | The current explainable message-check model |
 | `assist.js` | Understanding own words, "Before you pay" and return maths |
 | `upgrade.js`, `upgrade.css` | The interface |
 | `content/*.json` | Owner-editable, validated content |
@@ -40,7 +40,7 @@ Keep the same Site identity in `.openai/hosting.json`.
 ## Evidence
 
 - `evaluation-cases.json` holds developer-written regression cases (435/435 pass). They were used in development, so they are not an accuracy benchmark.
-- The independent results are in `../evidence/Blind-Evaluation.json`, from three sealed blind sets written by separate agents. On the third set, never used in development, the final model v3.2 warned on 72% of fraud or suspicious messages and on 9% of ordinary ones (7% at High). v2 warned on 35% and 24%.
+- The independent results are in `../evidence/Blind-Evaluation.json`, from three sealed blind sets written by separate agents. On the third set, never used in development, the current model warned on 72% of fraud or suspicious messages and on 9% of ordinary ones (7% at High). The original model warned on 35% and 24%.
 - The full evidence is in `../docs/Validation-v3.md`.
 
 ## Privacy and limits
