@@ -1,0 +1,967 @@
+{
+ "set": "blind-v6",
+ "note": "Written blind by a separate agent on 2 Oct 2026; fictional details only. Scored once on 2 Oct 2026 (see Blind-Evaluation-v6.json); development data afterwards.",
+ "items": [
+  {
+   "id": "S001",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "electricity-disconnection",
+   "text": "प्रिय उपभोक्ता, आपका बिजली कनेक्शन आज रात ९:३० बजे बिजली कार्यालय द्वारा काट दिया जाएगा क्योंकि आपका पिछले महीने का बिल अपडेट नहीं हुआ है। कृपया तुरंत हमारे बिजली अधिकारी से संपर्क करें 90000 14527 धन्यवाद"
+  },
+  {
+   "id": "S002",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "fd-offer",
+   "text": "नवभारत बैंक: अब 444 दिन की सावधि जमा (FD) पर पाएं 7.25% प्रति वर्ष की गारंटीड ब्याज दर, वरिष्ठ नागरिकों को 0.50% अतिरिक्त। FD नेटबैंकिंग, मोबाइल ऐप या नज़दीकी शाखा से खोलें। जमा राशि DICGC द्वारा ₹5 लाख तक बीमित। शर्तें लागू।"
+  },
+  {
+   "id": "S003",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "stock-tip-group",
+   "text": "🔥🔥 FREE JOIN 🔥🔥\nKuber Wealth VIP Club me aapka swagat hai 🙏\nDaily 2-3 jackpot stock tips, 100% accuracy\nPichle mahine members ne 300% profit kamaya 💰💰\nSEBI registered experts ki team, guaranteed 20% monthly return warna paisa wapas\nSirf aaj FREE entry, kal se ₹9,999 fees\nAbhi join karo 👉 bit.ly/KuberVIP26\nAdmin se baat karne ke liye WhatsApp karo 90000 18273"
+  },
+  {
+   "id": "S004",
+   "lang": "hinglish",
+   "label": "suspicious",
+   "hard": false,
+   "category": "inside-tip",
+   "text": "Arre sun, Sonu mama ka msg aaya hai family group pe – 'Shivganga Agrotech le lo, abhi ₹42 pe hai, unke office wale dost ne bataya hai next week bada govt order announce hoga, 2-3 guna ho jayega. Kisi ko batana mat.' Main 20 hazaar laga du kya? Tu kya bolta hai?"
+  },
+  {
+   "id": "S005",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "Beware of fraudsters! Messages offering guaranteed returns, stock tips or IPO allotment through WhatsApp/Telegram groups or unknown trading apps are a trap. SEBI registered intermediaries never promise assured returns. Do not click unknown links or share OTP. Verify registration on sebi.gov.in. Report cyber fraud at 1930. -SEBI"
+  },
+  {
+   "id": "S006",
+   "lang": "en",
+   "label": "fraud",
+   "hard": true,
+   "category": "courier-redelivery",
+   "text": "IndiaPost: The package has arrived at the warehouse but cannot be delivered due to incomplete address information. Please update your address within 24 hours otherwise the package will be returned. https://indiapost.redelivery-in.top/IN\n(Please reply Y, then exit the SMS and reopen it to activate the link)"
+  },
+  {
+   "id": "S007",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "otp-sms",
+   "text": "482913 is the OTP for your transaction of INR 1,249.00 at FLIPMART ONLINE on Navbharat Bank Credit Card XX1234. Valid for 10 mins. Do NOT share this OTP with anyone. If not initiated by you, call the number on the back of your card. -Navbharat Bank"
+  },
+  {
+   "id": "S008",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "task-scam",
+   "text": "Hello 😊 Main Riya hu, StarReach Digital Marketing se. Hum part time / full time staff hire kar rahe hai. Aapko sirf YouTube videos LIKE karne hai aur screenshot bhejna hai. 1 like = ₹50 💸 Daily ₹2,000 se ₹8,000 aaram se kama sakte ho ghar baithe mobile se. Koi fees nahi. Interested ho to reply karo 'YES', aapko Telegram pe hamari receptionist se connect karenge 👍"
+  },
+  {
+   "id": "S009",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "bill-receipt",
+   "text": "प्रिय उपभोक्ता, आपके बिजली खाता संख्या XXXXXX5678 के लिए ₹1,342.00 का भुगतान दिनांक 30-09-2026 को प्राप्त हुआ। लेन-देन संदर्भ: UP26093011245। धन्यवाद। - सोनभद्र विद्युत वितरण निगम"
+  },
+  {
+   "id": "S010",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "fake-ipo-allotment",
+   "text": "🎉 बधाई हो! 🎉\nआपको 'Vyomtex Infra Ltd' के IPO में संस्थागत कोटे (QIB) से 6,000 शेयर @ ₹118 अलॉट हुए हैं। कुल राशि ₹7,08,000 है।\nकृपया 24 घंटे के अंदर राशि जमा करें, अन्यथा SEBI नियमों के अनुसार आपके खाते पर 'उल्लंघन शुल्क' लगेगा और ट्रेडिंग खाता फ्रीज़ कर दिया जाएगा।\nभुगतान केवल ऐप की कस्टमर सर्विस द्वारा दिए गए खाते में ही करें। लिस्टिंग पर 80-120% मुनाफ़ा पक्का है।\n- AlphaVest Pro ग्राहक सेवा"
+  },
+  {
+   "id": "S011",
+   "lang": "en",
+   "label": "suspicious",
+   "hard": false,
+   "category": "bond-platform",
+   "text": "Tired of 7% FDs? 😴 Earn 13–16% fixed returns with BondKart! Invest in high-yield corporate bonds & invoice discounting deals from just ₹10,000. Monthly payouts, 1-click investing, 25,000+ happy investors. Limited deals closing tonight ⏳ Download the app: bondkart-invest.app/get"
+  },
+  {
+   "id": "S012",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": false,
+   "category": "family-chat",
+   "text": "Papa maine aapke naam se Post Office mein Senior Citizen Savings Scheme khulwa diya, 5 saal ka hai, interest har quarter seedha aapke savings account mein aayega. Passbook aur receipt almirah mein rakh di hai. Aur koi bhi phone pe 'post office se bol raha hu' bole to kuch mat batana, main hi dekh lunga 🙏"
+  },
+  {
+   "id": "S013",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "lottery-prize",
+   "text": "*KBC लकी ड्रॉ 2026* 🎊\nबधाई हो! आपके मोबाइल नंबर ने ₹२५,००,००० (पच्चीस लाख) की लॉटरी जीती है।\nलॉटरी नंबर: 8890\nइनाम राशि पाने के लिए हमारे मैनेजर से केवल व्हाट्सएप कॉल करें: 90000 16634\nनोट: इनाम राशि आपके खाते में भेजने से पहले ₹12,500 GST और प्रोसेसिंग चार्ज जमा करना होगा। यह ऑफर सिर्फ 48 घंटे के लिए है। किसी को न बताएं वरना इनाम रद्द हो सकता है।"
+  },
+  {
+   "id": "S014",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "ipo-allotment",
+   "text": "Dear Investor, you have been allotted 38 equity shares of Meghdoot Packaging Ltd in its IPO against Application No. 2610XXXX1234. Shares will be credited to your demat account on or before 07-Oct-2026. Unblocking of excess amount, if any, will be done by your bank. -Shrestha Registrars Pvt Ltd"
+  },
+  {
+   "id": "S015",
+   "lang": "en",
+   "label": "fraud",
+   "hard": true,
+   "category": "sextortion",
+   "text": "Hello Sir, good evening. Sorry to disturb you. I am writing very respectfully. Our video call from last night was recorded and I have the full clip. I don't want to spoil your name in front of your family, office colleagues or on YouTube, because you seem like a good person. If you kindly send ₹21,000 to sakshi.demo@ybl today before 8 PM, I promise I will delete everything and never contact you again. Please don't block me, otherwise I will have no choice. Thank you for understanding 🙏"
+  },
+  {
+   "id": "S016",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "discom-outage",
+   "text": "प्रिय उपभोक्ता, 33/11 केवी उपकेंद्र सिविल लाइंस पर आवश्यक रखरखाव कार्य के कारण दिनांक 03-10-2026 को प्रातः 10:00 बजे से दोपहर 02:00 बजे तक सिविल लाइंस, रामनगर एवं आसपास के क्षेत्रों की बिजली आपूर्ति बाधित रहेगी। असुविधा के लिए खेद है। बिजली संबंधी शिकायत हेतु 1912 पर संपर्क करें। - विद्युत वितरण खंड-2"
+  },
+  {
+   "id": "S017",
+   "lang": "hi",
+   "label": "suspicious",
+   "hard": false,
+   "category": "influencer-course",
+   "text": "🚀 ऑप्शन ट्रेडिंग मास्टरक्लास – सिर्फ़ ₹4,999 (असली कीमत ₹19,999)\nमेरी 'जीरो लॉस' स्ट्रेटेजी से मेरे 12,000+ स्टूडेंट्स रोज़ ₹3,000–₹5,000 कमा रहे हैं 📈\n✅ लाइव ट्रेडिंग सेशन\n✅ लाइफटाइम प्राइवेट टेलीग्राम ग्रुप\n✅ 90% एक्यूरेसी इंडिकेटर फ्री\nसीटें सीमित, ऑफर आज रात 12 बजे तक। बायो में दिए लिंक से रजिस्टर करें।\n(यह कोर्स केवल शैक्षिक उद्देश्य से है)"
+  },
+  {
+   "id": "S018",
+   "lang": "en",
+   "label": "fraud",
+   "hard": false,
+   "category": "fake-sebi-notice",
+   "text": "SECURITIES AND EXCHANGE BOARD OF INDIA\nNOTICE No. SEBI/INV/2026/44817\nDear Investor, your trading account linked with PAN XXXXX1234X has been flagged for irregular high-frequency transactions under SEBI Act 1992. Your demat holdings will be FROZEN within 24 hours. To avoid freezing and legal action, pay the compliance penalty of Rs 49,500 to the SEBI escrow account (A/c XXXX7781, IFSC NVBK0XX0219) and send the receipt on WhatsApp to 90000 12290. After verification the amount will be refunded within 7 days.\nAuthorised Officer, SEBI Investigation Cell"
+  },
+  {
+   "id": "S019",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "re-kyc",
+   "text": "Navbharat Bank: Priya Grahak, aapke khate XX1234 ka periodic re-KYC due hai. Kripya apni nazdeeki shakha mein jaakar ya NetBanking/Mobile App ke 'Service Request' option se KYC update karein. Bank kabhi bhi SMS/WhatsApp link ya call par KYC details, OTP ya PIN nahi mangta."
+  },
+  {
+   "id": "S020",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "kyc-account-block",
+   "text": "प्रिय ग्राहक आपका नवभारत बैंक खाता आज रात 12 बजे ब्लॉक कर दिया जाएगा 🚫 कृपया अपना PAN कार्ड तुरंत अपडेट करें। यहाँ क्लिक करें: http://nvb-pan-update.co.in/kyc"
+  },
+  {
+   "id": "S021",
+   "lang": "en",
+   "label": "fraud",
+   "hard": false,
+   "category": "electricity-disconnection",
+   "text": "Dear Consumer, Your electricity power will be disconnected Tonight at 9.30pm from electricity office. Because your previous month bill was not update. Please immediately contact with our electricity officer 9000011873. Thank you"
+  },
+  {
+   "id": "S022",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "RBI कहता है 👉 कोई भी बैंक या RBI कभी भी कॉल, SMS या ईमेल से आपका OTP, PIN, CVV या पासवर्ड नहीं मांगता। KYC अपडेट के नाम पर आए अनजान लिंक पर क्लिक न करें और कोई ऐप डाउनलोड न करें। धोखाधड़ी होने पर तुरंत 1930 पर कॉल करें या cybercrime.gov.in पर शिकायत दर्ज करें। - भारतीय रिज़र्व बैंक"
+  },
+  {
+   "id": "S023",
+   "lang": "hi",
+   "label": "suspicious",
+   "hard": false,
+   "category": "inside-tip",
+   "text": "भाई साहब, आपके जीजाजी के ब्रोकर ने खास तौर पर बताया है — 'मंगलम पॉलीकेम' (₹18 वाला शेयर) में अगले महीने बोनस और स्प्लिट की खबर आने वाली है, अंदर की बात है। जीजाजी ने 2 लाख डाल दिए हैं। आप भी चाहें तो सोमवार सुबह खरीद लेना, पर किसी और को मत बताना 🤫"
+  },
+  {
+   "id": "S024",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "digital-arrest",
+   "text": "केंद्रीय अन्वेषण ब्यूरो (CBI) – गोपनीय नोटिस\nश्रीमान/श्रीमती, आपके आधार नंबर से जुड़े एक बैंक खाते का इस्तेमाल ₹6.8 करोड़ की मनी लॉन्ड्रिंग और मानव तस्करी केस (FIR No. 2026/CBI/MUM/1187) में हुआ है। आपके खिलाफ गिरफ्तारी वारंट जारी हो चुका है।\nजांच पूरी होने तक आपको 'डिजिटल अरेस्ट' में रखा जाता है। आपको हर समय वीडियो कॉल पर हमारे अधिकारी के सामने रहना होगा। यह मामला राष्ट्रीय सुरक्षा से जुड़ा है, इसलिए परिवार, दोस्तों या स्थानीय पुलिस को कुछ भी बताना कानूनन अपराध होगा।\nअपनी बेगुनाही साबित करने के लिए अपने सभी खातों की राशि RBI के 'सुरक्षित सत्यापन खाते' में ट्रांसफर करें (A/c XXXX4410)। जांच के बाद 24 घंटे में पूरी राशि लौटा दी जाएगी।\nसहयोग न करने पर 2 घंटे में स्थानीय पुलिस आपके घर पहुंचेगी।\nजांच अधिकारी, CBI मुंबई\nसंपर्क (केवल व्हाट्सऐप वीडियो कॉल): 90000 13308"
+  },
+  {
+   "id": "S025",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "fd-offer",
+   "text": "Pragati Bank: Lock in guaranteed returns! Our Tax Saver Fixed Deposit now offers 7.10% p.a. (7.60% for senior citizens) for 5 years, with tax benefit under Sec 80C (old regime). Deposits are insured by DICGC up to Rs 5 lakh per depositor. Open instantly via NetBanking or the Pragati Bank app. T&C apply."
+  },
+  {
+   "id": "S026",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "crypto-doubling",
+   "text": "💥 Paisa DOUBLE in 30 days 💥\n1 lakh lagao, 30 din mein 2 lakh pao 🤑\nHamara AI crypto robot USDT arbitrage karta hai, 0 risk, daily profit seedha wallet mein\nMinimum 5,000 se start, 3 log jodo to 10% extra commission\nAbhi tak 40,000+ log kama rahe hai, last date aaj raat 12 baje\nRegister 👉 cryptodouble-ai.vip/ref=8821\nPayment UPI: usdtdesk.demo@ybl"
+  },
+  {
+   "id": "S027",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "otp-sms",
+   "text": "४८२९१३ आपके नवभारत बैंक नेटबैंकिंग लॉगिन के लिए वन टाइम पासवर्ड (OTP) है, जो 5 मिनट तक मान्य है। बैंक कर्मचारी कभी OTP नहीं पूछते, इसे किसी के साथ साझा न करें। -नवभारत बैंक"
+  },
+  {
+   "id": "S028",
+   "lang": "hinglish",
+   "label": "suspicious",
+   "hard": false,
+   "category": "p2p-lending",
+   "text": "Sir, FD se zyada kamaiye! 📈 LendKaro P2P par 12-14% tak returns paiye, RBI registered NBFC-P2P platform. Minimum ₹5,000, kabhi bhi withdraw kar sakte hai, principal protection plan bhi available hai. Aaj join karne par ₹500 bonus. Link: lendkaro-p2p.in/join"
+  },
+  {
+   "id": "S029",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "loan-app-recovery",
+   "text": "Oye ROHIT tera loan 6,800 aaj due tha, abhi tak payment nahi aaya. 2 baje tak pura payment kar warna tere saare contacts ko tera photo 'FRAUD / CHOR' likh ke bhejenge, ghar walon aur office walon ko bhi 📸 Tere phone ka pura data humare paas hai. Payment kar is UPI pe 👉 qcrecovery.demo@ybl aur screenshot bhej. Ye last warning hai ⚠️"
+  },
+  {
+   "id": "S030",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "broker-margin",
+   "text": "Dear Client, margin shortfall of Rs 4,210.55 is observed in your trading account XX1234 for 30-Sep-2026 (peak margin as per exchange rules). Please add funds to avoid penalty or square-off of positions. Ignore if already done. -Kuber Securities"
+  },
+  {
+   "id": "S031",
+   "lang": "en",
+   "label": "fraud",
+   "hard": true,
+   "category": "card-reward-points",
+   "text": "Dear Customer, Your Navbharat Bank Credit Card Reward Points worth Rs.7,450 will expire today. Redeem them instantly as cash in your account. Download the Navbharat Rewards app: nvbank-rewardz.in/NB_Rewards.apk -Team NB"
+  },
+  {
+   "id": "S032",
+   "lang": "hi",
+   "label": "benign",
+   "hard": false,
+   "category": "mf-sip",
+   "text": "प्रिय निवेशक, फोलियो XXXX1234 में अक्षय फ्लेक्सी कैप फंड - डायरेक्ट ग्रोथ में आपकी SIP किस्त ₹2,000 दिनांक 01-10-2026 को प्राप्त हुई। NAV ₹58.4210 पर 34.232 यूनिट्स आवंटित। - अक्षय म्यूचुअल फंड"
+  },
+  {
+   "id": "S033",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "fake-adviser",
+   "text": "नमस्कार जी 🙏 मैं डॉ. आर. के. मेहरा, SEBI रजिस्टर्ड निवेश सलाहकार (रजि. नं. INA000XXXX12)। मेरे प्रीमियम ग्रुप में आपको रोज़ 2 पक्की कॉल मिलेंगी, एक हफ्ते में पूंजी डबल की गारंटी। फीस कुछ नहीं, बस प्रॉफिट का 30% मेरे पर्सनल अकाउंट में भेजना होगा। पहले ₹25,000 का 'मार्जिन डिपॉज़िट' rkmehra.demo@ybl पर भेजें, ट्रेडिंग मैं खुद आपके अकाउंट में करूंगा, बस अपना लॉगिन ID और OTP दे दीजिए।"
+  },
+  {
+   "id": "S034",
+   "lang": "hi",
+   "label": "suspicious",
+   "hard": false,
+   "category": "loan-offer",
+   "text": "🎉 बधाई! आपके लिए ₹5,00,000 तक का प्री-अप्रूव्ड पर्सनल लोन तैयार है। बिना डॉक्युमेंट, बिना गारंटर, 2 मिनट में खाते में! ब्याज दर 10.99% से शुरू*। अभी अप्लाई करें: bit.ly/QuickLoanNow26 *शर्तें लागू"
+  },
+  {
+   "id": "S035",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "discom-outage",
+   "text": "Bijli Vibhag Suchna: Priya upbhokta, kal dinank 04-10-2026 ko 11 KV Gandhi Nagar feeder par line maintenance ke karan subah 9 baje se dopahar 1 baje tak bijli supply band rahegi. Asuvidha ke liye khed hai. Kisi bhi shikayat ke liye 1912 par call karein."
+  },
+  {
+   "id": "S036",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "govt-scheme-subsidy",
+   "text": "📢 *प्रधानमंत्री महिला सहायता योजना 2026* 📢\nकेंद्र सरकार सभी महिलाओं को ₹5,000 हर महीने दे रही है 💰\nअंतिम तिथि: आज\nअभी आवेदन करें 👇\nhttp://pm-mahila-yojana.gov-in.online/apply\nफॉर्म भरने के बाद ₹199 रजिस्ट्रेशन शुल्क देना है, पैसे 24 घंटे में खाते में आएंगे।\nइस मैसेज को 10 ग्रुप में शेयर करें तभी फॉर्म खुलेगा ✅"
+  },
+  {
+   "id": "S037",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "family-chat",
+   "text": "पापा, आपने जो मैसेज भेजा था 'गारंटीड 5% महीना' वाला व्हाट्सऐप ग्रुप, उसमें बिल्कुल पैसे मत डालना। SEBI भी बार-बार बोलती है कि कोई गारंटीड रिटर्न नहीं होता। आपकी SIP चल रही है वही ठीक है, और FD का पैसा मैं अगले हफ्ते आकर बैंक में रिन्यू करवा दूंगा। किसी को OTP मत बताना 🙏"
+  },
+  {
+   "id": "S038",
+   "lang": "en",
+   "label": "suspicious",
+   "hard": false,
+   "category": "algo-bot",
+   "text": "Stop trading manually! Our AI algo 'TrendSniper' made 18.6% last month on Nifty options (backtested). Just connect your broker API key and let the bot trade for you. ₹2,999/month subscription, cancel anytime. Not a SEBI-registered advisor, but 5,000+ traders trust us. DM for a free 7-day trial."
+  },
+  {
+   "id": "S039",
+   "lang": "mixed",
+   "label": "fraud",
+   "hard": false,
+   "category": "pump-and-dump",
+   "text": "🚨 URGENT BUY CALL 🚨\nSarthak Polyfab Ltd (BSE SME) CMP ₹14.20\nTarget ₹45 in 7 days 🎯🎯\nबड़ा ऑपरेटर अंदर है, कल बड़ी न्यूज़ आएगी, upper circuit लगने वाला है\nसुबह 9:15 पर ही खरीद लेना, बाद में नहीं मिलेगा ❗\nKam se kam 5,000 shares lo, profit pakka 💯\nForward to all your friends & family"
+  },
+  {
+   "id": "S040",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "delivery-otp",
+   "text": "Aapka FlipMart order #FM4821 aaj shaam 7 baje tak deliver hoga. Delivery OTP: 5521 – yeh OTP sirf parcel milne ke baad delivery executive ko darwaze par batayein. Phone par kisi ko bhi OTP na batayein. Track: FlipMart app > My Orders"
+  },
+  {
+   "id": "S041",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "gas-kyc-disconnection",
+   "text": "Priya Grahak, aapka PNG gas connection KYC pending hone ki wajah se aaj raat 9:30 baje band kar diya jayega ⚠️ Turant 'GasSeva KYC' app download karke KYC update karein: gasseva-kyc.in/GasSeva_KYC.apk ya hamare officer se baat karein 90000 15592. -Gas Office"
+  },
+  {
+   "id": "S042",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "ipo-allotment",
+   "text": "प्रिय ग्राहक, आपके खाते XX1234 में 'मेघदूत पैकेजिंग लिमिटेड IPO' हेतु ब्लॉक की गई राशि ₹14,820.00 दिनांक 01-10-2026 को अनब्लॉक कर दी गई है क्योंकि आपको शेयर आवंटित नहीं हुए। - नवभारत बैंक"
+  },
+  {
+   "id": "S043",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "task-scam",
+   "text": "🌟 टास्क अपडेट 🌟\nप्रिय सदस्य, आपने आज के 3 फ्री टास्क पूरे कर लिए हैं और ₹450 कमीशन आपके खाते में जुड़ गया है ✅\nअब VIP मर्चेंट टास्क शुरू करें:\n👉 ₹2,000 जमा करें → ₹2,800 वापस\n👉 ₹10,000 जमा करें → ₹14,500 वापस\n👉 ₹50,000 जमा करें → ₹78,000 वापस\nटास्क पूरा होने के 10 मिनट में पूरी राशि + कमीशन निकाल सकते हैं। अगर टास्क बीच में छोड़ा तो पिछली राशि भी फ्रीज़ हो जाएगी।\nभुगतान के लिए रिसेप्शनिस्ट को मैसेज करें: t.me/StarReach_Recep02\nUPI: vipmerchant.demo@ybl"
+  },
+  {
+   "id": "S044",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "Navbharat Bank alert: Fraudsters 'KYC update', 'account block' ya 'reward points' ke naam par SMS/WhatsApp par link aur .apk file bhejte hain. Aisi koi file install na karein. Bank kabhi bhi OTP, PIN ya card details nahi mangta. Fraud hone par turant 1930 par call karein."
+  },
+  {
+   "id": "S045",
+   "lang": "en",
+   "label": "suspicious",
+   "hard": false,
+   "category": "influencer-course",
+   "text": "🔴 FREE LIVE WEBINAR this Sunday 7 PM\n'How I turned ₹50,000 into ₹12 lakh with option selling' 💸\nMy students are making ₹1 lakh+/month part-time. No experience needed.\nOnly 100 seats! After the webinar, join my 6-week mentorship at a special price of ₹24,999 (EMI available).\nRegister: link in bio 👆\n#stockmarket #optiontrading #financialfreedom"
+  },
+  {
+   "id": "S046",
+   "lang": "en",
+   "label": "fraud",
+   "hard": false,
+   "category": "fake-trading-app",
+   "text": "Dear Valued Client,\nYour withdrawal request of ₹18,42,600 from your GoldenEdge Institutional Account (ID: GE-208813) is under review. As per regulatory rules, a 20% capital gains tax of ₹3,68,520 must be paid before funds can be released. This amount cannot be deducted from your account balance.\nKindly transfer the tax amount within 48 hours to the designated settlement account (A/c XXXX9047) to avoid account freezing and loss of profits. After clearance, the entire amount will be credited within 2 hours.\nFor assistance, contact your customer service manager on WhatsApp: 90000 17741.\nGoldenEdge Securities Customer Service"
+  },
+  {
+   "id": "S047",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "contract-note",
+   "text": "Dear Client, contract note for trades executed on 01-Oct-2026 in your account XX1234 has been sent to your registered email ID. Net obligation: Rs 12,345.60 Dr. In case of any discrepancy, please inform us within 24 hours through our registered helpdesk. -Kuber Securities"
+  },
+  {
+   "id": "S048",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "fake-customer-care",
+   "text": "Namaste sir, main FlipMart customer care se bol raha hu, aapka refund ₹2,340 pending hai. Refund turant process karne ke liye Play Store se 'AnyDesk' app install kariye aur jo 9 digit code aayega woh mujhe bata dijiye. Phir apna UPI app khol ke ₹1 bhejiye verification ke liye, refund 5 minute mein aapke account mein aa jayega. Call cut mat kariye sir 🙏 - Complaint ID FM-77821, Helpline 90000 19046"
+  },
+  {
+   "id": "S049",
+   "lang": "hi",
+   "label": "benign",
+   "hard": false,
+   "category": "epfo",
+   "text": "प्रिय सदस्य, आपके UAN XXXXXXXX1234 के अंतर्गत PF खाते में सितंबर 2026 के लिए ₹3,600 का अंशदान प्राप्त हो गया है। उपलब्ध शेष राशि ₹1,84,512। - EPFO"
+  },
+  {
+   "id": "S050",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "chit-ponzi",
+   "text": "🙏 श्री लक्ष्मी धन वृद्धि समिति 🙏\nहर हफ्ते 10% ब्याज, मूलधन 100% सुरक्षित!\n✔ ₹10,000 जमा करो, हर शनिवार ₹1,000 पाओ\n✔ 5 नए सदस्य जोड़ो तो 15% कमीशन अलग से\n✔ 6 महीने बाद पूरा पैसा डबल वापस\nरसीद नहीं मिलेगी, सिर्फ़ डायरी में एंट्री होगी, पैसा नकद या UPI (dhanvriddhi.demo@ybl) से जमा करें। सीमित सदस्य, जल्दी जुड़ें।\nसंपर्क: समिति अध्यक्ष 90000 11904"
+  },
+  {
+   "id": "S051",
+   "lang": "hinglish",
+   "label": "suspicious",
+   "hard": false,
+   "category": "insurance-missell",
+   "text": "Sir aaj last date hai is plan ki 🙏 Sirf 5 saal ₹50,000 saalana bhariye (total ₹2.5 lakh), 10 saal baad aapko ₹7.5 lakh milenge, ekdum TAX FREE aur sarkaari guarantee jaisa safe. Bank FD se 3 guna faayda. Aaj sign kar diya to free health cover bhi milega. Main ghar aa jaata hu form lekar, sirf cheque ready rakhiye. - Rakesh, Relationship Manager"
+  },
+  {
+   "id": "S052",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "income-tax",
+   "text": "Refund of Rs. 4,560 for A.Y. 2026-27 has been issued to your bank account XXXXXX1234 (Navbharat Bank). It may take 3-4 working days to reflect. Do not respond to emails or messages asking for bank details or OTP for refunds. -Income Tax Department"
+  },
+  {
+   "id": "S053",
+   "lang": "en",
+   "label": "fraud",
+   "hard": true,
+   "category": "e-challan-apk",
+   "text": "Traffic Violation Notice: Your vehicle UP32XX1234 has a pending e-challan of Rs.500 for over-speeding on 28-09-2026. Pay within 24 hrs to avoid court proceedings & license suspension. Download the 'VAHAN Parivahan' app to view and pay: echallan-parivahan.app/VAHAN_eChallan.apk"
+  },
+  {
+   "id": "S054",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "family-chat",
+   "text": "Bhaiya ne pucha tha safe kya hai to bata deta hu – Post Office ka 5 saal wala Time Deposit aur NSC dono mein interest fixed rehta hai, sarkar ki guarantee hai, market ka risk nahi. Haan, interest pe tax lagta hai. Mummy ke naam se 1 lakh ka TD kal hi khulwaya hai, passbook ki photo bhej raha hu."
+  },
+  {
+   "id": "S055",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": true,
+   "category": "sextortion",
+   "text": "नमस्ते जी 🙏 माफ़ कीजिएगा आपको परेशान कर रही हूं। कल रात आपकी और मेरी वीडियो कॉल की पूरी रिकॉर्डिंग मेरे पास सुरक्षित है। मैं बिल्कुल नहीं चाहती कि यह वीडियो आपके परिवार, रिश्तेदारों या फेसबुक दोस्तों तक पहुंचे और आपकी इज़्ज़त खराब हो। आप बस ₹15,000 इस UPI पर भेज दीजिए anjali.demo@ybl, मैं आपकी आंखों के सामने वीडियो डिलीट कर दूंगी और फिर कभी संपर्क नहीं करूंगी। कृपया मुझे ब्लॉक मत कीजिए, वरना मजबूरी में वीडियो अपलोड करना पड़ेगा। धन्यवाद 🙏"
+  },
+  {
+   "id": "S056",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "lpg-booking",
+   "text": "आपका एलपीजी सिलेंडर रिफिल बुकिंग नंबर 1849302 दिनांक 01-10-2026 को सफलतापूर्वक दर्ज हो गया है। डिलीवरी के समय डिलीवरी कर्मी को DAC कोड 4821 बताएं। कैश मेमो से अधिक भुगतान न करें। - आपका गैस वितरक"
+  },
+  {
+   "id": "S057",
+   "lang": "hi",
+   "label": "suspicious",
+   "hard": false,
+   "category": "coop-high-fd",
+   "text": "🌾 जन कल्याण मल्टी-स्टेट क्रेडिट को-ऑपरेटिव सोसाइटी 🌾\nसावधि जमा पर 13.5% वार्षिक ब्याज! 5 साल में पैसा लगभग दोगुना। वरिष्ठ नागरिकों को 1% अतिरिक्त। हर गांव में हमारे एजेंट, घर बैठे जमा सुविधा। सदस्य बनने के लिए ₹100 शेयर शुल्क। संपर्क करें नज़दीकी शाखा।"
+  },
+  {
+   "id": "S058",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "gold-scheme",
+   "text": "✨ Swarna Laxmi Digital Gold Plan ✨\nSirf ₹5,000 se digital gold mein invest karo aur paao 5% WEEKLY guaranteed return 🪙\nGold ka rate gire ya badhe, aapka profit fixed!\n6 mahine mein paisa 2.5 guna 💥\nApne 2 dost jodo aur paao free 1 gram gold coin\nPayment sirf UPI pe: swarnalaxmi.demo@ybl\nScreenshot WhatsApp karo 90000 16120 pe, aapka gold certificate PDF mein bhej denge ✅"
+  },
+  {
+   "id": "S059",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": false,
+   "category": "bill-receipt",
+   "text": "Narmada Power: Priya upbhokta, Consumer No. XXXX5678 ke liye ₹2,105.00 ka bhugtan 01-10-2026 ko UPI dwara prapt hua. Txn ID 6273XXXX1190. Dhanyavaad."
+  },
+  {
+   "id": "S060",
+   "lang": "mixed",
+   "label": "benign",
+   "hard": true,
+   "category": "smart-meter",
+   "text": "Smart Meter Alert ⚡ Consumer No. XXXX5678: आपका प्रीपेड बैलेंस ₹48.20 है (Low Balance). Please recharge through the official DISCOM app/website or authorised recharge centres to avoid automatic disconnection. बिजली संबंधी शिकायत के लिए 1912 पर कॉल करें। - Narmada Power"
+  },
+  {
+   "id": "S061",
+   "lang": "en",
+   "label": "fraud",
+   "hard": false,
+   "category": "kyc-account-block",
+   "text": "Dear Pragati Bank user, your NetBanking access will be SUSPENDED today due to incomplete KYC. Update your PAN immediately to continue services: http://bit.ly/pgb-kyc-upd2 Ignore if already updated."
+  },
+  {
+   "id": "S062",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "⚠️ सावधान: 'डिजिटल अरेस्ट' नाम की कोई कानूनी प्रक्रिया नहीं है। पुलिस, CBI, ED, कस्टम या कोई भी सरकारी एजेंसी वीडियो कॉल पर पूछताछ या गिरफ्तारी नहीं करती और न ही 'जांच' के लिए पैसे ट्रांसफर करवाती है। ऐसी कॉल आए तो तुरंत फोन काटें, घबराएं नहीं, और 1930 पर कॉल करें या cybercrime.gov.in पर रिपोर्ट करें। - साइबर दोस्त, गृह मंत्रालय"
+  },
+  {
+   "id": "S063",
+   "lang": "hinglish",
+   "label": "suspicious",
+   "hard": false,
+   "category": "unlisted-shares",
+   "text": "Hello sir, Pre-IPO unlisted shares available 📊 Nimbus Retail Pvt Ltd @ ₹410 per share (min 100 shares). Company 2027 mein IPO laane wali hai, listing pe 3x expected 🚀 Payment company ke current account mein, shares 7 din mein aapke demat mein transfer. Limited stock, aaj hi confirm kijiye. - Unlisted Desk"
+  },
+  {
+   "id": "S064",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "stock-tip-group",
+   "text": "📈 शेयर बाज़ार में रोज़ कमाएं 📈\nनमस्ते! मैं 'इंडियन स्टॉक एक्सपर्ट ग्रुप' से हूँ। हमारे फ्री व्हाट्सऐप ग्रुप में जुड़ें जहाँ प्रोफेसर साहब रोज़ 2 शेयर बताते हैं जो 10-30% ऊपर जाते हैं। हमारे सदस्यों ने पिछले महीने औसत 45% मुनाफ़ा कमाया।\nजुड़ने के लिए लिंक पर क्लिक करें 👉 bit.ly/SEG-Free-Join\nसीमित सीटें, सिर्फ़ पहले 100 लोगों के लिए। बाद में हमारे संस्थागत खाते (Institutional Account) से IPO और ब्लॉक डील में विशेष छूट भी मिलेगी।"
+  },
+  {
+   "id": "S065",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "exchange-trade-alert",
+   "text": "NSE: Dear Investor, trades executed on 01-Oct-2026 in your account XX1234 through Kuber Securities: Buy value Rs 24,560.00, Sell value Rs 0.00. Please check the contract note sent by your broker. If these trades were not done by you, report to the broker and lodge a complaint with the exchange."
+  },
+  {
+   "id": "S066",
+   "lang": "en",
+   "label": "fraud",
+   "hard": false,
+   "category": "digital-arrest",
+   "text": "MUMBAI CYBER CRIME BRANCH\nURGENT LEGAL NOTICE\nDear Citizen, a parcel booked in your name from Mumbai to Taiwan has been seized by Customs containing 5 passports, 3 credit cards and 200 gm MDMA. A case has been registered under NDPS Act and PMLA. Your Aadhaar is linked to 3 bank accounts used for money laundering.\nYou must appear immediately for a video statement on Skype with the investigating officer. Do not disconnect the call or inform anyone, as this is a confidential matter of national security. Failure to cooperate will result in immediate arrest.\nTo clear your name, a refundable verification deposit as per RBI guidelines must be transferred to the secured account given by the officer.\nOfficer In-Charge, Cyber Cell\nWhatsApp: 90000 15873"
+  },
+  {
+   "id": "S067",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": false,
+   "category": "mf-sip",
+   "text": "Namaste ji, aapki Akshay Mutual Fund SIP ₹1,000 ki kisht 10-10-2026 ko aapke bank khate XX1234 se auto-debit hogi. Kripya khate mein paryapt balance rakhein. Koi sawaal ho to apne distributor ya AMC ki official website par sampark karein. - Akshay MF"
+  },
+  {
+   "id": "S068",
+   "lang": "hi",
+   "label": "suspicious",
+   "hard": false,
+   "category": "free-tips-group",
+   "text": "नमस्ते 🙏 हमारे फ्री टेलीग्राम चैनल 'निफ्टी बुल्स कॉल्स' से जुड़ें। पिछले हफ्ते 7 में से 6 कॉल टारगेट हिट 🎯 रोज़ सुबह 9:20 पर इंट्राडे और ऑप्शन कॉल फ्री। जुड़ें: t.me/niftybullscalls\nडिस्क्लेमर: हम SEBI पंजीकृत नहीं हैं, केवल शैक्षिक उद्देश्य के लिए।"
+  },
+  {
+   "id": "S069",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "loan-app-recovery",
+   "text": "यह आखिरी चेतावनी है ⚠️\nआपने 'RupeeFast' ऐप से ₹4,000 का लोन लिया था, जो 7 दिन से बकाया है। पेनल्टी मिलाकर अब ₹9,850 चुकाने हैं। आज शाम 5 बजे तक भुगतान नहीं हुआ तो आपकी फोटो 'धोखेबाज़' लिखकर आपकी कॉन्टैक्ट लिस्ट के सभी लोगों और आपके ऑफिस में भेज दी जाएगी, और आपके नाम पर पुलिस केस भी होगा। भुगतान केवल इस UPI पर करें: rfcollect.demo@ybl\nरिकवरी विभाग"
+  },
+  {
+   "id": "S070",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "bill-reminder",
+   "text": "Dear Consumer, your electricity bill of Rs 1,876.00 for Sep-2026 (Consumer No. XXXX5678) is due on 12-10-2026. Pay via the official Narmada Power app/website, UPI apps or authorised collection centres. Ignore if already paid. Never pay to any individual or unknown phone number. -Narmada Power"
+  },
+  {
+   "id": "S071",
+   "lang": "mixed",
+   "label": "fraud",
+   "hard": false,
+   "category": "recovery-scam",
+   "text": "Lost money in online trading / crypto / task fraud? 😔 घबराइए मत!\nWe are 'Cyber Legal Recovery Associates' — हमारी टीम Cyber Cell और RBI के साथ मिलकर काम करती है। 92% success rate, 15 दिन में पूरा पैसा वापस ✅\nबस ₹15,000 registration fee + 10% advance legal charges दीजिए।\nFree consultation: WhatsApp 90000 17206\nNote: यह offer सिर्फ आज के लिए है"
+  },
+  {
+   "id": "S072",
+   "lang": "hi",
+   "label": "benign",
+   "hard": false,
+   "category": "income-tax",
+   "text": "आयकर विभाग: पैन XXXXX1234X के लिए आकलन वर्ष 2026-27 का आपका आयकर रिटर्न (पावती संख्या XXXXXXXX9021) धारा 143(1) के अंतर्गत संसाधित कर दिया गया है। सूचना आपके पंजीकृत ईमेल पर भेज दी गई है। विवरण incometax.gov.in पर लॉगिन करके देखें।"
+  },
+  {
+   "id": "S073",
+   "lang": "en",
+   "label": "suspicious",
+   "hard": false,
+   "category": "crypto-exchange",
+   "text": "🚀 Join ZetaBit Exchange – India's next-gen crypto platform! Sign up today and get $50 USDT welcome bonus 🎁 Earn up to 20% APY on staking, 0% trading fees for 3 months. Instant INR deposits via UPI. Limited-time offer: zetabit-exchange.io/invite/IN50"
+  },
+  {
+   "id": "S074",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": true,
+   "category": "bill-refund",
+   "text": "Bijli Vibhag: Priya upbhokta, aapke pichhle 6 mahine ke bijli bill mein extra charge kata gaya tha. Aapka ₹1,267 refund approve ho gaya hai ✅ Refund apne bank khate mein turant paane ke liye niche diye link par apna debit card number, expiry aur OTP bharein: bijli-refund.co.in/claim Refund 2 ghante mein aa jayega."
+  },
+  {
+   "id": "S075",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "दूरसंचार विभाग (DoT) या TRAI कभी भी 'आपका मोबाइल नंबर 2 घंटे में बंद हो जाएगा' जैसी कॉल या मैसेज नहीं करता। ऐसी संदिग्ध कॉल, SMS या व्हाट्सऐप की रिपोर्ट संचार साथी पोर्टल (sancharsaathi.gov.in) पर 'चक्षु' सुविधा से करें। वित्तीय धोखाधड़ी होने पर 1930 पर कॉल करें।"
+  },
+  {
+   "id": "S076",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "real-estate-scheme",
+   "text": "🏡 PRE-LAUNCH OFFER 🏡\nShri Ram Greens, Yamuna Expressway ke paas plots sirf ₹4,999/sq yd\n✅ 18 mahine mein ASSURED BUYBACK 2x rate pe (written guarantee)\n✅ Tab tak har mahine 3% assured return\n✅ RERA ka kaam chal raha hai, registry baad mein\nSirf 20 plots bache hai, aaj token amount ₹51,000 bhejo aur plot block karo\nUPI: shriramgreens.demo@ybl (director ka personal UPI, fast processing ke liye)\nCall 90000 14415"
+  },
+  {
+   "id": "S077",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "emi-reminder",
+   "text": "Navbharat Bank: Aapke Home Loan A/c XX1234 ki EMI ₹14,320 ki due date 05-10-2026 hai. Kripya apne savings khate mein paryapt balance rakhein. Bank ka koi bhi karmchari cash ya personal UPI par EMI nahi leta; bhugtan sirf bank ke official channel se karein."
+  },
+  {
+   "id": "S078",
+   "lang": "hi",
+   "label": "suspicious",
+   "hard": false,
+   "category": "fractional-realestate",
+   "text": "🏢 सिर्फ़ ₹25,000 में बनें कमर्शियल प्रॉपर्टी के मालिक! 'BhoomiShare' के साथ ग्रेड-A ऑफिस बिल्डिंग में फ्रैक्शनल हिस्सेदारी लें और पाएं 10-12% सालाना किराया आय + कीमत बढ़ने का फ़ायदा। पहले 500 निवेशकों को 1% अतिरिक्त रिटर्न। ऐप डाउनलोड करें: bhoomishare.in/app"
+  },
+  {
+   "id": "S079",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "sim-block-threat",
+   "text": "TRAI सूचना: आपके आधार कार्ड पर लिए गए दूसरे सिम नंबर से अवैध विज्ञापन और उत्पीड़न वाले मैसेज भेजे गए हैं। मुंबई पुलिस में आपके खिलाफ शिकायत दर्ज है। आपके सभी मोबाइल नंबर 2 घंटे में बंद कर दिए जाएंगे। बंद होने से रोकने के लिए 9 दबाएं या तुरंत हमारे अधिकारी से संपर्क करें 90000 18852।"
+  },
+  {
+   "id": "S080",
+   "lang": "mixed",
+   "label": "benign",
+   "hard": false,
+   "category": "family-chat",
+   "text": "Beta FD renew करवा दी है, 1 साल के लिए 7.0% मिल रहा है, senior citizen वाला extra भी लग गया। Receipt की photo भेज रहा हूं, संभाल के रख लेना। और हां, तुम्हारी mummy के PPF में भी इस साल का 50,000 जमा कर दिया। Branch manager ने बोला nominee भी update हो गया है 👍"
+  },
+  {
+   "id": "S081",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "aadhaar-update",
+   "text": "⚠️ Aadhaar-Bank Link FAIL ⚠️\nPriya labharthi, aapka Aadhaar bank khate se link nahi hai, isliye aapki PM Kisan / gas subsidy / pension ki agli kist ruk jayegi. Turant 'Aadhaar Seva Kendra' app se link karein: aadhaar-dbt-link.in/update\nApp mein Aadhaar number, bank details aur aaya hua OTP daalein. Aaj aakhri din hai."
+  },
+  {
+   "id": "S082",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "SEBI निवेशक जागरूकता: शेयर बाज़ार में 'गारंटीड रिटर्न', 'पक्की टिप' या 'IPO में पक्का अलॉटमेंट' का वादा करने वाले व्हाट्सऐप/टेलीग्राम ग्रुप और ऐप से सावधान रहें। किसी अनजान ऐप या व्यक्तिगत खाते में पैसे न भेजें। केवल SEBI पंजीकृत ब्रोकर/सलाहकार से ही लेन-देन करें, पंजीकरण sebi.gov.in पर जांचें। शिकायत के लिए SCORES पोर्टल या 1930।"
+  },
+  {
+   "id": "S083",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": true,
+   "category": "fake-trading-app",
+   "text": "Namaste sir 🙏 Main Ananya, Professor ji ki assistant. Aapne class mein interest dikhaya tha isliye bata rahi hu – humari company SEBI ke saath registered foreign institutional investor hai. Hamare 'Institutional Account' se aapko IPO mein priority allotment aur block deal shares market price se 20-30% discount pe milte hai. Account kholne ke liye niche diye link se 'NovaQuant Pro' app download kariye, KYC kariye aur pehla fund deposit karke Professor ji ke signals follow kariye 📈 Link: novaquant-pro.com/dl"
+  },
+  {
+   "id": "S084",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "ipo-upi-mandate",
+   "text": "UPI mandate request: Block Rs 14,820.00 for Meghdoot Packaging Ltd IPO (ASBA) application placed through Kuber Securities. Approve in your UPI app before 5 PM on 03-Oct-2026 to complete your bid. The amount will only be blocked, not debited, until allotment."
+  },
+  {
+   "id": "S085",
+   "lang": "hinglish",
+   "label": "suspicious",
+   "hard": false,
+   "category": "informal-chit",
+   "text": "Sabko namaste 🙏 Naya WhatsApp kitty/chit group shuru kar rahe hai – 20 member, har mahine ₹5,000. Har mahine boli lagegi, jo sabse kam boli lagayega usko poora amount milega, baaki ka discount sab mein baantenge. Koi registration ya paperwork ki zarurat nahi, sab bharose pe chalta hai 😊 Paise mere UPI pe bhejna hai: kittygroup.demo@ybl. Jo judna chahta hai naam bhejo."
+  },
+  {
+   "id": "S086",
+   "lang": "en",
+   "label": "fraud",
+   "hard": false,
+   "category": "task-scam",
+   "text": "Hi dear, welcome to TripRate Global 🌍 Your job is simple: rate 30 hotels on our merchant platform daily and earn ₹800–₹3,000 commission. You have completed 22/30 tasks today. ⚠️ Task 23 is a 'Combination Order' and your account balance shows -₹12,600. Please recharge ₹12,600 to complete the order, after which your full balance ₹31,450 + bonus can be withdrawn. If not recharged within 2 hours, your credit score will drop and funds will be frozen. Contact your mentor on Telegram: @TripRate_Mentor_Kavya"
+  },
+  {
+   "id": "S087",
+   "lang": "hi",
+   "label": "benign",
+   "hard": false,
+   "category": "lic",
+   "text": "LIC: पॉलिसी संख्या XXXX1234 का प्रीमियम ₹12,450 दिनांक 15-10-2026 को देय है। प्रीमियम का भुगतान LIC की आधिकारिक वेबसाइट, LIC ऐप, शाखा या अधिकृत एजेंट के माध्यम से करें। अनुग्रह अवधि के भीतर भुगतान कर पॉलिसी चालू रखें।"
+  },
+  {
+   "id": "S088",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "guaranteed-returns",
+   "text": "💰 सुनहरा मौका 💰\nहमारी 'धनवर्षा फिक्स्ड इनकम स्कीम' में निवेश करें और पाएं हर महीने 8% फिक्स्ड रिटर्न (साल का 96%)!\n✔ मूलधन 100% सुरक्षित, स्टांप पेपर पर एग्रीमेंट\n✔ कंपनी शेयर बाज़ार और कमोडिटी में ट्रेड करती है, नुकसान का कोई चांस नहीं\n✔ न्यूनतम निवेश ₹1 लाख, 11 महीने का लॉक-इन\n✔ हर महीने 5 तारीख को ब्याज सीधे खाते में\nअभी तक 2,000+ परिवार जुड़ चुके हैं। संपर्क: 98765 43210"
+  },
+  {
+   "id": "S089",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "card-statement",
+   "text": "Navbharat Bank Credit Card XX1234 statement for Sep-2026: Total amount due Rs 8,450.00, Minimum due Rs 430.00, Payment due date 18-Oct-2026. Reward points balance: 2,310. Pay via NetBanking, the Navbharat Bank app or any UPI app. Ignore if already paid."
+  },
+  {
+   "id": "S090",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "customs-parcel",
+   "text": "Hello, main Delhi Customs Office se Inspector bol raha hu. Aapke naam se UK se ek gift parcel aaya hai jisme 3 iPhone, gold jewellery aur £25,000 cash hai. Isko release karne ke liye ₹18,500 customs clearance fee aur anti-money laundering certificate charge abhi pay karna hoga, warna aapke against FEMA case darj hoga. Payment is account mein karein: A/c XXXX3361, IFSC CUST0XX001 (Customs Dept). Receipt WhatsApp karein 90000 13977."
+  },
+  {
+   "id": "S091",
+   "lang": "en",
+   "label": "suspicious",
+   "hard": false,
+   "category": "broker-promo",
+   "text": "Hi! This is Neha from Trishul Broking 👋 Open your demat account today & get FREE premium research calls with 80%+ accuracy, zero brokerage on intraday for 1 year and up to 5x margin funding. Our experts will guide your trades personally on WhatsApp. Takes just 5 minutes: trishulbroking.in/open"
+  },
+  {
+   "id": "S092",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": false,
+   "category": "family-chat",
+   "text": "Didi maine finally SIP shuru kar di 🎉 ₹3,000 mahina, ek index fund mein, apne broker app se direct plan liya. Pehle ₹1.5 lakh emergency fund FD mein rakha hai. Jiju ne bola ELSS bhi dekh lena tax ke liye agar old regime le rahe ho. 10-15 saal ke liye hai, beech mein market gire to ghabrana nahi hai na?"
+  },
+  {
+   "id": "S093",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": true,
+   "category": "card-reward-points",
+   "text": "प्रिय ग्राहक, आपके नवभारत बैंक क्रेडिट कार्ड के 5,960 रिवॉर्ड पॉइंट्स (मूल्य ₹5,960) आज रात 12 बजे समाप्त हो जाएंगे। इन्हें तुरंत अपने खाते में कैश के रूप में प्राप्त करने के लिए 'NB Reward Point' ऐप इंस्टॉल करें: nb-rewardpoint.in/NBRP.apk और अपना कार्ड विवरण दर्ज करें। - नवभारत बैंक"
+  },
+  {
+   "id": "S094",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "EPFO never asks members to share personal details like Aadhaar, PAN, UAN, bank account or OTP over phone, WhatsApp, SMS or social media. EPFO never asks for any deposit of money for any service. Beware of fake websites, calls and messages. Use only the official EPFO portal or UMANG app. -EPFO"
+  },
+  {
+   "id": "S095",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "ponzi-app",
+   "text": "⚡ 'EV चार्ज इंडिया' ऐप ⚡\nइलेक्ट्रिक वाहन चार्जिंग स्टेशन में निवेश करें और रोज़ कमाएं!\n🔋 ₹6,000 का 'मिनी चार्जर' खरीदें → रोज़ ₹240 की आय (40 दिन)\n🔋 ₹30,000 का 'सुपर चार्जर' → रोज़ ₹1,350 की आय\n🔋 टीम में 10 लोग जोड़ें → 12% अतिरिक्त कमीशन\nपैसा रोज़ रात 10 बजे ऐप वॉलेट में, कभी भी निकालें (निकासी शुल्क 10%)।\nसरकार की ग्रीन एनर्जी योजना से जुड़ी कंपनी। अभी डाउनलोड करें: evcharge-india.cc/app.apk"
+  },
+  {
+   "id": "S096",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "scheme-credit",
+   "text": "PM-KISAN: प्रिय लाभार्थी, आपके बैंक खाते XX1234 में पीएम किसान सम्मान निधि की किस्त ₹2,000 जमा कर दी गई है। स्टेटस केवल आधिकारिक पोर्टल pmkisan.gov.in पर देखें। किसी लिंक या ऐप पर अपनी जानकारी साझा न करें।"
+  },
+  {
+   "id": "S097",
+   "lang": "en",
+   "label": "fraud",
+   "hard": false,
+   "category": "lottery-prize",
+   "text": "CONGRATULATIONS!!! 🎉 Your mobile number has been selected as the WINNER of ₹12,50,000 in the Digital India Mobile Lucky Draw 2026. Ref No: DIL/8823/2026. To claim your prize, contact our claims officer Mr. Verma on WhatsApp 90000 12768 and pay the refundable registration & TDS fee of ₹4,999 within 24 hours. Keep this message confidential."
+  },
+  {
+   "id": "S098",
+   "lang": "hi",
+   "label": "suspicious",
+   "hard": false,
+   "category": "pms-pitch",
+   "text": "सर नमस्कार 🙏 हमारी PMS (पोर्टफोलियो मैनेजमेंट सर्विस) ने पिछले 3 साल में 40% CAGR दिया है, जबकि निफ्टी ने सिर्फ़ 14%। न्यूनतम निवेश ₹50 लाख। पिछले प्रदर्शन को देखते हुए अगले 3 साल में पैसा दोगुना होने की पूरी उम्मीद है। आज ही मीटिंग फिक्स करें, नए क्लाइंट्स के लिए फ़ीस में 50% छूट सिर्फ़ इस हफ्ते।"
+  },
+  {
+   "id": "S099",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "Pragati Bank Suraksha Tip: Paise RECEIVE karne ke liye kabhi bhi UPI PIN daalne ya QR code scan karne ki zarurat nahi hoti. Agar koi 'paise bhej raha hu, PIN daalo' bole to samajh jaiye fraud hai. Collect request ko dhyan se padhein. Shikayat: 1930 ya cybercrime.gov.in"
+  },
+  {
+   "id": "S100",
+   "lang": "mixed",
+   "label": "fraud",
+   "hard": true,
+   "category": "fake-broker-kyc",
+   "text": "Dear Investor, आपके Kuber Securities Demat Account का KYC SEBI के नए नियमों के अनुसार अपडेट नहीं है। 24 घंटे में update नहीं किया तो आपका account freeze हो जाएगा और holdings transfer नहीं हो पाएंगी। KYC update करने के लिए link पर click करें और registered mobile पर आया OTP डालें: kuber-sec-kyc.online/update\n- Team Kuber Securities"
+  },
+  {
+   "id": "S101",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "part-time-job-fee",
+   "text": "🏠 घर बैठे पार्ट टाइम जॉब 🏠\nरोज़ सिर्फ़ 1-2 घंटे काम करें और कमाएं ₹2,000 से ₹5,000 प्रतिदिन!\n✔ डेटा एंट्री / फॉर्म फिलिंग / कॉपी पेस्ट वर्क\n✔ पढ़ाई ज़रूरी नहीं, सिर्फ़ मोबाइल चाहिए\n✔ महिलाएं, छात्र, गृहिणी सभी आवेदन करें\nरजिस्ट्रेशन फीस सिर्फ़ ₹499 (आईडी कार्ड और वर्क किट के लिए), जो पहली सैलरी के साथ वापस मिल जाएगी।\nअभी रजिस्टर करें: workfromhome-sarkari.in/register\nहेल्पलाइन: 90000 10982"
+  },
+  {
+   "id": "S102",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "pension-life-certificate",
+   "text": "प्रिय पेंशनभोगी, अपनी पेंशन बिना रुकावट जारी रखने के लिए 30 नवंबर 2026 तक जीवन प्रमाण पत्र जमा करें। आप बैंक शाखा, डाकघर/डाकिया सेवा, CSC केंद्र या जीवन प्रमाण फेस ऑथेंटिकेशन ऐप से डिजिटल प्रमाण पत्र जमा कर सकते हैं। बैंक कभी भी फोन पर OTP या खाता विवरण नहीं मांगता। - नवभारत बैंक"
+  },
+  {
+   "id": "S103",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "crypto-doubling",
+   "text": "🤖 USDT AI ट्रेडिंग बॉट 🤖\nरोज़ 3% पक्का मुनाफ़ा, 35 दिन में पैसा डबल!\nबस USDT जमा करें, बाकी काम AI रोबोट करेगा। ₹10,000 से शुरू करें।\n🎁 नए सदस्य को 10 USDT बोनस\n👥 आपके रेफ़रल से जुड़ने वालों की कमाई पर 3 लेवल तक कमीशन\nनिकासी 24 घंटे में (पहली निकासी से पहले 'वॉलेट एक्टिवेशन फीस' 50 USDT)\nलिंक: usdt-aibot.top/hi/join"
+  },
+  {
+   "id": "S104",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "awareness-sms",
+   "text": "Kuber Securities Alert: Hum kabhi bhi WhatsApp/Telegram group mein stock tips nahi dete, na hi 'guaranteed returns' ya 'institutional account' offer karte hai. Paise sirf apne registered bank account se Kuber Securities ke designated account mein hi transfer karein. Kisi bhi shaq mein humare official app ke support section se sampark karein."
+  },
+  {
+   "id": "S105",
+   "lang": "hinglish",
+   "label": "suspicious",
+   "hard": false,
+   "category": "mlm-pitch",
+   "text": "Bhabhi ji namaste 🙏 Ek bahut accha business opportunity hai ghar baithe. 'VitaGlow Wellness' ke health products bechne hai, joining kit ₹7,500 ki hai. Aap sirf 3 log jodo, wo aage 3-3 jodenge, to har mahine ₹25,000-50,000 passive income aa sakti hai 💃 Meri team mein 200 log hai. Sunday ko hotel mein seminar hai, aap aur bhaiya zarur aana."
+  },
+  {
+   "id": "S106",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": true,
+   "category": "govt-scheme-apk",
+   "text": "🙏 Kisan bhaiyon ke liye zaroori suchna 🙏\nPM Kisan Yojana ki agli kist ka status check karne aur e-KYC poora karne ke liye niche di gayi app install karein. Jinka naam list mein nahi hoga unki kist ruk jayegi.\n📎 PM_Kisan_Yojana_2026.apk\nGroup ke sabhi members ko forward karein 🙏"
+  },
+  {
+   "id": "S107",
+   "lang": "en",
+   "label": "benign",
+   "hard": true,
+   "category": "otp-sms",
+   "text": "OTP 731045 for authorisation of debit of 25 shares of MEGHDOOT PACKAGING LTD from your demat account XXXX1234 for a sell order placed with Kuber Securities. Valid for 10 mins. If you have not placed this order, do not enter this OTP and contact your broker. -CDSL"
+  },
+  {
+   "id": "S108",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "recovery-scam",
+   "text": "राष्ट्रीय साइबर अपराध वसूली प्रकोष्ठ, नई दिल्ली\nआपकी ऑनलाइन ट्रेडिंग धोखाधड़ी की शिकायत (Ack No. 3120XXXX88) पर कार्रवाई करते हुए ₹3,40,000 की राशि आरोपियों के खाते से बरामद कर ली गई है ✅\nयह राशि आपके खाते में रिलीज़ करने के लिए कोर्ट प्रोसेसिंग फीस ₹8,500 और GST ₹1,530 जमा करना अनिवार्य है। भुगतान आज शाम 6 बजे तक करें अन्यथा राशि सरकारी खजाने में जमा हो जाएगी।\nभुगतान UPI: cyberrefund.demo@ybl\nसंपर्क: इंस्पेक्टर (वसूली) 90000 16781"
+  },
+  {
+   "id": "S109",
+   "lang": "hi",
+   "label": "benign",
+   "hard": false,
+   "category": "lic",
+   "text": "LIC: आपकी पॉलिसी संख्या XXXX5678 दिनांक 28-10-2026 को परिपक्व हो रही है। परिपक्वता राशि सीधे आपके पंजीकृत बैंक खाते में NEFT द्वारा भेजी जाएगी। कृपया सुनिश्चित करें कि बैंक खाता और KYC विवरण अपडेट हैं; जानकारी के लिए अपनी सर्विसिंग शाखा या LIC की आधिकारिक वेबसाइट देखें।"
+  },
+  {
+   "id": "S110",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "fake-trading-app",
+   "text": "📚 FREE Stock Market Class 📚\nProfessor Sharma ji ki 21 din ki free class, Telegram group 'Stock Mastery 2026' mein.\nClass ke baad hamare institutional trading app se members ne 500% tak profit kamaya 🔥\nApp: MCX-Pro-Institutional.apk (Play Store pe nahi milega, sirf group mein link)\nPehle din ₹10,000 deposit karna hai, assistant aapko step by step guide karegi. Profit ka 20% service charge withdrawal ke time.\nJoin: t.me/stockmastery2026class"
+  },
+  {
+   "id": "S111",
+   "lang": "hi",
+   "label": "suspicious",
+   "hard": false,
+   "category": "jeweller-scheme",
+   "text": "✨ श्री गणेश ज्वैलर्स स्वर्ण बचत योजना ✨\n12 महीने हर महीने ₹5,000 जमा करें और 13वें महीने में ₹72,000 तक के गहने ले जाएं! (20% बोनस)\nकोई मेकिंग चार्ज नहीं। भुगतान दुकान मालिक के पर्सनल UPI (ganeshjwl.demo@ybl) पर, रसीद व्हाट्सऐप पर भेज दी जाएगी। सीमित सदस्य।"
+  },
+  {
+   "id": "S112",
+   "lang": "hi",
+   "label": "benign",
+   "hard": false,
+   "category": "bank-alert",
+   "text": "नवभारत बैंक: आपके खाते XX1234 से दिनांक 01-10-2026 को UPI द्वारा ₹500.00 डेबिट किए गए (संदर्भ 627412XXXX55)। उपलब्ध शेष ₹12,348.50। यदि यह लेन-देन आपने नहीं किया है तो तुरंत बैंक के आधिकारिक कस्टमर केयर या 1930 पर सूचित करें।"
+  },
+  {
+   "id": "S113",
+   "lang": "hinglish",
+   "label": "fraud",
+   "hard": false,
+   "category": "ipo-quota-scam",
+   "text": "Sir HNI quota se SME IPO mein allotment 100% confirm karwa denge 💯 'Ratnakar Foods' IPO next week aa raha hai, grey market premium 90% chal raha hai. Aap ₹1,20,000 hamare agent account mein transfer kariye, allotment hamare naam se hoga aur listing ke din profit aapke account mein bhej denge. Pichle 5 IPO mein sabka double hua hai. Sirf 10 slot baaki. UPI: ipoquota.demo@ybl"
+  },
+  {
+   "id": "S114",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": false,
+   "category": "fd-maturity",
+   "text": "Navbharat Bank: Aapki Fixed Deposit A/c XX5678 (₹1,00,000) 10-10-2026 ko mature ho rahi hai. Auto-renewal ON hai, isliye FD usi avadhi ke liye us din ki lagu byaj dar par renew ho jayegi. Badlaav ke liye NetBanking ya shakha se sampark karein."
+  },
+  {
+   "id": "S115",
+   "lang": "hi",
+   "label": "fraud",
+   "hard": false,
+   "category": "forex-trading",
+   "text": "🌍 फॉरेक्स ट्रेडिंग से रोज़ कमाएं 🌍\nडॉलर, यूरो और गोल्ड (XAU/USD) में ट्रेडिंग करें और पाएं रोज़ 5% तक मुनाफ़ा। 1:500 लीवरेज, सिर्फ़ ₹5,000 से शुरुआत।\nहमारे एक्सपर्ट आपके अकाउंट में खुद ट्रेड करेंगे, आप सिर्फ़ मुनाफ़ा निकालें 💵\nपैसा UPI से हमारे 'इंडिया एजेंट' के खाते में जमा करें, डॉलर में कन्वर्ट होकर आपके MT5 अकाउंट में आ जाएगा।\nअभी जुड़ें: fx-goldwin.com/in"
+  },
+  {
+   "id": "S116",
+   "lang": "hi",
+   "label": "benign",
+   "hard": true,
+   "category": "post-tracking",
+   "text": "इंडिया पोस्ट: आपका स्पीड पोस्ट आर्टिकल EZ123456789IN दिनांक 01-10-2026 को सफलतापूर्वक डिलीवर कर दिया गया है। ट्रैकिंग के लिए indiapost.gov.in देखें। धन्यवाद।"
+  },
+  {
+   "id": "S117",
+   "lang": "mixed",
+   "label": "suspicious",
+   "hard": false,
+   "category": "unrated-ncd",
+   "text": "Sir, आपके लिए एक exclusive opportunity 👇\nNavyug Finance Ltd के secured NCDs – 12.5% p.a. fixed coupon, monthly interest. यह private placement है, listed नहीं है और rating भी अभी नहीं हुई, इसलिए return इतना ज़्यादा है। Minimum ₹1 lakh. FD से almost double return. आज ही cheque दे दीजिए, allotment पहले आओ पहले पाओ basis पर।"
+  },
+  {
+   "id": "S118",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "family-chat",
+   "text": "Bhai aaj ki news padhi? Indore mein ek retired uncle ko 'trading app' ke naam pe 40 lakh ka chuna laga diya, WhatsApp group mein pehle chhota profit dikhaya phir withdrawal pe 'tax' maanga. Tu bhi dhyaan rakhna, koi guaranteed profit bole ya alag app download karne bole to seedha block karna aur 1930 pe report karna. Mummy papa ko bhi bata dena 🙏"
+  },
+  {
+   "id": "S119",
+   "lang": "en",
+   "label": "fraud",
+   "hard": true,
+   "category": "pig-butchering",
+   "text": "Hi, is this Mr. Arora? I'm Sophia, we met at the Lucknow wedding last month 😊\n...\nOh sorry, I think I saved the wrong number! But you seem very nice, can we be friends? I work in Singapore in finance. Actually my uncle is a senior analyst at a big gold trading firm and he shares inside signals with family only. I made 38% last month on the GoldenBridge Exchange app following his timing. If you want, I can teach you step by step, just start small with ₹20,000 and see for yourself 💛"
+  },
+  {
+   "id": "S120",
+   "lang": "hinglish",
+   "label": "benign",
+   "hard": true,
+   "category": "ca-message",
+   "text": "Sir aapka ITR file ho gaya hai aur e-verify bhi kar diya hai ✅ Acknowledgement aapke email pe bhej diya. Refund lagbhag ₹6,200 banta hai, processing ke baad 3-5 hafte mein seedha aapke pre-validated bank account mein aa jayega. Refund ke naam pe koi SMS/link aaye to usme click mat karna, Income Tax Department kabhi link pe card details nahi maangta. - Office of CA R. Tandon & Co."
+  }
+ ],
+ "version": "blind-v6"
+}

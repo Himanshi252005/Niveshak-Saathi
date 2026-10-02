@@ -81,6 +81,21 @@
 - the first two sealed sets give identical results;
 - on the third sealed set, the only changes are two scams now caught and one false alarm removed.
 
+## Fresh sealed test of checker 3.3
+
+To measure the checker honestly after these changes, a further independent agent wrote 120 new messages, without seeing the code. They were scored once:
+- **Mix:** 50 fraud (28 of them everyday scams), 20 suspicious and 50 benign. 38 of the benign messages are tricky look-alikes.
+- **Languages:** 40% Hindi.
+
+| | Checker 3.2 | Checker 3.3 |
+|---|---:|---:|
+| Fraud or suspicious messages warned | 84.3% | 87.1% |
+| Everyday scams warned | 86.2% | 93.1% |
+| Ordinary messages warned | 30% | 24% |
+| Ordinary messages at High | 24% | 18% |
+
+Every ordinary message that was flagged was a tricky look-alike. The biggest remaining source of false alarms is genuine messages that mention an OTP or a code (a Hindi OTP SMS, a delivery or LPG code). That is the next improvement; it will need yet another fresh set to measure. Full numbers are in `evidence/Blind-Evaluation-v6.json`.
+
 ## Still open
 
 - **Urgent-help details:** some still need a tap, for example whether the caller still has access, and how and when money was paid.

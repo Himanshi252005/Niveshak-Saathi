@@ -53,6 +53,27 @@ Regression checks:
 
 The table above remains the last untouched measurement (model 3.2). The third set has now been seen, so the improvement is not claimed as a new accuracy figure.
 
+**Fresh sealed set (blind-v6, scored once on 2 October 2026).** A separate agent that never saw the checker or earlier sets wrote 120 messages:
+- **Mix:** 50 fraud, 20 suspicious and 50 benign. The fraud includes 28 everyday scams: electricity cut-offs, KYC blocks, parcels, "digital arrest", task scams and loan-app threats. 38 of the 50 benign messages are deliberately tricky look-alikes.
+- **Languages:** 40% Hindi, 30% Roman Hindi, 25% English and 5% mixed.
+
+| Measure | Checker 3.2 | Checker 3.3 |
+|---|---:|---:|
+| Fraud or suspicious messages warned | 84.3% [74.0–91.0] | 87.1% [77.3–93.1] |
+| Fraud warned | 90.0% [78.6–95.7] | 94.0% [83.8–97.9] |
+| Fraud at High | 78.0% [64.8–87.2] | 82.0% [69.2–90.2] |
+| Everyday-scam fraud warned | 86.2% [69.4–94.5] | 93.1% [78.0–98.1] |
+| Ordinary messages warned | 30.0% [19.1–43.8] | 24.0% [14.3–37.4] |
+| Ordinary messages at High | 24.0% [14.3–37.4] | 18.0% [9.8–30.8] |
+
+Every ordinary message flagged was a tricky look-alike; none of the 12 everyday ones was flagged.
+
+**Main remaining weakness:** some genuine messages still reach High:
+- messages that mention an OTP or code in a routine or protective way, such as a Hindi OTP SMS, a delivery or LPG code, or an income-tax message;
+- some awareness messages.
+
+This set has now been inspected, so it is development data. The next improvement must be measured on another fresh set.
+
 ## Size and speed
 
 - 509,588 bytes uncompressed and 151,758 bytes with gzip.

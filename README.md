@@ -50,7 +50,11 @@ The product gives no stock tips, predictions, broker promotions, ads or upsells.
 - 130/130 browser checks in each of three runs;
 - 449/449 developer regression expectations;
 - **100-user real-world test:** realistic users written blind by separate agents, plus 15 stress inputs. 92 users fully right, 8 partly right, 0 wrong (Release 3.2: 83, 9 and 8). See [`docs/REAL-WORLD-USER-TEST.md`](docs/REAL-WORLD-USER-TEST.md);
-- final untouched sealed synthetic set (model 3.2): 72.4% of fraud or suspicious messages warned and 8.6% of ordinary messages warned.
+- **fresh sealed set for Release 3.3** (120 messages written blind, including everyday scams and 38 tricky look-alikes; scored once):
+  - checker 3.3 warned on 87.1% of fraud or suspicious messages (checker 3.2: 84.3%);
+  - it warned on 24% of ordinary messages (3.2: 30%), and put 18% at High (3.2: 24%);
+  - the remaining false alarms are mostly genuine messages that mention an OTP or a code. See [`evidence/Blind-Evaluation-v6.json`](evidence/Blind-Evaluation-v6.json);
+- earlier sealed set (model 3.2): 72.4% of fraud or suspicious messages warned and 8.6% of ordinary messages warned.
 
 These are engineering results on synthetic data, not proof of nationwide capacity, real-world accuracy or prevented loss. See [`docs/Validation-v3.md`](docs/Validation-v3.md) and [`evidence/`](evidence/).
 

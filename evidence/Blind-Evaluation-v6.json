@@ -1,0 +1,2982 @@
+{
+ "set": "blind-v6",
+ "scoredOnce": "2026-10-02T04:45:39.005Z",
+ "messages": 120,
+ "composition": {
+  "fraud": 50,
+  "benign": 50,
+  "suspicious": 20
+ },
+ "role": "Fresh sealed set written by a separate agent that never saw the code or earlier sets; scored once for checker 3.2 (Release 3.2 / persona build) and checker 3.3 (Release 3.3). It becomes development data after this run.",
+ "results": {
+  "v3.2": {
+   "riskyWarned": {
+    "k": 59,
+    "n": 70,
+    "pct": 84.3,
+    "ci95": [
+     74,
+     91
+    ]
+   },
+   "fraudWarned": {
+    "k": 45,
+    "n": 50,
+    "pct": 90,
+    "ci95": [
+     78.6,
+     95.7
+    ]
+   },
+   "fraudHigh": {
+    "k": 39,
+    "n": 50,
+    "pct": 78,
+    "ci95": [
+     64.8,
+     87.2
+    ]
+   },
+   "everydayFraudWarned": {
+    "k": 25,
+    "n": 29,
+    "pct": 86.2,
+    "ci95": [
+     69.4,
+     94.5
+    ]
+   },
+   "investmentFraudWarned": {
+    "k": 20,
+    "n": 21,
+    "pct": 95.2,
+    "ci95": [
+     77.3,
+     99.2
+    ]
+   },
+   "suspiciousWarned": {
+    "k": 14,
+    "n": 20,
+    "pct": 70,
+    "ci95": [
+     48.1,
+     85.5
+    ]
+   },
+   "benignWarned": {
+    "k": 15,
+    "n": 50,
+    "pct": 30,
+    "ci95": [
+     19.1,
+     43.8
+    ]
+   },
+   "benignHigh": {
+    "k": 12,
+    "n": 50,
+    "pct": 24,
+    "ci95": [
+     14.3,
+     37.4
+    ]
+   },
+   "trickyBenignWarned": {
+    "k": 15,
+    "n": 38,
+    "pct": 39.5,
+    "ci95": [
+     25.6,
+     55.3
+    ]
+   },
+   "easyBenignWarned": {
+    "k": 0,
+    "n": 12,
+    "pct": 0,
+    "ci95": [
+     0,
+     24.3
+    ]
+   },
+   "byLanguage": {
+    "hi": {
+     "riskyWarned": {
+      "k": 22,
+      "n": 28,
+      "pct": 78.6,
+      "ci95": [
+       60.5,
+       89.8
+      ]
+     },
+     "benignWarned": {
+      "k": 6,
+      "n": 20,
+      "pct": 30,
+      "ci95": [
+       14.5,
+       51.9
+      ]
+     }
+    },
+    "hinglish": {
+     "riskyWarned": {
+      "k": 18,
+      "n": 21,
+      "pct": 85.7,
+      "ci95": [
+       65.4,
+       95
+      ]
+     },
+     "benignWarned": {
+      "k": 5,
+      "n": 15,
+      "pct": 33.3,
+      "ci95": [
+       15.2,
+       58.3
+      ]
+     }
+    },
+    "en": {
+     "riskyWarned": {
+      "k": 15,
+      "n": 17,
+      "pct": 88.2,
+      "ci95": [
+       65.7,
+       96.7
+      ]
+     },
+     "benignWarned": {
+      "k": 4,
+      "n": 13,
+      "pct": 30.8,
+      "ci95": [
+       12.7,
+       57.6
+      ]
+     }
+    },
+    "mixed": {
+     "riskyWarned": {
+      "k": 4,
+      "n": 4,
+      "pct": 100,
+      "ci95": [
+       51,
+       100
+      ]
+     },
+     "benignWarned": {
+      "k": 0,
+      "n": 2,
+      "pct": 0,
+      "ci95": [
+       0,
+       65.8
+      ]
+     }
+    }
+   },
+   "misses": [
+    "S001 hi electricity-disconnection",
+    "S008 hinglish task-scam",
+    "S021 en electricity-disconnection",
+    "S055 hi sextortion",
+    "S113 hinglish ipo-quota-scam"
+   ],
+   "falseHigh": [
+    "S002 hi fd-offer [certainty]",
+    "S005 en awareness-sms [certainty,secrets,social,tips]",
+    "S025 en fd-offer [certainty]",
+    "S027 hi otp-sms [secrets]",
+    "S037 hi family-chat [certainty,doubling]",
+    "S040 hinglish delivery-otp [secrets]",
+    "S042 hi ipo-allotment [doubling]",
+    "S052 en income-tax [secrets]",
+    "S054 hinglish family-chat [certainty]",
+    "S056 hi lpg-booking [secrets]",
+    "S094 en awareness-sms [secrets]",
+    "S104 hinglish awareness-sms [certainty,social,tips,ipo]"
+   ],
+   "rows": [
+    {
+     "id": "S001",
+     "label": "fraud",
+     "language": "hi",
+     "category": "electricity-disconnection",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S002",
+     "label": "benign",
+     "language": "hi",
+     "category": "fd-offer",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty"
+     ]
+    },
+    {
+     "id": "S003",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "stock-tip-group",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency",
+      "social",
+      "doubling",
+      "impersonation",
+      "tips",
+      "link"
+     ]
+    },
+    {
+     "id": "S004",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "inside-tip",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S005",
+     "label": "benign",
+     "language": "en",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "secrets",
+      "social",
+      "tips"
+     ]
+    },
+    {
+     "id": "S006",
+     "label": "fraud",
+     "language": "en",
+     "category": "courier-redelivery",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "urgency"
+     ]
+    },
+    {
+     "id": "S007",
+     "label": "benign",
+     "language": "en",
+     "category": "otp-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S008",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "task-scam",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S009",
+     "label": "benign",
+     "language": "hi",
+     "category": "bill-receipt",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S010",
+     "label": "fraud",
+     "language": "hi",
+     "category": "fake-ipo-allotment",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency",
+      "threat"
+     ]
+    },
+    {
+     "id": "S011",
+     "label": "suspicious",
+     "language": "en",
+     "category": "bond-platform",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "app"
+     ]
+    },
+    {
+     "id": "S012",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "family-chat",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S013",
+     "label": "fraud",
+     "language": "hi",
+     "category": "lottery-prize",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S014",
+     "label": "benign",
+     "language": "en",
+     "category": "ipo-allotment",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S015",
+     "label": "fraud",
+     "language": "en",
+     "category": "sextortion",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "personal"
+     ]
+    },
+    {
+     "id": "S016",
+     "label": "benign",
+     "language": "hi",
+     "category": "discom-outage",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S017",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "influencer-course",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S018",
+     "label": "fraud",
+     "language": "en",
+     "category": "fake-sebi-notice",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "personal",
+      "threat"
+     ]
+    },
+    {
+     "id": "S019",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "re-kyc",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S020",
+     "label": "fraud",
+     "language": "hi",
+     "category": "kyc-account-block",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "threat",
+      "link"
+     ]
+    },
+    {
+     "id": "S021",
+     "label": "fraud",
+     "language": "en",
+     "category": "electricity-disconnection",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S022",
+     "label": "benign",
+     "language": "hi",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S023",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "inside-tip",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S024",
+     "label": "fraud",
+     "language": "hi",
+     "category": "digital-arrest",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "threat"
+     ]
+    },
+    {
+     "id": "S025",
+     "label": "benign",
+     "language": "en",
+     "category": "fd-offer",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty"
+     ]
+    },
+    {
+     "id": "S026",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "crypto-doubling",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S027",
+     "label": "benign",
+     "language": "hi",
+     "category": "otp-sms",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S028",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "p2p-lending",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "urgency"
+     ]
+    },
+    {
+     "id": "S029",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "loan-app-recovery",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S030",
+     "label": "benign",
+     "language": "en",
+     "category": "broker-margin",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S031",
+     "label": "fraud",
+     "language": "en",
+     "category": "card-reward-points",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S032",
+     "label": "benign",
+     "language": "hi",
+     "category": "mf-sip",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S033",
+     "label": "fraud",
+     "language": "hi",
+     "category": "fake-adviser",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "personal",
+      "secrets",
+      "doubling",
+      "tips"
+     ]
+    },
+    {
+     "id": "S034",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "loan-offer",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "link"
+     ]
+    },
+    {
+     "id": "S035",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "discom-outage",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S036",
+     "label": "fraud",
+     "language": "hi",
+     "category": "govt-scheme-subsidy",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "impersonation"
+     ]
+    },
+    {
+     "id": "S037",
+     "label": "benign",
+     "language": "hi",
+     "category": "family-chat",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S038",
+     "label": "suspicious",
+     "language": "en",
+     "category": "algo-bot",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "secrets",
+      "impersonation"
+     ]
+    },
+    {
+     "id": "S039",
+     "label": "fraud",
+     "language": "mixed",
+     "category": "pump-and-dump",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency"
+     ]
+    },
+    {
+     "id": "S040",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "delivery-otp",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S041",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "gas-kyc-disconnection",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S042",
+     "label": "benign",
+     "language": "hi",
+     "category": "ipo-allotment",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S043",
+     "label": "fraud",
+     "language": "hi",
+     "category": "task-scam",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S044",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "app"
+     ]
+    },
+    {
+     "id": "S045",
+     "label": "suspicious",
+     "language": "en",
+     "category": "influencer-course",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "app"
+     ]
+    },
+    {
+     "id": "S046",
+     "label": "fraud",
+     "language": "en",
+     "category": "fake-trading-app",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "withdrawal",
+      "threat",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S047",
+     "label": "benign",
+     "language": "en",
+     "category": "contract-note",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S048",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "fake-customer-care",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "secrets",
+      "app"
+     ]
+    },
+    {
+     "id": "S049",
+     "label": "benign",
+     "language": "hi",
+     "category": "epfo",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S050",
+     "label": "fraud",
+     "language": "hi",
+     "category": "chit-ponzi",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S051",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "insurance-missell",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S052",
+     "label": "benign",
+     "language": "en",
+     "category": "income-tax",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S053",
+     "label": "fraud",
+     "language": "en",
+     "category": "e-challan-apk",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S054",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "family-chat",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty"
+     ]
+    },
+    {
+     "id": "S055",
+     "label": "fraud",
+     "language": "hi",
+     "category": "sextortion",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S056",
+     "label": "benign",
+     "language": "hi",
+     "category": "lpg-booking",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S057",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "coop-high-fd",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S058",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "gold-scheme",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S059",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "bill-receipt",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S060",
+     "label": "benign",
+     "language": "mixed",
+     "category": "smart-meter",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S061",
+     "label": "fraud",
+     "language": "en",
+     "category": "kyc-account-block",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "link"
+     ]
+    },
+    {
+     "id": "S062",
+     "label": "benign",
+     "language": "hi",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S063",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "unlisted-shares",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S064",
+     "label": "fraud",
+     "language": "hi",
+     "category": "stock-tip-group",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "tips",
+      "link",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S065",
+     "label": "benign",
+     "language": "en",
+     "category": "exchange-trade-alert",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S066",
+     "label": "fraud",
+     "language": "en",
+     "category": "digital-arrest",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "personal",
+      "impersonation"
+     ]
+    },
+    {
+     "id": "S067",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "mf-sip",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S068",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "free-tips-group",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "social"
+     ]
+    },
+    {
+     "id": "S069",
+     "label": "fraud",
+     "language": "hi",
+     "category": "loan-app-recovery",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "threat"
+     ]
+    },
+    {
+     "id": "S070",
+     "label": "benign",
+     "language": "en",
+     "category": "bill-reminder",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S071",
+     "label": "fraud",
+     "language": "mixed",
+     "category": "recovery-scam",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty"
+     ]
+    },
+    {
+     "id": "S072",
+     "label": "benign",
+     "language": "hi",
+     "category": "income-tax",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S073",
+     "label": "suspicious",
+     "language": "en",
+     "category": "crypto-exchange",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S074",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "bill-refund",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S075",
+     "label": "benign",
+     "language": "hi",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "urgency"
+     ]
+    },
+    {
+     "id": "S076",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "real-estate-scheme",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency",
+      "personal",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S077",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "emi-reminder",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "personal"
+     ]
+    },
+    {
+     "id": "S078",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "fractional-realestate",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S079",
+     "label": "fraud",
+     "language": "hi",
+     "category": "sim-block-threat",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "threat"
+     ]
+    },
+    {
+     "id": "S080",
+     "label": "benign",
+     "language": "mixed",
+     "category": "family-chat",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S081",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "aadhaar-update",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S082",
+     "label": "benign",
+     "language": "hi",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S083",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "fake-trading-app",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "app",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S084",
+     "label": "benign",
+     "language": "en",
+     "category": "ipo-upi-mandate",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S085",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "informal-chit",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "personal"
+     ]
+    },
+    {
+     "id": "S086",
+     "label": "fraud",
+     "language": "en",
+     "category": "task-scam",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S087",
+     "label": "benign",
+     "language": "hi",
+     "category": "lic",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S088",
+     "label": "fraud",
+     "language": "hi",
+     "category": "guaranteed-returns",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S089",
+     "label": "benign",
+     "language": "en",
+     "category": "card-statement",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S090",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "customs-parcel",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "withdrawal",
+      "impersonation",
+      "threat"
+     ]
+    },
+    {
+     "id": "S091",
+     "label": "suspicious",
+     "language": "en",
+     "category": "broker-promo",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "borrowing"
+     ]
+    },
+    {
+     "id": "S092",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "family-chat",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S093",
+     "label": "fraud",
+     "language": "hi",
+     "category": "card-reward-points",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S094",
+     "label": "benign",
+     "language": "en",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S095",
+     "label": "fraud",
+     "language": "hi",
+     "category": "ponzi-app",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal",
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S096",
+     "label": "benign",
+     "language": "hi",
+     "category": "scheme-credit",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S097",
+     "label": "fraud",
+     "language": "en",
+     "category": "lottery-prize",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S098",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "pms-pitch",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S099",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S100",
+     "label": "fraud",
+     "language": "mixed",
+     "category": "fake-broker-kyc",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets",
+      "link"
+     ]
+    },
+    {
+     "id": "S101",
+     "label": "fraud",
+     "language": "hi",
+     "category": "part-time-job-fee",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S102",
+     "label": "benign",
+     "language": "hi",
+     "category": "pension-life-certificate",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S103",
+     "label": "fraud",
+     "language": "hi",
+     "category": "crypto-doubling",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S104",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "social",
+      "tips",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S105",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "mlm-pitch",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S106",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "govt-scheme-apk",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "app"
+     ]
+    },
+    {
+     "id": "S107",
+     "label": "benign",
+     "language": "en",
+     "category": "otp-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S108",
+     "label": "fraud",
+     "language": "hi",
+     "category": "recovery-scam",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S109",
+     "label": "benign",
+     "language": "hi",
+     "category": "lic",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S110",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "fake-trading-app",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "social",
+      "app"
+     ]
+    },
+    {
+     "id": "S111",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "jeweller-scheme",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S112",
+     "label": "benign",
+     "language": "hi",
+     "category": "bank-alert",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S113",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "ipo-quota-scam",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S114",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "fd-maturity",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S115",
+     "label": "fraud",
+     "language": "hi",
+     "category": "forex-trading",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S116",
+     "label": "benign",
+     "language": "hi",
+     "category": "post-tracking",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S117",
+     "label": "suspicious",
+     "language": "mixed",
+     "category": "unrated-ncd",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "urgency"
+     ]
+    },
+    {
+     "id": "S118",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "family-chat",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S119",
+     "label": "fraud",
+     "language": "en",
+     "category": "pig-butchering",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "tips"
+     ]
+    },
+    {
+     "id": "S120",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "ca-message",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    }
+   ]
+  },
+  "v3.3": {
+   "riskyWarned": {
+    "k": 61,
+    "n": 70,
+    "pct": 87.1,
+    "ci95": [
+     77.3,
+     93.1
+    ]
+   },
+   "fraudWarned": {
+    "k": 47,
+    "n": 50,
+    "pct": 94,
+    "ci95": [
+     83.8,
+     97.9
+    ]
+   },
+   "fraudHigh": {
+    "k": 41,
+    "n": 50,
+    "pct": 82,
+    "ci95": [
+     69.2,
+     90.2
+    ]
+   },
+   "everydayFraudWarned": {
+    "k": 27,
+    "n": 29,
+    "pct": 93.1,
+    "ci95": [
+     78,
+     98.1
+    ]
+   },
+   "investmentFraudWarned": {
+    "k": 20,
+    "n": 21,
+    "pct": 95.2,
+    "ci95": [
+     77.3,
+     99.2
+    ]
+   },
+   "suspiciousWarned": {
+    "k": 14,
+    "n": 20,
+    "pct": 70,
+    "ci95": [
+     48.1,
+     85.5
+    ]
+   },
+   "benignWarned": {
+    "k": 12,
+    "n": 50,
+    "pct": 24,
+    "ci95": [
+     14.3,
+     37.4
+    ]
+   },
+   "benignHigh": {
+    "k": 9,
+    "n": 50,
+    "pct": 18,
+    "ci95": [
+     9.8,
+     30.8
+    ]
+   },
+   "trickyBenignWarned": {
+    "k": 12,
+    "n": 38,
+    "pct": 31.6,
+    "ci95": [
+     19.1,
+     47.5
+    ]
+   },
+   "easyBenignWarned": {
+    "k": 0,
+    "n": 12,
+    "pct": 0,
+    "ci95": [
+     0,
+     24.3
+    ]
+   },
+   "byLanguage": {
+    "hi": {
+     "riskyWarned": {
+      "k": 23,
+      "n": 28,
+      "pct": 82.1,
+      "ci95": [
+       64.4,
+       92.1
+      ]
+     },
+     "benignWarned": {
+      "k": 5,
+      "n": 20,
+      "pct": 25,
+      "ci95": [
+       11.2,
+       46.9
+      ]
+     }
+    },
+    "hinglish": {
+     "riskyWarned": {
+      "k": 18,
+      "n": 21,
+      "pct": 85.7,
+      "ci95": [
+       65.4,
+       95
+      ]
+     },
+     "benignWarned": {
+      "k": 4,
+      "n": 15,
+      "pct": 26.7,
+      "ci95": [
+       10.9,
+       52
+      ]
+     }
+    },
+    "en": {
+     "riskyWarned": {
+      "k": 16,
+      "n": 17,
+      "pct": 94.1,
+      "ci95": [
+       73,
+       99
+      ]
+     },
+     "benignWarned": {
+      "k": 3,
+      "n": 13,
+      "pct": 23.1,
+      "ci95": [
+       8.2,
+       50.3
+      ]
+     }
+    },
+    "mixed": {
+     "riskyWarned": {
+      "k": 4,
+      "n": 4,
+      "pct": 100,
+      "ci95": [
+       51,
+       100
+      ]
+     },
+     "benignWarned": {
+      "k": 0,
+      "n": 2,
+      "pct": 0,
+      "ci95": [
+       0,
+       65.8
+      ]
+     }
+    }
+   },
+   "misses": [
+    "S008 hinglish task-scam",
+    "S055 hi sextortion",
+    "S113 hinglish ipo-quota-scam"
+   ],
+   "falseHigh": [
+    "S005 en awareness-sms [certainty,secrets,social,tips]",
+    "S027 hi otp-sms [secrets]",
+    "S037 hi family-chat [certainty,doubling]",
+    "S040 hinglish delivery-otp [secrets]",
+    "S042 hi ipo-allotment [doubling]",
+    "S052 en income-tax [secrets]",
+    "S056 hi lpg-booking [secrets]",
+    "S094 en awareness-sms [secrets]",
+    "S104 hinglish awareness-sms [certainty,social,tips,ipo]"
+   ],
+   "rows": [
+    {
+     "id": "S001",
+     "label": "fraud",
+     "language": "hi",
+     "category": "electricity-disconnection",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "threat"
+     ]
+    },
+    {
+     "id": "S002",
+     "label": "benign",
+     "language": "hi",
+     "category": "fd-offer",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S003",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "stock-tip-group",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency",
+      "social",
+      "doubling",
+      "impersonation",
+      "tips",
+      "link"
+     ]
+    },
+    {
+     "id": "S004",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "inside-tip",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S005",
+     "label": "benign",
+     "language": "en",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "secrets",
+      "social",
+      "tips"
+     ]
+    },
+    {
+     "id": "S006",
+     "label": "fraud",
+     "language": "en",
+     "category": "courier-redelivery",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "urgency"
+     ]
+    },
+    {
+     "id": "S007",
+     "label": "benign",
+     "language": "en",
+     "category": "otp-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S008",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "task-scam",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S009",
+     "label": "benign",
+     "language": "hi",
+     "category": "bill-receipt",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S010",
+     "label": "fraud",
+     "language": "hi",
+     "category": "fake-ipo-allotment",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency",
+      "threat"
+     ]
+    },
+    {
+     "id": "S011",
+     "label": "suspicious",
+     "language": "en",
+     "category": "bond-platform",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "app"
+     ]
+    },
+    {
+     "id": "S012",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "family-chat",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S013",
+     "label": "fraud",
+     "language": "hi",
+     "category": "lottery-prize",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S014",
+     "label": "benign",
+     "language": "en",
+     "category": "ipo-allotment",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S015",
+     "label": "fraud",
+     "language": "en",
+     "category": "sextortion",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "personal"
+     ]
+    },
+    {
+     "id": "S016",
+     "label": "benign",
+     "language": "hi",
+     "category": "discom-outage",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S017",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "influencer-course",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S018",
+     "label": "fraud",
+     "language": "en",
+     "category": "fake-sebi-notice",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "personal",
+      "threat"
+     ]
+    },
+    {
+     "id": "S019",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "re-kyc",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S020",
+     "label": "fraud",
+     "language": "hi",
+     "category": "kyc-account-block",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "threat",
+      "link"
+     ]
+    },
+    {
+     "id": "S021",
+     "label": "fraud",
+     "language": "en",
+     "category": "electricity-disconnection",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "threat"
+     ]
+    },
+    {
+     "id": "S022",
+     "label": "benign",
+     "language": "hi",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S023",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "inside-tip",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S024",
+     "label": "fraud",
+     "language": "hi",
+     "category": "digital-arrest",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "threat"
+     ]
+    },
+    {
+     "id": "S025",
+     "label": "benign",
+     "language": "en",
+     "category": "fd-offer",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S026",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "crypto-doubling",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S027",
+     "label": "benign",
+     "language": "hi",
+     "category": "otp-sms",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S028",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "p2p-lending",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "urgency"
+     ]
+    },
+    {
+     "id": "S029",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "loan-app-recovery",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S030",
+     "label": "benign",
+     "language": "en",
+     "category": "broker-margin",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S031",
+     "label": "fraud",
+     "language": "en",
+     "category": "card-reward-points",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S032",
+     "label": "benign",
+     "language": "hi",
+     "category": "mf-sip",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S033",
+     "label": "fraud",
+     "language": "hi",
+     "category": "fake-adviser",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "personal",
+      "secrets",
+      "doubling",
+      "tips"
+     ]
+    },
+    {
+     "id": "S034",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "loan-offer",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "link"
+     ]
+    },
+    {
+     "id": "S035",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "discom-outage",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S036",
+     "label": "fraud",
+     "language": "hi",
+     "category": "govt-scheme-subsidy",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "impersonation"
+     ]
+    },
+    {
+     "id": "S037",
+     "label": "benign",
+     "language": "hi",
+     "category": "family-chat",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S038",
+     "label": "suspicious",
+     "language": "en",
+     "category": "algo-bot",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "secrets",
+      "impersonation"
+     ]
+    },
+    {
+     "id": "S039",
+     "label": "fraud",
+     "language": "mixed",
+     "category": "pump-and-dump",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency"
+     ]
+    },
+    {
+     "id": "S040",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "delivery-otp",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S041",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "gas-kyc-disconnection",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S042",
+     "label": "benign",
+     "language": "hi",
+     "category": "ipo-allotment",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S043",
+     "label": "fraud",
+     "language": "hi",
+     "category": "task-scam",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S044",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "app"
+     ]
+    },
+    {
+     "id": "S045",
+     "label": "suspicious",
+     "language": "en",
+     "category": "influencer-course",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "app"
+     ]
+    },
+    {
+     "id": "S046",
+     "label": "fraud",
+     "language": "en",
+     "category": "fake-trading-app",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "withdrawal",
+      "threat",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S047",
+     "label": "benign",
+     "language": "en",
+     "category": "contract-note",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S048",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "fake-customer-care",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "secrets",
+      "app"
+     ]
+    },
+    {
+     "id": "S049",
+     "label": "benign",
+     "language": "hi",
+     "category": "epfo",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S050",
+     "label": "fraud",
+     "language": "hi",
+     "category": "chit-ponzi",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S051",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "insurance-missell",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S052",
+     "label": "benign",
+     "language": "en",
+     "category": "income-tax",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S053",
+     "label": "fraud",
+     "language": "en",
+     "category": "e-challan-apk",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S054",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "family-chat",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S055",
+     "label": "fraud",
+     "language": "hi",
+     "category": "sextortion",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S056",
+     "label": "benign",
+     "language": "hi",
+     "category": "lpg-booking",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S057",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "coop-high-fd",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "doubling"
+     ]
+    },
+    {
+     "id": "S058",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "gold-scheme",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S059",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "bill-receipt",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S060",
+     "label": "benign",
+     "language": "mixed",
+     "category": "smart-meter",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S061",
+     "label": "fraud",
+     "language": "en",
+     "category": "kyc-account-block",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "link"
+     ]
+    },
+    {
+     "id": "S062",
+     "label": "benign",
+     "language": "hi",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S063",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "unlisted-shares",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S064",
+     "label": "fraud",
+     "language": "hi",
+     "category": "stock-tip-group",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "tips",
+      "link",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S065",
+     "label": "benign",
+     "language": "en",
+     "category": "exchange-trade-alert",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S066",
+     "label": "fraud",
+     "language": "en",
+     "category": "digital-arrest",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "personal",
+      "impersonation"
+     ]
+    },
+    {
+     "id": "S067",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "mf-sip",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S068",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "free-tips-group",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "social"
+     ]
+    },
+    {
+     "id": "S069",
+     "label": "fraud",
+     "language": "hi",
+     "category": "loan-app-recovery",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "threat"
+     ]
+    },
+    {
+     "id": "S070",
+     "label": "benign",
+     "language": "en",
+     "category": "bill-reminder",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S071",
+     "label": "fraud",
+     "language": "mixed",
+     "category": "recovery-scam",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty"
+     ]
+    },
+    {
+     "id": "S072",
+     "label": "benign",
+     "language": "hi",
+     "category": "income-tax",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S073",
+     "label": "suspicious",
+     "language": "en",
+     "category": "crypto-exchange",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S074",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "bill-refund",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S075",
+     "label": "benign",
+     "language": "hi",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "urgency"
+     ]
+    },
+    {
+     "id": "S076",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "real-estate-scheme",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency",
+      "personal",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S077",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "emi-reminder",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "personal"
+     ]
+    },
+    {
+     "id": "S078",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "fractional-realestate",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S079",
+     "label": "fraud",
+     "language": "hi",
+     "category": "sim-block-threat",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "threat"
+     ]
+    },
+    {
+     "id": "S080",
+     "label": "benign",
+     "language": "mixed",
+     "category": "family-chat",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S081",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "aadhaar-update",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S082",
+     "label": "benign",
+     "language": "hi",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S083",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "fake-trading-app",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "app",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S084",
+     "label": "benign",
+     "language": "en",
+     "category": "ipo-upi-mandate",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S085",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "informal-chit",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "personal"
+     ]
+    },
+    {
+     "id": "S086",
+     "label": "fraud",
+     "language": "en",
+     "category": "task-scam",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S087",
+     "label": "benign",
+     "language": "hi",
+     "category": "lic",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S088",
+     "label": "fraud",
+     "language": "hi",
+     "category": "guaranteed-returns",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S089",
+     "label": "benign",
+     "language": "en",
+     "category": "card-statement",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S090",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "customs-parcel",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "withdrawal",
+      "impersonation",
+      "threat"
+     ]
+    },
+    {
+     "id": "S091",
+     "label": "suspicious",
+     "language": "en",
+     "category": "broker-promo",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "borrowing"
+     ]
+    },
+    {
+     "id": "S092",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "family-chat",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S093",
+     "label": "fraud",
+     "language": "hi",
+     "category": "card-reward-points",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S094",
+     "label": "benign",
+     "language": "en",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets"
+     ]
+    },
+    {
+     "id": "S095",
+     "label": "fraud",
+     "language": "hi",
+     "category": "ponzi-app",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal",
+      "app",
+      "link"
+     ]
+    },
+    {
+     "id": "S096",
+     "label": "benign",
+     "language": "hi",
+     "category": "scheme-credit",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S097",
+     "label": "fraud",
+     "language": "en",
+     "category": "lottery-prize",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S098",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "pms-pitch",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S099",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S100",
+     "label": "fraud",
+     "language": "mixed",
+     "category": "fake-broker-kyc",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "secrets",
+      "link"
+     ]
+    },
+    {
+     "id": "S101",
+     "label": "fraud",
+     "language": "hi",
+     "category": "part-time-job-fee",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S102",
+     "label": "benign",
+     "language": "hi",
+     "category": "pension-life-certificate",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S103",
+     "label": "fraud",
+     "language": "hi",
+     "category": "crypto-doubling",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S104",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "awareness-sms",
+     "tricky": true,
+     "level": "high",
+     "signs": [
+      "certainty",
+      "social",
+      "tips",
+      "ipo"
+     ]
+    },
+    {
+     "id": "S105",
+     "label": "suspicious",
+     "language": "hinglish",
+     "category": "mlm-pitch",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S106",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "govt-scheme-apk",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "app"
+     ]
+    },
+    {
+     "id": "S107",
+     "label": "benign",
+     "language": "en",
+     "category": "otp-sms",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S108",
+     "label": "fraud",
+     "language": "hi",
+     "category": "recovery-scam",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "withdrawal"
+     ]
+    },
+    {
+     "id": "S109",
+     "label": "benign",
+     "language": "hi",
+     "category": "lic",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S110",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "fake-trading-app",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "social",
+      "app"
+     ]
+    },
+    {
+     "id": "S111",
+     "label": "suspicious",
+     "language": "hi",
+     "category": "jeweller-scheme",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S112",
+     "label": "benign",
+     "language": "hi",
+     "category": "bank-alert",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S113",
+     "label": "fraud",
+     "language": "hinglish",
+     "category": "ipo-quota-scam",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S114",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "fd-maturity",
+     "tricky": false,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S115",
+     "label": "fraud",
+     "language": "hi",
+     "category": "forex-trading",
+     "tricky": false,
+     "level": "high",
+     "signs": [
+      "urgency",
+      "doubling"
+     ]
+    },
+    {
+     "id": "S116",
+     "label": "benign",
+     "language": "hi",
+     "category": "post-tracking",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S117",
+     "label": "suspicious",
+     "language": "mixed",
+     "category": "unrated-ncd",
+     "tricky": false,
+     "level": "caution",
+     "signs": [
+      "urgency"
+     ]
+    },
+    {
+     "id": "S118",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "family-chat",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    },
+    {
+     "id": "S119",
+     "label": "fraud",
+     "language": "en",
+     "category": "pig-butchering",
+     "tricky": true,
+     "level": "caution",
+     "signs": [
+      "tips"
+     ]
+    },
+    {
+     "id": "S120",
+     "label": "benign",
+     "language": "hinglish",
+     "category": "ca-message",
+     "tricky": true,
+     "level": "none",
+     "signs": []
+    }
+   ]
+  }
+ }
+}
