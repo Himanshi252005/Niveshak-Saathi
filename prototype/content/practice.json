@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "before": [
+    {
+      "id": "before-ipo-group",
+      "enabled": true,
+      "question": { "en": "A group promises certain IPO allotment if you pay immediately. What is the safest next action?", "hi": "एक ग्रुप कहता है कि अभी भुगतान करें तो IPO में पक्का आवंटन मिलेगा। सबसे सुरक्षित अगला कदम क्या है?" },
+      "options": [
+        { "en": "Pay a small amount to test it", "hi": "थोड़े पैसे भेजकर जाँचें" },
+        { "en": "Pause and verify through official sources", "hi": "रुकें और आधिकारिक स्रोत से जाँचें" },
+        { "en": "Trust the group’s profit screenshots", "hi": "ग्रुप में दिखाए गए मुनाफ़े के स्क्रीनशॉट पर भरोसा करें" }
+      ],
+      "correct": 1
+    },
+    {
+      "id": "before-money-sent",
+      "enabled": true,
+      "question": { "en": "You sent money and now suspect online financial fraud. What should you do first?", "hi": "पैसे भेजने के बाद ऑनलाइन वित्तीय धोखाधड़ी का संदेह है। पहले क्या करें?" },
+      "options": [
+        { "en": "Contact the bank/payment provider and promptly report through 1930/official cybercrime channels", "hi": "बैंक या भुगतान सेवा से संपर्क करें और तुरंत 1930 या आधिकारिक साइबर अपराध पोर्टल पर रिपोर्ट करें" },
+        { "en": "Wait for a week", "hi": "एक सप्ताह इंतज़ार" },
+        { "en": "Pay the recovery agent", "hi": "रिकवरी एजेंट को पैसे दें" }
+      ],
+      "correct": 0
+    },
+    {
+      "id": "before-no-match",
+      "enabled": true,
+      "question": { "en": "The checker finds no warning signs. What does this mean?", "hi": "जाँच में कोई खतरे का संकेत नहीं मिला। इसका क्या अर्थ है?" },
+      "options": [
+        { "en": "The offer is verified", "hi": "प्रस्ताव जाँचा हुआ और सही है" },
+        { "en": "The government approved it", "hi": "सरकार ने स्वीकृति दी" },
+        { "en": "The checker may have missed something; independently verify", "hi": "जाँच से कुछ छूट सकता है; खुद जाँच करें" }
+      ],
+      "correct": 2
+    }
+  ],
+  "after": [
+    {
+      "id": "after-chat-adviser",
+      "enabled": true,
+      "question": { "en": "A chat adviser promises risk-free profit today. Your next step?", "hi": "चैट पर एक सलाहकार आज ही बिना जोखिम मुनाफ़े का वादा करता है। आपका अगला कदम क्या होगा?" },
+      "options": [
+        { "en": "Borrow and pay before the deadline", "hi": "समय-सीमा खत्म होने से पहले उधार लेकर भुगतान करें" },
+        { "en": "Forward it as a verified offer", "hi": "इसे जाँचा हुआ सही प्रस्ताव बताकर दूसरों को भेजें" },
+        { "en": "Pause and independently verify", "hi": "रुकें और खुद जाँच करें" }
+      ],
+      "correct": 2
+    },
+    {
+      "id": "after-unlock-fee",
+      "enabled": true,
+      "question": { "en": "A fake investment app took your payment and asks for more to unlock it. First action?", "hi": "नकली निवेश ऐप भुगतान लेकर पैसे निकालने के लिए और रकम माँगता है। पहला कदम?" },
+      "options": [
+        { "en": "Send the unlock fee", "hi": "पैसे निकालने की फ़ीस दे दें" },
+        { "en": "Contact your bank/payment provider and report promptly through 1930/official cybercrime channels", "hi": "बैंक या भुगतान सेवा से संपर्क करें और तुरंत 1930 या आधिकारिक साइबर अपराध पोर्टल पर रिपोर्ट करें" },
+        { "en": "Delete all evidence", "hi": "सभी सबूत मिटाएँ" }
+      ],
+      "correct": 1
+    },
+    {
+      "id": "after-zero-matches",
+      "enabled": true,
+      "question": { "en": "An unfamiliar message gets zero matches. Is it safe to transfer money?", "hi": "एक अनजान संदेश में खतरे का कोई संकेत नहीं मिला। क्या अब पैसे भेजना सुरक्षित है?" },
+      "options": [
+        { "en": "No result proves safety; verify independently", "hi": "कोई भी जाँच-परिणाम सुरक्षा साबित नहीं करता; खुद जाँच करें" },
+        { "en": "Yes, zero means safe", "hi": "हाँ, कोई संकेत नहीं मिला तो सुरक्षित है" },
+        { "en": "Yes, if the group is large", "hi": "हाँ, यदि समूह बड़ा है" }
+      ],
+      "correct": 0
+    }
+  ],
+  "lesson": [
+    {
+      "title": { "en": "Pause before paying", "hi": "भुगतान से पहले रुकें" },
+      "text": { "en": "Treat certainty and urgency as reasons to verify, not reasons to hurry.", "hi": "पक्के मुनाफ़े का वादा या जल्दी करने का दबाव दिखे तो जल्दबाज़ी नहीं, जाँच करें।" }
+    },
+    {
+      "title": { "en": "Act quickly after suspected loss", "hi": "धोखे से नुकसान का शक हो तो तुरंत कदम उठाएँ" },
+      "text": { "en": "Contact your bank/payment provider and report promptly via 1930 and the official portal.", "hi": "बैंक/भुगतान सेवा से संपर्क करें और जल्द 1930 व आधिकारिक पोर्टल पर रिपोर्ट करें।" }
+    },
+    {
+      "title": { "en": "No match is not a safety certificate", "hi": "संकेत न मिलना सुरक्षा प्रमाण नहीं" },
+      "text": { "en": "A limited checker cannot establish legitimacy. Verify independently.", "hi": "यह सीमित जाँच यह साबित नहीं कर सकती कि प्रस्ताव असली है। खुद जाँच करें।" }
+    }
+  ],
+  "habit": {
+    "title": { "en": "SEVEN-DAY SAFETY PRACTICE", "hi": "सात दिन का सुरक्षा अभ्यास" },
+    "intro": { "en": "Use with fictional examples; never enter financial credentials.", "hi": "काल्पनिक उदाहरण लें; वित्तीय गोपनीय जानकारी न डालें।" },
+    "days": [
+      { "en": "Practise pausing before a payment.", "hi": "भुगतान से पहले रुकने का अभ्यास।" },
+      { "en": "Find an institution’s official contact independently.", "hi": "संस्था का आधिकारिक संपर्क स्वतंत्र रूप से खोजें।" },
+      { "en": "Explain why guaranteed returns are a warning.", "hi": "समझाएँ कि पक्के लाभ का वादा चेतावनी क्यों है।" },
+      { "en": "Save the official cybercrime portal and remember 1930.", "hi": "आधिकारिक साइबर अपराध पोर्टल और 1930 याद रखें।" },
+      { "en": "Practise writing a factual complaint.", "hi": "तथ्यों पर आधारित शिकायत लिखने का अभ्यास।" },
+      { "en": "Explain to a family member why no checker can certify safety.", "hi": "परिवार को समझाएँ कि कोई जाँच सुरक्षा प्रमाण नहीं देती।" },
+      { "en": "Repeat the practice exercise and note what you still find confusing.", "hi": "अभ्यास दोहराएँ और बची हुई उलझन लिखें।" }
+    ],
+    "footer": { "en": "This card makes no claim about actual behaviour change.", "hi": "यह कार्ड वास्तविक व्यवहार बदलने का दावा नहीं करता।" }
+  }
+}

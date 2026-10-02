@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "cards": [
+    {
+      "id": "fraud-evidence",
+      "enabled": true,
+      "issueIds": [
+        "fraud"
+      ],
+      "text": {
+        "en": "Save evidence before blocking a suspicious contact. Report promptly after financial loss. A recovery promise is not a guarantee.",
+        "hi": "संदिग्ध संपर्क ब्लॉक करने से पहले सबूत रखें। पैसों का नुकसान हो तो जल्दी रिपोर्ट करें। पैसा वापस दिलाने का वादा, गारंटी नहीं है।"
+      },
+      "sourceId": "cyber"
+    },
+    {
+      "id": "broker-review",
+      "enabled": true,
+      "issueIds": [
+        "broker",
+        "company",
+        "mutual-fund",
+        "transmission"
+      ],
+      "text": {
+        "en": "You can raise an eligible grievance and seek a review through the applicable official process. Keep acknowledgements. Check current SCORES instructions for eligibility and review time limits; do not wait for this prototype to remind you.",
+        "hi": "जो शिकायत नियमों के दायरे में आती है, वह आप दर्ज कर सकते हैं, और तय आधिकारिक प्रक्रिया से उस पर दोबारा जाँच (समीक्षा) माँग सकते हैं। पावती सँभालकर रखें। कौन-सी शिकायत ली जाती है और समय-सीमा क्या है, यह SCORES के ताज़ा निर्देशों में देखें; इस प्रोटोटाइप के याद दिलाने का इंतज़ार न करें।"
+      },
+      "sourceId": "scores"
+    },
+    {
+      "id": "family-entitlement",
+      "enabled": true,
+      "issueIds": [
+        "unclaimed",
+        "transmission"
+      ],
+      "text": {
+        "en": "Nomination, ownership and inheritance are different questions. Ask the institution for the applicable requirements in writing; this app does not decide entitlement.",
+        "hi": "नॉमिनी होना, मालिकाना हक और विरासत अलग-अलग बातें हैं। संस्था से लागू ज़रूरतें लिखित में लें; यह ऐप हक तय नहीं करता।"
+      },
+      "sourceId": "sebi-rta-faq"
+    },
+    {
+      "id": "nominee-trustee",
+      "enabled": true,
+      "issueIds": [
+        "transmission"
+      ],
+      "text": {
+        "en": "A nominee receives the holdings as a trustee for the legal heirs. Nomination alone does not decide who finally owns them.",
+        "hi": "नॉमिनी को होल्डिंग कानूनी वारिसों की ओर से, ट्रस्टी (देखरेख करने वाले) के रूप में मिलती है। सिर्फ़ नॉमिनी बना देने से यह तय नहीं होता कि आखिर में मालिक कौन होगा।"
+      },
+      "sourceId": "sebi-rta-faq"
+    }
+  ]
+}

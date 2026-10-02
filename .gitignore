@@ -1,0 +1,28 @@
+# Local and internal working material
+context/
+outputs/context/
+work/
+screens/
+screenshots/
+
+# Hosting identity and nested repositories
+.openai/
+.git/
+prototype/.git/
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*
+
+# Generated local noise
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+

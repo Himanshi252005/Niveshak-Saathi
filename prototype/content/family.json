@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "tabLabel": { "en": "Family safety", "hi": "परिवार की सुरक्षा" },
+  "eyebrow": { "en": "Ready before it is needed", "hi": "ज़रूरत से पहले तैयारी" },
+  "title": { "en": "Family safety and nominee readiness", "hi": "परिवार की सुरक्षा और नॉमिनी की तैयारी" },
+  "intro": { "en": "A short checklist for the family's investments. It never asks for values, account numbers, passwords, documents or relatives' details, and your ticks stay only in this page.", "hi": "परिवार के निवेश के लिए एक छोटी सूची। यह कभी राशि, खाता नंबर, पासवर्ड, दस्तावेज़ या रिश्तेदारों की जानकारी नहीं माँगती, और आपके चुने विकल्प केवल इसी पेज में रहते हैं।" },
+  "holdingsQuestion": { "en": "1. What does the family hold? Choose all that apply.", "hi": "1. परिवार के पास क्या है? जो भी लागू हो, सब चुनें।" },
+  "holdings": [
+    { "id": "demat", "label": { "en": "Shares in a demat account", "hi": "डीमैट खाते में शेयर" } },
+    { "id": "mf", "label": { "en": "Mutual funds", "hi": "म्यूचुअल फ़ंड" } },
+    { "id": "physical", "label": { "en": "Paper (physical) share certificates", "hi": "कागज़ी (भौतिक) शेयर प्रमाणपत्र" } },
+    { "id": "unknown", "label": { "en": "Not sure", "hi": "पक्का नहीं पता" } }
+  ],
+  "nomineeQuestion": { "en": "2. Have you checked the nominees recently?", "hi": "2. क्या आपने हाल में नॉमिनी की जानकारी जाँची है?" },
+  "nomineeOptions": [
+    { "id": "checked", "label": { "en": "Yes, checked", "hi": "हाँ, जाँचा है" } },
+    { "id": "not-checked", "label": { "en": "No", "hi": "नहीं" } },
+    { "id": "unknown", "label": { "en": "Not sure", "hi": "पक्का नहीं पता" } }
+  ],
+  "showList": { "en": "Show our family checklist", "hi": "हमारी पारिवारिक सूची दिखाएँ" },
+  "chooseFirst": { "en": "Choose at least one option in question 1.", "hi": "प्रश्न 1 में कम से कम एक विकल्प चुनें।" },
+  "listTitle": { "en": "Our family checklist", "hi": "हमारी पारिवारिक सूची" },
+  "firstTag": { "en": "Do this first", "hi": "पहले यह करें" },
+  "doneLabel": { "en": "Done", "hi": "हो गया" },
+  "generalLabel": { "en": "General safety step (not from a single official page).", "hi": "सामान्य सुरक्षा कदम (किसी एक आधिकारिक पेज से नहीं)।" },
+  "cardTitle": { "en": "OUR FAMILY ACTION CARD", "hi": "हमारा पारिवारिक एक्शन कार्ड" },
+  "cardWarning": { "en": "Do not write passwords, PINs, OTPs, account numbers or document numbers on this card.", "hi": "इस कार्ड पर पासवर्ड, PIN, OTP, खाता नंबर या दस्तावेज़ नंबर न लिखें।" },
+  "cardBlank": { "en": "Where our statements and certificates are kept: ______________________", "hi": "हमारे स्टेटमेंट और प्रमाणपत्र कहाँ रखे हैं: ______________________" },
+  "download": { "en": "Download our family card", "hi": "हमारा पारिवारिक कार्ड डाउनलोड करें" },
+  "print": { "en": "Print our family card", "hi": "हमारा पारिवारिक कार्ड प्रिंट करें" },
+  "items": [
+    {
+      "id": "nominee",
+      "when": ["demat", "mf"],
+      "text": { "en": "Check that each demat account and mutual fund folio has a nominee, or that your decision not to add one (opt-out) is recorded. You can add or change a nominee with your depository participant (DP), the fund or its registrar, online or on paper.", "hi": "जाँचें कि हर डीमैट खाते और म्यूचुअल फ़ंड फ़ोलियो में नॉमिनी है, या नॉमिनी न रखने (ऑप्ट-आउट) का फ़ैसला दर्ज है। नॉमिनी आप अपने DP (डिपॉज़िटरी पार्टिसिपेंट, जहाँ डीमैट खाता है), फ़ंड या उसके रजिस्ट्रार के पास, ऑनलाइन या फ़ॉर्म भरकर, जोड़ या बदल सकते हैं।" },
+      "sourceId": "sebi-nomination-2026"
+    },
+    {
+      "id": "no-freeze",
+      "when": ["demat", "mf"],
+      "text": { "en": "SEBI's 2026 nomination rules ask DPs and fund registrars to send reminders twice a year to accounts and folios without a nominee. The rules do not provide for freezing them. A message that threatens freezing and asks for payment is a warning sign.", "hi": "SEBI के 2026 के नॉमिनी नियमों के अनुसार, जिन डीमैट खातों और फ़ोलियो में नॉमिनी नहीं है, उन्हें DP और फ़ंड के रजिस्ट्रार साल में दो बार याद दिलाने वाले संदेश भेजते हैं। इन नियमों में उन्हें फ़्रीज़ (बंद) करने की कोई बात नहीं है। फ़्रीज़ करने की धमकी देकर भुगतान माँगने वाला संदेश धोखाधड़ी का संकेत है।" },
+      "sourceId": "sebi-nomination-2026"
+    },
+    {
+      "id": "contact-kyc",
+      "when": ["demat"],
+      "text": { "en": "Keep your mobile number, email and address up to date with your broker or depository participant (DP), and tell them whenever these change.", "hi": "अपने ब्रोकर या DP (डिपॉज़िटरी पार्टिसिपेंट) के पास अपना मोबाइल नंबर, ईमेल और पता सही (अपडेट) रखें, और इनमें बदलाव होने पर उन्हें बताएँ।" },
+      "sourceId": "sebi-dos-donts"
+    },
+    {
+      "id": "records",
+      "when": ["any"],
+      "text": { "en": "Make sure a trusted family member knows where statements, certificates and policy papers are kept. Never share or write down passwords, PINs or OTPs.", "hi": "पक्का करें कि परिवार का कोई भरोसेमंद सदस्य जानता हो कि स्टेटमेंट, प्रमाणपत्र और पॉलिसी के कागज़ कहाँ रखे हैं। पासवर्ड, PIN या OTP कभी किसी को न बताएँ, न कहीं लिखें।" },
+      "general": true
+    },
+    {
+      "id": "physical-demat",
+      "when": ["physical"],
+      "text": { "en": "Paper share certificates must be converted to demat form before they can be sold or transferred. You need a demat account for this.", "hi": "कागज़ी शेयर प्रमाणपत्रों को बेचने या ट्रांसफ़र करने से पहले डीमैट रूप में बदलवाना होता है। इसके लिए डीमैट खाता चाहिए।" },
+      "sourceId": "sebi-physical-faq"
+    },
+    {
+      "id": "physical-drf",
+      "when": ["physical"],
+      "text": { "en": "To convert them, submit the certificates with a Demat Request Form (DRF) to your depository participant (DP), where your demat account is.", "hi": "बदलवाने के लिए प्रमाणपत्र, डीमैट अनुरोध फ़ॉर्म (DRF) के साथ, अपने DP (डिपॉज़िटरी पार्टिसिपेंट, जहाँ डीमैट खाता है) को जमा करें।" },
+      "sourceId": "sebi-depository-faq"
+    },
+    {
+      "id": "contact-kyc-physical",
+      "when": ["physical"],
+      "text": { "en": "For paper share certificates, ask the company or its registrar (RTA) to update your address and contact details.", "hi": "कागज़ी शेयर प्रमाणपत्रों के लिए, अपना पता और संपर्क विवरण अपडेट करने को कंपनी या उसके रजिस्ट्रार (RTA) से कहें।" },
+      "sourceId": "sebi-rta-faq"
+    },
+    {
+      "id": "physical-window",
+      "when": ["physical"],
+      "text": { "en": "SEBI opened a special window from 5 February 2026 to 4 February 2027 for some old physical transfer requests. Ask the registrar whether it applies to you.", "hi": "SEBI ने कुछ पुराने कागज़ी शेयर ट्रांसफ़र अनुरोधों के लिए 5 फ़रवरी 2026 से 4 फ़रवरी 2027 तक विशेष अवधि खोली है। रजिस्ट्रार से पूछें कि क्या यह आप पर लागू है।" },
+      "sourceId": "sebi-relodgement-2026"
+    },
+    {
+      "id": "old-holdings",
+      "when": ["physical", "demat", "unknown"],
+      "text": { "en": "Unclaimed dividends move to the IEPF after seven years, and the shares follow if dividends stay unclaimed for seven years in a row. Check old holdings with the company or its registrar, or use \"Old shares or unclaimed dividends\" in Find help.", "hi": "बिना दावे वाला डिविडेंड (लाभांश) सात साल बाद IEPF में चला जाता है, और लगातार सात साल डिविडेंड न लेने पर शेयर भी। अपनी पुरानी होल्डिंग के बारे में कंपनी या उसके रजिस्ट्रार से पूछें, या मदद खोजें में \"पुराने शेयर या बिना दावे वाला लाभांश\" चुनें।" },
+      "sourceId": "sebi-rta-faq"
+    },
+    {
+      "id": "entity-contact",
+      "when": ["any"],
+      "text": { "en": "Note the official contact of each depository participant, fund house and company registrar, taken from their official websites, not from messages.", "hi": "हर DP, फ़ंड हाउस और कंपनी रजिस्ट्रार का आधिकारिक संपर्क उनकी आधिकारिक वेबसाइट से लिखकर रखें, संदेशों से नहीं।" },
+      "general": true
+    },
+    {
+      "id": "no-paid-agents",
+      "when": ["any"],
+      "text": { "en": "Be careful with unsolicited offers to recover old shares or unclaimed money for a fee. You can claim yourself through the company, its registrar and the official IEPF process.", "hi": "पुराने शेयर या बिना दावे वाला पैसा शुल्क लेकर वापस दिलाने के अनचाहे प्रस्तावों से सावधान रहें। आप स्वयं कंपनी, उसके रजिस्ट्रार और IEPF की आधिकारिक प्रक्रिया से दावा कर सकते हैं।" },
+      "general": true
+    },
+    {
+      "id": "start-unknown",
+      "when": ["unknown"],
+      "text": { "en": "Not sure what the family holds? Start with recent statements, dividend letters and emails from companies or funds, then ask each institution in writing.", "hi": "पक्का नहीं पता कि परिवार के पास क्या है? हाल के स्टेटमेंट, डिविडेंड पत्र और कंपनियों या फ़ंड के ईमेल से शुरू करें, फिर हर संस्था से लिखित में पूछें।" },
+      "general": true
+    }
+  ]
+}

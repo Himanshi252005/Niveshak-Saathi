@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 2,
+  "texts": {
+    "chooseIssue": {
+      "en": "What is your problem about?",
+      "hi": "आपकी समस्या किस बारे में है?"
+    },
+    "scopeLabel": {
+      "en": "Who handles this:",
+      "hi": "इसे कौन देखता है:"
+    },
+    "stageQuestion": {
+      "en": "Where have you complained so far? Choose the last one.",
+      "hi": "अब तक आपने कहाँ शिकायत की है? आखिरी वाला चुनें।"
+    },
+    "stageNone": {
+      "en": "Not yet",
+      "hi": "अभी तक नहीं"
+    },
+    "replyQuestion": {
+      "en": "What happened after that complaint?",
+      "hi": "उस शिकायत के बाद क्या हुआ?"
+    },
+    "replyWaiting": {
+      "en": "Waiting for a reply",
+      "hi": "जवाब का इंतज़ार है"
+    },
+    "replyUnresolved": {
+      "en": "Replied, but not resolved",
+      "hi": "जवाब आया, पर समाधान नहीं हुआ"
+    },
+    "replyResolved": {
+      "en": "Resolved",
+      "hi": "समाधान हो गया"
+    },
+    "numberQuestion": {
+      "en": "Do you have a complaint or acknowledgement number?",
+      "hi": "क्या आपके पास शिकायत या पावती नंबर है?"
+    },
+    "numberYes": {
+      "en": "Yes",
+      "hi": "हाँ"
+    },
+    "numberNo": {
+      "en": "No",
+      "hi": "नहीं"
+    },
+    "nextTitle": {
+      "en": "Your next step",
+      "hi": "आपका अगला कदम"
+    },
+    "nextLabel": {
+      "en": "Go to:",
+      "hi": "यहाँ जाएँ:"
+    },
+    "ifNoReplyLabel": {
+      "en": "If there is no reply in time, go to:",
+      "hi": "समय पर जवाब न मिले तो यहाँ जाएँ:"
+    },
+    "answerReply": {
+      "en": "Tell us what happened after your complaint to see your next step.",
+      "hi": "अगला कदम देखने के लिए बताएँ कि शिकायत के बाद क्या हुआ।"
+    },
+    "firstAdvice": {
+      "en": "Start with the institution itself. Use only contact details from its official website or app, never from a message.",
+      "hi": "शुरुआत संस्था से ही करें। केवल उसकी आधिकारिक वेबसाइट या ऐप के संपर्क विवरण का उपयोग करें, संदेश में दिए विवरण का कभी नहीं।"
+    },
+    "waitAdvice": {
+      "en": "Give them the time the official rules allow to reply; the official page below explains it.",
+      "hi": "जवाब के लिए उन्हें आधिकारिक नियमों में दिया गया समय दें; नीचे का आधिकारिक पेज इसे समझाता है।"
+    },
+    "resolvedAdvice": {
+      "en": "Good. Keep the reply and your complaint number safely; you may need them if the problem comes back.",
+      "hi": "अच्छा। जवाब और शिकायत नंबर सुरक्षित रखें; समस्या दोबारा हो तो इनकी ज़रूरत पड़ सकती है।"
+    },
+    "noNumberAdvice": {
+      "en": "Ask for a complaint or acknowledgement number, or write down the date and how you complained. Escalating is easier with it.",
+      "hi": "शिकायत या पावती नंबर माँगें, या तारीख और शिकायत का तरीका लिख लें। इससे शिकायत आगे बढ़ाना आसान होता है।"
+    },
+    "lastAdvice": {
+      "en": "You have reached the last official step listed here. Read that official page for any further options.",
+      "hi": "आप यहाँ दिए आखिरी आधिकारिक कदम तक पहुँच गए हैं। आगे के विकल्पों के लिए वही आधिकारिक पेज पढ़ें।"
+    },
+    "pathTitle": {
+      "en": "Your complaint path",
+      "hi": "आपकी शिकायत का रास्ता"
+    },
+    "evidenceTitle": {
+      "en": "Keep this evidence",
+      "hi": "ये सबूत रखें"
+    },
+    "abstainTitle": {
+      "en": "We can't tell yet which official route applies",
+      "hi": "अभी हम नहीं बता सकते कि कौन-सा आधिकारिक रास्ता लागू है"
+    }
+  },
+  "scopes": [
+    {
+      "id": "securities",
+      "label": {
+        "en": "Securities market",
+        "hi": "प्रतिभूति बाज़ार"
+      },
+      "authority": {
+        "en": "SEBI (Securities and Exchange Board of India)",
+        "hi": "SEBI (भारतीय प्रतिभूति और विनिमय बोर्ड)"
+      }
+    },
+    {
+      "id": "banking",
+      "label": {
+        "en": "Banks, NBFCs, cards and wallets",
+        "hi": "बैंक, NBFC, कार्ड और वॉलेट"
+      },
+      "authority": {
+        "en": "RBI (Reserve Bank of India)",
+        "hi": "RBI (भारतीय रिज़र्व बैंक)"
+      }
+    },
+    {
+      "id": "insurance",
+      "label": {
+        "en": "Insurance",
+        "hi": "बीमा"
+      },
+      "authority": {
+        "en": "IRDAI (Insurance Regulatory and Development Authority of India)",
+        "hi": "IRDAI (भारतीय बीमा विनियामक और विकास प्राधिकरण)"
+      }
+    },
+    {
+      "id": "pension",
+      "label": {
+        "en": "Pension: NPS and Atal Pension Yojana",
+        "hi": "पेंशन: NPS और अटल पेंशन योजना"
+      },
+      "authority": {
+        "en": "PFRDA (Pension Fund Regulatory and Development Authority)",
+        "hi": "PFRDA (पेंशन निधि विनियामक और विकास प्राधिकरण)"
+      }
+    },
+    {
+      "id": "cybercrime",
+      "label": {
+        "en": "Cybercrime and online fraud",
+        "hi": "साइबर अपराध और ऑनलाइन धोखाधड़ी"
+      },
+      "authority": {
+        "en": "Police, through helpline 1930 and the National Cyber Crime Reporting Portal (Ministry of Home Affairs)",
+        "hi": "पुलिस, हेल्पलाइन 1930 और राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल के माध्यम से (गृह मंत्रालय)"
+      }
+    },
+    {
+      "id": "unclaimed",
+      "label": {
+        "en": "Unclaimed shares and dividends",
+        "hi": "बिना दावे वाले शेयर और लाभांश"
+      },
+      "authority": {
+        "en": "IEPF Authority (Ministry of Corporate Affairs)",
+        "hi": "IEPF प्राधिकरण (कॉर्पोरेट कार्य मंत्रालय)"
+      }
+    }
+  ],
+  "levels": [
+    {
+      "id": "scores",
+      "scope": "securities",
+      "name": {
+        "en": "SEBI SCORES",
+        "hi": "SEBI SCORES (स्कोर्स)"
+      },
+      "explain": {
+        "en": "SCORES is SEBI's official online complaint system for listed companies and SEBI-registered intermediaries such as brokers, depository participants, registrars and mutual funds. Use it after you have complained to the entity, within one year of the problem. If you are not satisfied with the outcome, ask for a review within 15 days of the reply: first by a designated body such as a stock exchange, a depository or AMFI, and then by SEBI. You can also go to SMART ODR at any point.",
+        "hi": "SCORES, SEBI का आधिकारिक ऑनलाइन शिकायत सिस्टम है। इस पर शेयर बाज़ार में लिस्टेड कंपनियों और SEBI में रजिस्टर्ड संस्थाओं (जैसे ब्रोकर, DP, रजिस्ट्रार और म्यूचुअल फ़ंड) के खिलाफ़ शिकायत होती है। पहले संस्था से शिकायत करें, फिर समस्या होने के एक साल के अंदर SCORES पर शिकायत करें। जवाब से संतुष्ट न हों तो जवाब मिलने के 15 दिन के अंदर दोबारा जाँच (समीक्षा) माँगें: पहले स्टॉक एक्सचेंज, डिपॉज़िटरी या AMFI जैसी तय संस्था जाँच करती है, फिर SEBI। आप कभी भी स्मार्ट ODR पर भी जा सकते हैं।"
+      },
+      "sourceId": "scores",
+      "linkLabel": {
+        "en": "Open official SCORES",
+        "hi": "आधिकारिक SCORES खोलें"
+      }
+    },
+    {
+      "id": "smart-odr",
+      "scope": "securities",
+      "name": {
+        "en": "SMART ODR: online conciliation and arbitration",
+        "hi": "स्मार्ट ODR: ऑनलाइन सुलह और पंच-फ़ैसला (आर्बिट्रेशन)"
+      },
+      "explain": {
+        "en": "If the dispute is still not resolved, you can register it on SMART ODR, the online dispute resolution portal run by the stock exchanges and depositories. You must first have complained to the entity. Pre-conciliation is free for both sides and conciliation fees are paid by the market participant, but if the dispute goes to arbitration, both sides pay fees that depend on the claim amount.",
+        "hi": "यदि विवाद अब भी नहीं सुलझता, तो आप उसे स्मार्ट ODR पर दर्ज कर सकते हैं, जो स्टॉक एक्सचेंजों और डिपॉज़िटरी द्वारा चलाया जाने वाला ऑनलाइन विवाद समाधान पोर्टल है। पहले संस्था से शिकायत करना ज़रूरी है। प्री-कंसिलिएशन (शुरुआती सुलह) दोनों पक्षों के लिए निःशुल्क है और सुलह की फ़ीस रजिस्टर्ड संस्था देती है, लेकिन मामला पंच-फ़ैसले (आर्बिट्रेशन) में जाए तो दोनों पक्ष फ़ीस देते हैं, जो दावे की राशि पर निर्भर करती है।"
+      },
+      "sourceId": "sebi-odr",
+      "linkLabel": {
+        "en": "Read SEBI's SMART ODR page",
+        "hi": "SEBI का स्मार्ट ODR पेज पढ़ें"
+      }
+    },
+    {
+      "id": "iepf-claim",
+      "scope": "unclaimed",
+      "name": {
+        "en": "Claim from the IEPF Authority",
+        "hi": "IEPF प्राधिकरण से दावा"
+      },
+      "explain": {
+        "en": "If the transfer is confirmed, the shares or dividends can be claimed back through the IEPF Authority's official claim process on its website, iepf.gov.in. Under the IEPF rules, the company verifies the claim before the Authority refunds the money or credits the shares.",
+        "hi": "यदि ट्रांसफ़र की पुष्टि हो जाए, तो शेयर या डिविडेंड IEPF प्राधिकरण की वेबसाइट iepf.gov.in पर आधिकारिक दावा प्रक्रिया से वापस माँगे जा सकते हैं। IEPF नियमों के अनुसार, प्राधिकरण पैसे लौटाए या शेयर जमा करे, उससे पहले कंपनी दावे की जाँच करती है।"
+      },
+      "sourceId": "iepf-rules",
+      "linkLabel": {
+        "en": "Read the official IEPF claim rules",
+        "hi": "IEPF दावे के आधिकारिक नियम पढ़ें"
+      }
+    },
+    {
+      "id": "rbi-ombudsman",
+      "scope": "banking",
+      "name": {
+        "en": "RBI Ombudsman (Integrated Ombudsman Scheme, 2026)",
+        "hi": "RBI लोकपाल (एकीकृत लोकपाल योजना, 2026)"
+      },
+      "explain": {
+        "en": "If the bank or other covered entity does not reply within 30 days (or a longer period set by RBI, NPCI or card-network rules), or you are not satisfied with its reply, you can complain to the RBI Ombudsman online at cms.rbi.org.in. File within 90 days after that period ends or after the entity's last reply, whichever is later. The scheme covers banks, many NBFCs, prepaid wallet and card issuers and credit information companies. A matter already before a court or another forum cannot be taken.",
+        "hi": "यदि बैंक या दूसरी संस्था 30 दिन में (या RBI, NPCI या कार्ड नेटवर्क के नियमों में दिए अधिक समय में) जवाब न दे, या आप उसके जवाब से संतुष्ट न हों, तो आप RBI लोकपाल के पास cms.rbi.org.in पर ऑनलाइन शिकायत कर सकते हैं। यह समय पूरा होने या संस्था का आखिरी जवाब मिलने (जो भी बाद में हो) के 90 दिन के अंदर शिकायत करें। योजना में बैंक, कई NBFC, प्रीपेड वॉलेट और कार्ड जारी करने वाली कंपनियाँ और क्रेडिट सूचना कंपनियाँ शामिल हैं। जो मामला पहले से किसी अदालत या दूसरे मंच पर है, वह नहीं लिया जाता।"
+      },
+      "sourceId": "rbi-ios-faq",
+      "linkLabel": {
+        "en": "Read the official RBI Ombudsman FAQ",
+        "hi": "RBI लोकपाल के आधिकारिक प्रश्नोत्तर पढ़ें"
+      }
+    },
+    {
+      "id": "bima-bharosa",
+      "scope": "insurance",
+      "name": {
+        "en": "IRDAI Bima Bharosa",
+        "hi": "IRDAI बीमा भरोसा"
+      },
+      "explain": {
+        "en": "If the insurer does not resolve your complaint, or you are not satisfied with its reply, you can take it to IRDAI through the Bima Bharosa portal. Bima Bharosa does not ask for any payment.",
+        "hi": "यदि बीमा कंपनी आपकी शिकायत का समाधान न करे, या आप उसके जवाब से संतुष्ट न हों, तो आप बीमा भरोसा पोर्टल के माध्यम से IRDAI के पास शिकायत ले जा सकते हैं। बीमा भरोसा कोई भुगतान नहीं माँगता।"
+      },
+      "sourceId": "bima-bharosa",
+      "linkLabel": {
+        "en": "Open IRDAI Bima Bharosa",
+        "hi": "IRDAI बीमा भरोसा खोलें"
+      }
+    },
+    {
+      "id": "insurance-ombudsman",
+      "scope": "insurance",
+      "name": {
+        "en": "Insurance Ombudsman",
+        "hi": "बीमा लोकपाल"
+      },
+      "explain": {
+        "en": "You can approach the Insurance Ombudsman if the insurer rejected your written complaint, did not reply within one month, or you are not satisfied with its reply. The rules require a written complaint to the insurer first; they do not require going to Bima Bharosa. Complain within one year of the insurer's reply, or of the end of that month if it did not reply. A matter already before a court, consumer forum or arbitrator cannot be taken.",
+        "hi": "यदि बीमा कंपनी ने आपकी लिखित शिकायत अस्वीकार की, एक महीने में जवाब नहीं दिया, या आप उसके जवाब से संतुष्ट नहीं हैं, तो आप बीमा लोकपाल के पास जा सकते हैं। नियमों में पहले बीमा कंपनी को लिखित शिकायत ज़रूरी है; बीमा भरोसा पर जाना ज़रूरी नहीं है। बीमा कंपनी का जवाब आने के एक साल के अंदर शिकायत करें; जवाब न आए तो वह एक महीना पूरा होने के एक साल के अंदर। जो मामला पहले से अदालत, उपभोक्ता अदालत (फ़ोरम) या पंच (आर्बिट्रेटर) के पास है, वह नहीं लिया जाता।"
+      },
+      "sourceId": "insurance-ombudsman",
+      "linkLabel": {
+        "en": "Read the official Insurance Ombudsman FAQ",
+        "hi": "बीमा लोकपाल के आधिकारिक प्रश्नोत्तर पढ़ें"
+      }
+    },
+    {
+      "id": "nps-trust",
+      "scope": "pension",
+      "name": {
+        "en": "NPS Trust (second level)",
+        "hi": "NPS ट्रस्ट (दूसरा स्तर)"
+      },
+      "explain": {
+        "en": "If your intermediary or nodal office does not resolve your NPS or APY grievance within 30 days, or you are not satisfied with the resolution, you can escalate it to the NPS Trust.",
+        "hi": "यदि आपकी रजिस्टर्ड संस्था या नोडल कार्यालय 30 दिन में आपकी NPS या APY शिकायत का समाधान न करे, या आप समाधान से संतुष्ट न हों, तो आप उसे NPS ट्रस्ट के पास आगे बढ़ा सकते हैं।"
+      },
+      "sourceId": "pfrda-grievance",
+      "linkLabel": {
+        "en": "Read PFRDA's grievance levels",
+        "hi": "PFRDA के शिकायत स्तर पढ़ें"
+      }
+    },
+    {
+      "id": "pfrda-ombudsman",
+      "scope": "pension",
+      "name": {
+        "en": "Ombudsman appointed by PFRDA",
+        "hi": "PFRDA द्वारा नियुक्त लोकपाल"
+      },
+      "explain": {
+        "en": "If the NPS Trust does not reply within 21 days, or you are not satisfied with its reply, you can approach the Ombudsman appointed by PFRDA.",
+        "hi": "यदि NPS ट्रस्ट 21 दिन में जवाब न दे, या आप उसके जवाब से संतुष्ट न हों, तो आप PFRDA द्वारा नियुक्त लोकपाल के पास जा सकते हैं।"
+      },
+      "sourceId": "pfrda-grievance",
+      "linkLabel": {
+        "en": "Read PFRDA's grievance levels",
+        "hi": "PFRDA के शिकायत स्तर पढ़ें"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "fraud",
+      "enabled": true,
+      "kind": "outcomes",
+      "scope": "cybercrime",
+      "label": {
+        "en": "Suspicious offer or possible fraud",
+        "hi": "संदिग्ध प्रस्ताव या धोखाधड़ी"
+      },
+      "shortLabel": {
+        "en": "Possible fraud",
+        "hi": "संभावित धोखाधड़ी"
+      },
+      "question": {
+        "en": "Have you already sent money?",
+        "hi": "क्या आपने पैसे भेज दिए हैं?"
+      },
+      "answers": [
+        {
+          "id": "no",
+          "label": {
+            "en": "No / not sure",
+            "hi": "नहीं / पक्का नहीं पता"
+          },
+          "outcome": "fraud-pause"
+        },
+        {
+          "id": "yes",
+          "label": {
+            "en": "Yes",
+            "hi": "हाँ"
+          },
+          "outcome": "fraud-urgent"
+        }
+      ]
+    },
+    {
+      "id": "broker",
+      "enabled": true,
+      "kind": "ladder",
+      "scope": "securities",
+      "label": {
+        "en": "Stock broker or demat account (depository participant)",
+        "hi": "स्टॉक ब्रोकर या डीमैट खाता (DP)"
+      },
+      "shortLabel": {
+        "en": "Broker or demat account",
+        "hi": "ब्रोकर या डीमैट खाता"
+      },
+      "firstContact": {
+        "name": {
+          "en": "Your stock broker or depository participant (DP)",
+          "hi": "आपका स्टॉक ब्रोकर या डिपॉज़िटरी पार्टिसिपेंट (DP)"
+        },
+        "how": {
+          "en": "Complain in writing to its grievance desk, using the email or complaint option on its official website or app, and keep the complaint number. SEBI asks investors to go to the entity first.",
+          "hi": "उसकी आधिकारिक वेबसाइट या ऐप के ईमेल/शिकायत विकल्प से शिकायत विभाग को लिखकर शिकायत करें, और शिकायत नंबर सँभालकर रखें। SEBI निवेशकों से पहले संबंधित संस्था के पास जाने को कहता है।"
+        },
+        "sourceId": "scores-home"
+      },
+      "ladder": [
+        "scores",
+        "smart-odr"
+      ],
+      "evidence": [
+        {
+          "en": "Contract notes and statements for the trades or entries involved",
+          "hi": "जिन सौदों या एंट्री में समस्या है, उनके कॉन्ट्रैक्ट नोट और स्टेटमेंट"
+        },
+        {
+          "en": "Your complaint to the broker or DP and its reply, with dates",
+          "hi": "ब्रोकर या DP को की गई शिकायत और उसका जवाब, तारीखों सहित"
+        },
+        {
+          "en": "Emails, messages or screenshots about the problem, with account numbers covered except the last four digits",
+          "hi": "समस्या से जुड़े ईमेल, संदेश या स्क्रीनशॉट, खाता नंबर के अंतिम चार अंक छोड़कर बाकी छिपाकर"
+        }
+      ]
+    },
+    {
+      "id": "company",
+      "enabled": true,
+      "kind": "ladder",
+      "scope": "securities",
+      "label": {
+        "en": "Listed company or its registrar (RTA): dividend, share certificate or other shareholder service",
+        "hi": "शेयर बाज़ार में लिस्टेड कंपनी या उसका रजिस्ट्रार (RTA): लाभांश, शेयर प्रमाणपत्र या अन्य शेयरधारक सेवा"
+      },
+      "shortLabel": {
+        "en": "Company or registrar (RTA)",
+        "hi": "कंपनी या रजिस्ट्रार (RTA)"
+      },
+      "firstContact": {
+        "name": {
+          "en": "The company's investor grievance contact or its registrar and transfer agent (RTA)",
+          "hi": "कंपनी का निवेशक शिकायत संपर्क या उसका रजिस्ट्रार और ट्रांसफ़र एजेंट (RTA)"
+        },
+        "how": {
+          "en": "Complain in writing using the contact details on the company's or RTA's official website, and keep the complaint number. For paper (physical) holdings, the company or RTA takes complaints only if your folio's KYC is complete. If your shares or dividends were moved to IEPF, choose \"Old shares or unclaimed dividends\" instead.",
+          "hi": "कंपनी या RTA की आधिकारिक वेबसाइट पर दिए संपर्क से लिखित शिकायत करें, और शिकायत नंबर रखें। कागज़ी (भौतिक) होल्डिंग में कंपनी या RTA शिकायत तभी लेते हैं जब आपके फ़ोलियो का KYC पूरा हो। यदि आपके शेयर या डिविडेंड IEPF में भेजे गए हैं, तो इसके बजाय \"पुराने शेयर या बिना दावे वाला लाभांश\" चुनें।"
+        },
+        "sourceId": "sebi-rta-faq"
+      },
+      "ladder": [
+        "scores",
+        "smart-odr"
+      ],
+      "evidence": [
+        {
+          "en": "Share certificates, demat statements or dividend letters, showing only the last four characters of folio or account numbers",
+          "hi": "शेयर प्रमाणपत्र, डीमैट स्टेटमेंट या लाभांश पत्र, फ़ोलियो या खाता नंबर के केवल अंतिम चार अक्षर दिखाते हुए"
+        },
+        {
+          "en": "Your complaint to the company or RTA and its reply, with dates",
+          "hi": "कंपनी या RTA को की गई शिकायत और उसका जवाब, तारीखों सहित"
+        }
+      ]
+    },
+    {
+      "id": "mutual-fund",
+      "enabled": true,
+      "kind": "ladder",
+      "scope": "securities",
+      "label": {
+        "en": "Mutual fund: units, redemption, statement or other service problem",
+        "hi": "म्यूचुअल फ़ंड: यूनिट, रिडेम्पशन (पैसे निकालना), स्टेटमेंट या दूसरी सेवा की समस्या"
+      },
+      "shortLabel": {
+        "en": "Mutual fund",
+        "hi": "म्यूचुअल फ़ंड"
+      },
+      "firstContact": {
+        "name": {
+          "en": "The mutual fund (AMC) or its registrar's investor service centre",
+          "hi": "म्यूचुअल फ़ंड (AMC) या उसके रजिस्ट्रार का निवेशक सेवा केंद्र"
+        },
+        "how": {
+          "en": "Complain in writing through the fund's official website, app or investor service centre, and keep the complaint number.",
+          "hi": "फ़ंड की आधिकारिक वेबसाइट, ऐप या निवेशक सेवा केंद्र के माध्यम से लिखित शिकायत करें, और शिकायत नंबर रखें।"
+        },
+        "sourceId": "sebi-mf-faq"
+      },
+      "ladder": [
+        "scores",
+        "smart-odr"
+      ],
+      "evidence": [
+        {
+          "en": "Account statements for the folio, showing only the last four characters of the folio number",
+          "hi": "फ़ोलियो के खाता विवरण, फ़ोलियो नंबर के केवल अंतिम चार अक्षर दिखाते हुए"
+        },
+        {
+          "en": "Transaction or redemption confirmations",
+          "hi": "लेन-देन या रिडेम्पशन की पुष्टि"
+        },
+        {
+          "en": "Your complaint to the fund and its reply, with dates",
+          "hi": "फ़ंड को की गई शिकायत और उसका जवाब, तारीखों सहित"
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "enabled": true,
+      "kind": "ladder",
+      "scope": "securities",
+      "label": {
+        "en": "After a holder's death: moving shares or fund units to the nominee or legal heir",
+        "hi": "धारक की मृत्यु के बाद: शेयर या फ़ंड यूनिट नॉमिनी या कानूनी वारिस के नाम करना"
+      },
+      "shortLabel": {
+        "en": "After a death (transmission)",
+        "hi": "मृत्यु के बाद (ट्रांसमिशन)"
+      },
+      "firstContact": {
+        "name": {
+          "en": "The DP for demat holdings, the company or RTA for physical shares, and the fund (AMC or RTA) for mutual fund units",
+          "hi": "डीमैट होल्डिंग के लिए DP, भौतिक शेयरों के लिए कंपनी या RTA, और म्यूचुअल फ़ंड यूनिट के लिए फ़ंड (AMC या RTA)"
+        },
+        "how": {
+          "en": "Ask each of them in writing what documents they need for transmission, and keep every acknowledgement. Requirements depend on the holding and the circumstances. Paper shares are transmitted only in demat form, so the nominee or heir needs a demat account.",
+          "hi": "हर एक से लिखित में पूछें कि होल्डिंग अपने नाम करवाने (ट्रांसमिशन) के लिए कौन-से कागज़ चाहिए, और हर पावती रखें। ज़रूरतें होल्डिंग और परिस्थिति पर निर्भर करती हैं। कागज़ी शेयर ट्रांसमिशन के बाद केवल डीमैट रूप में मिलते हैं, इसलिए नॉमिनी या वारिस के पास डीमैट खाता होना चाहिए।"
+        },
+        "sourceId": "sebi-rta-faq"
+      },
+      "ladder": [
+        "scores",
+        "smart-odr"
+      ],
+      "evidence": [
+        {
+          "en": "The death certificate and the documents each institution asks for, shared only through its official process",
+          "hi": "मृत्यु प्रमाणपत्र और हर संस्था द्वारा माँगे गए दस्तावेज़ — ये केवल उसी संस्था की आधिकारिक प्रक्रिया से दें"
+        },
+        {
+          "en": "Statements or certificates showing the holdings",
+          "hi": "होल्डिंग दिखाने वाले स्टेटमेंट या प्रमाणपत्र"
+        },
+        {
+          "en": "Every request and acknowledgement, with dates",
+          "hi": "हर अनुरोध और पावती, तारीखों सहित"
+        }
+      ]
+    },
+    {
+      "id": "unclaimed",
+      "enabled": true,
+      "kind": "ladder",
+      "scope": "unclaimed",
+      "label": {
+        "en": "Old shares or unclaimed dividends (IEPF)",
+        "hi": "पुराने शेयर या बिना दावे वाला लाभांश (IEPF)"
+      },
+      "shortLabel": {
+        "en": "Old shares or unclaimed dividends",
+        "hi": "पुराने शेयर या बिना दावे वाला लाभांश"
+      },
+      "firstContact": {
+        "name": {
+          "en": "The company or its registrar (RTA)",
+          "hi": "कंपनी या उसका रजिस्ट्रार (RTA)"
+        },
+        "how": {
+          "en": "Ask them in writing whether your shares or dividends were transferred to IEPF. Companies also publish lists of unclaimed amounts on their websites. Old does not automatically mean transferred.",
+          "hi": "उनसे लिखित में पूछें कि क्या आपके शेयर या लाभांश IEPF में भेजे गए हैं। कंपनियाँ अपनी वेबसाइट पर बिना दावे वाली राशियों की सूची भी प्रकाशित करती हैं। पुराना होने का अर्थ यह नहीं कि वे भेजे ही गए हैं।"
+        },
+        "sourceId": "iepf-rules"
+      },
+      "ladder": [
+        "iepf-claim"
+      ],
+      "evidence": [
+        {
+          "en": "Share certificates, demat statements or old dividend letters",
+          "hi": "शेयर प्रमाणपत्र, डीमैट स्टेटमेंट या पुराने लाभांश पत्र"
+        },
+        {
+          "en": "The company's or RTA's written reply about the transfer",
+          "hi": "IEPF में ट्रांसफ़र के बारे में कंपनी या RTA का लिखित जवाब"
+        },
+        {
+          "en": "Every claim reference and acknowledgement, with dates",
+          "hi": "हर दावा संदर्भ और पावती, तारीखों सहित"
+        }
+      ]
+    },
+    {
+      "id": "bank",
+      "enabled": true,
+      "kind": "ladder",
+      "scope": "banking",
+      "label": {
+        "en": "Bank, NBFC, card or wallet service problem (not fraud)",
+        "hi": "बैंक, NBFC, कार्ड या वॉलेट सेवा की समस्या (धोखाधड़ी नहीं)"
+      },
+      "shortLabel": {
+        "en": "Bank, card or wallet",
+        "hi": "बैंक, कार्ड या वॉलेट"
+      },
+      "firstContact": {
+        "name": {
+          "en": "Your bank, NBFC, or card or wallet provider",
+          "hi": "आपका बैंक, NBFC, या कार्ड या वॉलेट सेवा"
+        },
+        "how": {
+          "en": "Complain to them first, in writing, through the grievance option on their official website, app or branch, and keep the complaint number. The RBI Ombudsman requires this first step.",
+          "hi": "पहले उन्हीं से लिखित शिकायत करें, उनकी आधिकारिक वेबसाइट, ऐप या शाखा के शिकायत विकल्प से, और शिकायत नंबर रखें। RBI लोकपाल के पास जाने से पहले यह कदम ज़रूरी है।"
+        },
+        "sourceId": "rbi-ios-faq"
+      },
+      "ladder": [
+        "rbi-ombudsman"
+      ],
+      "evidence": [
+        {
+          "en": "Statement entries for the problem, with all but the last four digits of account and card numbers covered",
+          "hi": "समस्या से जुड़ी स्टेटमेंट एंट्री, खाता और कार्ड नंबर के अंतिम चार अंक छोड़कर बाकी छिपाकर"
+        },
+        {
+          "en": "Your complaint to the bank or provider and its reply, with dates",
+          "hi": "बैंक या सेवा को की गई शिकायत और उसका जवाब, तारीखों सहित"
+        },
+        {
+          "en": "Receipts, transaction references and screenshots",
+          "hi": "रसीदें, लेन-देन संदर्भ और स्क्रीनशॉट"
+        }
+      ]
+    },
+    {
+      "id": "insurance",
+      "enabled": true,
+      "kind": "ladder",
+      "scope": "insurance",
+      "label": {
+        "en": "Insurance policy or claim problem",
+        "hi": "बीमा पॉलिसी या दावे की समस्या"
+      },
+      "shortLabel": {
+        "en": "Insurance",
+        "hi": "बीमा"
+      },
+      "firstContact": {
+        "name": {
+          "en": "Your insurance company's grievance officer",
+          "hi": "आपकी बीमा कंपनी का शिकायत अधिकारी"
+        },
+        "how": {
+          "en": "Complain to the insurer first, in writing, through its official website, app or branch. Keep the complaint number and its reply.",
+          "hi": "पहले बीमा कंपनी से लिखित शिकायत करें, उसकी आधिकारिक वेबसाइट, ऐप या शाखा के माध्यम से। शिकायत नंबर और उसका जवाब रखें।"
+        },
+        "sourceId": "bima-bharosa-faq"
+      },
+      "ladder": [
+        "bima-bharosa",
+        "insurance-ombudsman"
+      ],
+      "evidence": [
+        {
+          "en": "The policy document and premium receipts",
+          "hi": "पॉलिसी दस्तावेज़ और प्रीमियम रसीदें"
+        },
+        {
+          "en": "Claim forms, any rejection letter and other letters from the insurer",
+          "hi": "दावा फ़ॉर्म, दावा नामंज़ूर होने का पत्र (अगर मिला हो) और बीमा कंपनी के दूसरे पत्र"
+        },
+        {
+          "en": "Your complaint to the insurer and its reply, with dates",
+          "hi": "बीमा कंपनी को की गई शिकायत और उसका जवाब, तारीखों सहित"
+        }
+      ]
+    },
+    {
+      "id": "pension",
+      "enabled": true,
+      "kind": "ladder",
+      "scope": "pension",
+      "label": {
+        "en": "Pension problem: NPS or Atal Pension Yojana",
+        "hi": "पेंशन की समस्या: NPS या अटल पेंशन योजना"
+      },
+      "shortLabel": {
+        "en": "Pension (NPS, APY)",
+        "hi": "पेंशन (NPS, APY)"
+      },
+      "firstContact": {
+        "name": {
+          "en": "Your NPS intermediary or nodal office, such as the Point of Presence where you joined",
+          "hi": "आपकी NPS रजिस्टर्ड संस्था या नोडल कार्यालय, जैसे वह पॉइंट ऑफ़ प्रेज़ेंस (POP) जहाँ आप जुड़े थे"
+        },
+        "how": {
+          "en": "Lodge the grievance on PFRDA's Pension Sahayak portal (pensionsahayak.pfrda.org.in). At the first level it is assigned to your intermediary or nodal office to resolve.",
+          "hi": "शिकायत PFRDA के पेंशन सहायक पोर्टल (pensionsahayak.pfrda.org.in) पर दर्ज करें। पहले स्तर पर इसे समाधान के लिए आपकी रजिस्टर्ड संस्था या नोडल कार्यालय को सौंपा जाता है।"
+        },
+        "sourceId": "pfrda-grievance"
+      },
+      "ladder": [
+        "nps-trust",
+        "pfrda-ombudsman"
+      ],
+      "evidence": [
+        {
+          "en": "Statement entries for the problem, with all but the last four digits of your PRAN covered",
+          "hi": "समस्या से जुड़ी स्टेटमेंट एंट्री, PRAN के अंतिम चार अंक छोड़कर बाकी छिपाकर"
+        },
+        {
+          "en": "Your grievance number and the replies you received, with dates",
+          "hi": "आपका शिकायत नंबर और मिले जवाब, तारीखों सहित"
+        },
+        {
+          "en": "Letters or emails from your employer or intermediary",
+          "hi": "आपके नियोक्ता (जहाँ आप नौकरी करते हैं या करते थे) या रजिस्टर्ड संस्था के पत्र या ईमेल"
+        }
+      ]
+    },
+    {
+      "id": "unknown",
+      "enabled": true,
+      "kind": "abstain",
+      "label": {
+        "en": "Not sure, or something else",
+        "hi": "पक्का नहीं पता, या कुछ और"
+      },
+      "shortLabel": {
+        "en": "Not sure / something else",
+        "hi": "पक्का नहीं पता / कुछ और"
+      },
+      "steps": [
+        {
+          "en": "Find the institution's own complaint option on its official website or app. Do not use numbers or links from a message.",
+          "hi": "संस्था की आधिकारिक वेबसाइट या ऐप पर उसका अपना शिकायत विकल्प खोजें। संदेश में दिए नंबर या लिंक का उपयोग न करें।"
+        },
+        {
+          "en": "If you think it is a fraud, or you have lost money, choose \"Possible fraud\" or use Get urgent help (1930).",
+          "hi": "यदि आपको धोखाधड़ी लगती है, या पैसे गए हैं, तो \"संभावित धोखाधड़ी\" चुनें या तुरंत मदद (1930) का उपयोग करें।"
+        },
+        {
+          "en": "Each regulator handles its own area: SEBI the securities market, RBI banks and payments, IRDAI insurance, and PFRDA pensions. The official pages below explain each.",
+          "hi": "हर नियामक (निगरानी करने वाली सरकारी संस्था) अपना क्षेत्र देखता है: SEBI शेयर बाज़ार और म्यूचुअल फ़ंड, RBI बैंक और भुगतान, IRDAI बीमा, और PFRDA पेंशन। नीचे दिए आधिकारिक पेज हर एक के बारे में बताते हैं।"
+        },
+        {
+          "en": "Keep your evidence and note the dates while you find the right route.",
+          "hi": "सही रास्ता खोजते समय सबूत रखें और तारीखें लिख लें।"
+        }
+      ],
+      "sourceIds": [
+        "scores",
+        "rbi-ios-faq",
+        "bima-bharosa-faq",
+        "pfrda-grievance",
+        "cyber"
+      ]
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "fraud-urgent",
+      "title": {
+        "en": "Act promptly: report suspected financial fraud",
+        "hi": "तुरंत कदम उठाएँ: पैसों की धोखाधड़ी का शक हो तो रिपोर्ट करें"
+      },
+      "steps": [
+        {
+          "en": "Contact your bank or payment provider immediately using its official number.",
+          "hi": "आधिकारिक नंबर पर तुरंत अपने बैंक या भुगतान सेवा से संपर्क करें।"
+        },
+        {
+          "en": "Call 1930 and report at the National Cyber Crime Reporting Portal. Follow their instructions.",
+          "hi": "1930 पर कॉल करें और राष्ट्रीय साइबर अपराध पोर्टल पर रिपोर्ट करें। उनके निर्देश मानें।"
+        },
+        {
+          "en": "Keep transaction references and messages. Do not pay a “recovery fee”. Recovery is not guaranteed.",
+          "hi": "लेन-देन के रेफ़रेंस नंबर और संदेश सँभालकर रखें। कोई “रिकवरी फ़ीस” न दें। पैसा वापस मिलने की गारंटी नहीं है।"
+        }
+      ],
+      "helplineId": "cyber-1930",
+      "link": {
+        "sourceId": "cyber",
+        "label": {
+          "en": "Open official cybercrime portal",
+          "hi": "आधिकारिक साइबर अपराध पोर्टल खोलें"
+        }
+      }
+    },
+    {
+      "id": "fraud-pause",
+      "title": {
+        "en": "Pause before sending anything",
+        "hi": "कुछ भी भेजने से पहले रुकें"
+      },
+      "steps": [
+        {
+          "en": "Do not send money or share credentials until you independently verify the offer.",
+          "hi": "जब तक आप खुद प्रस्ताव की जाँच न कर लें, तब तक न पैसे भेजें, न OTP, PIN या पासवर्ड बताएँ।"
+        },
+        {
+          "en": "Use official institution contact details, not links or numbers supplied in the message.",
+          "hi": "संस्था के आधिकारिक संपर्क का ही इस्तेमाल करें, संदेश में दिए लिंक या नंबर का नहीं।"
+        },
+        {
+          "en": "If you suspect a cybercrime, use the official portal for reporting guidance.",
+          "hi": "साइबर अपराध का संदेह हो तो रिपोर्टिंग के लिए आधिकारिक पोर्टल देखें।"
+        }
+      ],
+      "link": {
+        "sourceId": "cyber",
+        "label": {
+          "en": "Open official cybercrime portal",
+          "hi": "आधिकारिक साइबर अपराध पोर्टल खोलें"
+        }
+      }
+    }
+  ]
+}

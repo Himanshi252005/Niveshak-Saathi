@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "texts": {
+    "banner.urgent": { "en": "Sent money, shared an OTP or installed an app because of a message? Get urgent help first.", "hi": "किसी संदेश के कारण पैसे भेजे, OTP बताया या ऐप इंस्टॉल किया? पहले तुरंत मदद लें।" },
+    "banner.urgentButton": { "en": "Get urgent help", "hi": "तुरंत मदद लें" },
+    "route.rightsSummary": { "en": "Your rights and useful reminders", "hi": "आपके अधिकार और उपयोगी बातें" },
+    "route.prepareDraft": { "en": "Prepare my draft", "hi": "मेरा मसौदा तैयार करें" },
+    "route.saveActionCard": { "en": "Save my action card", "hi": "मेरे अगले कदम सहेजें" },
+    "actionCard.header": { "en": "MY NEXT STEPS — not an official complaint", "hi": "मेरे अगले कदम — आधिकारिक शिकायत नहीं" },
+    "trust.title": { "en": "Your data. Clear limits.", "hi": "आपकी जानकारी। स्पष्ट सीमाएँ।" },
+    "practice.title": { "en": "Try a 3-minute safety exercise", "hi": "3 मिनट का सुरक्षा अभ्यास करें" },
+    "practice.lede": { "en": "Fictional situations. No personal details. Learn, then try again.", "hi": "काल्पनिक स्थितियाँ। कोई निजी जानकारी नहीं। सीखें, फिर कोशिश करें।" },
+    "practice.lessonTitle": { "en": "Three habits to remember", "hi": "याद रखने की तीन आदतें" },
+    "habit.cardTitle": { "en": "Keep a weekly safety habit", "hi": "हर सप्ताह सुरक्षा की आदत रखें" },
+    "habit.cardText": { "en": "Pause before transfers. Verify the source. Keep evidence. Repeat with your family.", "hi": "पैसे भेजने से पहले रुकें। स्रोत जाँचें। सबूत रखें। परिवार के साथ दोहराएँ।" },
+    "habit.download": { "en": "Download a 7-day habit card", "hi": "7 दिन का आदत कार्ड डाउनलोड करें" }
+  }
+}
