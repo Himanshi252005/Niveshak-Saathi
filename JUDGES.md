@@ -4,7 +4,7 @@
 
 **Open it**
 - **Release 3.5 (newest):** open **[himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/)** (GitHub Pages, the verified build). For offline use, download [`prototype/dist/index.html`](prototype/dist/index.html) and open it in Chrome or Edge.
-- **Live link:** [Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) still serves **Release 3.3** (checked 2 October 2026) until it is redeployed. It lacks the newer features, such as the Rights and help page and the Family asset map.
+- **Live link:** [Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) serves the verified **Release 3.5** build (deployed and checked 2 October 2026).
 - **English:** the app opens in Hindi; use the language menu at the top right.
 - **Demo video:** being recorded; the link will be added here when it is published
 

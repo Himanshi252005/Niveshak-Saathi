@@ -7,7 +7,7 @@
 
 **Status (2 October 2026)**
 - **Release 3.5** is the build in this repository: 661,710 bytes, SHA-256 `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`. 1,346 automated checks passed: 23 release suites plus the developer cases ([release record](../evidence/Release-3.5-Verification.json)).
-- **The live link serves Release 3.3** until it is redeployed ([delivery status](Delivery-Status.md)). It does not have the Release 3.4 and 3.5 features described here.
+- **The live link serves Release 3.5.** Its served file matches the verified repository build and passed the 10/10 deployment smoke test on 2 October 2026 ([delivery status](Delivery-Status.md)).
 - **Release 3.4** was verified but never deployed. Its results are kept below as history.
 - **No real-user study or pilot** has been run. Every accuracy figure comes from synthetic test sets.
 - **An independent educational product,** not affiliated with SEBI, RBI, IRDAI, the IEPF Authority, PFRDA, NPCI or any institution.
@@ -21,7 +21,7 @@ A working prototype: one self-contained HTML file that runs in a phone or deskto
 | How to try it | What you get |
 |---|---|
 | Download [`prototype/dist/index.html`](../prototype/dist/index.html) and open it in Chrome or Edge | **Release 3.5**, with every feature on this page |
-| [Live link](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) | **Release 3.3** until it is redeployed: no Rights and help page, Family asset map, rights cards or step-by-step guides |
+| [Live link](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) | **Release 3.5**, including Rights and help, Family asset map, rights cards and step-by-step guides |
 | Demo video | being recorded; the link will be added here when it is published |
 
 - **Language:** the app opens in Hindi. To switch to English, use the language menu at the top right.

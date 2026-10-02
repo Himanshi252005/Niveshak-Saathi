@@ -12,7 +12,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 |---|---|
 | **Start here** | [`JUDGES.md`](JUDGES.md): one page with the S.01–S.06 map, Track B fit, evidence and limits |
 | **Open Release 3.5** | **[himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified build on GitHub Pages, in any phone or computer browser. To keep it offline, download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") or use "Save offline copy" in the app. No installation, account or server |
-| **Live link** | **[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)** serves **Release 3.3** (checked 2 October 2026) until it is redeployed. It does not have the Release 3.4 and 3.5 additions, such as the Rights and help page and the Family asset map |
+| **Live link** | **[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)** serves the verified **Release 3.5** build (deployed and checked 2 October 2026) |
 | **Switch to English** | The app opens in Hindi. Use the language menu at the top right and choose "English" |
 | **Demo video (S.05)** | being recorded; the link will be added here when it is published |
 
@@ -25,7 +25,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | S.05 Demonstration | Video being recorded; the link will be added here when it is published; [script](docs/Submission-v3.md#s05-demonstration) |
 | S.06 Impact | [Submission, S.06](docs/Submission-v3.md#s06-impact) |
 
-**Version legend.** Release 3.5 is the newest build; it is in this repository and on GitHub Pages (https://himanshi252005.github.io/Niveshak-Saathi/). Release 3.4 was verified on 2 October 2026 but never deployed; its results are kept as history. Release 3.3 is what the live link serves. The "checker" is the message checker inside the app: Release 3.4 kept checker 3.3, and Release 3.5 ships checker 3.3. The "-v3" in some document names is the documentation series, not the release.
+**Version legend.** Release 3.5 is the newest build; it is on the live link, in this repository and on GitHub Pages (https://himanshi252005.github.io/Niveshak-Saathi/). Release 3.4 was verified on 2 October 2026 but never deployed; its results are kept as history. The "checker" is the message checker inside the app: Release 3.4 kept checker 3.3, and Release 3.5 ships checker 3.3. The "-v3" in some document names is the documentation series, not the release.
 
 ## Built for three people
 
