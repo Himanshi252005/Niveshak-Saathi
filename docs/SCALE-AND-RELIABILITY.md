@@ -59,7 +59,7 @@ The app's only network request is a fresh copy of its own page, for "Save offlin
 
 The app neither sets nor reads any of them, and the saved offline copy has none ([privacy](../PRIVACY.md)). The page's own policy still lets the host's script run.
 
-**Hosting decision:** the owner keeps ChatGPT Sites and adds a GitHub Pages copy. The Pages copy is live at https://himanshi252005.github.io/Niveshak-Saathi/ (2 October 2026) and was checked before it was announced: the served file equals the verified build; HTTPS with HSTS; gzip; `Cache-Control: max-age=600`, so repeat visits within ten minutes come from the browser cache; no cookies.
+**Hosting decision:** the owner keeps the live link and adds a GitHub Pages copy. The Pages copy is live at https://himanshi252005.github.io/Niveshak-Saathi/ (2 October 2026) and was checked before it was announced: the served file equals the verified build; HTTPS with HSTS; gzip; `Cache-Control: max-age=600`, so repeat visits within ten minutes come from the browser cache; no cookies.
 
 ## Hybrid AI/ML reliability design
 

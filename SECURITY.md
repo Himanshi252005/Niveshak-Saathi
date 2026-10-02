@@ -19,7 +19,7 @@ If that option is not available, open an ordinary issue titled "Security contact
 
 ## Out of scope
 
-- **The public link's host** (ChatGPT Sites behind Cloudflare). It controls its own headers and cookies. Measured on 2 October 2026, it sends no HSTS, `nosniff` or framing-protection header, and it sets three cookies of its own ([`PRIVACY.md`](PRIVACY.md)). Please report host problems to the host.
+- **The public link's host** (Cloudflare). It controls its own headers and cookies. Measured on 2 October 2026, it sends no HSTS, `nosniff` or framing-protection header, and it sets three cookies of its own ([`PRIVACY.md`](PRIVACY.md)). Please report host problems to the host.
 - The official websites the app links to.
 - Attacks that need physical access to an unlocked phone.
 

@@ -20,7 +20,7 @@
 
 ## Cookies set by the public link's host
 
-The GitHub Pages copy (https://himanshi252005.github.io/Niveshak-Saathi/) sets no cookies (checked on 2 October 2026). The public link is hosted on ChatGPT Sites behind Cloudflare. On 2 October 2026 we measured three cookies there. The host sets them, not the app, and the app neither sets nor reads them:
+The GitHub Pages copy (https://himanshi252005.github.io/Niveshak-Saathi/) sets no cookies (checked on 2 October 2026). The public link's host (Cloudflare) sets cookies of its own. On 2 October 2026 we measured three cookies there. The host sets them, not the app, and the app neither sets nor reads them:
 
 | Cookie | Set by | Lifetime |
 |---|---|---|

@@ -4,7 +4,7 @@
 
 **Open it**
 - **Release 3.5 (newest):** open **[himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/)** (GitHub Pages, the verified build). For offline use, download [`prototype/dist/index.html`](prototype/dist/index.html) and open it in Chrome or Edge.
-- **Live link:** [niveshak-saathi-safety.himanshirathore25102.chatgpt.site](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) still serves **Release 3.3** (checked 2 October 2026) until it is redeployed. It lacks the newer features, such as the Rights and help page and the Family asset map.
+- **Live link:** [Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) still serves **Release 3.3** (checked 2 October 2026) until it is redeployed. It lacks the newer features, such as the Rights and help page and the Family asset map.
 - **English:** the app opens in Hindi; use the language menu at the top right.
 - **Demo video:** being recorded; the link will be added here when it is published
 
@@ -42,6 +42,6 @@
 - 100 AI-written personas: 92 fully right, 8 partly right, 0 wrong (14/14 checks). A regression test, not accuracy.
 - 1,346 automated checks (23 release suites plus developer cases).
 
-**Known limits.** Hindi and English only (other languages: official helplines). Many subtle scams are still missed. No pilot, partner or native Hindi review yet. Sources not yet confirmed by the named reviewer show "review pending". The ChatGPT Sites link's host sets three cookies of its own; the GitHub Pages copy sets none ([Privacy](PRIVACY.md)).
+**Known limits.** Hindi and English only (other languages: official helplines). Many subtle scams are still missed. No pilot, partner or native Hindi review yet. Sources not yet confirmed by the named reviewer show "review pending". The live link's host sets three cookies of its own; the GitHub Pages copy sets none ([Privacy](PRIVACY.md)).
 
 **How this was built.** The team built Niveshak Saathi with AI coding assistants, which helped write the code, tests, synthetic test messages and documents. Every change to advice was checked against an official page, and each step in the app shows its source. All accuracy numbers come from synthetic test sets, not from real users.

@@ -12,7 +12,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 |---|---|
 | **Start here** | [`JUDGES.md`](JUDGES.md): one page with the S.01–S.06 map, Track B fit, evidence and limits |
 | **Open Release 3.5** | **[himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified build on GitHub Pages, in any phone or computer browser. To keep it offline, download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") or use "Save offline copy" in the app. No installation, account or server |
-| **Live link** | [niveshak-saathi-safety.himanshirathore25102.chatgpt.site](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) serves **Release 3.3** (checked 2 October 2026) until it is redeployed. It does not have the Release 3.4 and 3.5 additions, such as the Rights and help page and the Family asset map |
+| **Live link** | **[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)** serves **Release 3.3** (checked 2 October 2026) until it is redeployed. It does not have the Release 3.4 and 3.5 additions, such as the Rights and help page and the Family asset map |
 | **Switch to English** | The app opens in Hindi. Use the language menu at the top right and choose "English" |
 | **Demo video (S.05)** | being recorded; the link will be added here when it is published |
 
@@ -71,7 +71,7 @@ Each person has a fixed safety plan on Home. The app asks for no name, account n
 ## Privacy and trust
 
 - The app itself saves nothing: no cookies, browser storage or accounts. It runs no analytics or cloud AI and never sends what you type. Its only network request is a fresh copy of its own page when you tap "Save offline copy" or "Share this app".
-- The public link's host (ChatGPT Sites, behind Cloudflare) sets three cookies of its own, measured on 2 October 2026: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes). It also adds Cloudflare's bot-check script. The app neither sets nor reads them, and the saved offline copy has none. See [`PRIVACY.md`](PRIVACY.md).
+- The public link's host (Cloudflare) sets three cookies of its own, measured on 2 October 2026: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes). It also adds Cloudflare's bot-check script. The app neither sets nor reads them, and the saved offline copy has none. See [`PRIVACY.md`](PRIVACY.md).
 - Every step shows its official source and review date, or is labelled a general safety step. Sources checked against the official page but not yet confirmed by the named content reviewer, Himanshi Rathore, show "review pending".
 - No stock tips, predictions, broker promotion, ads, referrals or upsells. The page sends no referrer to the official sites it links to.
 
