@@ -35,7 +35,7 @@
     },
     "numberQuestion": {
       "en": "Do you have a complaint or acknowledgement number?",
-      "hi": "क्या आपके पास शिकायत या पावती नंबर है?"
+      "hi": "क्या आपके पास शिकायत नंबर या पावती (रसीद) नंबर है?"
     },
     "numberYes": {
       "en": "Yes",
@@ -99,7 +99,7 @@
       "id": "securities",
       "label": {
         "en": "Securities market",
-        "hi": "प्रतिभूति बाज़ार"
+        "hi": "शेयर बाज़ार (प्रतिभूति बाज़ार)"
       },
       "authority": {
         "en": "SEBI (Securities and Exchange Board of India)",
@@ -110,7 +110,7 @@
       "id": "banking",
       "label": {
         "en": "Banks, NBFCs, cards and wallets",
-        "hi": "बैंक, NBFC, कार्ड और वॉलेट"
+        "hi": "बैंक, NBFC (गैर-बैंक वित्तीय कंपनियाँ), कार्ड और वॉलेट"
       },
       "authority": {
         "en": "RBI (Reserve Bank of India)",
@@ -132,7 +132,7 @@
       "id": "pension",
       "label": {
         "en": "Pension: NPS and Atal Pension Yojana",
-        "hi": "पेंशन: NPS और अटल पेंशन योजना"
+        "hi": "पेंशन: NPS (राष्ट्रीय पेंशन प्रणाली) और अटल पेंशन योजना"
       },
       "authority": {
         "en": "PFRDA (Pension Fund Regulatory and Development Authority)",
@@ -158,7 +158,7 @@
       },
       "authority": {
         "en": "IEPF Authority (Ministry of Corporate Affairs)",
-        "hi": "IEPF प्राधिकरण (कॉर्पोरेट कार्य मंत्रालय)"
+        "hi": "IEPF प्राधिकरण (निवेशक शिक्षा और संरक्षण कोष; कॉर्पोरेट कार्य मंत्रालय)"
       }
     }
   ],
@@ -171,30 +171,31 @@
         "hi": "SEBI SCORES (स्कोर्स)"
       },
       "explain": {
-        "en": "SCORES is SEBI's official online complaint system for listed companies and SEBI-registered intermediaries such as brokers, depository participants, registrars and mutual funds. Use it after you have complained to the entity, within one year of the problem. If you are not satisfied with the outcome, ask for a review within 15 days of the reply: first by a designated body such as a stock exchange, a depository or AMFI, and then by SEBI. You can also go to SMART ODR at any point.",
-        "hi": "SCORES, SEBI का आधिकारिक ऑनलाइन शिकायत सिस्टम है। इस पर शेयर बाज़ार में लिस्टेड कंपनियों और SEBI में रजिस्टर्ड संस्थाओं (जैसे ब्रोकर, DP, रजिस्ट्रार और म्यूचुअल फ़ंड) के खिलाफ़ शिकायत होती है। पहले संस्था से शिकायत करें, फिर समस्या होने के एक साल के अंदर SCORES पर शिकायत करें। जवाब से संतुष्ट न हों तो जवाब मिलने के 15 दिन के अंदर दोबारा जाँच (समीक्षा) माँगें: पहले स्टॉक एक्सचेंज, डिपॉज़िटरी या AMFI जैसी तय संस्था जाँच करती है, फिर SEBI। आप कभी भी स्मार्ट ODR पर भी जा सकते हैं।"
+        "en": "SCORES is SEBI's official online complaint system for listed companies and SEBI-registered intermediaries such as brokers, depository participants, registrars and mutual funds. Use it after complaining to the entity, within one year of the problem. Not satisfied? Ask for a review within 15 days of the reply: first by a designated body such as a stock exchange, a depository or AMFI, then by SEBI. You can also go to SMART ODR at any point, but that closes your SCORES complaint.",
+        "hi": "SCORES, SEBI का आधिकारिक ऑनलाइन शिकायत सिस्टम है। इस पर लिस्टेड कंपनियों और SEBI में रजिस्टर्ड संस्थाओं, जैसे ब्रोकर, डिपॉज़िटरी पार्टिसिपेंट (DP), रजिस्ट्रार और म्यूचुअल फ़ंड, की शिकायत होती है। पहले संस्था से शिकायत करें, फिर समस्या होने के एक साल के अंदर SCORES पर। जवाब से संतुष्ट न हों, तो 15 दिन के अंदर दोबारा जाँच माँगें: पहले स्टॉक एक्सचेंज, डिपॉज़िटरी या AMFI जैसी तय संस्था, फिर SEBI। आप कभी भी SMART ODR (ऑनलाइन विवाद समाधान) पर जा सकते हैं, पर तब SCORES वाली शिकायत बंद हो जाती है।"
       },
       "sourceId": "scores",
       "linkLabel": {
         "en": "Open official SCORES",
         "hi": "आधिकारिक SCORES खोलें"
-      }
+      },
+      "portalSourceId": "scores-home"
     },
     {
       "id": "smart-odr",
       "scope": "securities",
       "name": {
         "en": "SMART ODR: online conciliation and arbitration",
-        "hi": "स्मार्ट ODR: ऑनलाइन सुलह और पंच-फ़ैसला (आर्बिट्रेशन)"
+        "hi": "SMART ODR: ऑनलाइन सुलह और पंच-फ़ैसला (आर्बिट्रेशन)"
       },
       "explain": {
         "en": "If the dispute is still not resolved, you can register it on SMART ODR, the online dispute resolution portal run by the stock exchanges and depositories. You must first have complained to the entity. Pre-conciliation is free for both sides and conciliation fees are paid by the market participant, but if the dispute goes to arbitration, both sides pay fees that depend on the claim amount.",
-        "hi": "यदि विवाद अब भी नहीं सुलझता, तो आप उसे स्मार्ट ODR पर दर्ज कर सकते हैं, जो स्टॉक एक्सचेंजों और डिपॉज़िटरी द्वारा चलाया जाने वाला ऑनलाइन विवाद समाधान पोर्टल है। पहले संस्था से शिकायत करना ज़रूरी है। प्री-कंसिलिएशन (शुरुआती सुलह) दोनों पक्षों के लिए निःशुल्क है और सुलह की फ़ीस रजिस्टर्ड संस्था देती है, लेकिन मामला पंच-फ़ैसले (आर्बिट्रेशन) में जाए तो दोनों पक्ष फ़ीस देते हैं, जो दावे की राशि पर निर्भर करती है।"
+        "hi": "विवाद अब भी न सुलझे, तो आप उसे SMART ODR पर दर्ज कर सकते हैं। यह स्टॉक एक्सचेंजों और डिपॉज़िटरी द्वारा चलाया जाने वाला ऑनलाइन विवाद समाधान पोर्टल है। इसके लिए पहले संस्था से शिकायत करना ज़रूरी है। शुरुआती सुलह (प्री-कंसिलिएशन) दोनों पक्षों के लिए मुफ़्त है, और सुलह की फ़ीस बाज़ार की संस्था या कंपनी देती है। लेकिन मामला पंच-फ़ैसले (आर्बिट्रेशन) में जाए, तो दोनों पक्ष फ़ीस देते हैं; यह फ़ीस दावे की रकम पर निर्भर करती है।"
       },
       "sourceId": "sebi-odr",
       "linkLabel": {
         "en": "Read SEBI's SMART ODR page",
-        "hi": "SEBI का स्मार्ट ODR पेज पढ़ें"
+        "hi": "SEBI का SMART ODR पेज पढ़ें"
       }
     },
     {
@@ -205,13 +206,13 @@
         "hi": "IEPF प्राधिकरण से दावा"
       },
       "explain": {
-        "en": "If the transfer is confirmed, the shares or dividends can be claimed back through the IEPF Authority's official claim process on its website, iepf.gov.in. Under the IEPF rules, the company verifies the claim before the Authority refunds the money or credits the shares.",
-        "hi": "यदि ट्रांसफ़र की पुष्टि हो जाए, तो शेयर या डिविडेंड IEPF प्राधिकरण की वेबसाइट iepf.gov.in पर आधिकारिक दावा प्रक्रिया से वापस माँगे जा सकते हैं। IEPF नियमों के अनुसार, प्राधिकरण पैसे लौटाए या शेयर जमा करे, उससे पहले कंपनी दावे की जाँच करती है।"
+        "en": "If the transfer is confirmed, claim the shares or dividends back from the IEPF Authority with Form IEPF-5. It is filed online on the MCA portal (mca.gov.in), which iepf.gov.in links to. The company verifies the claim before the Authority refunds the money or credits the shares.",
+        "hi": "अगर पुष्टि हो जाए कि शेयर या लाभांश IEPF में चले गए हैं, तो उन्हें फ़ॉर्म IEPF-5 से IEPF प्राधिकरण से वापस माँगें। यह फ़ॉर्म MCA पोर्टल (mca.gov.in) पर ऑनलाइन भरा जाता है; iepf.gov.in पर इसका लिंक है। प्राधिकरण पैसा लौटाए या शेयर खाते में डाले, उससे पहले कंपनी दावे की जाँच करती है।"
       },
-      "sourceId": "iepf-rules",
+      "sourceId": "iepf-claim-kit",
       "linkLabel": {
-        "en": "Read the official IEPF claim rules",
-        "hi": "IEPF दावे के आधिकारिक नियम पढ़ें"
+        "en": "Read the official IEPF-5 claim steps",
+        "hi": "IEPF-5 दावे के आधिकारिक कदम पढ़ें"
       }
     },
     {
@@ -222,14 +223,15 @@
         "hi": "RBI लोकपाल (एकीकृत लोकपाल योजना, 2026)"
       },
       "explain": {
-        "en": "If the bank or other covered entity does not reply within 30 days (or a longer period set by RBI, NPCI or card-network rules), or you are not satisfied with its reply, you can complain to the RBI Ombudsman online at cms.rbi.org.in. File within 90 days after that period ends or after the entity's last reply, whichever is later. The scheme covers banks, many NBFCs, prepaid wallet and card issuers and credit information companies. A matter already before a court or another forum cannot be taken.",
-        "hi": "यदि बैंक या दूसरी संस्था 30 दिन में (या RBI, NPCI या कार्ड नेटवर्क के नियमों में दिए अधिक समय में) जवाब न दे, या आप उसके जवाब से संतुष्ट न हों, तो आप RBI लोकपाल के पास cms.rbi.org.in पर ऑनलाइन शिकायत कर सकते हैं। यह समय पूरा होने या संस्था का आखिरी जवाब मिलने (जो भी बाद में हो) के 90 दिन के अंदर शिकायत करें। योजना में बैंक, कई NBFC, प्रीपेड वॉलेट और कार्ड जारी करने वाली कंपनियाँ और क्रेडिट सूचना कंपनियाँ शामिल हैं। जो मामला पहले से किसी अदालत या दूसरे मंच पर है, वह नहीं लिया जाता।"
+        "en": "If the bank or other covered entity does not reply within 30 days (or a longer period set by RBI, NPCI or card-network rules), or you are not satisfied with its reply, complain to the RBI Ombudsman at cms.rbi.org.in within 90 days after that period or the last reply, whichever is later. It covers banks, many NBFCs, wallets, card issuers and credit bureaus. A matter pending before, or decided by, a court, tribunal or arbitrator cannot be taken; a police case does not stop you.",
+        "hi": "बैंक या इस योजना में शामिल कोई दूसरी संस्था 30 दिन में (या RBI, NPCI या कार्ड नेटवर्क के नियमों में दिए ज़्यादा समय में) जवाब न दे, या आप उसके जवाब से संतुष्ट न हों, तो cms.rbi.org.in पर RBI लोकपाल से शिकायत करें: वह समय पूरा होने या आखिरी जवाब के 90 दिन के अंदर, जो भी बाद में हो। इसमें बैंक, कई NBFC, वॉलेट, कार्ड कंपनियाँ और क्रेडिट ब्यूरो शामिल हैं। जो मामला किसी अदालत, ट्रिब्यूनल या पंच के पास है या उनसे तय हो चुका है, वह नहीं लिया जाता; पुलिस केस होने से आपकी शिकायत नहीं रुकती।"
       },
       "sourceId": "rbi-ios-faq",
       "linkLabel": {
-        "en": "Read the official RBI Ombudsman FAQ",
-        "hi": "RBI लोकपाल के आधिकारिक प्रश्नोत्तर पढ़ें"
-      }
+        "en": "Open the RBI complaint portal (cms.rbi.org.in)",
+        "hi": "RBI शिकायत पोर्टल (cms.rbi.org.in) खोलें"
+      },
+      "portalSourceId": "rbi-cms"
     },
     {
       "id": "bima-bharosa",
@@ -256,13 +258,13 @@
         "hi": "बीमा लोकपाल"
       },
       "explain": {
-        "en": "You can approach the Insurance Ombudsman if the insurer rejected your written complaint, did not reply within one month, or you are not satisfied with its reply. The rules require a written complaint to the insurer first; they do not require going to Bima Bharosa. Complain within one year of the insurer's reply, or of the end of that month if it did not reply. A matter already before a court, consumer forum or arbitrator cannot be taken.",
-        "hi": "यदि बीमा कंपनी ने आपकी लिखित शिकायत अस्वीकार की, एक महीने में जवाब नहीं दिया, या आप उसके जवाब से संतुष्ट नहीं हैं, तो आप बीमा लोकपाल के पास जा सकते हैं। नियमों में पहले बीमा कंपनी को लिखित शिकायत ज़रूरी है; बीमा भरोसा पर जाना ज़रूरी नहीं है। बीमा कंपनी का जवाब आने के एक साल के अंदर शिकायत करें; जवाब न आए तो वह एक महीना पूरा होने के एक साल के अंदर। जो मामला पहले से अदालत, उपभोक्ता अदालत (फ़ोरम) या पंच (आर्बिट्रेटर) के पास है, वह नहीं लिया जाता।"
+        "en": "You can approach the Insurance Ombudsman if the insurer rejected your written complaint, did not reply within one month, or you are not satisfied with its reply. The rules require a written complaint to the insurer first; they do not require going to Bima Bharosa. Complain within one year of the insurer's reply, or of the end of that month if it did not reply. A matter that is, or was, before a court, consumer forum or arbitrator cannot be taken.",
+        "hi": "यदि बीमा कंपनी ने आपकी लिखित शिकायत अस्वीकार की, एक महीने में जवाब नहीं दिया, या आप उसके जवाब से संतुष्ट नहीं हैं, तो आप बीमा लोकपाल के पास जा सकते हैं। नियमों में पहले बीमा कंपनी को लिखित शिकायत ज़रूरी है; बीमा भरोसा पर जाना ज़रूरी नहीं है। बीमा कंपनी का जवाब आने के एक साल के अंदर शिकायत करें; जवाब न आए तो वह एक महीना पूरा होने के एक साल के अंदर। जो मामला अदालत, उपभोक्ता अदालत (फ़ोरम) या पंच (आर्बिट्रेटर) के पास है या रह चुका है, वह नहीं लिया जाता।"
       },
       "sourceId": "insurance-ombudsman",
       "linkLabel": {
         "en": "Read the official Insurance Ombudsman FAQ",
-        "hi": "बीमा लोकपाल के आधिकारिक प्रश्नोत्तर पढ़ें"
+        "hi": "बीमा लोकपाल के आधिकारिक सवाल-जवाब (FAQ) पढ़ें"
       }
     },
     {
@@ -274,7 +276,7 @@
       },
       "explain": {
         "en": "If your intermediary or nodal office does not resolve your NPS or APY grievance within 30 days, or you are not satisfied with the resolution, you can escalate it to the NPS Trust.",
-        "hi": "यदि आपकी रजिस्टर्ड संस्था या नोडल कार्यालय 30 दिन में आपकी NPS या APY शिकायत का समाधान न करे, या आप समाधान से संतुष्ट न हों, तो आप उसे NPS ट्रस्ट के पास आगे बढ़ा सकते हैं।"
+        "hi": "यदि आपकी रजिस्टर्ड संस्था या नोडल कार्यालय 30 दिन में आपकी NPS या APY (अटल पेंशन योजना) शिकायत का समाधान न करे, या आप समाधान से संतुष्ट न हों, तो आप शिकायत NPS ट्रस्ट के पास ले जा सकते हैं।"
       },
       "sourceId": "pfrda-grievance",
       "linkLabel": {
@@ -290,13 +292,13 @@
         "hi": "PFRDA द्वारा नियुक्त लोकपाल"
       },
       "explain": {
-        "en": "If the NPS Trust does not reply within 21 days, or you are not satisfied with its reply, you can approach the Ombudsman appointed by PFRDA.",
-        "hi": "यदि NPS ट्रस्ट 21 दिन में जवाब न दे, या आप उसके जवाब से संतुष्ट न हों, तो आप PFRDA द्वारा नियुक्त लोकपाल के पास जा सकते हैं।"
+        "en": "If the NPS Trust does not reply within 21 days, or you are not satisfied with its reply, you can appeal to the Ombudsman appointed by PFRDA. Appeal within 45 days of the Trust's reply, or within 45 days after those 21 days end if it does not reply.",
+        "hi": "यदि NPS ट्रस्ट 21 दिन में जवाब न दे, या आप उसके जवाब से संतुष्ट न हों, तो आप PFRDA द्वारा नियुक्त लोकपाल के पास अपील कर सकते हैं। ट्रस्ट का जवाब मिलने के 45 दिन के अंदर अपील करें; जवाब न आए तो उन 21 दिनों के बाद के 45 दिन के अंदर।"
       },
-      "sourceId": "pfrda-grievance",
+      "sourceId": "pfrda-grievance-faq",
       "linkLabel": {
-        "en": "Read PFRDA's grievance levels",
-        "hi": "PFRDA के शिकायत स्तर पढ़ें"
+        "en": "Read PFRDA's grievance FAQs",
+        "hi": "PFRDA के शिकायत वाले सवाल-जवाब (FAQ) पढ़ें"
       }
     }
   ],
@@ -308,7 +310,7 @@
       "scope": "cybercrime",
       "label": {
         "en": "Suspicious offer or possible fraud",
-        "hi": "संदिग्ध प्रस्ताव या धोखाधड़ी"
+        "hi": "संदिग्ध प्रस्ताव या धोखाधड़ी का शक"
       },
       "shortLabel": {
         "en": "Possible fraud",
@@ -344,7 +346,7 @@
       "scope": "securities",
       "label": {
         "en": "Stock broker or demat account (depository participant)",
-        "hi": "स्टॉक ब्रोकर या डीमैट खाता (DP)"
+        "hi": "स्टॉक ब्रोकर या डीमैट खाता (डिपॉज़िटरी पार्टिसिपेंट, DP)"
       },
       "shortLabel": {
         "en": "Broker or demat account",
@@ -357,7 +359,7 @@
         },
         "how": {
           "en": "Complain in writing to its grievance desk, using the email or complaint option on its official website or app, and keep the complaint number. SEBI asks investors to go to the entity first.",
-          "hi": "उसकी आधिकारिक वेबसाइट या ऐप के ईमेल/शिकायत विकल्प से शिकायत विभाग को लिखकर शिकायत करें, और शिकायत नंबर सँभालकर रखें। SEBI निवेशकों से पहले संबंधित संस्था के पास जाने को कहता है।"
+          "hi": "उसकी आधिकारिक वेबसाइट या ऐप पर दिए ईमेल या शिकायत विकल्प से, उसके शिकायत विभाग को लिखकर शिकायत भेजें। शिकायत नंबर सँभालकर रखें। SEBI निवेशकों से कहता है कि पहले उसी संस्था के पास जाएँ।"
         },
         "sourceId": "scores-home"
       },
@@ -409,7 +411,7 @@
         },
         "how": {
           "en": "Complain in writing using the contact details on the company's or RTA's official website, and keep the complaint number. For paper (physical) holdings, the company or RTA takes complaints only if your folio's KYC is complete. If your shares or dividends were moved to IEPF, choose \"Old shares or unclaimed dividends\" instead.",
-          "hi": "कंपनी या RTA की आधिकारिक वेबसाइट पर दिए संपर्क से लिखित शिकायत करें, और शिकायत नंबर रखें। कागज़ी (भौतिक) होल्डिंग में कंपनी या RTA शिकायत तभी लेते हैं जब आपके फ़ोलियो का KYC पूरा हो। यदि आपके शेयर या डिविडेंड IEPF में भेजे गए हैं, तो इसके बजाय \"पुराने शेयर या बिना दावे वाला लाभांश\" चुनें।"
+          "hi": "कंपनी या RTA की आधिकारिक वेबसाइट पर दिए संपर्क से लिखित शिकायत करें, और शिकायत नंबर रखें। कागज़ी (भौतिक) होल्डिंग में कंपनी या RTA शिकायत तभी लेते हैं जब आपके फ़ोलियो (शेयर खाते का नंबर) का KYC पूरा हो। यदि आपके शेयर या लाभांश IEPF में भेजे गए हैं, तो इसके बजाय \"पुराने शेयर या बिना दावे वाला लाभांश\" चुनें।"
         },
         "sourceId": "sebi-rta-faq"
       },
@@ -430,10 +432,10 @@
       "tips": [
         {
           "text": {
-            "en": "Lost the paper share certificates? Ask the company or its RTA for its duplicate-certificate process. As per SEBI guidelines it may need a police report (FIR), a newspaper advertisement and an indemnity bond.",
-            "hi": "कागज़ी शेयर प्रमाणपत्र खो गए? कंपनी या उसके RTA से डुप्लिकेट प्रमाणपत्र की प्रक्रिया पूछें। SEBI दिशानिर्देशों के अनुसार इसमें पुलिस रिपोर्ट (FIR), अख़बार में विज्ञापन और क्षतिपूर्ति बॉन्ड लग सकता है।"
+            "en": "Lost paper share certificates? Ask the company or its RTA for the duplicate process: an affidavit and an indemnity bond, plus a police report (FIR) and a newspaper advert only if the shares are worth over ₹5 lakh. Duplicates now come only in demat form.",
+            "hi": "कागज़ी शेयर प्रमाणपत्र खो गए? कंपनी या उसके RTA से डुप्लिकेट की प्रक्रिया पूछें: हलफ़नामा और क्षतिपूर्ति बॉन्ड लगते हैं; पुलिस रिपोर्ट (FIR) और अख़बार में विज्ञापन तभी, जब शेयरों की कीमत ₹5 लाख से ज़्यादा हो। डुप्लिकेट अब केवल डीमैट रूप में मिलते हैं।"
           },
-          "sourceId": "iepf-claimant-faq"
+          "sourceId": "sebi-duplicate-2022"
         }
       ]
     },
@@ -453,7 +455,7 @@
       "firstContact": {
         "name": {
           "en": "The mutual fund (AMC) or its registrar's investor service centre",
-          "hi": "म्यूचुअल फ़ंड (AMC) या उसके रजिस्ट्रार का निवेशक सेवा केंद्र"
+          "hi": "म्यूचुअल फ़ंड कंपनी (AMC) या उसके रजिस्ट्रार का निवेशक सेवा केंद्र"
         },
         "how": {
           "en": "Complain in writing through the fund's official website, app or investor service centre, and keep the complaint number.",
@@ -468,11 +470,11 @@
       "evidence": [
         {
           "en": "Account statements for the folio, showing only the last four characters of the folio number",
-          "hi": "फ़ोलियो के खाता विवरण, फ़ोलियो नंबर के केवल अंतिम चार अक्षर दिखाते हुए"
+          "hi": "फ़ोलियो के स्टेटमेंट, जिनमें फ़ोलियो नंबर के केवल अंतिम चार अक्षर दिखें"
         },
         {
           "en": "Transaction or redemption confirmations",
-          "hi": "लेन-देन या रिडेम्पशन की पुष्टि"
+          "hi": "लेन-देन या रिडेम्पशन (पैसे निकालने) की पुष्टि वाले संदेश या पत्र"
         },
         {
           "en": "Your complaint to the fund and its reply, with dates",
@@ -490,7 +492,7 @@
         {
           "text": {
             "en": "A Consolidated Account Statement (CAS) lists your transactions across all mutual funds and your demat accounts in one statement. Update your PAN with your DP or broker to receive it.",
-            "hi": "समेकित खाता विवरण (CAS) में आपके सभी म्यूचुअल फ़ंड और डीमैट खातों के लेन-देन एक ही विवरण में होते हैं। इसे पाने के लिए अपने DP या ब्रोकर के पास PAN अपडेट करें।"
+            "hi": "समेकित खाता विवरण (CAS) एक ही स्टेटमेंट है, जिसमें आपके सभी म्यूचुअल फ़ंड और डीमैट खातों के लेन-देन होते हैं। इसे पाने के लिए अपने DP या ब्रोकर के पास अपना PAN अपडेट कराएँ।"
           },
           "sourceId": "sebi-cas"
         }
@@ -503,7 +505,7 @@
       "scope": "securities",
       "label": {
         "en": "After a holder's death: moving shares or fund units to the nominee or legal heir",
-        "hi": "धारक की मृत्यु के बाद: शेयर या फ़ंड यूनिट नॉमिनी या कानूनी वारिस के नाम करना"
+        "hi": "खाताधारक की मृत्यु के बाद: शेयर या फ़ंड यूनिट नॉमिनी या कानूनी वारिस के नाम करना"
       },
       "shortLabel": {
         "en": "After a death (transmission)",
@@ -512,7 +514,7 @@
       "firstContact": {
         "name": {
           "en": "The DP for demat holdings, the company or RTA for physical shares, and the fund (AMC or RTA) for mutual fund units",
-          "hi": "डीमैट होल्डिंग के लिए DP, भौतिक शेयरों के लिए कंपनी या RTA, और म्यूचुअल फ़ंड यूनिट के लिए फ़ंड (AMC या RTA)"
+          "hi": "डीमैट होल्डिंग के लिए DP, कागज़ी (भौतिक) शेयरों के लिए कंपनी या RTA, और म्यूचुअल फ़ंड यूनिट के लिए फ़ंड (AMC या RTA)"
         },
         "how": {
           "en": "Ask each of them in writing what documents they need for transmission, and keep every acknowledgement. Requirements depend on the holding and the circumstances. Paper shares are transmitted only in demat form, so the nominee or heir needs a demat account.",
@@ -542,7 +544,7 @@
         {
           "text": {
             "en": "Company says the shares went to the IEPF? The legal heir first registers the transmission with the company, then claims from the IEPF with online form IEPF-5.",
-            "hi": "कंपनी कहती है कि शेयर IEPF में चले गए? कानूनी वारिस पहले कंपनी में ट्रांसमिशन दर्ज कराए, फिर ऑनलाइन फ़ॉर्म IEPF-5 से IEPF से दावा करे।"
+            "hi": "कंपनी कहती है कि शेयर IEPF में चले गए? कानूनी वारिस पहले कंपनी में ट्रांसमिशन दर्ज कराए, फिर ऑनलाइन फ़ॉर्म IEPF-5 भरकर IEPF से दावा करे।"
           },
           "sourceId": "iepf-claimant-faq"
         },
@@ -562,7 +564,7 @@
       "scope": "unclaimed",
       "label": {
         "en": "Shares or dividends that may have moved to the IEPF after seven unclaimed years",
-        "hi": "शेयर या लाभांश जो सात साल बिना दावे के रहने पर IEPF में जा सकते हैं"
+        "hi": "शेयर या लाभांश, जो सात साल तक बिना दावे के रहने पर शायद IEPF (सरकार का निवेशक शिक्षा और संरक्षण कोष) में चले गए हों"
       },
       "shortLabel": {
         "en": "Old shares or unclaimed dividends",
@@ -574,10 +576,10 @@
           "hi": "कंपनी या उसका रजिस्ट्रार (RTA)"
         },
         "how": {
-          "en": "Ask them in writing whether your shares or dividends were transferred to IEPF. Companies also publish lists of unclaimed amounts on their websites. Old does not automatically mean transferred.",
-          "hi": "उनसे लिखित में पूछें कि क्या आपके शेयर या लाभांश IEPF में भेजे गए हैं। कंपनियाँ अपनी वेबसाइट पर बिना दावे वाली राशियों की सूची भी प्रकाशित करती हैं। पुराना होने का अर्थ यह नहीं कि वे भेजे ही गए हैं।"
+          "en": "Ask them in writing whether your shares or dividends were transferred to the IEPF. Old does not automatically mean transferred: dividends move after seven unclaimed years, and the shares follow after seven unclaimed years in a row.",
+          "hi": "उनसे लिखित में पूछें कि क्या आपके शेयर या लाभांश IEPF में भेजे गए हैं। पुराना होने का मतलब यह नहीं कि वे भेजे ही गए हैं: लाभांश सात साल तक बिना दावे के रहे तो IEPF में जाता है, और लगातार सात साल लाभांश न लेने पर शेयर भी चले जाते हैं।"
         },
-        "sourceId": "iepf-rules"
+        "sourceId": "sebi-rta-faq"
       },
       "ladder": [
         "iepf-claim"
@@ -593,16 +595,23 @@
         },
         {
           "en": "Every claim reference and acknowledgement, with dates",
-          "hi": "हर दावा संदर्भ और पावती, तारीखों सहित"
+          "hi": "दावे का हर रेफ़रेंस नंबर और पावती, तारीखों सहित"
         }
       ],
       "tips": [
         {
           "text": {
-            "en": "File online form IEPF-5 yourself: no agent is needed, and none is appointed. Send the print-out and papers to the company's Nodal Officer, who verifies within 15 days. Shares return to your demat account, so keep one ready with its client master list from your DP.",
-            "hi": "ऑनलाइन फ़ॉर्म IEPF-5 खुद भरें: किसी एजेंट की ज़रूरत नहीं, न कोई नियुक्त है। प्रिंट और कागज़ कंपनी के नोडल अधिकारी को भेजें, जो 15 दिन में जाँच करते हैं। शेयर आपके डीमैट खाते में लौटते हैं, इसलिए अपने DP से क्लाइंट मास्टर लिस्ट के साथ एक खाता तैयार रखें।"
+            "en": "File online form IEPF-5 yourself: no agent is needed, and none is appointed. Shares return to your demat account, so keep one ready with its client master list from your DP.",
+            "hi": "ऑनलाइन फ़ॉर्म IEPF-5 खुद भरें। किसी एजेंट की ज़रूरत नहीं है, और कोई एजेंट नियुक्त भी नहीं किया गया है। शेयर आपके डीमैट खाते में लौटते हैं, इसलिए एक डीमैट खाता तैयार रखें और अपने DP से उसकी क्लाइंट मास्टर लिस्ट (खाते की जानकारी वाला पत्र) ले लें।"
           },
           "sourceId": "iepf-claimant-faq"
+        },
+        {
+          "text": {
+            "en": "After filing, post the signed form and papers to the company's Nodal Officer and upload the postal receipt. The company then has 30 days to send its verification report to the IEPF.",
+            "hi": "फ़ॉर्म भरने के बाद हस्ताक्षर किया हुआ फ़ॉर्म और कागज़ कंपनी के नोडल अधिकारी को डाक से भेजें और डाक की रसीद अपलोड करें। इसके बाद कंपनी के पास IEPF को अपनी जाँच रिपोर्ट भेजने के लिए 30 दिन होते हैं।"
+          },
+          "sourceId": "iepf-verification-kit"
         },
         {
           "text": {
@@ -614,7 +623,7 @@
         {
           "text": {
             "en": "Looking for other old money? RBI's UDGAM portal searches unclaimed bank deposits, SEBI's MITRA platform traces unclaimed mutual fund money and IRDAI's Bima Bharosa traces unclaimed insurance money.",
-            "hi": "दूसरा पुराना पैसा खोज रहे हैं? RBI का उद्गम (UDGAM) पोर्टल बिना दावे वाली बैंक जमा, SEBI का मित्र (MITRA) प्लेटफ़ॉर्म बिना दावे वाला म्यूचुअल फ़ंड पैसा और IRDAI का बीमा भरोसा बिना दावे वाला बीमा पैसा खोजता है।"
+            "hi": "दूसरा पुराना पैसा खोज रहे हैं? बिना दावे वाली बैंक जमा RBI के उद्गम (UDGAM) पोर्टल पर खोजी जा सकती है। बिना दावे वाला म्यूचुअल फ़ंड पैसा SEBI के मित्र (MITRA) प्लेटफ़ॉर्म पर, और बिना दावे वाला बीमा पैसा IRDAI के बीमा भरोसा पर खोजा जा सकता है।"
           },
           "sourceId": "pib-unclaimed-2026"
         }
@@ -658,23 +667,23 @@
         },
         {
           "en": "Receipts, transaction references and screenshots",
-          "hi": "रसीदें, लेन-देन संदर्भ और स्क्रीनशॉट"
+          "hi": "रसीदें, लेन-देन के रेफ़रेंस नंबर और स्क्रीनशॉट"
         }
       ],
       "tips": [
         {
           "text": {
-            "en": "An old deposit you never claimed? Search for it on RBI's UDGAM portal (udgam.rbi.org.in). The money is claimed only from the bank itself.",
-            "hi": "कोई पुरानी जमा जिसका दावा नहीं किया? RBI के उद्गम (UDGAM) पोर्टल (udgam.rbi.org.in) पर खोजें। पैसे का दावा सिर्फ़ उसी बैंक से होता है।"
+            "en": "An old deposit you never claimed? RBI's UDGAM portal (udgam.rbi.org.in) searches deposits that banks have already moved to RBI's DEA Fund; for a recent one, ask the bank. The money is claimed only from the bank itself.",
+            "hi": "कोई पुरानी जमा जिसका दावा नहीं किया? RBI का उद्गम (UDGAM) पोर्टल (udgam.rbi.org.in) उन जमाओं को खोजता है जो बैंक RBI के DEA फ़ंड में भेज चुके हैं; हाल की जमा के बारे में बैंक से पूछें। पैसे का दावा सिर्फ़ उसी बैंक से होता है।"
           },
           "sourceId": "rbi-udgam"
         },
         {
           "text": {
-            "en": "Account frozen or money on hold after a cyber complaint? Ask the bank in writing which complaint and which police station or cyber cell asked for it. The State police handle cybercrime complaints, so contact that police station with your documents.",
-            "hi": "साइबर शिकायत के बाद खाता फ़्रीज़ हुआ या पैसा रोका गया? बैंक से लिखित में पूछें कि किस शिकायत पर और किस थाने या साइबर सेल के कहने पर ऐसा हुआ। साइबर अपराध की शिकायतें राज्य पुलिस देखती है, इसलिए अपने दस्तावेज़ लेकर उसी थाने से संपर्क करें।"
+            "en": "Account frozen or money on hold after a cyber complaint? Ask the bank in writing which complaint and which police station or cyber cell asked for it, and contact that police station with your documents. The RBI Ombudsman does not take up action a bank took on police orders.",
+            "hi": "साइबर शिकायत के बाद खाता फ़्रीज़ हुआ या पैसा रोका गया? बैंक से लिखित में पूछें कि किस शिकायत पर और किस थाने या साइबर सेल के कहने पर ऐसा हुआ, और अपने दस्तावेज़ लेकर उसी थाने से संपर्क करें। पुलिस के आदेश पर बैंक की कार्रवाई की शिकायत RBI लोकपाल नहीं लेता।"
           },
-          "sourceId": "pib-ncrp-2026"
+          "sourceId": "rbi-ios-faq"
         },
         {
           "text": {
@@ -686,7 +695,7 @@
         {
           "text": {
             "en": "Before borrowing through an app, check RBI's \"Digital Lending Apps\" directory to see whether it is linked to an RBI-regulated lender. Fake loan apps can be reported on cybercrime.gov.in or 1930.",
-            "hi": "किसी ऐप से उधार लेने से पहले RBI की \"डिजिटल लेंडिंग ऐप्स\" सूची में देखें कि वह किसी RBI-नियंत्रित संस्था से जुड़ा है या नहीं। नकली लोन ऐप की शिकायत cybercrime.gov.in या 1930 पर करें।"
+            "hi": "किसी ऐप से उधार लेने से पहले RBI की \"डिजिटल लेंडिंग ऐप्स\" सूची में देखें कि वह ऐप RBI की निगरानी वाली किसी कर्ज़ देने वाली संस्था से जुड़ा है या नहीं। नकली लोन ऐप की शिकायत cybercrime.gov.in या 1930 पर करें।"
           },
           "sourceId": "pib-dla-2026"
         }
@@ -766,7 +775,7 @@
       "evidence": [
         {
           "en": "Statement entries for the problem, with all but the last four digits of your PRAN covered",
-          "hi": "समस्या से जुड़ी स्टेटमेंट एंट्री, PRAN के अंतिम चार अंक छोड़कर बाकी छिपाकर"
+          "hi": "समस्या से जुड़ी स्टेटमेंट एंट्री, PRAN (पेंशन खाता नंबर) के अंतिम चार अंक छोड़कर बाकी छिपाकर"
         },
         {
           "en": "Your grievance number and the replies you received, with dates",
@@ -793,7 +802,7 @@
       "steps": [
         {
           "en": "Quick guide: money taken or a scam → Possible fraud; a broker or demat app → Broker; dividends or paper shares → Company or registrar; a holder has died → After a death; a bank, card or loan app → Bank; a policy → Insurance; NPS or APY → Pension.",
-          "hi": "आसान पहचान: पैसा गया या धोखा → संभावित धोखाधड़ी; ब्रोकर या डीमैट ऐप → ब्रोकर; लाभांश या कागज़ी शेयर → कंपनी या रजिस्ट्रार; धारक की मृत्यु → मृत्यु के बाद; बैंक, कार्ड या लोन ऐप → बैंक; पॉलिसी → बीमा; NPS या APY → पेंशन।"
+          "hi": "आसान पहचान: पैसा गया या धोखा → संभावित धोखाधड़ी; ब्रोकर या डीमैट ऐप → ब्रोकर; लाभांश या कागज़ी शेयर → कंपनी या रजिस्ट्रार; खाताधारक की मृत्यु → मृत्यु के बाद; बैंक, कार्ड या लोन ऐप → बैंक; पॉलिसी → बीमा; NPS या APY → पेंशन।"
         },
         {
           "en": "Find the institution's own complaint option on its official website or app. Do not use numbers or links from a message.",
@@ -801,7 +810,7 @@
         },
         {
           "en": "If you think it is a fraud, or you have lost money, choose \"Possible fraud\" or use Get urgent help (1930).",
-          "hi": "यदि आपको धोखाधड़ी लगती है, या पैसे गए हैं, तो \"संभावित धोखाधड़ी\" चुनें या तुरंत मदद (1930) का उपयोग करें।"
+          "hi": "यदि आपको धोखाधड़ी लगती है, या पैसे गए हैं, तो \"संभावित धोखाधड़ी\" चुनें या \"तुरंत मदद लें\" (1930) बटन दबाएँ।"
         },
         {
           "en": "Each regulator handles its own area: SEBI the securities market, RBI banks and payments, IRDAI insurance, and PFRDA pensions. The official pages below explain each.",
@@ -822,29 +831,29 @@
       "tips": [
         {
           "text": {
-            "en": "Account frozen or money on hold after a cyber complaint? Ask the bank in writing which complaint and which police station or cyber cell asked for it. The State police handle cybercrime complaints, so contact that police station with your documents.",
-            "hi": "साइबर शिकायत के बाद खाता फ़्रीज़ हुआ या पैसा रोका गया? बैंक से लिखित में पूछें कि किस शिकायत पर और किस थाने या साइबर सेल के कहने पर ऐसा हुआ। साइबर अपराध की शिकायतें राज्य पुलिस देखती है, इसलिए अपने दस्तावेज़ लेकर उसी थाने से संपर्क करें।"
+            "en": "Account frozen or money on hold after a cyber complaint? Ask the bank in writing which complaint and which police station or cyber cell asked for it, and contact that police station with your documents. The RBI Ombudsman does not take up action a bank took on police orders.",
+            "hi": "साइबर शिकायत के बाद खाता फ़्रीज़ हुआ या पैसा रोका गया? बैंक से लिखित में पूछें कि किस शिकायत पर और किस थाने या साइबर सेल के कहने पर ऐसा हुआ, और अपने दस्तावेज़ लेकर उसी थाने से संपर्क करें। पुलिस के आदेश पर बैंक की कार्रवाई की शिकायत RBI लोकपाल नहीं लेता।"
           },
-          "sourceId": "pib-ncrp-2026"
+          "sourceId": "rbi-ios-faq"
         },
         {
           "text": {
-            "en": "File online form IEPF-5 yourself: no agent is needed, and none is appointed. Send the print-out and papers to the company's Nodal Officer, who verifies within 15 days. Shares return to your demat account, so keep one ready with its client master list from your DP.",
-            "hi": "ऑनलाइन फ़ॉर्म IEPF-5 खुद भरें: किसी एजेंट की ज़रूरत नहीं, न कोई नियुक्त है। प्रिंट और कागज़ कंपनी के नोडल अधिकारी को भेजें, जो 15 दिन में जाँच करते हैं। शेयर आपके डीमैट खाते में लौटते हैं, इसलिए अपने DP से क्लाइंट मास्टर लिस्ट के साथ एक खाता तैयार रखें।"
+            "en": "Old shares or dividends moved to the IEPF? File form IEPF-5 online, post the papers to the company and upload the postal receipt; the company then has 30 days to send its verification report. Choose \"Old shares or unclaimed dividends\" for the full steps.",
+            "hi": "पुराने शेयर या लाभांश IEPF में चले गए? फ़ॉर्म IEPF-5 ऑनलाइन भरें, कागज़ कंपनी को डाक से भेजें और डाक की रसीद अपलोड करें; इसके बाद कंपनी के पास अपनी जाँच रिपोर्ट भेजने के लिए 30 दिन होते हैं। पूरे कदमों के लिए \"पुराने शेयर या बिना दावे वाला लाभांश\" चुनें।"
           },
-          "sourceId": "iepf-claimant-faq"
+          "sourceId": "iepf-verification-kit"
         },
         {
           "text": {
             "en": "Looking for other old money? RBI's UDGAM portal searches unclaimed bank deposits, SEBI's MITRA platform traces unclaimed mutual fund money and IRDAI's Bima Bharosa traces unclaimed insurance money.",
-            "hi": "दूसरा पुराना पैसा खोज रहे हैं? RBI का उद्गम (UDGAM) पोर्टल बिना दावे वाली बैंक जमा, SEBI का मित्र (MITRA) प्लेटफ़ॉर्म बिना दावे वाला म्यूचुअल फ़ंड पैसा और IRDAI का बीमा भरोसा बिना दावे वाला बीमा पैसा खोजता है।"
+            "hi": "दूसरा पुराना पैसा खोज रहे हैं? बिना दावे वाली बैंक जमा RBI के उद्गम (UDGAM) पोर्टल पर खोजी जा सकती है। बिना दावे वाला म्यूचुअल फ़ंड पैसा SEBI के मित्र (MITRA) प्लेटफ़ॉर्म पर, और बिना दावे वाला बीमा पैसा IRDAI के बीमा भरोसा पर खोजा जा सकता है।"
           },
           "sourceId": "pib-unclaimed-2026"
         },
         {
           "text": {
             "en": "Money deducted every month for something you don't recognise? Ask your bank in writing which mandate or policy it is for and who set it up, then choose the matching route here, such as Insurance. Card and UPI auto-pay mandates can be withdrawn at any time.",
-            "hi": "किसी अनजान चीज़ के लिए हर महीने पैसा कट रहा है? बैंक से लिखित में पूछें कि यह किस मैंडेट या पॉलिसी के लिए है और इसे किसने शुरू किया, फिर यहाँ उससे मिलता रास्ता चुनें, जैसे बीमा। कार्ड और UPI के ऑटो-पे मैंडेट कभी भी वापस लिए जा सकते हैं।"
+            "hi": "किसी अनजान चीज़ के लिए हर महीने पैसा कट रहा है? बैंक से लिखित में पूछें कि यह किस मैंडेट (अपने-आप पैसा काटने की मंज़ूरी) या पॉलिसी के लिए है, और इसे किसने शुरू किया। फिर यहाँ उससे मिलता रास्ता चुनें, जैसे बीमा। कार्ड और UPI के ऑटो-पे मैंडेट कभी भी वापस लिए जा सकते हैं।"
           },
           "sourceId": "rbi-emandate"
         }
@@ -865,23 +874,23 @@
         },
         {
           "en": "Call 1930 and report at the National Cyber Crime Reporting Portal. Follow their instructions.",
-          "hi": "1930 पर कॉल करें और राष्ट्रीय साइबर अपराध पोर्टल पर रिपोर्ट करें। उनके निर्देश मानें।"
+          "hi": "1930 पर कॉल करें और राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल पर रिपोर्ट करें। उनके निर्देश मानें।"
         },
         {
-          "en": "If the bank rejects your complaint about money taken without your consent, or does not reply within 30 days, complain to the RBI Ombudsman at cms.rbi.org.in.",
-          "hi": "आपकी मंज़ूरी के बिना कटे पैसे की शिकायत बैंक ठुकरा दे या 30 दिन में जवाब न दे, तो cms.rbi.org.in पर RBI लोकपाल के पास शिकायत करें।"
+          "en": "If the bank rejects your complaint about money taken without your consent, you are not satisfied with its reply, or it does not reply within 30 days (or a longer period set by RBI, NPCI or card-network rules), complain to the RBI Ombudsman at cms.rbi.org.in within 90 days after that.",
+          "hi": "आपकी मंज़ूरी के बिना कटे पैसे की शिकायत बैंक ठुकरा दे, आप उसके जवाब से संतुष्ट न हों, या वह 30 दिन में (या RBI, NPCI या कार्ड नेटवर्क के नियमों में दिए ज़्यादा समय में) जवाब न दे, तो उसके बाद 90 दिन के अंदर cms.rbi.org.in पर RBI लोकपाल से शिकायत करें।"
         },
         {
           "en": "Money collected for a chit, committee, deposit or Ponzi scheme: give the information to the police or the Economic Offences Wing (EOW) of your state, and report the scheme on RBI Sachet.",
-          "hi": "चिट, कमेटी, जमा या पोंज़ी योजना के नाम पर पैसा लिया गया: इसकी जानकारी अपने राज्य की पुलिस या आर्थिक अपराध शाखा (EOW) को दें, और RBI सचेत पर योजना की शिकायत करें।"
+          "hi": "चिट, कमेटी, जमा या पोंज़ी योजना के नाम पर पैसा लिया गया? इसकी जानकारी अपने राज्य की पुलिस या आर्थिक अपराध शाखा (EOW) को दें। साथ ही RBI सचेत (Sachet) पोर्टल पर योजना की शिकायत करें।"
         },
         {
           "en": "A loan app threatening you or your contacts: report it on cybercrime.gov.in or 1930. Before borrowing again, check RBI's \"Digital Lending Apps\" directory to see whether an app is linked to an RBI-regulated lender.",
           "hi": "लोन ऐप आपको या आपके संपर्कों को धमका रहा है: cybercrime.gov.in या 1930 पर शिकायत करें। दोबारा उधार लेने से पहले RBI की \"डिजिटल लेंडिंग ऐप्स\" सूची में देखें कि ऐप किसी RBI-नियंत्रित संस्था से जुड़ा है या नहीं।"
         },
         {
-          "en": "Shares moved out of your demat without your consent? Complain to your DP or broker in writing at once. If it is not resolved, the next steps are SEBI SCORES and then SMART ODR (see Find help: \"Broker or demat account\").",
-          "hi": "आपकी मंज़ूरी के बिना डीमैट से शेयर निकल गए? तुरंत अपने DP या ब्रोकर को लिखित शिकायत करें। हल न हो तो अगला कदम SEBI SCORES और फिर स्मार्ट ODR है (मदद खोजें में \"ब्रोकर या डीमैट खाता\" देखें)।"
+          "en": "Shares moved out of your demat without your consent? Complain to your DP or broker in writing at once. If forgery or hacking is involved, also report it on cybercrime.gov.in or 1930: SCORES does not take matters involving forged documents. Otherwise the next steps are SEBI SCORES, then SMART ODR (see ‘Where to complain’: \"Broker or demat account\").",
+          "hi": "आपकी मंज़ूरी के बिना डीमैट से शेयर निकल गए? तुरंत अपने DP या ब्रोकर को लिखित शिकायत करें। जाली दस्तख़त या हैकिंग हुई हो, तो cybercrime.gov.in या 1930 पर भी रिपोर्ट करें, क्योंकि जाली दस्तावेज़ वाले मामले SCORES नहीं लेता। नहीं तो अगला कदम SEBI SCORES और फिर SMART ODR है (‘कहाँ शिकायत करें’ में \"ब्रोकर या डीमैट खाता\" देखें)।"
         },
         {
           "en": "Keep transaction references and messages. Do not pay a “recovery fee”. Recovery is not guaranteed.",
@@ -902,7 +911,8 @@
         "rbi-nbfc-faq",
         "pib-dla-2026",
         "scores",
-        "sebi-odr"
+        "sebi-odr",
+        "cyber"
       ]
     },
     {
@@ -913,8 +923,8 @@
       },
       "steps": [
         {
-          "en": "Do not send money or share credentials until you independently verify the offer.",
-          "hi": "जब तक आप खुद प्रस्ताव की जाँच न कर लें, तब तक न पैसे भेजें, न OTP, PIN या पासवर्ड बताएँ।"
+          "en": "Do not send money until you have checked the offer yourself. Never share an OTP, PIN or password.",
+          "hi": "जब तक आप खुद प्रस्ताव की जाँच न कर लें, तब तक पैसे न भेजें। OTP, PIN या पासवर्ड कभी किसी को न बताएँ।"
         },
         {
           "en": "Use official institution contact details, not links or numbers supplied in the message.",
@@ -925,16 +935,16 @@
           "hi": "साइबर अपराध का संदेह हो तो रिपोर्टिंग के लिए आधिकारिक पोर्टल देखें।"
         },
         {
-          "en": "Asked to put money into a chit, committee, deposit or Ponzi scheme? Report it on RBI Sachet; the police or the Economic Offences Wing of your state also take such complaints.",
-          "hi": "चिट, कमेटी, जमा या पोंज़ी योजना में पैसा लगाने को कहा जा रहा है? RBI सचेत पर शिकायत करें; अपने राज्य की पुलिस या आर्थिक अपराध शाखा भी ऐसी शिकायतें लेती है।"
+          "en": "Asked to put money into a chit, committee, deposit or Ponzi scheme? Check on RBI Sachet whether the entity may take deposits (registered chit funds are regulated by the State Government), and report suspicious schemes there; the police or your state's Economic Offences Wing also take such complaints.",
+          "hi": "चिट, कमेटी, जमा या पोंज़ी योजना में पैसा लगाने को कहा जा रहा है? RBI सचेत पर जाँचें कि वह संस्था जमा ले सकती है या नहीं (रजिस्टर्ड चिट फ़ंड राज्य सरकार की निगरानी में होते हैं), और संदिग्ध योजना की शिकायत वहीं करें; अपने राज्य की पुलिस या आर्थिक अपराध शाखा भी ऐसी शिकायतें लेती है।"
         },
         {
           "en": "Offered a loan through an app? Check RBI's \"Digital Lending Apps\" directory to see whether the app is linked to an RBI-regulated lender.",
-          "hi": "किसी ऐप से लोन की पेशकश? RBI की \"डिजिटल लेंडिंग ऐप्स\" सूची में देखें कि ऐप किसी RBI-नियंत्रित संस्था से जुड़ा है या नहीं।"
+          "hi": "किसी ऐप से लोन की पेशकश? RBI की \"डिजिटल लेंडिंग ऐप्स\" सूची में देखें कि ऐप RBI की निगरानी वाली किसी कर्ज़ देने वाली संस्था से जुड़ा है या नहीं।"
         },
         {
           "en": "Someone offering to recover old shares, deposits, mutual fund or insurance money for a fee? You can trace them yourself: the IEPF for old shares and dividends (form IEPF-5, no agent needed), RBI's UDGAM portal for deposits, SEBI's MITRA for mutual funds and IRDAI's Bima Bharosa for insurance.",
-          "hi": "कोई फ़ीस लेकर पुराने शेयर, जमा, म्यूचुअल फ़ंड या बीमा का पैसा दिलाने की बात कर रहा है? आप खुद खोज सकते हैं: पुराने शेयर और लाभांश के लिए IEPF (फ़ॉर्म IEPF-5, किसी एजेंट की ज़रूरत नहीं), जमा के लिए RBI का उद्गम (UDGAM) पोर्टल, म्यूचुअल फ़ंड के लिए SEBI का मित्र (MITRA) और बीमा के लिए IRDAI का बीमा भरोसा।"
+          "hi": "कोई फ़ीस लेकर पुराने शेयर, जमा, म्यूचुअल फ़ंड या बीमा का पैसा दिलाने की बात कर रहा है? यह पैसा आप खुद खोज सकते हैं। पुराने शेयर और लाभांश के लिए IEPF (फ़ॉर्म IEPF-5; किसी एजेंट की ज़रूरत नहीं)। जमा के लिए RBI का उद्गम (UDGAM) पोर्टल। म्यूचुअल फ़ंड के लिए SEBI का मित्र (MITRA)। बीमा के लिए IRDAI का बीमा भरोसा।"
         }
       ],
       "link": {
@@ -948,7 +958,8 @@
         "rbi-nbfc-faq",
         "pib-dla-2026",
         "pib-unclaimed-2026",
-        "iepf-claimant-faq"
+        "iepf-claimant-faq",
+        "rbi-never-ask"
       ]
     }
   ]

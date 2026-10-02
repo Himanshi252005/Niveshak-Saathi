@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "intro": { "en": "Build a private Action Packet: the facts, dates, evidence and official route in one file that you submit yourself. Nothing is uploaded or submitted by this app.", "hi": "एक निजी एक्शन पैकेट बनाएँ: तथ्य, तारीखें, सबूत और आधिकारिक रास्ता एक ही फ़ाइल में, जिसे आप स्वयं जमा करें। यह ऐप कुछ भी अपलोड या जमा नहीं करता।" },
-  "routeLabel": { "en": "Official route from Find help:", "hi": "मदद खोजें से आधिकारिक रास्ता:" },
-  "routeChange": { "en": "Change the route in Find help", "hi": "मदद खोजें में रास्ता बदलें" },
+  "intro": { "en": "Build a private Action Packet: the facts, dates, evidence and official route in one file that you submit yourself. Nothing is uploaded or submitted by this app.", "hi": "अपना निजी शिकायत पैकेट (एक्शन पैकेट) बनाएँ: तथ्य, तारीखें, सबूत और आधिकारिक रास्ता एक ही फ़ाइल में, जिसे आप खुद जमा करें। यह ऐप कुछ भी अपलोड या जमा नहीं करता।" },
+  "routeLabel": { "en": "Official route chosen in ‘Where to complain’:", "hi": "‘कहाँ शिकायत करें’ में चुना गया आधिकारिक रास्ता:" },
+  "routeChange": { "en": "Change the route in ‘Where to complain’", "hi": "‘कहाँ शिकायत करें’ में रास्ता बदलें" },
   "fields": {
     "entity": { "label": { "en": "Which institution or person is it about?", "hi": "यह किस संस्था या व्यक्ति के बारे में है?" }, "why": { "en": "A complaint must name who it is about.", "hi": "शिकायत में बताना ज़रूरी है कि वह किसके बारे में है।" } },
-    "when": { "label": { "en": "When did it happen? Month and year are enough.", "hi": "यह कब हुआ? महीना और साल काफ़ी है।" }, "why": { "en": "Dates help the institution find your case, and official complaint systems have time limits.", "hi": "तारीखों से संस्था को आपका मामला ढूँढने में मदद मिलती है, और आधिकारिक शिकायत प्रणालियों की समय-सीमा होती है।" } },
-    "complainedOn": { "label": { "en": "When did you first complain to them? (optional)", "hi": "आपने उनसे पहली बार कब शिकायत की? (वैकल्पिक)" }, "why": { "en": "Escalation levels ask for the date of your earlier complaint.", "hi": "आगे की शिकायत में पिछली शिकायत की तारीख पूछी जाती है।" } },
-    "amount": { "label": { "en": "Amount involved (optional)", "hi": "कितनी रकम का मामला है? (वैकल्पिक)" }, "why": { "en": "Helps describe the loss. Leave it blank if you prefer.", "hi": "नुकसान बताने में मदद करती है। चाहें तो खाली छोड़ दें।" } },
-    "ref": { "label": { "en": "Last 4 characters of a transaction or complaint reference (optional)", "hi": "लेन-देन या शिकायत के रेफ़रेंस नंबर के अंतिम 4 अंक या अक्षर (वैकल्पिक)" }, "why": { "en": "Only the last 4. Never type a full account, card or reference number here.", "hi": "केवल अंतिम 4। यहाँ कभी पूरा खाता, कार्ड या संदर्भ नंबर न लिखें।" } }
+    "when": { "label": { "en": "When did it happen? Month and year are enough.", "hi": "यह कब हुआ? महीना और साल काफ़ी हैं।" }, "why": { "en": "Dates help the institution find your case, and official complaint systems have time limits.", "hi": "तारीखों से संस्था को आपका मामला ढूँढने में मदद मिलती है, और आधिकारिक शिकायत प्रणालियों की समय-सीमा होती है।" } },
+    "complainedOn": { "label": { "en": "When did you first complain to them? (optional)", "hi": "आपने उनसे पहली बार कब शिकायत की? (ज़रूरी नहीं)" }, "why": { "en": "Escalation levels ask for the date of your earlier complaint.", "hi": "आगे की शिकायत में पिछली शिकायत की तारीख पूछी जाती है।" } },
+    "amount": { "label": { "en": "Amount involved (optional)", "hi": "कितनी रकम का मामला है? (ज़रूरी नहीं)" }, "why": { "en": "Helps describe the loss. Leave it blank if you prefer.", "hi": "नुकसान बताने में मदद करती है। चाहें तो खाली छोड़ दें।" } },
+    "ref": { "label": { "en": "Last 4 characters of a transaction or complaint reference (optional)", "hi": "लेन-देन या शिकायत के रेफ़रेंस नंबर के अंतिम 4 अंक या अक्षर (ज़रूरी नहीं)" }, "why": { "en": "Only the last 4. Never type a full account, card or reference number here.", "hi": "केवल अंतिम 4। यहाँ कभी पूरा खाता, कार्ड या रेफ़रेंस नंबर न लिखें।" } }
   },
   "actionsTitle": { "en": "What have you already done?", "hi": "आप अब तक क्या कर चुके हैं?" },
   "actions": [
@@ -16,12 +16,12 @@
     { "id": "number", "label": { "en": "I have a complaint or acknowledgement number", "hi": "मेरे पास शिकायत या पावती नंबर है" } },
     { "id": "reported-1930", "label": { "en": "I reported it on 1930 or the cybercrime portal", "hi": "मैंने 1930 या साइबर अपराध पोर्टल पर रिपोर्ट की" } },
     { "id": "told-bank", "label": { "en": "I told my bank or payment provider", "hi": "मैंने अपने बैंक या भुगतान सेवा को बताया" } },
-    { "id": "escalated", "label": { "en": "I filed on an official portal such as SCORES, RBI CMS or Bima Bharosa", "hi": "मैंने SCORES, RBI CMS या बीमा भरोसा जैसे आधिकारिक पोर्टल पर शिकायत की" } }
+    { "id": "escalated", "label": { "en": "I filed on an official portal such as SCORES, RBI CMS or Bima Bharosa", "hi": "मैंने SCORES, RBI CMS (RBI लोकपाल का शिकायत पोर्टल) या बीमा भरोसा जैसे आधिकारिक पोर्टल पर शिकायत की" } }
   ],
   "evidenceTitle": { "en": "Which evidence do you have?", "hi": "आपके पास कौन-से सबूत हैं?" },
   "evidence": [
     { "id": "messages", "label": { "en": "Screenshots of messages or chats", "hi": "संदेशों या चैट के स्क्रीनशॉट" } },
-    { "id": "payments", "label": { "en": "Payment receipts or transaction references", "hi": "भुगतान रसीदें या लेन-देन संदर्भ" } },
+    { "id": "payments", "label": { "en": "Payment receipts or transaction references", "hi": "भुगतान रसीदें या लेन-देन के रेफ़रेंस नंबर" } },
     { "id": "statements", "label": { "en": "Statement entries, with numbers covered except the last four digits", "hi": "स्टेटमेंट की एंट्री, अंतिम चार अंक छोड़कर नंबर छिपाकर" } },
     { "id": "letters", "label": { "en": "Emails or letters exchanged with the institution", "hi": "संस्था को भेजे या उससे मिले ईमेल या पत्र" } },
     { "id": "reply", "label": { "en": "The institution's reply", "hi": "संस्था का जवाब" } },
@@ -31,10 +31,10 @@
     "text": { "en": "Never include OTPs, PINs, passwords or CVV: banks and payment system operators never ask for them. In this packet, show only the last four digits of account and card numbers; give full numbers only in the official complaint form if it asks for them.", "hi": "OTP, PIN, पासवर्ड या CVV कभी शामिल न करें: बैंक और भुगतान सेवाएँ इन्हें कभी नहीं माँगतीं। इस पैकेट में खाता और कार्ड नंबर के केवल अंतिम चार अंक दिखाएँ; पूरे नंबर केवल आधिकारिक शिकायत फ़ॉर्म में दें, अगर वह माँगे।" },
     "sourceId": "rbi-never-ask"
   },
-  "packetHeader": { "en": "MY ACTION PACKET: prepared by me and NOT submitted. I will submit it myself through the official channel.", "hi": "मेरा एक्शन पैकेट: मैंने तैयार किया है और यह जमा नहीं हुआ है। मैं इसे स्वयं आधिकारिक माध्यम से जमा करूँगा/करूँगी।" },
+  "packetHeader": { "en": "MY ACTION PACKET: prepared by me and NOT submitted. I will submit it myself through the official channel.", "hi": "मेरा शिकायत पैकेट: इसे मैंने खुद तैयार किया है और यह अभी जमा नहीं हुआ है। इसे मुझे खुद आधिकारिक माध्यम से जमा करना है।" },
   "contactLine": { "en": "[Name and contact details: add them only in the official complaint form]", "hi": "[नाम और संपर्क विवरण: केवल आधिकारिक शिकायत फ़ॉर्म में जोड़ें]" },
   "ackLine": { "en": "Acknowledgement number: ____________   Date: ____________", "hi": "पावती नंबर: ____________   तारीख: ____________" },
-  "generate": { "en": "Create my Action Packet", "hi": "मेरा एक्शन पैकेट बनाएँ" },
+  "generate": { "en": "Create my Action Packet", "hi": "मेरा शिकायत पैकेट बनाएँ" },
   "checksTitle": { "en": "Packet check", "hi": "पैकेट की जाँच" },
   "essentialsReady": { "en": "Complaint essentials ready:", "hi": "शिकायत की ज़रूरी बातें तैयार:" },
   "essentials": [

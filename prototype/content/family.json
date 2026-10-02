@@ -17,17 +17,17 @@
     { "id": "not-checked", "label": { "en": "No", "hi": "नहीं" } },
     { "id": "unknown", "label": { "en": "Not sure", "hi": "पक्का नहीं पता" } }
   ],
-  "showList": { "en": "Show our family checklist", "hi": "हमारी पारिवारिक सूची दिखाएँ" },
+  "showList": { "en": "Show our family checklist", "hi": "हमारे परिवार की जाँच-सूची दिखाएँ" },
   "chooseFirst": { "en": "Choose at least one option in question 1.", "hi": "प्रश्न 1 में कम से कम एक विकल्प चुनें।" },
-  "listTitle": { "en": "Our family checklist", "hi": "हमारी पारिवारिक सूची" },
+  "listTitle": { "en": "Our family checklist", "hi": "हमारे परिवार की जाँच-सूची" },
   "firstTag": { "en": "Do this first", "hi": "पहले यह करें" },
   "doneLabel": { "en": "Done", "hi": "हो गया" },
   "generalLabel": { "en": "General safety step (not from a single official page).", "hi": "सामान्य सुरक्षा कदम (किसी एक आधिकारिक पेज से नहीं)।" },
-  "cardTitle": { "en": "OUR FAMILY ACTION CARD", "hi": "हमारा पारिवारिक एक्शन कार्ड" },
+  "cardTitle": { "en": "OUR FAMILY ACTION CARD", "hi": "हमारे परिवार के अगले कदम" },
   "cardWarning": { "en": "Do not write passwords, PINs, OTPs, account numbers or document numbers on this card.", "hi": "इस कार्ड पर पासवर्ड, PIN, OTP, खाता नंबर या दस्तावेज़ नंबर न लिखें।" },
   "cardBlank": { "en": "Where our statements and certificates are kept: ______________________", "hi": "हमारे स्टेटमेंट और प्रमाणपत्र कहाँ रखे हैं: ______________________" },
-  "download": { "en": "Download our family card", "hi": "हमारा पारिवारिक कार्ड डाउनलोड करें" },
-  "print": { "en": "Print our family card", "hi": "हमारा पारिवारिक कार्ड प्रिंट करें" },
+  "download": { "en": "Download our family card", "hi": "परिवार के अगले कदमों का कार्ड डाउनलोड करें" },
+  "print": { "en": "Print our family card", "hi": "परिवार के अगले कदमों का कार्ड प्रिंट करें" },
   "items": [
     {
       "id": "nominee",
@@ -38,7 +38,7 @@
     {
       "id": "no-freeze",
       "when": ["demat", "mf"],
-      "text": { "en": "SEBI's 2026 nomination rules ask DPs and fund registrars to send reminders twice a year to accounts and folios without a nominee. The rules do not provide for freezing them. A message that threatens freezing and asks for payment is a warning sign.", "hi": "SEBI के 2026 के नॉमिनी नियमों के अनुसार, जिन डीमैट खातों और फ़ोलियो में नॉमिनी नहीं है, उन्हें DP और फ़ंड के रजिस्ट्रार साल में दो बार याद दिलाने वाले संदेश भेजते हैं। इन नियमों में उन्हें फ़्रीज़ (बंद) करने की कोई बात नहीं है। फ़्रीज़ करने की धमकी देकर भुगतान माँगने वाला संदेश धोखाधड़ी का संकेत है।" },
+      "text": { "en": "SEBI's 2026 nomination rules ask DPs and fund registrars to send reminders twice a year to accounts and folios without a nominee. The rules do not provide for freezing them. A message that threatens freezing and asks for payment is a warning sign.", "hi": "SEBI के 2026 के नॉमिनी नियमों के अनुसार, जिन डीमैट खातों और फ़ोलियो में नॉमिनी नहीं है, उनके धारकों को DP और फ़ंड के रजिस्ट्रार साल में दो बार याद दिलाने वाले संदेश भेजते हैं। इन नियमों में ऐसे खातों को फ़्रीज़ (बंद) करने की कोई बात नहीं है। फ़्रीज़ करने की धमकी देकर भुगतान माँगने वाला संदेश खतरे का संकेत है।" },
       "sourceId": "sebi-nomination-2026"
     },
     {
@@ -80,7 +80,7 @@
     {
       "id": "old-holdings",
       "when": ["physical", "demat", "unknown"],
-      "text": { "en": "Unclaimed dividends move to the IEPF after seven years, and the shares follow if dividends stay unclaimed for seven years in a row. Check old holdings with the company or its registrar, or use \"Old shares or unclaimed dividends\" in Find help.", "hi": "बिना दावे वाला डिविडेंड (लाभांश) सात साल बाद IEPF में चला जाता है, और लगातार सात साल डिविडेंड न लेने पर शेयर भी। अपनी पुरानी होल्डिंग के बारे में कंपनी या उसके रजिस्ट्रार से पूछें, या मदद खोजें में \"पुराने शेयर या बिना दावे वाला लाभांश\" चुनें।" },
+      "text": { "en": "Unclaimed dividends move to the IEPF after seven years, and the shares follow if dividends stay unclaimed for seven years in a row. Check old holdings with the company or its registrar, or choose \"Old shares or unclaimed dividends\" in ‘Where to complain’.", "hi": "बिना दावे वाला लाभांश (डिविडेंड) सात साल बाद IEPF में चला जाता है, और लगातार सात साल लाभांश न लेने पर शेयर भी चले जाते हैं। अपनी पुरानी होल्डिंग के बारे में कंपनी या उसके रजिस्ट्रार से पूछें, या ‘कहाँ शिकायत करें’ में \"पुराने शेयर या बिना दावे वाला लाभांश\" चुनें।" },
       "sourceId": "sebi-rta-faq"
     },
     {
@@ -92,7 +92,7 @@
     {
       "id": "cas-statement",
       "when": ["demat", "mf", "unknown"],
-      "text": { "en": "A Consolidated Account Statement (CAS) shows mutual fund and demat transactions in one statement, matched by PAN, which helps the family know what is held. Keep the PAN updated with your DP or broker to receive it.", "hi": "समेकित खाता विवरण (CAS) PAN के आधार पर म्यूचुअल फ़ंड और डीमैट के लेन-देन एक ही विवरण में दिखाता है, जिससे परिवार जान पाता है कि क्या-क्या है। इसे पाने के लिए अपने DP या ब्रोकर के पास PAN अपडेट रखें।" },
+      "text": { "en": "A Consolidated Account Statement (CAS) shows mutual fund and demat transactions in one statement, matched by PAN, which helps the family know what is held. Keep the PAN updated with your DP or broker to receive it.", "hi": "समेकित खाता विवरण (CAS) एक ही स्टेटमेंट है, जिसमें PAN के आधार पर म्यूचुअल फ़ंड और डीमैट के सारे लेन-देन दिखते हैं। इससे परिवार को पता चलता है कि कौन-कौन से निवेश हैं। इसे पाने के लिए अपने DP या ब्रोकर के पास PAN अपडेट रखें।" },
       "sourceId": "sebi-cas"
     },
     {
@@ -104,13 +104,13 @@
     {
       "id": "no-paid-agents",
       "when": ["any"],
-      "text": { "en": "Be careful with unsolicited offers to recover old shares or unclaimed money for a fee. You can claim yourself through the company, its registrar and the official IEPF process.", "hi": "पुराने शेयर या बिना दावे वाला पैसा शुल्क लेकर वापस दिलाने के अनचाहे प्रस्तावों से सावधान रहें। आप स्वयं कंपनी, उसके रजिस्ट्रार और IEPF की आधिकारिक प्रक्रिया से दावा कर सकते हैं।" },
+      "text": { "en": "Be careful with unsolicited offers to recover old shares or unclaimed money for a fee. You can claim yourself through the company, its registrar and the official IEPF process.", "hi": "पुराने शेयर या बिना दावे वाला पैसा फ़ीस लेकर वापस दिलाने वाले, बिना माँगे आए प्रस्तावों से सावधान रहें। आप खुद कंपनी, उसके रजिस्ट्रार और IEPF की आधिकारिक प्रक्रिया से दावा कर सकते हैं।" },
       "general": true
     },
     {
       "id": "start-unknown",
       "when": ["unknown"],
-      "text": { "en": "Not sure what the family holds? Start with recent statements, dividend letters and emails from companies or funds, then ask each institution in writing.", "hi": "पक्का नहीं पता कि परिवार के पास क्या है? हाल के स्टेटमेंट, डिविडेंड पत्र और कंपनियों या फ़ंड के ईमेल से शुरू करें, फिर हर संस्था से लिखित में पूछें।" },
+      "text": { "en": "Not sure what the family holds? Start with recent statements, dividend letters and emails from companies or funds, then ask each institution in writing.", "hi": "पक्का नहीं पता कि परिवार के पास क्या है? हाल के स्टेटमेंट, लाभांश पत्र और कंपनियों या फ़ंड के ईमेल से शुरू करें, फिर हर संस्था से लिखित में पूछें।" },
       "general": true
     }
   ]

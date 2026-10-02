@@ -1,34 +1,34 @@
-# Real-world user test, Release 3.3 fixes and Release 3.4 results
+# 100-persona simulated test (AI-written personas; no real users)
 
-**Date:** 2 October 2026.
+**What this is:** 100 fictional users, written by AI, run through the real app in a headless browser. It found real bugs and gaps, which Release 3.3 fixed. It is a simulated test and a regression test. It is not a study with real people and not a measure of real-world accuracy.
 
-**Builds tested:** Release 3.2 and the persona build (`DFFF70E7…`) gave identical results. Release 3.3 contains the fixes below.
+**Date:** 2 October 2026. Release 3.2 and the next development build gave identical results; Release 3.3 contains the fixes below. Results for Releases 3.4 and 3.5 are at the end.
 
 ## How it was tested
 
-**Users.** Four separate AI writers, which never saw the code, created 100 realistic Indian users:
+**Personas.** Four separate AI agents, which never saw the code, wrote 100 fictional Indian users:
 - **People:** aged 18 to 80, from villages to big cities.
 - **Screens:** 73 used the Hindi screens and 27 the English ones.
-- **Devices:** 83 phones 320–412 pixels wide, 7 tablets and 10 desktops. 26 users had large text on.
+- **Devices:** 83 phones 320–412 pixels wide, 7 tablets and 10 desktops; 26 personas had large text on.
 
-**Journeys.** Each user ran one journey in the real app, starting from Home, in their own words:
+**Journeys.** Each persona ran one journey in the real app, starting from Home, in their own words:
 
-| Journey | Users |
+| Journey | Personas |
 |---|---:|
 | Check a message (Hindi, Roman Hindi, English, mixed, Tamil, Bengali, Marathi) | 50 |
 | Before you pay | 18 |
-| Get urgent help, in their own words | 13 |
+| Get help now, in their own words | 13 |
 | Prepare a complaint | 7 |
 | Where to complain | 5 |
 | Family safety | 7 |
 
-**Stress inputs.** 15 inputs tried what people do by accident: a 10,000-character paste, emoji only, hidden characters, pasted HTML and script, right-to-left text, double taps and the phone Back button.
+**Stress inputs.** 15 pasted inputs tried what people do by accident, such as a 9,659-character paste, emoji only, hidden characters, pasted HTML and script, and right-to-left text. 4 interaction checks added a double tap, the phone Back button, and an empty and a 1,700-character urgent-help story.
 
-**Limit.** These are AI-written users, not real people. They find bugs and gaps; they do not measure real-world accuracy. They were used to fix the problems below, so they are now a regression test, not an accuracy result.
+**Limit.** These are AI-written personas, not real people. They find bugs and gaps; they do not measure real-world accuracy. They were used to fix the problems below, so they are now a regression test, not an accuracy result.
 
 ## Results
 
-| | Before (3.2 and the persona build) | Release 3.3 |
+| | Before (Release 3.2) | Release 3.3 |
 |---|---:|---:|
 | Fully right | 83 | 92 |
 | Partly right | 9 | 8 |
@@ -40,8 +40,8 @@
 - no sideways scrolling on any phone;
 - pasted script never ran.
 
-**Unchanged and already right:**
-- **Before you pay:** 18 of 18 correct, so every scam got STOP and every genuine payment VERIFY.
+**Already right before the fixes:**
+- **Before you pay:** all 18 personas got the right answer: STOP for each scam among them and VERIFY for each genuine payment. This does not cover every kind of request. A later review of Release 3.4 found that a fee to "recover old shares" had no matching choice and got VERIFY; Release 3.5 adds the choice "A fee to get back lost money, old shares or a claim", which gives STOP (no agent is needed for an IEPF claim, and RBI Ombudsman complaints are free).
 - **Complaint drafts:** 7 of 7. Every OTP, PIN, CVV, password and card number blocked saving and was masked, including Hindi digits.
 - **Where to complain:** 5 of 5 routes named the right office.
 
@@ -66,8 +66,8 @@
 7. **Marathi written in Devanagari was read as Hindi.**
    - Fix: it now carries a "may miss signs" note.
 8. **"No known signs" was shown in green, which reads as "safe".**
-   - Fix: it now uses the same neutral style as Codex's "insufficient evidence" state.
-9. **Checker version 3.3 (Hindi and Hinglish real-world scams):**
+   - Fix: it now uses the same neutral style as the "insufficient evidence" state.
+9. **Checker 3.3 (Hindi and Hinglish everyday scams):**
    - **Electricity, gas or SIM disconnection threats:** "आज रात ९:३० बजे बिजली काट दी जाएगी" is now "High risk".
    - **Task scams:** "VIP prepaid task, 30% profit ke saath wapas" is now "High risk".
    - **Loan-app shaming threats:** "photo… contacts me bhej denge" is now "High risk".
@@ -77,14 +77,14 @@
 
 **Regression checks for the checker change:**
 - all 435 earlier developer cases still pass, and 14 new ones were added (449 of 449);
-- the independent boundary set passes 38 of 38;
-- the first two sealed sets give identical results;
-- on the third sealed set, the only changes are two scams now caught and one false alarm removed.
+- the boundary set written by a different AI model passes 38 of 38;
+- the first two 320-message sealed sets (blind-v3 and v4) give identical results;
+- on the third (blind-v5), the only changes are two scams now caught and one false alarm removed.
 
-## Fresh sealed test of checker 3.3
+## Fresh sealed test of checker 3.3 (blind-v6)
 
-To measure the checker honestly after these changes, a further independent agent wrote 120 new messages, without seeing the code. They were scored once:
-- **Mix:** 50 fraud (28 of them everyday scams), 20 suspicious and 50 benign. 38 of the benign messages are tricky look-alikes.
+To measure the checker honestly after these changes, a separate AI agent wrote 120 new messages without seeing the code. They were scored once:
+- **Mix:** 50 fraud (29 of them everyday scams), 20 suspicious and 50 ordinary. 38 of the ordinary messages are tricky look-alikes.
 - **Languages:** 40% Hindi.
 
 | | Checker 3.2 | Checker 3.3 |
@@ -94,30 +94,29 @@ To measure the checker honestly after these changes, a further independent agent
 | Ordinary messages warned | 30% | 24% |
 | Ordinary messages at High | 24% | 18% |
 
-Every ordinary message that was flagged was a tricky look-alike. The biggest remaining source of false alarms is genuine messages that mention an OTP or a code (a Hindi OTP SMS, a delivery or LPG code). That is the next improvement; it will need yet another fresh set to measure. Full numbers are in `evidence/Blind-Evaluation-v6.json`.
+Every ordinary message that was flagged was a tricky look-alike. The biggest remaining source of false alarms is genuine messages that mention an OTP or a code (a Hindi OTP SMS, a delivery or LPG code). Full numbers and intervals are in [`Blind-Evaluation-v6.json`](../evidence/Blind-Evaluation-v6.json).
 
 ## Release 3.4
 
-- **Result:** the same 100 users and 15 stress inputs pass 14/14 checks: 92 fully right, 8 partly right, 0 wrong. The checker is unchanged from 3.3.
-- **Timing:** on this machine, up to 3 users can move from "fully right" to "partly right" between runs of the same build. The judge marks any result that takes more than 1.5 seconds as partly right. In those runs the verdicts were identical and no user was ever wrong.
-- **Fresh sealed test:** a further fresh set (blind-v8, 200 messages) was written blind and scored once for Release 3.4; see `evidence/Blind-Evaluation-v8.json`. A candidate checker aimed at the false alarms above showed no significant difference on it, so Release 3.4 keeps checker 3.3.
+- **Result:** the same 100 personas and the stress inputs pass 14/14 checks: 92 fully right, 8 partly right, 0 wrong. The checker was unchanged from 3.3.
+- **Timing:** on the test machine, up to 3 personas can move from "fully right" to "partly right" between runs of the same build, because the scorer marks any result that takes more than 1.5 seconds as partly right. In those runs the verdicts were identical and no persona was ever wrong.
+- **Fresh sealed test:** a further set (blind-v8, 200 messages) was written by a separate AI agent and scored once. A candidate checker aimed at the false alarms above showed no significant difference on it, so Release 3.4 kept checker 3.3 ([`Blind-Evaluation-v8.json`](../evidence/Blind-Evaluation-v8.json); [validation](Validation-v3.md)).
+
+## Release 3.5
+
+- **Result:** 92 fully right, 8 partly right, 0 wrong (14/14 checks). The per-persona results are in [`Real-World-User-Test.json`](../evidence/Real-World-User-Test.json).
+- **Checker:** Release 3.5 ships checker 3.3, unchanged from Release 3.4 (its blind-v8 results are in the [validation](Validation-v3.md)).
 
 ## Still open
 
-- **Urgent-help details:** some still need a tap, for example whether the caller still has access, and how and when money was paid.
-- **Family safety:** Release 3.4 adds sourced help for heirs and unclaimed money, each from an official page:
-  - transmission first, then the IEPF-5 claim;
-  - SEBI MITRA;
-  - RBI UDGAM;
-  - the SEBI Consolidated Account Statement.
-
-  MF Central and DigiLocker are not covered yet, because their official text could not be verified.
-- **Languages:** other languages get the "outside coverage" or "may miss signs" note instead of a check.
+- **Urgent-help details:** some still need a tap, for example whether the caller still has access, and how and when the money was paid.
+- **Family safety:** Release 3.5 adds the Family asset map, the nominee guide and the IEPF-5 guide. Earlier releases added sourced help for heirs and unclaimed money: transmission first, then the IEPF-5 claim; SEBI MITRA; RBI UDGAM; the SEBI Consolidated Account Statement. MF Central and DigiLocker are not covered yet, because their official text could not be verified.
+- **Languages:** other languages get the "outside coverage" or "may miss signs" note instead of a check, and the Rights and help page points to official helplines that speak them.
 - **Sharing a message into the app:** a WhatsApp "Share to Niveshak Saathi" option would remove copy-paste. It needs an installable app, which is the owner's decision.
 - **Real people:** a consented pilot and a native Hindi review are still the next evidence milestone.
 
 ## Test kit
 
-The 100 users, the stress inputs, the runner and the scorer are in `evaluation/real-world-test/`, so anyone can run the test again. The per-user results for Release 3.4 are in `evidence/Real-World-User-Test.json`.
+The 100 personas, the stress inputs, the runner and the scorer are in [`evaluation/real-world-test/`](../evaluation/real-world-test/), so anyone can run the test again.
 
 Before publishing, three details in scam messages that could have belonged to real people were replaced with made-up ones: a research-analyst registration number and two UPI IDs. All 100 results stayed the same.

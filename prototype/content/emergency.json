@@ -6,7 +6,7 @@
   "callNow": {
     "helplineId": "cyber-1930",
     "label": { "en": "Call 1930 now", "hi": "अभी 1930 पर कॉल करें" },
-    "note": { "en": "Sent money because of a suspicious message or call? Call the cyber crime helpline 1930 first, then come back to these steps.", "hi": "संदिग्ध संदेश या कॉल के कारण पैसे भेजे? पहले साइबर अपराध हेल्पलाइन 1930 पर कॉल करें, फिर इन कदमों पर लौटें।" }
+    "note": { "en": "Sent money because of a suspicious message or call? Call the cyber crime helpline 1930 and your bank straight away, then come back to these steps.", "hi": "संदिग्ध संदेश या कॉल के कारण पैसे भेजे? तुरंत साइबर अपराध हेल्पलाइन 1930 और अपने बैंक को कॉल करें, फिर इन कदमों पर लौटें।" }
   },
   "situationsQuestion": { "en": "1. What happened? Choose all that apply.", "hi": "1. क्या हुआ? जो भी लागू हो, सब चुनें।" },
   "situations": [
@@ -53,13 +53,13 @@
       "id": "stop-contact",
       "when": ["ongoing"],
       "text": { "en": "Stop now: end the call or screen sharing, do not reply, and do not send any more money or codes.", "hi": "अभी रुकें: कॉल या स्क्रीन शेयरिंग बंद करें, जवाब न दें, और कोई और पैसा या कोड न भेजें।" },
-      "sourceId": "apps"
+      "sourceId": "i4c-digital-arrest"
     },
     {
       "id": "call-bank",
       "when": ["paid", "shared"],
       "text": { "en": "Contact your bank or payment provider immediately, using the number on your card, passbook or official app. Ask them to block further debits and record your complaint.", "hi": "तुरंत अपने बैंक या भुगतान सेवा से संपर्क करें; नंबर अपने कार्ड, पासबुक या आधिकारिक ऐप से लें। खाते से आगे पैसा कटना रोकने और शिकायत दर्ज करने को कहें।" },
-      "sourceId": "cyber"
+      "sourceId": "rbi-liability"
     },
     {
       "id": "block-card",
@@ -77,7 +77,7 @@
     {
       "id": "upi-app",
       "when": ["upi"],
-      "text": { "en": "Paid by UPI? Report it to your bank as a fraudulent payment straight away. The UPI Help option in payment apps asks you to contact your bank about fraudulent transactions, and it does not take complaints about completed person-to-person payments.", "hi": "UPI से भुगतान किया? तुरंत अपने बैंक से शिकायत करें और बताएँ कि यह धोखाधड़ी वाला भुगतान है। भुगतान ऐप का UPI Help विकल्प धोखाधड़ी के मामलों में बैंक से संपर्क करने को कहता है, और किसी व्यक्ति को किए गए पूरे हो चुके (P2P) भुगतान की शिकायत नहीं लेता।" },
+      "text": { "en": "Paid by UPI? Report it to your bank as a fraudulent payment straight away. The UPI Help option in payment apps asks you to contact your bank about fraudulent transactions, and it does not take complaints about completed person-to-person payments.", "hi": "UPI से भुगतान किया? तुरंत अपने बैंक से शिकायत करें और बताएँ कि यह धोखाधड़ी वाला भुगतान है। भुगतान ऐप का UPI Help विकल्प धोखाधड़ी के मामलों में बैंक से संपर्क करने को कहता है। किसी व्यक्ति को किया गया, पूरा हो चुका भुगतान हो, तो UPI Help उसकी शिकायत नहीं लेता।" },
       "sourceId": "npci-upi-help"
     },
     {
@@ -95,7 +95,7 @@
     {
       "id": "remove-app",
       "when": ["clicked"],
-      "text": { "en": "Uninstall any app you installed from a message link, and do not enter details on that link again. Use only apps verified through official exchange or SEBI resources.", "hi": "संदेश के लिंक से इंस्टॉल किया गया ऐप हटाएँ और उस लिंक पर दोबारा जानकारी न डालें। केवल वही ऐप इस्तेमाल करें जिनकी जाँच आपने एक्सचेंज या SEBI की आधिकारिक वेबसाइट पर की हो।" },
+      "text": { "en": "Uninstall any app you installed from a message link, and do not enter details on that link again. Use only apps verified through official exchange or SEBI resources.", "hi": "संदेश के लिंक से इंस्टॉल किया गया ऐप हटाएँ और उस लिंक पर दोबारा जानकारी न डालें। केवल वही ऐप इस्तेमाल करें जिनकी जाँच आपने स्टॉक एक्सचेंज या SEBI की आधिकारिक वेबसाइट पर की हो।" },
       "sourceId": "apps"
     },
     {
@@ -114,7 +114,7 @@
       "id": "do-not-engage",
       "when": ["received"],
       "text": { "en": "Do not reply, click links or pay. If the message claims to be from an institution, contact that institution through its official website or app, not the number in the message.", "hi": "जवाब न दें, लिंक न खोलें और भुगतान न करें। संदेश किसी संस्था के नाम से हो तो उस संस्था से उसकी आधिकारिक वेबसाइट या ऐप से संपर्क करें, संदेश में दिए नंबर से नहीं।" },
-      "sourceId": "scam"
+      "sourceId": "i4c-digital-arrest"
     },
     {
       "id": "report-suspicion",
@@ -127,7 +127,7 @@
       "id": "report-chakshu",
       "when": ["received", "clicked"],
       "unless": ["paid"],
-      "text": { "en": "Report the suspected fraud call, SMS or WhatsApp message on Chakshu (Sanchar Saathi) if the sender's number is visible. If money was lost, report to 1930 instead.", "hi": "संदिग्ध धोखाधड़ी कॉल, SMS या व्हाट्सऐप संदेश की रिपोर्ट चक्षु (संचार साथी) पर करें, अगर भेजने वाले का नंबर दिख रहा हो। पैसे गए हों तो इसके बजाय 1930 पर रिपोर्ट करें।" },
+      "text": { "en": "Report the suspected fraud call, SMS or WhatsApp message on Chakshu (Sanchar Saathi) within 30 days, if the sender's number is visible. If money was lost, report to 1930 instead.", "hi": "संदिग्ध धोखाधड़ी कॉल, SMS या व्हाट्सऐप संदेश की रिपोर्ट 30 दिन के अंदर चक्षु (संचार साथी) पर करें, अगर भेजने वाले का नंबर दिख रहा हो। पैसे गए हों तो इसके बजाय 1930 पर रिपोर्ट करें।" },
       "sourceId": "chakshu"
     },
     {

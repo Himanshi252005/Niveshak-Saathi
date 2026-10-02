@@ -192,7 +192,7 @@
  // Rates, multiples over a stated duration and payouts on a principal. Growth is compounded; a day is a calendar day
  // (365 a year), a week is 7 days and a month is 1/12 of a year.
  const RATE=new RegExp(PERIODIC,'g'),PCTNUM=/\b(\d+(?:\.\d+)?)\s*(?:%|percent|per\s?cent|pratishat|प्रतिशत|फ़?ीसदी)/,PCTG=new RegExp(PCTNUM.source,'g');
- const PER_YEAR={day:365,week:365/7,month:12,year:1},UNIT_DAYS={day:1,week:7,month:365/12,year:365},PERIOD_HI={day:'दिन',week:'सप्ताह',month:'माह',year:'वर्ष'};
+ const PER_YEAR={day:365,week:365/7,month:12,year:1},UNIT_DAYS={day:1,week:7,month:365/12,year:365},PERIOD_HI={day:'दिन',week:'हफ़्ते',month:'महीने',year:'साल'};
  const NUMW={a:1,an:1,one:1,ek:1,'एक':1,two:2,do:2,'दो':2,three:3,teen:3,'तीन':3,four:4,char:4,chaar:4,'चार':4,five:5,panch:5,paanch:5,'पाँच':5,'पांच':5,six:6,chhe:6,'छह':6,seven:7,saat:7,'सात':7,ten:10,das:10,'दस':10,twelve:12,barah:12,'बारह':12,first:1,pehle:1,'पहले':1,kai:0,'कई':0};
  const periodOf=s=>/da(?:il)?y|din|roz|roj|दिन|रोज/.test(s)?'day':/week|hafte|haftawar|saptahik|हफ़?्त|सप्ताह/.test(s)?'week':/year|annum|annual|saal|साल|वर्ष|p\.?\s?a\b/.test(s)?'year':'month';
  const DUR=/(?:^|[^a-z0-9.])(\d+(?:\.\d+)?|a|an|one|ek|two|do|three|teen|four|chaa?r|five|paa?nch|six|chhe|seven|saat|ten|das|twelve|barah|first|pehle|एक|दो|तीन|चार|पाँच|पांच|छह|सात|दस|बारह|पहले)\s?(?:(?:ही|hi)\s+)?(days?|din|dino|दिन|दिनों|weeks?|hafte|hafton|हफ़?्ते|हफ़?्तों|सप्ताह|months?|mahine|mahino|mahina|महीने|महीनों|महीना|माह|years?|saal|साल|वर्ष|baras|hours?|hrs?|ghante|ghanton|घंटे|घंटों|minutes?|mins?|मिनट|sessions?)(?![a-z])/g;
@@ -231,11 +231,13 @@
   for(const x of out){let my=Math.pow(1+x.ratePct/100,PER_YEAR[x.period]);if(!(my<=1e12)){my=1e12;x.capped=true}x.multipleYear=my;x.annual=(my-1)*100}
   return out}
  const group=n=>{const s=String(Math.round(n));return s.length<=3?s:s.slice(0,-3).replace(/\B(?=(\d{2})+$)/g,',')+','+s.slice(-3)};
- function money(v,hi){if(v>=1e12)return hi?'₹1 लाख करोड़ से भी अधिक':'more than ₹1 lakh crore';const [d,u]=v>=1e7?[1e7,hi?'करोड़':'crore']:v>=1e5?[1e5,hi?'लाख':'lakh']:[1,''];if(d===1)return '₹'+group(v);const x=v/d;return '₹'+(x>=100?group(x):String(+x.toFixed(x>=10?1:2)))+' '+u}
+ function money(v,hi){if(v>=1e12)return hi?'₹1 लाख करोड़ से भी ज़्यादा':'more than ₹1 lakh crore';const [d,u]=v>=1e7?[1e7,hi?'करोड़':'crore']:v>=1e5?[1e5,hi?'लाख':'lakh']:[1,''];if(d===1)return '₹'+group(v);const x=v/d;return '₹'+(x>=100?group(x):String(+x.toFixed(x>=10?1:2)))+' '+u}
  const pct=p=>p>=1e9?'more than 1,00,00,00,000%':(p>=100?group(p):String(+p.toFixed(1)))+'%';
  function describeReturn(x,caution,phrase){const per=x.period,rn=+Math.min(x.ratePct,1e9).toFixed(x.ratePct<1?3:2),r=x.ratePct>=1000?'more than 1,000':rn,a=pct(x.annual),lakh=x.multipleYear*1e5,day=per==='day',big=lakh>=1e12;
   const en=(x.kind==='rate'?`${r}% a ${per} means`:`"${phrase}" works out to about ${r}% a ${per}, compounded. At that pace`)+` ₹1 lakh would become ${big?'':'about '}${money(lakh)} in a year (${a} a year)`+(day?', counting all 365 calendar days.':'.');
-  const hi=(x.kind==='rate'?`${r}% प्रति ${PERIOD_HI[per]} का मतलब है कि`:`"${phrase}" का मतलब है लगभग ${r}% प्रति ${PERIOD_HI[per]}, ब्याज पर ब्याज जोड़कर। इस दर से`)+` ₹1 लाख एक साल में ${big?'':'लगभग '}${money(lakh,1)} हो जाएँगे (साल में ${a})`+(day?', साल के सभी 365 दिन गिनकर।':'।');
+  // Hindi keeps its own wording for the very large values ("1,000% से ज़्यादा"), not the English "more than".
+  const rh=x.ratePct>=1000?'1,000% से ज़्यादा':rn+'%',ah=x.annual>=1e9?'1,00,00,00,000% से भी ज़्यादा':a;
+  const hi=(x.kind==='rate'?`हर ${PERIOD_HI[per]} ${rh} का मतलब है कि`:`"${phrase}" का मतलब है हर ${PERIOD_HI[per]} लगभग ${rh}, ब्याज पर ब्याज जोड़कर। इस दर से`)+` ₹1 लाख एक साल में ${big?'':'लगभग '}${money(lakh,1)} हो जाएँगे (साल में ${ah})`+(day?', साल के सभी 365 दिन गिनकर।':'।');
   const o={phrase,ratePct:rn,period:per,annualPct:Math.round(x.annual),multipleYear:+x.multipleYear.toPrecision(4),en,hi,inCaution:caution};if(x.capped)o.capped=true;return o}
 
  /* ---------- Payees: UPI IDs, mobile numbers and long account numbers, masked to the last 4 characters ---------- */

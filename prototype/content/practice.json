@@ -2,100 +2,100 @@
   "schemaVersion": 1,
   "before": [
     {
-      "id": "before-ipo-group",
+      "id": "before-ipo-quota",
       "enabled": true,
-      "question": { "en": "A group promises certain IPO allotment if you pay immediately. What is the safest next action?", "hi": "एक ग्रुप कहता है कि अभी भुगतान करें तो IPO में पक्का आवंटन मिलेगा। सबसे सुरक्षित अगला कदम क्या है?" },
+      "question": { "en": "A WhatsApp group admin writes: \"Pay ₹2,000 to kavita.ipo.demo@ybl for an IPO allotment quota. Allotment is 100% sure for members.\" What is true?", "hi": "व्हाट्सऐप ग्रुप का एडमिन लिखता है: \"IPO आवंटन कोटा के लिए kavita.ipo.demo@ybl पर ₹2,000 भेजें। सदस्यों को आवंटन 100% पक्का है।\" कौन-सी बात सही है?" },
       "options": [
-        { "en": "Pay a small amount to test it", "hi": "थोड़े पैसे भेजकर जाँचें" },
-        { "en": "Pause and verify through official sources", "hi": "रुकें और आधिकारिक स्रोत से जाँचें" },
-        { "en": "Trust the group’s profit screenshots", "hi": "ग्रुप में दिखाए गए मुनाफ़े के स्क्रीनशॉट पर भरोसा करें" }
+        { "en": "Allotment can be sure if the group has a tie-up with a broker", "hi": "ग्रुप का किसी ब्रोकर से जुड़ाव हो तो आवंटन पक्का हो सकता है" },
+        { "en": "Nobody can promise an IPO allotment; you apply yourself through ASBA from your own bank account", "hi": "IPO आवंटन का वादा कोई नहीं कर सकता; आवेदन आप खुद अपने बैंक खाते से ASBA के ज़रिए करते हैं" },
+        { "en": "It is safe if the UPI ID belongs to someone you know", "hi": "UPI आईडी किसी जान-पहचान वाले की हो, तो भुगतान सुरक्षित है" }
       ],
       "correct": 1
     },
     {
-      "id": "before-money-sent",
+      "id": "before-recovery-agent",
       "enabled": true,
-      "question": { "en": "You sent money and now suspect online financial fraud. What should you do first?", "hi": "पैसे भेजने के बाद ऑनलाइन वित्तीय धोखाधड़ी का संदेह है। पहले क्या करें?" },
+      "question": { "en": "A caller says your father's old shares are with the IEPF, and his agent can get them back for a 10% fee paid today. What do you do?", "hi": "एक कॉलर कहता है कि आपके पिता के पुराने शेयर IEPF में हैं, और उसका एजेंट आज 10% फ़ीस लेकर उन्हें वापस दिला देगा। आप क्या करेंगे?" },
       "options": [
-        { "en": "Contact the bank/payment provider and promptly report through 1930/official cybercrime channels", "hi": "बैंक या भुगतान सेवा से संपर्क करें और तुरंत 1930 या आधिकारिक साइबर अपराध पोर्टल पर रिपोर्ट करें" },
-        { "en": "Wait for a week", "hi": "एक सप्ताह इंतज़ार" },
-        { "en": "Pay the recovery agent", "hi": "रिकवरी एजेंट को पैसे दें" }
+        { "en": "Say no. Claim them yourself with form IEPF-5; no agent is needed", "hi": "मना करें। फ़ॉर्म IEPF-5 से दावा खुद करें; किसी एजेंट की ज़रूरत नहीं" },
+        { "en": "Pay, if the caller knows the folio number", "hi": "कॉलर को फ़ोलियो नंबर पता हो, तो भुगतान कर दें" },
+        { "en": "Pay half now and half after the shares arrive", "hi": "आधी फ़ीस अभी और आधी शेयर मिलने के बाद दें" }
       ],
       "correct": 0
     },
     {
-      "id": "before-no-match",
+      "id": "before-fno-screenshots",
       "enabled": true,
-      "question": { "en": "The checker finds no warning signs. What does this mean?", "hi": "जाँच में कोई खतरे का संकेत नहीं मिला। इसका क्या अर्थ है?" },
+      "question": { "en": "A Telegram channel posts screenshots of 300% profit from its \"SEBI registered\" F&O calls. What does this tell you?", "hi": "एक टेलीग्राम चैनल अपनी \"SEBI रजिस्टर्ड\" F&O कॉल से 300% मुनाफ़े के स्क्रीनशॉट डालता है। इससे क्या पता चलता है?" },
       "options": [
-        { "en": "The offer is verified", "hi": "प्रस्ताव जाँचा हुआ और सही है" },
-        { "en": "The government approved it", "hi": "सरकार ने स्वीकृति दी" },
-        { "en": "The checker may have missed something; independently verify", "hi": "जाँच से कुछ छूट सकता है; खुद जाँच करें" }
+        { "en": "The screenshots prove that the calls work", "hi": "स्क्रीनशॉट साबित करते हैं कि कॉल सही होती हैं" },
+        { "en": "\"SEBI registered\" in the message means it is safe", "hi": "संदेश में \"SEBI रजिस्टर्ड\" लिखा है, तो यह सुरक्षित है" },
+        { "en": "Nothing yet: check the registration on SEBI's own website. SEBI found that 93% of individual F&O traders lost money", "hi": "अभी कुछ नहीं: रजिस्ट्रेशन SEBI की अपनी वेबसाइट पर जाँचें। SEBI के अध्ययन में 93% व्यक्तिगत F&O ट्रेडरों को घाटा हुआ" }
       ],
       "correct": 2
     }
   ],
   "after": [
     {
-      "id": "after-chat-adviser",
+      "id": "after-borrow-jackpot",
       "enabled": true,
-      "question": { "en": "A chat adviser promises risk-free profit today. Your next step?", "hi": "चैट पर एक सलाहकार आज ही बिना जोखिम मुनाफ़े का वादा करता है। आपका अगला कदम क्या होगा?" },
+      "question": { "en": "A \"mentor\" tells you to borrow from a loan app today and buy a \"jackpot\" option. What is the safest answer?", "hi": "एक \"मेंटर\" कहता है कि आज ही लोन ऐप से उधार लेकर \"जैकपॉट\" ऑप्शन खरीदें। सबसे सुरक्षित जवाब क्या है?" },
       "options": [
-        { "en": "Borrow and pay before the deadline", "hi": "समय-सीमा खत्म होने से पहले उधार लेकर भुगतान करें" },
-        { "en": "Forward it as a verified offer", "hi": "इसे जाँचा हुआ सही प्रस्ताव बताकर दूसरों को भेजें" },
-        { "en": "Pause and independently verify", "hi": "रुकें और खुद जाँच करें" }
+        { "en": "Borrow only a small amount", "hi": "थोड़ा-सा ही उधार लें" },
+        { "en": "Ask the mentor for a written profit guarantee", "hi": "मेंटर से मुनाफ़े की लिखित गारंटी माँगें" },
+        { "en": "Do not borrow and do not pay: a sure or \"jackpot\" profit is a warning sign", "hi": "न उधार लें, न भुगतान करें: पक्का या \"जैकपॉट\" मुनाफ़ा खतरे का संकेत है" }
       ],
       "correct": 2
     },
     {
-      "id": "after-unlock-fee",
+      "id": "after-paid-fake-ipo",
       "enabled": true,
-      "question": { "en": "A fake investment app took your payment and asks for more to unlock it. First action?", "hi": "नकली निवेश ऐप भुगतान लेकर पैसे निकालने के लिए और रकम माँगता है। पहला कदम?" },
+      "question": { "en": "An hour ago you sent ₹5,000 by UPI to a fake IPO group. What do you do first?", "hi": "आपने एक घंटा पहले UPI से एक नकली IPO ग्रुप को ₹5,000 भेज दिए। सबसे पहले क्या करें?" },
       "options": [
-        { "en": "Send the unlock fee", "hi": "पैसे निकालने की फ़ीस दे दें" },
-        { "en": "Contact your bank/payment provider and report promptly through 1930/official cybercrime channels", "hi": "बैंक या भुगतान सेवा से संपर्क करें और तुरंत 1930 या आधिकारिक साइबर अपराध पोर्टल पर रिपोर्ट करें" },
-        { "en": "Delete all evidence", "hi": "सभी सबूत मिटाएँ" }
+        { "en": "Wait for the group to reply", "hi": "ग्रुप के जवाब का इंतज़ार करें" },
+        { "en": "Call your bank and the cyber crime helpline 1930 now, and keep the screenshots", "hi": "अभी अपने बैंक और साइबर अपराध हेल्पलाइन 1930 पर कॉल करें, और स्क्रीनशॉट सँभालकर रखें" },
+        { "en": "Pay the \"refund processing\" fee they now ask for", "hi": "वे अब जो \"रिफ़ंड प्रोसेसिंग\" फ़ीस माँग रहे हैं, वह भेज दें" }
       ],
       "correct": 1
     },
     {
-      "id": "after-zero-matches",
+      "id": "after-kyc-freeze",
       "enabled": true,
-      "question": { "en": "An unfamiliar message gets zero matches. Is it safe to transfer money?", "hi": "एक अनजान संदेश में खतरे का कोई संकेत नहीं मिला। क्या अब पैसे भेजना सुरक्षित है?" },
+      "question": { "en": "An SMS says your demat account will be frozen today unless you update KYC through a link and share the OTP. What do you do?", "hi": "SMS आता है कि लिंक से KYC अपडेट करके OTP न बताया, तो आज आपका डीमैट खाता फ़्रीज़ हो जाएगा। आप क्या करेंगे?" },
       "options": [
-        { "en": "No result proves safety; verify independently", "hi": "कोई भी जाँच-परिणाम सुरक्षा साबित नहीं करता; खुद जाँच करें" },
-        { "en": "Yes, zero means safe", "hi": "हाँ, कोई संकेत नहीं मिला तो सुरक्षित है" },
-        { "en": "Yes, if the group is large", "hi": "हाँ, यदि समूह बड़ा है" }
+        { "en": "Do not open the link or share the OTP; ask your DP or broker through their official app or number", "hi": "लिंक न खोलें, OTP न बताएँ; अपने DP या ब्रोकर से उनके आधिकारिक ऐप या नंबर पर पूछें" },
+        { "en": "Open the link, but do not type the OTP", "hi": "लिंक खोल लें, पर OTP न डालें" },
+        { "en": "Share the OTP, because KYC is a SEBI rule", "hi": "OTP बता दें, क्योंकि KYC SEBI का नियम है" }
       ],
       "correct": 0
     }
   ],
   "lesson": [
     {
-      "title": { "en": "Pause before paying", "hi": "भुगतान से पहले रुकें" },
-      "text": { "en": "Treat certainty and urgency as reasons to verify, not reasons to hurry.", "hi": "पक्के मुनाफ़े का वादा या जल्दी करने का दबाव दिखे तो जल्दबाज़ी नहीं, जाँच करें।" }
+      "title": { "en": "Nobody can promise profit or allotment", "hi": "मुनाफ़े या आवंटन का वादा कोई नहीं कर सकता" },
+      "text": { "en": "Sure returns, \"jackpot\" calls and sure IPO allotment are warning signs. Apply for an IPO yourself through ASBA, and check any adviser on SEBI's own website.", "hi": "पक्का मुनाफ़ा, \"जैकपॉट\" कॉल और पक्का IPO आवंटन खतरे के संकेत हैं। IPO के लिए खुद ASBA से आवेदन करें, और किसी भी सलाहकार को SEBI की अपनी वेबसाइट पर जाँचें।" }
     },
     {
-      "title": { "en": "Act quickly after suspected loss", "hi": "धोखे से नुकसान का शक हो तो तुरंत कदम उठाएँ" },
-      "text": { "en": "Contact your bank/payment provider and report promptly via 1930 and the official portal.", "hi": "बैंक/भुगतान सेवा से संपर्क करें और जल्द 1930 व आधिकारिक पोर्टल पर रिपोर्ट करें।" }
+      "title": { "en": "Never pay to get money back", "hi": "पैसा वापस पाने के लिए कभी फ़ीस न दें" },
+      "text": { "en": "No agent is needed to claim from the IEPF or to complain to the RBI Ombudsman. A \"recovery\" or \"processing\" fee is a scam.", "hi": "IEPF से दावा करने या RBI लोकपाल से शिकायत करने के लिए किसी एजेंट की ज़रूरत नहीं। \"रिकवरी\" या \"प्रोसेसिंग\" फ़ीस धोखाधड़ी है।" }
     },
     {
-      "title": { "en": "No match is not a safety certificate", "hi": "संकेत न मिलना सुरक्षा प्रमाण नहीं" },
-      "text": { "en": "A limited checker cannot establish legitimacy. Verify independently.", "hi": "यह सीमित जाँच यह साबित नहीं कर सकती कि प्रस्ताव असली है। खुद जाँच करें।" }
+      "title": { "en": "Codes stay with you; report fast", "hi": "कोड अपने पास रखें; जल्दी रिपोर्ट करें" },
+      "text": { "en": "Never share an OTP or open a link from a message. If money went, call your bank and 1930 at once. No warning sign does not mean safe.", "hi": "OTP कभी न बताएँ और संदेश का लिंक न खोलें। पैसा चला गया हो तो तुरंत बैंक और 1930 पर कॉल करें। संकेत न मिलने का मतलब सुरक्षित होना नहीं है।" }
     }
   ],
   "habit": {
     "title": { "en": "SEVEN-DAY SAFETY PRACTICE", "hi": "सात दिन का सुरक्षा अभ्यास" },
-    "intro": { "en": "Use with fictional examples; never enter financial credentials.", "hi": "काल्पनिक उदाहरण लें; वित्तीय गोपनीय जानकारी न डालें।" },
+    "intro": { "en": "Use with fictional examples; never enter financial credentials.", "hi": "काल्पनिक उदाहरणों से अभ्यास करें; अपना पासवर्ड, PIN या OTP जैसी बैंकिंग जानकारी कभी न डालें।" },
     "days": [
       { "en": "Practise pausing before a payment.", "hi": "भुगतान से पहले रुकने का अभ्यास।" },
-      { "en": "Find an institution’s official contact independently.", "hi": "संस्था का आधिकारिक संपर्क स्वतंत्र रूप से खोजें।" },
-      { "en": "Explain why guaranteed returns are a warning.", "hi": "समझाएँ कि पक्के लाभ का वादा चेतावनी क्यों है।" },
-      { "en": "Save the official cybercrime portal and remember 1930.", "hi": "आधिकारिक साइबर अपराध पोर्टल और 1930 याद रखें।" },
+      { "en": "Find an institution’s official contact independently.", "hi": "संस्था का आधिकारिक संपर्क खुद खोजें।" },
+      { "en": "Explain why guaranteed returns are a warning.", "hi": "समझाएँ कि पक्के मुनाफ़े का वादा खतरे का संकेत क्यों है।" },
+      { "en": "Save the official cybercrime portal and remember 1930.", "hi": "आधिकारिक साइबर अपराध पोर्टल का पता फ़ोन में सहेजें और 1930 याद रखें।" },
       { "en": "Practise writing a factual complaint.", "hi": "तथ्यों पर आधारित शिकायत लिखने का अभ्यास।" },
-      { "en": "Explain to a family member why no checker can certify safety.", "hi": "परिवार को समझाएँ कि कोई जाँच सुरक्षा प्रमाण नहीं देती।" },
-      { "en": "Repeat the practice exercise and note what you still find confusing.", "hi": "अभ्यास दोहराएँ और बची हुई उलझन लिखें।" }
+      { "en": "Explain to a family member why no checker can certify safety.", "hi": "परिवार के किसी सदस्य को समझाएँ कि कोई भी जाँच सुरक्षा का सबूत क्यों नहीं दे सकती।" },
+      { "en": "Repeat the practice exercise and note what you still find confusing.", "hi": "अभ्यास दोहराएँ, और जो बात अब भी समझ न आए, उसे लिख लें।" }
     ],
-    "footer": { "en": "This card makes no claim about actual behaviour change.", "hi": "यह कार्ड वास्तविक व्यवहार बदलने का दावा नहीं करता।" }
+    "footer": { "en": "This card makes no claim about actual behaviour change.", "hi": "यह कार्ड यह दावा नहीं करता कि इससे आपकी आदतें सच में बदल जाएँगी।" }
   }
 }

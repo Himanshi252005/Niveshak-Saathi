@@ -24,7 +24,7 @@
       ],
       "text": {
         "en": "You can raise an eligible grievance and seek a review through the applicable official process. Keep acknowledgements. Check current SCORES instructions for eligibility and review time limits; do not wait for this prototype to remind you.",
-        "hi": "जो शिकायत नियमों के दायरे में आती है, वह आप दर्ज कर सकते हैं, और तय आधिकारिक प्रक्रिया से उस पर दोबारा जाँच (समीक्षा) माँग सकते हैं। पावती सँभालकर रखें। कौन-सी शिकायत ली जाती है और समय-सीमा क्या है, यह SCORES के ताज़ा निर्देशों में देखें; इस प्रोटोटाइप के याद दिलाने का इंतज़ार न करें।"
+        "hi": "जो शिकायत नियमों के दायरे में आती है, उसे आप दर्ज कर सकते हैं, और तय आधिकारिक प्रक्रिया से उस पर दोबारा जाँच (समीक्षा) माँग सकते हैं। पावती सँभालकर रखें। कौन-सी शिकायत ली जाती है, और दोबारा जाँच माँगने की समय-सीमा क्या है, यह SCORES के ताज़ा निर्देशों में देखें; इस ऐप के याद दिलाने का इंतज़ार न करें।"
       },
       "sourceId": "scores"
     },
@@ -37,7 +37,7 @@
       ],
       "text": {
         "en": "Nomination, ownership and inheritance are different questions. Ask the institution for the applicable requirements in writing; this app does not decide entitlement.",
-        "hi": "नॉमिनी होना, मालिकाना हक और विरासत अलग-अलग बातें हैं। संस्था से लागू ज़रूरतें लिखित में लें; यह ऐप हक तय नहीं करता।"
+        "hi": "नॉमिनी होना, मालिकाना हक और विरासत अलग-अलग बातें हैं। संस्था से लिखित में पूछें कि आपके मामले में कौन-से नियम और कागज़ लागू हैं; यह ऐप तय नहीं करता कि किसका हक बनता है।"
       },
       "sourceId": "sebi-rta-faq"
     },
@@ -64,7 +64,7 @@
       ],
       "text": {
         "en": "SEBI's Investor Charter gives you the right to fair and equitable treatment, to time-bound redressal of grievances filed on SCORES, and to quality services from SEBI-registered intermediaries, including online dispute resolution (SMART ODR).",
-        "hi": "SEBI का निवेशक चार्टर आपको निष्पक्ष और समान व्यवहार, SCORES पर दर्ज शिकायतों के तय समय में समाधान, और SEBI-पंजीकृत मध्यस्थों से अच्छी सेवा का अधिकार देता है, जिसमें ऑनलाइन विवाद समाधान (स्मार्ट ODR) भी शामिल है।"
+        "hi": "SEBI का निवेशक चार्टर आपको ये अधिकार देता है: निष्पक्ष और समान व्यवहार; SCORES पर दर्ज शिकायतों का तय समय में समाधान; और SEBI में रजिस्टर्ड संस्थाओं से अच्छी सेवा, जिसमें ऑनलाइन विवाद समाधान (SMART ODR) भी शामिल है।"
       },
       "sourceId": "sebi-investor-charter"
     },
@@ -76,7 +76,7 @@
       ],
       "text": {
         "en": "RBI's Charter of Customer Rights names five basic rights of bank customers: fair treatment; transparency, fair and honest dealing; products suited to your needs; privacy; and grievance redress and compensation.",
-        "hi": "RBI के ग्राहक अधिकार चार्टर में बैंक ग्राहकों के पाँच बुनियादी अधिकार हैं: उचित व्यवहार; पारदर्शिता, निष्पक्ष और ईमानदार लेन-देन; आपकी ज़रूरत के हिसाब से उपयुक्त उत्पाद; निजता; और शिकायत का निवारण व मुआवज़ा।"
+        "hi": "RBI के ग्राहक अधिकार चार्टर में बैंक ग्राहकों के पाँच बुनियादी अधिकार हैं: उचित व्यवहार; पारदर्शिता (हर बात साफ़-साफ़ बताना), निष्पक्ष और ईमानदार लेन-देन; आपकी ज़रूरत के हिसाब से उपयुक्त उत्पाद; निजता; और शिकायत का निवारण व मुआवज़ा।"
       },
       "sourceId": "rbi-customer-charter"
     },
@@ -87,8 +87,8 @@
         "insurance"
       ],
       "text": {
-        "en": "For a life or health policy of one year or more, IRDAI gives you 30 days from receiving the policy to review it. You can cancel in that time for any reason; only the risk premium for the days covered, medical-test costs and stamp duty may be deducted. For life policies the refund is due within 7 days.",
-        "hi": "एक साल या उससे ज़्यादा अवधि की जीवन या स्वास्थ्य बीमा पॉलिसी मिलने के बाद IRDAI आपको उसे जाँचने के लिए 30 दिन देता है। इस दौरान आप किसी भी कारण से पॉलिसी रद्द कर सकते हैं; रिफ़ंड में से सिर्फ़ कवर वाले दिनों का जोखिम प्रीमियम, मेडिकल जाँच का खर्च और स्टांप शुल्क काटा जा सकता है। जीवन बीमा में रिफ़ंड 7 दिन में देना होता है।"
+        "en": "For a life or health policy of one year or more, IRDAI gives you 30 days from receiving the policy to review it. You can cancel in that time for any reason; only the risk premium for the days covered, medical-test costs and stamp duty may be deducted. For unit-linked (ULIP) policies the units are bought back at that day's value, so the refund can be lower. Life refunds are due within 7 days.",
+        "hi": "एक साल या उससे ज़्यादा अवधि की जीवन या स्वास्थ्य बीमा पॉलिसी मिलने के बाद IRDAI आपको उसे जाँचने के लिए 30 दिन देता है। इस दौरान आप किसी भी कारण से पॉलिसी रद्द कर सकते हैं; रिफ़ंड में से सिर्फ़ कवर वाले दिनों का जोखिम प्रीमियम, मेडिकल जाँच का खर्च और स्टांप शुल्क काटे जा सकते हैं। यूलिप (ULIP) पॉलिसी में यूनिट उस दिन की कीमत पर वापस खरीदी जाती हैं, इसलिए रिफ़ंड कम हो सकता है। जीवन बीमा में रिफ़ंड 7 दिन में देना होता है।"
       },
       "sourceId": "irdai-policyholder-mc"
     },
@@ -103,6 +103,388 @@
         "hi": "पहले बीमा कंपनी के शिकायत निवारण अधिकारी को लिखित शिकायत दें, साथ में ज़रूरी कागज़ लगाएँ। IRDAI के अनुसार बीमा कंपनी को शिकायत मिलने के दो हफ़्ते के अंदर उसका समाधान करना होता है।"
       },
       "sourceId": "irdai-consumer-affairs"
+    }
+  ],
+  "guides": [
+    {
+      "id": "scores",
+      "enabled": true,
+      "issueIds": [
+        "broker",
+        "company",
+        "mutual-fund",
+        "transmission"
+      ],
+      "helplineId": "sebi-helpline",
+      "title": {
+        "en": "Complain on SEBI SCORES (shares, brokers, mutual funds)",
+        "hi": "SEBI SCORES पर शिकायत (शेयर, ब्रोकर, म्यूचुअल फ़ंड)"
+      },
+      "when": {
+        "en": "Use this when a broker, DP, listed company, registrar (RTA) or mutual fund has not solved your written complaint.",
+        "hi": "जब ब्रोकर, DP, लिस्टेड कंपनी, रजिस्ट्रार (RTA) या म्यूचुअल फ़ंड ने आपकी लिखित शिकायत हल न की हो।"
+      },
+      "steps": [
+        {
+          "text": {
+            "en": "First complain in writing to the company, broker, DP, registrar or fund, and keep the complaint number. Use SCORES after that.",
+            "hi": "पहले कंपनी, ब्रोकर, DP, रजिस्ट्रार या फ़ंड को लिखित शिकायत करें और शिकायत नंबर सँभालकर रखें। उसके बाद SCORES का इस्तेमाल करें।"
+          },
+          "sourceId": "scores"
+        },
+        {
+          "text": {
+            "en": "On scores.sebi.gov.in or the SCORES app, choose Sign in/Sign up, then Register. Keep ready your name, address, e-mail, PAN, mobile number and date of birth: all are required.",
+            "hi": "scores.sebi.gov.in या SCORES ऐप पर Sign in/Sign up चुनें, फिर Register। अपना नाम, पता, ई-मेल, PAN, मोबाइल नंबर और जन्मतिथि तैयार रखें: ये सब ज़रूरी हैं।"
+          },
+          "sourceId": "scores-howto"
+        },
+        {
+          "text": {
+            "en": "You can fill the form, or fetch your details with your PAN and date of birth. An OTP comes to your own mobile: type it only on the SCORES site or app, and never tell it to anyone.",
+            "hi": "आप फ़ॉर्म भर सकते हैं, या PAN और जन्मतिथि से अपनी जानकारी अपने-आप भरवा सकते हैं। OTP आपके अपने मोबाइल पर आएगा: उसे सिर्फ़ SCORES की साइट या ऐप पर खुद भरें, किसी को न बताएँ।"
+          },
+          "sourceId": "scores-howto"
+        },
+        {
+          "text": {
+            "en": "File within one year of the problem, and attach your supporting documents.",
+            "hi": "समस्या होने के एक साल के अंदर शिकायत करें, और साथ में अपने सबूत वाले दस्तावेज़ लगाएँ।"
+          },
+          "sourceId": "scores"
+        },
+        {
+          "text": {
+            "en": "The company, broker or fund must reply on SCORES within 21 days.",
+            "hi": "कंपनी, ब्रोकर या फ़ंड को 21 दिनों के अंदर SCORES पर जवाब देना होता है।"
+          },
+          "sourceId": "scores-howto"
+        },
+        {
+          "text": {
+            "en": "Not happy with the reply? Ask for a review within 15 days: first by a body such as a stock exchange or depository, then by SEBI.",
+            "hi": "जवाब से संतुष्ट नहीं? 15 दिनों के अंदर दोबारा जाँच (रिव्यू) माँगें: पहले स्टॉक एक्सचेंज या डिपॉज़िटरी जैसी संस्था, फिर SEBI।"
+          },
+          "sourceId": "scores"
+        },
+        {
+          "text": {
+            "en": "You can move to SMART ODR (online conciliation and arbitration) at any time, but that closes your SCORES complaint.",
+            "hi": "आप कभी भी SMART ODR (ऑनलाइन सुलह और मध्यस्थता) पर जा सकते हैं, पर तब आपकी SCORES वाली शिकायत बंद हो जाती है।"
+          },
+          "sourceId": "scores"
+        },
+        {
+          "text": {
+            "en": "Shares or dividends already moved to the IEPF are not handled on SCORES: use the IEPF guide instead.",
+            "hi": "जो शेयर या लाभांश IEPF में जा चुके हैं, उनकी शिकायत SCORES पर नहीं होती: इसके बजाय IEPF वाली गाइड देखें।"
+          },
+          "sourceId": "scores"
+        }
+      ],
+      "documents": {
+        "items": [
+          {
+            "en": "Your complaint to the company, broker or fund, and its reply",
+            "hi": "कंपनी, ब्रोकर या फ़ंड को की गई शिकायत और उसका जवाब"
+          },
+          {
+            "en": "Account statement, contract note or share certificate copy",
+            "hi": "खाते का स्टेटमेंट, कॉन्ट्रैक्ट नोट या शेयर सर्टिफ़िकेट की कॉपी"
+          },
+          {
+            "en": "PAN and your contact details",
+            "hi": "PAN और आपका संपर्क विवरण"
+          }
+        ]
+      }
+    },
+    {
+      "id": "iepf",
+      "enabled": true,
+      "issueIds": [
+        "unclaimed",
+        "transmission"
+      ],
+      "helplineId": "iepf-14453",
+      "title": {
+        "en": "Claim shares or dividends from the IEPF (form IEPF-5)",
+        "hi": "IEPF से शेयर या लाभांश वापस पाएँ (फ़ॉर्म IEPF-5)"
+      },
+      "when": {
+        "en": "Use this when the company confirms that your shares or dividends were moved to the IEPF.",
+        "hi": "जब कंपनी पक्का बता दे कि आपके शेयर या लाभांश IEPF में भेजे जा चुके हैं।"
+      },
+      "steps": [
+        {
+          "text": {
+            "en": "Fill form IEPF-5 online yourself. Forms on paper are rejected.",
+            "hi": "फ़ॉर्म IEPF-5 खुद ऑनलाइन भरें। कागज़ पर भरे फ़ॉर्म अस्वीकार हो जाते हैं।"
+          },
+          "sourceId": "iepf-documents"
+        },
+        {
+          "text": {
+            "en": "The form is on the MCA portal (mca.gov.in): log in, open MCA services, then IEPF related services.",
+            "hi": "फ़ॉर्म MCA पोर्टल (mca.gov.in) पर है: लॉग-इन करें, MCA services खोलें, फिर IEPF related services।"
+          },
+          "sourceId": "iepf-claim-kit"
+        },
+        {
+          "text": {
+            "en": "No agent or professional is needed, and the government has appointed none. Do not pay anyone to \"recover\" your shares.",
+            "hi": "किसी एजेंट या पेशेवर की ज़रूरत नहीं है, और सरकार ने किसी को नियुक्त नहीं किया है। शेयर \"वापस दिलाने\" के लिए किसी को पैसे न दें।"
+          },
+          "sourceId": "iepf-claimant-faq"
+        },
+        {
+          "text": {
+            "en": "A legal heir first registers the transmission with the company, then files the claim.",
+            "hi": "कानूनी वारिस पहले कंपनी के पास ट्रांसमिशन (शेयर अपने नाम कराना) दर्ज कराएँ, फिर दावा करें।"
+          },
+          "sourceId": "iepf-claimant-faq"
+        },
+        {
+          "text": {
+            "en": "Print the filed form and post it, with the documents below, to the company's Nodal Officer at its registered office. Then upload the postal receipt on the MCA portal.",
+            "hi": "भरे हुए फ़ॉर्म का प्रिंट, नीचे दिए दस्तावेज़ों के साथ, कंपनी के रजिस्टर्ड ऑफ़िस में नोडल अधिकारी को डाक से भेजें। फिर डाक की रसीद MCA पोर्टल पर अपलोड करें।"
+          },
+          "sourceId": "iepf-claim-kit"
+        },
+        {
+          "text": {
+            "en": "The company then has 30 days to send its verification report to the IEPF.",
+            "hi": "इसके बाद कंपनी के पास IEPF को अपनी जाँच रिपोर्ट भेजने के लिए 30 दिन होते हैं।"
+          },
+          "sourceId": "iepf-verification-kit"
+        },
+        {
+          "text": {
+            "en": "The IEPF credits the shares to your demat account and pays the money to your bank account.",
+            "hi": "IEPF शेयर आपके डीमैट खाते में और पैसा आपके बैंक खाते में भेजता है।"
+          },
+          "sourceId": "iepf-claimant-faq"
+        },
+        {
+          "text": {
+            "en": "If the IEPF asks for a correction, you get one chance to resubmit, within 15 days.",
+            "hi": "अगर IEPF सुधार माँगे, तो दोबारा भेजने का एक ही मौका मिलता है, 15 दिनों के अंदर।"
+          },
+          "sourceId": "iepf-documents"
+        }
+      ],
+      "documents": {
+        "sourceId": "iepf-documents",
+        "items": [
+          {
+            "en": "Acknowledgement of the online form, with its SRN number",
+            "hi": "ऑनलाइन फ़ॉर्म की पावती, SRN नंबर के साथ"
+          },
+          {
+            "en": "Indemnity bond, original and signed: on stamp paper, unless you claim only money of ₹10,000 or less",
+            "hi": "क्षतिपूर्ति बॉन्ड (इंडेम्निटी बॉन्ड), मूल और हस्ताक्षर किया हुआ: स्टांप पेपर पर, जब तक दावा सिर्फ़ ₹10,000 या उससे कम पैसे का न हो"
+          },
+          {
+            "en": "Advance receipt, original, with a revenue stamp, signed by you and witnesses",
+            "hi": "अग्रिम रसीद (एडवांस रसीद), मूल, रेवेन्यू स्टांप के साथ, आपके और गवाहों के हस्ताक्षर सहित"
+          },
+          {
+            "en": "Original share certificates, or the demat statement for shares held in demat",
+            "hi": "मूल शेयर सर्टिफ़िकेट, या डीमैट में रखे शेयरों के लिए डीमैट स्टेटमेंट"
+          },
+          {
+            "en": "Self-attested copies of PAN and Aadhaar",
+            "hi": "PAN और आधार की स्व-सत्यापित (सेल्फ़-अटेस्टेड) कॉपी"
+          },
+          {
+            "en": "Client master list (CML) from your DP, and a cancelled cheque",
+            "hi": "आपके DP से क्लाइंट मास्टर लिस्ट (CML), और एक रद्द (कैंसल) किया हुआ चेक"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rbi-ombudsman",
+      "enabled": true,
+      "issueIds": [
+        "bank"
+      ],
+      "helplineId": "rbi-14448",
+      "title": {
+        "en": "Complain to the RBI Ombudsman (bank, card, wallet)",
+        "hi": "RBI लोकपाल से शिकायत (बैंक, कार्ड, वॉलेट)"
+      },
+      "when": {
+        "en": "Use this when your bank, card or wallet company has not replied in 30 days, or you are not satisfied with its reply.",
+        "hi": "जब आपके बैंक, कार्ड या वॉलेट कंपनी ने 30 दिनों में जवाब न दिया हो, या आप उसके जवाब से संतुष्ट न हों।"
+      },
+      "steps": [
+        {
+          "text": {
+            "en": "First complain in writing to the bank or company, and keep the complaint number.",
+            "hi": "पहले बैंक या कंपनी को लिखित शिकायत करें और शिकायत नंबर सँभालकर रखें।"
+          },
+          "sourceId": "rbi-ios-faq"
+        },
+        {
+          "text": {
+            "en": "If it does not reply in 30 days (longer for some card and UPI disputes under RBI, NPCI or card-network rules), or you are not satisfied with its reply, you can go to the RBI Ombudsman.",
+            "hi": "अगर 30 दिनों में जवाब न आए (कुछ कार्ड और UPI विवादों में RBI, NPCI या कार्ड नेटवर्क के नियमों से ज़्यादा समय), या आप जवाब से संतुष्ट न हों, तो आप RBI लोकपाल के पास जा सकते हैं।"
+          },
+          "sourceId": "rbi-ios-faq"
+        },
+        {
+          "text": {
+            "en": "File within 90 days after that waiting period ends, or after the bank's last reply, whichever is later.",
+            "hi": "इंतज़ार का वह समय पूरा होने के बाद, या बैंक के आखिरी जवाब के बाद, जो भी बाद में हो, उसके 90 दिनों के अंदर शिकायत करें।"
+          },
+          "sourceId": "rbi-ios-faq"
+        },
+        {
+          "text": {
+            "en": "File online at cms.rbi.org.in, by e-mail to crpc@rbi.org.in, or by post: send the signed complaint form to the Centralised Receipt and Processing Centre, Reserve Bank of India, Central Vista, Sector 17, Chandigarh 160017.",
+            "hi": "cms.rbi.org.in पर ऑनलाइन, crpc@rbi.org.in पर ई-मेल से, या डाक से शिकायत करें: हस्ताक्षर किया हुआ शिकायत फ़ॉर्म इस पते पर भेजें — Centralised Receipt and Processing Centre, Reserve Bank of India, Central Vista, Sector 17, Chandigarh 160017।"
+          },
+          "sourceId": "rbi-ios-filing"
+        },
+        {
+          "text": {
+            "en": "Filing is free; you never need an agent. Someone you authorise in writing can file for you, but not a lawyer, unless the lawyer is the person affected.",
+            "hi": "शिकायत करना मुफ़्त है; किसी एजेंट की ज़रूरत नहीं। आप जिसे लिखित में अधिकार दें, वह आपकी ओर से शिकायत कर सकता है, पर वकील नहीं, जब तक वकील खुद प्रभावित व्यक्ति न हो।"
+          },
+          "sourceId": "rbi-ios-filing"
+        },
+        {
+          "text": {
+            "en": "A matter pending before, or decided by, a court, tribunal or arbitrator cannot be taken. A police complaint or criminal case does not stop you from complaining.",
+            "hi": "जो मामला किसी अदालत, ट्रिब्यूनल या पंच के पास है या उनसे तय हो चुका है, वह नहीं लिया जाता। पुलिस शिकायत या आपराधिक केस होने से आपकी शिकायत नहीं रुकती।"
+          },
+          "sourceId": "rbi-ios-faq"
+        }
+      ],
+      "documents": {
+        "sourceId": "rbi-ios-faq",
+        "items": [
+          {
+            "en": "Your complaint to the bank and its reply, or proof that it did not reply",
+            "hi": "बैंक को की गई शिकायत और उसका जवाब, या जवाब न आने का सबूत"
+          },
+          {
+            "en": "Account, card or transaction details, such as a statement showing the transaction",
+            "hi": "खाते, कार्ड या लेन-देन का विवरण, जैसे लेन-देन दिखाने वाला स्टेटमेंट"
+          },
+          {
+            "en": "The complaint number",
+            "hi": "शिकायत नंबर"
+          }
+        ]
+      }
+    },
+    {
+      "id": "insurance",
+      "enabled": true,
+      "issueIds": [
+        "insurance"
+      ],
+      "helplineId": "irdai-igcc",
+      "title": {
+        "en": "Complain about insurance (insurer, IRDAI, Ombudsman)",
+        "hi": "बीमा की शिकायत (बीमा कंपनी, IRDAI, लोकपाल)"
+      },
+      "when": {
+        "en": "Use this for a claim, policy or service problem with an insurance company.",
+        "hi": "बीमा कंपनी से क्लेम, पॉलिसी या सेवा की समस्या होने पर।"
+      },
+      "steps": [
+        {
+          "text": {
+            "en": "Complain in writing to the insurer's Grievance Redressal Officer, with your documents.",
+            "hi": "बीमा कंपनी के शिकायत निवारण अधिकारी को अपने कागज़ों के साथ लिखित शिकायत करें।"
+          },
+          "sourceId": "irdai-consumer-affairs"
+        },
+        {
+          "text": {
+            "en": "The insurer must resolve it within two weeks.",
+            "hi": "बीमा कंपनी को दो हफ़्ते के अंदर इसका समाधान करना होता है।"
+          },
+          "sourceId": "irdai-consumer-affairs"
+        },
+        {
+          "text": {
+            "en": "Not resolved in two weeks, or unhappy with the reply? Go to IRDAI: call 155255, e-mail complaints@irdai.gov.in, or use the Bima Bharosa portal.",
+            "hi": "दो हफ़्ते में हल न हो, या जवाब से संतुष्ट न हों? IRDAI के पास जाएँ: 155255 पर कॉल करें, complaints@irdai.gov.in पर ई-मेल करें, या बीमा भरोसा पोर्टल का इस्तेमाल करें।"
+          },
+          "sourceId": "bima-bharosa-faq"
+        },
+        {
+          "text": {
+            "en": "You can also go to the Insurance Ombudsman if the insurer rejected your complaint, did not reply in one month, or replied unsatisfactorily. Complain within one year. A matter that is, or was, before a court, consumer forum or arbitrator is not taken.",
+            "hi": "अगर बीमा कंपनी ने शिकायत अस्वीकार कर दी, एक महीने में जवाब नहीं दिया, या जवाब संतोषजनक नहीं था, तो आप बीमा लोकपाल के पास भी जा सकते हैं। एक साल के अंदर शिकायत करें। जो मामला अदालत, उपभोक्ता अदालत या पंच के पास है या रह चुका है, वह नहीं लिया जाता।"
+          },
+          "sourceId": "insurance-ombudsman"
+        }
+      ],
+      "documents": {
+        "items": [
+          {
+            "en": "Policy document and premium receipts",
+            "hi": "पॉलिसी के कागज़ और प्रीमियम की रसीदें"
+          },
+          {
+            "en": "Claim papers and the insurer's letters",
+            "hi": "क्लेम के कागज़ और बीमा कंपनी के पत्र"
+          },
+          {
+            "en": "Your complaint and its number",
+            "hi": "आपकी शिकायत और उसका नंबर"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nominee",
+      "enabled": true,
+      "issueIds": [],
+      "helplineId": "sebi-helpline",
+      "title": {
+        "en": "Add or check a nominee (demat and mutual funds)",
+        "hi": "नॉमिनी जोड़ें या जाँचें (डीमैट और म्यूचुअल फ़ंड)"
+      },
+      "when": {
+        "en": "Do this now, before anything happens, so that your family is not stuck later.",
+        "hi": "इसे अभी कर लें, किसी मुश्किल से पहले, ताकि बाद में परिवार परेशान न हो।"
+      },
+      "steps": [
+        {
+          "text": {
+            "en": "Ask your DP (where your demat account is), or the mutual fund or its registrar, to add or change a nominee. You can do it online or on a paper form.",
+            "hi": "अपने DP (जहाँ डीमैट खाता है), या म्यूचुअल फ़ंड या उसके रजिस्ट्रार से नॉमिनी जोड़ने या बदलने को कहें। यह ऑनलाइन या कागज़ी फ़ॉर्म से हो सकता है।"
+          },
+          "sourceId": "sebi-nomination-2026"
+        },
+        {
+          "text": {
+            "en": "If you choose not to add a nominee, make sure that decision (opt-out) is recorded.",
+            "hi": "अगर आप नॉमिनी नहीं रखना चाहते, तो पक्का करें कि यह फ़ैसला (ऑप्ट-आउट) दर्ज हो।"
+          },
+          "sourceId": "sebi-nomination-2026"
+        },
+        {
+          "text": {
+            "en": "Accounts and folios without a nominee get reminders twice a year. They are not frozen: a message that threatens a freeze and asks for money is a warning sign.",
+            "hi": "बिना नॉमिनी वाले खातों और फ़ोलियो को साल में दो बार याद दिलाया जाता है। उन्हें फ़्रीज़ नहीं किया जाता: फ़्रीज़ की धमकी देकर पैसे माँगने वाला संदेश धोखाधड़ी का संकेत है।"
+          },
+          "sourceId": "sebi-nomination-2026"
+        },
+        {
+          "text": {
+            "en": "A nominee receives the holdings as a trustee for the legal heirs. Nomination alone does not decide who finally owns them.",
+            "hi": "नॉमिनी को होल्डिंग कानूनी वारिसों की ओर से, ट्रस्टी (देखरेख करने वाले) के रूप में मिलती है। सिर्फ़ नॉमिनी बना देने से यह तय नहीं होता कि आखिर में मालिक कौन होगा।"
+          },
+          "sourceId": "sebi-rta-faq"
+        }
+      ]
     }
   ]
 }

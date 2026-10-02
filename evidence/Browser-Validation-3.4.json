@@ -11,7 +11,7 @@
   ],
   "checks": [
     "Hindi-first UI",
-    "Opens on the Home page with seven task choices (C-18, Release 3.5)",
+    "Opens on the Home page with six task choices (C-18)",
     "Empty validation",
     "Hindi suspicious example: five or more signs and a High risk verdict",
     "Result translation",
@@ -94,7 +94,7 @@
     "No message/complaint in export",
     "Habit card download",
     "Family readiness tab opens (C-11)",
-    "Family readiness asks for ticks only; the optional map types institution names only (C-11)",
+    "Family tab asks for no typed details: ticks only (C-11)",
     "Family checklist asks for a choice first (C-11)",
     "The nominee question waits for demat or mutual funds (C-11)",
     "Demat and paper shares give nominee, no-freeze, physical and old-holding steps (C-11)",
@@ -143,26 +143,26 @@
   ],
   "failures": [],
   "errors": [],
-  "htmlBytes": 661710,
-  "htmlSha256": "175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C",
-  "gzipBytes": 191146,
-  "simulatedLoadMs": 14728,
+  "htmlBytes": 561637,
+  "htmlSha256": "911E8BA0637980325249E72B5442A6B0CE3306153D3432C663CE773EF02DBB04",
+  "gzipBytes": 164699,
+  "simulatedLoadMs": 12242,
   "simulatedLoadRunsMs": [
-    14879,
-    14293,
-    14728
+    12378,
+    12202,
+    12242
   ],
-  "simulatedLoadMedianMs": 14728,
+  "simulatedLoadMedianMs": 12242,
   "simulatedLoadRangeMs": [
-    14293,
-    14879
+    12202,
+    12378
   ],
   "gzipServedLoadRunsMs": [
-    5020,
-    4919,
-    4905
+    4337,
+    4245,
+    4260
   ],
-  "gzipServedLoadMedianMs": 4919,
+  "gzipServedLoadMedianMs": 4260,
   "simulation": "3 runs at 400 ms latency; 50,000 bytes/sec throughput (~400 kbps); 4x CPU slowdown; uncompressed file unless stated. Desktop simulation, not a physical low-end phone.",
   "unvalidated": [
     "Real user impact",

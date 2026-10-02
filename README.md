@@ -1,91 +1,126 @@
-# Niveshak Saathi
+# Niveshak Saathi (निवेशक साथी)
 
-**A Hindi-first, English-supported investor-safety and grievance companion for first-time investors in India.**
+**A free, Hindi-first investor-safety and grievance companion for first-time investors in India. English is one tap away.**
 
-Niveshak Saathi helps people pause before paying, recognise scam patterns, act after financial fraud, find the right grievance route, prepare a private complaint packet, and organise family investments. It is designed for Tier-2 and Tier-3 users, works as one offline HTML file, and keeps analysis on the user's device.
+Niveshak Saathi helps people stop before paying a scammer, act in the first hours after fraud, know their rights, complain in the right place, and keep a private list of the family's investments and nominees. It is built for Tier-2 and Tier-3 users, runs as one HTML file on the phone, works offline once saved, and saves nothing.
 
-## Live demo
+> **Disclaimer.** An independent, educational public-good project. Not affiliated with SEBI, RBI, IRDAI, the IEPF Authority, NPCI, PFRDA or any government body. No investment advice, stock tips or broker promotion. "No known signs" never means that an offer is safe.
 
-**[Open Niveshak Saathi](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site)**
+## For judges (10 minutes)
 
-The public link serves the verified **Release 3.3** build until the Site is redeployed with **Release 3.4**, which is verified in this repository. The deployment record is in [`docs/Delivery-Status.md`](docs/Delivery-Status.md).
+| | |
+|---|---|
+| **Start here** | [`JUDGES.md`](JUDGES.md): one page with the S.01–S.06 map, Track B fit, evidence and limits |
+| **Open Release 3.5** | **[himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified build on GitHub Pages, in any phone or computer browser. To keep it offline, download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") or use "Save offline copy" in the app. No installation, account or server |
+| **Live link** | [niveshak-saathi-safety.himanshirathore25102.chatgpt.site](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) serves **Release 3.3** (checked 2 October 2026) until it is redeployed. It does not have the Release 3.4 and 3.5 additions, such as the Rights and help page and the Family asset map |
+| **Switch to English** | The app opens in Hindi. Use the language menu at the top right and choose "English" |
+| **Demo video (S.05)** | being recorded; the link will be added here when it is published |
 
-## Try the newest prototype (Release 3.4)
+| Required item | Where to find it |
+|---|---|
+| S.01 Product | The app file above; [Submission, S.01](docs/Submission-v3.md#s01-product) |
+| S.02 Problem definition | [Submission, S.02](docs/Submission-v3.md#s02-problem-definition) |
+| S.03 Solution | [Submission, S.03](docs/Submission-v3.md#s03-solution) |
+| S.04 Technology | [Submission, S.04](docs/Submission-v3.md#s04-technology); [Validation](docs/Validation-v3.md); [Scale and reliability](docs/SCALE-AND-RELIABILITY.md) |
+| S.05 Demonstration | Video being recorded; the link will be added here when it is published; [script](docs/Submission-v3.md#s05-demonstration) |
+| S.06 Impact | [Submission, S.06](docs/Submission-v3.md#s06-impact) |
 
-Open [`prototype/dist/index.html`](prototype/dist/index.html) in a modern browser. It starts in Hindi and supports English. No installation, account, server, API key or network connection is required for the core tools. A portable copy is in [`release/Niveshak-Saathi.zip`](release/Niveshak-Saathi.zip).
+**Version legend.** Release 3.5 is the newest build; it is in this repository and on GitHub Pages (https://himanshi252005.github.io/Niveshak-Saathi/). Release 3.4 was verified on 2 October 2026 but never deployed; its results are kept as history. Release 3.3 is what the live link serves. The "checker" is the message checker inside the app: Release 3.4 kept checker 3.3, and Release 3.5 ships checker 3.3. The "-v3" in some document names is the documentation series, not the release.
 
-## Built for three real situations
+## Built for three people
 
-- **Praveen, 22:** a Tier-3 graduate or gig worker drawn to Telegram F&O tips and borrowed-capital pressure.
-- **Kavita, 39:** a Tier-2 homemaker who needs simple Hindi help against Ponzi, fake IPO and payment scams.
-- **Babulal, 63:** a pensioner who needs ordered steps for dormant folios, nominees, RTA/DP processes and possible IEPF claims.
+| Person (from the brief) | Their risk | What they do in the app |
+|---|---|---|
+| **Praveen, 22**, Tier-3 graduate or gig worker | Telegram F&O tips; trading on borrowed money | Checks a tip message (High risk, with SEBI's F&O loss study); Before you pay says STOP |
+| **Kavita, 39**, Tier-2 homemaker, not fluent in English | Ponzi and fake-IPO offers; intimidated by broking apps | Checks a Hindi message; Before you pay explains ASBA and "@valid" UPI IDs; warns her family |
+| **Babulal, 63**, retired, with old or dormant folios | Unaware of the nominee process; cannot navigate IEPF or SCORES | Follows the IEPF-5 and SCORES guides; lists the family's holdings and nominees in the Family asset map |
 
-Each fixed persona opens an owner-editable safety plan. The app asks for no name, account, holdings or income, and stores no profile.
+Each person has a fixed safety plan on Home. The app asks for no name, account number, holdings or income, and stores no profile.
 
-## Main capabilities
+## What it does
 
-- **Message-risk checks:** explainable checks using multilingual rules, fitted logistic weights and safety floors. Checker 3.3 also catches electricity or SIM disconnection threats, task scams and loan-app shaming, and no longer flags genuine bank FD offers or awareness messages.
-- **Five reliability states:** strong warning agreement, multiple signals, one signal, outside coverage and insufficient evidence. "No known signs" is shown in a neutral style, never as safe.
-- **Long messages:** long forwards (up to 30,000 characters) are checked in parts.
-- **Typed questions:** if someone types a question instead of pasting a message, the app asks for the real message.
-- **Help with payments and complaints:**
-  - STOP/VERIFY checks before payment;
-  - urgent bank and 1930 steps, including for money that was taken rather than sent;
-  - official complaint routes, with one-line hints on each button;
-  - a privacy-safe Action Packet.
-- **New in Release 3.4, every step sourced to an official page:**
-  - the RBI Ombudsman after a bank refuses;
-  - police or the State Economic Offences Wing, plus RBI Sachet, for chit, deposit and Ponzi schemes;
-  - RBI UDGAM, SEBI MITRA and IRDAI Bima Bharosa for unclaimed money;
-  - IEPF-5 claim steps;
-  - frozen accounts after a cyber complaint;
-  - loan-app harassment;
-  - unexplained monthly debits;
-  - SEBI's F&O loss study;
-  - rights cards from the SEBI Investor Charter, the RBI Charter of Customer Rights and IRDAI's policyholder rules.
-- **Everyday use:** family readiness, fictional safety practice, read-aloud, large text, phone layouts, a working phone Back button and offline use.
-- **Owner Studio:** a local editor for bilingual reviewed content and persona plans, with validation before rebuilding.
+**Check before you act**
+- **Check a message.** Paste a message and get High risk, Caution or No known signs, with reasons in plain Hindi or English and an official source for each. It works out promised returns in plain numbers, flags suspicious links and payment IDs, and says how sure it is. Long forwards (up to 30,000 characters) are checked in parts. "Warn my family" prepares a WhatsApp-ready warning without the scam's link.
+- **Before you pay.** Three quick questions (what for, who asked, where to pay), with an optional UPI ID and promised return, give STOP or VERIFY and the official way to check: SEBI's "@valid" UPI IDs, SEBI Check, IPO applications only through ASBA, and RBI Sachet for deposit schemes.
 
-## Scale and trust
+**If something went wrong**
+- **Get help now.** Type or dictate what happened in your own words; an on-device keyword-based parser fills in the answers for you to check. The plan puts the bank and 1930 first. Recovery is never promised.
+- **Where to complain.** Ten routes, with official time limits where they apply, for example the RBI Ombudsman's 30-day wait and 90-day window, or SCORES within one year. A bank, insurance or pension complaint is never sent to SEBI, and "Not sure" never guesses. Routes link to the matching step-by-step guide.
+- **Prepare a complaint.** A private packet that will not save while an OTP, PIN, password, CVV or card number is in it (Hindi digits included). It says plainly that it has not been submitted.
 
-The public app is static and cacheable, and analysis happens on the device. The verified Release 3.4 build is 561,637 bytes raw and 164,699 bytes with gzip. Home shows its version and a "Check for a newer version" link that opens only when tapped.
+**Know your rights (new in Release 3.5)**
+- **Rights and help** (Home: "अपने अधिकार जानें / Know your rights"; menu: "Know your rights"):
+  - free official helplines that speak regional languages: SEBI 1800-266-7575 or 1800-22-7575 (seven languages), RBI Contact Centre 14448 (English, Hindi and ten regional languages; it explains how to complain but cannot take complaints), IRDAI 155255 or 1800 425 4732, the IEPF helpdesk 14453 and cybercrime 1930;
+  - five step-by-step guides, every step sourced to an official page: SEBI SCORES, an IEPF-5 claim (with a tick-only list of the papers needed), the RBI Ombudsman, insurance complaints (insurer, IRDAI, Ombudsman) and adding a nominee;
+  - eight rights cards, from the SEBI Investor Charter, RBI's Charter of Customer Rights, IRDAI's free-look and two-week grievance rules and others, grouped by institution, each with "Where to complain about this".
 
-Serving 16 crore investors is an architecture target, not a completed load test. The required CDN tests, native-language review, security review, pilots and rollout gates are in [`docs/SCALE-AND-RELIABILITY.md`](docs/SCALE-AND-RELIABILITY.md).
+**Learn and protect**
+- **Family safety**, with the new **Family asset map** (Track B "Nominee & Family Wealth Tracker"). One row per investment: type, institution name, nominee status, where the papers are, and who in the family knows. The institution name is the only typed field, and it refuses numbers, e-mail addresses and PAN. Download or print the list, and reopen the downloaded list later on the phone; the app itself saves nothing. Shares or mutual funds without a nominee link to the nominee guide. The tick-only family checklist and printable family card remain.
+- **My safety plan** for Praveen, Kavita and Babulal, and **Practise** with made-up messages, before-and-after scores and a habit card.
+- **Everyday use:** read-aloud with the phone's own voice, large text, phone layouts, a working phone Back button, "Save offline copy" and "Share this app".
+- **Owner Studio:** a local editor, never part of the public app, where the content owner edits and validates all bilingual content, sources, guides and plans before a rebuild.
 
-The product gives no stock tips, predictions, broker promotions, ads or upsells. It does not read accounts, SMS or OTPs, and has no analytics, cloud inference or persistent profile. The app itself stores nothing and never sends what you type; the public link's host (Cloudflare) sets its own short-lived security cookie and bot-check script, which the app neither sets nor reads. The page declares a Content-Security-Policy and sends no referrer to the official sites it links to. **"No known signs" is insufficient evidence, never proof that an offer is safe.**
+## Track B fit
 
-## Evidence (Release 3.4)
+| Direction | Feature |
+|---|---|
+| Grievance Assistant | Get help now, Where to complain, the private complaint packet |
+| Nominee & Family Wealth Tracker | Family asset map, nominee guide, family checklist and card |
+| Rights & Process Navigator | Rights and help: helplines, five guides, eight rights cards |
 
-- **Automated checks:** 1,297 across 22 release suites plus the developer-case regression ([`evidence/Release-3.4-Verification.json`](evidence/Release-3.4-Verification.json)).
-- **Browser:** 130/130 checks in each of three runs.
-- **Developer cases:** 449/449 expectations.
-- **100-user real-world test:** realistic users written blind by separate agents, plus 15 stress inputs.
-  - Result: 92 users fully right, 8 partly right, 0 wrong (Release 3.2: 83, 9 and 8).
-  - Between runs of the same build, up to 3 users move to "partly right" when a result takes just over 1.5 seconds; none is ever wrong.
-  - See [`docs/REAL-WORLD-USER-TEST.md`](docs/REAL-WORLD-USER-TEST.md). The test kit is in [`evaluation/real-world-test/`](evaluation/real-world-test/), so anyone can run it again.
-- **Complaint routes:** on 40 complaint stories written blind, the app names the main authority in 39/40 and every expected authority in 34/40 (Release 3.3: 35 and 25). These stories guided the changes, so this is a regression test.
-- **Fresh sealed set for Release 3.4** (blind-v8: 200 messages written blind; scored once):
-  - the shipped checker (3.3) warned on 67.5% [56.6–76.8] of fraud messages;
-  - it warned on 13.3% [7.8–21.9] of ordinary messages, and on none of the 40 everyday ones;
-  - a candidate checker built to cut false alarms showed no significant difference (63.8% and 11.1%), so it was not shipped;
-  - see [`evidence/Blind-Evaluation-v8.json`](evidence/Blind-Evaluation-v8.json).
-- **Earlier sealed sets:**
-  - blind-v6 (checker 3.3): 87.1% of fraud or suspicious messages warned and 24% of ordinary messages warned ([`evidence/Blind-Evaluation-v6.json`](evidence/Blind-Evaluation-v6.json));
-  - model 3.2: 72.4% and 8.6%.
+## Privacy and trust
 
-These are engineering results on synthetic data, not proof of nationwide capacity, real-world accuracy or prevented loss. See [`docs/Validation-v3.md`](docs/Validation-v3.md) and [`evidence/`](evidence/).
+- The app itself saves nothing: no cookies, browser storage or accounts. It runs no analytics or cloud AI and never sends what you type. Its only network request is a fresh copy of its own page when you tap "Save offline copy" or "Share this app".
+- The public link's host (ChatGPT Sites, behind Cloudflare) sets three cookies of its own, measured on 2 October 2026: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes). It also adds Cloudflare's bot-check script. The app neither sets nor reads them, and the saved offline copy has none. See [`PRIVACY.md`](PRIVACY.md).
+- Every step shows its official source and review date, or is labelled a general safety step. Sources checked against the official page but not yet confirmed by the named content reviewer, Himanshi Rathore, show "review pending".
+- No stock tips, predictions, broker promotion, ads, referrals or upsells. The page sends no referrer to the official sites it links to.
+
+## Evidence
+
+All accuracy figures come from synthetic messages and AI-written personas, not from real users. No pilot has been run yet.
+
+**Release 3.5** ([release record](evidence/Release-3.5-Verification.json))
+- 1,346 automated checks: 23 release suites plus 449/449 developer-case expectations.
+- Fresh sealed set blind-v9, written by a separate AI agent: not yet scored: the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) will be scored once, when the upgraded checker is frozen.
+- 100-persona simulated test (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
+- Size: 661,710 bytes, 191,146 bytes with gzip; Home usable in 4.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.5 s.
+
+**Release 3.4 (history; verified 2 October 2026, never deployed)**
+- **Sealed set blind-v8** (200 messages written by a separate AI agent, scored once), with the shipped checker 3.3:
+  - fraud or suspicious messages warned 60.9% [51.6–69.5], the same measure as the earlier sets; fraud alone 67.5% [56.6–76.8];
+  - ordinary messages warned 13.3% [7.8–21.9]; none of the 40 everyday messages; subtle fraud 5 of 25.
+- **Missed targets:** Release 3.4 aimed for fraud warned ≥85%, ordinary warned ≤8% and subtle fraud warned ≥70%. All three were missed. A candidate checker was no better on this set, so it was not shipped.
+- **Checks:** 1,297 automated checks, made up of 22 release suites plus 449 developer-case expectations ([record](evidence/Release-3.4-Verification.json)).
+- **100-persona simulated test:** 92 fully right, 8 partly right, 0 wrong.
+- **Earlier sealed sets:** on blind-v6, checker 3.3 warned on 87.1% [77.3–93.1] of fraud or suspicious messages and 24.0% [14.3–37.4] of ordinary ones; on blind-v5, model 3.2 warned on 72.4% [65.7–78.2] and 8.6% [4.9–14.7].
+
+These are engineering results, not proof of real-world accuracy, national capacity or prevented loss. Details: [`docs/Validation-v3.md`](docs/Validation-v3.md).
+
+## How this was built
+
+The team built Niveshak Saathi with AI coding assistants, which helped write the code, tests, synthetic test messages and documents. Every change to advice was checked against an official page, and each step in the app shows its source. All accuracy numbers come from synthetic test sets, not from real users.
 
 ## Repository map
 
 | Path | Purpose |
 |---|---|
-| [`prototype/`](prototype/) | Source, editable content, Owner Studio and self-contained build |
-| [`docs/Submission-v3.md`](docs/Submission-v3.md) | Product, judging evidence, technology and pitch |
-| [`docs/Validation-v3.md`](docs/Validation-v3.md) | Verification and limitations |
-| [`docs/REAL-WORLD-USER-TEST.md`](docs/REAL-WORLD-USER-TEST.md) | 100-user test, what it found and the Release 3.3 fixes |
-| [`docs/SCALE-AND-RELIABILITY.md`](docs/SCALE-AND-RELIABILITY.md) | National-scale and AI/ML reliability plan |
+| [`JUDGES.md`](JUDGES.md) | One page for judges |
+| [`prototype/`](prototype/) | Source, editable content, the local Owner Studio and the self-contained app (`prototype/dist/index.html`) |
+| [`docs/Submission-v3.md`](docs/Submission-v3.md) | S.01–S.06: product, problem, solution, technology, demonstration and impact |
+| [`docs/Validation-v3.md`](docs/Validation-v3.md) | Checks, sealed-set results and limits |
+| [`docs/SCALE-AND-RELIABILITY.md`](docs/SCALE-AND-RELIABILITY.md) | Scale design and AI/ML reliability plan |
+| [`docs/REAL-WORLD-USER-TEST.md`](docs/REAL-WORLD-USER-TEST.md) | The 100-persona simulated test and the fixes it led to |
+| [`docs/Operations-and-Pilot-Kit.md`](docs/Operations-and-Pilot-Kit.md) | Pilot protocol, consent script and targets |
+| [`docs/Delivery-Status.md`](docs/Delivery-Status.md) | Which release is where |
 | [`evidence/`](evidence/) | Machine-readable verification records |
-| [`evaluation/`](evaluation/) | Sealed message sets with their scorer, and the 100-user real-world test kit |
-| [`release/`](release/) | Portable release archive |
+| [`evaluation/`](evaluation/) | Sealed message sets, their scorer and the 100-persona test kit |
+| [`release/Niveshak-Saathi.zip`](release/Niveshak-Saathi.zip) | A downloadable snapshot of this repository (app, source, documents and evidence). To use the app, you need only `prototype/dist/index.html` |
+
+## Licence, corrections, security and privacy
+
+- **Code:** MIT ([`LICENSE`](LICENSE)). **Original text:** CC BY 4.0 ([`LICENSE-CONTENT.md`](LICENSE-CONTENT.md)). Official-source material belongs to the regulators and is linked, not relicensed.
+- **Reuse terms and content corrections:** [`CONTRIBUTING.md`](CONTRIBUTING.md). Report a wrong step or source through GitHub Issues.
+- **Security:** [`SECURITY.md`](SECURITY.md). **Privacy:** [`PRIVACY.md`](PRIVACY.md).
+- **Content owner and named reviewer:** Himanshi Rathore. There is no personal e-mail contact: use GitHub Issues for corrections and a private security report for security problems.
 
 Use fictional information in demonstrations. Do not call a helpline or submit a complaint merely to test the prototype.

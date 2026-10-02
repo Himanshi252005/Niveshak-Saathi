@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "channelQuestion": { "en": "Where did this message come from? (optional)", "hi": "यह संदेश कहाँ से आया? (वैकल्पिक)" },
+  "channelQuestion": { "en": "Where did this message come from? (optional)", "hi": "यह संदेश कहाँ से आया? (ज़रूरी नहीं)" },
   "channelWhy": { "en": "This changes only the advice under the result, not the warning check.", "hi": "इससे केवल परिणाम के नीचे की सलाह बदलती है, खतरे की जाँच नहीं।" },
   "channels": [
     { "id": "sms", "label": { "en": "SMS", "hi": "SMS (एसएमएस)" }, "advice": "link" },
@@ -12,18 +12,18 @@
   ],
   "channelAdvice": {
     "group": {
-      "text": { "en": "Investment tips and trading groups on chat apps and social media are a common route for fake trading-app scams. Do not install apps or pay through links shared there.", "hi": "चैट ऐप और सोशल मीडिया पर निवेश टिप्स और ट्रेडिंग समूह नकली ट्रेडिंग ऐप धोखाधड़ी का आम रास्ता हैं। वहाँ साझा किए गए लिंक से ऐप इंस्टॉल न करें और भुगतान न करें।" },
+      "text": { "en": "Investment tips and trading groups on chat apps and social media are a common route for fake trading-app scams. Do not install apps or pay through links shared there.", "hi": "चैट ऐप और सोशल मीडिया पर निवेश टिप्स और ट्रेडिंग ग्रुप नकली ट्रेडिंग ऐप धोखाधड़ी का आम रास्ता हैं। वहाँ साझा किए गए लिंक से ऐप इंस्टॉल न करें और भुगतान न करें।" },
       "sourceId": "apps"
     },
     "link": {
       "text": { "en": "Do not use links, numbers or apps from the message. Contact the institution through its official website or app.", "hi": "संदेश में दिए लिंक, नंबर या ऐप का उपयोग न करें। संस्था से उसकी आधिकारिक वेबसाइट या ऐप के माध्यम से संपर्क करें।" },
-      "sourceId": "scam"
+      "sourceId": "i4c-digital-arrest"
     }
   },
   "warnings": {
     "certainty": {
-      "title": { "en": "Promises of certain returns", "hi": "पक्के लाभ का वादा" },
-      "why": { "en": "Verify independently. A promise of certain securities-market returns is a serious warning sign.", "hi": "खुद जाँच करें। शेयर बाज़ार में पक्के लाभ का वादा खतरे का बड़ा संकेत है।" },
+      "title": { "en": "Promises of certain returns", "hi": "पक्के मुनाफ़े का वादा" },
+      "why": { "en": "Verify independently. A promise of certain securities-market returns is a serious warning sign.", "hi": "खुद जाँच करें। शेयर बाज़ार में पक्के मुनाफ़े का वादा खतरे का बड़ा संकेत है।" },
       "sourceId": "scam"
     },
     "urgency": {
@@ -39,20 +39,20 @@
     "secrets": {
       "title": { "en": "Credentials or remote access requested", "hi": "OTP, PIN, पासवर्ड या रिमोट एक्सेस की माँग" },
       "why": { "en": "Never share OTP, PIN, password or remote access with someone offering investment help.", "hi": "निवेश में मदद का दावा करने वाले को कभी OTP, PIN या पासवर्ड न बताएँ, और न ही अपना फ़ोन दूर से चलाने दें (रिमोट एक्सेस)।" },
-      "sourceId": "apps"
+      "sourceId": "rbi-never-ask"
     },
     "social": {
-      "title": { "en": "Investment offer through a chat group", "hi": "चैट समूह से निवेश प्रस्ताव" },
-      "why": { "en": "A group, testimonial or logo is not proof that the offer is legitimate.", "hi": "समूह, दूसरों की तारीफ़ (टेस्टिमोनियल) या किसी संस्था के लोगो से यह साबित नहीं होता कि प्रस्ताव असली है।" },
+      "title": { "en": "Investment offer through a chat group", "hi": "चैट ग्रुप से निवेश का प्रस्ताव" },
+      "why": { "en": "A group, testimonial or logo is not proof that the offer is legitimate.", "hi": "ग्रुप, दूसरों की तारीफ़ (टेस्टिमोनियल) या किसी संस्था के लोगो से यह साबित नहीं होता कि प्रस्ताव असली है।" },
       "sourceId": "apps"
     },
     "borrowing": {
       "title": { "en": "Borrowing to invest or trade", "hi": "निवेश या ट्रेडिंग के लिए उधार" },
-      "why": { "en": "Losses can leave the loan unpaid. Pause and consider the effect on essential household money.", "hi": "नुकसान के बाद भी कर्ज बाकी रहता है। घर की ज़रूरी रकम पर असर सोचकर रुकें।" },
+      "why": { "en": "Losses can leave the loan unpaid. Pause and consider the effect on essential household money.", "hi": "नुकसान होने पर भी कर्ज़ चुकाना बाकी रह सकता है। रुकें, और सोचें कि इसका घर के ज़रूरी खर्च के पैसे पर क्या असर होगा।" },
       "sourceId": "apps"
     },
     "withdrawal": {
-      "title": { "en": "A fee to release your money", "hi": "पैसे निकालने के लिए नया शुल्क" },
+      "title": { "en": "A fee to release your money", "hi": "अपना पैसा निकालने के लिए फ़ीस" },
       "why": { "en": "Do not send another payment just to release alleged profits. Verify and consider reporting suspected fraud.", "hi": "जो मुनाफ़ा दिखाया जा रहा है, उसे निकालने के लिए और पैसा न भेजें। खुद जाँच करें, और धोखाधड़ी का शक हो तो रिपोर्ट करें।" },
       "sourceId": "apps"
     },
@@ -78,22 +78,22 @@
     },
     "tips": {
       "title": { "en": "Unsolicited stock tips or trading calls", "hi": "बिना माँगे शेयर टिप्स या ट्रेडिंग कॉल" },
-      "why": { "en": "SEBI warns that scamsters pull investors into WhatsApp or Telegram \"VIP\" or \"institutional trading\" groups, and that some falsely claim SEBI registration or show fake SEBI certificates. Check the registration on SEBI's website before acting on any tip.", "hi": "SEBI चेतावनी देता है कि धोखेबाज़ निवेशकों को व्हाट्सऐप या टेलीग्राम के \"VIP\" या \"संस्थागत ट्रेडिंग\" ग्रुप में खींचते हैं, और कुछ झूठा SEBI पंजीकरण बताते हैं या नकली SEBI प्रमाणपत्र दिखाते हैं। किसी भी टिप पर कुछ करने से पहले SEBI की वेबसाइट पर पंजीकरण जाँचें।" },
+      "why": { "en": "SEBI warns that scamsters pull investors into WhatsApp or Telegram \"VIP\" or \"institutional trading\" groups, and that some falsely claim SEBI registration or show fake SEBI certificates. Check the registration on SEBI's website before acting on any tip.", "hi": "SEBI चेतावनी देता है कि धोखेबाज़ निवेशकों को व्हाट्सऐप या टेलीग्राम के \"VIP\" या \"संस्थागत ट्रेडिंग\" ग्रुप में खींचते हैं। कुछ धोखेबाज़ झूठा दावा करते हैं कि वे SEBI में रजिस्टर्ड हैं, या नकली SEBI प्रमाणपत्र दिखाते हैं। किसी भी टिप पर कुछ करने से पहले SEBI की वेबसाइट पर रजिस्ट्रेशन जाँचें।" },
       "sourceId": "sebi-social-caution"
     },
     "link": {
       "title": { "en": "Suspicious link", "hi": "संदिग्ध लिंक" },
-      "why": { "en": "SEBI lists unverified app links and APK files as a red flag. A shortened or look-alike link can hide where it goes. Do not open it: type the official address yourself or use the official app store.", "hi": "SEBI बिना जाँचे ऐप लिंक और APK फ़ाइलों को खतरे का संकेत बताता है। छोटा किया गया लिंक, या असली से मिलता-जुलता नकली लिंक, असली पता छिपा सकता है। इसे न खोलें: आधिकारिक पता खुद टाइप करें या आधिकारिक ऐप स्टोर इस्तेमाल करें।" },
+      "why": { "en": "SEBI lists unverified app links and APK files as a red flag. A shortened or look-alike link can hide where it goes. Do not open it: type the official address yourself or use the official app store.", "hi": "SEBI बिना जाँचे ऐप लिंक और APK फ़ाइलों (प्ले स्टोर के बाहर से ऐप डालने वाली फ़ाइलें) को खतरे का संकेत बताता है। छोटा किया गया लिंक, या असली से मिलता-जुलता नकली लिंक, असली पता छिपा सकता है। इसे न खोलें: आधिकारिक पता खुद टाइप करें या आधिकारिक ऐप स्टोर इस्तेमाल करें।" },
       "sourceId": "apps"
     },
     "ipo": {
       "title": { "en": "Fake IPO allotment or special-access offer", "hi": "पक्के IPO आवंटन या खास पहुँच का झूठा प्रस्ताव" },
-      "why": { "en": "In a public issue everyone applies through ASBA from their own bank account, and there is no discretion in allotment, so nobody can sell or guarantee you an allotment. Apply only yourself, through your own bank or broker.", "hi": "पब्लिक इश्यू में हर कोई अपने बैंक खाते से ASBA के ज़रिए आवेदन करता है, और आवंटन में कोई मनमानी नहीं होती, इसलिए कोई आपको आवंटन बेच या पक्का नहीं कर सकता। आवेदन केवल खुद, अपने बैंक या ब्रोकर के माध्यम से करें।" },
+      "why": { "en": "In a public issue everyone applies through ASBA from their own bank account, and there is no discretion in allotment, so nobody can sell or guarantee you an allotment. Apply only yourself, through your own bank or broker.", "hi": "पब्लिक इश्यू में हर कोई अपने बैंक खाते से ASBA के ज़रिए आवेदन करता है। आवंटन किसे मिले, यह कोई अपनी मर्ज़ी से तय नहीं कर सकता, इसलिए कोई आपको आवंटन बेच या पक्का नहीं कर सकता। आवेदन केवल खुद, अपने बैंक या ब्रोकर के माध्यम से करें।" },
       "sourceId": "sebi-icdr-faq"
     },
     "recovery": {
       "title": { "en": "Offer to recover lost money", "hi": "डूबे पैसे वापस दिलाने का प्रस्ताव" },
-      "why": { "en": "Do not pay anyone a fee to get back money lost to fraud. Report the loss yourself to the cyber crime helpline 1930 or on the National Cyber Crime Reporting Portal.", "hi": "धोखाधड़ी में गए पैसे वापस दिलाने के लिए किसी को शुल्क न दें। नुकसान की रिपोर्ट स्वयं साइबर अपराध हेल्पलाइन 1930 या राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल पर करें।" },
+      "why": { "en": "Do not pay anyone a fee to get back money lost to fraud. Report the loss yourself to the cyber crime helpline 1930 or on the National Cyber Crime Reporting Portal.", "hi": "धोखाधड़ी में गए पैसे वापस दिलाने के लिए किसी को फ़ीस न दें। नुकसान की रिपोर्ट खुद साइबर अपराध हेल्पलाइन 1930 या राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल पर करें।" },
       "sourceId": "cyber"
     }
   }

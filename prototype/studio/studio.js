@@ -109,7 +109,7 @@
   function overview() {
     const m = content.meta;
     const rows = content.sources.sources.map(s => {
-      const d = daysUntil(s.reviewDue), status = !s.enabled ? ['Not shown', ''] : isNaN(d) ? ['Invalid date', 'bad'] : d < 0 ? ['Overdue by ' + -d + ' day(s)', 'bad'] : d <= 7 ? ['Due in ' + d + ' day(s)', 'warn'] : ['OK', 'ok'];
+      const d = daysUntil(s.reviewDue), status = !s.enabled ? ['Not shown', ''] : isNaN(d) ? ['Invalid date', 'bad'] : d < 0 ? ['Overdue by ' + -d + ' day(s)', 'bad'] : s.reviewPending ? ['Checked; your review is pending', 'warn'] : d <= 7 ? ['Due in ' + d + ' day(s)', 'warn'] : ['OK', 'ok'];
       return h('tr', null, h('td', { text: s.name.en || s.id }), h('td', { text: s.lastReviewed }), h('td', { text: s.reviewDue }), h('td', { class: status[1], text: status[0] }));
     });
     return h('section', null, h('h1', { text: 'Overview' }),
@@ -137,12 +137,13 @@
           pair(s, 'supports', 'What this source supports', p + '.supports'),
           pair(s, 'note', 'Caution note', p + '.note', { optional: true }),
           h('div', { class: 'grid3' }, field(s, 'lastReviewed', 'Last reviewed', p + '.lastReviewed', 'date'), field(s, 'reviewDue', 'Review due', p + '.reviewDue', 'date'), field(s, 'reviewOwner', 'Review owner', p + '.reviewOwner')),
-          h('button', { type: 'button', text: 'Mark reviewed today', onclick: () => { s.lastReviewed = isoToday(); s.reviewDue = addDays(s.lastReviewed, 30); changed(); render(); toast('"' + s.id + '" marked reviewed today; next review in 30 days.'); } })); }),
+          s.reviewPending ? h('p', { class: 'warn', text: 'Checked against the official page on ' + s.lastReviewed + ', but not yet confirmed by you. The app shows "review pending" next to it until you press "Mark reviewed today".' }) : null,
+          h('button', { type: 'button', text: 'Mark reviewed today', onclick: () => { s.lastReviewed = isoToday(); s.reviewDue = addDays(s.lastReviewed, 30); delete s.reviewPending; changed(); render(); toast('"' + s.id + '" marked reviewed today; next review in 30 days.'); } })); }),
       addButton('+ Add source', () => list.push({ id: 'new-source-' + (list.length + 1), enabled: false, name: blank(), authority: '', url: 'https://', supports: blank(), lastReviewed: isoToday(), reviewDue: addDays(isoToday(), 30), reviewOwner: '' })),
       h('h2', { text: 'Helplines' }),
-      h('p', { class: 'small', text: 'Helpline numbers are fixed in code (approved: ' + SCHEMA.HELPLINE_NUMBERS.join(', ') + '). You can edit the button label and its source.' }),
+      h('p', { class: 'small', text: 'Helpline numbers are fixed in code (approved: ' + SCHEMA.HELPLINE_NUMBERS.join(', ') + '). You can edit the label, the note (hours and languages, as the official page states them) and the source.' }),
       content.sources.helplines.map((x, i) => { const p = 'sources.helplines[' + i + ']';
-        return h('div', { class: 'card', 'data-path': p }, h('h2', { text: 'Helpline ' + x.number }), pair(x, 'label', 'Button label', p + '.label', { rows: 1 }), field(x, 'sourceId', 'Source', p + '.sourceId', 'select', { options: sourceOptions() })); }));
+        return h('div', { class: 'card', 'data-path': p }, h('h2', { text: 'Helpline ' + x.number + (x.altNumber ? ' / ' + x.altNumber : '') }), pair(x, 'label', 'Button label', p + '.label', { rows: 1 }), pair(x, 'note', 'Note shown under the number (hours, languages, what it helps with)', p + '.note', { optional: true, rows: 2 }), field(x, 'sourceId', 'Source', p + '.sourceId', 'select', { options: sourceOptions() })); }));
   }
 
   function warnings() {
@@ -252,7 +253,9 @@
           h('div', { class: 'card-head' }, h('h2', { text: (l.name && l.name.en) || l.id }), controls(R.levels, i)),
           h('div', { class: 'grid2' }, field(l, 'id', 'ID', p + '.id'), field(l, 'scope', 'Scope', p + '.scope', 'select', { options: scopeOptions() })),
           pair(l, 'name', 'Name', p + '.name', { rows: 1 }), pair(l, 'explain', 'Plain-language explanation', p + '.explain', { rows: 3 }),
-          field(l, 'sourceId', 'Official source (also the link users open)', p + '.sourceId', 'select', { options: sourceOptions() }), pair(l, 'linkLabel', 'Link label', p + '.linkLabel', { rows: 1 })); }),
+          field(l, 'sourceId', 'Official source (also the link users open, unless a portal is chosen)', p + '.sourceId', 'select', { options: sourceOptions() }),
+          field(l, 'portalSourceId', 'Complaint portal the link opens (optional)', p + '.portalSourceId', 'select', { options: [['', '(none: the link opens the source)'], ...sourceOptions()], allowNone: true }),
+          pair(l, 'linkLabel', 'Link label', p + '.linkLabel', { rows: 1 })); }),
       addButton('+ Add level', () => R.levels.push({ id: 'new-level-' + (R.levels.length + 1), scope: (R.scopes[0] || {}).id, name: blank(), explain: blank(), sourceId: enabledSource(), linkLabel: blank() })),
       h('h2', { text: 'Scopes: who handles each kind of problem' }),
       R.scopes.map((s, i) => { const p = 'routes.scopes[' + i + ']';
@@ -440,6 +443,7 @@
         pair(p, 'name', 'Example name and age', at + '.name', { rows: 1 }),
         pair(p, 'label', 'Short audience label', at + '.label', { rows: 1 }),
         pair(p, 'situation', 'Situation', at + '.situation', { rows: 2 }),
+        pair(p, 'short', 'One-line situation on the Home button', at + '.short', { rows: 1, optional: true }),
         pair(p, 'firstAction', 'First protective action', at + '.firstAction', { rows: 2 }),
         pair(p, 'why', 'Why this plan', at + '.why', { rows: 3 }),
         h('h3', { text: 'Warning signs' }),
@@ -456,6 +460,7 @@
 
   function rights() {
     const cards = content.rights.cards, issues = content.routes.issues;
+    const enabledSource = () => (content.sources.sources.find(s => s.enabled) || content.sources.sources[0] || {}).id;
     return h('section', null, h('h1', { text: 'Rights cards' }),
       h('p', { class: 'lede', text: 'Short rights reminders shown under the matching help route.' }),
       cards.map((c, i) => { const p = 'rights.cards[' + i + ']';
@@ -467,7 +472,33 @@
               box.addEventListener('change', () => { c.issueIds = box.checked ? [...new Set([...c.issueIds, iss.id])] : c.issueIds.filter(x => x !== iss.id); changed(); });
               return h('label', { class: 'check', for: id }, box, iss.label.en || iss.id); })),
           pair(c, 'text', 'Text', p + '.text', { rows: 3 }), field(c, 'sourceId', 'Official source', p + '.sourceId', 'select', { options: sourceOptions() })); }),
-      addButton('+ Add rights card', () => cards.push({ id: 'new-card-' + (cards.length + 1), enabled: false, issueIds: [issues[0].id], text: blank(), sourceId: content.sources.sources[0].id })));
+      addButton('+ Add rights card', () => cards.push({ id: 'new-card-' + (cards.length + 1), enabled: false, issueIds: [issues[0].id], text: blank(), sourceId: content.sources.sources[0].id })),
+      // Release 3.5: step-by-step guides on the "Rights and help" page. Every step needs an enabled official source; a paper list
+      // may cite one, otherwise the app shows it as a general checklist. Guides never ask users to type anything.
+      h('h1', { text: 'Step-by-step guides' }),
+      h('p', { class: 'lede', text: 'Shown on the "Rights and help" page and linked from the routes you tick. Every step needs an enabled official source. A list of papers may cite a source; without one, the app labels it a general checklist.' }),
+      (content.rights.guides || []).map((g, i) => { const p = 'rights.guides[' + i + ']', helplineOptions = [['', 'No helpline'], ...content.sources.helplines.map(x => [x.id, (x.label.en || x.id) + ' ' + x.number])];
+        return h('div', { class: 'card', 'data-path': p },
+          h('div', { class: 'card-head' }, h('h2', { text: g.title.en || g.id }), controls(content.rights.guides, i)),
+          h('div', { class: 'grid2' }, field(g, 'id', 'ID', p + '.id'), field(g, 'enabled', 'Shown in the app', p + '.enabled', 'checkbox')),
+          pair(g, 'title', 'Title', p + '.title', { rows: 1 }), pair(g, 'when', 'When to use this guide', p + '.when', { rows: 2 }),
+          h('fieldset', { 'data-path': p + '.issueIds' }, h('legend', { text: 'Link from these help routes' }),
+            issues.map(iss => { const id = 'f' + (++seq), box = h('input', { type: 'checkbox', id }); box.checked = g.issueIds.includes(iss.id);
+              box.addEventListener('change', () => { g.issueIds = box.checked ? [...new Set([...g.issueIds, iss.id])] : g.issueIds.filter(x => x !== iss.id); changed(); });
+              return h('label', { class: 'check', for: id }, box, iss.label.en || iss.id); })),
+          field(g, 'helplineId', 'Helpline to suggest', p + '.helplineId', 'select', { options: helplineOptions, allowNone: true }),
+          h('h3', { text: 'Steps, in order' }),
+          g.steps.map((s, j) => h('div', { class: 'sub', 'data-path': p + '.steps[' + j + ']' }, h('div', { class: 'card-head' }, h('strong', { text: 'Step ' + (j + 1) }), controls(g.steps, j)),
+            pair(s, 'text', 'Step text', p + '.steps[' + j + '].text', { rows: 2 }), field(s, 'sourceId', 'Official source', p + '.steps[' + j + '].sourceId', 'select', { options: sourceOptions() }))),
+          g.steps.length < 10 ? addButton('+ Add step', () => g.steps.push({ text: blank(), sourceId: enabledSource() })) : null,
+          h('h3', { text: 'Papers to keep ready (optional)' }),
+          g.documents ? h('div', { 'data-path': p + '.documents' },
+            g.documents.items.map((d, j) => h('div', { class: 'sub' }, h('div', { class: 'card-head' }, h('strong', { text: 'Paper ' + (j + 1) }), controls(g.documents.items, j)), pair(g.documents.items, j, 'Paper ' + (j + 1), p + '.documents.items[' + j + ']', { rows: 1 }))),
+            g.documents.items.length < 10 ? addButton('+ Add paper', () => g.documents.items.push(blank())) : null,
+            field(g.documents, 'sourceId', 'Source for this list (none = shown as a general checklist)', p + '.documents.sourceId', 'select', { options: [['', 'General checklist'], ...sourceOptions()], allowNone: true }),
+            h('button', { type: 'button', class: 'small danger', text: 'Remove the paper list', onclick: () => { if (confirm('Remove the list of papers?')) { delete g.documents; changed(); render(); } } }))
+            : addButton('+ Add a list of papers', () => { g.documents = { items: [blank()] }; })); }),
+      addButton('+ Add guide', () => { content.rights.guides = content.rights.guides || []; content.rights.guides.push({ id: 'new-guide-' + (content.rights.guides.length + 1), enabled: false, issueIds: [], title: blank(), when: blank(), steps: [{ text: blank(), sourceId: enabledSource() }] }); }));
   }
 
   function practice() {
@@ -581,7 +612,7 @@
 
   // ---------- shell ----------
   const VIEWS = { overview, sources, warnings, routes, emergency, packet, family, profiles, rights, practice, texts, preview, publish };
-  const TABS = [['overview', 'Overview'], ['sources', 'Sources & review dates'], ['warnings', 'Warning texts'], ['routes', 'Help routes'], ['emergency', 'Emergency mode'], ['packet', 'Action Packet'], ['family', 'Family readiness'], ['profiles', 'Persona plans'], ['rights', 'Rights cards'], ['practice', 'Practice'], ['texts', 'App texts'], ['preview', 'Preview'], ['publish', 'Save & publish']];
+  const TABS = [['overview', 'Overview'], ['sources', 'Sources & review dates'], ['warnings', 'Warning texts'], ['routes', 'Help routes'], ['emergency', 'Emergency mode'], ['packet', 'Action Packet'], ['family', 'Family readiness'], ['profiles', 'Persona plans'], ['rights', 'Rights cards & guides'], ['practice', 'Practice'], ['texts', 'App texts'], ['preview', 'Preview'], ['publish', 'Save & publish']];
   function render() {
     const focused = document.activeElement && document.activeElement.id;
     seq = 0;

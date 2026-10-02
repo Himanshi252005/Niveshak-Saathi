@@ -8,7 +8,7 @@
   const FAMILY_REQUIRED_ITEMS = ['nominee', 'contact-kyc', 'records', 'old-holdings', 'entity-contact', 'no-paid-agents'];
   const FAMILY_TEXT_KEYS = ['tabLabel', 'eyebrow', 'title', 'intro', 'holdingsQuestion', 'nomineeQuestion', 'showList', 'chooseFirst', 'listTitle', 'firstTag', 'doneLabel', 'generalLabel', 'cardTitle', 'cardWarning', 'cardBlank', 'download', 'print'];
   // Persona safety plans: fixed example identities make the three intended audiences explicit without creating user profiles.
-  const PROFILE_IDS = ['praveen', 'kavita', 'babulal'], PROFILE_TARGETS = ['check', 'paycheck', 'emergency', 'route', 'family', 'practice'];
+  const PROFILE_IDS = ['praveen', 'kavita', 'babulal'], PROFILE_TARGETS = ['check', 'paycheck', 'emergency', 'route', 'rights', 'family', 'practice'];
   const PROFILE_TEXT_KEYS = ['eyebrow', 'title', 'intro', 'homeTitle', 'homeHint', 'planTitle', 'watchTitle', 'stepsTitle', 'whyTitle', 'privacy'];
   // Action Packet: the app reads these field and essential IDs, so their labels are editable but the IDs are fixed.
   const PACKET_FIELDS = ['entity', 'when', 'complainedOn', 'amount', 'ref'], PACKET_ESSENTIALS = ['entity', 'when', 'summary', 'resolution', 'evidence', 'number'];
@@ -31,7 +31,9 @@
   // Official links only. A domain is allowed exactly or as a parent domain (e.g. gov.in covers sebi.gov.in).
   // Adding a domain is a deliberate code change, so a mistyped or lookalike link cannot slip in through content.
   const OFFICIAL_DOMAINS = ['gov.in', 'nic.in', 'rbi.org.in', 'npci.org.in', 'nseindia.com', 'bseindia.com', 'nsdl.co.in', 'cdslindia.com', 'amfiindia.com', 'pfrda.org.in'];
-  const HELPLINE_NUMBERS = ['1930'];
+  // Official helplines only, each read on its regulator's page (2 October 2026): 1930 (cybercrime), 14448 (RBI Contact Centre),
+  // 1800 266 7575 and 1800 22 7575 (SEBI), 155255 and 1800 425 4732 (IRDAI), 14453 (IEPF). Adding a number is a code change.
+  const HELPLINE_NUMBERS = ['1930', '14448', '1800 266 7575', '1800 22 7575', '155255', '1800 425 4732', '14453'];
   // Text keys the app reads from translations.json.
   const REQUIRED_TEXT_KEYS = ['banner.urgent', 'banner.urgentButton', 'route.rightsSummary', 'route.prepareDraft', 'route.saveActionCard', 'actionCard.header', 'trust.title', 'practice.title', 'practice.lede', 'practice.lessonTitle', 'habit.cardTitle', 'habit.cardText', 'habit.download'];
   const SECRET = /\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{20,})|\bsk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|\bAIza[0-9A-Za-z_-]{35}|\b(?:AKIA|ASIA)[0-9A-Z]{16}\b|-----BEGIN (?:[A-Z0-9]+ )*PRIVATE KEY-----|\b(?:password|passwd|secret|token|api[_-]?key)\b["']?\s*[:=]\s*["']?[^"'\s]{8,}/i;
@@ -123,6 +125,8 @@
       id(w + '.id', s.id, sourceIds); bool(w + '.enabled', s.enabled); if (s.enabled) enabledSources.add(s.id);
       text(w + '.name', s.name, 120); str(w + '.authority', s.authority, 160); url(w + '.url', s.url);
       text(w + '.supports', s.supports, 300); text(w + '.note', s.note, 300, true); str(w + '.reviewOwner', s.reviewOwner, 120);
+      // Release 3.5 (owner decision D-10): checked against the official page but not yet confirmed by the named reviewer.
+      if (s.reviewPending != null && s.reviewPending !== true) err(w + '.reviewPending', 'must be true when present (remove it once the reviewer confirms)');
       const last = date(w + '.lastReviewed', s.lastReviewed), next = date(w + '.reviewDue', s.reviewDue);
       if (last != null && last > today + DAY) err(w + '.lastReviewed', 'is in the future');
       if (last != null && next != null && next < last) err(w + '.reviewDue', 'is before lastReviewed');
@@ -135,7 +139,8 @@
       if (!isObj(h)) return err(w, 'must be an object');
       id(w + '.id', h.id, helplineIds);
       if (!HELPLINE_NUMBERS.includes(h.number)) err(w + '.number', 'must be an approved official helpline (' + HELPLINE_NUMBERS.join(', ') + ')');
-      text(w + '.label', h.label, 60); sourceRef(w + '.sourceId', h.sourceId);
+      if (h.altNumber != null && !HELPLINE_NUMBERS.includes(h.altNumber)) err(w + '.altNumber', 'must be an approved official helpline (' + HELPLINE_NUMBERS.join(', ') + ')');
+      text(w + '.label', h.label, 60); text(w + '.note', h.note, 300, true); sourceRef(w + '.sourceId', h.sourceId);
     });
 
     // warnings: one explanation per engine category, no more, no fewer (detection rules live in engine.js)
@@ -174,6 +179,8 @@
       id(w + '.id', l.id, levelIds); levels.set(l.id, l);
       if (!scopeIds.has(l.scope)) err(w + '.scope', 'unknown scope "' + l.scope + '"');
       text(w + '.name', l.name, 100); text(w + '.explain', l.explain, 500); text(w + '.linkLabel', l.linkLabel, 80); sourceRef(w + '.sourceId', l.sourceId);
+      // Optional portal (Release 3.5): the link opens the official complaint portal, while sourceId still backs the explanation.
+      if (l.portalSourceId != null) sourceRef(w + '.portalSourceId', l.portalSourceId);
     });
     const outcomeIds = new Set(), issueIds = new Set(), usedOutcomes = new Set();
     list('routes.outcomes', routes.outcomes, 1).forEach((o, i) => {
@@ -248,6 +255,24 @@
       id(w + '.id', c.id, cardIds); bool(w + '.enabled', c.enabled); text(w + '.text', c.text, 500); sourceRef(w + '.sourceId', c.sourceId);
       list(w + '.issueIds', c.issueIds, 1).forEach((r, j) => { if (!issueIds.has(r)) err(w + '.issueIds[' + j + ']', 'unknown route "' + r + '"'); });
     });
+    // Step-by-step guides (Release 3.5, Track B "Rights & Process Navigator"): every step cites an enabled official source; a
+    // document list either cites a source or is shown as a general checklist. Guides never ask the user to type anything.
+    if (rights.guides != null) {
+      const guideIds = new Set();
+      list('rights.guides', rights.guides, 0, 12).forEach((g, i) => {
+        const w = 'rights.guides[' + i + ']';
+        if (!isObj(g)) return err(w, 'must be an object');
+        id(w + '.id', g.id, guideIds); bool(w + '.enabled', g.enabled);
+        text(w + '.title', g.title, 120); text(w + '.when', g.when, 300);
+        list(w + '.issueIds', g.issueIds, 0, 10).forEach((r, j) => { if (!issueIds.has(r)) err(w + '.issueIds[' + j + ']', 'unknown route "' + r + '"'); });
+        if (g.helplineId != null && !helplineIds.has(g.helplineId)) err(w + '.helplineId', 'unknown helpline "' + g.helplineId + '"');
+        list(w + '.steps', g.steps, 1, 10).forEach((s, j) => { const ws = w + '.steps[' + j + ']'; if (!isObj(s)) return err(ws, 'must be an object'); text(ws + '.text', s.text, 400); sourceRef(ws + '.sourceId', s.sourceId); });
+        if (g.documents != null) {
+          if (!isObj(g.documents)) err(w + '.documents', 'must be an object');
+          else { list(w + '.documents.items', g.documents.items, 1, 10).forEach((d, j) => text(w + '.documents.items[' + j + ']', d, 200)); if (g.documents.sourceId != null) sourceRef(w + '.documents.sourceId', g.documents.sourceId); }
+        }
+      });
+    }
 
     // practice
     const scenarioIds = new Set();
@@ -365,6 +390,7 @@
       if (!isObj(p)) return err(w, 'must be an object');
       id(w + '.id', p.id, profileIds);
       text(w + '.name', p.name, 80); text(w + '.label', p.label, 120); text(w + '.situation', p.situation, 500);
+      text(w + '.short', p.short, 60, true); // the one-line situation on the Home button (Release 3.5)
       text(w + '.firstAction', p.firstAction, 500); text(w + '.why', p.why, 600);
       list(w + '.watchFor', p.watchFor, 2, 5).forEach((x, j) => text(w + '.watchFor[' + j + ']', x, 240));
       list(w + '.steps', p.steps, 2, 5).forEach((s, j) => {
@@ -394,10 +420,12 @@
     }
 
     // Characters of content. The soft budget was 120,000 until Release 3.4 added the source-backed grievance routes (P1) in
-    // two languages; the whole app is then about 165 KB with gzip (2 October 2026), so the warning now starts at 140,000.
+    // two languages, then 140,000. Release 3.5 adds the Track B rights page (official helplines and step-by-step guides for
+    // SCORES, IEPF-5, the RBI Ombudsman, insurance and nominees, in two languages): about 20,000 characters and 7 KB with gzip,
+    // so the warning now starts at 170,000. The hard limit stays.
     const size = canonical(content).length;
     if (size > 300000) err('content', 'larger than 300 KB; keep the offline app small');
-    else if (size > 140000) warn('content', 'larger than 140 KB of text; the app is meant for low-bandwidth use');
+    else if (size > 170000) warn('content', 'larger than 170 KB of text; the app is meant for low-bandwidth use');
     return { errors, warnings };
   }
 

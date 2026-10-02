@@ -3,20 +3,21 @@
 The Owner Control Studio lets you change the reviewed content of Niveshak Saathi yourself, then rebuild the app. It is a single file that runs on your computer:
 
 - It has no login, no server and no network access.
-- It is never part of the published app.
+- It is never part of the public app. Its file, `owner-studio.html`, sits in the repository next to the app, never inside `dist/`.
 - Nothing you do in it reaches users until you save your edits, rebuild, and publish a reviewed release.
 
 ## What you can change
 
 | Studio section | What it controls |
 |---|---|
-| Sources & review dates | Each official source: name (English and Hindi), authority, link, what it supports, an optional caution note, last-reviewed date, review-due date and review owner |
+| Sources & review dates | Each official source: name (English and Hindi), authority, link, what it supports, an optional caution note, last-reviewed date, review-due date and review owner. Also each helpline's button label, its note (hours, languages, what it helps with) and its source; the numbers themselves are fixed in code |
 | Warning texts | The title and explanation shown for each warning sign, and its official source. Also the optional question "Where did this message come from?" and the advice each answer shows under the result (the answer never changes which warnings are found) |
 | Help routes | The "Find help" navigator. Each route button is one of three kinds:<br>• **Escalation route:** who to contact first, then the official levels in order (for example SCORES, then SMART ODR), plus the evidence to keep.<br>• **Question route:** one question whose answers lead to outcome cards, as for suspected fraud.<br>• **"Not sure" route:** safe first steps and official pages, without guessing.<br>Also the official levels, the scopes (who handles each kind of problem) and the navigator texts |
 | Emergency mode | What users see after **Get urgent help**: the call-now box, the questions and their answer labels, the page texts, and the ordered safety steps. "How did you pay?" and "When did you pay?" appear only after "I sent money". For each step you set its text, when it shows (including a payment method), its official source (or "general safety step") and an optional helpline button. Paying "today" or "not sure" adds the act-now note |
 | Action Packet | The "Prepare a complaint" tab. You can edit:<br>• the label and the reason shown under each input;<br>• the "already done" and evidence tick lists;<br>• the labels of the complaint essentials checked before saving;<br>• the never-include reminder and its source;<br>• the packet texts, such as the header, the acknowledgement line and the buttons |
 | Family readiness | The "Family readiness" tab. You can edit:<br>• the two tick-only questions (what the family holds; whether nominees were checked) and their answer labels;<br>• the checklist items: text, which holdings show each one, and its official source or "general safety step";<br>• the family card texts |
-| Rights cards | The rights reminders shown under each help route |
+| Persona plans | The three fixed safety plans (Praveen, Kavita, Babulal): labels, situations, first actions, warning signs, ordered steps with their sources, and buttons into the tools |
+| Rights cards & guides | The rights cards, shown on the Rights and help page (grouped by institution) and under each help route. Also the step-by-step guides on that page (Release 3.5): title, when to use the guide, the steps in order (each with an official source), an optional list of papers, the helpline to suggest, and which help routes link to the guide |
 | Practice | The questions before and after the lesson, the correct answers, the lesson cards and the habit card |
 | App texts | Labels such as the urgent-help banner, button names and the practice title |
 | Overview | Product version, content version, guidance snapshot date and next review date |
@@ -26,10 +27,11 @@ The Owner Control Studio lets you change the reviewed content of Niveshak Saathi
 These are reviewed code, not content:
 
 - **Detection rules and the risk model** (`engine.js`). A content edit cannot hide a warning. Each warning category's title, explanation and source are content (`warnings.json`), and the build refuses an engine category without one. The fitted weights, the High and Caution thresholds and the "always High" safety floors are code, shown to users under "How the risk level was decided".
-- **The on-device assistant** (`assist.js`): understanding the user's own words in Emergency mode, and the "Before you pay" answers. Its reason and check texts cite source ids from `sources.json` (or are labelled general safety steps), so keep those sources enabled; changing the texts or rules is a developer change.
+- **The on-device keyword-based parser** (`assist.js`): reading the user's own words in Emergency mode, and the "Before you pay" answers. Its reason and check texts cite source ids from `sources.json` (or are labelled general safety steps), so keep those sources enabled; changing the texts or rules is a developer change.
 - **Safety caveats and legal disclaimers.** For example, "no warning signs does not mean safe" and "not affiliated with SEBI".
 - **The list of allowed link domains:** `gov.in`, `nic.in`, `rbi.org.in`, `npci.org.in`, `nseindia.com`, `bseindia.com`, `nsdl.co.in`, `cdslindia.com`, `amfiindia.com`, `pfrda.org.in`. A lookalike or mistyped link is refused.
-- **Approved helpline numbers** (currently 1930).
+- **Approved helpline numbers:** 1930, 14448, 1800 266 7575, 1800 22 7575, 155255, 1800 425 4732 and 14453, each read on its official page. Adding a number is a code change.
+- **The Family asset map.** Its choices, its single typed field (the institution's name, which refuses numbers, e-mail addresses and PAN) and the rule that nothing is saved are code.
 - **The urgent route.** The "money already sent" route can be edited, but it cannot be removed or lose its helpline. Emergency mode hands users over to it.
 - **Route scope rules.**
   - An escalation route can only use levels of its own scope, so a bank, insurance or pension complaint can never be escalated to SCORES, and a securities complaint can never be sent to the RBI ombudsman.
@@ -43,26 +45,25 @@ These are reviewed code, not content:
   - The six items from the product specification cannot be removed: nominee, contact and KYC details, where records are kept, old holdings, official contacts, and no paid recovery agents. Their text can change.
   - Every holding type needs at least one specific item, and the nominee item must cover both demat accounts and mutual funds.
   - The card warning must tell families not to write down passwords.
-- **Emergency answers and plan rules.** The four "What happened?" answers (`received`, `clicked`, `shared`, `paid`) and the three "Is it still happening?" answers (`yes`, `no`, `unsure`) drive the plan, so only their labels can change. Every answer, alone or combined with others, must lead to at least one specific step. "Still happening" must add a step, and every "sent money" plan must keep a step with the helpline button. The build checks all 15 answer combinations.
+- **Emergency answers and plan rules.** The four "What happened?" answers (`received`, `clicked`, `shared`, `paid`) and the three "Is it still happening?" answers (`yes`, `no`, `unsure`) drive the plan, so only their labels can change. Every answer, alone or combined with others, must lead to at least one specific step. "Still happening" must add a step, and every "sent money" plan must keep a step with the helpline button. The build checks all 15 combinations of the four "What happened?" answers. The browser tests also vary "Is it still happening?" (not answered, yes, no, not sure), which makes 60 combinations.
 
 To change any of these, ask a developer for a reviewed code change.
 
 ## Open the Studio
 
-From the `outputs/prototype` folder, run the build once. It creates `owner-studio.html` next to it, never inside `dist/`:
+You need Node.js 18 or later. From the `prototype` folder, run the build once. It creates `owner-studio.html` next to it, never inside `dist/`:
 
-```powershell
-$node = "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
-& $node build.cjs
+```text
+node build.cjs
 ```
 
 Then double-click `owner-studio.html`. Microsoft Edge or Google Chrome is recommended. Each build refreshes the Studio with the current content and app code.
 
-For review before the next canonical build, Claude's work-in-progress copy is `work/claude-preview/C-8/owner-studio.html`.
-
 ## Everyday tasks
 
 **Record a source review.** Open **Sources & review dates**, check the official page, then press **Mark reviewed today**. This sets today's date and a review-due date 30 days later; change either if needed. The Overview tab lists every source with its status: OK, due soon, or overdue.
+
+**Confirm a source marked "review pending" (Release 3.5).** A source that was checked against its official page during development, but not yet confirmed by the named reviewer, shows "review pending" in the app. The reviewer opens the official page, checks that it still supports what the source says, and then confirms the source in **Sources & review dates**. After the next build, the app shows the reviewer's name instead of "review pending".
 
 **Edit a question, route step or warning text.** Type in the English and Hindi boxes, which sit side by side. Every text needs both languages. Hindi without Devanagari letters gets a warning so that untranslated text is caught.
 
@@ -114,11 +115,11 @@ Overdue review dates are warnings, not errors. The app itself shows users an ove
 
 You can save in either of two ways:
 
-1. **Save into the content folder…** (Edge or Chrome). Choose `outputs/prototype/content`. Only valid content can be saved, and only the sections you changed are rewritten.
-2. **Export content pack** (any browser). This downloads one JSON file. Apply it in `outputs/prototype` with:
+1. **Save into the content folder…** (Edge or Chrome). Choose the `prototype/content` folder. Only valid content can be saved, and only the sections you changed are rewritten.
+2. **Export content pack** (any browser). This downloads one JSON file. Apply it from the `prototype` folder with:
 
-   ```powershell
-   & $node validate-content.cjs --apply niveshak-content-pack-<version>.json
+   ```text
+   node validate-content.cjs --apply niveshak-content-pack-<version>.json
    ```
 
    An invalid pack is refused and nothing is written.
@@ -127,7 +128,7 @@ You can save in either of two ways:
 
 ## Rebuild and release
 
-Run `& $node build.cjs` in `outputs/prototype`. The build:
+Run `node build.cjs` in the `prototype` folder. The build:
 
 - validates the content again and stops with **Build refused** if there is any error;
 - writes `dist/index.html`, the public single-file app;
@@ -136,7 +137,7 @@ Run `& $node build.cjs` in `outputs/prototype`. The build:
 
 **A rebuilt app is a new release.** Before it is published:
 
-- GPT/Codex reviews it and runs the canonical rule and browser checks;
+- a reviewer runs the release checks (developer cases, browser journeys and the other release suites);
 - the owner is shown a labelled preview;
 - the previous verified package stays available for rollback.
 
@@ -144,7 +145,7 @@ The Studio's **Download draft manifest** button gives you the same checksums for
 
 ## Security
 
-- The Studio has no password and no admin page. A password inside a static web app could be read by anyone, so control comes from keeping the Studio and the source files on your own computer and in your private GitHub repository.
+- The Studio has no password and no admin page. A password inside a static web app could be read by anyone, so control comes from who can change the source files and publish a release: keep your working copy on your own computer, and limit who can push to the repository and deploy the public link. The repository itself is public.
 - The public app (`dist/index.html`) contains no Studio code, editor or file-writing code; the build checks this.
-- Never type passwords, OTPs, API keys or tokens into content. The validator and the GitHub sync both refuse them.
+- Never type passwords, OTPs, API keys or tokens into content. The validator refuses them.
 - Keep two-factor authentication and recovery options on your GitHub and hosting accounts under your sole control.

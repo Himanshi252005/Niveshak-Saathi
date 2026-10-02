@@ -1,95 +1,111 @@
-# Niveshak Saathi validation
+# Niveshak Saathi: validation
 
-**Build checked:** Release 3.4, on 2026-10-02 in installed Microsoft Edge (headless). The file is 561,637 bytes (164,699 with gzip), with SHA-256 `911E8BA0637980325249E72B5442A6B0CE3306153D3432C663CE773EF02DBB04`. The public link serves Release 3.3 until the Site is redeployed; see `Delivery-Status.md`.
+**Build checked:** Release 3.5, on 2 October 2026: 661,710 bytes (191,146 with gzip), SHA-256 `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`. The live link serves Release 3.3 until it is redeployed ([delivery status](Delivery-Status.md)).
 
-The evidence records are:
-- `Release-3.4-Verification.json`;
-- `Browser-Validation.json`;
-- `Rule-Evaluation.json`;
-- `Real-World-User-Test.json`;
-- `Blind-Evaluation-v8.json`, with the earlier `Blind-Evaluation-v6.json` and `Blind-Evaluation.json`.
+**How to read this page**
+- Every accuracy figure comes from synthetic messages or AI-written personas. None comes from real users.
+- A "separate AI agent" is an AI assistant working in a fresh session, with no access to the code, the tests or earlier sets. It is not a person or an outside organisation, and it may share blind spots with the AI assistants that helped build the app.
+- Results marked "internal" come from test runs whose scripts or logs are not yet in this repository. The published records are in [`evidence/`](../evidence/), and the published test kits are in [`evaluation/`](../evaluation/).
+- Release 3.4 and earlier results are history, kept so that each release can be compared with the one before.
 
-## What changed in Release 3.4
+**Evidence records:** [`Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json) for this release; the earlier [`Release-3.4-Verification.json`](../evidence/Release-3.4-Verification.json) and [`Release-3.3-Verification.json`](../evidence/Release-3.3-Verification.json); `Browser-Validation.json`, `Rule-Evaluation.json` and `Real-World-User-Test.json` (the 100-persona simulated test); and the sealed-set records: the blind-v9 record for Release 3.5, `Blind-Evaluation-v8.json`, `Blind-Evaluation-v6.json` and `Blind-Evaluation.json` (blind-v3, v4 and v5).
 
-- **Complaint routes (P1):** 15 new official sources, each checked on its official page on 2 October 2026 (48 in all, 46 shown in the app). They support:
+## What changed in Release 3.5
+
+- **Rights and help page.** Home has a new card, "अपने अधिकार जानें / Know your rights", and the menu a new group, "Know your rights". The page holds:
+  - **free official helplines that speak regional languages:** SEBI 1800-266-7575 or 1800-22-7575 (English, Hindi, Marathi, Gujarati, Tamil, Bengali and Telugu; 9 am–6 pm except Sundays and Maharashtra public holidays); RBI Contact Centre 14448 (English, Hindi and ten regional languages; it explains how to complain and cannot take complaints); IRDAI grievance call centre 155255 or 1800 425 4732 (8 am–8 pm, Monday to Saturday; Hindi, English and other major languages); the IEPF helpdesk 14453; cybercrime 1930;
+  - **five step-by-step guides,** every step sourced to an official page: SEBI SCORES; an IEPF-5 claim, with a tick-only checklist of the papers needed; the RBI Ombudsman; insurance complaints (insurer, IRDAI, Insurance Ombudsman); adding a nominee. Each guide can be downloaded as a text file;
+  - **all 8 rights cards,** grouped by institution, each with "Where to complain about this".
+
+  Complaint routes now link to the matching guide. Nothing on the page asks the user to type, and ticks are not saved.
+- **Family asset map** in Family safety (Track B "Nominee & Family Wealth Tracker"). Each row records the type of investment, the institution's name, nominee status, where the papers are kept and who in the family knows. The institution's name is the only typed field, and numbers, e-mail addresses and PAN are blocked. The list can be downloaded, printed and reopened from the downloaded file on the phone; nothing is saved by the app. Shares or mutual funds without a nominee link to the nominee guide.
+- **"Review pending" labels.** Sources checked against the official page during development but not yet confirmed by the named reviewer (Himanshi Rathore) now show "review pending". In Release 3.4 every source showed her name, including 15 she had not yet confirmed.
+- **Privacy notes.** The app's privacy notes and the documents now name the three cookies that the public link's host sets (`__Host-appgarden-visitor`, 90 days; `cf_clearance`, 365 days; `__cf_bm`, about 30 minutes) instead of "one short-lived security cookie". The app itself still sets and reads none ([privacy](../PRIVACY.md)).
+- **Public-good files:** an MIT licence for the code, CC BY 4.0 for original text, reuse terms, a security policy and a privacy page.
+- **Checker:** Release 3.5 ships checker 3.3 (unchanged from Release 3.4). Work on Hindi and Hinglish scams aimed at the three personas continues; it will be the fresh sealed set blind-v9 (200 messages, sealed on 2 October 2026) scored once, when the upgraded checker is frozen.
+- **Unchanged decisions:** Hindi and English only, with users of other languages pointed to the official helplines that speak their language; the app saves nothing.
+
+## Release 3.5 checks
+
+- **1,346 automated checks:** 23 release suites plus 449/449 developer-case expectations.
+- **Browser journeys:** 130/130 in each of 3 runs.
+- **100-persona simulated test** (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
+- **Official links:** every official link re-opened by the integrated suite (C-12: 13/13 checks passed).
+- **Size and speed:** 661,710 bytes (191,146 with gzip); Home usable in 4.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" the Hindi loading screen with the 1930 button shows in 2.5 s.
+
+### Fresh sealed set (blind-v9)
+
+Written by a separate AI agent on 2 October 2026 for the upgraded checker and sealed: 200 messages (80 fraud, 30 suspicious, 90 ordinary), SHA-256 `D5A59F9B9620903EE6399B9B90164407BD0CF927FFB8D74D8EA7BAB9D2567B22`. Only its counts have been checked. It will be scored once, when the upgraded checker is frozen. Release 3.5 itself ships checker 3.3, whose blind-v8 results are below.
+
+Once inspected, this set becomes development data. The next checker change needs another fresh set.
+
+## Release 3.4 results (history)
+
+Release 3.4 was verified on 2 October 2026 and published in this repository, but never deployed: 561,637 bytes (164,699 with gzip), SHA-256 `911E8BA0637980325249E72B5442A6B0CE3306153D3432C663CE773EF02DBB04`, with checker 3.3.
+
+### What changed in Release 3.4
+
+- **Complaint routes:** 15 new official sources (48 recorded, 46 shown in the app), each checked on its official page on 2 October 2026. They support:
   - the RBI Ombudsman step after a bank refuses or does not reply in 30 days;
   - police or the State Economic Offences Wing, plus RBI Sachet, for chit, deposit and Ponzi schemes;
   - RBI UDGAM, SEBI MITRA and IRDAI Bima Bharosa for unclaimed money;
-  - IEPF-5 claim steps (no agent, demat account needed);
+  - IEPF-5 claim steps (no agent; a demat account is needed);
   - the SEBI Consolidated Account Statement;
   - frozen accounts after a cyber complaint;
   - loan-app harassment and RBI's Digital Lending Apps directory;
   - unexplained monthly debits (RBI e-mandate rules).
 
-  Find help buttons show one-line hints, and the routes show sourced "Also check" tips.
-- **Rights (P1):** 8 rights cards, each showing its source:
-  - SEBI's Investor Charter;
-  - RBI's Charter of Customer Rights;
-  - IRDAI's 30-day free look and its two-week deadline for complaints.
+  Find-help buttons gained one-line hints, and routes gained sourced "Also check" tips.
+- **Rights:** 8 rights cards with their sources (SEBI's Investor Charter; RBI's Charter of Customer Rights; IRDAI's 30-day free look and two-week deadline for complaints). In Release 3.4 they appeared only inside a chosen complaint route; Release 3.5 gives them their own page.
 - **F&O fact:** when tips, borrowing or F&O appear, a card shows SEBI's study: 93% of individual F&O traders lost money in FY22–FY24.
-- **Privacy and security (P2):**
-  - the app's privacy notes now say that the public link's host may set its own short-lived security cookie;
-  - the page declares a Content-Security-Policy and a no-referrer policy;
-  - Home shows the version, the date the guidance was checked, and a "Check for a newer version" link that opens only when tapped.
-- **Checker:** Release 3.4 keeps checker 3.3. A candidate checker was measured on a fresh sealed set and showed no significant gain, so the owner kept 3.3 (below).
+- **Privacy and security:** an in-page Content-Security-Policy and no-referrer policy; Home shows the version, the date the guidance was checked and a "Check for a newer version" link that opens only when tapped. Until the live link is redeployed, that link opens the older live release.
+- **Checker:** kept checker 3.3; a candidate checker was measured on a fresh sealed set and was not shipped (below).
 
-## Checks that passed
+### Checks that passed (Release 3.4)
 
-- **1,297 automated checks** across 22 release suites, including 449/449 developer message expectations, with no false negatives or false positives.
-- **Browser journeys:** 130/130 checks in each of three independent runs, with no runtime errors.
-- **Real-world users and stress inputs:** 14/14 checks.
-  - **Who:** 100 realistic users written by four separate agents that never saw the code. They cover ages 18–80, Hindi and English screens, phones 320–412 px wide and large text.
-  - **Result for Release 3.4:** 92 fully right, 8 partly right, 0 wrong. On this machine the "partly right" count varies between 8 and 11 across runs of the same build, because the judge marks a result that takes more than 1.5 seconds as partly right. The number wrong was 0 in every run.
-  - **Stress inputs:** 15 of them, including a 9,659-character forward, pasted HTML and script, and the phone Back button.
-  - **Details:** see `REAL-WORLD-USER-TEST.md`. These users were used to fix problems, so they are a regression test, not an accuracy result.
-- **Complaint routes and rights (P1):** 39/39 checks, covering:
-  - every new step, tip, rights card and source, in both languages;
-  - the button hints on a 360-pixel phone;
-  - the action card listing each route's official links.
-- **Privacy notes, security policy and version line (P2):** 27/27 checks.
-  - No policy violation occurs in any journey, in the saved offline copy, on a phone, or next to a simulated copy of the host's injected bot-check script.
-  - Official links send no referrer.
-  - The update link opens only when tapped.
-  - Three deliberately broken builds were each caught by these checks.
-- **Public-scale reliability and personas:** 26/26 checks: the three fixed plans, all five reliability states, no storage, no user-data requests and a 320-pixel Hindi phone view.
-- **App shell:** 31/31 checks across 320, 360 and 390-pixel phones, Hindi and English, normal/large/200% text, keyboard navigation and print layout.
-- **On-device assistant:** 176 checks for English, Hindi and Roman Hindi own-words input, return maths and before-payment decisions.
-- **Content and Owner Studio:** all validator and editor suites passed. Unsafe content prevents a build.
-- **Emergency, grievance, packet and family coverage:** all 60 emergency combinations, 272 grievance route states and 60 family combinations are covered.
-- **Privacy:**
-  - the public file contains no Studio or file-writing code;
-  - in the tested journeys the app itself uses no browser storage, cookies, analytics, cloud inference or third-party request;
-  - the public link's host (Cloudflare) adds its own bot-check script and a short-lived `__cf_bm` security cookie. The app neither sets nor reads it, and the offline file has neither;
-  - the guardrail audit finds 49 outbound links, all on official domains apart from the app's own address behind the update link.
-- **Official links:** on 2 October 2026, 45 of the 46 enabled sources opened automatically (C-12). The IEPF claimants' FAQ refuses automated clients and was checked in a browser.
-- **Offline:** the downloaded file works with networking disabled. Official links naturally require internet.
+- **1,297 automated checks:** the 22 release suites (848 checks) plus 449 developer-case expectations. The developer cases had no false negatives or false positives, but they were written during development, so they are not an accuracy measure. Two suites, the general Owner Studio end-to-end suite and the boundary set, are recorded in the release record as passed without a count; their counts (30 and 38) come from the test logs.
+- **Browser journey suite:** 130/130 in each of three runs, with no runtime errors. (In the release record this suite keeps its old name, "Release 3.0 browser suite".)
+- **100-persona simulated test and stress inputs:** 14/14 checks.
+  - **Who:** 100 fictional users written by four separate AI agents that never saw the code: ages 18–80, Hindi and English screens, phones 320–412 pixels wide, large text.
+  - **Result:** 92 fully right, 8 partly right, 0 wrong. On the test machine, the "partly right" count varies between 8 and 11 across runs of the same build, because the scorer marks a result that takes more than 1.5 seconds as partly right. None was ever wrong.
+  - **Stress:** 15 pasted inputs (including a 9,659-character forward, pasted HTML and script, right-to-left text and invisible characters) plus 4 interaction checks (a double tap, the phone Back button, and an empty and a 1,700-character urgent-help story).
+  - These personas were used to fix problems, so they are a regression test, not an accuracy result ([details](REAL-WORLD-USER-TEST.md)).
+- **Complaint routes and rights:** 39/39: every new step, tip, rights card and source in both languages; the button hints on a 360-pixel phone; the action card listing each route's official links.
+- **Privacy notes, security policy and version line:** 27/27. No policy violation occurred in any journey, in the saved offline copy, on a phone, or next to a simulated copy of the host's injected script. Official links send no referrer, the update link opens only when tapped, and three deliberately broken builds were each caught.
+- **Persona plans and reliability:** 26/26: the three plans, all five reliability states, no storage, no user-data requests and a 320-pixel Hindi phone view.
+- **App layout:** 31/31 across 320, 360 and 390-pixel phones, Hindi and English, normal, large and 200% text, keyboard navigation and print layout.
+- **Own-words parser:** 176 checks for English, Hindi and Roman-Hindi own-words input, return maths and every Before-you-pay combination.
+- **Content validator and Owner Studio:** 166 validator tests and 124 Studio checks. Unsafe content stops the build.
+- **Answer coverage:**
+  - **Emergency:** the browser suite runs all 60 answer combinations, that is the 15 combinations of the four "What happened?" answers, each with the four states of "Is it still happening?" (not answered, yes, no, not sure). The build validator checks the 15 "What happened?" combinations, which is why the Owner guide says 15.
+  - **Complaint routes:** all 272 navigator states. **Family checklist:** all 60 answer combinations.
+- **Privacy:** the public file contains no Studio or file-writing code. In the tested journeys the app made no network request except fetching its own page for "Save offline copy" and "Share this app", and used no storage, cookies, analytics or cloud inference. The guardrail audit found 49 outbound links, all on official domains apart from the app's own address behind the update link (internal).
+- **Official links (internal):** on 2 October 2026, 45 of the 46 enabled sources opened automatically. The IEPF claimants' FAQ refuses automated clients and was checked in a browser.
+- **Offline:** the downloaded file works with networking turned off. Official links need internet.
 
-## Complaint-route test (40 stories written blind)
+### Complaint-route test (internal)
 
-Each story names the officially correct authorities. The test presses the button a first-time user chose, then reads the route the app shows in both languages.
+40 complaint stories written by a separate AI agent, each naming the officially correct authorities. The test presses the button that an AI agent acting as a first-time user chose, then reads the route the app shows, in both languages.
 
 | Measure | Release 3.3 | Release 3.4 |
 |---|---:|---:|
 | Main authority named, first-time user's buttons | 35/40 | 39/40 |
 | All expected authorities named, first-time user's buttons | 25/40 | 34/40 |
 | All expected authorities named, correct buttons | 26/40 | 37/40 |
-| A new first-time-user agent picks the judge's button (with the button hints) | 34/40 | 36/40 |
+| A new first-time-user agent picks the expected button (with the button hints) | 34/40 | 36/40 |
 
-The stories were used to find the gaps, so this is a regression test, not an independent accuracy result. The remaining misses:
-- two "Bank" angles in insurance and pension stories;
-- one story that "Not sure" deliberately does not route to a regulator.
+- **Targets:** main authority at least 38/40 (met); the new first-time-user agent picking the expected button at least 37/40 (missed, 36/40).
+- **Remaining misses:** two "Bank" choices in insurance and pension stories, and one story that "Not sure" deliberately does not route to a regulator.
+- The stories were used to find the gaps, so this is a regression test, not an accuracy result.
 
-## Model evidence
+### Sealed set for Release 3.4 (blind-v8)
 
-The checker combines multilingual warning-sign rules, a fitted logistic model and hard safety floors. The interface explains the agreement around each result, and abstains when the language is outside coverage or there is too little evidence.
-
-**Fresh sealed set for Release 3.4 (blind-v8, scored once on 2 October 2026).**
-- **Who wrote it:** a separate agent that never saw the code, earlier sets or tests, writing after the candidate checker was frozen.
-- **What it contains:** 200 messages, 80 fraud, 30 suspicious and 90 ordinary. Of the ordinary messages, 50 are tricky look-alikes and 40 are everyday messages. The languages are Hindi 70, Hinglish 60, English 60 and mixed 10.
+- **Who wrote it:** a separate AI agent that never saw the code, earlier sets or tests, writing after the candidate checker was frozen. Scored once on 2 October 2026.
+- **What it contains:** 200 messages: 80 fraud (25 subtle), 30 suspicious and 90 ordinary (50 tricky look-alikes and 40 everyday messages). Hindi 70, Hinglish 60, English 60, mixed 10.
 
 | Measure | Checker 3.3 (shipped in 3.4) | Candidate checker (not shipped) |
 |---|---:|---:|
-| Fraud or suspicious messages warned | 60.9% [51.6–69.5] | 58.2% [48.8–67.0] |
+| Fraud or suspicious messages warned (the measure used for earlier sets) | 60.9% [51.6–69.5] | 58.2% [48.8–67.0] |
 | Fraud warned | 67.5% [56.6–76.8] | 63.8% [52.8–73.4] |
 | Fraud at High | 56.3% [45.3–66.6] | 52.5% [41.7–63.1] |
 | Subtle fraud warned | 5/25 | 5/25 |
@@ -98,30 +114,28 @@ The checker combines multilingual warning-sign rules, a fitted logistic model an
 | Ordinary messages at High | 10.0% [5.4–17.9] | 8.9% [4.6–16.6] |
 | Everyday ordinary messages flagged | 0/40 | 0/40 |
 
-**Reading the results:**
-- The candidate checker was built to reduce false alarms. On the development sets it did: on blind-v7, ordinary messages at High fell from 11.1% to 0%; on blind-v6, from 18% to 8%, with no fraud loss.
-- On this fresh set, every difference is within the intervals.
-- The owner therefore kept checker 3.3, and the candidate is kept for a later round.
-- This set is harder than the earlier ones for both checkers. Most misses are subtle approaches:
-  - pension and life-certificate scams;
-  - RTA "processing fees" and dormant-folio offers;
-  - wrong-number introductions.
-- Babulal's messages (pensioner) are caught least often.
-- This set has now been inspected, so it is development data. The next checker change must be measured on another fresh set.
+**By persona** (checker 3.3, fraud or suspicious warned): Praveen 72.2% [56.0–84.2], Kavita 53.6% [35.8–70.5], Babulal 39.3% [23.6–57.6]. **By language:** Hindi 65.8% [49.9–78.8], Hinglish 63.6% [46.6–77.8], English 57.6% [40.8–72.8].
 
-**Earlier sealed sets (history).**
-- **blind-v6** (120 messages, scored once for checkers 3.2 and 3.3):
-  - checker 3.3 warned on 87.1% [77.3–93.1] of fraud or suspicious messages and 24.0% [14.3–37.4] of ordinary messages;
-  - none of the 12 everyday ordinary messages was flagged.
-- **The third 320-message set** (model 3.2): 72.4% [65.7–78.2] of fraud or suspicious messages warned, and 8.6% [4.9–14.7] of ordinary messages warned.
+**Reading the results**
+- **Targets missed.** Release 3.4 aimed for fraud warned at least 85%, ordinary messages warned at most 8%, and subtle fraud warned at least 70%. Both checkers missed all three.
+- **The candidate.** It was built to reduce false alarms, and on its development sets it did (internal): on blind-v7, ordinary messages at High fell from 11.1% to 0%; on blind-v6, from 18% to 8%, with no fraud loss. On this fresh set every difference was within the intervals, so the owner kept checker 3.3, and the candidate was kept for a later round.
+- **Labels in the evidence file.** In `Blind-Evaluation-v8.json`, the key "v3.4" is the candidate checker and "v3.3" is the checker shipped in Release 3.4. The file's "frozenChecker" note calls the candidate "the Release 3.4 checker" because, when the set was scored, it was the candidate for that release.
+- **Where it fails.** Most misses were subtle approaches: pension and life-certificate scams, RTA "processing fees" and dormant-folio offers, and wrong-number introductions. Babulal's messages were caught least often.
+- This set has been inspected, so it is now development data.
+
+### Earlier sealed sets (history)
+
+- **blind-v6** (120 messages: 50 fraud, 29 of them everyday scams; 20 suspicious; 50 ordinary, 38 of them tricky look-alikes), scored once for checkers 3.2 and 3.3. Checker 3.3 warned on 87.1% [77.3–93.1] of fraud or suspicious messages and 24.0% [14.3–37.4] of ordinary messages, and flagged none of the 12 everyday ordinary messages.
+- **blind-v5** (320 messages, the third of three 320-message sets), model 3.2: 72.4% [65.7–78.2] of fraud or suspicious messages warned, and 8.6% [4.9–14.7] of ordinary messages warned.
+- **blind-v3 and blind-v4** (320 messages each): their scores are in `Blind-Evaluation.json`; the messages are not published.
 
 These are synthetic-message results, not evidence of nationwide accuracy or avoided financial loss.
 
-## Size and speed
+### Size and speed (Release 3.4)
 
-- **Size:** 561,637 bytes uncompressed and 164,699 bytes with gzip (Release 3.3: 509,588 and 151,758). The growth is the new bilingual, sourced complaint content.
-- **Simulated slow network** (400 ms latency, 50,000 bytes/second, 4× CPU slowdown): median 12,242 ms uncompressed and 4,260 ms gzip-served, across three runs.
-- **Home usable, gzip-served, on emulated networks and phones:**
+- **Size:** 561,637 bytes uncompressed and 164,699 bytes with gzip (Release 3.3: 509,588 and 151,758). The growth was the new bilingual, sourced complaint content. The 164,699 bytes is the download size; the saved offline file is the full 561,637 bytes.
+- **Simulated slow network** (400 ms latency, 50,000 bytes per second, 4× CPU slowdown): median 12,242 ms uncompressed and 4,260 ms gzip-served, across three runs.
+- **Home usable, gzip-served, on emulated networks and phones (internal):**
 
   | Profile | Release 3.3 | Release 3.4 |
   |---|---:|---:|
@@ -129,24 +143,27 @@ These are synthetic-message results, not evidence of nationwide accuracy or avoi
   | Weak 3G, low-end phone | 4.2 s | 4.7 s |
   | 2G, low-end phone | 7.6 s | 8.4 s |
 
-  This is 10–15% slower than Release 3.3.
-- **Message analysis:** it stays local and takes about 1 ms for ordinary inputs. Release 3.4 keeps checker 3.3, so the C-22 volume test still applies: 1,000,000 checks with 0 errors, 1,034 per second on one core, p99 9.6 ms.
+- **Message analysis:** local, about 1 ms for ordinary inputs. Checker 3.3's volume test (internal): 1,000,000 checks with 0 errors, 1,034 per second on one core, p99 9.6 ms.
 
-## Known limits of Release 3.4
+## Known limits
 
-- **Checker:** no measured gain in fraud detection over Release 3.3; see blind-v8 above.
-- **Sources:** the app shows each source as reviewed by the named content reviewer (owner decision). The 15 sources added on 2 October were checked by Claude against the official pages and await the reviewer's confirmation.
-- **Hosting:** the public host sends no security headers or cache validators, so every visit downloads the whole page again (`SCALE-AND-RELIABILITY.md`).
-- **RBI links:** RBI's website shows a language chooser to first-time visitors and opens its home page, so an RBI link may need a second tap.
+- **Checker:** many subtle scams are still missed (blind-v8: 5 of 25 subtle frauds), especially those aimed at older investors. Detection depends on word lists, so new colloquial Hindi and Hinglish phrasings can be missed. Release 3.5's result is the blind-v9 table above.
+- **Languages:** Hindi and English only. Messages in other languages get an "outside coverage" note, never a safe verdict, and users are pointed to official helplines that speak their language. Some English words still appear on Hindi screens; native review is pending.
+- **No voice or image input inside the app:** voice works through the phone keyboard's microphone; read-aloud needs a voice installed on the phone.
+- **Nothing is saved, by design:** a user who wants to keep the Family asset map, a guide or a packet must download it.
+- **Offline use** needs one "Save offline copy"; there is no installable app or service worker.
+- **Sources:** sources not yet confirmed by the named reviewer show "review pending" (29 in Release 3.5).
+- **Hosting:** the live link serves Release 3.3. Its host sends no security headers or cache validators, so every visit downloads the whole page again ([scale plan](SCALE-AND-RELIABILITY.md)). RBI's website may show a language chooser first, so an RBI link can need a second tap.
 - **Missing content:** MF Central and DigiLocker are not covered, because their official text could not be verified.
+- **Unpublished scripts:** most release suites run from the team's working folder; their results are in the release records, but their scripts are not yet in this repository. The published kits are the sealed-set scorer, the developer cases and the 100-persona test.
 
 ## Still unproven
 
 - avoided fraud or loss in real use;
 - real-user comprehension and completion;
-- native-speaker review of Hindi;
-- physical low-end device and screen-reader conformance;
+- native-speaker review of the Hindi;
+- physical low-end devices and screen-reader conformance;
 - accuracy on a representative, consented real-message corpus;
-- CDN and operations performance at national traffic volumes.
+- CDN and operations performance at national traffic.
 
 No complaint was filed and no helpline was called during verification.

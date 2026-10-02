@@ -2,7 +2,7 @@
 
 ## Public-release gates
 
-The prototype is ready for fictional demonstrations. The following responsibilities need named owners before broad investor-facing use; no review team or partner has been secured by this build.
+The prototype is ready for fictional demonstrations. The following responsibilities need named owners before broad investor-facing use; no review team or partner has been secured yet.
 
 | Role | Required evidence |
 |---|---|
@@ -15,7 +15,7 @@ The prototype is ready for fictional demonstrations. The following responsibilit
 
 ## Content-maintenance procedure
 
-Review monthly, after regulatory announcements and before real-user events. Snapshot: 1 October 2026; next review: 1 November 2026. Use official sources and retain old snapshots. Resolve conflicting pages against current authoritative instructions with qualified review. If source access fails, remove unsupported detail and point to the official institution. Update both languages and rerun regression/workflow checks. The UI's overdue notice is a reminder, not an automated monitoring service.
+Review monthly, after regulatory announcements and before real-user events. Snapshot: 2 October 2026; next review: 1 November 2026. Use official sources and retain old snapshots. A source checked during development but not yet confirmed by the content owner shows "review pending" in the app until she confirms it in the Owner Studio. Resolve conflicting pages against current authoritative instructions with qualified review. If source access fails, remove unsupported detail and point to the official institution. Update both languages and rerun regression/workflow checks. The UI's overdue notice is a reminder, not an automated monitoring service.
 
 ## Consent script
 
@@ -41,7 +41,7 @@ Family-holding scenarios require separate reviewed facts; do not invent universa
 
 Record correct route, essential safety action and unaided completion as yes/no. Draft completeness is 0–4: clear problem, dates/reference placeholders, requested resolution, evidence list/placeholders. It does not establish legal sufficiency. Ask explicitly whether no matches proves safety; correct requires “no” and recognition of limited coverage.
 
-Report numerators/denominators, median times and ranges, language/persona breakdowns, failures, assistance and withdrawals. Suggested gates: ≥80% correct routes, ≥90% uncertainty comprehension, ≥80% unaided completion and ≥30% lower median next-action time. These are targets, not observed results.
+Report numerators/denominators, median times and ranges, language/persona breakdowns, failures, assistance and withdrawals. Suggested gates: ≥80% correct routes, ≥90% uncertainty comprehension, ≥80% unaided completion and ≥30% lower median next-action time. These are targets, not observed results. They are the project's single set of pilot targets; the submission uses the same four.
 
 ## Running the pilot with the app's facilitator mode
 
@@ -68,4 +68,4 @@ The app has three questions before and after an explicit lesson. It has no contr
 
 Complete independent review/pilot, fix observed confusion, recruit assisted-use partners, then expand language coverage. A real ongoing-loss disclosure should stop the research task: direct the person to their bank/payment provider and official reporting channels without collecting financial evidence or promising recovery. For product defects, retain only a minimal de-identified reproduction, remove misleading guidance and release a reviewed fix.
 
-No recruitment, outreach, partnership or real financial intervention has been performed by this build.
+No recruitment, outreach, partnership or real financial intervention has been carried out by this project yet. `Pilot-Results.csv` stays blank until a real, consented session takes place.
