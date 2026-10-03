@@ -4,17 +4,18 @@ Which release is where, as of 3 October 2026.
 
 | Where | Release | Status |
 |---|---|---|
-| [Live link](https://himanshi252005.github.io/Niveshak-Saathi/) (GitHub Pages) | **3.5** | The link to share. Exact verified build `833C6BA1…F7B3` with checker 3.5, refined in place on 2 and 3 October 2026; HTTPS with HSTS, gzip, no cookies |
+| [Live link](https://himanshi252005.github.io/Niveshak-Saathi/) (GitHub Pages) | **3.5** | The link to share. Exact verified build `3135FA9A…F01A` with checker 3.6, refined in place on 2 and 3 October 2026; HTTPS with HSTS, gzip, no cookies |
 | This repository: [`prototype/dist/index.html`](../prototype/dist/index.html) | **3.5** | Byte-identical to the app served by the live link |
-| [Second copy](https://niveshak-saathi-safety.himanshirathore25102.chatgpt.site) | 3.5 (first build) | The first Release 3.5 build (`175BD9D4…6E1C`, checker 3.3), without the refinements below; not the link to share |
+| Second copy (earlier host; address below) | 3.5 (first build) | **Old and not maintained.** The first Release 3.5 build (`175BD9D4…6E1C`, checker 3.3), without the refinements below. Its update or removal has been requested from the owner of the hosting tool (3 October 2026); until then it is not the link to share |
 | Release 3.4 | 3.4 | Verified and published in this repository on 2 October 2026; never deployed; replaced by 3.5 |
 
 ## Release 3.5: the build on the live link
 
-- **File:** `prototype/dist/index.html`, 825,173 bytes (237,291 with gzip).
-- **SHA-256:** `833C6BA15BA28421FE556E75CEF8810BE40697634F86BBC9448985151004F7B3`.
-- **Versions:** product 3.5, with checker 3.5.
-- **Verification:** 1,742 automated checks, that is 24 release suites plus 796/796 developer-case expectations ([`Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json)); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 92 fully right, 8 partly right, 0 wrong; text contrast meets WCAG AA in the light and dark themes on every main screen (C-27).
+- **File:** `prototype/dist/index.html`, 848,230 bytes (244,877 with gzip).
+- **SHA-256:** `3135FA9A24B71B0A1A4931BD83837EA851EB8C30F09B7CE82B1674EA01CFF01A`.
+- **Versions:** product 3.5, with checker 3.6.
+- **Verification:** 1,820 automated checks, that is 25 release suites plus 842/842 developer-case expectations ([`Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json)); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 90 fully right, 10 partly right, 0 wrong (14/14 checks); text contrast meets WCAG AA in the light and dark themes on every main screen (C-27); the rights-first Home and the family tracker (C-28).
+- **Checker 3.6 on the fresh sealed set blind-v10** (scored once after checker 3.6 was frozen): checker 3.6 warned on 83.8% [74.2–90.3] of fraud messages (67 of 80), 16 of 25 subtle frauds and 13.3% [7.8–21.9] of ordinary messages (12 of 90); fraud rated High 70% [59.2–78.9]. The rule written before scoring (no new false alarm and no fraud warning lost) held, so checker 3.6 replaced 3.5 inside Release 3.5. ([`Blind-Evaluation-v10.json`](../evidence/Blind-Evaluation-v10.json)).
 - **Checker 3.5 on the fresh sealed set blind-v9** (scored once after the checker was frozen): fraud warned 87.5%, subtle fraud warned 18 of 25, ordinary messages warned 12.2% ([`Blind-Evaluation-v9.json`](../evidence/Blind-Evaluation-v9.json)). The rule written before scoring was missed by one ordinary message at Caution; the owner shipped checker 3.5, and the record says so.
 - **New in Release 3.5:**
   - the Rights and help page: free official helplines, five step-by-step guides (SCORES, IEPF-5, RBI Ombudsman, insurance, nominee) and all eight rights cards grouped by institution;
@@ -22,25 +23,27 @@ Which release is where, as of 3 October 2026.
   - "review pending" on sources not yet confirmed by the named reviewer;
   - licence, reuse, security and privacy files.
 - **Refined in place on 2 and 3 October 2026** (same release number, at the owner's request, after judge-style reviews):
+  - UI-4 (3 October 2026): Home, the menu and the phone dock lead with complaints and rights; the Family asset map became a tracker (a progress line, and "Remember this list on this phone", off unless the user turns it on); checker 3.6, with fewer false alarms on ordinary messages, after a fresh sealed test; a recorded Hindi voice for the key steps prepared (not yet recorded);
   - a design refresh (3 October 2026): a calm green-and-white look with line drawings that draw themselves in, chips instead of long option lists, rights folded by institution and the long footer notes folded under one line; a persistent five-item phone navigation remains visible after every selection;
   - an emerald menu and a dark theme (3 October 2026, built on the green-and-white design): the app always opens in the light theme, and "Dark theme" in the menu switches for the visit to a dark theme made from the app's own emerald (nothing is saved); line drawings keep one colour, forest green or emerald; text-box borders are back to at least 3:1;
   - four ideas from the [market comparison](MARKET-COMPARISON.md): "not this door" notes on the SCORES routes, a "freeze online access to your trading account" step, I4C's Suspect Search in Before you pay, and "Pause for 30 seconds" after a STOP or High-risk answer;
   - checker 3.5, with Hindi and Hinglish scam patterns for the three personas (it replaced checker 3.3);
-  - a calmer Home: four large choices first; rights, practice and family safety under "More help"; the persona plans under one fold;
+  - a calmer Home: four large choices first (since UI-4: complaints, rights, urgent help, the family tracker; then the two checks); practice under "More help"; the persona plans under one fold;
   - a shorter menu: six everyday pages, with the complaint packet, safety plans, practice and family safety under "More pages", which opens by itself when one of them is in use;
   - input without typing: a "Paste the message" button, tips to speak a message or a complaint with the phone keyboard's microphone, and a tip to copy the words of a message that arrived as a picture; text boxes tell the keyboard which language to expect;
   - the privacy note names the host the app was opened from (the GitHub Pages live link sets no cookies; the offline copy has no host), and the privacy window keeps its Close button in view;
   - the version line's update link points to the live link.
-- **Live check after publishing** (3 October 2026, 13:48 IST): the live link served this exact file (SHA-256 match) over HTTPS with HSTS, gzip-compressed (246,254 bytes transferred), with `Cache-Control: max-age=600` and no cookies. GitHub Pages commit `dcaa674`.
+- **Live check after publishing** (4 October 2026, 00:31 IST): the live link served this exact file (SHA-256 match) over HTTPS with HSTS, gzip-compressed (253,786 bytes transferred), with `Cache-Control: max-age=600` and no cookies. GitHub Pages commit `3064146`.
 
 ## Second copy: first Release 3.5 build
 
+- **Status:** not maintained. On 3 October 2026 the owner's update or removal of this copy was requested in the project's deployment handoff, because only the owner's hosting tool can change it. Address: niveshak-saathi-safety.himanshirathore25102.chatgpt.site.
 - **What it serves:** the first Release 3.5 build, 661,710 bytes, product version 3.5 and checker version 3.3. After removing the host's per-request Cloudflare block, its SHA-256 is `175BD9D4ADDD6F6B517C39CC6582D96C553157F712080812C75D710269E86E1C`, exactly matching that verified build (its verification record is internal). It does not have the refinements above.
 - **Deployed:** 20:49 IST on 2 October 2026. The exact-build check passed and the live smoke test passed 10/10.
 - **Sites record:** source commit `88e3f65f72e7584258fea67fe5be55aa973d5079`; version `4` (`appgprj_6abdcbd1b6148191a68dc1b38c53c585~appgver_47711223d59c81918c769928d4225383`); deployment `appgdep_6abfcb5aa8d48191aadd2f6344e0f3d3`.
 
 **What the host does** (measured on 2 October 2026):
-- It sets three cookies of its own: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes). The app itself sets and reads no cookies and stores nothing ([privacy](../PRIVACY.md)).
+- It sets three cookies of its own: `__Host-appgarden-visitor` (90 days), `cf_clearance` (365 days) and `__cf_bm` (about 30 minutes). The app itself sets and reads no cookies ([privacy](../PRIVACY.md)).
 - It adds Cloudflare's bot-check script in a hidden frame.
 - It sends no security headers: no HSTS, `nosniff`, framing protection, Content-Security-Policy or Referrer-Policy.
 - It sends `Cache-Control: public, max-age=0, must-revalidate` with no ETag or Last-Modified date, so every visit downloads the whole page again.
@@ -69,7 +72,7 @@ Which release is where, as of 3 October 2026.
 
 ## Rollback rule
 
-The rollback target is always the build that was live just before the latest redeploy. For this build that is `B5814882…FA0B` (the mint menu, with a dark theme that followed the device), the previous app on the `gh-pages` branch; before it, `FE329BD3…9965` (the green-and-white design), `4F494B8D…2A5E` (the earlier monochrome design), `244FAD4E…B32C`, `1B279AD5…5C23` (checker 3.3) and the first Release 3.5 build (`175BD9D4…6E1C`), which the second copy still serves. For Release 3.5 as a whole, the rollback target is Release 3.3 (`05545570…BBAB`). Release 3.2, SHA-256 `E377FB4EF8024F00C647C4D2D2C1CE82146DDADC48C26C43E6D5BD274001DAC6`, is earlier history.
+The rollback target is always the build that was live just before the latest redeploy. For this build that is `833C6BA1…F7B3` (light by default, emerald menu, checker 3.5), the previous app on the `gh-pages` branch; before it, `B5814882…FA0B` (the mint menu, with a dark theme that followed the device), `FE329BD3…9965` (the green-and-white design), `4F494B8D…2A5E` (the earlier monochrome design), `244FAD4E…B32C`, `1B279AD5…5C23` (checker 3.3) and the first Release 3.5 build (`175BD9D4…6E1C`), which the second copy still serves. For Release 3.5 as a whole, the rollback target is Release 3.3 (`05545570…BBAB`). Release 3.2, SHA-256 `E377FB4EF8024F00C647C4D2D2C1CE82146DDADC48C26C43E6D5BD274001DAC6`, is earlier history.
 
 ## Live link (GitHub Pages)
 

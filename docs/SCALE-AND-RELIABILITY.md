@@ -24,10 +24,10 @@ User's browser: language coverage + rules + fitted risk score + safety floors
                                   result stays on the device
 ```
 
-Release 3.5 is one HTML file of 825,173 bytes, 237,291 bytes with gzip.
-- **Cold downloads:** one download by each of 16 crore users would be about 38.0 TB of transfer before ordinary CDN caching (earlier Release 3.5 builds: 30.8 to 37.5 TB; Release 3.4: 26.4 TB; Release 3.3: 24.3 TB).
+Release 3.5 is one HTML file of 848,230 bytes, 244,877 bytes with gzip.
+- **Cold downloads:** one download by each of 16 crore users would be about 39.2 TB of transfer before ordinary CDN caching (earlier Release 3.5 builds: 30.8 to 38.0 TB; Release 3.4: 26.4 TB; Release 3.3: 24.3 TB).
 - **How the load is shared:** the central system serves the same unchanging file, and the user's device does the analysis. Repeat use can run from the downloaded offline copy.
-- **Daily use:** at 1% daily active use, 16 lakh cold downloads would be about 380 GB before caching (Release 3.4: 264 GB; Release 3.3: 243 GB; an earlier version of this page said 235 GB in error).
+- **Daily use:** at 1% daily active use, 16 lakh cold downloads would be about 392 GB before caching (Release 3.4: 264 GB; Release 3.3: 243 GB; an earlier version of this page said 235 GB in error).
 - **Today's host:** GitHub Pages, which serves the live link, has a soft bandwidth limit of 100 GB a month ([GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)): about 4 lakh first-time downloads of this file (the 46 MB demo video counts against the same budget). Repeat visits within ten minutes and the saved offline copy cost nothing. That is enough for pilots, not for a national rollout, which needs a CDN or partner hosting.
 - **Caveat:** real national capacity depends on peak traffic, geography, cache-hit rate, hosting limits and partner distribution. These estimates are planning inputs, not a load-test result.
 
@@ -120,7 +120,8 @@ Selecting a plan stores no profile, and no plan asks for a name, account number,
 ## Evidence for the current build
 
 **Release 3.5** ([release record](../evidence/Release-3.5-Verification.json))
-- **Checks:** 1,742 automated checks: 24 release suites plus 796/796 developer-case expectations; browser journeys 130/130 in each of 3 runs.
+- **Checks:** 1,820 automated checks: 25 release suites plus 842/842 developer-case expectations; browser journeys 130/130 in each of 3 runs.
+- **Fresh sealed set (blind-v10), scored once:** checker 3.6 warned on 83.8% [74.2–90.3] of fraud messages (67 of 80), 16 of 25 subtle frauds and 13.3% [7.8–21.9] of ordinary messages (12 of 90); fraud rated High 70% [59.2–78.9]. The rule written before scoring (no new false alarm and no fraud warning lost) held, so checker 3.6 replaced 3.5 inside Release 3.5. ([record](../evidence/Blind-Evaluation-v10.json)).
 - **Fresh sealed set (blind-v9), checker 3.5, scored once:** fraud warned 87.5% [78.5–93.1]; fraud or suspicious 80% [71.6–86.4]; ordinary messages warned 12.2% [7–20.6] ([record](../evidence/Blind-Evaluation-v9.json)).
 - **Speed of checker 3.5 (internal benchmark):** about 0.4 ms per ordinary message on the test computer, about 1.8 times checker 3.3; an unusual long input can take about 0.1–0.2 s the first time.
 - **Load:** Home usable in 5.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.4 s and Home is usable in about 8 s.

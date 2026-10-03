@@ -11,7 +11,7 @@
   ],
   "checks": [
     "Hindi-first UI",
-    "Opens on the Home page with four task choices and three more under \"More help\" (C-18, Release 3.5)",
+    "Opens on the Home page with complaints and rights first, the two checks next and practice under \"More help\" (C-18, UI-4)",
     "Empty validation",
     "Hindi suspicious example: five or more signs and a High risk verdict",
     "Result translation",
@@ -143,26 +143,26 @@
   ],
   "failures": [],
   "errors": [],
-  "htmlBytes": 825173,
-  "htmlSha256": "833C6BA15BA28421FE556E75CEF8810BE40697634F86BBC9448985151004F7B3",
-  "gzipBytes": 237291,
-  "simulatedLoadMs": 17633,
+  "htmlBytes": 848230,
+  "htmlSha256": "3135FA9A24B71B0A1A4931BD83837EA851EB8C30F09B7CE82B1674EA01CFF01A",
+  "gzipBytes": 244877,
+  "simulatedLoadMs": 18796,
   "simulatedLoadRunsMs": [
-    17633,
-    17613,
-    17824
+    18682,
+    20170,
+    18796
   ],
-  "simulatedLoadMedianMs": 17633,
+  "simulatedLoadMedianMs": 18796,
   "simulatedLoadRangeMs": [
-    17613,
-    17824
+    18682,
+    20170
   ],
   "gzipServedLoadRunsMs": [
-    5981,
-    5828,
-    5897
+    6542,
+    6425,
+    7048
   ],
-  "gzipServedLoadMedianMs": 5897,
+  "gzipServedLoadMedianMs": 6542,
   "simulation": "3 runs at 400 ms latency; 50,000 bytes/sec throughput (~400 kbps); 4x CPU slowdown; uncompressed file unless stated. Desktop simulation, not a physical low-end phone.",
   "unvalidated": [
     "Real user impact",

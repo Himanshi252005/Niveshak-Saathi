@@ -104,8 +104,8 @@ Every ordinary message that was flagged was a tricky look-alike. The biggest rem
 
 ## Release 3.5
 
-- **Result** on the build with the emerald menu and dark theme (3 October 2026): 92 fully right, 8 partly right, 0 wrong (14/14 checks). The per-persona results are in [`Real-World-User-Test.json`](../evidence/Real-World-User-Test.json).
-- **Checker:** Release 3.5 ships checker 3.5; its one-time result on the fresh sealed set blind-v9 is in the [validation](Validation-v3.md). The 100 personas were run again with it, before the design refresh: 92 fully right, 8 partly right, 0 wrong (14/14 checks).
+- **Result** on the UI-4 build (3 October 2026: rights-first Home, the family tracker, checker 3.6): 90 fully right, 10 partly right, 0 wrong (14/14 checks). The per-persona results are in [`Real-World-User-Test.json`](../evidence/Real-World-User-Test.json).
+- **Checker:** Release 3.5 ships checker 3.6; its one-time result on the fresh sealed set blind-v10 (and checker 3.5's on blind-v9) is in the [validation](Validation-v3.md). The 100 personas were run again with it, before the design refresh: 92 fully right, 8 partly right, 0 wrong (14/14 checks).
 
 ## Still open
 

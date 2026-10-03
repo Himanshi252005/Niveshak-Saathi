@@ -1,28 +1,28 @@
 {
   "dataset": "Developer-authored synthetic regression cases, also used in development (the original 189 plus cases added for model v3 and checkers 3.3 and 3.5). Not independent validation or real-world fraud accuracy; see the Blind-Evaluation records (blind-v3 to v5, v6, v8 and v9) for sealed tests.",
-  "version": "3.5",
-  "cases": 796,
-  "expectationsPassed": 796,
-  "supportedCases": 790,
+  "version": "3.6",
+  "cases": 842,
+  "expectationsPassed": 842,
+  "supportedCases": 836,
   "unsupportedCases": 6,
   "unsupportedCoveragePassed": 6,
-  "truePositive": 422,
-  "trueNegative": 368,
+  "truePositive": 456,
+  "trueNegative": 380,
   "falsePositive": 0,
   "falseNegative": 0,
   "binaryRecall": 1,
   "binaryPrecision": 1,
-  "supportedExactCategoryCases": 790,
+  "supportedExactCategoryCases": 836,
   "riskLevels": {
     "fraudHigh": {
-      "k": 327,
-      "n": 350,
-      "pct": 93.4
+      "k": 356,
+      "n": 384,
+      "pct": 92.7
     },
     "fraudWarned": {
-      "k": 346,
-      "n": 350,
-      "pct": 98.9
+      "k": 380,
+      "n": 384,
+      "pct": 99
     },
     "suspiciousWarned": {
       "k": 70,
@@ -31,13 +31,13 @@
     },
     "benignHigh": {
       "k": 2,
-      "n": 371,
+      "n": 383,
       "pct": 0.5
     },
     "benignWarned": {
       "k": 7,
-      "n": 371,
-      "pct": 1.9
+      "n": 383,
+      "pct": 1.8
     }
   },
   "model": {
@@ -11642,6 +11642,722 @@
       "label": "benign",
       "actual": [],
       "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-lpg-hi",
+      "language": "hi",
+      "channel": "sms",
+      "text": "आपका एलपीजी सिलेंडर रिफिल बुक हो गया है। बुकिंग संख्या 3307। डिलीवरी के समय कोड 4419 डिलीवरी कर्मचारी को बताएं। - गैस एजेंसी",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-lpg-en",
+      "language": "en",
+      "channel": "sms",
+      "text": "Your LPG cylinder refill is booked (booking no. 4410). Delivery in 2 days. Share code 3391 with the delivery person at the time of delivery. - Gas agency",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-never-pin",
+      "language": "en",
+      "channel": "email",
+      "text": "Remember: you never need a PIN to receive money. Entering your UPI PIN always sends money from your account.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-na-otp",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Branch se phone aaya tha. Unhone na OTP maanga, na koi link bheja. Bas KYC ke liye branch aane ko kaha.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-withdraw-nofee",
+      "language": "roman-hi",
+      "channel": "sms",
+      "text": "Aapka withdrawal process ho gaya hai. Withdrawal ke liye koi fees ya tax jama nahi karna hota.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-iepf-approved",
+      "language": "en",
+      "channel": "email",
+      "text": "Your refund claim for 300 shares and unpaid dividend of Kaveri Textiles Ltd has been approved by the IEPF Authority. No payment is required.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-dak-credit",
+      "language": "hi",
+      "channel": "sms",
+      "text": "आपके पीपीएफ़ खाते में ₹5,000 जमा हो गए हैं। कुल जमा ₹45,000। - डाक विभाग",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-trade-confirm",
+      "language": "en",
+      "channel": "sms",
+      "text": "BSE: Trades executed on 07-Oct-26 for client code XX4: BUY 10 TCS @ 3,950.00. Check your contract note. If not done by you, contact your broker.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-registrar",
+      "language": "en",
+      "channel": "email",
+      "text": "Dear Shareholder, your FY 2018-19 dividend is unpaid. To claim, send a signed request letter with a self-attested copy of your PAN and a cancelled cheque to our Registrar. There is no fee for this.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-friend",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Yaar, woh tips group wala chakkar chhod. Mere cousin ne loan app se udhaar lekar F&O khela aur 70k doob gaye. Udhaar leke trading kabhi mat karna.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-assure",
+      "language": "roman-hi",
+      "channel": "sms",
+      "text": "Hum kabhi bhi AnyDesk ya screen share app install karne ko nahi kehte. Ye log screen share ya remote access app download karwa ke account se paisa nikaal lete hain.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-fa-complaints",
+      "language": "en",
+      "channel": "email",
+      "text": "We have received complaints about fake apps that ask for a withdrawal fee. Genuine brokers never ask you to pay to withdraw your own money.",
+      "expected": [],
+      "label": "benign",
+      "actual": [],
+      "level": "none",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-dlv-phone",
+      "language": "hi",
+      "channel": "sms",
+      "text": "आपका एलपीजी सिलेंडर बुक हो गया है। डिलीवरी के समय कोड 5821 डिलीवरी कर्मचारी को बताएं। कोड 9876543210 पर भी भेजें।",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-dlv-link",
+      "language": "roman-hi",
+      "channel": "sms",
+      "text": "Gas cylinder refill booked. Delivery ke time OTP 7712 delivery boy ko batayein. Booking confirm karne ke liye https://bit.ly/gas-kyc par OTP bhi daalein.",
+      "expected": [
+        "link",
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets",
+        "link"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-never-tell",
+      "language": "en",
+      "channel": "sms",
+      "text": "We never ask OTP, tell the 6-digit code you received to confirm your KYC.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-hum-kabhi-ask",
+      "language": "roman-hi",
+      "channel": "call",
+      "text": "Hum kabhi bhi OTP nahi maangte, bas aapke phone par aaya code bata dijiye verification ke liye.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-pin-receive",
+      "language": "en",
+      "channel": "sms",
+      "text": "Congratulations! Enter your UPI PIN to receive ₹5,000 cashback in your account now.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-pin-takes",
+      "language": "en",
+      "channel": "sms",
+      "text": "Refund approved. Enter your UPI PIN, it takes 2 minutes to credit ₹3,200 to your account.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-pin-hi",
+      "language": "hi",
+      "channel": "whatsapp",
+      "text": "रिफ़ंड पाने के लिए यूपीआई पिन डालिए, रिफ़ंड आ जाता है 2 मिनट में।",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-withdraw-tax",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Withdrawal ke liye koi fees nahi, sirf 18% tax pehle jama karein tabhi paisa release hoga.",
+      "expected": [
+        "withdrawal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "withdrawal"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-withdraw-lekin",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Aapke withdrawal ke liye koi service fee nahi hai lekin ₹4,500 TDS pehle jama karna hoga.",
+      "expected": [
+        "withdrawal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "withdrawal"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-withdraw-en",
+      "language": "en",
+      "channel": "email",
+      "text": "No withdrawal fee is charged by us, but you must pay 10% tax before withdrawing your profit of ₹2,40,000.",
+      "expected": [
+        "withdrawal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "withdrawal"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-fee-then-due",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Withdrawal par koi fees nahi lagti, bas ek baar ₹999 activation charge jama karna hai.",
+      "expected": [
+        "withdrawal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "withdrawal"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-iepf-agent",
+      "language": "en",
+      "channel": "sms",
+      "text": "Your IEPF refund claim for 1,200 shares of Narmada Chemicals Ltd has been approved by the IEPF Authority. Call our agent on 9988776655 to receive it.",
+      "expected": [
+        "impersonation"
+      ],
+      "label": "fraud",
+      "actual": [
+        "impersonation"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-iepf-fee",
+      "language": "en",
+      "channel": "email",
+      "text": "Dear Claimant, your claim with SRN ending 552 for 1,200 shares and unpaid dividend has been approved by the IEPF Authority. Pay ₹2,500 processing fee to release it.",
+      "expected": [
+        "impersonation",
+        "withdrawal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "withdrawal",
+        "impersonation"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-kyc-approved-link",
+      "language": "en",
+      "channel": "sms",
+      "text": "Your KYC request with reference 88213 for the trading account has been approved by SEBI. Download the app from www.sebi-trade-app.in to start.",
+      "expected": [
+        "app",
+        "impersonation",
+        "link"
+      ],
+      "label": "fraud",
+      "actual": [
+        "app",
+        "impersonation",
+        "link"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-dak-fee",
+      "language": "hi",
+      "channel": "sms",
+      "text": "डाक विभाग: आपके खाते में ₹2,000 जमा कर दिए गए हैं। केवाईसी के लिए ₹99 शुल्क भेजें।",
+      "expected": [
+        "impersonation"
+      ],
+      "label": "fraud",
+      "actual": [
+        "impersonation"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-credited-fee",
+      "language": "hi",
+      "channel": "sms",
+      "text": "आपके खाते में ₹2,000 जमा कर दिए गए हैं। निकालने के लिए ₹200 शुल्क भेजें। - डाक विभाग",
+      "expected": [
+        "impersonation",
+        "withdrawal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "withdrawal",
+        "impersonation"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-trade-tip",
+      "language": "en",
+      "channel": "telegram",
+      "text": "NSE: Trades executed in your account: BUY 75 NIFTY 25000 CE @ 112.40. Target 150, SL 90. Join our VIP group for more calls.",
+      "expected": [
+        "social",
+        "tips"
+      ],
+      "label": "fraud",
+      "actual": [
+        "social",
+        "tips"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-trade-link",
+      "language": "en",
+      "channel": "sms",
+      "text": "Trades executed on 06-Oct: BUY 75 NIFTY 25000 CE @ 112.40. Check contract note at http://nse-contract-note.in/login",
+      "expected": [
+        "link",
+        "tips"
+      ],
+      "label": "fraud",
+      "actual": [
+        "tips",
+        "link"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-trade-advisory",
+      "language": "en",
+      "channel": "whatsapp",
+      "text": "Trade confirmation: BUY RELIANCE @ 2,400 executed by our advisory desk. Next call tomorrow 9:15, target 2,600.",
+      "expected": [
+        "tips"
+      ],
+      "label": "fraud",
+      "actual": [
+        "tips"
+      ],
+      "level": "caution",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-registrar-whatsapp",
+      "language": "en",
+      "channel": "whatsapp",
+      "text": "Dear Shareholder, your dividend is unpaid. Send PAN and a cancelled cheque to our Registrar on WhatsApp 9876543210.",
+      "expected": [
+        "personal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "personal"
+      ],
+      "level": "caution",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-registrar-fee",
+      "language": "en",
+      "channel": "email",
+      "text": "Dear Shareholder, to claim your unpaid dividend please send a self-attested copy of your PAN and a cancelled cheque to our Registrar with ₹750 processing fee.",
+      "expected": [
+        "personal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "personal"
+      ],
+      "level": "caution",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-registrar-email",
+      "language": "en",
+      "channel": "email",
+      "text": "To claim your unclaimed shares send your PAN, Aadhaar and cancelled cheque to our Registrar at kaveri.rta.claims@gmail.com",
+      "expected": [
+        "personal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "personal"
+      ],
+      "level": "caution",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-registrar-cash",
+      "language": "en",
+      "channel": "sms",
+      "text": "Send PAN and cancelled cheque to our Registrar. Our executive will collect ₹500 at your home.",
+      "expected": [
+        "personal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "personal"
+      ],
+      "level": "caution",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-peer-push",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Bhai, mere cousin ne 100% accuracy waale operator calls se 2 lakh kamaye. FD ka chakkar chhod de, group join kar le.",
+      "expected": [
+        "certainty",
+        "social",
+        "tips"
+      ],
+      "label": "fraud",
+      "actual": [
+        "certainty",
+        "social",
+        "tips"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-peer-group",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Mera cousin bhi 100% accuracy calls se kama raha hai. Udhaar leke trading kabhi mat karna, mera VIP group join kar, wahan sab safe hai.",
+      "expected": [
+        "certainty",
+        "social",
+        "tips"
+      ],
+      "label": "fraud",
+      "actual": [
+        "certainty",
+        "social",
+        "tips"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-contrast",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Mere cousin ne 1 lakh doobaye F&O me. F&O kabhi mat karna. Lekin ye 100% guaranteed scheme alag hai, 3% daily return milta hai.",
+      "expected": [
+        "certainty",
+        "doubling"
+      ],
+      "label": "fraud",
+      "actual": [
+        "certainty",
+        "doubling"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-contrast-2",
+      "language": "roman-hi",
+      "channel": "whatsapp",
+      "text": "Mere dost ka sab doob gaya trading me. Trading kabhi mat karna, bas hamare plan me 2% daily guaranteed hai.",
+      "expected": [
+        "certainty",
+        "doubling"
+      ],
+      "label": "fraud",
+      "actual": [
+        "certainty",
+        "doubling"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-complaints-ask",
+      "language": "en",
+      "channel": "sms",
+      "text": "We have received complaints about your account, share the OTP now to stop the suspension.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-complaints-pay",
+      "language": "en",
+      "channel": "email",
+      "text": "We have received complaints about your demat account. Pay ₹1,500 compliance fee today to avoid freezing.",
+      "expected": [
+        "threat",
+        "urgency"
+      ],
+      "label": "fraud",
+      "actual": [
+        "urgency",
+        "threat"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-genuine-gst",
+      "language": "en",
+      "channel": "whatsapp",
+      "text": "Genuine brokers never charge withdrawal fee, only GST of ₹3,000 is payable before release of your funds.",
+      "expected": [
+        "withdrawal"
+      ],
+      "label": "fraud",
+      "actual": [
+        "withdrawal"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-screen-share",
+      "language": "roman-hi",
+      "channel": "call",
+      "text": "Fraudsters account se paisa nikaal lete hain, isliye abhi screen share karein taaki hum aapka account secure kar sakein.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-anydesk",
+      "language": "roman-hi",
+      "channel": "call",
+      "text": "Ye log aapke account se paisa nikaal lete hain, AnyDesk download karein aur code batayein, hum account bachayenge.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-never-but",
+      "language": "en",
+      "channel": "sms",
+      "text": "We will never ask for your OTP. But for this verification, please share the OTP sent to your phone.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
+      "exact": true,
+      "coveragePass": true
+    },
+    {
+      "id": "r36-nn-pin-request",
+      "language": "en",
+      "channel": "sms",
+      "text": "Enter UPI PIN to receive ₹10,000. Entering PIN sends a request to the bank to credit you.",
+      "expected": [
+        "secrets"
+      ],
+      "label": "fraud",
+      "actual": [
+        "secrets"
+      ],
+      "level": "high",
       "exact": true,
       "coveragePass": true
     }

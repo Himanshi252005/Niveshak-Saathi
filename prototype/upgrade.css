@@ -431,6 +431,24 @@ footer details.about-app>div{padding:4px 0 8px}
 @media (prefers-reduced-motion:reduce){.pause-progress{animation:none}}
 
 @media print{.art,.mobile-dock{display:none!important}}
+/* ==== UI-4 (owner, 3 Oct 2026, from the judges' review) ====
+   Home leads with complaints, rights, urgent help and the family tracker; "Check before you trust anyone" heads the two
+   checking tools that follow. The Family asset map gains a tracker line (nominee and family progress, whether the list is kept
+   on this phone) and the "Remember this list on this phone" switch. Colours come from the theme's tokens, so both themes work. */
+#home .home-group-title{font-size:1rem;line-height:1.4;font-weight:650;color:var(--ink);margin:6px 0 0}
+#home .task-grid-check{margin-top:10px}
+.map-tracker{margin:6px 0 16px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--soft)}
+.map-tracker[hidden]{display:none}
+.map-tracker-line{margin:0 0 8px;font-weight:650;color:var(--ink)}
+.map-bar{height:8px;border-radius:999px;background:var(--line);overflow:hidden}
+.map-bar>span{display:block;height:100%;min-width:0;background:var(--brand);border-radius:999px}
+.map-tracker .map-kept{margin:8px 0 0;color:var(--ink)}
+.map-keep{margin:16px 0 8px;padding-top:12px;border-top:1px solid var(--line)}
+.map-keep label.check{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:650;color:var(--ink);cursor:pointer}
+.map-keep label.check input{width:22px;height:22px;flex:none;accent-color:var(--brand)}
+.map-keep p{margin:2px 0 10px}
+.map-keep #mapForget[hidden]{display:none}
+@media print{.map-keep,.map-tracker{display:none}}
 /* ==== Emerald menu and dark theme (owner, 3 Oct 2026: "make the light theme default"; "make the side bar colour emerald and
    the dark theme based on saturation of the colour of the model") ====
    Built on the green-and-white design (UI-1). The app always opens in the light theme; "Dark theme" in the menu switches it for

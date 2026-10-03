@@ -31,7 +31,7 @@ These are reviewed code, not content:
 - **Safety caveats and legal disclaimers.** For example, "no warning signs does not mean safe" and "not affiliated with SEBI".
 - **The list of allowed link domains:** `gov.in`, `nic.in`, `rbi.org.in`, `npci.org.in`, `nseindia.com`, `bseindia.com`, `nsdl.co.in`, `cdslindia.com`, `amfiindia.com`, `pfrda.org.in`. A lookalike or mistyped link is refused.
 - **Approved helpline numbers:** 1930, 14448, 1800 266 7575, 1800 22 7575, 155255, 1800 425 4732 and 14453, each read on its official page. Adding a number is a code change.
-- **The Family asset map.** Its choices, its single typed field (the institution's name, which refuses numbers, e-mail addresses and PAN) and the rule that nothing is saved are code.
+- **The Family asset map.** Its choices, its single typed field (the institution's name, which refuses numbers, e-mail addresses and PAN) and the rule that nothing is kept unless the user turns on "Remember this list on this phone" (then only the choices and names, in that browser) are code.
 - **The urgent route.** The "money already sent" route can be edited, but it cannot be removed or lose its helpline. Emergency mode hands users over to it.
 - **Route scope rules.**
   - An escalation route can only use levels of its own scope, so a bank, insurance or pension complaint can never be escalated to SCORES, and a securities complaint can never be sent to the RBI ombudsman.

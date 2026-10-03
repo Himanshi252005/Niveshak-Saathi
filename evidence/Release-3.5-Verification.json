@@ -4,8 +4,8 @@
   "release": "3.5",
   "app": {
     "file": "outputs/prototype/dist/index.html",
-    "bytes": 825173,
-    "sha256": "833C6BA15BA28421FE556E75CEF8810BE40697634F86BBC9448985151004F7B3"
+    "bytes": 848230,
+    "sha256": "3135FA9A24B71B0A1A4931BD83837EA851EB8C30F09B7CE82B1674EA01CFF01A"
   },
   "suites": [
     {
@@ -60,7 +60,7 @@
       "exitCode": 0,
       "summary": "all C-7 end-to-end checks passed",
       "failures": [],
-      "seconds": 6
+      "seconds": 8
     },
     {
       "suite": "Studio Emergency tab (C-8)",
@@ -69,7 +69,7 @@
       "exitCode": 0,
       "summary": "all 31 C-8 Studio checks passed",
       "failures": [],
-      "seconds": 7
+      "seconds": 10
     },
     {
       "suite": "Studio Help routes tab (C-9)",
@@ -78,7 +78,7 @@
       "exitCode": 0,
       "summary": "all 25 C-9 Studio checks passed",
       "failures": [],
-      "seconds": 7
+      "seconds": 10
     },
     {
       "suite": "Studio Action Packet tab (C-10)",
@@ -87,7 +87,7 @@
       "exitCode": 0,
       "summary": "all 19 C-10 Studio checks passed",
       "failures": [],
-      "seconds": 5
+      "seconds": 6
     },
     {
       "suite": "Studio Family tab (C-11)",
@@ -96,7 +96,7 @@
       "exitCode": 0,
       "summary": "all 19 C-11 Studio checks passed",
       "failures": [],
-      "seconds": 5
+      "seconds": 7
     },
     {
       "suite": "Independent boundary set (GPT, read-only)",
@@ -114,7 +114,7 @@
       "exitCode": 0,
       "summary": "13/13 integrated checks passed",
       "failures": [],
-      "seconds": 32
+      "seconds": 26
     },
     {
       "suite": "On-device assistant (C-15)",
@@ -132,7 +132,7 @@
       "exitCode": 0,
       "summary": "22/22 checks passed",
       "failures": [],
-      "seconds": 10
+      "seconds": 12
     },
     {
       "suite": "New-feature journeys (C-14, C-15)",
@@ -141,7 +141,7 @@
       "exitCode": 0,
       "summary": "23/23 checks passed",
       "failures": [],
-      "seconds": 3
+      "seconds": 5
     },
     {
       "suite": "Home choices, sharing and pilot session (C-17)",
@@ -150,16 +150,16 @@
       "exitCode": 0,
       "summary": "19/19 checks passed",
       "failures": [],
-      "seconds": 5
+      "seconds": 7
     },
     {
       "suite": "Professional app shell: Home, sidebar menu, phone menu, no emoji (C-18)",
       "file": "c18-shell.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "38/38 checks passed",
+      "summary": "39/39 checks passed",
       "failures": [],
-      "seconds": 16
+      "seconds": 29
     },
     {
       "suite": "Persona safety plans and reliability abstention (C-19)",
@@ -168,7 +168,7 @@
       "exitCode": 0,
       "summary": "27/27 checks passed",
       "failures": [],
-      "seconds": 3
+      "seconds": 6
     },
     {
       "suite": "100 simulated personas and stress inputs (C-20)",
@@ -177,7 +177,7 @@
       "exitCode": 0,
       "summary": "14/14 checks passed (100 users: 92 right, 8 partly, 0 wrong)",
       "failures": [],
-      "seconds": 54
+      "seconds": 103
     },
     {
       "suite": "Source-backed grievance, rights, family and persona content (P1, H-3)",
@@ -186,7 +186,7 @@
       "exitCode": 0,
       "summary": "39/39 checks passed",
       "failures": [],
-      "seconds": 12
+      "seconds": 25
     },
     {
       "suite": "Privacy notes, security policy and version line (P2, H-5)",
@@ -195,7 +195,7 @@
       "exitCode": 0,
       "summary": "29/29 checks passed",
       "failures": [],
-      "seconds": 7
+      "seconds": 11
     },
     {
       "suite": "Rights and help, step-by-step guides and family asset map (Release 3.5)",
@@ -204,7 +204,7 @@
       "exitCode": 0,
       "summary": "62/62 checks passed",
       "failures": [],
-      "seconds": 9
+      "seconds": 12
     },
     {
       "suite": "Emerald menu, light-by-default dark theme and text contrast in both themes (C-27)",
@@ -213,34 +213,43 @@
       "exitCode": 0,
       "summary": "25/25 checks passed",
       "failures": [],
-      "seconds": 26
+      "seconds": 38
+    },
+    {
+      "suite": "Rights-first Home, family tracker kept only if chosen, checker 3.6 in the app (C-28, UI-4)",
+      "file": "c28-ui4.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "C-28: 31/31 checks passed",
+      "failures": [],
+      "seconds": 11
     },
     {
       "suite": "Release 3.0 browser suite (single run; see Browser-Validation.json)",
       "file": "verify-v3.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "130/130 checks passed; throttled load 17570 ms; 825173 bytes",
+      "summary": "130/130 checks passed; throttled load 23792 ms; 848230 bytes",
       "failures": [],
-      "seconds": 31
+      "seconds": 56
     }
   ],
   "allPassed": true,
   "ruleRegression": {
-    "version": "3.5",
-    "cases": 796,
-    "expectationsPassed": 796,
-    "truePositive": 422,
-    "trueNegative": 368,
+    "version": "3.6",
+    "cases": 842,
+    "expectationsPassed": 842,
+    "truePositive": 456,
+    "trueNegative": 380,
     "falseNegative": 0,
     "falsePositive": 0,
     "unsupported": 6,
     "riskLevels": {
-      "fraudHigh": "327/350 (93.4%)",
-      "fraudWarned": "346/350 (98.9%)",
+      "fraudHigh": "356/384 (92.7%)",
+      "fraudWarned": "380/384 (99%)",
       "suspiciousWarned": "70/75 (93.3%)",
-      "benignHigh": "2/371 (0.5%)",
-      "benignWarned": "7/371 (1.9%)"
+      "benignHigh": "2/383 (0.5%)",
+      "benignWarned": "7/383 (1.8%)"
     }
   },
   "note": "Sequential local runs in headless Edge on Windows. Live-link results depend on the network at the time of the run."
