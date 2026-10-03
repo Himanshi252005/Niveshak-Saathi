@@ -13,7 +13,7 @@ Niveshak Saathi helps people use their investor rights: complain in the right pl
 | **Start here** | [`JUDGES.md`](JUDGES.md): one page with the S.01–S.06 map, Track B fit, evidence and limits |
 | **Live link** | **[Open Niveshak Saathi](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified **Release 3.5** build, in any phone or computer browser. No installation, account or server. To keep it offline, use "Save offline copy" in the app or download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") |
 | **Switch to English** | The app opens in Hindi. Use the language menu at the top right and choose "English" |
-| **Demo video (S.05)** | **[Watch the demo](https://himanshi252005.github.io/Niveshak-Saathi/demo/)** (4:58; English and Hindi captions, no voice-over; fictional data; recorded on 3 October 2026, before Home led with rights and before the family tracker) |
+
 
 | Required item | Where to find it |
 |---|---|
