@@ -1,10 +1,10 @@
 {
  "test": "100-user real-world test and stress inputs",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "app": {
   "file": "index.html",
-  "bytes": 760824,
-  "sha256": "244FAD4E8B28C47CA2BCC4BFE5E350E1C877BB64E8BBFD8BFFB544383C73B32C"
+  "bytes": 806663,
+  "sha256": "4F494B8D764F34CB692E02BA9F219634D16DD3B48EEFC8F4D6FDE9BA736A2A5E"
  },
  "note": "AI-written fictional users, used to find and fix problems in Release 3.3: a regression test, not a real-world accuracy result. Grades: pass = fully right, weak = partly right, fail = wrong.",
  "checksPassed": 14,
@@ -70,14 +70,14 @@
  "users": {
   "total": 100,
   "grades": {
-   "pass": 92,
-   "weak": 8,
+   "pass": 91,
+   "weak": 9,
    "fail": 0
   },
   "byJourney": {
    "check": {
-    "pass": 50,
-    "weak": 0,
+    "pass": 49,
+    "weak": 1,
     "fail": 0
    },
    "paycheck": {
@@ -108,8 +108,8 @@
   },
   "byLabel": {
    "fraud": {
-    "pass": 23,
-    "weak": 0,
+    "pass": 22,
+    "weak": 1,
     "fail": 0
    },
    "benign": {
@@ -145,8 +145,8 @@
   },
   "byLanguage": {
    "hinglish": {
-    "pass": 14,
-    "weak": 0,
+    "pass": 13,
+    "weak": 1,
     "fail": 0
    },
    "hi": {
@@ -421,10 +421,12 @@
     "language": "hinglish",
     "ui": "hi",
     "device": "384x800",
-    "grade": "pass",
-    "kind": "ok",
+    "grade": "weak",
+    "kind": "speed",
     "why": "High",
-    "issues": []
+    "issues": [
+     "weak/speed: result took 1506 ms"
+    ]
    },
    {
     "id": "P021",
@@ -1396,7 +1398,7 @@
   {
    "name": "huge paste (10,000 chars, scam at the end)",
    "chars": 9659,
-   "ms": 174,
+   "ms": 211,
    "level": "high",
    "coverage": false,
    "typed": 9659,
@@ -1410,7 +1412,7 @@
   {
    "name": "one 6,000-char word",
    "chars": 6000,
-   "ms": 46,
+   "ms": 123,
    "level": "none",
    "coverage": false,
    "typed": 6000,
@@ -1424,7 +1426,7 @@
   {
    "name": "emoji only",
    "chars": 10,
-   "ms": 41,
+   "ms": 56,
    "level": "none",
    "coverage": true,
    "typed": 10,
@@ -1438,7 +1440,7 @@
   {
    "name": "scam words split by invisible characters",
    "chars": 66,
-   "ms": 51,
+   "ms": 55,
    "level": "high",
    "coverage": false,
    "typed": 66,
@@ -1452,7 +1454,7 @@
   {
    "name": "pasted HTML image with script handler",
    "chars": 69,
-   "ms": 40,
+   "ms": 78,
    "level": "high",
    "coverage": false,
    "typed": 69,
@@ -1466,7 +1468,7 @@
   {
    "name": "pasted script tag",
    "chars": 59,
-   "ms": 64,
+   "ms": 81,
    "level": "high",
    "coverage": false,
    "typed": 59,
@@ -1480,7 +1482,7 @@
   {
    "name": "link with javascript: scheme",
    "chars": 63,
-   "ms": 45,
+   "ms": 61,
    "level": "none",
    "coverage": false,
    "typed": 63,
@@ -1494,7 +1496,7 @@
   {
    "name": "Urdu right-to-left text",
    "chars": 53,
-   "ms": 63,
+   "ms": 50,
    "level": "none",
    "coverage": true,
    "typed": 53,
@@ -1508,7 +1510,7 @@
   {
    "name": "whitespace only",
    "chars": 11,
-   "ms": 49,
+   "ms": 52,
    "level": null,
    "coverage": false,
    "typed": 11,
@@ -1522,7 +1524,7 @@
   {
    "name": "only numbers",
    "chars": 34,
-   "ms": 62,
+   "ms": 57,
    "level": "none",
    "coverage": true,
    "typed": 34,
@@ -1536,7 +1538,7 @@
   {
    "name": "Devanagari digits scam",
    "chars": 53,
-   "ms": 46,
+   "ms": 58,
    "level": "high",
    "coverage": false,
    "typed": 53,
@@ -1550,7 +1552,7 @@
   {
    "name": "lookalike official domain",
    "chars": 104,
-   "ms": 69,
+   "ms": 91,
    "level": "high",
    "coverage": false,
    "typed": 104,
@@ -1564,7 +1566,7 @@
   {
    "name": "all caps shouting",
    "chars": 88,
-   "ms": 59,
+   "ms": 76,
    "level": "high",
    "coverage": false,
    "typed": 88,
@@ -1578,7 +1580,7 @@
   {
    "name": "markdown and forwarded header",
    "chars": 108,
-   "ms": 59,
+   "ms": 134,
    "level": "caution",
    "coverage": false,
    "typed": 108,
@@ -1592,7 +1594,7 @@
   {
    "name": "legit long bank SMS",
    "chars": 165,
-   "ms": 65,
+   "ms": 71,
    "level": "none",
    "coverage": false,
    "typed": 165,
@@ -1609,7 +1611,7 @@
   },
   {
    "name": "browser Back after a check",
-   "url": "http://127.0.0.1:51542/",
+   "url": "http://127.0.0.1:63288/",
    "home": true,
    "visible": [
     "home"

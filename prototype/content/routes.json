@@ -384,6 +384,13 @@
       "tips": [
         {
           "text": {
+            "en": "Not this door: SCORES does not take complaints about unregistered or unregulated activity (such as a tip group or app not registered with SEBI), fake or forged documents, or other regulators' matters. If such a group or app took your money, choose \"Possible fraud\" instead.",
+            "hi": "यह रास्ता नहीं: SCORES बिना पंजीकरण या बिना नियमन वाली गतिविधि (जैसे SEBI में पंजीकृत न होने वाला टिप ग्रुप या ऐप), जाली दस्तावेज़ या दूसरे नियामकों के मामलों की शिकायत नहीं लेता। ऐसे ग्रुप या ऐप ने पैसा लिया है, तो \"संभावित धोखाधड़ी\" चुनें।"
+          },
+          "sourceId": "scores"
+        },
+        {
+          "text": {
             "en": "Shares moved out of your demat without your consent? Complain to your DP in writing at once. If forgery or hacking is involved, also report it to the police through cybercrime.gov.in or 1930.",
             "hi": "आपकी मंज़ूरी के बिना डीमैट से शेयर निकल गए? तुरंत अपने DP को लिखित शिकायत करें। जालसाज़ी या हैकिंग हो तो cybercrime.gov.in या 1930 के ज़रिए पुलिस को भी रिपोर्ट करें।"
           },
@@ -430,6 +437,13 @@
         }
       ],
       "tips": [
+        {
+          "text": {
+            "en": "Not this door: SCORES does not take complaints about unregistered or unregulated activity (such as a tip group or app not registered with SEBI), fake or forged documents, or other regulators' matters. If such a group or app took your money, choose \"Possible fraud\" instead.",
+            "hi": "यह रास्ता नहीं: SCORES बिना पंजीकरण या बिना नियमन वाली गतिविधि (जैसे SEBI में पंजीकृत न होने वाला टिप ग्रुप या ऐप), जाली दस्तावेज़ या दूसरे नियामकों के मामलों की शिकायत नहीं लेता। ऐसे ग्रुप या ऐप ने पैसा लिया है, तो \"संभावित धोखाधड़ी\" चुनें।"
+          },
+          "sourceId": "scores"
+        },
         {
           "text": {
             "en": "Lost paper share certificates? Ask the company or its RTA for the duplicate process: an affidavit and an indemnity bond, plus a police report (FIR) and a newspaper advert only if the shares are worth over ₹5 lakh. Duplicates now come only in demat form.",
@@ -482,6 +496,13 @@
         }
       ],
       "tips": [
+        {
+          "text": {
+            "en": "Not this door: SCORES does not take complaints about unregistered or unregulated activity (such as a tip group or app not registered with SEBI), fake or forged documents, or other regulators' matters. If such a group or app took your money, choose \"Possible fraud\" instead.",
+            "hi": "यह रास्ता नहीं: SCORES बिना पंजीकरण या बिना नियमन वाली गतिविधि (जैसे SEBI में पंजीकृत न होने वाला टिप ग्रुप या ऐप), जाली दस्तावेज़ या दूसरे नियामकों के मामलों की शिकायत नहीं लेता। ऐसे ग्रुप या ऐप ने पैसा लिया है, तो \"संभावित धोखाधड़ी\" चुनें।"
+          },
+          "sourceId": "scores"
+        },
         {
           "text": {
             "en": "Can't find an old mutual fund investment? SEBI's MITRA platform helps trace unclaimed mutual fund money.",

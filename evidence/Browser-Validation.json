@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-02",
+  "checkedAt": "2026-10-03",
   "suite": "work/claude-tests/verify-v3.cjs (Release 3.0 suite; includes all 42 version 2 checks by name)",
   "browser": "Installed Microsoft Edge, headless",
   "passed": 130,
@@ -143,26 +143,26 @@
   ],
   "failures": [],
   "errors": [],
-  "htmlBytes": 760824,
-  "htmlSha256": "244FAD4E8B28C47CA2BCC4BFE5E350E1C877BB64E8BBFD8BFFB544383C73B32C",
-  "gzipBytes": 222032,
-  "simulatedLoadMs": 17566,
+  "htmlBytes": 806663,
+  "htmlSha256": "4F494B8D764F34CB692E02BA9F219634D16DD3B48EEFC8F4D6FDE9BA736A2A5E",
+  "gzipBytes": 233477,
+  "simulatedLoadMs": 18187,
   "simulatedLoadRunsMs": [
-    16981,
-    17566,
-    17639
+    17888,
+    18187,
+    19161
   ],
-  "simulatedLoadMedianMs": 17566,
+  "simulatedLoadMedianMs": 18187,
   "simulatedLoadRangeMs": [
-    16981,
-    17639
+    17888,
+    19161
   ],
   "gzipServedLoadRunsMs": [
-    7495,
-    7004,
-    7035
+    7284,
+    7233,
+    9851
   ],
-  "gzipServedLoadMedianMs": 7035,
+  "gzipServedLoadMedianMs": 7284,
   "simulation": "3 runs at 400 ms latency; 50,000 bytes/sec throughput (~400 kbps); 4x CPU slowdown; uncompressed file unless stated. Desktop simulation, not a physical low-end phone.",
   "unvalidated": [
     "Real user impact",

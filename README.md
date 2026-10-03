@@ -13,7 +13,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | **Start here** | [`JUDGES.md`](JUDGES.md): one page with the S.01–S.06 map, Track B fit, evidence and limits |
 | **Live link** | **[Open Niveshak Saathi](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified **Release 3.5** build, in any phone or computer browser. No installation, account or server. To keep it offline, use "Save offline copy" in the app or download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") |
 | **Switch to English** | The app opens in Hindi. Use the language menu at the top right and choose "English" |
-| **Demo video (S.05)** | **[Watch the demo](https://himanshi252005.github.io/Niveshak-Saathi/demo/)** (4:37; English and Hindi captions; recorded from this build with fictional data) |
+| **Demo video (S.05)** | **[Watch the demo](https://himanshi252005.github.io/Niveshak-Saathi/demo/)** (4:52; English and Hindi captions; recorded from this build with fictional data) |
 
 | Required item | Where to find it |
 |---|---|
@@ -40,11 +40,11 @@ Each person has a fixed safety plan on Home, under "Plans for people like you". 
 
 **Check before you act**
 - **Check a message.** Paste a message and get High risk, Caution or No known signs, with reasons in plain Hindi or English and an official source for each. It works out promised returns in plain numbers, flags suspicious links and payment IDs, and says how sure it is. Long forwards (up to 30,000 characters) are checked in parts. "Warn my family" prepares a WhatsApp-ready warning without the scam's link.
-- **Before you pay.** Three quick questions (what for, who asked, where to pay), with an optional UPI ID and promised return, give STOP or VERIFY and the official way to check: SEBI's "@valid" UPI IDs, SEBI Check, IPO applications only through ASBA, and RBI Sachet for deposit schemes.
+- **Before you pay.** Three quick questions (what for, who asked, where to pay), with an optional UPI ID and promised return, give STOP or VERIFY and the official way to check: SEBI's "@valid" UPI IDs, SEBI Check, IPO applications only through ASBA, and RBI Sachet for deposit schemes. Paying a UPI ID or a person's account adds I4C's Suspect Search, with I4C's own warning that "not found" proves nothing. A STOP answer offers a 30-second pause.
 
 **If something went wrong**
-- **Get help now.** Type or dictate what happened in your own words; an on-device keyword-based parser fills in the answers for you to check. The plan starts with stopping contact if it is still happening, then the bank and 1930. Recovery is never promised.
-- **Where to complain.** Ten routes, with official time limits where they apply, for example the RBI Ombudsman's 30-day wait and 90-day window, or SCORES within one year. A bank, insurance or pension complaint is never sent to SEBI, and "Not sure" never guesses. Routes link to the matching step-by-step guide.
+- **Get help now.** Type or dictate what happened in your own words; an on-device keyword-based parser fills in the answers for you to check. The plan starts with stopping contact if it is still happening, then the bank and 1930; if a trading login or OTP was shared, it adds asking the broker to freeze online access to the trading account (SEBI's rule since 1 July 2024). Recovery is never promised.
+- **Where to complain.** Ten routes, with official time limits where they apply, for example the RBI Ombudsman's 30-day wait and 90-day window, or SCORES within one year. A bank, insurance or pension complaint is never sent to SEBI, and "Not sure" never guesses. Routes link to the matching step-by-step guide, and the SCORES routes say what SCORES will not take (for example an unregistered tip group) and where to go instead.
 - **Prepare a complaint.** A private packet that will not save while an OTP, PIN, password, CVV or card number is in it (Hindi digits included). It says plainly that it has not been submitted.
 
 **Know your rights (new in Release 3.5)**
@@ -56,6 +56,7 @@ Each person has a fixed safety plan on Home, under "Plans for people like you". 
 **Learn and protect**
 - **Family safety**, with the new **Family asset map** (Track B "Nominee & Family Wealth Tracker"). One row per investment: type, institution name, nominee status, where the papers are, and who in the family knows. The institution name is the only typed field, and it refuses numbers, e-mail addresses and PAN. Download or print the list, and reopen the downloaded list later on the phone; the app itself saves nothing. Shares or mutual funds without a nominee link to the nominee guide. The tick-only family checklist and printable family card remain.
 - **My safety plan** for Praveen, Kavita and Babulal, and **Practise** with made-up messages, before-and-after scores and a habit card.
+- **Design:** a calm black-and-white design: warm paper background, ink text, hairline cards and pill buttons, and black-and-white line drawings that draw themselves in (still for people who ask for less motion) on Home, beside each page heading and above each answer.
 - **Everyday use:** a short menu (six pages, the rest under "More pages"); a Paste button, a tip to speak the message with the phone keyboard's microphone instead of typing, and one to copy the words of a message that arrived as a picture; read-aloud with the phone's own voice, large text, phone layouts, a working phone Back button, "Save offline copy" and "Share this app".
 - **Owner Studio:** a local editor, never part of the public app, where the content owner edits and validates all bilingual content, sources, guides and plans before a rebuild.
 
@@ -79,11 +80,11 @@ Each person has a fixed safety plan on Home, under "Plans for people like you". 
 All accuracy figures come from synthetic messages and AI-written personas, not from real users. No pilot has been run yet.
 
 **Release 3.5** ([release record](evidence/Release-3.5-Verification.json))
-- 1,705 automated checks: 23 release suites plus 796/796 developer-case expectations.
+- 1,715 automated checks: 23 release suites plus 796/796 developer-case expectations.
 - **Fresh sealed set blind-v9** (200 messages written and sealed by a separate AI agent before checker 3.5 was frozen; scored once after the freeze): fraud warned 87.5% [78.5–93.1] (checker 3.3 on the same messages: 82.5%); fraud rated High 78.8% [68.6–86.3] (3.3: 67.5%); subtle fraud warned 18 of 25 (3.3: 15); ordinary messages warned 12.2% [7–20.6] (3.3: 11.1%). Two of the three targets were met (fraud warned ≥85%, subtle fraud ≥70%); ordinary messages ≤8% was missed.
 - The rule written before scoring also required no more ordinary messages warned than checker 3.3. Checker 3.5 warned one more (11 of 90 against 10, the extra one at Caution; 9 at High for both). The owner shipped it because fraud at High improved significantly (paired test, p = 0.0117) ([record](evidence/Blind-Evaluation-v9.json)).
-- 100-persona simulated test (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
-- Size: 760,824 bytes, 222,032 bytes with gzip; Home usable in 7.0 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 12 s.
+- 100-persona simulated test (AI-written personas; no real users): 91 fully right, 9 partly right, 0 wrong (14/14 checks).
+- Size: 806,663 bytes, 233,477 bytes with gzip; Home usable in 7.3 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 8 s.
 
 **Release 3.4 (history; verified 2 October 2026, never deployed)**
 - **Sealed set blind-v8** (200 messages written by a separate AI agent, scored once), with the shipped checker 3.3:
@@ -98,7 +99,7 @@ These are engineering results, not proof of real-world accuracy, national capaci
 
 ## How this was built
 
-The team built Niveshak Saathi with AI coding assistants, which helped write the code, tests, synthetic test messages and documents. Every change to advice was checked against an official page during development, and each step in the app shows its source; 29 sources still await the named reviewer and show "review pending". All accuracy numbers come from synthetic test sets, not from real users.
+The team built Niveshak Saathi with AI coding assistants, which helped write the code, tests, synthetic test messages and documents. Every change to advice was checked against an official page during development, and each step in the app shows its source; 31 sources still await the named reviewer and show "review pending". All accuracy numbers come from synthetic test sets, not from real users.
 
 ## Repository map
 
@@ -111,6 +112,7 @@ The team built Niveshak Saathi with AI coding assistants, which helped write the
 | [`docs/SCALE-AND-RELIABILITY.md`](docs/SCALE-AND-RELIABILITY.md) | Scale design and AI/ML reliability plan |
 | [`docs/REAL-WORLD-USER-TEST.md`](docs/REAL-WORLD-USER-TEST.md) | The 100-persona simulated test and the fixes it led to |
 | [`docs/Operations-and-Pilot-Kit.md`](docs/Operations-and-Pilot-Kit.md) | Pilot protocol, consent script and targets |
+| [`docs/MARKET-COMPARISON.md`](docs/MARKET-COMPARISON.md) | How Niveshak Saathi compares with 23 tools people use today, and what it borrows from them |
 | [`docs/Delivery-Status.md`](docs/Delivery-Status.md) | Which release is where |
 | [`evidence/`](evidence/) | Machine-readable verification records |
 | [`evaluation/`](evaluation/) | Sealed message sets, their scorer and the 100-persona test kit |

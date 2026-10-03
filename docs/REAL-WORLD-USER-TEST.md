@@ -104,8 +104,8 @@ Every ordinary message that was flagged was a tricky look-alike. The biggest rem
 
 ## Release 3.5
 
-- **Result:** 92 fully right, 8 partly right, 0 wrong (14/14 checks). The per-persona results are in [`Real-World-User-Test.json`](../evidence/Real-World-User-Test.json).
-- **Checker:** Release 3.5 ships checker 3.5; its one-time result on the fresh sealed set blind-v9 is in the [validation](Validation-v3.md). The 100 personas were run again with it: 92 fully right, 8 partly right, 0 wrong (14/14 checks).
+- **Result** on the build with the design refresh (3 October 2026): 91 fully right, 9 partly right, 0 wrong (14/14 checks). One "partly right" is only a speed flag: P020's check took 1,506 ms, over the 1.5-second limit for "fully right"; the verdict was right. Timed side by side on a quiet test computer (internal; the 50 message checks, 2 runs each), a check took a median of 228 ms with the refresh against 180 ms before it, and none took over 1.5 s. The release run of the same build recorded 89 fully right, 11 partly right and 0 wrong (that run keeps no per-persona details). The per-persona results are in [`Real-World-User-Test.json`](../evidence/Real-World-User-Test.json).
+- **Checker:** Release 3.5 ships checker 3.5; its one-time result on the fresh sealed set blind-v9 is in the [validation](Validation-v3.md). The 100 personas were run again with it, before the design refresh: 92 fully right, 8 partly right, 0 wrong (14/14 checks).
 
 ## Still open
 

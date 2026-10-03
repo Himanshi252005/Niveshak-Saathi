@@ -1,139 +1,387 @@
 {
   "schemaVersion": 1,
-  "eyebrow": { "en": "Act first. Learn later.", "hi": "पहले बचाव, फिर जानकारी।" },
-  "title": { "en": "What happened? Get your safety steps", "hi": "क्या हुआ? अपने सुरक्षा कदम जानें" },
-  "intro": { "en": "Answer a few quick questions and follow the steps in order. This app never asks for your OTP, PIN, password or card number.", "hi": "कुछ छोटे सवालों के जवाब दें और कदम क्रम से उठाएँ। यह ऐप कभी आपका OTP, PIN, पासवर्ड या कार्ड नंबर नहीं माँगता।" },
+  "eyebrow": {
+    "en": "Act first. Learn later.",
+    "hi": "पहले बचाव, फिर जानकारी।"
+  },
+  "title": {
+    "en": "What happened? Get your safety steps",
+    "hi": "क्या हुआ? अपने सुरक्षा कदम जानें"
+  },
+  "intro": {
+    "en": "Answer a few quick questions and follow the steps in order. This app never asks for your OTP, PIN, password or card number.",
+    "hi": "कुछ छोटे सवालों के जवाब दें और कदम क्रम से उठाएँ। यह ऐप कभी आपका OTP, PIN, पासवर्ड या कार्ड नंबर नहीं माँगता।"
+  },
   "callNow": {
     "helplineId": "cyber-1930",
-    "label": { "en": "Call 1930 now", "hi": "अभी 1930 पर कॉल करें" },
-    "note": { "en": "Sent money because of a suspicious message or call? Call the cyber crime helpline 1930 and your bank straight away, then come back to these steps.", "hi": "संदिग्ध संदेश या कॉल के कारण पैसे भेजे? तुरंत साइबर अपराध हेल्पलाइन 1930 और अपने बैंक को कॉल करें, फिर इन कदमों पर लौटें।" }
+    "label": {
+      "en": "Call 1930 now",
+      "hi": "अभी 1930 पर कॉल करें"
+    },
+    "note": {
+      "en": "Sent money because of a suspicious message or call? Call the cyber crime helpline 1930 and your bank straight away, then come back to these steps.",
+      "hi": "संदिग्ध संदेश या कॉल के कारण पैसे भेजे? तुरंत साइबर अपराध हेल्पलाइन 1930 और अपने बैंक को कॉल करें, फिर इन कदमों पर लौटें।"
+    }
   },
-  "situationsQuestion": { "en": "1. What happened? Choose all that apply.", "hi": "1. क्या हुआ? जो भी लागू हो, सब चुनें।" },
+  "situationsQuestion": {
+    "en": "1. What happened? Choose all that apply.",
+    "hi": "1. क्या हुआ? जो भी लागू हो, सब चुनें।"
+  },
   "situations": [
-    { "id": "received", "label": { "en": "I only received a message or call", "hi": "मुझे केवल संदेश या कॉल आया" } },
-    { "id": "clicked", "label": { "en": "I clicked a link or installed an app", "hi": "मैंने लिंक खोला या ऐप इंस्टॉल किया" } },
-    { "id": "shared", "label": { "en": "I shared an OTP, PIN, password or screen access", "hi": "मैंने OTP, PIN या पासवर्ड बताया, या किसी को अपनी स्क्रीन दिखाई या फ़ोन चलाने दिया" } },
-    { "id": "paid", "label": { "en": "I sent money or made a payment", "hi": "मैंने पैसे भेजे या भुगतान किया" } }
+    {
+      "id": "received",
+      "label": {
+        "en": "I only received a message or call",
+        "hi": "मुझे केवल संदेश या कॉल आया"
+      }
+    },
+    {
+      "id": "clicked",
+      "label": {
+        "en": "I clicked a link or installed an app",
+        "hi": "मैंने लिंक खोला या ऐप इंस्टॉल किया"
+      }
+    },
+    {
+      "id": "shared",
+      "label": {
+        "en": "I shared an OTP, PIN, password or screen access",
+        "hi": "मैंने OTP, PIN या पासवर्ड बताया, या किसी को अपनी स्क्रीन दिखाई या फ़ोन चलाने दिया"
+      }
+    },
+    {
+      "id": "paid",
+      "label": {
+        "en": "I sent money or made a payment",
+        "hi": "मैंने पैसे भेजे या भुगतान किया"
+      }
+    }
   ],
-  "ongoingQuestion": { "en": "2. Is it still happening?", "hi": "2. क्या यह अभी भी चल रहा है?" },
+  "ongoingQuestion": {
+    "en": "2. Is it still happening?",
+    "hi": "2. क्या यह अभी भी चल रहा है?"
+  },
   "ongoingOptions": [
-    { "id": "yes", "label": { "en": "Yes, someone still has access or keeps asking", "hi": "हाँ, किसी के पास अब भी मेरे फ़ोन/खाते तक पहुँच है, या कोई बार-बार पैसे या जानकारी माँग रहा है" } },
-    { "id": "no", "label": { "en": "No", "hi": "नहीं" } },
-    { "id": "unsure", "label": { "en": "Not sure", "hi": "पक्का नहीं पता" } }
+    {
+      "id": "yes",
+      "label": {
+        "en": "Yes, someone still has access or keeps asking",
+        "hi": "हाँ, किसी के पास अब भी मेरे फ़ोन/खाते तक पहुँच है, या कोई बार-बार पैसे या जानकारी माँग रहा है"
+      }
+    },
+    {
+      "id": "no",
+      "label": {
+        "en": "No",
+        "hi": "नहीं"
+      }
+    },
+    {
+      "id": "unsure",
+      "label": {
+        "en": "Not sure",
+        "hi": "पक्का नहीं पता"
+      }
+    }
   ],
-  "channelQuestion": { "en": "3. How did you pay?", "hi": "3. आपने भुगतान कैसे किया?" },
+  "channelQuestion": {
+    "en": "3. How did you pay?",
+    "hi": "3. आपने भुगतान कैसे किया?"
+  },
   "channelOptions": [
-    { "id": "upi", "label": { "en": "UPI", "hi": "UPI (यूपीआई)" } },
-    { "id": "card", "label": { "en": "Debit or credit card", "hi": "डेबिट या क्रेडिट कार्ड" } },
-    { "id": "bank", "label": { "en": "Bank transfer or net banking", "hi": "बैंक ट्रांसफ़र या नेट बैंकिंग" } },
-    { "id": "wallet", "label": { "en": "Wallet or prepaid card", "hi": "वॉलेट या प्रीपेड कार्ड" } },
-    { "id": "cash", "label": { "en": "Cash or something else", "hi": "नकद या कुछ और" } },
-    { "id": "unsure", "label": { "en": "Not sure", "hi": "पक्का नहीं पता" } }
+    {
+      "id": "upi",
+      "label": {
+        "en": "UPI",
+        "hi": "UPI (यूपीआई)"
+      }
+    },
+    {
+      "id": "card",
+      "label": {
+        "en": "Debit or credit card",
+        "hi": "डेबिट या क्रेडिट कार्ड"
+      }
+    },
+    {
+      "id": "bank",
+      "label": {
+        "en": "Bank transfer or net banking",
+        "hi": "बैंक ट्रांसफ़र या नेट बैंकिंग"
+      }
+    },
+    {
+      "id": "wallet",
+      "label": {
+        "en": "Wallet or prepaid card",
+        "hi": "वॉलेट या प्रीपेड कार्ड"
+      }
+    },
+    {
+      "id": "cash",
+      "label": {
+        "en": "Cash or something else",
+        "hi": "नकद या कुछ और"
+      }
+    },
+    {
+      "id": "unsure",
+      "label": {
+        "en": "Not sure",
+        "hi": "पक्का नहीं पता"
+      }
+    }
   ],
-  "whenQuestion": { "en": "4. When did you pay?", "hi": "4. आपने भुगतान कब किया?" },
+  "whenQuestion": {
+    "en": "4. When did you pay?",
+    "hi": "4. आपने भुगतान कब किया?"
+  },
   "whenOptions": [
-    { "id": "today", "label": { "en": "Today", "hi": "आज" } },
-    { "id": "earlier", "label": { "en": "Before today", "hi": "आज से पहले" } },
-    { "id": "unsure", "label": { "en": "Not sure", "hi": "पक्का नहीं पता" } }
+    {
+      "id": "today",
+      "label": {
+        "en": "Today",
+        "hi": "आज"
+      }
+    },
+    {
+      "id": "earlier",
+      "label": {
+        "en": "Before today",
+        "hi": "आज से पहले"
+      }
+    },
+    {
+      "id": "unsure",
+      "label": {
+        "en": "Not sure",
+        "hi": "पक्का नहीं पता"
+      }
+    }
   ],
-  "recentNote": { "en": "Act on these steps straight away. Prompt reporting to 1930 can help freeze the money where possible. Recovery is still not guaranteed.", "hi": "ये कदम तुरंत उठाएँ। 1930 पर जल्दी रिपोर्ट करने से, जहाँ संभव हो, पैसे पर रोक लग सकती है। फिर भी पैसा वापस मिलने की गारंटी नहीं है।" },
+  "recentNote": {
+    "en": "Act on these steps straight away. Prompt reporting to 1930 can help freeze the money where possible. Recovery is still not guaranteed.",
+    "hi": "ये कदम तुरंत उठाएँ। 1930 पर जल्दी रिपोर्ट करने से, जहाँ संभव हो, पैसे पर रोक लग सकती है। फिर भी पैसा वापस मिलने की गारंटी नहीं है।"
+  },
   "recentSourceId": "pib-1930",
-  "showPlan": { "en": "Show my safety steps", "hi": "मेरे सुरक्षा कदम दिखाएँ" },
-  "chooseFirst": { "en": "Choose at least one option in question 1.", "hi": "प्रश्न 1 में कम से कम एक विकल्प चुनें।" },
-  "planTitle": { "en": "Do these now, in order", "hi": "ये कदम अभी, इसी क्रम में उठाएँ" },
-  "generalLabel": { "en": "General safety step: confirm the details with your bank or the helpline.", "hi": "सामान्य सुरक्षा कदम: विवरण अपने बैंक या हेल्पलाइन से पक्का करें।" },
-  "recoveryNote": { "en": "Recovery is not guaranteed. No genuine authority asks for a fee to return your money.", "hi": "पैसा वापस मिलने की गारंटी नहीं है। कोई भी असली सरकारी विभाग या संस्था पैसे लौटाने के लिए फ़ीस नहीं माँगती।" },
-  "save": { "en": "Save my safety steps", "hi": "मेरे सुरक्षा कदम सहेजें" },
-  "saveHeader": { "en": "MY SAFETY STEPS — not an official complaint", "hi": "मेरे सुरक्षा कदम — आधिकारिक शिकायत नहीं" },
-  "nextRoute": { "en": "Find the official complaint route", "hi": "आधिकारिक शिकायत का रास्ता देखें" },
-  "nextDraft": { "en": "Prepare my complaint", "hi": "मेरी शिकायत तैयार करें" },
-  "checkEntry": { "en": "Already replied, paid or shared details? Get safety steps", "hi": "जवाब दिया, भुगतान किया या जानकारी दे दी? सुरक्षा कदम देखें" },
+  "showPlan": {
+    "en": "Show my safety steps",
+    "hi": "मेरे सुरक्षा कदम दिखाएँ"
+  },
+  "chooseFirst": {
+    "en": "Choose at least one option in question 1.",
+    "hi": "प्रश्न 1 में कम से कम एक विकल्प चुनें।"
+  },
+  "planTitle": {
+    "en": "Do these now, in order",
+    "hi": "ये कदम अभी, इसी क्रम में उठाएँ"
+  },
+  "generalLabel": {
+    "en": "General safety step: confirm the details with your bank or the helpline.",
+    "hi": "सामान्य सुरक्षा कदम: विवरण अपने बैंक या हेल्पलाइन से पक्का करें।"
+  },
+  "recoveryNote": {
+    "en": "Recovery is not guaranteed. No genuine authority asks for a fee to return your money.",
+    "hi": "पैसा वापस मिलने की गारंटी नहीं है। कोई भी असली सरकारी विभाग या संस्था पैसे लौटाने के लिए फ़ीस नहीं माँगती।"
+  },
+  "save": {
+    "en": "Save my safety steps",
+    "hi": "मेरे सुरक्षा कदम सहेजें"
+  },
+  "saveHeader": {
+    "en": "MY SAFETY STEPS — not an official complaint",
+    "hi": "मेरे सुरक्षा कदम — आधिकारिक शिकायत नहीं"
+  },
+  "nextRoute": {
+    "en": "Find the official complaint route",
+    "hi": "आधिकारिक शिकायत का रास्ता देखें"
+  },
+  "nextDraft": {
+    "en": "Prepare my complaint",
+    "hi": "मेरी शिकायत तैयार करें"
+  },
+  "checkEntry": {
+    "en": "Already replied, paid or shared details? Get safety steps",
+    "hi": "जवाब दिया, भुगतान किया या जानकारी दे दी? सुरक्षा कदम देखें"
+  },
   "actions": [
     {
       "id": "stop-contact",
-      "when": ["ongoing"],
-      "text": { "en": "Stop now: end the call or screen sharing, do not reply, and do not send any more money or codes.", "hi": "अभी रुकें: कॉल या स्क्रीन शेयरिंग बंद करें, जवाब न दें, और कोई और पैसा या कोड न भेजें।" },
+      "when": [
+        "ongoing"
+      ],
+      "text": {
+        "en": "Stop now: end the call or screen sharing, do not reply, and do not send any more money or codes.",
+        "hi": "अभी रुकें: कॉल या स्क्रीन शेयरिंग बंद करें, जवाब न दें, और कोई और पैसा या कोड न भेजें।"
+      },
       "sourceId": "i4c-digital-arrest"
     },
     {
       "id": "call-bank",
-      "when": ["paid", "shared"],
-      "text": { "en": "Contact your bank or payment provider immediately, using the number on your card, passbook or official app. Ask them to block further debits and record your complaint.", "hi": "तुरंत अपने बैंक या भुगतान सेवा से संपर्क करें; नंबर अपने कार्ड, पासबुक या आधिकारिक ऐप से लें। खाते से आगे पैसा कटना रोकने और शिकायत दर्ज करने को कहें।" },
+      "when": [
+        "paid",
+        "shared"
+      ],
+      "text": {
+        "en": "Contact your bank or payment provider immediately, using the number on your card, passbook or official app. Ask them to block further debits and record your complaint.",
+        "hi": "तुरंत अपने बैंक या भुगतान सेवा से संपर्क करें; नंबर अपने कार्ड, पासबुक या आधिकारिक ऐप से लें। खाते से आगे पैसा कटना रोकने और शिकायत दर्ज करने को कहें।"
+      },
       "sourceId": "rbi-liability"
     },
     {
       "id": "block-card",
-      "when": ["card"],
-      "text": { "en": "Paid by card? Ask your bank to block the card straight away, using the number on the back of the card or the bank's official app.", "hi": "कार्ड से भुगतान किया? तुरंत बैंक से कार्ड ब्लॉक करवाएँ: कार्ड के पीछे लिखे नंबर पर कॉल करें या बैंक का आधिकारिक ऐप इस्तेमाल करें।" },
+      "when": [
+        "card"
+      ],
+      "text": {
+        "en": "Paid by card? Ask your bank to block the card straight away, using the number on the back of the card or the bank's official app.",
+        "hi": "कार्ड से भुगतान किया? तुरंत बैंक से कार्ड ब्लॉक करवाएँ: कार्ड के पीछे लिखे नंबर पर कॉल करें या बैंक का आधिकारिक ऐप इस्तेमाल करें।"
+      },
       "general": true
     },
     {
       "id": "report-1930",
-      "when": ["paid"],
+      "when": [
+        "paid"
+      ],
       "helplineId": "cyber-1930",
-      "text": { "en": "Call 1930 or report at the National Cyber Crime Reporting Portal as quickly as possible. Write down the acknowledgement number.", "hi": "जितनी जल्दी हो सके 1930 पर कॉल करें या राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल पर रिपोर्ट करें। पावती नंबर लिख लें।" },
+      "text": {
+        "en": "Call 1930 or report at the National Cyber Crime Reporting Portal as quickly as possible. Write down the acknowledgement number.",
+        "hi": "जितनी जल्दी हो सके 1930 पर कॉल करें या राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल पर रिपोर्ट करें। पावती नंबर लिख लें।"
+      },
       "sourceId": "cyber"
     },
     {
       "id": "upi-app",
-      "when": ["upi"],
-      "text": { "en": "Paid by UPI? Report it to your bank as a fraudulent payment straight away. The UPI Help option in payment apps asks you to contact your bank about fraudulent transactions, and it does not take complaints about completed person-to-person payments.", "hi": "UPI से भुगतान किया? तुरंत अपने बैंक से शिकायत करें और बताएँ कि यह धोखाधड़ी वाला भुगतान है। भुगतान ऐप का UPI Help विकल्प धोखाधड़ी के मामलों में बैंक से संपर्क करने को कहता है। किसी व्यक्ति को किया गया, पूरा हो चुका भुगतान हो, तो UPI Help उसकी शिकायत नहीं लेता।" },
+      "when": [
+        "upi"
+      ],
+      "text": {
+        "en": "Paid by UPI? Report it to your bank as a fraudulent payment straight away. The UPI Help option in payment apps asks you to contact your bank about fraudulent transactions, and it does not take complaints about completed person-to-person payments.",
+        "hi": "UPI से भुगतान किया? तुरंत अपने बैंक से शिकायत करें और बताएँ कि यह धोखाधड़ी वाला भुगतान है। भुगतान ऐप का UPI Help विकल्प धोखाधड़ी के मामलों में बैंक से संपर्क करने को कहता है। किसी व्यक्ति को किया गया, पूरा हो चुका भुगतान हो, तो UPI Help उसकी शिकायत नहीं लेता।"
+      },
       "sourceId": "npci-upi-help"
     },
     {
       "id": "wallet-provider",
-      "when": ["wallet"],
-      "text": { "en": "Paid from a wallet or prepaid card? Report the payment to the wallet provider through its official app.", "hi": "वॉलेट या प्रीपेड कार्ड से भुगतान किया? वॉलेट सेवा के आधिकारिक ऐप से भुगतान की शिकायत करें।" },
+      "when": [
+        "wallet"
+      ],
+      "text": {
+        "en": "Paid from a wallet or prepaid card? Report the payment to the wallet provider through its official app.",
+        "hi": "वॉलेट या प्रीपेड कार्ड से भुगतान किया? वॉलेट सेवा के आधिकारिक ऐप से भुगतान की शिकायत करें।"
+      },
       "general": true
     },
     {
       "id": "secure-credentials",
-      "when": ["shared"],
-      "text": { "en": "First uninstall any screen-sharing or remote-access app you were asked to install, such as AnyDesk. Then, from your own phone, change the UPI PIN and passwords you shared, using only the official bank or UPI app.", "hi": "पहले वह स्क्रीन-शेयरिंग या रिमोट-एक्सेस ऐप (जैसे AnyDesk) हटाएँ, जिसे इंस्टॉल करने को आपसे कहा गया था। फिर अपने ही फ़ोन से, केवल बैंक या UPI के आधिकारिक ऐप में, वे UPI PIN और पासवर्ड बदलें जो आपने किसी को बताए थे।" },
+      "when": [
+        "shared"
+      ],
+      "text": {
+        "en": "First uninstall any screen-sharing or remote-access app you were asked to install, such as AnyDesk. Then, from your own phone, change the UPI PIN and passwords you shared, using only the official bank or UPI app.",
+        "hi": "पहले वह स्क्रीन-शेयरिंग या रिमोट-एक्सेस ऐप (जैसे AnyDesk) हटाएँ, जिसे इंस्टॉल करने को आपसे कहा गया था। फिर अपने ही फ़ोन से, केवल बैंक या UPI के आधिकारिक ऐप में, वे UPI PIN और पासवर्ड बदलें जो आपने किसी को बताए थे।"
+      },
       "general": true
     },
     {
       "id": "remove-app",
-      "when": ["clicked"],
-      "text": { "en": "Uninstall any app you installed from a message link, and do not enter details on that link again. Use only apps verified through official exchange or SEBI resources.", "hi": "संदेश के लिंक से इंस्टॉल किया गया ऐप हटाएँ और उस लिंक पर दोबारा जानकारी न डालें। केवल वही ऐप इस्तेमाल करें जिनकी जाँच आपने स्टॉक एक्सचेंज या SEBI की आधिकारिक वेबसाइट पर की हो।" },
+      "when": [
+        "clicked"
+      ],
+      "text": {
+        "en": "Uninstall any app you installed from a message link, and do not enter details on that link again. Use only apps verified through official exchange or SEBI resources.",
+        "hi": "संदेश के लिंक से इंस्टॉल किया गया ऐप हटाएँ और उस लिंक पर दोबारा जानकारी न डालें। केवल वही ऐप इस्तेमाल करें जिनकी जाँच आपने स्टॉक एक्सचेंज या SEBI की आधिकारिक वेबसाइट पर की हो।"
+      },
       "sourceId": "apps"
     },
     {
       "id": "check-accounts",
-      "when": ["clicked", "shared"],
-      "text": { "en": "Check your bank and UPI app for payments you do not recognise, and report any to your bank immediately.", "hi": "अपने बैंक और UPI ऐप में देखें कि कोई ऐसा भुगतान तो नहीं हुआ जो आपने नहीं किया। ऐसा कोई भुगतान दिखे तो तुरंत बैंक को बताएँ।" },
-      "general": true
+      "when": [
+        "clicked"
+      ],
+      "text": {
+        "en": "Check your bank and UPI app for payments you do not recognise, and report any to your bank immediately.",
+        "hi": "अपने बैंक और UPI ऐप में देखें कि कोई ऐसा भुगतान तो नहीं हुआ जो आपने नहीं किया। ऐसा कोई भुगतान दिखे तो तुरंत बैंक को बताएँ।"
+      },
+      "general": true,
+      "unless": [
+        "shared"
+      ]
+    },
+    {
+      "id": "freeze-trading",
+      "when": [
+        "shared"
+      ],
+      "text": {
+        "en": "Check your bank, UPI and trading apps for payments or trades you did not make, and report any to your bank or broker at once. If you shared a trading app login, password or OTP, ask your stock broker to freeze online access to your trading account (every broker must offer this), and your DP to freeze your demat account.",
+        "hi": "अपने बैंक, UPI और ट्रेडिंग ऐप में ऐसे भुगतान या सौदे देखें जो आपने नहीं किए, और कोई दिखे तो तुरंत अपने बैंक या ब्रोकर को बताएँ। अगर आपने ट्रेडिंग ऐप का लॉगिन, पासवर्ड या OTP बताया है, तो अपने स्टॉक ब्रोकर से ट्रेडिंग खाते का ऑनलाइन एक्सेस फ़्रीज़ करवाएँ (हर ब्रोकर को यह सुविधा देनी होती है), और अपने DP से डीमैट खाता फ़्रीज़ करवाएँ।"
+      },
+      "sourceId": "sebi-trading-freeze-2024"
     },
     {
       "id": "no-recovery-fee",
-      "when": ["paid"],
-      "text": { "en": "Do not pay any “recovery”, “tax” or “release” fee to get your money back.", "hi": "पैसे वापस पाने के लिए कोई “रिकवरी”, “टैक्स” या “रिलीज़” फ़ीस न दें।" },
+      "when": [
+        "paid"
+      ],
+      "text": {
+        "en": "Do not pay any “recovery”, “tax” or “release” fee to get your money back.",
+        "hi": "पैसे वापस पाने के लिए कोई “रिकवरी”, “टैक्स” या “रिलीज़” फ़ीस न दें।"
+      },
       "sourceId": "apps"
     },
     {
       "id": "do-not-engage",
-      "when": ["received"],
-      "text": { "en": "Do not reply, click links or pay. If the message claims to be from an institution, contact that institution through its official website or app, not the number in the message.", "hi": "जवाब न दें, लिंक न खोलें और भुगतान न करें। संदेश किसी संस्था के नाम से हो तो उस संस्था से उसकी आधिकारिक वेबसाइट या ऐप से संपर्क करें, संदेश में दिए नंबर से नहीं।" },
+      "when": [
+        "received"
+      ],
+      "text": {
+        "en": "Do not reply, click links or pay. If the message claims to be from an institution, contact that institution through its official website or app, not the number in the message.",
+        "hi": "जवाब न दें, लिंक न खोलें और भुगतान न करें। संदेश किसी संस्था के नाम से हो तो उस संस्था से उसकी आधिकारिक वेबसाइट या ऐप से संपर्क करें, संदेश में दिए नंबर से नहीं।"
+      },
       "sourceId": "i4c-digital-arrest"
     },
     {
       "id": "report-suspicion",
-      "when": ["received", "clicked", "shared"],
-      "unless": ["paid"],
-      "text": { "en": "If you suspect a cybercrime, use the official National Cyber Crime Reporting Portal for reporting guidance.", "hi": "साइबर अपराध का संदेह हो तो रिपोर्टिंग के लिए आधिकारिक राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल देखें।" },
+      "when": [
+        "received",
+        "clicked",
+        "shared"
+      ],
+      "unless": [
+        "paid"
+      ],
+      "text": {
+        "en": "If you suspect a cybercrime, use the official National Cyber Crime Reporting Portal for reporting guidance.",
+        "hi": "साइबर अपराध का संदेह हो तो रिपोर्टिंग के लिए आधिकारिक राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल देखें।"
+      },
       "sourceId": "cyber"
     },
     {
       "id": "report-chakshu",
-      "when": ["received", "clicked"],
-      "unless": ["paid"],
-      "text": { "en": "Report the suspected fraud call, SMS or WhatsApp message on Chakshu (Sanchar Saathi) within 30 days, if the sender's number is visible. If money was lost, report to 1930 instead.", "hi": "संदिग्ध धोखाधड़ी कॉल, SMS या व्हाट्सऐप संदेश की रिपोर्ट 30 दिन के अंदर चक्षु (संचार साथी) पर करें, अगर भेजने वाले का नंबर दिख रहा हो। पैसे गए हों तो इसके बजाय 1930 पर रिपोर्ट करें।" },
+      "when": [
+        "received",
+        "clicked"
+      ],
+      "unless": [
+        "paid"
+      ],
+      "text": {
+        "en": "Report the suspected fraud call, SMS or WhatsApp message on Chakshu (Sanchar Saathi) within 30 days, if the sender's number is visible. If money was lost, report to 1930 instead.",
+        "hi": "संदिग्ध धोखाधड़ी कॉल, SMS या व्हाट्सऐप संदेश की रिपोर्ट 30 दिन के अंदर चक्षु (संचार साथी) पर करें, अगर भेजने वाले का नंबर दिख रहा हो। पैसे गए हों तो इसके बजाय 1930 पर रिपोर्ट करें।"
+      },
       "sourceId": "chakshu"
     },
     {
       "id": "keep-evidence",
-      "when": ["any"],
-      "text": { "en": "Keep evidence: screenshots of messages, the sender's number or ID, and any transaction reference. Do not delete the chat.", "hi": "सबूत रखें: संदेशों के स्क्रीनशॉट, भेजने वाले का नंबर या आईडी, और लेन-देन का UTR/रेफ़रेंस नंबर। चैट न मिटाएँ।" },
+      "when": [
+        "any"
+      ],
+      "text": {
+        "en": "Keep evidence: screenshots of messages, the sender's number or ID, and any transaction reference. Do not delete the chat.",
+        "hi": "सबूत रखें: संदेशों के स्क्रीनशॉट, भेजने वाले का नंबर या आईडी, और लेन-देन का UTR/रेफ़रेंस नंबर। चैट न मिटाएँ।"
+      },
       "sourceId": "cyber"
     }
   ]

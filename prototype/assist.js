@@ -250,6 +250,8 @@ const TXT={
  'upi-not-valid':['sebi-upi-valid','SEBI-registered brokers, mutual funds, investment advisers and research analysts must give investors a UPI ID with the "@valid" handle, such as abc.brk@validhdfc. This ID does not have it, so do not pay it for an investment or advice.','SEBI में रजिस्टर्ड ब्रोकर, म्यूचुअल फ़ंड, निवेश सलाहकार और रिसर्च एनालिस्ट के लिए ज़रूरी है कि वे निवेशकों को "@valid" वाली UPI आईडी दें (आईडी में @ के बाद "valid" लिखा होता है, जैसे abc.brk@validhdfc)। इस आईडी में यह नहीं है, इसलिए निवेश या सलाह के लिए इस पर भुगतान न करें।'],
  'upi-valid':['sebi-upi-valid','This ID has the "@valid" form used by SEBI-registered intermediaries, but the form alone does not prove who owns it. Confirm it on SEBI Check, and look for the thumbs-up in a green triangle in your UPI app before paying.','इस आईडी में SEBI में रजिस्टर्ड संस्थाओं वाला "@valid" रूप है, पर केवल रूप से यह साबित नहीं होता कि यह किसकी है। भुगतान से पहले इसे SEBI Check पर पक्का करें, और अपने UPI ऐप में हरे त्रिकोण में ऊपर उठे अँगूठे (थम्स-अप) का निशान देखें।'],
  'confirm-payee':[null,'Confirm who you are paying with contact details from the company’s official website or app, not ones you were sent.','किसे भुगतान कर रहे हैं, यह कंपनी की आधिकारिक वेबसाइट या ऐप के संपर्क से पक्का करें, भेजे गए संपर्क से नहीं।'],
+ // Market comparison (3 Oct 2026, G7): I4C's Suspect Search, with its own warning that the database is not complete.
+ 'suspect-search':['i4c-suspect-search','Search this UPI ID, phone number or bank account on the cybercrime portal’s Suspect Search before paying. It is built from reported complaints and is not complete, so "not found" does not mean safe.','भुगतान से पहले यह UPI आईडी, फ़ोन नंबर या बैंक खाता साइबर अपराध पोर्टल के "सस्पेक्ट सर्च" में खोजें। यह शिकायतों से बनी सूची है और पूरी नहीं है, इसलिए "नहीं मिला" का मतलब सुरक्षित नहीं है।'],
  'never-share':['rbi-never-ask','Never share your UPI PIN, OTP or CVV. Banks and payment services never ask for them.','अपना UPI PIN, OTP या CVV कभी न बताएँ। बैंक और भुगतान सेवाएँ इन्हें कभी नहीं माँगतीं।'],
  'report':['cyber','Already paid? Call 1930 or report at cybercrime.gov.in as soon as possible.','भुगतान कर चुके हैं? जल्द से जल्द 1930 पर कॉल करें या cybercrime.gov.in पर रिपोर्ट करें।'],
  'upi-invalid':[null,'This does not look like a UPI ID. Check it again before paying.','यह UPI आईडी जैसी नहीं दिखती। भुगतान से पहले इसे दोबारा जाँचें।'],
@@ -288,6 +290,7 @@ function payCheck(input){
  // Paying a broker, adviser or analyst through a UPI ID without the "@valid" handle is a reason to stop.
  if(typeof i.upiId==='string'&&i.upiId.trim()&&PAYS_INTERMEDIARY.indexOf(purpose)>=0&&['mobile','other'].indexOf(upiShape(i.upiId))>=0)reasons.push(item('upi-not-valid'));
  if(typeof i.upiId==='string'&&i.upiId.trim()){const shape=upiShape(i.upiId),u=Object.assign(item('upi-'+shape),{id:'upi-id'});upi=Object.assign({shape},u);delete upi.id;checks.push(u)}
+ if(['upi','person-account'].indexOf(to)>=0||(typeof i.upiId==='string'&&i.upiId.trim()))checks.push(item('suspect-search'));
  checks.push(item('never-share'));
  if(reasons.length)checks.push(item('report'));
  return {verdict:reasons.length?'stop':'verify',reasons,checks,returns,upi};
