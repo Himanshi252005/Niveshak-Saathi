@@ -4,8 +4,8 @@
   "release": "3.5",
   "app": {
     "file": "outputs/prototype/dist/index.html",
-    "bytes": 809324,
-    "sha256": "FE329BD36095C4FE71EC2E66EACDCEDA08E2EF6BC41258EE33C6B455AAF99965"
+    "bytes": 825597,
+    "sha256": "B5814882FC16B3099CD088CD7C919301FCBF73C628561DFF12B443008160FA0B"
   },
   "suites": [
     {
@@ -60,7 +60,7 @@
       "exitCode": 0,
       "summary": "all C-7 end-to-end checks passed",
       "failures": [],
-      "seconds": 6
+      "seconds": 5
     },
     {
       "suite": "Studio Emergency tab (C-8)",
@@ -114,7 +114,7 @@
       "exitCode": 0,
       "summary": "13/13 integrated checks passed",
       "failures": [],
-      "seconds": 19
+      "seconds": 21
     },
     {
       "suite": "On-device assistant (C-15)",
@@ -150,7 +150,7 @@
       "exitCode": 0,
       "summary": "19/19 checks passed",
       "failures": [],
-      "seconds": 6
+      "seconds": 5
     },
     {
       "suite": "Professional app shell: Home, sidebar menu, phone menu, no emoji (C-18)",
@@ -159,7 +159,7 @@
       "exitCode": 0,
       "summary": "38/38 checks passed",
       "failures": [],
-      "seconds": 16
+      "seconds": 15
     },
     {
       "suite": "Persona safety plans and reliability abstention (C-19)",
@@ -168,7 +168,7 @@
       "exitCode": 0,
       "summary": "27/27 checks passed",
       "failures": [],
-      "seconds": 4
+      "seconds": 3
     },
     {
       "suite": "100 simulated personas and stress inputs (C-20)",
@@ -177,7 +177,7 @@
       "exitCode": 0,
       "summary": "14/14 checks passed (100 users: 92 right, 8 partly, 0 wrong)",
       "failures": [],
-      "seconds": 56
+      "seconds": 50
     },
     {
       "suite": "Source-backed grievance, rights, family and persona content (P1, H-3)",
@@ -195,7 +195,7 @@
       "exitCode": 0,
       "summary": "29/29 checks passed",
       "failures": [],
-      "seconds": 7
+      "seconds": 6
     },
     {
       "suite": "Rights and help, step-by-step guides and family asset map (Release 3.5)",
@@ -204,14 +204,23 @@
       "exitCode": 0,
       "summary": "62/62 checks passed",
       "failures": [],
-      "seconds": 9
+      "seconds": 8
+    },
+    {
+      "suite": "Mint menu, dark theme and text contrast in both themes (C-27)",
+      "file": "c27-theme.cjs",
+      "ok": true,
+      "exitCode": 0,
+      "summary": "24/24 checks passed",
+      "failures": [],
+      "seconds": 25
     },
     {
       "suite": "Release 3.0 browser suite (single run; see Browser-Validation.json)",
       "file": "verify-v3.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "130/130 checks passed; throttled load 17126 ms; 809324 bytes",
+      "summary": "130/130 checks passed; throttled load 17525 ms; 825597 bytes",
       "failures": [],
       "seconds": 29
     }

@@ -759,6 +759,24 @@ const offerPause=(boxId,verdictId,want,id,where)=>{const box=$(boxId);if(!box)re
 offerPause('payResult','payVerdict','stop','payPause','after');
 offerPause('result','riskVerdict','high','checkPause','actions');
 }
+// Dark theme (owner, 3 Oct 2026: "make a dark theme selection of ui so someone can able to switch dark theme"). The app follows
+// the device's own light or dark setting; "Dark theme" in the menu, beside "Larger text", switches it for this visit. Nothing is
+// saved (the app keeps no storage), so the next visit follows the device setting again. Colours are in theme.css.
+{
+const root=document.documentElement,sysDark=matchMedia('(prefers-color-scheme: dark)');
+let chosen=null; // 'dark' or 'light' after a tap; null follows the device
+ICON_PATHS.moon='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z';
+const themeBtn=bilingual('button','Dark theme','डार्क थीम');themeBtn.id='themeToggle';themeBtn.type='button';withIcon(themeBtn,'moon');
+// The browser's own bar matches the top bar.
+const barColor=document.createElement('meta');barColor.name='theme-color';document.head.append(barColor);
+// Colours change at once, without the buttons' short fade: no flash of light colours when the app opens in the dark theme.
+const quiet=()=>{root.classList.add('ns-theme-switch');requestAnimationFrame(()=>requestAnimationFrame(()=>root.classList.remove('ns-theme-switch')))};
+const applyTheme=()=>{quiet();const dark=chosen?chosen==='dark':sysDark.matches;root.dataset.theme=dark?'dark':'light';themeBtn.setAttribute('aria-pressed',String(dark));barColor.content=dark?'#141e1a':'#ffffff'};
+themeBtn.onclick=()=>{chosen=root.dataset.theme==='dark'?'light':'dark';applyTheme()};
+const followDevice=()=>{if(!chosen)applyTheme()};
+if(sysDark.addEventListener)sysDark.addEventListener('change',followDevice);else if(sysDark.addListener)sysDark.addListener(followDevice);
+big.after(themeBtn);applyTheme();
+}
 /* NS_REDESIGN_END */
 // Ready (accessibility F1): the Hindi loading screen in base.html gives way to the app only now, so a slow phone never shows
 // an empty or English half-built page.
