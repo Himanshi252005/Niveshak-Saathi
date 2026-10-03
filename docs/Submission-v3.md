@@ -6,7 +6,7 @@
 > check the message → check before paying → stop immediate harm → find the right office → follow the official steps → protect the family → build the habit
 
 **Status (2 October 2026)**
-- **Release 3.5** is the build in this repository: 806,663 bytes, SHA-256 `4F494B8D764F34CB692E02BA9F219634D16DD3B48EEFC8F4D6FDE9BA736A2A5E`. 1,715 automated checks passed: 23 release suites plus the developer cases ([release record](../evidence/Release-3.5-Verification.json)).
+- **Release 3.5** is the build in this repository: 809,324 bytes, SHA-256 `FE329BD36095C4FE71EC2E66EACDCEDA08E2EF6BC41258EE33C6B455AAF99965`. 1,717 automated checks passed: 23 release suites plus the developer cases ([release record](../evidence/Release-3.5-Verification.json)).
 - **The live link serves Release 3.5:** [himanshi252005.github.io/Niveshak-Saathi/](https://himanshi252005.github.io/Niveshak-Saathi/). Its served file matches the verified repository build ([delivery status](Delivery-Status.md)).
 - **Release 3.4** was verified but never deployed. Its results are kept below as history.
 - **No real-user study or pilot** has been run. Every accuracy figure comes from synthetic test sets.
@@ -27,7 +27,7 @@ A working prototype: one self-contained HTML file that runs in a phone or deskto
 - **Language:** the app opens in Hindi. To switch to English, use the language menu at the top right.
 - **Home** asks one question, "What do you need help with?", with four large choices in everyday words. "More help" opens rights, practice and family safety, and one fold holds the three persona plans.
 - **The menu** shows six everyday pages (Home, Check a message, Before you pay, Get help now, Where to complain, Rights and help); the complaint packet, safety plans, practice and family safety sit under "More pages". A "Get urgent help" button stays in the top bar.
-- **Design:** a calm black-and-white design: warm paper background, ink text, hairline cards and pill buttons, and black-and-white line drawings that draw themselves in (still for people who ask for less motion) on Home, beside each page heading and above each answer; choices are chips, and long notes fold away.
+- **Design:** a calm green-and-white design: white and soft-mint surfaces, deep green text, hairline cards and pill buttons, and green line drawings that draw themselves in (still for people who ask for less motion) on Home, beside each page heading and above each answer; choices are chips, long notes fold away, and a persistent five-item phone navigation remains visible after every selection.
 - **No typing needed:** a Paste button puts a copied message in the box, a tip shows how to speak it with the phone keyboard's microphone, and another how to copy the words of a message that arrived as a picture.
 - **Offline and sharing:** "Save offline copy" (More tools) downloads the app so it works without internet. "Share this app" hands the link, or the file, to WhatsApp.
 
@@ -212,7 +212,7 @@ Full tables, by language and persona: [Validation](Validation-v3.md).
 
 ### Technical evidence
 
-**Release 3.5:** 1,715 automated checks (23 release suites plus 796/796 developer-case expectations; two suites' counts come from the test logs, see the [validation](Validation-v3.md)); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 91 fully right, 9 partly right, 0 wrong (14/14 checks); official links re-requested with none missing or failing (C-12: 13/13 checks passed; a page that refuses automated clients is confirmed in a browser); 806,663 bytes (233,477 with gzip); Home usable in 7.3 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 8 s.
+**Release 3.5:** 1,717 automated checks (23 release suites plus 796/796 developer-case expectations; two suites' counts come from the test logs, see the [validation](Validation-v3.md)); browser journeys 130/130 in each of 3 runs; 100-persona simulated test 91 fully right, 9 partly right, 0 wrong (14/14 checks); official links re-requested with none missing or failing (C-12: 13/13 checks passed; a page that refuses automated clients is confirmed in a browser); 809,324 bytes (234,164 with gzip); Home usable in 5.7 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 8 s.
 
 **Release 3.4 (history).** Rows marked "internal" come from test runs whose scripts and logs are not yet in this repository.
 
@@ -249,7 +249,7 @@ All 22 Release 3.4 suites (848 checks) plus the 449 developer-case expectations 
 | 3:02–3:32 | Babulal, Family asset map | A mutual fund by name only, nominee "not sure", and the link to the nominee guide |
 | 3:32–4:06 | Praveen, Check a message (English) | A Telegram F&O tip that pushes borrowing: High risk and SEBI's study card |
 | 4:06–4:37 | Offline and trust | Network off: an ordinary message gets no warning but "not proof of safety"; sources, privacy and the version line |
-| 4:37–4:52 | What the tests show | blind-v9 fraud warned 87.5%; 1,715 engineering checks; synthetic tests only; next step: a pilot with real, consenting users |
+| 4:37–4:52 | What the tests show | blind-v9 fraud warned 87.5%; 1,717 engineering checks; synthetic tests only; next step: a pilot with real, consenting users |
 
 **Operator script for a live demonstration** (fictional inputs only)
 1. Clear the session (More tools). On Home, choose "Got a suspicious message?", press "Try a suspicious example" ("संदिग्ध उदाहरण देखें" in Hindi), then Check. Show the verdict, the reasons, "How the risk level was decided" and "Warn my family".
@@ -287,10 +287,10 @@ These are the mechanisms. None has yet been measured with real users.
 
 ### How it scales in Tier-2 and Tier-3 India
 
-- **Small and phone-first:** one 806,663-byte file, 233,477 bytes with gzip (GitHub Pages sent 242,465 on 3 October 2026); Home usable in 7.3 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 8 s. Once saved, it works with no network at all.
+- **Small and phone-first:** one 809,324-byte file, 234,164 bytes with gzip (GitHub Pages sent 243,137 on 3 October 2026); Home usable in 5.7 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.7 s and Home is usable in about 8 s. Once saved, it works with no network at all.
 - **Spreads without accounts:** the link or the file can be forwarded on WhatsApp, and "Warn my family" spreads warnings without tracking anyone.
 - **Language reach without unreviewed translation:** Hindi first, English one tap away. Users of other languages are pointed to official helplines that speak their language: SEBI in seven languages, RBI 14448 in English, Hindi and ten regional languages, and IRDAI in Hindi, English and other major languages.
-- **No cost per user:** no servers, accounts, message database or inference. At Release 3.5's size (233,477 bytes with gzip), 16 crore one-time downloads would be about 37.4 TB before caching. That is a planning figure, not a load test ([scale plan](SCALE-AND-RELIABILITY.md)).
+- **No cost per user:** no servers, accounts, message database or inference. At Release 3.5's size (234,164 bytes with gzip), 16 crore one-time downloads would be about 37.5 TB before caching. That is a planning figure, not a load test ([scale plan](SCALE-AND-RELIABILITY.md)).
 - **Maintained by content owners, not programmers:** the Owner Studio edits and validates every bilingual text and source; each source carries a review date.
 - **Distribution:** investor-awareness programmes, community volunteers and families could share the file. No partner has been signed.
 - **Remaining real costs:** source review, native-language review, device and accessibility testing, and support.
@@ -308,9 +308,9 @@ These are the mechanisms. None has yet been measured with real users.
 | Criterion (weight) | What the product does | Evidence | Not yet proven |
 |---|---|---|---|
 | **Resilience & Safety Impact (30%)** | STOP before paying; message check; bank and 1930 first; the right office with time limits; sourced guides; Family asset map | Sealed set blind-v9, scored once: checker 3.5 warned 87.5% of fraud (3.3: 82.5%) and 72% of subtle fraud; complaint-route test 39/40 main authority (Release 3.4, internal) | No real-user outcome study; money saved not measured; 10 of 80 frauds missed and 12.2% of ordinary messages warned on blind-v9 |
-| **Tier-2/3 Usability (25%)** | Hindi first, English one tap away; large choices in everyday words; a six-page menu; Paste button and keyboard-microphone tips instead of typing; persona plans; read-aloud; large text; offline copy; official helplines in regional languages | Every page fits 320–390-pixel phones in both languages (app layout suite C-18, 36/36 in Release 3.5); about 242 KB to download (gzip, live link); Home usable in 7.3 s on an emulated slow connection (gzip) | Native Hindi review; physical low-end phones; only two languages in the app; voice input only through the phone keyboard's microphone |
+| **Tier-2/3 Usability (25%)** | Hindi first, English one tap away; large choices in everyday words; a six-page menu; Paste button and keyboard-microphone tips instead of typing; persona plans; read-aloud; large text; offline copy; official helplines in regional languages | Every page fits 320–390-pixel phones in both languages (app layout suite C-18, 36/36 in Release 3.5); about 242 KB to download (gzip, live link); Home usable in 5.7 s on an emulated slow connection (gzip) | Native Hindi review; physical low-end phones; only two languages in the app; voice input only through the phone keyboard's microphone |
 | **Guardrails & Trust (15%)** | No commerce or tips; nothing saved or sent; every step sourced and dated, with "review pending" where the reviewer has not confirmed; in-page security policy; uncertainty shown | Privacy and security checks; no network request in tested journeys except the app's own page for "Save offline copy" and "Share this app" | Independent security audit; confirmation of pending sources |
-| **Technical Execution (15%)** | Explainable on-device model with safety floors and abstention; keyword-based parser; validated, reproducible single-file build | Sealed sets with intervals; 1,715 automated checks | A consented, representative real-message corpus; colloquial Hindi coverage |
+| **Technical Execution (15%)** | Explainable on-device model with safety floors and abstention; keyword-based parser; validated, reproducible single-file build | Sealed sets with intervals; 1,717 automated checks | A consented, representative real-message corpus; colloquial Hindi coverage |
 | **Feasibility & Scalability (15%)** | Static file with no inference cost; Owner Studio; pilot kit; open licences | Transfer arithmetic; validated content pipeline | No load test, partner or pilot yet |
 
 No judging score is guaranteed. The evidence above comes from automated checks, not from users.

@@ -41,11 +41,11 @@ The live link is published from this repository's `gh-pages` branch; the earlier
 
 ## Scale design
 
-The public app is a static, cacheable file. Analysis happens on the device, so more users do not need inference servers, message databases or per-check API costs. The Release 3.5 build is 806,663 bytes raw and 233,477 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; reaching India's 16 crore demat accounts is a design target, not a completed load test. See [`../docs/SCALE-AND-RELIABILITY.md`](../docs/SCALE-AND-RELIABILITY.md).
+The public app is a static, cacheable file. Analysis happens on the device, so more users do not need inference servers, message databases or per-check API costs. The Release 3.5 build is 809,324 bytes raw and 234,164 bytes with gzip. A nationwide rollout still needs CDN capacity, regional monitoring, native-language review, security testing and staged pilots; reaching India's 16 crore demat accounts is a design target, not a completed load test. See [`../docs/SCALE-AND-RELIABILITY.md`](../docs/SCALE-AND-RELIABILITY.md).
 
 ## Evidence and limits
 
-- **Release record:** [`../evidence/Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json): 1,715 automated checks, that is 23 release suites plus the developer cases.
+- **Release record:** [`../evidence/Release-3.5-Verification.json`](../evidence/Release-3.5-Verification.json): 1,717 automated checks, that is 23 release suites plus the developer cases.
 - **Developer cases:** 796/796 expectations pass. They were written during development, so they are not an accuracy benchmark.
 - **Sealed sets,** each written by a separate AI agent and scored once:
   - blind-v9 (Release 3.5, checker 3.5): fraud or suspicious messages warned 80% [71.6–86.4], fraud warned 87.5% [78.5–93.1], ordinary messages warned 12.2% [7–20.6] ([record](../evidence/Blind-Evaluation-v9.json));

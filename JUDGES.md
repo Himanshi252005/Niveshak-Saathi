@@ -40,7 +40,7 @@
 - The rule written before scoring also required no more ordinary messages warned than checker 3.3. Checker 3.5 warned one more (11 of 90 against 10, the extra one at Caution; 9 at High for both). The owner shipped it because fraud at High improved significantly (paired test, p = 0.0117) ([record](evidence/Blind-Evaluation-v9.json)).
 - History, Release 3.4 (which kept checker 3.3) on blind-v8: fraud or suspicious warned 60.9% [51.6–69.5] (fraud alone 67.5% [56.6–76.8]); ordinary 13.3% [7.8–21.9]; subtle fraud 5 of 25. It missed all three targets (fraud ≥85%, ordinary ≤8%, subtle fraud ≥70% warned).
 - 100 AI-written personas: 91 fully right, 9 partly right, 0 wrong (14/14 checks). A regression test, not accuracy.
-- 1,715 automated checks (23 release suites plus developer cases).
+- 1,717 automated checks (23 release suites plus developer cases).
 
 **Compared with today's tools.** [23 tools compared](docs/MARKET-COMPARISON.md): official help is split across about ten portals with their own logins and exclusions, and private checkers are mostly English-first, need an account or upload messages, and stop at advice. Niveshak Saathi is Hindi-first, needs no account, keeps everything on the phone and covers before, during and after a loss.
 

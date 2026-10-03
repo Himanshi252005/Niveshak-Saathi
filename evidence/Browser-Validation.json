@@ -143,26 +143,26 @@
   ],
   "failures": [],
   "errors": [],
-  "htmlBytes": 806663,
-  "htmlSha256": "4F494B8D764F34CB692E02BA9F219634D16DD3B48EEFC8F4D6FDE9BA736A2A5E",
-  "gzipBytes": 233477,
-  "simulatedLoadMs": 18187,
+  "htmlBytes": 809324,
+  "htmlSha256": "FE329BD36095C4FE71EC2E66EACDCEDA08E2EF6BC41258EE33C6B455AAF99965",
+  "gzipBytes": 234164,
+  "simulatedLoadMs": 17201,
   "simulatedLoadRunsMs": [
-    17888,
-    18187,
-    19161
+    17201,
+    17229,
+    17130
   ],
-  "simulatedLoadMedianMs": 18187,
+  "simulatedLoadMedianMs": 17201,
   "simulatedLoadRangeMs": [
-    17888,
-    19161
+    17130,
+    17229
   ],
   "gzipServedLoadRunsMs": [
-    7284,
-    7233,
-    9851
+    5716,
+    5719,
+    5641
   ],
-  "gzipServedLoadMedianMs": 7284,
+  "gzipServedLoadMedianMs": 5716,
   "simulation": "3 runs at 400 ms latency; 50,000 bytes/sec throughput (~400 kbps); 4x CPU slowdown; uncompressed file unless stated. Desktop simulation, not a physical low-end phone.",
   "unvalidated": [
     "Real user impact",

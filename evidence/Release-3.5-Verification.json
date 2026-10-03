@@ -4,8 +4,8 @@
   "release": "3.5",
   "app": {
     "file": "outputs/prototype/dist/index.html",
-    "bytes": 806663,
-    "sha256": "4F494B8D764F34CB692E02BA9F219634D16DD3B48EEFC8F4D6FDE9BA736A2A5E"
+    "bytes": 809324,
+    "sha256": "FE329BD36095C4FE71EC2E66EACDCEDA08E2EF6BC41258EE33C6B455AAF99965"
   },
   "suites": [
     {
@@ -60,7 +60,7 @@
       "exitCode": 0,
       "summary": "all C-7 end-to-end checks passed",
       "failures": [],
-      "seconds": 7
+      "seconds": 6
     },
     {
       "suite": "Studio Emergency tab (C-8)",
@@ -69,7 +69,7 @@
       "exitCode": 0,
       "summary": "all 31 C-8 Studio checks passed",
       "failures": [],
-      "seconds": 10
+      "seconds": 7
     },
     {
       "suite": "Studio Help routes tab (C-9)",
@@ -78,7 +78,7 @@
       "exitCode": 0,
       "summary": "all 25 C-9 Studio checks passed",
       "failures": [],
-      "seconds": 10
+      "seconds": 7
     },
     {
       "suite": "Studio Action Packet tab (C-10)",
@@ -87,7 +87,7 @@
       "exitCode": 0,
       "summary": "all 19 C-10 Studio checks passed",
       "failures": [],
-      "seconds": 6
+      "seconds": 5
     },
     {
       "suite": "Studio Family tab (C-11)",
@@ -96,7 +96,7 @@
       "exitCode": 0,
       "summary": "all 19 C-11 Studio checks passed",
       "failures": [],
-      "seconds": 7
+      "seconds": 5
     },
     {
       "suite": "Independent boundary set (GPT, read-only)",
@@ -114,7 +114,7 @@
       "exitCode": 0,
       "summary": "13/13 integrated checks passed",
       "failures": [],
-      "seconds": 26
+      "seconds": 19
     },
     {
       "suite": "On-device assistant (C-15)",
@@ -132,7 +132,7 @@
       "exitCode": 0,
       "summary": "22/22 checks passed",
       "failures": [],
-      "seconds": 12
+      "seconds": 10
     },
     {
       "suite": "New-feature journeys (C-14, C-15)",
@@ -141,7 +141,7 @@
       "exitCode": 0,
       "summary": "23/23 checks passed",
       "failures": [],
-      "seconds": 5
+      "seconds": 4
     },
     {
       "suite": "Home choices, sharing and pilot session (C-17)",
@@ -150,16 +150,16 @@
       "exitCode": 0,
       "summary": "19/19 checks passed",
       "failures": [],
-      "seconds": 8
+      "seconds": 6
     },
     {
       "suite": "Professional app shell: Home, sidebar menu, phone menu, no emoji (C-18)",
       "file": "c18-shell.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "36/36 checks passed",
+      "summary": "38/38 checks passed",
       "failures": [],
-      "seconds": 27
+      "seconds": 16
     },
     {
       "suite": "Persona safety plans and reliability abstention (C-19)",
@@ -168,16 +168,16 @@
       "exitCode": 0,
       "summary": "27/27 checks passed",
       "failures": [],
-      "seconds": 5
+      "seconds": 4
     },
     {
       "suite": "100 simulated personas and stress inputs (C-20)",
       "file": "c20-realworld.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "14/14 checks passed (100 users: 89 right, 11 partly, 0 wrong)",
+      "summary": "14/14 checks passed (100 users: 92 right, 8 partly, 0 wrong)",
       "failures": [],
-      "seconds": 160
+      "seconds": 56
     },
     {
       "suite": "Source-backed grievance, rights, family and persona content (P1, H-3)",
@@ -186,7 +186,7 @@
       "exitCode": 0,
       "summary": "39/39 checks passed",
       "failures": [],
-      "seconds": 20
+      "seconds": 13
     },
     {
       "suite": "Privacy notes, security policy and version line (P2, H-5)",
@@ -195,7 +195,7 @@
       "exitCode": 0,
       "summary": "29/29 checks passed",
       "failures": [],
-      "seconds": 11
+      "seconds": 7
     },
     {
       "suite": "Rights and help, step-by-step guides and family asset map (Release 3.5)",
@@ -204,16 +204,16 @@
       "exitCode": 0,
       "summary": "62/62 checks passed",
       "failures": [],
-      "seconds": 13
+      "seconds": 9
     },
     {
       "suite": "Release 3.0 browser suite (single run; see Browser-Validation.json)",
       "file": "verify-v3.cjs",
       "ok": true,
       "exitCode": 0,
-      "summary": "130/130 checks passed; throttled load 17995 ms; 806663 bytes",
+      "summary": "130/130 checks passed; throttled load 17126 ms; 809324 bytes",
       "failures": [],
-      "seconds": 51
+      "seconds": 29
     }
   ],
   "allPassed": true,

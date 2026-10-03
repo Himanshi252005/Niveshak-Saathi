@@ -3,8 +3,8 @@
  "date": "2026-10-03",
  "app": {
   "file": "index.html",
-  "bytes": 806663,
-  "sha256": "4F494B8D764F34CB692E02BA9F219634D16DD3B48EEFC8F4D6FDE9BA736A2A5E"
+  "bytes": 809324,
+  "sha256": "FE329BD36095C4FE71EC2E66EACDCEDA08E2EF6BC41258EE33C6B455AAF99965"
  },
  "note": "AI-written fictional users, used to find and fix problems in Release 3.3: a regression test, not a real-world accuracy result. Grades: pass = fully right, weak = partly right, fail = wrong.",
  "checksPassed": 14,
@@ -70,14 +70,14 @@
  "users": {
   "total": 100,
   "grades": {
-   "pass": 91,
-   "weak": 9,
+   "pass": 92,
+   "weak": 8,
    "fail": 0
   },
   "byJourney": {
    "check": {
-    "pass": 49,
-    "weak": 1,
+    "pass": 50,
+    "weak": 0,
     "fail": 0
    },
    "paycheck": {
@@ -108,8 +108,8 @@
   },
   "byLabel": {
    "fraud": {
-    "pass": 22,
-    "weak": 1,
+    "pass": 23,
+    "weak": 0,
     "fail": 0
    },
    "benign": {
@@ -145,8 +145,8 @@
   },
   "byLanguage": {
    "hinglish": {
-    "pass": 13,
-    "weak": 1,
+    "pass": 14,
+    "weak": 0,
     "fail": 0
    },
    "hi": {
@@ -421,12 +421,10 @@
     "language": "hinglish",
     "ui": "hi",
     "device": "384x800",
-    "grade": "weak",
-    "kind": "speed",
+    "grade": "pass",
+    "kind": "ok",
     "why": "High",
-    "issues": [
-     "weak/speed: result took 1506 ms"
-    ]
+    "issues": []
    },
    {
     "id": "P021",
@@ -1398,7 +1396,7 @@
   {
    "name": "huge paste (10,000 chars, scam at the end)",
    "chars": 9659,
-   "ms": 211,
+   "ms": 154,
    "level": "high",
    "coverage": false,
    "typed": 9659,
@@ -1412,7 +1410,7 @@
   {
    "name": "one 6,000-char word",
    "chars": 6000,
-   "ms": 123,
+   "ms": 52,
    "level": "none",
    "coverage": false,
    "typed": 6000,
@@ -1426,7 +1424,7 @@
   {
    "name": "emoji only",
    "chars": 10,
-   "ms": 56,
+   "ms": 30,
    "level": "none",
    "coverage": true,
    "typed": 10,
@@ -1440,7 +1438,7 @@
   {
    "name": "scam words split by invisible characters",
    "chars": 66,
-   "ms": 55,
+   "ms": 50,
    "level": "high",
    "coverage": false,
    "typed": 66,
@@ -1454,7 +1452,7 @@
   {
    "name": "pasted HTML image with script handler",
    "chars": 69,
-   "ms": 78,
+   "ms": 59,
    "level": "high",
    "coverage": false,
    "typed": 69,
@@ -1468,7 +1466,7 @@
   {
    "name": "pasted script tag",
    "chars": 59,
-   "ms": 81,
+   "ms": 65,
    "level": "high",
    "coverage": false,
    "typed": 59,
@@ -1482,7 +1480,7 @@
   {
    "name": "link with javascript: scheme",
    "chars": 63,
-   "ms": 61,
+   "ms": 40,
    "level": "none",
    "coverage": false,
    "typed": 63,
@@ -1496,7 +1494,7 @@
   {
    "name": "Urdu right-to-left text",
    "chars": 53,
-   "ms": 50,
+   "ms": 39,
    "level": "none",
    "coverage": true,
    "typed": 53,
@@ -1510,7 +1508,7 @@
   {
    "name": "whitespace only",
    "chars": 11,
-   "ms": 52,
+   "ms": 43,
    "level": null,
    "coverage": false,
    "typed": 11,
@@ -1538,7 +1536,7 @@
   {
    "name": "Devanagari digits scam",
    "chars": 53,
-   "ms": 58,
+   "ms": 37,
    "level": "high",
    "coverage": false,
    "typed": 53,
@@ -1552,7 +1550,7 @@
   {
    "name": "lookalike official domain",
    "chars": 104,
-   "ms": 91,
+   "ms": 52,
    "level": "high",
    "coverage": false,
    "typed": 104,
@@ -1566,7 +1564,7 @@
   {
    "name": "all caps shouting",
    "chars": 88,
-   "ms": 76,
+   "ms": 58,
    "level": "high",
    "coverage": false,
    "typed": 88,
@@ -1580,7 +1578,7 @@
   {
    "name": "markdown and forwarded header",
    "chars": 108,
-   "ms": 134,
+   "ms": 44,
    "level": "caution",
    "coverage": false,
    "typed": 108,
@@ -1594,7 +1592,7 @@
   {
    "name": "legit long bank SMS",
    "chars": 165,
-   "ms": 71,
+   "ms": 45,
    "level": "none",
    "coverage": false,
    "typed": 165,
@@ -1611,7 +1609,7 @@
   },
   {
    "name": "browser Back after a check",
-   "url": "http://127.0.0.1:63288/",
+   "url": "http://127.0.0.1:64750/",
    "home": true,
    "visible": [
     "home"

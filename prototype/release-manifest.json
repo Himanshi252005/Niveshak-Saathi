@@ -3,11 +3,11 @@
   "product": "Niveshak Saathi",
   "productVersion": "3.5",
   "contentVersion": "2026.10.03.1",
-  "builtAt": "2026-10-03T05:12:28.221Z",
+  "builtAt": "2026-10-03T06:02:36.379Z",
   "app": {
     "file": "dist/index.html",
-    "bytes": 806663,
-    "sha256": "4F494B8D764F34CB692E02BA9F219634D16DD3B48EEFC8F4D6FDE9BA736A2A5E"
+    "bytes": 809324,
+    "sha256": "FE329BD36095C4FE71EC2E66EACDCEDA08E2EF6BC41258EE33C6B455AAF99965"
   },
   "contentSha256": "0EE2C0A25ED09810F5DEEB7733D5202ED6A60B22E8F0B9B07004F9B0ACF67491",
   "sections": {
