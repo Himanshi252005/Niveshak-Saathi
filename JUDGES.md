@@ -5,7 +5,7 @@
 **Open it**
 - **Live link:** **[Open Niveshak Saathi](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified **Release 3.5** build. For offline use, download [`prototype/dist/index.html`](prototype/dist/index.html) and open it in Chrome or Edge.
 - **English:** the app opens in Hindi; use the language menu at the top right.
-- **Demo video:** [watch the demo](https://himanshi252005.github.io/Niveshak-Saathi/demo/) (4 min 58 s; English and Hindi captions; recorded from the Release 3.5 file that the live link serves, with fictional data)
+- **Demo video:** [watch the demo](https://himanshi252005.github.io/Niveshak-Saathi/demo/) (4 min 58 s; English and Hindi captions; recorded from Release 3.5 on 3 October 2026 with fictional data, before the menu turned emerald and light became the default)
 
 | Required item | Where |
 |---|---|
@@ -40,7 +40,7 @@
 - The rule written before scoring also required no more ordinary messages warned than checker 3.3. Checker 3.5 warned one more (11 of 90 against 10, the extra one at Caution; 9 at High for both). The owner shipped it because fraud at High improved significantly (paired test, p = 0.0117) ([record](evidence/Blind-Evaluation-v9.json)).
 - History, Release 3.4 (which kept checker 3.3) on blind-v8: fraud or suspicious warned 60.9% [51.6–69.5] (fraud alone 67.5% [56.6–76.8]); ordinary 13.3% [7.8–21.9]; subtle fraud 5 of 25. It missed all three targets (fraud ≥85%, ordinary ≤8%, subtle fraud ≥70% warned).
 - 100 AI-written personas: 92 fully right, 8 partly right, 0 wrong (14/14 checks). A regression test, not accuracy.
-- 1,741 automated checks (24 release suites plus developer cases).
+- 1,742 automated checks (24 release suites plus developer cases).
 
 **Compared with today's tools.** [23 tools compared](docs/MARKET-COMPARISON.md): official help is split across about ten portals with their own logins and exclusions, and private checkers are mostly English-first, need an account or upload messages, and stop at advice. Niveshak Saathi is Hindi-first, needs no account, keeps everything on the phone and covers before, during and after a loss.
 

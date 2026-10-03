@@ -104,7 +104,7 @@ Every ordinary message that was flagged was a tricky look-alike. The biggest rem
 
 ## Release 3.5
 
-- **Result** on the build with the mint menu and dark theme (3 October 2026): 92 fully right, 8 partly right, 0 wrong (14/14 checks). The per-persona results are in [`Real-World-User-Test.json`](../evidence/Real-World-User-Test.json).
+- **Result** on the build with the emerald menu and dark theme (3 October 2026): 92 fully right, 8 partly right, 0 wrong (14/14 checks). The per-persona results are in [`Real-World-User-Test.json`](../evidence/Real-World-User-Test.json).
 - **Checker:** Release 3.5 ships checker 3.5; its one-time result on the fresh sealed set blind-v9 is in the [validation](Validation-v3.md). The 100 personas were run again with it, before the design refresh: 92 fully right, 8 partly right, 0 wrong (14/14 checks).
 
 ## Still open

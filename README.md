@@ -13,7 +13,7 @@ Niveshak Saathi helps people stop before paying a scammer, act in the first hour
 | **Start here** | [`JUDGES.md`](JUDGES.md): one page with the S.01–S.06 map, Track B fit, evidence and limits |
 | **Live link** | **[Open Niveshak Saathi](https://himanshi252005.github.io/Niveshak-Saathi/)**: the verified **Release 3.5** build, in any phone or computer browser. No installation, account or server. To keep it offline, use "Save offline copy" in the app or download [`prototype/dist/index.html`](prototype/dist/index.html) ("Download raw file") |
 | **Switch to English** | The app opens in Hindi. Use the language menu at the top right and choose "English" |
-| **Demo video (S.05)** | **[Watch the demo](https://himanshi252005.github.io/Niveshak-Saathi/demo/)** (4:58; English and Hindi captions; recorded from this build with fictional data) |
+| **Demo video (S.05)** | **[Watch the demo](https://himanshi252005.github.io/Niveshak-Saathi/demo/)** (4:58; English and Hindi captions; fictional data; recorded on 3 October 2026, before the menu turned emerald and light became the default) |
 
 | Required item | Where to find it |
 |---|---|
@@ -56,7 +56,7 @@ Each person has a fixed safety plan on Home, under "Plans for people like you". 
 **Learn and protect**
 - **Family safety**, with the new **Family asset map** (Track B "Nominee & Family Wealth Tracker"). One row per investment: type, institution name, nominee status, where the papers are, and who in the family knows. The institution name is the only typed field, and it refuses numbers, e-mail addresses and PAN. Download or print the list, and reopen the downloaded list later on the phone; the app itself saves nothing. Shares or mutual funds without a nominee link to the nominee guide. The tick-only family checklist and printable family card remain.
 - **My safety plan** for Praveen, Kavita and Babulal, and **Practise** with made-up messages, before-and-after scores and a habit card.
-- **Design:** a calm green-and-white design: white and soft-mint surfaces, deep green text, hairline cards and pill buttons, and green line drawings that draw themselves in (still for people who ask for less motion) on Home, beside each page heading and above each answer. On phones, a persistent five-item navigation keeps Home, Check, Before you pay, Complaints and Menu visible after every selection. The menu is mint green from top to bottom, and a dark theme follows the phone's own setting or is switched with "Dark theme" in the menu.
+- **Design:** a calm green-and-white design: white and soft-mint surfaces, deep green text, hairline cards and pill buttons, and green line drawings that draw themselves in (still for people who ask for less motion) on Home, beside each page heading and above each answer. On phones, a persistent five-item navigation keeps Home, Check, Before you pay, Complaints and Menu visible after every selection. The menu is emerald green from top to bottom. The app always opens in the light theme; "Dark theme" in the menu switches to a dark theme made from the app's own emerald.
 - **Everyday use:** a short menu (six pages, the rest under "More pages"); a Paste button, a tip to speak the message with the phone keyboard's microphone instead of typing, and one to copy the words of a message that arrived as a picture; read-aloud with the phone's own voice, large text, phone layouts, a working phone Back button, "Save offline copy" and "Share this app".
 - **Owner Studio:** a local editor, never part of the public app, where the content owner edits and validates all bilingual content, sources, guides and plans before a rebuild.
 
@@ -80,11 +80,11 @@ Each person has a fixed safety plan on Home, under "Plans for people like you". 
 All accuracy figures come from synthetic messages and AI-written personas, not from real users. No pilot has been run yet.
 
 **Release 3.5** ([release record](evidence/Release-3.5-Verification.json))
-- 1,741 automated checks: 24 release suites plus 796/796 developer-case expectations.
+- 1,742 automated checks: 24 release suites plus 796/796 developer-case expectations.
 - **Fresh sealed set blind-v9** (200 messages written and sealed by a separate AI agent before checker 3.5 was frozen; scored once after the freeze): fraud warned 87.5% [78.5–93.1] (checker 3.3 on the same messages: 82.5%); fraud rated High 78.8% [68.6–86.3] (3.3: 67.5%); subtle fraud warned 18 of 25 (3.3: 15); ordinary messages warned 12.2% [7–20.6] (3.3: 11.1%). Two of the three targets were met (fraud warned ≥85%, subtle fraud ≥70%); ordinary messages ≤8% was missed.
 - The rule written before scoring also required no more ordinary messages warned than checker 3.3. Checker 3.5 warned one more (11 of 90 against 10, the extra one at Caution; 9 at High for both). The owner shipped it because fraud at High improved significantly (paired test, p = 0.0117) ([record](evidence/Blind-Evaluation-v9.json)).
 - 100-persona simulated test (AI-written personas; no real users): 92 fully right, 8 partly right, 0 wrong (14/14 checks).
-- Size: 825,597 bytes, 237,429 bytes with gzip; Home usable in 8.3 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.5 s and Home is usable in about 12 s.
+- Size: 825,173 bytes, 237,291 bytes with gzip; Home usable in 5.9 s on an emulated slow connection (about 400 kbps with a 4x slower CPU, gzip as the host serves it); on DevTools "Slow 3G" with a 6x slower CPU (internal), the Hindi loading screen with the 1930 button shows in 2.4 s and Home is usable in about 8 s.
 
 **Release 3.4 (history; verified 2 October 2026, never deployed)**
 - **Sealed set blind-v8** (200 messages written by a separate AI agent, scored once), with the shipped checker 3.3:
