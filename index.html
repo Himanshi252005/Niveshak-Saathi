@@ -435,6 +435,153 @@ footer details.about-app>div{padding:4px 0 8px}
 @media (prefers-reduced-motion:reduce){.pause-progress{animation:none}}
 
 @media print{.art,.mobile-dock{display:none!important}}
+/* ==== Mint menu and dark theme (owner, 3 Oct 2026: "sidebar completely mint green"; "a dark theme someone can switch to") ====
+   Built on the green-and-white design (UI-1). The menu is mint green from top to bottom in both themes (a deep mint in the
+   dark theme). The dark theme follows the device's own light or dark setting, and "Dark theme" in the menu switches it for
+   the visit (theme.js; nothing is saved). Line drawings keep one colour, the theme's accent: forest green on the light page,
+   mint on the dark page. */
+:root{color-scheme:light;--mint:#c4eedb;--mint-hover:#b0e5cc;--mint-sel:#fff;--mint-ink:#073f35;--mint-muted:#2b5a4a;--mint-line:rgba(7,63,53,.18);--mint-strong:#0b604f;--mint-danger:#9a3324}
+
+/* The menu: mint green, dark green text; the page in use is a white pill with a forest-green rule. */
+.sidebar{background:var(--mint);color:var(--mint-ink);border-right:1px solid var(--mint-line)}
+.side-brand{border-bottom:1px solid var(--mint-line)}
+.side-brand .brand,.side-brand .brand .sub{color:var(--mint-ink)}
+.side-brand .brand .sub{color:var(--mint-muted)}
+.sidebar .nav-group{color:var(--mint-muted)}
+.sidebar nav button{color:var(--mint-ink);background:transparent}
+.sidebar nav button:hover{background:var(--mint-hover)}
+.sidebar nav button[aria-selected=true]{background:var(--mint-sel);color:var(--mint-ink);font-weight:700;box-shadow:inset 3px 0 0 var(--mint-strong)}
+.sidebar nav button[data-tab=emergency],.sidebar nav button[data-tab=emergency][aria-selected=true]{color:var(--mint-danger);background:transparent}
+.sidebar nav button[data-tab=emergency]:hover{background:var(--mint-hover)}
+.sidebar nav button[data-tab=emergency][aria-selected=true]{background:var(--mint-sel);box-shadow:inset 3px 0 0 var(--mint-danger)}
+.sidebar nav .nav-more{border-top:1px solid var(--mint-line)}
+.sidebar nav .nav-more>summary,.sidebar nav .nav-more-summary{color:var(--mint-muted)}
+.sidebar nav .nav-more-summary:hover{background:var(--mint-hover);color:var(--mint-ink)}
+.sidebar .toolbar{border-top:1px solid var(--mint-line)}
+.sidebar .toolbar button,.sidebar .toolbar summary,.sidebar #moreTools summary{color:var(--mint-ink);background:transparent;border:1px solid var(--mint-line)}
+.sidebar .toolbar button:hover,.sidebar .toolbar summary:hover,.sidebar #moreTools summary:hover{background:var(--mint-hover);color:var(--mint-ink)}
+.sidebar .toolbar button[aria-pressed=true]{background:var(--mint-sel);color:var(--mint-ink);border-color:var(--mint-strong)}
+.sidebar #moreTools[open],.sidebar #moreTools[open] button{background:transparent;color:var(--mint-ink)}
+.sidebar #moreTools[open] summary{background:var(--mint-hover);color:var(--mint-ink)}
+.sidebar #moreTools[open] button:hover{background:var(--mint-hover)}
+.sidebar .connection{color:var(--mint-muted)}
+.sidebar .menu-close{color:var(--mint-ink);border-color:var(--mint-line);background:transparent}
+.sidebar :focus-visible{outline:2px solid var(--mint-ink);outline-offset:2px}
+/* While the theme is applied (theme.js), nothing fades: the colours change in one step. */
+html.ns-theme-switch *,html.ns-theme-switch *::before,html.ns-theme-switch *::after{transition:none!important}
+/* Text boxes, list boxes and date boxes keep a border of at least 3:1 against the page (WCAG 1.4.11; the design refresh had
+   made it too faint). */
+textarea,input,select,header select,.top-actions select,.map-field input,.map-field select{border-color:#79948a}
+
+/* Dark theme. Screen only: printing always uses the light colours. */
+@media screen{
+html[data-theme=dark]{color-scheme:dark;--brand:#6fd3ad;--brand-ink:#a8ead0;--accent:#1d3a2f;--ink:#e4f0ea;--muted:#9db3a9;--line:#2a3a33;--danger:#f08c77;--caution:#e2bf68;--paper:#0f1714;--card:#15201b;--soft:#1b2a23;
+ --mint:#123227;--mint-hover:#1a4134;--mint-sel:#204e3f;--mint-ink:#d6f5e6;--mint-muted:#a3d9c3;--mint-line:rgba(214,245,230,.16);--mint-strong:#6fd3ad;--mint-danger:#ffb4a3;
+ background:var(--paper);color:var(--ink)}
+html[data-theme=dark] body{background:var(--paper);color:var(--ink)}
+:where(html[data-theme=dark]) ::selection{background:#2c5546;color:#fff}
+html[data-theme=dark] footer a{color:var(--brand-ink)}
+html[data-theme=dark] .eyebrow{color:var(--muted)}
+html[data-theme=dark] .side-brand .mark{color:#07261d}
+/* Buttons and fields. Plain buttons keep the low priority of the rule they replace, so menu items, chips, the phone dock and
+   quiet buttons keep their own backgrounds. */
+:where(html[data-theme=dark]) button{background:var(--card)}
+html[data-theme=dark] .primary,html[data-theme=dark] button.primary{background:var(--brand);color:#07261d;border-color:var(--brand)}
+html[data-theme=dark] .primary:hover,html[data-theme=dark] button.primary:hover{background:#8fe0c1}
+html[data-theme=dark] .sample{background:transparent;border-color:#3b5047;color:var(--muted)}
+html[data-theme=dark] textarea,html[data-theme=dark] input,html[data-theme=dark] select,html[data-theme=dark] header select,html[data-theme=dark] .top-actions select,html[data-theme=dark] .map-field input,html[data-theme=dark] .map-field select{background:#111b17;color:var(--ink);border-color:#5f7d72}
+html[data-theme=dark] textarea:focus,html[data-theme=dark] input:focus,html[data-theme=dark] select:focus{border-color:var(--brand);box-shadow:0 0 0 3px rgba(111,211,173,.18)}
+html[data-theme=dark] textarea::placeholder,html[data-theme=dark] input::placeholder{color:#8ea69c}
+html[data-theme=dark] input[type=checkbox],html[data-theme=dark] input[type=radio]{accent-color:var(--brand)!important}
+html[data-theme=dark] .listen-inline{border-color:#3b5047;color:var(--ink)}
+html[data-theme=dark] label.file-button{background:var(--card);border-color:var(--line);color:var(--ink)}
+/* Red actions stay red, a little brighter on the dark page; white text on them keeps 5:1 or better. */
+html[data-theme=dark] .urgent-button{background:#b3412c;border-color:#b3412c;color:#fff}
+html[data-theme=dark] .urgent-button:hover{background:#c24a34}
+html[data-theme=dark] .call-button,html[data-theme=dark] a.link[href^="tel:"],html[data-theme=dark] .emergency-strip button,html[data-theme=dark] .first-tag{background:#b3412c;color:#fff}
+/* Shell */
+html[data-theme=dark] .topbar{background:#141e1a;border-bottom-color:var(--line)}
+html[data-theme=dark] .menu-button{background:var(--card);border-color:var(--line);color:var(--ink)}
+html[data-theme=dark] .mobile-dock{background:rgba(21,32,27,.96);border-color:var(--line);box-shadow:0 14px 34px rgba(0,0,0,.5)}
+html[data-theme=dark] .skip{background:var(--card);color:var(--ink)}
+html[data-theme=dark] .app-main .audio-status{background:#2b2717;border-color:#7a6527;color:var(--ink)}
+html[data-theme=dark] dialog{background:var(--card);color:var(--ink);border-color:var(--line)}
+html[data-theme=dark] dialog::backdrop,html[data-theme=dark] .pause-dialog::backdrop{background:rgba(0,0,0,.66)}
+html[data-theme=dark] .dialog-bar{background:var(--card);border-bottom-color:var(--line)}
+html[data-theme=dark] .source-row{border-top-color:var(--line)}
+html[data-theme=dark] .source-row a{color:var(--brand-ink)}
+html[data-theme=dark] .pause-dialog{background:var(--card);color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.6)}
+/* Surfaces */
+html[data-theme=dark] .card{background:var(--card);border-color:var(--line)}
+html[data-theme=dark] .dark{background:#0b120f;color:var(--ink)}
+html[data-theme=dark] .note{background:var(--soft);border-left-color:#3f5f53;color:var(--ink)}
+html[data-theme=dark] .result{border-top-color:var(--line)}
+html[data-theme=dark] .flag,html[data-theme=dark] .insight,html[data-theme=dark] .metric,html[data-theme=dark] .packet-route{background:var(--soft);border-color:var(--line)}
+html[data-theme=dark] .urgent,html[data-theme=dark] .call-now{background:var(--card);border-color:#5e3229}
+html[data-theme=dark] .urgent a{color:#f4a593}
+html[data-theme=dark] .pill{border-color:var(--line);color:var(--muted)}
+html[data-theme=dark] .learn-card{border-color:var(--line)}
+html[data-theme=dark] .incident{background:var(--soft);border-color:#3b5047}
+html[data-theme=dark] .recent-note,html[data-theme=dark] .emergency-strip{background:#2a1a16;border-color:#5e3229;border-left-color:var(--danger)}
+html[data-theme=dark] .coverage{background:#18202a;border-left-color:#6f9fc8}
+html[data-theme=dark] .scope-chip{background:#18202a;border-color:#2e3d4e;color:var(--ink)}
+html[data-theme=dark] .reliability-card{background:#18202a;border-color:#2e3d4e;border-left-color:#6f9fc8}
+html[data-theme=dark] .reliability-strong-warning{background:#2a1a16;border-color:#5e3229;border-left-color:var(--danger)}
+html[data-theme=dark] .reliability-multiple-signals{background:#2a2416;border-left-color:#d6a14a}
+html[data-theme=dark] .reliability-insufficient-evidence,html[data-theme=dark] .reliability-outside-coverage{background:#1c2026;border-left-color:#8d9bb0}
+/* Home */
+html[data-theme=dark] .task-card,html[data-theme=dark] #home .task-card{background:var(--card);border-color:var(--line);color:var(--ink)}
+html[data-theme=dark] #home .task-card:hover,html[data-theme=dark] #home .task-card:focus-visible{border-color:var(--brand);box-shadow:0 10px 24px rgba(0,0,0,.35)}
+html[data-theme=dark] .task-card.urgent,html[data-theme=dark] #home .task-card.urgent{background:var(--card);border-color:#5e3229}
+html[data-theme=dark] .task-card.urgent .icon{background:#3a201b}
+html[data-theme=dark] .profile-quick-buttons button,html[data-theme=dark] .profile-quick-buttons button.profile-quick-button{background:var(--card)}
+/* Check and verdicts */
+html[data-theme=dark] .input-help details.input-tips>summary{text-decoration-color:#3f5f53}
+html[data-theme=dark] .verdict-high{background:#3a1f1a;color:#f7bcae}
+html[data-theme=dark] .verdict-caution{background:#342c17;color:#efd690}
+html[data-theme=dark] .verdict-none{background:var(--soft);color:var(--ink);box-shadow:inset 3px 0 0 #6f8a80}
+/* Choices */
+html[data-theme=dark] .pay-q label.check,html[data-theme=dark] fieldset.situations label.check,html[data-theme=dark] fieldset.ongoing label.check,html[data-theme=dark] fieldset.paid-detail label.check,
+html[data-theme=dark] fieldset.ongoing label,html[data-theme=dark] fieldset.route-question label,html[data-theme=dark] fieldset.paid-detail label{background:var(--card);border-color:var(--line);color:var(--ink)}
+html[data-theme=dark] .pay-q label.check:has(input:checked),html[data-theme=dark] fieldset.situations label.check:has(input:checked),html[data-theme=dark] fieldset.ongoing label.check:has(input:checked),html[data-theme=dark] fieldset.paid-detail label.check:has(input:checked),
+html[data-theme=dark] fieldset.ongoing label:has(input:checked),html[data-theme=dark] fieldset.route-question label:has(input:checked),html[data-theme=dark] fieldset.paid-detail label:has(input:checked){background:var(--soft);border-color:var(--brand)}
+html[data-theme=dark] .choice-list button[aria-pressed=true],html[data-theme=dark] .route-choice button[aria-pressed=true]{background:var(--soft);border-color:var(--brand)}
+html[data-theme=dark] .choice-list button:disabled{color:#91a69d}
+html[data-theme=dark] .summary-metrics,html[data-theme=dark] .route-choice .issue-hint,html[data-theme=dark] fieldset.route-choice>button .issue-hint{color:var(--muted)}
+html[data-theme=dark] fieldset.route-choice>button{background:var(--card);border-color:var(--line)}
+html[data-theme=dark] fieldset.route-choice>button[aria-pressed=true],html[data-theme=dark] fieldset.route-choice>button.selected{background:var(--soft);border-color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
+/* Get help now */
+html[data-theme=dark] #emergency button.situation{background:var(--card);color:var(--ink);border-color:var(--line)}
+html[data-theme=dark] #emergency button.situation[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+html[data-theme=dark] #emergency button.situation[aria-pressed=true]::before{border-color:var(--paper);background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%23e4f0ea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+html[data-theme=dark] .step-source.general{color:#dbbb62}
+/* Where to complain */
+html[data-theme=dark] .next-step{background:var(--soft);border-left-color:var(--brand)}
+html[data-theme=dark] ol.ladder>li{border-left-color:#2f4139}
+html[data-theme=dark] ol.ladder>li:last-child{border-left-color:transparent}
+html[data-theme=dark] ol.ladder>li::before{background:var(--card);border-color:#4f6a60;color:var(--ink)}
+html[data-theme=dark] ol.ladder>li.next::before{background:var(--brand);border-color:var(--brand);color:#07261d}
+html[data-theme=dark] ol.ladder .tag{color:var(--brand)}
+/* Rights, guides, family, packet, practice, pilot */
+html[data-theme=dark] .helpline,html[data-theme=dark] details.guide,html[data-theme=dark] .right-card,html[data-theme=dark] li.map-row,html[data-theme=dark] .profile-choice,html[data-theme=dark] .profile-plan{background:var(--card);border-color:var(--line)}
+html[data-theme=dark] details.rights-fold>summary .fold-count{border-color:var(--line);color:var(--muted)}
+html[data-theme=dark] .packet-checks{background:var(--soft);border-color:var(--line)}
+html[data-theme=dark] .packet-essentials li.missing,html[data-theme=dark] .packet-essentials li.missing .mark-text,html[data-theme=dark] .packet-essentials li.missing .icon.mark{color:#f4a593}
+html[data-theme=dark] .packet-essentials li.ok,html[data-theme=dark] .packet-essentials li.ok .mark-text,html[data-theme=dark] .packet-essentials li.ok .icon.mark{color:#93d9ab}
+html[data-theme=dark] .family-progress{color:#93d9c0}
+html[data-theme=dark] .practice-tag{color:#d8c47e}
+html[data-theme=dark] .stale-note{border-left-color:#d68a3c}
+html[data-theme=dark] .pilot-scenario{background:var(--soft);border-left-color:var(--brand)}
+html[data-theme=dark] .pilot-summary th,html[data-theme=dark] .pilot-summary td{border-color:var(--line)}
+html[data-theme=dark] .pilot-summary th{background:var(--soft)}
+}
+/* Before the app's script runs (a slow first load), the loading screen already follows a dark device setting. */
+@media screen and (prefers-color-scheme:dark){
+html:not([data-theme=light]):not(.ns-ready),html:not([data-theme=light]):not(.ns-ready) body{background:#0f1714;color-scheme:dark}
+html:not([data-theme=light]) #nsBoot{color:#e4f0ea}
+html:not([data-theme=light]) #nsBoot small{color:#9db3a9}
+html:not([data-theme=light]) #nsBoot a{background:#b3412c}
+}
 /* NS_REDESIGN_END */
 
 </style></head><body><div id="nsBoot" lang="hi"><strong>निवेशक साथी खुल रहा है…</strong><p>धीमे नेटवर्क पर कुछ सेकंड लग सकते हैं। <small lang="en">Niveshak Saathi is loading.</small></p><p>पैसे भेज दिए या OTP बता दिया?<br><a href="tel:1930">अभी 1930 पर कॉल करें</a></p><noscript><p>यह ऐप चलाने के लिए ब्राउज़र में JavaScript चालू करें। साइबर धोखाधड़ी की शिकायत: <a href="https://cybercrime.gov.in/">cybercrime.gov.in</a></p></noscript></div><header><div class="brand"><span class="mark">N</span><div>Niveshak Saathi<div class="sub" data-en="Your investor safety companion" data-hi="निवेशक सुरक्षा में आपका साथी"></div></div></div><select id="language" aria-label="Language / भाषा"><option value="en">English</option><option value="hi">हिन्दी</option></select></header><main><nav role="tablist" aria-label="Tools"><button role="tab" aria-selected="true" data-tab="check" data-en="01  Check a message" data-hi="01  संदेश जाँचें"></button><button role="tab" aria-selected="false" data-tab="route" data-en="02  Where to complain" data-hi="02  कहाँ शिकायत करें"></button><button role="tab" aria-selected="false" data-tab="draft" data-en="03  Prepare a complaint" data-hi="03  शिकायत तैयार करें"></button></nav>
@@ -2016,6 +2163,24 @@ const pauseButton=id=>{const b=el('button',t('Pause for 30 seconds','30 से�
 const offerPause=(boxId,verdictId,want,id,where)=>{const box=$(boxId);if(!box)return;const put=()=>{const v=$(verdictId);if(!v||document.getElementById(id))return;if((v.dataset.verdict||v.dataset.level)!==want)return;const b=pauseButton(id);if(where==='actions'){const a=$('resultActions');if(a)a.append(b)}else v.after(b)};new MutationObserver(put).observe(box,{childList:true});put()};
 offerPause('payResult','payVerdict','stop','payPause','after');
 offerPause('result','riskVerdict','high','checkPause','actions');
+}
+// Dark theme (owner, 3 Oct 2026: "make a dark theme selection of ui so someone can able to switch dark theme"). The app follows
+// the device's own light or dark setting; "Dark theme" in the menu, beside "Larger text", switches it for this visit. Nothing is
+// saved (the app keeps no storage), so the next visit follows the device setting again. Colours are in theme.css.
+{
+const root=document.documentElement,sysDark=matchMedia('(prefers-color-scheme: dark)');
+let chosen=null; // 'dark' or 'light' after a tap; null follows the device
+ICON_PATHS.moon='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z';
+const themeBtn=bilingual('button','Dark theme','डार्क थीम');themeBtn.id='themeToggle';themeBtn.type='button';withIcon(themeBtn,'moon');
+// The browser's own bar matches the top bar.
+const barColor=document.createElement('meta');barColor.name='theme-color';document.head.append(barColor);
+// Colours change at once, without the buttons' short fade: no flash of light colours when the app opens in the dark theme.
+const quiet=()=>{root.classList.add('ns-theme-switch');requestAnimationFrame(()=>requestAnimationFrame(()=>root.classList.remove('ns-theme-switch')))};
+const applyTheme=()=>{quiet();const dark=chosen?chosen==='dark':sysDark.matches;root.dataset.theme=dark?'dark':'light';themeBtn.setAttribute('aria-pressed',String(dark));barColor.content=dark?'#141e1a':'#ffffff'};
+themeBtn.onclick=()=>{chosen=root.dataset.theme==='dark'?'light':'dark';applyTheme()};
+const followDevice=()=>{if(!chosen)applyTheme()};
+if(sysDark.addEventListener)sysDark.addEventListener('change',followDevice);else if(sysDark.addListener)sysDark.addListener(followDevice);
+big.after(themeBtn);applyTheme();
 }
 /* NS_REDESIGN_END */
 // Ready (accessibility F1): the Hindi loading screen in base.html gives way to the app only now, so a slow phone never shows
